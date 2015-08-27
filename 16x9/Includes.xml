@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+	<include file="Designer_Variables.xml" />
+	<include file="Designer_Common.xml" />
+	<include file="Designer_Connector.xml" />
+	<include file="Designer_VDOViewtype.xml" />
+	<include file="Dialogs_includes.xml" />
+	<include file="Dialogs_InfosIncludes.xml" />	
+	<include file="Custom_Designer_ColorTool.xml" />
+	<include file="Defaults.xml" />
+	<include file="script-skinshortcuts-includes.xml"/>
+	<include file="Variables.xml" />
+			
+	<!-- Weather Content -->
+	<include name="WeatherContent">
+		<content>
+			<item id="0">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day0.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day0.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
+				<property name="LongDay">$LOCALIZE[33006]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day0.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day0.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day0.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day0.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day0.Title))</visible>
+			</item>
+			<item id="1">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day1.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
+				<property name="LongDay">$LOCALIZE[33007]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day1.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day1.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day1.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day1.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day1.Title))</visible>
+			</item>
+			<item id="2">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day2.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day2.FanartCode)]</property>
+				<property name="LongDay">$INFO[Window(Weather).Property(Day2.Title)]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day2.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day2.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day2.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day2.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day2.Title))</visible>
+			</item>
+			<item id="3">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day3.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day3.FanartCode)]</property>
+				<property name="LongDay">$INFO[Window(Weather).Property(Day3.Title)]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day3.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day3.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day3.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day3.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day3.Title))</visible>
+			</item>
+			<item id="4">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day4.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day4.FanartCode)]</property>
+				<property name="LongDay">$INFO[Window(Weather).Property(Day4.Title)]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day4.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day4.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day4.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day4.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day4.Title))</visible>
+			</item>
+			<item id="5">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day5.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day5.FanartCode)]</property>
+				<property name="LongDay">$INFO[Window(Weather).Property(Day5.Title)]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day5.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day5.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day5.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day5.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day5.Title))</visible>
+			</item>
+			<item id="6">
+				<onclick>noop</onclick>
+                <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
+				<icon>$INFO[Window(Weather).Property(Day6.FanartCode),weather/,.png]</icon>
+				<property name="Fanartcode">$INFO[Window(Weather).Property(Day6.FanartCode)]</property>
+				<property name="LongDay">$INFO[Window(Weather).Property(Day6.Title)]</property>
+				<property name="HighTemperature">$INFO[Window(Weather).Property(Day6.HighTemp)]</property>
+				<property name="LowTemperature">$INFO[Window(Weather).Property(Day6.LowTemp)]</property>
+				<property name="Outlook">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
+				<property name="WeatherArt">$INFO[Window(Weather).Property(Day6.FanartCode),weather/art/,.jpg]</property>
+				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day6.FanartCode),weather/poster/,.jpg]</property>
+				<visible>!IsEmpty(Window(Weather).Property(Day6.Title))</visible>
+			</item>
+		</content>
+	</include>
+
+	<!-- Dialogs furnitures -->
+
+	<!-- RadioButton -->
+	<include name="DiaRadio">
+		<control type="radiobutton" id="$PARAM[Id]">
+			<width>588</width>
+			<height>60</height>
+			<font>Font27</font>
+			<textwidth>500</textwidth>
+			<textoffsetx>12</textoffsetx>
+			<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">material/radioon.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="$VAR[CategoryColor3]">material/radioon.png</textureradioonnofocus>
+			<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">material/radiooff.png</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="$VAR[CategoryColor3]">material/radiooff.png</textureradiooffnofocus>
+			<radiowidth>30</radiowidth>
+			<radioheight>30</radioheight>
+			<radioposx>546</radioposx>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+			<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+			<label>$PARAM[Label]</label>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<visible>Control.IsEnabled($PARAM[Id])</visible>
+		</control>				
+	</include>
+
+	<!-- Label -->
+	<include name="DiaLabel">
+		<control type="label" id="$PARAM[Id]">
+			<left>12</left>
+			<width>564</width>
+			<height>60</height>
+			<font>Font27</font>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+		</control>				
+	</include>	
+
+	<!-- Line -->
+	<include name="DiaLine">
+		<control type="image" id="$PARAM[Id]">
+			<left>25%</left>
+			<width>50%</width>
+			<top>0</top>
+			<height>1</height>
+			<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]" border="94,0,94,0">common/white.png</texture>
+			<bordertexture colordiffuse="00FFFFFF" border="94,0,94,0">common/white.png</bordertexture>
+			<bordersize>94,0,94,0</bordersize>
+			<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+		</control>			
+	</include>		
+
+	<!-- SliderEx -->
+	<include name="DiaSlider">
+		<control type="sliderex" id="$PARAM[Id]">
+			<width>588</width>
+			<height>60</height>
+			<font>Font27</font>
+			<textwidth>400</textwidth>
+			<textoffsetx>12</textoffsetx>
+			<sliderwidth>100</sliderwidth>
+			<sliderheight>4</sliderheight>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+			<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+			<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<texturesliderbar colordiffuse="55000000">common/white.png</texturesliderbar>
+			<textureslidernib colordiffuse="$VAR[CategoryColor3]">common/white.png</textureslidernib>
+			<textureslidernibfocus colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">common/white.png</textureslidernibfocus>
+			<controloffsetx></controloffsetx>
+			<controloffsety></controloffsety>
+			<visible>Control.IsEnabled($PARAM[Id])</visible>
+		</control>	
+	</include>
+
+	<!-- SpinControl -->
+	<include name="DiaSpin">
+		<control type="spincontrolex" id="$PARAM[Id]">
+			<width>588</width>
+			<height>60</height>
+			<font>Font27</font>
+			<textwidth>200</textwidth>
+			<textoffsetx>12</textoffsetx>
+			<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<textureup colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/arrowupfo.png</textureup>
+			<textureupfocus colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">common/arrowupfo.png</textureupfocus>
+			<texturedown colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/arrowdownfo.png</texturedown>
+			<texturedownfocus colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">common/arrowdownfo.png</texturedownfocus>
+			<spinwidth>24</spinwidth>
+			<spinheight>60</spinheight>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+			<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+			<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+			<label>$PARAM[Label]</label>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<visible>Control.IsEnabled($PARAM[Id])</visible>
+		</control>		
+	</include>
+
+	<!-- Builtin Grouplist -->
+	<include name="DiaGroupList">
+		<control type="grouplist" id="$PARAM[Id]">
+			<left>24</left>
+			<top>25</top>
+			<width>588</width>
+			<height>308</height>
+			<itemgap>1</itemgap>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<onup>$PARAM[OnUp]</onup>
+			<ondown>$PARAM[OnDown]</ondown>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>true</usecontrolcoords>
+		</control>
+	</include>
+
+	<!-- Builtin Button for custom grouplist -->
+	<include name="DiaGroupListButton">
+		<control type="button" id="$PARAM[Id]">
+			<width>588</width>
+			<height>60</height>
+			<font>Font27</font>
+			<textwidth>540</textwidth>
+			<textoffsetx>12</textoffsetx>
+			<label>$PARAM[Label]</label>
+			<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+			<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+			<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<onup>$PARAM[OnUp]</onup>
+			<ondown>$PARAM[OnDown]</ondown>
+			<visible>Control.IsEnabled($PARAM[Id])</visible>
+		</control>
+	</include>
+
+	<!-- Custom Button for info grouplist type 1 -->
+	<include name="DiaInfoButton">
+		<control type="button" id="$PARAM[Id]">
+			<focusedcolor>$VAR[CategoryColor3]</focusedcolor>
+			<textwidth>588</textwidth>
+			<textoffsetx>0</textoffsetx>
+			<width>588</width>
+			<height>33</height>
+			<font>Font25</font>
+			<label>[B]$LOCALIZE[$PARAM[Localize]][/B]$INFO[$PARAM[Label], ,$PARAM[SubLabel]]</label>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<onup>$PARAM[OnUp]</onup>
+			<ondown>$PARAM[OnDown]</ondown>
+			<visible>!IsEmpty($PARAM[Label])</visible>
+		</control>
+	</include>	
+
+	<!-- Custom Button for info grouplist type 2 -->
+	<include name="DiaInfoButton2">
+		<control type="button" id="$PARAM[Id]">
+			<focusedcolor>$VAR[CategoryColor3]</focusedcolor>
+			<textwidth>588</textwidth>
+			<textoffsetx>0</textoffsetx>
+			<width>588</width>
+			<height>33</height>
+			<font>Font25</font>
+			<label>$PARAM[Label]</label>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<onup>$PARAM[OnUp]</onup>
+			<ondown>$PARAM[OnDown]</ondown>
+		</control>
+	</include>	
+
+	<!-- Button (OK / CANCEL) -->
+	<include name="DiaButton">
+		<control type="button" id="$PARAM[Id]">
+			<label>$PARAM[Label]</label>
+			<width>$PARAM[Width]</width>
+			<height>70</height>
+			<font>Font27</font>
+			<align>center</align>
+			<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+			<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+			<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+		</control>
+	</include>
+
+	<!-- Edit -->
+	<include name="DiaEdit">
+		<control type="edit" id="$PARAM[Id]">
+			<width>588</width>
+			<font>Font27</font>
+			<textwidth>564</textwidth>
+			<textoffsetx>12</textoffsetx>
+			<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+			<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+			<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<label>$PARAM[Label]</label>
+			<onleft>$PARAM[OnLeft]</onleft>
+			<onright>$PARAM[OnRight]</onright>
+			<label>$PARAM[Label]</label>
+			<visible>Control.IsEnabled($PARAM[Id])</visible>
+		</control>
+	</include>
+
+	<!-- Keyboard buttons -->
+	<include name="KeyboardButtons">
+		<width>49</width>
+		<height>60</height>
+		<font>Font27</font>
+		<align>center</align>
+		<textoffsetx>10</textoffsetx>
+		<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+		<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+		<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+		<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+	</include>
+
+	<!-- _____________________________________________________________________________ -->
+
+	<!-- Fullscreen dimensions -->
+	<include name="FullscreenDimensions">
+		<left>0</left>
+		<top>0</top>
+		<width>1920</width>
+		<height>1080</height>
+	</include>
+
+	<!-- Conq logo -->
+	<include name="ConqLogo">
+		<control type="image">
+			<left>116</left>
+			<top>110</top>
+			<width>91</width>
+			<height>50</height>
+			<texture>common/Logo.png</texture>
+		</control>
+	</include>
+
+	<!-- Window background image -->
+	<include name="WindowBackgroundImage">
+		<control type="visualisation">
+			<include>FullscreenDimensions</include>
+			<visible>Player.HasAudio</visible>
+		</control>
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture>common/white.png</texture>
+			<colordiffuse>FF000000</colordiffuse>
+			<visible>Player.HasVideo</visible>
+		</control>
+		<control type="videowindow">
+			<include>FullscreenDimensions</include>
+			<visible>Player.HasVideo</visible>
+		</control>
+		<control type="multiimage">
+			<include>FullscreenDimensions</include>
+			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+			<aspectratio>keep</aspectratio>
+			<timeperimage>10000</timeperimage>
+			<fadetime>2000</fadetime>
+			<randomize>true</randomize>
+			<visible>Player.HasAudio + System.HasAddon(script.artistslideshow) + Skin.HasSetting(EnableArtistFanart)</visible>
+			<animation effect="fade" start="100" end="50" time="0" condition="Skin.HasSetting(FadeArtistFanart)">Conditional</animation>
+		</control>
+		<control type="image">
+			<!--include>FullscreenDimensions</include-->
+			<texture>common/blue.jpg</texture>
+			<visible>!Player.HasVideo</visible>
+		</control>
+	</include>
+	
+	<!-- Dialog background image -->
+	<include name="DialogBackgroundImage">
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<texture border="20">dialogs/DialogBackground.png</texture>
+		</control>
+	</include>
+
+	<!-- Options background image -->
+	<include name="OptionsBackgroundImage">
+		<control type="image">
+			<left>0</left>
+			<top>540</top>
+			<width>500</width>
+			<height>560</height>
+			<colordiffuse>$VAR[CategoryColor]</colordiffuse>
+			<texture>common/white.png</texture>
+		</control>
+	</include>
+
+	<!-- Fanart -->
+	<include name="Fanart">
+		<control type="image">
+			<include>FullscreenDimensions</include>
+			<include>VisibleFadeAnimation</include>
+			<fadetime>400</fadetime>
+			<colordiffuse>FF666666</colordiffuse>
+			<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+			<animation effect="fade" start="100" end="0" condition="[Player.HasVideo + Skin.HasSetting(BackgroundVideo)]">Conditional</animation>
+		</control>
+	</include>
+
+	<!-- Time -->
+	<include name="Time">
+		<control type="button">
+			<left>120</left>
+			<top>110</top>
+			<width>1680</width>
+			<height>33</height>
+			<aligny>top</aligny>
+			<label>[COLOR TextColor1]$VAR[HeadingLabel][/COLOR]</label>
+			<label2>$INFO[System.Time]</label2>
+			<font>Font33</font>
+			<textcolor>TextColor2</textcolor>
+			<animation type="WindowOpen" condition="Window.Previous(startup)">
+				<effect type="fade" start="50" end="100" time="200" tween="cubic" easing="out"/>
+			</animation>
+		</control>
+	</include>
+
+	<!-- Window animation -->
+	<include name="WindowFadeAnimation">
+		<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
+	</include>
+
+	<!-- Visible animation -->
+	<include name="VisibleFadeAnimation">
+		<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+	</include>
+
+	<!-- Dialog animation -->
+	<include name="DialogZoomAnimation">
+		<animation type="WindowOpen">
+			<effect type="zoom" start="70" end="100" center="auto" tween="back" easing="inout" time="300" />
+			<effect type="fade" start="0" end="100" time="300" />
+		</animation>
+		<animation type="WindowClose">
+			<effect type="zoom" start="100" end="70" center="auto" time="100" />
+			<effect type="fade" start="100" end="0" time="100" />
+		</animation>
+	</include>
+
+	<!-- Options animation -->
+	<include name="OptionsAnimation">
+		<animation type="Visible">
+			<effect type="slide" start="-490,0" end="0,0" center="auto" tween="back" easing="inout" time="300" />
+			<effect type="fade" start="100" end="100" time="300" />
+		</animation>
+		<animation type="Hidden">
+			<effect type="slide" start="0,0" end="-490,0" center="auto" time="100" />
+			<effect type="fade" start="100" end="100" time="100" />
+		</animation>
+	</include>
+
+	<!-- Shutdown buttons -->
+	<include name="ShutdownButtons">
+		<width>600</width>
+		<height>45</height>
+		<font>Font48</font>
+		<textcolor>DialogColor2</textcolor>
+		<focusedcolor>DialogColor1</focusedcolor>
+	</include>
+
+	<!-- Options buttons -->
+	<include name="OptionButtons">
+		<width>480</width>
+		<height>54</height>
+		<font>Font48</font>
+		<textcolor>DialogColor2</textcolor>
+		<focusedcolor>DialogColor1</focusedcolor>
+	</include>
+
+	<!-- Item count -->
+	<include name="ItemCount">
+		<control type="grouplist">
+			<right>120</right>
+			<bottom>110</bottom>
+			<width>800</width>
+			<height>44</height>
+			<itemgap>6</itemgap>
+			<align>right</align>
+			<orientation>horizontal</orientation>
+			<usecontrolcoords>true</usecontrolcoords>
+			<visible>IntegerGreaterThan(Container.NumItems,0)</visible>
+			<control type="label">
+				<top>3</top>
+				<width>auto</width>
+				<height>44</height>
+				<align>right</align>
+				<label>$INFO[Container.NumItems]</label>
+				<font>Font25</font>
+				<textcolor>TextColor2</textcolor>
+			</control>
+			<control type="label">
+				<width>auto</width>
+				<height>44</height>
+				<align>right</align>
+				<label>$VAR[ContentType]</label>
+				<font>Font33</font>
+				<textcolor>TextColor2</textcolor>
+			</control>
+		</control>
+	</include>
+
+</includes>
