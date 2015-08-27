@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views>
+    <view id="$VAR[View1Name]" value="50" languageid="1" type="all"/>
+    <view id="$VAR[View2Name]" value="51" languageid="1" type="all"/>
+    <view id="$VAR[View3Name]" value="52" languageid="1" type="all"/>
+    <view id="$VAR[View4Name]" value="53" languageid="1" type="all"/>
+    <view id="$VAR[View5Name]" value="54" languageid="1" type="all"/>
+    <view id="$VAR[View6Name]" value="55" languageid="1" type="all"/>
+    <view id="$VAR[View7Name]" value="56" languageid="1" type="all"/>
+    <view id="$VAR[View8Name]" value="57" languageid="1" type="all"/>
+    <view id="$VAR[View9Name]" value="58" languageid="1" type="all"/>
+</views>

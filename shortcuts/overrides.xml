@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overrides>
+
+	<!-- Movies -->
+	<!-- Recent movies -->
+	<widget label="Recent movies">RecentMovies</widget>
+	<widgetdefault labelID="movies">RecentMovies</widgetdefault>
+	<!-- Recommended movies -->
+	<widget label="Recommended movies">RecommendedMovies</widget>
+	<!-- Random movies -->
+	<widget label="Random movies">RandomMovies</widget>
+	<!-- All -->
+	<widget label="All movies">videodb://movies/titles/</widget>
+
+	<!-- Episodes -->
+	<!-- Recent episodes -->
+	<widget label="Recent episodes">RecentEpisodes</widget>
+	<widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
+	<!-- Recommended Recommended episodes -->
+	<widget label="Recommended episodes">RecommendedEpisodes</widget>
+	<!-- Random episodes -->
+	<widget label="Random episodes">RandomEpisodes</widget>
+
+	<!-- Albums -->
+	<!-- Recent albums -->
+	<widget label="Recent albums">RecentAlbums</widget>
+	<widgetdefault labelID="132">RecentAlbums</widgetdefault>
+	<!-- Recommended albums -->
+	<widget label="Recommended albums">RecommendedAlbums</widget>
+	<!-- Random albums -->
+	<widget label="Random albums">RandomAlbums</widget>
+
+	<!-- Weather -->
+	<widget label="Weather Forecast">WeatherWidget</widget>
+	<widgetdefault labelID="weather">WeatherWidget</widgetdefault>
+
+	<!-- Favourites -->
+	<widget label="Favourites">Favourites</widget>
+	<widgetdefault labelID="1036">Favourites</widgetdefault>
+	
+	<!-- PVR -->
+	<widget label="TV">TV</widget>
+	<widgetdefault labelID="livetv">TV</widgetdefault>
+	
+    <thumbnail label="Actor">special://skin/extras/icons/DefaultActor.png</thumbnail>
+    <thumbnail label="Addon">special://skin/extras/icons/DefaultAddon.png</thumbnail>
+    <thumbnail label="AddonAlbumInfo">special://skin/extras/icons/DefaultAddonAlbumInfo.png</thumbnail>
+    <thumbnail label="AddonArtistInfo">special://skin/extras/icons/DefaultAddonArtistInfo.png</thumbnail>
+    <thumbnail label="AddonAudioEncoder">special://skin/extras/icons/DefaultAddonAudioEncoder.png</thumbnail>
+    <thumbnail label="AddonHelper">special://skin/extras/icons/DefaultAddonHelper.png</thumbnail>
+    <thumbnail label="AddonInfoLibrary">special://skin/extras/icons/DefaultAddonInfoLibrary.png</thumbnail>
+    <thumbnail label="AddonLibrary">special://skin/extras/icons/DefaultAddonLibrary.png</thumbnail>
+    <thumbnail label="AddonLyrics">special://skin/extras/icons/DefaultAddonLyrics.png</thumbnail>
+    <thumbnail label="AddonMovieInfo">special://skin/extras/icons/DefaultAddonMovieInfo.png</thumbnail>
+    <thumbnail label="AddonMusic">special://skin/extras/icons/DefaultAddonMusic.png</thumbnail>
+    <thumbnail label="AddonMusicVideoInfo">special://skin/extras/icons/DefaultAddonMusicVideoInfo.png</thumbnail>
+    <thumbnail label="AddonNone">special://skin/extras/icons/DefaultAddonNone.png</thumbnail>
+    <thumbnail label="AddonPicture">special://skin/extras/icons/DefaultAddonPicture.png</thumbnail>
+    <thumbnail label="AddonProgram">special://skin/extras/icons/DefaultAddonProgram.png</thumbnail>
+    <thumbnail label="AddonPVRClient">special://skin/extras/icons/DefaultAddonPVRClient.png</thumbnail>
+    <thumbnail label="AddonRepository">special://skin/extras/icons/DefaultAddonRepository.png</thumbnail>
+    <thumbnail label="AddonScreensaver">special://skin/extras/icons/DefaultAddonScreensaver.png</thumbnail>
+    <thumbnail label="AddonService">special://skin/extras/icons/DefaultAddonService.png</thumbnail>
+    <thumbnail label="AddonSkin">special://skin/extras/icons/DefaultAddonSkin.png</thumbnail>
+    <thumbnail label="AddonSubtitles">special://skin/extras/icons/DefaultAddonSubtitles.png</thumbnail>
+    <thumbnail label="AddonTvInfo">special://skin/extras/icons/DefaultAddonTvInfo.png</thumbnail>
+    <thumbnail label="AddonVideo">special://skin/extras/icons/DefaultAddonVideo.png</thumbnail>
+    <thumbnail label="AddonVizualization">special://skin/extras/icons/DefaultAddonVisualization.png</thumbnail>
+    <thumbnail label="AddonWeather">special://skin/extras/icons/DefaultAddonWeather.png</thumbnail>
+    <thumbnail label="AddonWebSkin">special://skin/extras/icons/DefaultAddonWebSkin.png</thumbnail>
+    <thumbnail label="AddSource">special://skin/extras/icons/DefaultAddSource.png</thumbnail>
+    <thumbnail label="AlbumCover">special://skin/extras/icons/DefaultAlbumCover.png</thumbnail>
+    <thumbnail label="Artist">special://skin/extras/icons/DefaultArtist.png</thumbnail>
+    <thumbnail label="Audio">special://skin/extras/icons/DefaultAudio.png</thumbnail>
+    <thumbnail label="CDDA">special://skin/extras/icons/DefaultCDDA.png</thumbnail>
+    <thumbnail label="Country">special://skin/extras/icons/DefaultCountry.png</thumbnail>
+    <thumbnail label="Director">special://skin/extras/icons/DefaultDirector.png</thumbnail>
+    <thumbnail label="DVDEmpty">special://skin/extras/icons/DefaultDVDEmpty.png</thumbnail>
+    <thumbnail label="DVDFull">special://skin/extras/icons/DefaultDVDFull.png</thumbnail>
+    <thumbnail label="DVDRom">special://skin/extras/icons/DefaultDVDRom.png</thumbnail>
+    <thumbnail label="Favourites">special://skin/extras/icons/favourites.png</thumbnail>
+    <thumbnail label="File">special://skin/extras/icons/DefaultFile.png</thumbnail>
+    <thumbnail label="Folder">special://skin/extras/icons/DefaultFolder.png</thumbnail>
+    <thumbnail label="FolderBack">special://skin/extras/icons/DefaultFolderBack.png</thumbnail>
+    <thumbnail label="Genre">special://skin/extras/icons/DefaultGenre.png</thumbnail>
+    <thumbnail label="HardDisk">special://skin/extras/icons/DefaultHardDisk.png</thumbnail>
+    <thumbnail label="InProgressShows">special://skin/extras/icons/DefaultInProgressShows.png</thumbnail>
+    <thumbnail label="Movies">special://skin/extras/icons/DefaultMovies.png</thumbnail>
+    <thumbnail label="MovieTitle">special://skin/extras/icons/DefaultMovieTitle.png</thumbnail>
+    <thumbnail label="MusicAlbums">special://skin/extras/icons/DefaultMusicAlbums.png</thumbnail>
+    <thumbnail label="MusicArtists">special://skin/extras/icons/DefaultMusicArtists.png</thumbnail>
+    <thumbnail label="MusicCompilations">special://skin/extras/icons/DefaultMusicCompilations.png</thumbnail>
+    <thumbnail label="MusicGenres">special://skin/extras/icons/DefaultMusicGenres.png</thumbnail>
+    <thumbnail label="MusicPlaylists">special://skin/extras/icons/DefaultMusicPlaylists.png</thumbnail>
+    <thumbnail label="MusicPlugins">special://skin/extras/icons/DefaultMusicPlugins.png</thumbnail>
+    <thumbnail label="MusicRecentlyAdded">special://skin/extras/icons/DefaultMusicRecentlyAdded.png</thumbnail>
+    <thumbnail label="MusicRecentlyPlayed">special://skin/extras/icons/DefaultMusicRecentlyPlayed.png</thumbnail>
+    <thumbnail label="MusicSearch">special://skin/extras/icons/DefaultMusicSearch.png</thumbnail>
+    <thumbnail label="MusicSongs">special://skin/extras/icons/DefaultMusicSongs.png</thumbnail>
+    <thumbnail label="MusicTop100">special://skin/extras/icons/DefaultMusicTop100.png</thumbnail>
+    <thumbnail label="MusicTop100Albums">special://skin/extras/icons/DefaultMusicTop100Albums.png</thumbnail>
+    <thumbnail label="MusicTop100Songs">special://skin/extras/icons/DefaultMusicTop100Songs.png</thumbnail>
+    <thumbnail label="MusicVideos">special://skin/extras/icons/DefaultMusicVideos.png</thumbnail>
+    <thumbnail label="MusicVideoTitle">special://skin/extras/icons/DefaultMusicVideoTitle.png</thumbnail>
+    <thumbnail label="MusicYears">special://skin/extras/icons/DefaultMusicYears.png</thumbnail>
+    <thumbnail label="Network">special://skin/extras/icons/DefaultNetwork.png</thumbnail>
+    <thumbnail label="Picture">special://skin/extras/icons/DefaultPicture.png</thumbnail>
+    <thumbnail label="Playlist">special://skin/extras/icons/DefaultPlaylist.png</thumbnail>
+    <thumbnail label="Program">special://skin/extras/icons/DefaultProgram.png</thumbnail>
+    <thumbnail label="RecentlyAddedEpisodes">special://skin/extras/icons/DefaultRecentlyAddedEpisodes.png</thumbnail>
+    <thumbnail label="RecentlyAddedMovies">special://skin/extras/icons/DefaultRecentlyAddedMovies.png</thumbnail>
+    <thumbnail label="RecentlyAddedMusicVideos">special://skin/extras/icons/DefaultRecentlyAddedMusicVideos.png</thumbnail>
+    <thumbnail label="RemovableDisk">special://skin/extras/icons/DefaultRemovableDisk.png</thumbnail>
+    <thumbnail label="Script">special://skin/extras/icons/DefaultScript.png</thumbnail>
+    <thumbnail label="Sets">special://skin/extras/icons/DefaultSets.png</thumbnail>
+    <thumbnail label="Shortcut">special://skin/extras/icons/DefaultShortcut.png</thumbnail>
+    <thumbnail label="Studios">special://skin/extras/icons/DefaultStudios.png</thumbnail>
+    <thumbnail label="TVShows">special://skin/extras/icons/DefaultTVShows.png</thumbnail>
+    <thumbnail label="TVShowTitle">special://skin/extras/icons/DefaultTVShowTitle.png</thumbnail>
+    <thumbnail label="User">special://skin/extras/icons/DefaultUser.png</thumbnail>
+    <thumbnail label="Video">special://skin/extras/icons/DefaultVideo.png</thumbnail>
+    <thumbnail label="VideoCover">special://skin/extras/icons/DefaultVideoCover.png</thumbnail>
+    <thumbnail label="VideoPlaylists">special://skin/extras/icons/DefaultVideoPlaylists.png</thumbnail>
+    <thumbnail label="VideoPlugins">special://skin/extras/icons/DefaultVideoPlugins.png</thumbnail>
+    <thumbnail label="Year">special://skin/extras/icons/DefaultYear.png</thumbnail>
+
+
+</overrides>
