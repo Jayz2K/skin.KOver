@@ -2,7 +2,6 @@
 <window>
 	<!-- yesnodialog -->
 	<defaultcontrol always="true">10</defaultcontrol>
-	<onload>Skin.ToggleSetting(DebugInfo)</onload>	
 	<onload condition="IsEmpty(Window(Home).Property(DialogVisibility))">SetProperty(DialogVisibility,$INFO[Window.Property(xmlfile)],Home)</onload>
 	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility2,$INFO[Window.Property(xmlfile)],Home)</onload>
 	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility2)) + IsEmpty(Window(Home).Property(DialogVisibility3))">SetProperty(DialogVisibility3,$INFO[Window.Property(xmlfile)],Home)</onload>
