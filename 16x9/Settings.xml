@@ -3,6 +3,7 @@
 	<!-- settings -->
 	<backgroundcolor>0x00000000</backgroundcolor>
 	<defaultcontrol>9000</defaultcontrol>
+	<onload condition="IsEmpty(Skin.String(KOverInit))">ReplaceWindow(startup)</onload>	
 	<onload condition="!IsEmpty(Window(settings).Property(ChangeSettingsLevel))">ClearProperty(ChangeSettingsLevel)</onload>
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
 	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	

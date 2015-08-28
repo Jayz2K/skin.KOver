@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
 	<!-- settingscategory -->
+	<onload condition="IsEmpty(Skin.String(KOverInit))">Back</onload>	
 	<backgroundcolor>0x00000000</backgroundcolor>
 	<defaultcontrol always="true">3</defaultcontrol>
-	<onload condition="IsEmpty(Skin.String(KOverInit))">ReplaceWindow(startup)</onload>
 	<onload condition="IsEmpty(Window(settings).Property(ChangeSettingsLevel))">SetFocus(3)</onload>
 	<onload condition="!IsEmpty(Window(settings).Property(ChangeSettingsLevel))">SetFocus(20)</onload>
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>

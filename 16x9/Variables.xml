@@ -53,7 +53,7 @@
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),programs)"></value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),settings)"></value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),13005)"></value> <!-- Power -->
-		<value condition="IsEmpty(Skin.String(Color.B1ItemF))">BBFFA600</value>			
+		<value condition="IsEmpty(Skin.String(KOverInit))">BBFFA600</value>			
 		<value>$INFO[Skin.String(Color.B1ItemF)]</value>		
 	</variable>		
 

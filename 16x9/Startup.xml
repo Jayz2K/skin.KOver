@@ -361,10 +361,10 @@
 			
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.SBBg,EE000000)</onfocus>
 
-			<onfocus condition="!IsEmpty(Skin.String(Color.SBBg)) + !IsEmpty(Skin.String(HOM.View1.Name)) + !IsEmpty(Skin.String(MUS.View1.Name)) + !IsEmpty(Skin.String(TV.View1.Name)) + !IsEmpty(Skin.String(PIC.View1.Name)) + !IsEmpty(Skin.String(PRO.View1.Name)) + !IsEmpty(Skin.String(WEA.View1.Name)) + !IsEmpty(Skin.String(DIA.View1.BBSidebar)) + !IsEmpty(Skin.String(DIA.View1.DIAPanel))">Skin.SetString(KOverInit,DONE)</onfocus>
             <onfocus condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onfocus>
-            <onfocus>ReplaceWindow(Home)</onfocus>
-            <onfocus>AlarmClock(GoHome,ReplaceWindow(Home),00:01,silent,false)</onfocus>
+            <onfocus>ReplaceWindow(home)</onfocus>
+            <onfocus>AlarmClock(GoHome,ReplaceWindow(home),00:01,silent,false)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(KOverInit,DONE)</onfocus>            
         </control>       
 
 
@@ -434,8 +434,8 @@
 			<font>Font27</font>
 			<textcolor>$VAR[InitColor2]</textcolor>
 			<label>20186</label>
-			<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>			
-		</control>									
+			<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
+		</control>											
 
 	</controls>
 
