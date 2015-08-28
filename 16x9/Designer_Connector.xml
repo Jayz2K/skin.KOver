@@ -454,7 +454,7 @@
 			<param name="DIAB3PosY" value="12" />	
 		</include>
 		
-		<include name="$PARAM[DialogName]" condition="StringCompare(Window(Home).Property(DialogPos),BOTTOM) + !StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">
+		<include name="$PARAM[DialogName]" condition="StringCompare(Window(Home).Property(DialogPos),BOTTOM) + !StringCompare(Window(Home).Property(SidebarPos),BOTTOM) | IsEmpty(Skin.String(KOverInit))">
 			<param name="DIABgPosX" value="0" />
 			<param name="DIABgPosY" value="700" />
 			<param name="DIABgSizeX" value="1920" />
