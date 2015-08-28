@@ -4,7 +4,6 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onload>
 	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
-	<onload>Skin.ToggleSetting(DebugInfo)</onload>
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
 	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
 	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>	
