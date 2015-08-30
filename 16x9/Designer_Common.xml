@@ -17,6 +17,10 @@
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
+				<texture background="true">$VAR[HomeWidgetArt]</texture>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container(9011).ListItem.Art(fanart))</visible>
+			</control>
+			<control type="image">
 				<texture>common/white.png</texture>
 				<colordiffuse>FF000000</colordiffuse>
 				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
