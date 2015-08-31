@@ -58,7 +58,7 @@
 	</variable>		
 
 	<variable name="CategoryColor2">
-		<value condition="!IsEmpty(Skin.String(Color.DIABg))">$INFO[Skin.String(Color.DIABg)]</value>
+		<value condition="!IsEmpty(Skin.String(Color.DIABg)) + !Skin.String(Color.DIABg,NONE)">$INFO[Skin.String(Color.DIABg)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),livetv)">$INFO[Skin.String(Color.B1ItemFTV)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),videos)">$INFO[Skin.String(Color.B1ItemFVDO)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),pictures)">$INFO[Skin.String(Color.B1ItemFPIC)]</value>
@@ -73,7 +73,7 @@
 	</variable>		
 
 	<variable name="CategoryColor3">
-		<value condition="!IsEmpty(Skin.String(Color.DIATxtFBg))">$INFO[Skin.String(Color.DIATxtFBg)]</value>
+		<value condition="!IsEmpty(Skin.String(Color.DIATxtFBg)) + !Skin.String(Color.DIATxtFBg,NONE)">$INFO[Skin.String(Color.DIATxtFBg)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),livetv)">$INFO[Skin.String(Color.B1ItemFTV)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),videos)">$INFO[Skin.String(Color.B1ItemFVDO)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),pictures)">$INFO[Skin.String(Color.B1ItemFPIC)]</value>
