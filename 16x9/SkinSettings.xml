@@ -50,7 +50,7 @@
 				<height>50</height>
 				<font>Font48</font>
 				<textcolor>FFAAAAAA</textcolor>
-				<label>KOver Designer - $INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)]$INFO[Container(9300).ListItem.Property(EndName)]</label>
+				<label>KOver Designer</label>
 			</control>
 			<control type="image">
 				<top>180</top>
@@ -699,6 +699,8 @@
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,IMAGE)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,common/wplayer2.png)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,VISIBLE)</onclick>							
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBLay,HORIZONTAL)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSidebar,BOTTOM)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,ENABLED)</onclick>
@@ -709,6 +711,9 @@
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBCoordY,C)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeX,3COLUMN)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeY,1ROW)</onclick>
+
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,BOTTOM)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,OVER)</onclick>								
 							
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Show,VISIBLE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX,A)</onclick>
@@ -750,6 +755,8 @@
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,IMAGE)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,common/wplayer2.png)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,VISIBLE)</onclick>								
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBLay,VERTICAL)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSidebar,LEFT)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,ENABLED)</onclick>
@@ -760,6 +767,9 @@
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBCoordY,A)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeX,1COLUMN)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeY,3ROW)</onclick>
+
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,LEFT)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,OVER)</onclick>								
 							
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Show,VISIBLE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX,A)</onclick>
@@ -832,6 +842,8 @@
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name)</onclick>					
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs)</onclick>
+							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic)</onclick>
+							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop)</onclick>							
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBLay)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSidebar)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide)</onclick>
@@ -842,6 +854,9 @@
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBCoordY)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeX)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeY)</onclick>
+
+							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel)</onclick>
+							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide)</onclick>														
 							
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Show)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX)</onclick>
@@ -973,13 +988,15 @@
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
-							<!-- Actions for MODEL 1-->
+							<!-- Actions for MODEL 1-->				
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,$INFO[Skin.String(MODEL1.WPShow)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,$INFO[Skin.String(MODEL1.WPBgs)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,$INFO[Skin.String(MODEL1.WPPic)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,$INFO[Skin.String(MODEL1.WPVDOTop)])</onclick>							
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBLay,$INFO[Skin.String(MODEL1.BBLay)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSidebar,$INFO[Skin.String(MODEL1.BBSidebar)])</onclick>
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,$INFO[Skin.String(MODEL1.BBSBHide)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,$INFO[Skin.String(MODEL1.BBSBHide)])</onclick>	
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSepY,$INFO[Skin.String(MODEL1.BBSepY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSepX,$INFO[Skin.String(MODEL1.BBSepX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBShow,$INFO[Skin.String(MODEL1.BBShow)])</onclick>
@@ -987,6 +1004,9 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBCoordY,$INFO[Skin.String(MODEL1.BBCoordY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeX,$INFO[Skin.String(MODEL1.BBSizeX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeY,$INFO[Skin.String(MODEL1.BBSizeY)])</onclick>
+							
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,$INFO[Skin.String(MODEL1.DIAPanel)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,$INFO[Skin.String(MODEL1.DIASlide)])</onclick>
 							
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Show,$INFO[Skin.String(MODEL1.B1Show)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX,$INFO[Skin.String(MODEL1.B1CoordX)])</onclick>
@@ -1012,17 +1032,16 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4CoordY,$INFO[Skin.String(MODEL1.B4CoordY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4SizeX,$INFO[Skin.String(MODEL1.B4SizeX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4SizeY,$INFO[Skin.String(MODEL1.B4SizeY)])</onclick>
-
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,$INFO[Skin.String(MODEL3.DIAPanel)])</onclick>
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,$INFO[Skin.String(MODEL3.DIASlide)])</onclick>
 							
 							<!-- Actions for MODEL 2-->
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,$INFO[Skin.String(MODEL2.WPBgs)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,$INFO[Skin.String(MODEL2.WPPic)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,$INFO[Skin.String(MODEL2.WPVDOTop)])</onclick>								
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBLay,$INFO[Skin.String(MODEL2.BBLay)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSidebar,$INFO[Skin.String(MODEL2.BBSidebar)])</onclick>
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,$INFO[Skin.String(MODEL2.BBSBHide)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,$INFO[Skin.String(MODEL2.BBSBHide)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSepY,$INFO[Skin.String(MODEL2.BBSepY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSepX,$INFO[Skin.String(MODEL2.BBSepX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBShow,$INFO[Skin.String(MODEL2.BBShow)])</onclick>
@@ -1030,6 +1049,9 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBCoordY,$INFO[Skin.String(MODEL2.BBCoordY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeX,$INFO[Skin.String(MODEL2.BBSizeX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeY,$INFO[Skin.String(MODEL2.BBSizeY)])</onclick>
+
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,$INFO[Skin.String(MODEL2.DIAPanel)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,$INFO[Skin.String(MODEL2.DIASlide)])</onclick>							
 							
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Show,$INFO[Skin.String(MODEL2.B1Show)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX,$INFO[Skin.String(MODEL2.B1CoordX)])</onclick>
@@ -1055,17 +1077,16 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4CoordY,$INFO[Skin.String(MODEL2.B4CoordY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4SizeX,$INFO[Skin.String(MODEL2.B4SizeX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4SizeY,$INFO[Skin.String(MODEL2.B4SizeY)])</onclick>
-
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,$INFO[Skin.String(MODEL3.DIAPanel)])</onclick>
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,$INFO[Skin.String(MODEL3.DIASlide)])</onclick>
 							
 							<!-- Actions for MODEL 3-->
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,$INFO[Skin.String(MODEL3.WPBgs)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,$INFO[Skin.String(MODEL3.WPPic)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,$INFO[Skin.String(MODEL3.WPVDOTop)])</onclick>								
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBLay,$INFO[Skin.String(MODEL3.BBLay)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSidebar,$INFO[Skin.String(MODEL3.BBSidebar)])</onclick>
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,$INFO[Skin.String(MODEL3.BBSBHide)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSBHide,$INFO[Skin.String(MODEL3.BBSBHide)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSepY,$INFO[Skin.String(MODEL3.BBSepY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSepX,$INFO[Skin.String(MODEL3.BBSepX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBShow,$INFO[Skin.String(MODEL3.BBShow)])</onclick>
@@ -1073,6 +1094,9 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBCoordY,$INFO[Skin.String(MODEL3.BBCoordY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeX,$INFO[Skin.String(MODEL3.BBSizeX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBSizeY,$INFO[Skin.String(MODEL3.BBSizeY)])</onclick>
+
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,$INFO[Skin.String(MODEL3.DIAPanel)])</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,$INFO[Skin.String(MODEL3.DIASlide)])</onclick>							
 							
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Show,$INFO[Skin.String(MODEL3.B1Show)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX,$INFO[Skin.String(MODEL3.B1CoordX)])</onclick>
@@ -1098,9 +1122,6 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4CoordY,$INFO[Skin.String(MODEL3.B4CoordY)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4SizeX,$INFO[Skin.String(MODEL3.B4SizeX)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4SizeY,$INFO[Skin.String(MODEL3.B4SizeY)])</onclick>
-
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,$INFO[Skin.String(MODEL3.DIAPanel)])</onclick>
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,$INFO[Skin.String(MODEL3.DIASlide)])</onclick>
 							
 							<onclick>Control.SetFocus(9100)</onclick>
 							<visible>[StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1) + !IsEmpty(Skin.String(MODEL1.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2) + !IsEmpty(Skin.String(MODEL2.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3) + !IsEmpty(Skin.String(MODEL3.TempName))]</visible>
@@ -1112,10 +1133,12 @@
 							<icon></icon>
 							<thumb></thumb>
 
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]TempName,ACTIVE)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]TempName,$INFO[Container(9400).ListItem.Property(NumTemp)])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]Name,ACTIVE)</onclick>								
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPShow,VISIBLE)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPShow,$VAR[ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPBGs,$VAR[BgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPPic,$VAR[FixedWPPicValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPVDOTop,$VAR[FixedWPVDOTopValue])</onclick>							
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBLay,$VAR[FixedLayValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSidebar,$VAR[FixedBBSidebarValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSBHide,$VAR[FixedBBSBHideValue])</onclick>
@@ -1126,6 +1149,9 @@
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBCoordY,$VAR[FixedBBCoordYValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSizeX,$VAR[FixedBBSizeXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSizeY,$VAR[FixedBBSizeYValue])</onclick>
+
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIAPanel,$VAR[FixedDIAPanelValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIASlide,$VAR[FixedDIASlideValue])</onclick>								
 							
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Show,$VAR[FixedB1ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1CoordX,$VAR[FixedB1CoordXValue])</onclick>
@@ -1151,9 +1177,7 @@
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4CoordY,$VAR[FixedB4CoordYValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4SizeX,$VAR[FixedB4SizeXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4SizeY,$VAR[FixedB4SizeYValue])</onclick>
-							
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIAPanel,$VAR[FixedDIAPanelValue])</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIASlide,$VAR[FixedDIASlideValue])</onclick>							
+													
 							<onclick>Control.SetFocus(9100)</onclick>
 							
 							<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
@@ -1167,6 +1191,8 @@
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]TempName)</onclick>					
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPShow)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPBGs)</onclick>
+							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPPic)</onclick>
+							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPVDOTop)</onclick>														
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBLay)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSidebar)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSBHide)</onclick>
@@ -1177,6 +1203,9 @@
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBCoordY)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSizeX)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSizeY)</onclick>
+
+							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIAPanel)</onclick>
+							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIASlide)</onclick>							
 							
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Show)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1CoordX)</onclick>
@@ -1203,8 +1232,6 @@
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4SizeX)</onclick>
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4SizeY)</onclick>
 							
-							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIAPanel)</onclick>
-							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIASlide)</onclick>
 							<onclick>Control.SetFocus(9100)</onclick>
 							
 							<visible>[StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1) + !IsEmpty(Skin.String(MODEL1.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2) + !IsEmpty(Skin.String(MODEL2.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3) + !IsEmpty(Skin.String(MODEL3.TempName))]</visible>
@@ -1215,9 +1242,9 @@
 							<icon></icon>
 							<thumb></thumb>
 							
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">RunScript(script.skin.helper.service,action=backup,filter=MODEL1)</onclick>					
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">RunScript(script.skin.helper.service,action=backup,filter=MODEL2)</onclick>	
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">RunScript(script.skin.helper.service,action=backup,filter=MODEL3)</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">RunScript(script.skin.helper.service, action=backup, filter=MODEL1)</onclick>					
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">RunScript(script.skin.helper.service, action=backup, filter=MODEL2)</onclick>	
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">RunScript(script.skin.helper.service, action=backup, filter=MODEL3)</onclick>
 							
 							<visible>[StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1) + !IsEmpty(Skin.String(MODEL1.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2) + !IsEmpty(Skin.String(MODEL2.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3) + !IsEmpty(Skin.String(MODEL3.TempName))]</visible>
 						</item>

@@ -13,8 +13,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(HOM.View1.DIASlide,OVER)</onfocus>
@@ -58,8 +56,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(VDO.View1.DIASlide,OVER)</onfocus>
@@ -103,8 +99,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(MUS.View1.DIASlide,OVER)</onfocus>
@@ -148,8 +142,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(TV.View1.DIASlide,OVER)</onfocus>
@@ -193,8 +185,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PIC.View1.DIASlide,OVER)</onfocus>
@@ -238,8 +228,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(PRO.View1.DIASlide,OVER)</onfocus>
@@ -283,8 +271,6 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.WPVDOTop,VISIBLE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.BBLay,HORIZONTAL)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.BBSidebar,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.BBDIAPanel,BOTTOM)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.BBDIASlide,OVER)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.BBSBHide,ENABLED)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.DIAPanel,BOTTOM)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(WEA.View1.DIASlide,OVER)</onfocus>
