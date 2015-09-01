@@ -7928,7 +7928,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Window : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -7948,7 +7948,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.WP)][/UPPERCASE]</label>
@@ -7974,7 +7974,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Sidebar : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -7994,7 +7994,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.SBBg)][/UPPERCASE]</label>
@@ -8020,7 +8020,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Sidebar : Unselected icons</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8040,7 +8040,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.SBIconNF)][/UPPERCASE]</label>
@@ -8066,7 +8066,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Sidebar : Clock</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8086,7 +8086,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.SBClock)][/UPPERCASE]</label>
@@ -8112,7 +8112,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Sidebar : Shadow</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8132,7 +8132,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.SBShadow)][/UPPERCASE]</label>
@@ -8158,7 +8158,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Blocs Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8178,7 +8178,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.BBBg)][/UPPERCASE]</label>
@@ -8204,7 +8204,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8224,7 +8224,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Bg)][/UPPERCASE]</label>
@@ -8250,7 +8250,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Unselected Items</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8270,7 +8270,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemNF)][/UPPERCASE]</label>
@@ -8296,7 +8296,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Unselected Text1 / Icon</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8316,7 +8316,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1NF)][/UPPERCASE]</label>
@@ -8342,7 +8342,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Unselected Text 2 (sub)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8362,7 +8362,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2NF)][/UPPERCASE]</label>
@@ -8388,7 +8388,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (video)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8409,7 +8409,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFVDO)][/UPPERCASE]</label>
@@ -8435,7 +8435,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (movies)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8456,7 +8456,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMOV)][/UPPERCASE]</label>
@@ -8482,7 +8482,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (shows)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8503,7 +8503,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFSHO)][/UPPERCASE]</label>
@@ -8529,7 +8529,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (music)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8550,7 +8550,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]</label>
@@ -8576,7 +8576,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (pictures)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8597,7 +8597,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFPIC)][/UPPERCASE]</label>
@@ -8623,7 +8623,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (TV)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8644,7 +8644,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFTV)][/UPPERCASE]</label>
@@ -8670,7 +8670,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Items (others)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8690,7 +8690,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemF)][/UPPERCASE]</label>
@@ -8716,7 +8716,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Icon Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8736,7 +8736,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1IconBg)][/UPPERCASE]</label>
@@ -8762,7 +8762,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Text 1 /Icon</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8782,7 +8782,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1F)][/UPPERCASE]</label>
@@ -8808,7 +8808,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>List : Selected Text 2 (sub)</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8828,7 +8828,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2F)][/UPPERCASE]</label>
@@ -8854,7 +8854,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Info bloc : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8874,7 +8874,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Bg)][/UPPERCASE]</label>
@@ -8900,7 +8900,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Info bloc : Selected Item Number</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8920,7 +8920,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt1)][/UPPERCASE]</label>
@@ -8946,7 +8946,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Info bloc : Title</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -8966,7 +8966,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt2)][/UPPERCASE]</label>
@@ -8992,7 +8992,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Info bloc : Plot and line</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9012,7 +9012,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt3)][/UPPERCASE]</label>
@@ -9038,7 +9038,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Info bloc : Other infos</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9058,7 +9058,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt4)][/UPPERCASE]</label>
@@ -9084,7 +9084,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Art bloc : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9104,7 +9104,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B3Bg)][/UPPERCASE]</label>
@@ -9130,7 +9130,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Video bloc : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9150,7 +9150,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.B4Bg)][/UPPERCASE]</label>
@@ -9176,7 +9176,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Dialogs : Background</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9196,7 +9196,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.DIABg)][/UPPERCASE]</label>
@@ -9222,7 +9222,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Dialogs : Titles</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9242,7 +9242,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATitle)][/UPPERCASE]</label>
@@ -9268,7 +9268,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Dialogs : Unselected Text</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9288,7 +9288,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtNF)][/UPPERCASE]</label>
@@ -9314,7 +9314,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Dialogs : Selected Items Bg</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9334,7 +9334,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtFBg)][/UPPERCASE]</label>
@@ -9360,7 +9360,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Dialogs : Selected Text</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9380,7 +9380,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtF)][/UPPERCASE]</label>
@@ -9406,7 +9406,7 @@
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 							<label>Dialogs : Invalid Text</label>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
 							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
@@ -9426,7 +9426,7 @@
 							<top>0</top>
 							<width>200</width>
 							<height>60</height>
-							<font>FontSmallB</font>
+							<font>Font27</font>
 							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 							<align>right</align>
 							<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
@@ -9512,6 +9512,185 @@
 			</control>
 		</control>
 	</include>
+
+	<include name="DiaColorPicker">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>712</height>
+				<width>636</width>
+
+				<control type="panel" id="3110">
+					<viewtype label="31438">icons</viewtype>
+					<left>23</left>
+					<top>24</top>
+					<width>590</width>
+					<height>671</height>
+					<orientation>vertical</orientation>
+					<onleft>noop</onleft>
+					<onright>3015</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<preloaditems>4</preloaditems>
+					<pagecontrol>60</pagecontrol>
+					<itemlayout height="61" width="59">
+						<control type="image">
+							<width>58</width>
+							<height>60</height>
+							<texture border="5">$INFO[ListItem.Icon]</texture>
+						</control>
+					</itemlayout>
+					<focusedlayout height="61" width="59">
+						<control type="image">
+							<width>58</width>
+							<height>60</height>
+							<texture border="5">$INFO[ListItem.Icon]</texture>
+							<animation effect="zoom" start="100" end="200" time="100" condition="true">Conditional</animation>
+						</control>
+						<control type="textbox">
+							<font>font13</font>
+							<left>10</left>
+							<top>10</top>
+							<right>10</right>
+							<width>90%</width>
+							<height>90%</height>
+							<align>left</align>
+							<info>ListItem.Label</info>
+							<textcolor>white</textcolor>
+							<shadowcolor>black</shadowcolor>
+						</control>
+					</focusedlayout>
+				</control>				
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<height>356</height>
+				<width>636</width>
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>$ADDON[script.skin.helper.service 32011]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>					
+
+				<!-- Color Value  -->
+				<control type="label">
+					<top>80</top>
+					<left>24</left>
+					<width>588</width>
+					<height>156</height>height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font36</font>
+					<label>$INFO[Window.Property(colorstring),, - ]$ADDON[script.skin.helper.service 32049]:$INFO[Control.Getlabel(3015)]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+				</control>			
+
+				<!-- Opacity slider -->
+				<control type="slider" id="3015">
+					<left>200</left>
+					<top>206</top>
+					<width>236</width>
+					<height>5</height>
+					<texturesliderbar colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]" border="10,0,10,0">common/white.png</texturesliderbar>
+					<textureslidernib colordiffuse="$INFO[Skin.String(Color.DIATitle)]" border="10,0,10,0">common/white.png</textureslidernib>
+					<textureslidernibfocus colordiffuse="$VAR[CategoryColor3]" border="10,0,10,0">common/white.png</textureslidernibfocus>
+					<onup>3110</onup>
+					<ondown>302</ondown>
+				</control>					
+
+				<!-- Button grouplist -->
+				<control type="grouplist" id="302">
+					<right>24</right>
+					<top>267</top>
+					<width>588</width>
+					<height>60</height>
+					<itemgap>1</itemgap>
+					<align>right</align>
+					<onleft>3015</onleft>
+					<onright>noop</onright>
+					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">3015</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+
+					<!-- Manual Edit -->
+					<control type="button" id="3010">
+						<width>auto</width>
+						<height>60</height>
+						<label>21435</label>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					</control>
+
+					<!-- Clear -->
+					<control type="button" id="3011">
+						<width>auto</width>
+						<height>60</height>
+						<label>192</label>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					</control>			
+
+					<!-- Save -->
+					<control type="button" id="3012">
+						<width>auto</width>
+						<height>60</height>
+						<label>190</label>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					</control>								
+									
+				</control>					
+			
+			</control>
+		</control>
+	</include>	
 
 	<include name="Model">
 	

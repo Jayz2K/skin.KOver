@@ -1,6 +1,7 @@
 [B]0.44.0[/B]
 - Added missing "Channel Group" button in PVR
 - Revamped color editor tool
+- Skin.Helper ColorPicker skinned
 
 [B]0.43.0[/B]
 - Fixed missing srtrings in Export function
