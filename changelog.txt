@@ -1,5 +1,10 @@
+[B]0.44.0[/B]
+- Added missing "Channel Group" button in PVR
+- Revamped color editor tool
+
 [B]0.43.0[/B]
+- Fixed missing srtrings in Export function
+- Added demo templates and colorschemes 
 
-- Fixed missing srtrings in Export function- Added demo templates and colorschemes [B]0.42.0[/B]
-
+[B]0.42.0[/B]
 -Initial public release
