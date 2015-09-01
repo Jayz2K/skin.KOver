@@ -175,7 +175,7 @@
 						<onclick>Control.SetFocus(97)</onclick>
 
 						<ondown condition="Control.IsEnabled(3)">2</ondown>	
-						<ondown condition="!Control.IsEnabled(3)">4</ondown>	
+						<ondown condition="!Control.IsEnabled(3)">28</ondown>	
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -261,7 +261,7 @@
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<onup>2</onup>
-						<ondown>4</ondown>
+						<ondown>28</ondown>
 						<onleft>50</onleft>
 						<onleft>51</onleft>
 						<onleft>52</onleft>				
@@ -315,7 +315,7 @@
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<label>$LOCALIZE[35500]:</label>
 						<onup>2</onup>
-						<ondown>4</ondown>
+						<ondown>28</ondown>
 						<onleft>50</onleft>
 						<onleft>51</onleft>
 						<onleft>52</onleft>				
@@ -344,6 +344,54 @@
 					</control>
 				</control>
 
+				<!-- Channels Group -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsEnabled(28) + !Window.IsVisible(12600)</visible>
+					<control type="button" id="28">
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<onup condition="Control.IsEnabled(3)">3</onup>
+						<onup condition="!Control.IsEnabled(3)">30</onup>
+						<ondown>4</ondown>
+						<onleft>50</onleft>
+						<onleft>51</onleft>
+						<onleft>52</onleft>				
+						<onleft>53</onleft>
+						<onleft>54</onleft>
+						<onleft>55</onleft>
+						<onleft>56</onleft>
+						<onleft>57</onleft>
+						<onleft>58</onleft>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">tv.png</texture>
+						<visible>!Control.HasFocus(28)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">tv.png</texture>
+						<visible>Control.HasFocus(28)</visible>
+					</control>
+				</control>				
+
 				<!-- Sort direction -->
 				<control type="group">
 					<height>60</height>
@@ -364,8 +412,7 @@
 						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<onup condition="Control.IsEnabled(3)">3</onup>
-						<onup condition="!Control.IsEnabled(3)">30</onup>
+						<onup>28</onup>
 						<ondown>14</ondown>
 						<onleft>50</onleft>
 						<onleft>51</onleft>
@@ -1082,7 +1129,6 @@
 				<onright>noop</onright>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
-				<defaultcontrol></defaultcontrol>
 				<visible allowhiddenfocus="true">Control.HasFocus(97)</visible>
 
 				<itemlayout width="$PARAM[width]" height="61">
