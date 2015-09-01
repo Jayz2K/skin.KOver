@@ -41,7 +41,6 @@
 		<value>33000000</value>
 	</variable>		
 
-
 	<variable name="CategoryColor">
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),livetv)">$INFO[Skin.String(Color.B1ItemFTV)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),videos)">$INFO[Skin.String(Color.B1ItemFVDO)]</value>

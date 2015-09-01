@@ -700,7 +700,7 @@
 						<top>0</top>
 						<width>636</width>
 						<height>356</height>
-						<imagepath>plugin://script.skin.helper.service/?action=getthumb&path=$INFO[Container(9010).ListItem.Title,, ]$INFO[Container(9010).ListItem.ChannelName]</imagepath>
+						<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[Container(9010).ListItem.Title,, ]$INFO[Container(9010).ListItem.ChannelName]</imagepath>
 					 	<aspectratio>scale</aspectratio>
 					 	<visible>!IsEmpty(Container(9010).ListItem.Title)</visible>
 					</control>

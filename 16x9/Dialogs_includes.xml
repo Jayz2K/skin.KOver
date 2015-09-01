@@ -7891,6 +7891,1628 @@
 		</control>
 	</include>
 
+	<include name="DiaColorTool">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>712</height>
+				<width>636</width>
+
+				<!-- Sub List -->
+				<control type="grouplist" id="300">
+					<top>24</top>
+					<left>24</left>
+					<itemgap>1</itemgap>
+					<height>671</height>
+					<usecontrolcoords>false</usecontrolcoords>
+					<ondown>Control.Move(300,1)</ondown>
+					<defaultcontrol></defaultcontrol>
+					<orientation>vertical</orientation>
+					<scrolltime>200</scrolltime>
+					
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="33">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Window : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.WP)</onclick>
+							<ondown>1</ondown>
+							<onup>noop</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.WP)][/UPPERCASE]</label>
+						</control>					
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.WP)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="1">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Sidebar : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBBg)</onclick>
+							<ondown>2</ondown>
+							<onup>33</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.SBBg)][/UPPERCASE]</label>
+						</control>					
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.SBBg)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="2">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Sidebar : Unselected icons</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBIconNF)</onclick>
+							<ondown>3</ondown>
+							<onup>1</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.SBIconNF)][/UPPERCASE]</label>
+						</control>					
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="3">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Sidebar : Clock</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBClock)</onclick>
+							<ondown>4</ondown>
+							<onup>2</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.SBClock)][/UPPERCASE]</label>
+						</control>		
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.SBClock)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="4">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Sidebar : Shadow</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBShadow)</onclick>
+							<ondown>5</ondown>
+							<onup>3</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.SBShadow)][/UPPERCASE]</label>
+						</control>		
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.SBShadow)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="5">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Blocs Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.BBBg)</onclick>
+							<ondown>6</ondown>
+							<onup>4</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.BBBg)][/UPPERCASE]</label>
+						</control>		
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="6">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Bg)</onclick>
+							<ondown>7</ondown>
+							<onup>5</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Bg)][/UPPERCASE]</label>
+						</control>		
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="7">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Unselected Items</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemNF)</onclick>
+							<ondown>8</ondown>
+							<onup>6</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemNF)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="8">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Unselected Text1 / Icon</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt1NF)</onclick>
+							<ondown>9</ondown>
+							<onup>7</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1NF)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="9">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Unselected Text 2 (sub)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt2NF)</onclick>
+							<ondown>10</ondown>
+							<onup>8</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2NF)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1Txt2NF)]">material/BackSquare.png</texture>
+						</control>
+					</control>	
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="10">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (video)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFVDO)</onclick>
+							<onfocus>SetProperty(MenuCategory,videos,home)</onfocus>
+							<ondown>11</ondown>
+							<onup>9</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFVDO)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFVDO)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="11">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (movies)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFMOV)</onclick>
+							<onfocus>SetProperty(MenuCategory,movies,home)</onfocus>
+							<ondown>12</ondown>
+							<onup>10</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMOV)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFMOV)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="12">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (shows)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFSHO)</onclick>
+							<onfocus>SetProperty(MenuCategory,tvshows,home)</onfocus>
+							<ondown>13</ondown>
+							<onup>11</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFSHO)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFSHO)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="13">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (music)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFMUS)</onclick>
+							<onfocus>SetProperty(MenuCategory,music,home)</onfocus>
+							<ondown>14</ondown>
+							<onup>12</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFMUS)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="14">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (pictures)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFPIC)</onclick>
+							<onfocus>SetProperty(MenuCategory,pictures,home)</onfocus>
+							<ondown>15</ondown>
+							<onup>13</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFPIC)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFPIC)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="15">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (TV)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFTV)</onclick>
+							<onfocus>SetProperty(MenuCategory,livetv,home)</onfocus>
+							<ondown>16</ondown>
+							<onup>14</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFTV)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFTV)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="16">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Items (others)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemF)</onclick>
+							<ondown>17</ondown>
+							<onup>15</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemF)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1ItemF)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="17">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Icon Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1IconBg)</onclick>
+							<ondown>18</ondown>
+							<onup>16</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1IconBg)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="18">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Text 1 /Icon</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt1F)</onclick>
+							<ondown>19</ondown>
+							<onup>17</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1F)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="19">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>List : Selected Text 2 (sub)</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt2F)</onclick>
+							<ondown>20</ondown>
+							<onup>18</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2F)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B1Txt2F)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="20">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Info bloc : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Bg)</onclick>
+							<ondown>21</ondown>
+							<onup>19</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Bg)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="21">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Info bloc : Selected Item Number</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt1)</onclick>
+							<ondown>22</ondown>
+							<onup>20</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt1)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Txt1)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="22">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Info bloc : Title</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt2)</onclick>
+							<ondown>23</ondown>
+							<onup>21</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt2)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Txt2)]">material/BackSquare.png</texture>
+						</control>
+					</control>	
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="23">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Info bloc : Plot and line</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt3)</onclick>
+							<ondown>24</ondown>
+							<onup>22</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt3)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="24">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Info bloc : Other infos</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt4)</onclick>
+							<ondown>25</ondown>
+							<onup>23</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt4)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Txt4)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="25">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Art bloc : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B3Bg)</onclick>
+							<ondown>26</ondown>
+							<onup>24</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B3Bg)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B3Bg)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="26">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Video bloc : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4Bg)</onclick>
+							<ondown>27</ondown>
+							<onup>25</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.B4Bg)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="27">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Dialogs : Background</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIABg)</onclick>
+							<ondown>28</ondown>
+							<onup>26</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.DIABg)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="28">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Dialogs : Titles</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATitle)</onclick>
+							<ondown>29</ondown>
+							<onup>27</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATitle)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATitle)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="29">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Dialogs : Unselected Text</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtNF)</onclick>
+							<ondown>30</ondown>
+							<onup>28</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtNF)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="30">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Dialogs : Selected Items Bg</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtFBg)</onclick>
+							<ondown>31</ondown>
+							<onup>29</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtFBg)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtFBg)]">material/BackSquare.png</texture>
+						</control>
+					</control>
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="31">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Dialogs : Selected Text</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtF)</onclick>
+							<ondown>32</ondown>
+							<onup>30</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtF)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+					<control type="group">
+						<width>588</width>
+						<height>60</height>
+						<control type="button" id="32">
+							<left>0</left>
+							<top>0</top>
+							<width>588</width>
+							<height>60</height>
+							<colordiffuse>FF111111</colordiffuse>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<label>Dialogs : Invalid Text</label>
+							<font>FontSmallB</font>
+							<textwidth>300</textwidth>
+							<textoffsetx>60</textoffsetx>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+							<align>left</align>
+							<aligny>center</aligny>
+							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIAInvalid)</onclick>
+							<ondown>50</ondown>
+							<onup>31</onup>
+							<onleft>Back</onleft>
+							<onright>301</onright>
+						</control>
+						<control type="label">
+							<right>24</right>
+							<top>0</top>
+							<width>200</width>
+							<height>60</height>
+							<font>FontSmallB</font>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<align>right</align>
+							<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
+						</control>	
+						<control type="image">
+							<top>10</top>
+							<left>10</left>
+							<width>40</width>
+							<height>40</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIAInvalid)]">material/BackSquare.png</texture>
+						</control>
+					</control>		
+				</control>				
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<height>356</height>
+				<width>636</width>
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>Color Editor</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>	
+
+				<!-- Button grouplist -->
+				<control type="grouplist" id="302">
+					<right>24</right>
+					<top>267</top>
+					<width>588</width>
+					<height>60</height>
+					<itemgap>1</itemgap>
+					<align>right</align>
+					<onleft>300</onleft>
+					<onright>noop</onright>
+					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">300</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+
+					<!-- OK Button -->
+					<control type="button" id="301">
+						<width>auto</width>
+						<height>60</height>
+						<label>Export Color Scheme</label>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+						<onleft>300</onleft>
+						<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">300</onup>
+						<onclick>RunScript(script.skin.helper.service, action=backup, filter=Color)</onclick>
+						<onclick>ActivateWindow(1100,return)</onclick>
+					</control>
+									
+				</control>							
+			
+			</control>
+		</control>
+	</include>
+
 	<include name="Model">
 	
 		<control type="group">

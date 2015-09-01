@@ -3083,6 +3083,494 @@
 			</control>
 		</control>
 
+		<!-- Elements Preview -->			
+		<control type="group">
+			<visible>!StringCompare(Container(9100).ListItem.Property(ViewName),HomeMenu) + Window.IsVisible(1100)</visible>
+				
+			<control type="group">
+				<top>324</top>
+				<left>48</left>
+				<animation effect="zoom" start="100" end="70" time="100" center="48,324" condition="true">Conditional</animation>
+				<control type="image">
+					<top>0</top>
+					<left>0</left>
+					<width>1920</width>
+					<height>1047</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="FFFFFFFF">common/blue.jpg</texture>
+				</control>
+				<!-- Blocs Background -->
+				<control type="group">
+					<left>0</left>
+					<top>580</top>
+					<width>1920</width>
+					<height>380</height>
+					<control type="image">
+						<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+					</control>
+					<!-- Bloc 1-->
+					<control type="group">
+						<top>12</top>
+						<width>636</width>
+						<height>356</height>
+						<control type="image">
+							<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
+						</control>
+						<control type="group">
+							<top>0</top>
+							<control type="image">
+								<height>117</height>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>	
+							<control type="image">
+								<height>117</height>
+								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<height>117</height>
+								<width>118</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<height>80</height>
+								<width>80</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/Item1.png</texture>
+							</control>
+							<control type="label">
+								<top>20</top>
+								<left>142</left>
+								<width>300</width>
+								<height>50</height>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+								<label>List : Selected item 1</label>
+							</control>
+							<control type="label">
+								<top>50</top>
+								<left>142</left>
+								<width>300</width>
+								<height>50</height>
+								<aligny>center</aligny>
+								<font>FontSmallB</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+								<label>Sub info</label>
+							</control>
+						</control>
+						<control type="group">
+							<top>119</top>
+							<control type="image">
+								<height>117</height>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<height>80</height>
+								<width>80</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/Item2.png</texture>
+							</control>
+							<control type="label">
+								<top>20</top>
+								<left>142</left>
+								<width>300</width>
+								<height>50</height>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+								<label>List : Unselected item 2</label>
+							</control>
+							<control type="label">
+								<top>50</top>
+								<left>142</left>
+								<width>300</width>
+								<height>50</height>
+								<aligny>center</aligny>
+								<font>FontSmallB</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>Sub info</label>
+							</control>
+						</control>
+						<control type="group">
+							<top>238</top>
+							<control type="image">
+								<height>117</height>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<height>80</height>
+								<width>80</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/Item3.png</texture>
+							</control>
+							<control type="label">
+								<top>20</top>
+								<left>142</left>
+								<width>300</width>
+								<height>50</height>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+								<label>List : Unselected item 3</label>
+							</control>
+							<control type="label">
+								<top>50</top>
+								<left>142</left>
+								<width>300</width>
+								<height>50</height>
+								<aligny>center</aligny>
+								<font>FontSmallB</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>Sub info</label>
+							</control>
+						</control>
+					</control>
+					<!-- Bloc 2-->
+					<control type="group">
+						<top>12</top>
+						<left>648</left>
+						<width>636</width>
+						<height>356</height>
+						<control type="image">
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
+						</control>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font72</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$NUMBER[1]</label>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<posy>96</posy>
+							<height>1</height>
+							<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]" border="24,0,24,0">common/white.png</texture>
+							<bordertexture colordiffuse="00FFFFFF" border="24,0,24,0">common/white.png</bordertexture>
+							<bordersize>24,0,24,0</bordersize>
+							<animation effect="fade" start="100" end="50" time="0" condition="true">Conditional</animation>
+						</control>
+						<control type="label">
+							<left>24</left>
+							<top>96</top>
+							<width>100</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+							<font>Font36</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$NUMBER[3]</label>
+						</control>
+						<control type="group">
+							<left>148</left>
+							<control type="label">
+								<top>10</top>
+								<height>60</height>
+								<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
+								<font>Font36B</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label>Info Bloc : Title</label>
+							</control>
+							<control type="label">
+								<top>43</top>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label>Info Bloc : Sub info</label>
+							</control>				
+							<control type="label">
+								<top>120</top>
+								<width>400</width>
+								<height>200</height>
+								<aligny>top</aligny>
+								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+								<font>Font25</font>
+								<label>Text 3 - Informations plot [CR]about the selected item in bloc 1</label>
+							</control>
+						</control>
+						<control type="group">
+							<control type="image">
+								<description>Rating value</description>
+								<left>148</left>
+								<posy>310</posy>
+								<width>100</width>
+								<height>20</height>
+								<aspectratio align="left">keep</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemF)]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
+							</control>
+							<control type="label">
+								<top>300</top>
+								<right>48</right>
+								<width>300</width>
+								<height>25</height>
+								<align>right</align>
+								<aligny>top</aligny>
+								<font>Font25</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label>Ex : Duration</label>
+							</control>				
+						</control>
+					</control>
+				</control>
+				<!-- Bloc 3 -->
+				<control type="group">
+					<left>1284</left>
+					<top>592</top>
+					<width>636</width>
+					<height>356</height>
+					<control type="image">
+						<align>left</align>
+						<aligny>top</aligny>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" colordiffuse="$INFO[Skin.String(Color.B3Bg)]">common/white.png</texture>
+					</control>
+					<control type="image">
+						<align>left</align>
+						<aligny>top</aligny>
+						<aspectratio>scale</aspectratio>
+						<texture background="true" colordiffuse="FFFFFFFF">common/DummyPic.png</texture>
+					</control>
+					<control type="image">
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="55FFFFFF">material/play.png</texture>
+						<animation effect="zoom" start="100" end="40" time="0" center="auto" condition="true">Conditional</animation>
+					</control>
+					<control type="group">
+						<control type="image">
+							<left>0</left>
+							<top>300</top>
+							<height>56</height>
+							<aspectratio aligny="bottom">stretch</aspectratio>
+							<texture colordiffuse="AA000000">common/white.png</texture>
+						</control>
+						<control type="label">
+							<left>12</left>
+							<top>300</top>
+							<width>589</width>
+							<height>56</height>
+							<align>left</align>
+							<textcolor>FFFFFFFF</textcolor>
+							<font>FontSmall</font>
+							<label>Selected Item Tag</label>
+						</control>
+					</control>
+				</control>
+				<!-- Sidebar -->
+				<control type="group">	
+					<top>960</top>
+					<control type="image">
+						<left>-15</left>
+						<top>-15</top>
+						<width>1950</width>
+						<height>150</height>
+						<aspectratio>stretch</aspectratio>
+						<texture border="15,15,15,15" colordiffuse="$INFO[Skin.String(Color.SBShadow)]">common/Shadow1.png</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1920</width>
+						<height>120</height>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBBg)]">common/white.png</texture>
+					</control>
+					<control type="label">
+						<top>0</top>
+						<right>304</right>
+						<width>80</width>
+						<height>110</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Font72B</font>
+						<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+						<label>$INFO[System.Time(hh)]</label>
+					</control>
+					<control type="label">
+						<top>0</top>
+						<right>224</right>
+						<width>80</width>
+						<height>110</height>
+						<align>right</align>
+						<aligny>center</aligny>
+						<font>Font72</font>
+						<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+						<label>$INFO[System.Time(mm)]</label>
+					</control>
+					<control type="image">
+						<left>20</left>
+						<top>20</top>
+						<width>80</width>
+						<height>80</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFVDO)]">common/white.png</texture>
+						<visible>Control.HasFocus(10)</visible>
+					</control>
+					<control type="image">
+						<left>35</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/videocam.png</texture>
+						<visible>Control.HasFocus(10)</visible>
+					</control>
+					<control type="image">
+						<left>35</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/videocam.png</texture>
+						<visible>!Control.HasFocus(10)</visible>
+					</control>
+					<control type="image">
+						<left>102</left>
+						<top>20</top>
+						<width>80</width>
+						<height>80</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFMOV)]">common/white.png</texture>
+						<visible>Control.HasFocus(11)</visible>
+					</control>
+					<control type="image">
+						<left>117</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/movie.png</texture>
+						<visible>Control.HasFocus(11)</visible>
+					</control>
+					<control type="image">
+						<left>117</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/movie.png</texture>
+						<visible>!Control.HasFocus(11)</visible>
+					</control>
+					<control type="image">
+						<left>184</left>
+						<top>20</top>
+						<width>80</width>
+						<height>80</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFSHO)]">common/white.png</texture>
+						<visible>Control.HasFocus(12)</visible>
+					</control>
+					<control type="image">
+						<left>199</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/tvshows.png</texture>
+						<visible>Control.HasFocus(12)</visible>
+					</control>
+					<control type="image">
+						<left>199</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/tvshows.png</texture>
+						<visible>!Control.HasFocus(12)</visible>
+					</control>
+					<control type="image">
+						<left>266</left>
+						<top>20</top>
+						<width>80</width>
+						<height>80</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFMUS)]">common/white.png</texture>
+						<visible>Control.HasFocus(13)</visible>
+						</control>
+					<control type="image">
+						<left>281</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/music.png</texture>
+						<visible>Control.HasFocus(13)</visible>
+					</control>
+					<control type="image">
+						<left>281</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/music.png</texture>
+						<visible>!Control.HasFocus(13)</visible>
+					</control>
+					<control type="image">
+						<left>348</left>
+						<top>20</top>
+						<width>80</width>
+						<height>80</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFPIC)]">common/white.png</texture>
+						<visible>Control.HasFocus(14)</visible>
+						</control>
+					<control type="image">
+						<left>363</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/pictures.png</texture>
+						<visible>Control.HasFocus(14)</visible>
+					</control>
+					<control type="image">
+						<left>363</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/pictures.png</texture>
+						<visible>!Control.HasFocus(14)</visible>
+					</control>
+					<control type="image">
+						<left>430</left>
+						<top>20</top>
+						<width>80</width>
+						<height>80</height>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemFTV)]">common/white.png</texture>
+						<visible>Control.HasFocus(15)</visible>
+					</control>
+					<control type="image">
+						<left>445</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/tv.png</texture>
+						<visible>Control.HasFocus(15)</visible>
+					</control>
+					<control type="image">
+						<left>445</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">material/tv.png</texture>
+						<visible>!Control.HasFocus(15)</visible>
+					</control>
+				</control>
+			</control>
+		</control>		
+
 		<!-- Dialogs Background -->
 		<include name="DialogBgDef">
 			<param name="CompPrefix" value="DIA.View1" />
