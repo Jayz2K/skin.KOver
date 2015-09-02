@@ -348,7 +348,7 @@
 				<control type="group">
 					<height>60</height>
 					<width>$PARAM[width]</width>
-					<visible>Control.IsEnabled(28) + !Window.IsVisible(12600)</visible>
+					<visible>Control.IsEnabled(28) + !Window.IsVisible(12600) + [Window.IsVisible(tvchannels) | Window.IsVisible(tvguide)]</visible>
 					<control type="button" id="28">
 						<width>$PARAM[width]</width>
 						<height>60</height>
