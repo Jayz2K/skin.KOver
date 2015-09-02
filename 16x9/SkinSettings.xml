@@ -50,7 +50,7 @@
 				<height>50</height>
 				<font>Font48</font>
 				<textcolor>FFAAAAAA</textcolor>
-				<label>KOver Designer</label>
+				<label>31000</label>
 			</control>
 			<control type="image">
 				<top>180</top>
@@ -90,7 +90,7 @@
 				  <colordiffuse>FF333333</colordiffuse>
 				  <texturefocus colordiffuse="FFFFFFFF">material/skinshortcuts.png</texturefocus>
 				  <texturenofocus colordiffuse="FF333333">material/skinshortcuts.png</texturenofocus>
-				  <label>Home menu</label>
+				  <label>31001</label>
 				  <font>Font27R</font>
 				  <textcolor>00FFFFFF</textcolor>
 				  <focusedcolor>FFFFFFFF</focusedcolor>
@@ -117,7 +117,7 @@
 				  <colordiffuse>FF333333</colordiffuse>
 				  <texturefocus colordiffuse="FFFFFFFF">material/Palette.png</texturefocus>
 				  <texturenofocus colordiffuse="FF333333">material/Palette.png</texturenofocus>
-				  <label>Colors</label>
+				  <label>31002</label>
 				  <font>Font27R</font>
 				  <textcolor>00FFFFFF</textcolor>
 				  <focusedcolor>FFFFFFFF</focusedcolor>
@@ -143,7 +143,7 @@
 				  <colordiffuse>FF333333</colordiffuse>
 				  <texturefocus colordiffuse="FFFFFFFF">material/import.png</texturefocus>
 				  <texturenofocus colordiffuse="FF333333">material/import.png</texturenofocus>
-				  <label>Import</label>
+				  <label>31003</label>
 				  <font>Font27R</font>
 				  <textcolor>00FFFFFF</textcolor>
 				  <focusedcolor>FFFFFFFF</focusedcolor>
@@ -237,8 +237,8 @@
 				
 				<content>
 					<item id="1">
-						<label>$LOCALIZE[31021]</label>
-						<label2>Customize</label2>
+						<label>$LOCALIZE[31051]</label>
+						<label2>31004</label2>
 						<onclick>SetProperty(ViewName,HomeMenu)</onclick>
 						<onclick>9100</onclick>
 						<icon></icon>
@@ -293,7 +293,7 @@
 						<property name="ViewName">PRO</property>
 					</item>
 					<item id="7">
-						<label>Dialogs</label>
+						<label>31005</label>
 						<label2>$LOCALIZE[582]</label2>
 						<icon></icon>
 						<thumb></thumb>
@@ -538,8 +538,8 @@
 					
 					<content>
 						<item id="1">
-							<label>Wallpaper</label>
-							<label2>Wallpaper</label2>
+							<label>31006</label>
+							<label2>31006</label2>
 							<icon></icon>
 							<thumb></thumb>
 							<onclick>noop</onclick>
@@ -547,8 +547,8 @@
 							<property name="SubName">WP</property>
 						</item>
 						<item id="2">
-							<label>General Setup</label>
-							<label2>Blocs background</label2>
+							<label>31007</label>
+							<label2>31008</label2>
 							<icon></icon>
 							<thumb></thumb>
 							<onclick>noop</onclick>
@@ -556,8 +556,8 @@
 							<property name="SubName">BB</property>
 						</item>
 						<item id="3">
-							<label>Bloc 1 : List</label>
-							<label2>Bloc 1</label2>
+							<label>31009</label>
+							<label2>31010</label2>
 							<icon></icon>
 							<thumb></thumb>
 							<onclick>noop</onclick>
@@ -565,8 +565,8 @@
 							<property name="SubName">B1</property>
 						</item>
 						<item id="4">
-							<label>Bloc 2 : Infos</label>
-							<label2>Bloc 2</label2>
+							<label>31011</label>
+							<label2>31012</label2>
 							<icon></icon>
 							<thumb></thumb>
 							<onclick>noop</onclick>
@@ -574,8 +574,8 @@
 							<property name="SubName">B2</property>
 						</item>
 						<item id="5">
-							<label>Bloc 3 : Art</label>
-							<label2>Bloc 3</label2>
+							<label>31013</label>
+							<label2>31014</label2>
 							<icon></icon>
 							<thumb></thumb>
 							<onclick>noop</onclick>
@@ -583,8 +583,8 @@
 							<property name="SubName">B3</property>
 						</item>
 						<item id="6">
-							<label>Bloc 4 : Video Preview</label>
-							<label2>Bloc 4</label2>
+							<label>31015</label>
+							<label2>31016</label2>
 							<icon></icon>
 							<thumb></thumb>
 							<onclick>noop</onclick>
@@ -682,7 +682,7 @@
 					
 					<content>
 						<item id="1">
-							<label>Rename View</label>
+							<label>31017</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -692,7 +692,7 @@
 							<property name="NumTemp"></property>
 						</item>
 						<item id="2">
-							<label>Apply Default Horizontal</label>
+							<label>31018</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -748,7 +748,7 @@
 							<property name="NumTemp"></property>
 						</item>
 						<item id="3">
-							<label>Apply Default Vertical</label>
+							<label>31019</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -805,7 +805,7 @@
 							<property name="NumTemp"></property>
 						</item>
 						<item id="4">
-							<label>My Template 1</label>
+							<label>31020</label>
 							<label2>$VAR[EmptyTemp1]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -815,7 +815,7 @@
 							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),HOM)</visible>
 						</item>
 						<item id="5">
-							<label>My Template 2</label>
+							<label>31021</label>
 							<label2>$VAR[EmptyTemp2]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -825,7 +825,7 @@
 							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),HOM)</visible>
 						</item>
 						<item id="6">
-							<label>My Template 3</label>
+							<label>31022</label>
 							<label2>$VAR[EmptyTemp3]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -835,7 +835,7 @@
 							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),HOM)</visible>
 						</item>
 						<item id="7">
-							<label>Delete View</label>
+							<label>31023</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -984,7 +984,7 @@
 					
 					<content>
 						<item id="1">
-							<label>Apply Template To View</label>
+							<label>31024</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1035,7 +1035,7 @@
 							
 							<!-- Actions for MODEL 2-->
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,$INFO[Skin.String(MODEL2.WPShow)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,$INFO[Skin.String(MODEL2.WPBgs)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,$INFO[Skin.String(MODEL2.WPPic)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,$INFO[Skin.String(MODEL2.WPVDOTop)])</onclick>								
@@ -1080,7 +1080,7 @@
 							
 							<!-- Actions for MODEL 3-->
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,$INFO[Skin.String(MODEL3.WPShow)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,$INFO[Skin.String(MODEL3.WPBgs)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,$INFO[Skin.String(MODEL3.WPPic)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPVDOTop,$INFO[Skin.String(MODEL3.WPVDOTop)])</onclick>								
@@ -1128,7 +1128,7 @@
 						
 						</item>
 						<item id="2">
-							<label>Copy  View To Template</label>
+							<label>31025</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1183,7 +1183,7 @@
 							<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
 						</item>
 						<item id="3">
-							<label>Delete Template</label>
+							<label>31026</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1237,7 +1237,7 @@
 							<visible>[StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1) + !IsEmpty(Skin.String(MODEL1.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2) + !IsEmpty(Skin.String(MODEL2.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3) + !IsEmpty(Skin.String(MODEL3.TempName))]</visible>
 						</item>
 						<item id="4">
-							<label>Export Template</label>
+							<label>31027</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1340,7 +1340,7 @@
 					
 					<content>
 						<item id="1">
-							<label>Layout Orientation</label>
+							<label>31028</label>
 							<label2>$VAR[FixedLayValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1429,7 +1429,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="2">
-							<label>Sidebar Position</label>
+							<label>31029</label>
 							<label2>$VAR[FixedBBSidebarValue]</label2>
 							<icon>$VAR[SidebarIcons]</icon>
 							<thumb></thumb>
@@ -1485,7 +1485,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="3">
-							<label>Dialog panel position</label>
+							<label>31030</label>
 							<label2>$VAR[FixedDIAPanelValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1538,7 +1538,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>						
 						<item id="4">
-							<label>Sidebar Autohide</label>
+							<label>31031</label>
 							<label2>$VAR[FixedBBSBHideValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1588,7 +1588,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>						
 						<item id="5">
-							<label>Dialog slide type</label>
+							<label>31032</label>
 							<label2>$VAR[FixedDIASlideValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1638,7 +1638,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>						
 						<item id="6">
-							<label>Horizontal Separator</label>
+							<label>31033</label>
 							<label2>$VAR[FixedBBSepYValue]</label2>
 							<icon>$VAR[SepYIcons]</icon>
 							<thumb></thumb>
@@ -1692,7 +1692,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="7">
-							<label>Vertical Separator</label>
+							<label>31034</label>
 							<label2>$VAR[FixedBBSepXValue]</label2>
 							<icon>$VAR[SepXIcons]</icon>
 							<thumb></thumb>
@@ -1746,7 +1746,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="8">
-							<label>$INFO[Container(9200).ListItem.Label2,, visibility]</label>
+							<label>$INFO[Container(9200).ListItem.Label2,, $LOCALIZE[31035]]</label>
 							<label2>$VAR[ShowValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -1795,7 +1795,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="9">
-							<label>Horizontal Position (column)</label>
+							<label>31036</label>
 							<label2>$VAR[CoordXValue]</label2>
 							<icon>$VAR[CoordXIcons]</icon>
 							<thumb></thumb>
@@ -1937,7 +1937,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="10">
-							<label>Vertical Position (row)</label>
+							<label>31037</label>
 							<label2>$VAR[CoordYValue]</label2>
 							<icon>$VAR[CoordYIcons]</icon>
 							<thumb></thumb>
@@ -2079,7 +2079,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="11">
-							<label>Width</label>
+							<label>31038</label>
 							<label2>$VAR[SizeXValue]</label2>
 							<icon>$VAR[SizeXIcons]</icon>
 							<thumb></thumb>
@@ -2174,7 +2174,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="12">
-							<label>Height</label>
+							<label>31039</label>
 							<label2>$VAR[SizeYValue]</label2>
 							<icon>$VAR[SizeYIcons]</icon>
 							<thumb></thumb>
@@ -2266,7 +2266,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="13">
-							<label>Background Style</label>
+							<label>31040</label>
 							<label2>$VAR[BgsValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -2316,7 +2316,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="14">
-							<label>List Type</label>
+							<label>31041</label>
 							<label2>$VAR[FixedB1TypValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -2369,7 +2369,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="15">
-							<label>Background image</label>
+							<label>31042</label>
 							<label2 fallback="EMPTY">$VAR[FixedWPPicValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -2417,7 +2417,7 @@
 							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
 						</item>
 						<item id="16">
-							<label>Video on top</label>
+							<label>31052</label>
 							<label2>$VAR[FixedWPVDOTopValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -3146,7 +3146,7 @@
 								<aligny>center</aligny>
 								<font>Font27</font>
 								<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-								<label>List : Selected item 1</label>
+								<label>31043</label>
 							</control>
 							<control type="label">
 								<top>50</top>
@@ -3156,7 +3156,7 @@
 								<aligny>center</aligny>
 								<font>FontSmallB</font>
 								<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-								<label>Sub info</label>
+								<label>31044</label>
 							</control>
 						</control>
 						<control type="group">
@@ -3180,7 +3180,7 @@
 								<aligny>center</aligny>
 								<font>Font27</font>
 								<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-								<label>List : Unselected item 2</label>
+								<label>31045</label>
 							</control>
 							<control type="label">
 								<top>50</top>
@@ -3190,7 +3190,7 @@
 								<aligny>center</aligny>
 								<font>FontSmallB</font>
 								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-								<label>Sub info</label>
+								<label>31044</label>
 							</control>
 						</control>
 						<control type="group">
@@ -3214,7 +3214,7 @@
 								<aligny>center</aligny>
 								<font>Font27</font>
 								<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-								<label>List : Unselected item 3</label>
+								<label>31046</label>
 							</control>
 							<control type="label">
 								<top>50</top>
@@ -3224,7 +3224,7 @@
 								<aligny>center</aligny>
 								<font>FontSmallB</font>
 								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-								<label>Sub info</label>
+								<label>31044</label>
 							</control>
 						</control>
 					</control>
@@ -3286,7 +3286,7 @@
 								<aligny>center</aligny>
 								<font>FontSmallR</font>
 								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
-								<label>Info Bloc : Sub info</label>
+								<label>31047</label>
 							</control>				
 							<control type="label">
 								<top>120</top>
@@ -3295,7 +3295,7 @@
 								<aligny>top</aligny>
 								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
 								<font>Font25</font>
-								<label>Text 3 - Informations plot [CR]about the selected item in bloc 1</label>
+								<label>31048</label>
 							</control>
 						</control>
 						<control type="group">
@@ -3317,7 +3317,7 @@
 								<aligny>top</aligny>
 								<font>Font25</font>
 								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
-								<label>Ex : Duration</label>
+								<label>31049</label>
 							</control>				
 						</control>
 					</control>
@@ -3361,7 +3361,7 @@
 							<align>left</align>
 							<textcolor>FFFFFFFF</textcolor>
 							<font>FontSmall</font>
-							<label>Selected Item Tag</label>
+							<label>31050</label>
 						</control>
 					</control>
 				</control>

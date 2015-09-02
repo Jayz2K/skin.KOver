@@ -9503,7 +9503,7 @@
 						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 						<onleft>300</onleft>
 						<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">300</onup>
-						<onclick>RunScript(script.skin.helper.service, action=backup, filter=Color)</onclick>
+						<onclick>RunScript(script.skin.helper.service, action=backup, filter=Color|Test)</onclick>
 						<onclick>ActivateWindow(1100,return)</onclick>
 					</control>
 									

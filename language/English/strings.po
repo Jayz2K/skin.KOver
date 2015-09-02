@@ -1,7 +1,7 @@
 # XBMC Media Center language file
-# Addon Name: Conq
-# Addon id: skin.conq
-# Addon Provider: Hitcher
+# Addon Name: KOver
+# Addon id: skin.KOver
+# Addon Provider: Jayz2K
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Main\n"
@@ -19,229 +19,213 @@ msgstr ""
 #Misc labels
 
 msgctxt "#31000"
-msgid "Item"
+msgid "KOver Designer"
 msgstr ""
 
 msgctxt "#31001"
-msgid "Items"
+msgid "Home Menu"
 msgstr ""
 
 msgctxt "#31002"
-msgid "Tag"
+msgid "Colors"
 msgstr ""
 
 msgctxt "#31003"
-msgid "Look"
+msgid "Import"
 msgstr ""
 
 msgctxt "#31004"
-msgid "Layout"
+msgid "Customize"
 msgstr ""
 
 msgctxt "#31005"
-msgid "Scrollbars"
+msgid "Dialogs"
 msgstr ""
 
 msgctxt "#31006"
-msgid "Overlays"
+msgid "Wallpaper"
 msgstr ""
 
 msgctxt "#31007"
-msgid "System music files"
+msgid "General Setup"
 msgstr ""
 
 msgctxt "#31008"
-msgid "Current selected"
+msgid "Blocs background"
 msgstr ""
 
 msgctxt "#31009"
-msgid "Open playlist"
+msgid "Bloc 1 : List"
 msgstr ""
 
 msgctxt "#31010"
-msgid "Save playlist"
+msgid "Bloc 1"
 msgstr ""
 
 msgctxt "#31011"
-msgid "Close playlist"
+msgid "Bloc 2 : Infos"
 msgstr ""
 
 msgctxt "#31012"
-msgid "Current playlist"
+msgid "Bloc 2"
 msgstr ""
 
 msgctxt "#31013"
-msgid "Muted"
+msgid "Bloc 3 : Art"
 msgstr ""
 
 msgctxt "#31014"
-msgid "Show visualisation & Artist Slideshow"
+msgid "Bloc 3"
 msgstr ""
 
 msgctxt "#31015"
-msgid "Live TV"
+msgid "Bloc 4 : Video Preview"
 msgstr ""
 
 msgctxt "#31016"
-msgid "Settings level"
+msgid "Bloc 4"
 msgstr ""
 
 msgctxt "#31017"
-msgid "Voted"
+msgid "Rename View"
 msgstr ""
 
 msgctxt "#31018"
-msgid "Increase"
+msgid "Apply Default Horizontal"
 msgstr ""
 
 msgctxt "#31019"
-msgid "Decrease"
+msgid "Apply Default Vertical"
 msgstr ""
 
 msgctxt "#31020"
-msgid "Background"
+msgid "My Template 1"
 msgstr ""
 
 msgctxt "#31021"
-msgid "Home"
+msgid "My Template 2"
+msgstr ""
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr ""
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr ""
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr ""
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr ""
+
+msgctxt "#31026"
+msgid "Delete Template"
 msgstr ""
 
 msgctxt "#31027"
-msgid "Show background video"
+msgid "Export Template"
 msgstr ""
 
 msgctxt "#31028"
-msgid "Show background visualisation"
+msgid "Layout Orientation"
+msgstr ""
+
+msgctxt "#31029"
+msgid "Sidebar Position"
 msgstr ""
 
 msgctxt "#31030"
-msgid "Enable curves"
+msgid "Dialog panel position"
 msgstr ""
 
 msgctxt "#31031"
-msgid "Recent movies"
+msgid "Sidebar Autohide"
 msgstr ""
 
 msgctxt "#31032"
-msgid "Recommended movies"
+msgid "Dialog slide type"
+msgstr ""
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
 msgstr ""
 
 msgctxt "#31034"
-msgid "Enable Artist Slideshow"
+msgid "Vertical Separator"
 msgstr ""
 
 msgctxt "#31035"
-msgid "Recent episodes"
+msgid "visibility"
 msgstr ""
 
 msgctxt "#31036"
-msgid "Recommended episodes"
+msgid "Horizontal Position (column)"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
 msgstr ""
 
 msgctxt "#31038"
-msgid "Recent albums"
+msgid "Width"
 msgstr ""
 
 msgctxt "#31039"
-msgid "Recommended albums"
+msgid "Height"
 msgstr ""
 
 msgctxt "#31040"
-msgid "Hide Conq logo"
+msgid "Background Style"
 msgstr ""
 
 msgctxt "#31041"
-msgid "Debug grid"
+msgid "List Type"
 msgstr ""
 
 msgctxt "#31042"
-msgid "Debug labels"
+msgid "Background image"
 msgstr ""
 
 msgctxt "#31043"
-msgid "Extra art"
+msgid "List : Selected item 1"
 msgstr ""
 
 msgctxt "#31044"
-msgid "Local subtitle found!"
+msgid "Sub info"
 msgstr ""
 
 msgctxt "#31045"
-msgid "Supplied by"
+msgid "List : Unselected item 2"
 msgstr ""
 
 msgctxt "#31046"
-msgid "Currently"
+msgid "List : Unselected item 3"
 msgstr ""
 
 msgctxt "#31047"
-msgid "Visualisation Presets"
+msgid "Info Bloc : Sub info"
 msgstr ""
 
 msgctxt "#31048"
-msgid "Playlist Options"
+msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
 msgstr ""
 
 msgctxt "#31049"
-msgid "Customise Home Menu"
+msgid "Ex : Duration"
+msgstr ""
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
 msgstr ""
 
 msgctxt "#31051"
-msgid "Settings can be accessed from the Shutdown menu or by rebooting XBMC!"
+msgid "Home"
 msgstr ""
 
 msgctxt "#31052"
-msgid "Rated"
-msgstr ""
-
-msgctxt "#31053"
-msgid "Hide submenu headings"
-msgstr ""
-
-msgctxt "#31054"
-msgid "Random movies"
-msgstr ""
-
-msgctxt "#31055"
-msgid "Random episodes"
-msgstr ""
-
-msgctxt "#31056"
-msgid "Random albums"
-msgstr ""
-
-msgctxt "#31057"
-msgid "Kiosk mode"
-msgstr ""
-
-msgctxt "#31058"
-msgid "Reset all Conq settings"
-msgstr ""
-
-msgctxt "#31059"
-msgid "Memory Used:"
-msgstr ""
-
-msgctxt "#31060"
-msgid "Enable Headings"
-msgstr ""
-
-msgctxt "#31061"
-msgid "Enable Horizontal home layout"
-msgstr ""
-
-msgctxt "#31063"
-msgid "Addons"
-msgstr ""
-
-msgctxt "#31064"
-msgid "Custom background image"
-msgstr ""
-
-msgctxt "#31065"
-msgid "Hide 'Mouse' warning"
-msgstr ""
-
-msgctxt "#31066"
-msgid "Cinema Exp."
+msgid "Video on top"
 msgstr ""
