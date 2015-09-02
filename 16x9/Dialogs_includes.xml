@@ -3739,7 +3739,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
-					<label>31047</label>
+					<label>31054</label>
 					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 				</control>					
 			

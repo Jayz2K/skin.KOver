@@ -1276,7 +1276,7 @@
 		</item>
 		<!-- Extra Art -->
 		<item>
-			<label>31043</label>
+			<label>31054</label>
 			<icon>material/artbox.png</icon>
 			<onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
 			<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
@@ -1336,13 +1336,13 @@
 		<!-- Increase Rating -->
 		<item>
 			<icon>material/cursorup.png</icon>
-			<label>31018</label>
+			<label>31055</label>
 			<onclick>IncreaseRating</onclick>
 		</item>
 		<!-- Decrease Rating -->
 		<item>
 			<icon>material/cursordown.png</icon>
-			<label>31019</label>
+			<label>31056</label>
 			<onclick>DecreaseRating</onclick>
 		</item>
 		<!-- Album Info -->
