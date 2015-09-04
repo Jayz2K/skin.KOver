@@ -58,7 +58,7 @@
 				<top>0</top>
 				<width>636</width>
 				<height>356</height>
-				<imagepath>plugin://script.skin.helper.service/?action=getthumb&path=$INFO[ListItem.Title,, ]$INFO[ListItem.ChannelName]</imagepath>
+				<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.Title,, ]$INFO[ListItem.ChannelName]</imagepath>
 			 	<aspectratio>scale</aspectratio>
 			 	<visible>!IsEmpty(Container(9010).ListItem.Title)</visible>
 			</control>
