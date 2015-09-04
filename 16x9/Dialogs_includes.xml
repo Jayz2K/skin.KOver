@@ -7927,7 +7927,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Window : Background</label>
+							<label>$LOCALIZE[31060] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -7973,7 +7973,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Sidebar : Background</label>
+							<label>$LOCALIZE[31061] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8019,7 +8019,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Sidebar : Unselected icons</label>
+							<label>$LOCALIZE[31061] : $LOCALIZE[31068]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8065,7 +8065,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Sidebar : Clock</label>
+							<label>$LOCALIZE[31061] : $LOCALIZE[31081]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8111,7 +8111,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Sidebar : Shadow</label>
+							<label>$LOCALIZE[31061] : $LOCALIZE[31082]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8157,7 +8157,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Blocs Background</label>
+							<label>$LOCALIZE[31062]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8203,7 +8203,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Background</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8249,7 +8249,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Unselected Items</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31069]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8295,7 +8295,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Unselected Text1 / Icon</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31070]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8341,7 +8341,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Unselected Text 2 (sub)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31071]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8387,7 +8387,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (video)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[1212]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8434,7 +8434,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (movies)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[342]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8481,7 +8481,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (shows)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[20343]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8528,7 +8528,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (music)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[1211]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8575,7 +8575,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (pictures)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[1213]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8622,7 +8622,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (TV)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[19020]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8669,7 +8669,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Items (others)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31074] $LOCALIZE[1047]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8715,7 +8715,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Icon Background</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31073]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8761,7 +8761,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Text 1 /Icon</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31075]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8807,7 +8807,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>List : Selected Text 2 (sub)</label>
+							<label>$LOCALIZE[535] : $LOCALIZE[31076]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8853,7 +8853,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Info bloc : Background</label>
+							<label>$LOCALIZE[31063] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8899,7 +8899,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Info bloc : Selected Item Number</label>
+							<label>$LOCALIZE[31063] : $LOCALIZE[31079]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8945,7 +8945,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Info bloc : Title</label>
+							<label>$LOCALIZE[31063] : $LOCALIZE[369]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -8991,7 +8991,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Info bloc : Plot and line</label>
+							<label>$LOCALIZE[31063] : $LOCALIZE[207]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9037,7 +9037,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Info bloc : Other infos</label>
+							<label>$LOCALIZE[31063] : $LOCALIZE[31083]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9083,7 +9083,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Art bloc : Background</label>
+							<label>$LOCALIZE[31064] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9129,7 +9129,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Video bloc : Background</label>
+							<label>$LOCALIZE[31065] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9175,7 +9175,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Dialogs : Background</label>
+							<label>$LOCALIZE[31066] : $LOCALIZE[19190]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9221,7 +9221,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Dialogs : Titles</label>
+							<label>$LOCALIZE[31066] : $LOCALIZE[369]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9267,7 +9267,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Dialogs : Unselected Text</label>
+							<label>$LOCALIZE[31066] : $LOCALIZE[31072]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9313,7 +9313,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Dialogs : Selected Items Bg</label>
+							<label>$LOCALIZE[31066] : $LOCALIZE[31078]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9359,7 +9359,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Dialogs : Selected Text</label>
+							<label>$LOCALIZE[31066] : $LOCALIZE[31077]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9405,7 +9405,7 @@
 							<colordiffuse>FF111111</colordiffuse>
 							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
 							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<label>Dialogs : Invalid Text</label>
+							<label>$LOCALIZE[31066] : $LOCALIZE[31080]</label>
 							<font>Font27</font>
 							<textwidth>300</textwidth>
 							<textoffsetx>60</textoffsetx>
@@ -9470,7 +9470,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
-					<label>Color Editor</label>
+					<label>31067</label>
 					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 				</control>	
 
@@ -9486,13 +9486,13 @@
 					<onright>noop</onright>
 					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">300</onup>
 					<ondown>noop</ondown>
-					<orientation>horizontal</orientation>
+					<orientation>horizontal</orientation>			
 
-					<!-- OK Button -->
+					<!-- Export Template -->
 					<control type="button" id="301">
 						<width>auto</width>
 						<height>60</height>
-						<label>Export Color Scheme</label>
+						<label>31084</label>
 						<font>Font27</font>
 						<align>center</align>
 						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>

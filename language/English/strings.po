@@ -261,3 +261,103 @@ msgstr ""
 msgctxt "#31059"
 msgid "Random albums"
 msgstr ""
+
+msgctxt "#31060"
+msgid "Window"
+msgstr ""
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr ""
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr ""
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr ""
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr ""
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr ""
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr ""
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr ""
+
+msgctxt "#31070"
+msgid "Unselected text 1 / icon"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Unselected text 2 (sub)"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr ""
+
+msgctxt "#31075"
+msgid "Selected text 1 / icon"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Selected text 2 (sub)"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr ""
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr ""
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr ""
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr ""
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr ""
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr ""
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr ""
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr ""
