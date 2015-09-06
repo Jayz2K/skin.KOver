@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
 
-	<!-- Movies -->
-	<!-- Recent movies -->
-	<widget label="Recent movies">RecentMovies</widget>
-	<widgetdefault labelID="movies">RecentMovies</widgetdefault>
-	<!-- Recommended movies -->
-	<widget label="Recommended movies">RecommendedMovies</widget>
-	<!-- Random movies -->
-	<widget label="Random movies">RandomMovies</widget>
-	<!-- All -->
-	<widget label="All movies">videodb://movies/titles/</widget>
+    <!-- Movies -->
+    <!-- Recent movies -->
+    <widget label="Recent movies" type="movies" target="video" path="plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]">RecentMovies</widget>
+    <widgetdefault labelID="movies">RecentMovies</widgetdefault>
+    <!-- Recommended movies -->
+    <widget label="Recommended movies" type="movies" target="video" path="plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]">RecommendedMovies</widget>
+    <!-- Random movies -->
+    <widget label="Random movies" type="movies" target="video" path="plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]">RandomMovies</widget>
+    <!-- Smart(ish) movies -->
+    <widget label="Smart(ish) movies" type="movies" target="video" path="plugin://service.smartish.widgets?type=movies&amp;reload=$INFO[Window.Property(smartish.movies)]">SmartMovies</widget>
 
-	<!-- Episodes -->
-	<!-- Recent episodes -->
-	<widget label="Recent episodes">RecentEpisodes</widget>
-	<widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
-	<!-- Recommended Recommended episodes -->
-	<widget label="Recommended episodes">RecommendedEpisodes</widget>
-	<!-- Random episodes -->
-	<widget label="Random episodes">RandomEpisodes</widget>
+    <!-- Episodes -->
+    <!-- Recent episodes -->
+    <widget label="Recent episodes" type="episodes" target="video" path="plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]">RecentEpisodes</widget>
+    <widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
+    <!-- Recommended Recommended episodes -->
+    <widget label="Recommended episodes" type="episodes" target="video" path="plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]">RecommendedEpisodes</widget>
+    <!-- Random episodes -->
+    <widget label="Random episodes" type="episodes" target="video" path="plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]">RandomEpisodes</widget>
+    <!-- Smart(ish) episodes -->
+    <widget label="Smart(ish) episodes" type="episodes" target="video" path="plugin://service.smartish.widgets?type=episodes&amp;reload=$INFO[Window.Property(smartish.episodes)]">SmartEpisodes</widget>
 
-	<!-- Albums -->
-	<!-- Recent albums -->
-	<widget label="Recent albums">RecentAlbums</widget>
-	<widgetdefault labelID="132">RecentAlbums</widgetdefault>
-	<!-- Recommended albums -->
-	<widget label="Recommended albums">RecommendedAlbums</widget>
-	<!-- Random albums -->
-	<widget label="Random albums">RandomAlbums</widget>
+    <!-- Albums -->
+    <!-- Recent albums -->
+    <widget label="Recent albums" type="albums" target="music" path="plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]">RecentAlbums</widget>
+    <widgetdefault labelID="132">RecentAlbums</widgetdefault>
+    <!-- Recommended albums -->
+    <widget label="Recommended albums" type="albums" target="music" path="plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]">RecommendedAlbums</widget>
+    <!-- Random albums -->
+    <widget label="Random albums" type="albums" target="music" path="plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]">RandomAlbums</widget>
+    <!-- Smart(ish) albums -->
+    <widget label="Smart(ish) albums" type="albums" target="music" path="plugin://service.smartish.widgets?type=albums&amp;reload=$INFO[Window.Property(smartish.albums)]">SmartAlbums</widget>
 
 	<!-- Weather -->
 	<widget label="Weather Forecast">WeatherWidget</widget>
