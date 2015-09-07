@@ -23,6 +23,10 @@
 				<onright>noop</onright>
 				<viewtype label="">list</viewtype>
 				<skinshortcuts>visibility</skinshortcuts>
+<<<<<<< HEAD
+=======
+				<visible>!IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widget),TV)</visible>
+>>>>>>> origin/master
 
 				<itemlayout width="636" height="296">
 				</itemlayout>
