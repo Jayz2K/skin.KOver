@@ -332,22 +332,22 @@
 	</variable>	
 	
 	<variable name="HomeWidgetThumb">
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Movies)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Episodes)">$INFO[Container(9011).ListItem.Art(thumb)]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Albums)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Movies)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Episodes)">$INFO[Container(9011).ListItem.Art(thumb)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Albums)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
 	</variable>
 
 	<variable name="HomeWidgetArt">
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Movies)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Episodes)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Albums)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Movies)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Episodes)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Albums)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
 	</variable>	
 	
 	<variable name="HomeWidgetTag">
 		<value condition="IsEmpty(Container(9000).ListItem.Property(widget)) + StringCompare(Container(9000).ListItem.Property(defaultID),tvshows)">$INFO[Container(9011).ListItem.TVShowTitle,, . ]$INFO[Container(9011).ListItem.Episode,$LOCALIZE[20359] ,]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Movies)">$INFO[Container(9011).ListItem.Tagline]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Episodes)">$INFO[Container(9011).ListItem.TVShowTitle,, . ]$INFO[Container(9011).ListItem.Season,$LOCALIZE[20373] , . ]$INFO[Container(9011).ListItem.Episode,$LOCALIZE[20359] ,]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Albums)">$INFO[Container(9011).ListItem.Artist]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Movies)">$INFO[Container(9011).ListItem.Tagline]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Episodes)">$INFO[Container(9011).ListItem.TVShowTitle,, . ]$INFO[Container(9011).ListItem.Season,$LOCALIZE[20373] , . ]$INFO[Container(9011).ListItem.Episode,$LOCALIZE[20359] ,]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Albums)">$INFO[Container(9011).ListItem.Artist]</value>
 		<value condition="Container.Content(episodes)">$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
 		<value condition="Container.Content(movies)">$INFO[ListItem.Tagline]</value>
 		</variable>	
@@ -367,15 +367,15 @@
 	</variable>
 
 	<variable name="HomeWidgetSubtitle">
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Movies)">$INFO[Container(9011).ListItem.Genre]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Episodes)">$INFO[Container(9011).ListItem.TVShowTitle,, . ]$INFO[Container(9011).ListItem.Season,$LOCALIZE[20373] ,]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Albums)">$INFO[Container(9011).ListItem.Genre]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Movies)">$INFO[Container(9011).ListItem.Genre]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Episodes)">$INFO[Container(9011).ListItem.TVShowTitle,, . ]$INFO[Container(9011).ListItem.Season,$LOCALIZE[20373] ,]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Albums)">$INFO[Container(9011).ListItem.Genre]</value>
 	</variable>
 
 	<variable name="HomeWidgetPlot">
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Movies)">$INFO[Container(9011).ListItem.Plot]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Episodes)">$INFO[Container(9011).ListItem.Plot]</value>
-		<value condition="SubString(Container(9000).ListItem.Property(widget),Albums)">$INFO[Container(9011).ListItem.Property(Album_Description)]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Movies)">$INFO[Container(9011).ListItem.Plot]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Episodes)">$INFO[Container(9011).ListItem.Plot]</value>
+		<value condition="SubString(Container(9000).ListItem.Property(widgetName),Albums)">$INFO[Container(9011).ListItem.Property(Album_Description)]</value>
 	</variable>
 	
 	<variable name="HeadingLabel">

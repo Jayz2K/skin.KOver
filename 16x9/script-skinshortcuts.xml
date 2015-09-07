@@ -254,13 +254,13 @@
 					<onclick>SendClick(1200,311)</onclick>
 				</item>
 				<!-- Change background -->				
-				<!--item id="4">
+				<item id="4">
 					<label>$ADDON[script.skinshortcuts 32045]</label>
 					<label2>$INFO[Container(211).ListItem.Property(Background)]</label2>
 					<icon></icon>
 					<thumb></thumb>
-					<onclick>SendClick(310)</onclick>
-				</item-->
+					<onclick>SendClick(1200,310)</onclick>
+				</item>
 				<!-- Change action -->
 				<item id="5">
 					<label>$ADDON[script.skinshortcuts 32027]</label>
@@ -284,7 +284,7 @@
 					<label2>$INFO[Container(211).ListItem.Property(WidgetName)]</label2>
 					<icon></icon>
 					<thumb></thumb>
-					<onclick>SendClick(1200,309)</onclick>
+					<onclick>SendClick(1200,312)</onclick>
 					<visible>StringCompare(Window.Property(groupname), mainmenu)</visible>
 				</item>
 				<!-- Move Up -->
@@ -355,6 +355,11 @@
 
 		<!-- Edit widget -->
 		<control type="button" id="309">
+			<left>-1000</left>	
+		</control>
+
+		<!-- Edit widget -->
+		<control type="button" id="312">
 			<left>-1000</left>	
 		</control>
 		
@@ -436,6 +441,12 @@
 			</control>
 
 		</control>
+
+
+		<!-- Dialogs Background -->
+		<include name="DialogBgDef">
+			<param name="CompPrefix" value="DIA.View1" />
+		</include>		
 
 	</controls>
 

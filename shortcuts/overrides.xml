@@ -1,47 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
 
-	<!-- Movies -->
-	<!-- Recent movies -->
-	<widget label="Recent movies">RecentMovies</widget>
-	<widgetdefault labelID="movies">RecentMovies</widgetdefault>
-	<!-- Recommended movies -->
-	<widget label="Recommended movies">RecommendedMovies</widget>
-	<!-- Random movies -->
-	<widget label="Random movies">RandomMovies</widget>
-	<!-- All -->
-	<widget label="All movies">videodb://movies/titles/</widget>
+    <!-- Backgrounds -->	
+    <background label="smartshortcuts" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
+    <backgroundBrowse default="special://skin/extras/backgrounds/">True</backgroundBrowse>
 
-	<!-- Episodes -->
-	<!-- Recent episodes -->
-	<widget label="Recent episodes">RecentEpisodes</widget>
-	<widgetdefault labelID="tvshows">RecentEpisodes</widgetdefault>
-	<!-- Recommended Recommended episodes -->
-	<widget label="Recommended episodes">RecommendedEpisodes</widget>
-	<!-- Random episodes -->
-	<widget label="Random episodes">RandomEpisodes</widget>
+    <!-- Movies -->
+    <!-- Recent movies -->
+    <widget path="plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]" target="video" type="movies" label="Recent movies" condition="!System.HasAddon(script.skin.helper.service)">RecentMovies</widget>
+    <widgetdefault labelID="movies" condition="!System.HasAddon(script.skin.helper.service)">RecentMovies</widgetdefault>
 
-	<!-- Albums -->
-	<!-- Recent albums -->
-	<widget label="Recent albums">RecentAlbums</widget>
-	<widgetdefault labelID="132">RecentAlbums</widgetdefault>
-	<!-- Recommended albums -->
-	<widget label="Recommended albums">RecommendedAlbums</widget>
-	<!-- Random albums -->
-	<widget label="Random albums">RandomAlbums</widget>
+    <!-- Recommended movies -->
+    <widget path="plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]" target="video" type="movies" label="Recommended movies" condition="!System.HasAddon(script.skin.helper.service)">RecommendedMovies</widget>
 
-	<!-- Weather -->
-	<widget label="Weather Forecast">WeatherWidget</widget>
-	<widgetdefault labelID="weather">WeatherWidget</widgetdefault>
+    <!-- Random movies -->
+    <widget path="plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]" target="video" type="movies" label="Random movies" condition="!System.HasAddon(script.skin.helper.service)">RandomMovies</widget>
 
-	<!-- Favourites -->
-	<widget label="Favourites">Favourites</widget>
-	<widgetdefault labelID="1036">Favourites</widgetdefault>
-	
-	<!-- PVR -->
-	<widget label="TV">TV</widget>
-	<widgetdefault labelID="livetv">TV</widgetdefault>
-	
+    <!-- Smart(ish) movies -->
+    <widget path="plugin://service.smartish.widgets?type=movies&amp;reload=$INFO[Window.Property(smartish.movies)]" target="video" type="movies" label="Smart(ish) movies" condition="!System.HasAddon(script.skin.helper.service)">SmartMovies</widget>
+
+    <!-- Episodes -->
+    <!-- Recent episodes -->
+    <widget path="plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]" target="video" type="episodes" label="Recent episodes" condition="!System.HasAddon(script.skin.helper.service)">RecentEpisodes</widget>
+    <widgetdefault labelID="tvshows" condition="!System.HasAddon(script.skin.helper.service)">RecentEpisodes</widgetdefault>
+
+    <!-- Recommended Recommended episodes -->
+    <widget path="plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]" target="video" type="episodes" label="Recommended episodes" condition="!System.HasAddon(script.skin.helper.service)">RecommendedEpisodes</widget>
+
+    <!-- Random episodes -->
+    <widget path="plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]" target="video" type="episodes" label="Random episodes" condition="!System.HasAddon(script.skin.helper.service)">RandomEpisodes</widget>
+
+    <!-- Smart(ish) episodes -->
+    <widget path="plugin://service.smartish.widgets?type=episodes&amp;reload=$INFO[Window.Property(smartish.episodes)]" target="video" type="episodes" label="Smart(ish) episodes" condition="!System.HasAddon(script.skin.helper.service)">SmartEpisodes</widget>
+
+    <!-- Albums -->
+    <!-- Recent albums -->
+    <widget path="plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]" target="music" type="albums" label="Recent albums" condition="!System.HasAddon(script.skin.helper.service)">RecentAlbums</widget>
+    <widgetdefault labelID="132" condition="!System.HasAddon(script.skin.helper.service)">RecentAlbums</widgetdefault>
+
+    <!-- Recommended albums -->
+    <widget path="plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]" target="music" type="albums" label="Recommended albums" condition="!System.HasAddon(script.skin.helper.service)">RecommendedAlbums</widget>
+
+    <!-- Random albums -->
+    <widget path="plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]" target="music" type="albums" label="Random albums" condition="!System.HasAddon(script.skin.helper.service)">RandomAlbums</widget>
+
+    <!-- Smart(ish) albums -->
+    <widget path="plugin://service.smartish.widgets?type=albums&amp;reload=$INFO[Window.Property(smartish.albums)]" target="music" type="albums" label="Smart(ish) albums" condition="!System.HasAddon(script.skin.helper.service)">SmartAlbums</widget>
+
+    <!-- Weather -->
+    <widget label="Weather Forecast">WeatherWidget</widget>
+    <widgetdefault labelID="weather">WeatherWidget</widgetdefault>
+
+    <!-- Favourites -->
+    <widget label="Favourites">Favourites</widget>
+    <widgetdefault labelID="1036">Favourites</widgetdefault>
+
+    <!-- PVR -->
+    <widget label="TV" condition="!System.HasAddon(script.skin.helper.service)">TV</widget>
+    <widgetdefault labelID="livetv" condition="!System.HasAddon(script.skin.helper.service)">TV</widgetdefault>
+
     <thumbnail label="Actor">special://skin/extras/icons/DefaultActor.png</thumbnail>
     <thumbnail label="Addon">special://skin/extras/icons/DefaultAddon.png</thumbnail>
     <thumbnail label="AddonAlbumInfo">special://skin/extras/icons/DefaultAddonAlbumInfo.png</thumbnail>
