@@ -228,7 +228,7 @@
 			<!-- Submenu for Live TV (Widget) -->
 			
 			<control type="group">
-				<visible>SubString(Container(9000).ListItem.Property(widgetName),TV)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])</visible>
 				
 				<!-- Bloc 1-->
 				<control type="group">
@@ -504,7 +504,7 @@
 						<param name="Prefix" value="HOM.View1" />
 						<param name="BlocID" value="B2" />
 					</include>
-					<visible>SubString(Container(9000).ListItem.Property(widgetName),TV) + !Control.HasFocus(98)</visible>
+					<visible>[StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])] + !Control.HasFocus(98)</visible>
 					<animation effect="slide" start="0,360" end="0,0" time="200">VisibleChange</animation>
 					<width>636</width>
 					<height>356</height>
@@ -596,7 +596,7 @@
 						<param name="Prefix" value="HOM.View1" />
 						<param name="BlocID" value="B2" />
 					</include>
-					<visible>StringCompare(Container(9000).ListItem.Property(widgetName),TV) + Control.HasFocus(98)</visible>
+					<visible>[StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])] + Control.HasFocus(98)</visible>
 					<animation effect="slide" start="0,360" end="0,0" time="200">VisibleChange</animation>
 					<control type="image">
 						<left>0</left>
@@ -756,7 +756,7 @@
 					
 			<!-- Submenu Librarydata (Widgets) -->
 			<control type="group">
-				<visible>!IsEmpty(Container(9000).ListItem.Property(widgetPath)) + !SubString(Container(9000).ListItem.Property(widgetName),TV)</visible>
+				<visible>!IsEmpty(Container(9000).ListItem.Property(widgetPath))</visible>
 				
 				<!-- Bloc 1-->
 				<control type="group">
@@ -862,6 +862,19 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<label>$INFO[Container(9011).ListItem.Title]</label>
+							<visible>!IsEmpty(Container(9011).ListItem.Title)</visible>
+						</control>
+						<control type="label">
+							<left>148</left>
+							<width>440</width>
+							<top>10</top>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
+							<font>Font36R</font>
+							<align>left</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container(9011).ListItem.Label]</label>
+							<visible>IsEmpty(Container(9011).ListItem.Title)</visible>
 						</control>
 						<control type="label">
 							<left>148</left>
@@ -947,6 +960,7 @@
 						<height>140</height>
 						<aspectratio>keep</aspectratio>
 						<texture colordiffuse="55FFFFFF">material/play.png</texture>
+						<visible>!IsEmpty(Container(9011).ListItem.Art(fanart))</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
