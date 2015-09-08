@@ -7,7 +7,7 @@
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
 	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
 	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>
-	<!--onload>Skin.ToggleSetting(DebugInfo)</onload-->
+	<onload>Skin.ToggleSetting(DebugInfo)</onload>
 
 	<controls>
 		<!-- Background -->
@@ -806,7 +806,7 @@
 						<align>right</align>
 						<font>FontSmallB</font>
 						<textcolor>FFFFFFFF</textcolor>
-						<label>$VAR[HomeWidgetTitle]</label>
+						<label>$INFO[Container(9000).ListItem.Property(widgetName)]</label>
 					</control>
 				</control>
 				
