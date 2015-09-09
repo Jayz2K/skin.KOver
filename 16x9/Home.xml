@@ -29,302 +29,292 @@
 				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
 				<visible>Skin.String(HOM.View1.BBShow,VISIBLE)</visible>
 			</control>		
-			
-			<control type="group">
-				<!--visible>IsEmpty(Container(9000).ListItem.Property(widget))</visible-->
-					
+
 			<!-- Submenu for non media items -->
-				
-				<control type="group">				
+			<control type="group">
 
-					<!-- Bloc 2-->
-					<control type="group">
-						<include name="BlocPosition">
-							<param name="Prefix" value="HOM.View1" />
-							<param name="BlocID" value="B2" />
-						</include>
+				<!-- Bloc 2-->
+				<control type="group">
+					<include name="BlocPosition">
+						<param name="Prefix" value="HOM.View1" />
+						<param name="BlocID" value="B2" />
+					</include>
 
-						
-						<control type="image">
-							<!-- Configuring Horizontal Size -->
-							<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeX636</include>
-							<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeX1272</include>
-							<!-- Configuring Vertical Size -->
-							<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
-							<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
-							<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
-						</control>	
 					
-						<control type="panel" id="9012">
-							<left>0</left>
-							<top>0</top>
-							<!-- Configuring Horizontal Size -->
-							<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeX636</include>
-							<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeX1272</include>
-							<!-- Configuring Vertical Size -->
-							<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
-							<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
-							<onleft condition="!Control.IsVisible(9011)">9000</onleft>
-							<onleft condition="Control.IsVisible(9011)">9011</onleft>
-							<onup>noop</onup>
-							<ondown>noop</ondown>
-							<onback>9000</onback>
-							<onright>noop</onright>
-							<scrolltime>200</scrolltime>
-							<pagecontrol>61</pagecontrol>
-							<viewtype label="535">icon</viewtype>
-							<visible>IsEmpty(Container(9000).ListItem.Property(widget))</visible>	
+					<control type="image">
+						<!-- Configuring Horizontal Size -->
+						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeX636</include>
+						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeX1272</include>
+						<!-- Configuring Vertical Size -->
+						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
+						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
+					</control>	
+				
+					<control type="panel" id="9012">
+						<left>0</left>
+						<top>0</top>
+						<!-- Configuring Horizontal Size -->
+						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeX636</include>
+						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeX1272</include>
+						<!-- Configuring Vertical Size -->
+						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
+						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
+						<onleft condition="!Control.IsVisible(9011)">9000</onleft>
+						<onleft condition="Control.IsVisible(9011)">9011</onleft>
+						<onup>noop</onup>
+						<ondown>noop</ondown>
+						<onback>9000</onback>
+						<onright>noop</onright>
+						<scrolltime>200</scrolltime>
+						<pagecontrol>61</pagecontrol>
+						<viewtype label="535">icon</viewtype>
+						<visible>IsEmpty(Container(9000).ListItem.Property(widget))</visible>	
 
 
-							<itemlayout width="636" height="119">
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>635</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>20</left>
-									<top>20</top>
-									<width>80</width>
-									<height>80</height>
-									<align>center</align>
-									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.Icon]</texture>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>20</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>Font27</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-									<label>$INFO[ListItem.Label]</label>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>50</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>FontSmallR</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-									<label>$INFO[ListItem.Label2]</label>
-								</control>
-							</itemlayout>
+						<itemlayout width="636" height="119">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>635</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<width>80</width>
+								<height>80</height>
+								<align>center</align>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>20</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>50</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
 
-							<focusedlayout width="637" height="118">
-								<control type="button">
-									<texturefocus></texturefocus>
-									<texturenofocus></texturenofocus>
-									<onfocus condition="Container.Content(tvshows)">SetProperty(DBIdent,$INFO[ListItem.DBID],Home)</onfocus>
-								</control>	
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>636</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>636</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>118</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>20</left>
-									<top>20</top>
-									<width>80</width>
-									<height>80</height>
-									<align>center</align>
-									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.Icon]</texture>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>20</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>Font27</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-									<label>$INFO[ListItem.Label]</label>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>50</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>FontSmallR</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-									<label>$INFO[ListItem.Label2]</label>
-								</control>
-							</focusedlayout>
-							<content>
-							<include>skinshortcuts-submenu</include>
-							</content>
-						</control>			
+						<focusedlayout width="637" height="118">
+							<control type="button">
+								<texturefocus></texturefocus>
+								<texturenofocus></texturenofocus>
+								<onfocus condition="Container.Content(tvshows)">SetProperty(DBIdent,$INFO[ListItem.DBID],Home)</onfocus>
+							</control>	
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>636</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>636</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>118</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<width>80</width>
+								<height>80</height>
+								<align>center</align>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>20</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>50</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
+						<content>
+						<include>skinshortcuts-submenu</include>
+						</content>
+					</control>			
 
-						<control type="panel" id="9014">
-							<left>0</left>
-							<top>0</top>
-							<!-- Configuring Horizontal Size -->
-							<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeX636</include>
-							<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeX1272</include>
-							<!-- Configuring Vertical Size -->
-							<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
-							<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
-							<onleft condition="!Control.IsVisible(9011)">9000</onleft>
-							<onleft condition="Control.IsVisible(9011)">9011</onleft>
-							<onup>noop</onup>
-							<ondown>noop</ondown>
-							<onback>9000</onback>
-							<onright>noop</onright>
-							<scrolltime>200</scrolltime>
-							<pagecontrol>61</pagecontrol>
-							<viewtype label="535">icon</viewtype>
-							<visible allowhiddenfocus="true">Control.HasFocus(9014) + !IsEmpty(Container(9000).ListItem.Property(widget))</visible>
-							<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
+					<control type="panel" id="9014">
+						<left>0</left>
+						<top>0</top>
+						<!-- Configuring Horizontal Size -->
+						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeX636</include>
+						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeX1272</include>
+						<!-- Configuring Vertical Size -->
+						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
+						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
+						<onleft condition="!Control.IsVisible(9011)">9000</onleft>
+						<onleft condition="Control.IsVisible(9011)">9011</onleft>
+						<onup>noop</onup>
+						<ondown>noop</ondown>
+						<onback>9000</onback>
+						<onright>noop</onright>
+						<scrolltime>200</scrolltime>
+						<pagecontrol>61</pagecontrol>
+						<viewtype label="535">icon</viewtype>
+						<visible allowhiddenfocus="true">Control.HasFocus(9014) + !IsEmpty(Container(9000).ListItem.Property(widget))</visible>
+						<animation effect="fade" start="0" end="100" time="400">VisibleChange</animation>
 
-							<itemlayout width="636" height="119">
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>635</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>20</left>
-									<top>20</top>
-									<width>80</width>
-									<height>80</height>
-									<align>center</align>
-									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.Icon]</texture>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>20</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>Font27</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-									<label>$INFO[ListItem.Label]</label>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>50</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>FontSmallR</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-									<label>$INFO[ListItem.Label2]</label>
-								</control>
-							</itemlayout>
+						<itemlayout width="636" height="119">
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>635</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<width>80</width>
+								<height>80</height>
+								<align>center</align>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>20</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>50</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</itemlayout>
 
-							<focusedlayout width="637" height="118">
-								<control type="button">
-									<texturefocus></texturefocus>
-									<texturenofocus></texturenofocus>
-									<onfocus condition="Container.Content(tvshows)">SetProperty(DBIdent,$INFO[ListItem.DBID],Home)</onfocus>
-								</control>	
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>636</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>636</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>0</left>
-									<top>0</top>
-									<width>118</width>
-									<height>118</height>
-									<aspectratio>scale</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
-								</control>
-								<control type="image">
-									<left>20</left>
-									<top>20</top>
-									<width>80</width>
-									<height>80</height>
-									<align>center</align>
-									<aspectratio>keep</aspectratio>
-									<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.Icon]</texture>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>20</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>Font27</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-									<label>$INFO[ListItem.Label]</label>
-								</control>
-								<control type="label">
-									<left>130</left>
-									<top>50</top>
-									<width>499</width>
-									<height>50</height>
-									<align>left</align>
-									<aligny>center</aligny>
-									<font>FontSmallR</font>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-									<label>$INFO[ListItem.Label2]</label>
-								</control>
-							</focusedlayout>
-							<content>
-							<include>skinshortcuts-submenu</include>
-							</content>
-						</control>											
-
-
-					</control>
-
-
-
-
+						<focusedlayout width="637" height="118">
+							<control type="button">
+								<texturefocus></texturefocus>
+								<texturenofocus></texturenofocus>
+								<onfocus condition="Container.Content(tvshows)">SetProperty(DBIdent,$INFO[ListItem.DBID],Home)</onfocus>
+							</control>	
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>636</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>636</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>118</width>
+								<height>118</height>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>20</left>
+								<top>20</top>
+								<width>80</width>
+								<height>80</height>
+								<align>center</align>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>20</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+							<control type="label">
+								<left>130</left>
+								<top>50</top>
+								<width>499</width>
+								<height>50</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+								<label>$INFO[ListItem.Label2]</label>
+							</control>
+						</focusedlayout>
+						<content>
+						<include>skinshortcuts-submenu</include>
+						</content>
+					</control>											
 				</control>
 
 				<!-- Bloc 1-->
 				<control type="group">
+					<visible>IsEmpty(Container(9000).ListItem.Property(widget))</visible>
 					<include name="BlocPosition">
 						<param name="Prefix" value="HOM.View1" />
 						<param name="BlocID" value="B1" />
@@ -897,10 +887,9 @@
 					
 			<!-- Submenu Librarydata (Widgets) -->
 			<control type="group">
-	
-				
-				<control type="group">
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widgetPath)) + ![StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]</visible>		
+				<visible>!IsEmpty(Container(9000).ListItem.Property(widgetPath)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])</visible>		
+					
+				<control type="group">					
 					<animation effect="slide" start="0,0" end="-1284,0" time="400" condition="Control.HasFocus(9014) + StringCompare(Skin.String(HOM.View1.BBLay),HORIZONTAL)">Conditional</animation>
 					<animation effect="slide" start="0,0" end="0,-724" time="400" condition="Control.HasFocus(9014) + StringCompare(Skin.String(HOM.View1.BBLay),VERTICAL)">Conditional</animation>
 
@@ -1078,8 +1067,7 @@
 
 				<!-- Bloc 1-->
 				<control type="group">
-					<visible>!IsEmpty(Container(9000).ListItem.Property(widgetPath)) + ![StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]</visible>					
-					<include name="BlocPosition">
+						<include name="BlocPosition">
 						<param name="Prefix" value="HOM.View1" />
 						<param name="BlocID" value="B1" />
 					</include>
@@ -1478,7 +1466,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">$INFO[ListItem.Icon]</texture>
 					<visible>!Window.IsActive(10138)</visible>
-					<visible>!Control.HasFocus(9010) + !Control.HasFocus(9011) + !Control.HasFocus(9012) + !Control.HasFocus(9013) + !Control.HasFocus(98)</visible>
+					<visible>Control.HasFocus(9000)</visible>
 				</control>
 			</itemlayout>
 
@@ -1526,7 +1514,7 @@
 			</content>
 		</control>
 		<control type="label">
-			<animation effect="slide" start="0,-120" end="0,0" time="200" condition="Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)">Conditional</animation>
+			<animation effect="slide" start="0,-120" end="0,0" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 			<top>0</top>
 			<left>144</left>
 			<width>400</width>
@@ -1536,11 +1524,11 @@
 			<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
 			<label>[UPPERCASE]$INFO[System.CurrentWindow][/UPPERCASE]</label>
 			<visible>Skin.String(HOM.View1.BBSidebar,TOP)</visible>
-			<visible>!Window.IsActive(10138)</visible>
-			<visible>Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)</visible>
+			<visible>!Window.IsActive(10138)</visible>			
+			<visible>!Control.HasFocus(9000)</visible>
 		</control>
 		<control type="label">
-			<animation effect="slide" start="0,120" end="0,0" time="200" condition="Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)">Conditional</animation>
+			<animation effect="slide" start="0,120" end="0,0" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 			<top>960</top>
 			<left>144</left>
 			<width>400</width>
@@ -1551,7 +1539,7 @@
 			<label>[UPPERCASE]$INFO[System.CurrentWindow][/UPPERCASE]</label>
 			<visible>Skin.String(HOM.View1.BBSidebar,BOTTOM)</visible>
 			<visible>!Window.IsActive(10138)</visible>
-			<visible>Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)</visible>
+			<visible>!Control.HasFocus(9000)</visible>
 		</control>
 		<control type="label">
 			<top>0</top>
@@ -1562,11 +1550,11 @@
 			<font>Font48</font>
 			<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
 			<label>[UPPERCASE]$INFO[System.CurrentWindow][/UPPERCASE]</label>
-			<animation effect="slide" start="-120,0" end="0,0" time="200" condition="Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)">Conditional</animation>
+			<animation effect="slide" start="-120,0" end="0,0" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 			<animation effect="rotate" start="0" end="90" time="0" center="60,60" condition="true">Conditional</animation>
 			<visible>Skin.String(HOM.View1.BBSidebar,LEFT)</visible>
-			<visible>!Window.IsActive(10138)</visible>
-			<visible>Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)</visible>
+			<visible>!Window.IsActive(10138)</visible>			
+			<visible>!Control.HasFocus(9000)</visible>
 		</control>
 		<control type="label">
 			<top>0</top>
@@ -1577,11 +1565,11 @@
 			<font>Font48</font>
 			<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
 			<label>[UPPERCASE]$INFO[System.CurrentWindow][/UPPERCASE]</label>
-			<animation effect="slide" start="1920,0" end="1800,0" time="200" condition="Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)">Conditional</animation>
+			<animation effect="slide" start="1920,0" end="1800,0" time="200" condition="!Control.HasFocus(9000)">Conditional</animation>
 			<animation effect="rotate" start="0" end="90" time="0" center="60,60" condition="true">Conditional</animation>
 			<visible>Skin.String(HOM.View1.BBSidebar,RIGHT)</visible>
 			<visible>!Window.IsActive(10138)</visible>
-			<visible>Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)</visible>
+			<visible>!Control.HasFocus(9000)</visible>
 		</control>
 		<control type="label">
 			<top>0</top>
