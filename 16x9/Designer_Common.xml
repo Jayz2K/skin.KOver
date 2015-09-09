@@ -1406,12 +1406,12 @@
 		<height>80</height>
 		<orientation>horizontal</orientation>
 		<onup condition="Window.IsVisible(12901)">Control.SetFocus(9001)</onup>
-		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !SubString(Container(9000).ListItem.Property(widgetName),TV)">9011</onup>
-		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM) + SubString(Container(9000).ListItem.Property(widgetName),TV)">9010</onup>
+		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onup>
+		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</onup>
 		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM)">9012</onup>
 		<ondown condition="Window.IsVisible(12901)">Control.SetFocus(9001)</ondown>
-		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !SubString(Container(9000).ListItem.Property(widgetName),TV)">9011</ondown>
-		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP) + SubString(Container(9000).ListItem.Property(widgetName),TV)">9010</ondown>
+		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</ondown>
+		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</ondown>
 		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP)">9012</ondown>
 	</include>	
 	
@@ -1422,12 +1422,12 @@
 		<height>400</height>
 		<orientation>vertical</orientation>
 		<onright condition="Window.IsVisible(12901)">Control.SetFocus(9001)</onright>
-		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !SubString(Container(9000).ListItem.Property(widgetName),TV)">9011</onright>
-		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT) + SubString(Container(9000).ListItem.Property(widgetName),TV)">9010</onright>
+		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onright>
+		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</onright>
 		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT)">9012</onright>
 		<onleft condition="Window.IsVisible(12901)">Control.SetFocus(9001)</onleft>
-		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !SubString(Container(9000).ListItem.Property(widgetName),TV)">9011</onleft>
-		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT) + SubString(Container(9000).ListItem.Property(widgetName),TV)">9010</onleft>
+		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onleft>
+		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</onleft>
 		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT)">9012</onleft>
 	</include>
 	
