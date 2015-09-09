@@ -20,7 +20,7 @@
 				<pagecontrol>61</pagecontrol>
 				<orientation>vertical</orientation>
 				<onleft>9000</onleft>
-				<onright>noop</onright>
+				<onright>9014</onright>
 				<viewtype label="">list</viewtype>
 				<skinshortcuts>visibility</skinshortcuts>
 
