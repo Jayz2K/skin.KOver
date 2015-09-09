@@ -1,3 +1,9 @@
+[B]0.46.0[/B]
+- Better skinshortcuts integration
+- Added skinshortcuts background features
+- Skin.Helper features available for skinshortcuts
+- Added the home submenu access by pressing RIGHT on a widget
+
 [B]0.45.0[/B]
 - Included skinshortcuts' template feature for widgets
 - Localized strings for designer and colortool
