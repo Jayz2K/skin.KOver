@@ -107,8 +107,10 @@
 	<variable name="B1SubTitle">
 		<value condition="Window.IsVisible(12600)">$INFO[ListItem.Property(LowTemperature),, / ]$INFO[ListItem.Property(HighTemperature),,°]</value>
 		<value condition="StringCompare(ListItem.Label,..)">$LOCALIZE[13306]</value>
-		<value condition="Window.IsVisible(10623) | Window.IsVisible(10618)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
-		<value condition="Window.IsVisible(10620) | Window.IsVisible(10615)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
+		<value condition="[Window.IsVisible(10623) | Window.IsVisible(10618)] + [!IsEmpty(ListItem.Icon) | !ListItem.HasEpg]">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
+		<value condition="[Window.IsVisible(10620) | Window.IsVisible(10615)] + [!IsEmpty(ListItem.Icon) | !ListItem.HasEpg]">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
+		<value condition="[Window.IsVisible(10623) | Window.IsVisible(10618)] + IsEmpty(ListItem.Icon) + ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - , ]$INFO[ListItem.ChannelName,(,)]</value>
+		<value condition="[Window.IsVisible(10620) | Window.IsVisible(10615)] + IsEmpty(ListItem.Icon) + ListItem.HasEpg">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - , ]$INFO[ListItem.ChannelName,(,)]</value>
 		<value condition="Window.IsVisible(10621) | Window.IsVisible(10616)">$INFO[ListItem.StartDate]</value>
 		<value condition="Window.IsVisible(10028) + IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
 		<value condition="Window.IsVisible(10028) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
@@ -349,14 +351,14 @@
 
 	<variable name="HomeWidgetSubtitle">
 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),episodes)">$INFO[Container(9011).ListItem.TVShowTitle,, . ]$INFO[Container(9011).ListItem.Season,$LOCALIZE[20373] ,]</value>
-		<value condition="!IsEmpty(Container(9011).ListItem.Genre">$INFO[Container(9011).ListItem.Genre]</value>
+		<value condition="!IsEmpty(Container(9011).ListItem.Genre)">$INFO[Container(9011).ListItem.Genre]</value>
 		<value>$INFO[Container(9011).ListItem.Label2]</value>
 	</variable>
 
 	<variable name="HomeWidgetPlot">
-		<value condition="!IsEmpty(Container(9011).ListItem.Plot">$INFO[Container(9011).ListItem.Plot]</value>
-		<value condition="!IsEmpty(Container(9011).ListItem.Property(Album_Description)">$INFO[Container(9011).ListItem.Property(Album_Description)]</value>
-		<value condition="!IsEmpty(Container(9011).ListItem.Property(Artist_Description)">$INFO[Container(9011).ListItem.Property(Artist_Description)]</value>
+		<value condition="!IsEmpty(Container(9011).ListItem.Plot)">$INFO[Container(9011).ListItem.Plot]</value>
+		<value condition="!IsEmpty(Container(9011).ListItem.Property(Album_Description))">$INFO[Container(9011).ListItem.Property(Album_Description)]</value>
+		<value condition="!IsEmpty(Container(9011).ListItem.Property(Artist_Description))">$INFO[Container(9011).ListItem.Property(Artist_Description)]</value>
 		<value condition="Container(9011).ListItem.IsFolder">$LOCALIZE[20334]</value>
 	</variable>
 	
