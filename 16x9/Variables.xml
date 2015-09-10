@@ -334,6 +334,7 @@
 	</variable>	
 	
 	<variable name="HomeWidgetThumb">
+		<value condition="StringCompare(Container(9000).ListItem.Property(defaultID),tvshows)">$INFO[Container(9011).ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(Container(9011).ListItem.Art(fanart))">$INFO[Container(9011).ListItem.Art(fanart)]</value>
 		<value>$INFO[Container(9011).ListItem.Icon]</value>
 	</variable>
