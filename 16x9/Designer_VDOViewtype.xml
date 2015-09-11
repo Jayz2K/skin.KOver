@@ -275,6 +275,7 @@
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B2" />
 					</include>
+					<visible>!Window.IsVisible(contextmenu)</visible>
 
 					<control type="image">
 						<left>0</left>
@@ -322,7 +323,7 @@
 					</include>
 
 					<control type="group">
-					<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) + !ControlGroup(99).HasFocus() + !Control.HasFocus(98) + !Control.HasFocus(97) + !ControlGroup(996).HasFocus()</visible>
+					<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) + !ControlGroup(99).HasFocus() + !Control.HasFocus(98) + !Control.HasFocus(97)</visible>
 						<control type="label">
 							<left>12</left>
 							<top>24</top>
@@ -421,7 +422,7 @@
 					</control>
 					
 					<control type="group">
-					<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) + !Control.HasFocus(99)  + Control.HasFocus(98) + !ControlGroup(996).HasFocus()</visible>
+					<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) + !Control.HasFocus(99)  + Control.HasFocus(98)</visible>
 						<control type="label">
 							<left>12</left>
 							<top>24</top>
