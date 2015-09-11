@@ -289,7 +289,7 @@
 							<aligny>center</aligny>
 							<font>FontSmallR</font>
 							<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
-							<label fallback="19499">$INFO[ListItem.Genre]</label>
+							<label fallback="19499">$INFO[ListItem.ChannelName]$INFO[ListItem.Genre, - ,]</label>
 						</control>				
 						<control type="textbox">
 							<top>120</top>

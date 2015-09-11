@@ -686,7 +686,7 @@
 						<aligny>center</aligny>
 						<font>FontSmallR</font>
 						<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
-						<label fallback="19499">$INFO[Container(9010).ListItem.Genre]</label>
+						<label fallback="19499">$INFO[Container(9010).ListItem.ChannelName]$INFO[Container(9010).ListItem.Genre, - ,]</label>
 					</control>				
 					<control type="textbox">
 						<left>148</left>
@@ -779,7 +779,7 @@
 						<aligny>center</aligny>
 						<font>FontSmallR</font>
 						<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
-						<label fallback="19499">$INFO[Container(9010).ListItem.NextGenre]</label>
+						<label fallback="19499">$INFO[Container(9010).ListItem.ChannelName]$INFO[Container(9010).ListItem.NextGenre, - ]</label>
 					</control>				
 					<control type="textbox">
 						<left>148</left>
