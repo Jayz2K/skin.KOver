@@ -56,11 +56,20 @@
 			<control type="multiimage">
 				<left>0</left>
 				<top>0</top>
-				<width>636</width>
-				<height>356</height>
+				<width>0</width>
+				<height>0</height>
 				<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.Title,, ]$INFO[ListItem.ChannelName]</imagepath>
 			 	<aspectratio>scale</aspectratio>
-			 	<visible>!IsEmpty(Container(9010).ListItem.Title)</visible>
+			 	<visible>!IsEmpty(ListItem.Title)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>636</width>
+				<height>356</height>
+				<aspectratio>SCALE</aspectratio>
+				<texture colordiffuse="FFFFFFFF">$INFO[Window(Home).Property(SkinHelper.ListItemThumb)]</texture>
+				<visible>!IsEmpty(ListItem.Title)</visible>
 			</control>
 			<control type="image">
 				<right>24</right>
