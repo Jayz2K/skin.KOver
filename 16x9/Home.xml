@@ -190,9 +190,8 @@
 						<!-- Configuring Vertical Size -->
 						<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL)">SizeY357</include>
 						<include condition="Skin.String(HOM.View1.BBLay,VERTICAL)">SizeY713</include>
-						<!--onleft condition="!Control.IsVisible(9011) + !Control.IsVisible(9010)">9000</onleft-->
-						<onleft condition="Control.IsVisible(9010)">9010</onleft>
-						<onleft condition="Control.IsVisible(9011)">9011</onleft>
+						<onleft condition="StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9010</onleft>
+						<onleft condition="!StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onleft>
 						<onup>noop</onup>
 						<ondown>noop</ondown>
 						<onback>9000</onback>
