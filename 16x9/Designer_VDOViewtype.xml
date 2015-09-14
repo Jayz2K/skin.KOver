@@ -334,6 +334,19 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>!IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
+						</control>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font48</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
 						</control>
 						<control type="label">
 							<left>24</left>
@@ -432,7 +445,20 @@
 							<font>Font72</font>
 							<align>center</align>
 							<aligny>center</aligny>
-							<label>$INFO[Container.CurrentItem]</label>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>!IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
+						</control>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font48</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
 						</control>
 						<control type="label">
 							<left>24</left>

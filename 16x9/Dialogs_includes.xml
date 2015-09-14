@@ -631,8 +631,9 @@
 				
 				<!-- Backspace -->
 				<control type="button" id="23">
-					<onright condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">160</onright>
-					<onleft>312</onleft>
+					<onright condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">1000</onright>
+					<ondown condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">1000</ondown>
+					<onleft>noop</onleft>
 					<ondown>306</ondown>
 					<top>187</top>
 					<width>50</width>
@@ -661,8 +662,8 @@
 					<height>60</height>
 					<itemgap>1</itemgap>
 					<onright condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">9000</onright>
-					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">8</onleft>
-					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">6000</onup>
+					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">23</onleft>
+					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">23</onup>
 					<align>center</align>
 					<usecontrolcoords>true</usecontrolcoords>
 					<orientation>horizontal</orientation>
@@ -693,7 +694,7 @@
 					<height>60</height>
 					<itemgap>1</itemgap>
 					<onright condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">9000</onright>
-					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">8</onleft>
+					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">23</onleft>
 					<align>center</align>
 					<orientation>horizontal</orientation>
 
@@ -726,7 +727,7 @@
 					<height>60</height>
 					<itemgap>1</itemgap>
 					<onright condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">9000</onright>
-					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">8</onleft>
+					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">23</onleft>
 					<align>center</align>
 					<orientation>horizontal</orientation>
 
@@ -759,7 +760,8 @@
 					<height>60</height>
 					<itemgap>1</itemgap>
 					<onright condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">9000</onright>
-					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">8</onleft>
+					<onleft condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">23</onleft>
+					<ondown condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">9000</ondown>
 					<align>center</align>
 					<orientation>horizontal</orientation>
 
@@ -812,7 +814,7 @@
 					<align>right</align>
 					<onleft>22</onleft>
 					<onright>noop</onright>
-					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">5000</onup>
+					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">4000</onup>
 					<ondown>noop</ondown>
 					<orientation>horizontal</orientation>	
 					
@@ -7937,7 +7939,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.WP)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.WP)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.WP)</onclick>
 							<ondown>1</ondown>
 							<onup>noop</onup>
 							<onleft>Back</onleft>
@@ -7983,7 +7986,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBBg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBBg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SBBg)</onclick>
 							<ondown>2</ondown>
 							<onup>33</onup>
 							<onleft>Back</onleft>
@@ -8029,7 +8033,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBIconNF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBIconNF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SBIconNF)</onclick>
 							<ondown>3</ondown>
 							<onup>1</onup>
 							<onleft>Back</onleft>
@@ -8075,7 +8080,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBClock)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBClock)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SBClock)</onclick>
 							<ondown>4</ondown>
 							<onup>2</onup>
 							<onleft>Back</onleft>
@@ -8121,7 +8127,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBShadow)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SBShadow)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SBShadow)</onclick>
 							<ondown>5</ondown>
 							<onup>3</onup>
 							<onleft>Back</onleft>
@@ -8167,7 +8174,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.BBBg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.BBBg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.BBBg)</onclick>
 							<ondown>6</ondown>
 							<onup>4</onup>
 							<onleft>Back</onleft>
@@ -8213,7 +8221,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Bg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Bg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1Bg)</onclick>
 							<ondown>7</ondown>
 							<onup>5</onup>
 							<onleft>Back</onleft>
@@ -8259,7 +8268,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemNF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemNF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemNF)</onclick>
 							<ondown>8</ondown>
 							<onup>6</onup>
 							<onleft>Back</onleft>
@@ -8305,7 +8315,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt1NF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt1NF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1Txt1NF)</onclick>
 							<ondown>9</ondown>
 							<onup>7</onup>
 							<onleft>Back</onleft>
@@ -8351,7 +8362,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt2NF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt2NF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1Txt2NF)</onclick>
 							<ondown>10</ondown>
 							<onup>8</onup>
 							<onleft>Back</onleft>
@@ -8397,7 +8409,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFVDO)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFVDO)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemFVDO)</onclick>
 							<onfocus>SetProperty(MenuCategory,videos,home)</onfocus>
 							<ondown>11</ondown>
 							<onup>9</onup>
@@ -8444,7 +8457,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFMOV)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFMOV)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemFMOV)</onclick>
 							<onfocus>SetProperty(MenuCategory,movies,home)</onfocus>
 							<ondown>12</ondown>
 							<onup>10</onup>
@@ -8491,7 +8505,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFSHO)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFSHO)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemFSHO)</onclick>
 							<onfocus>SetProperty(MenuCategory,tvshows,home)</onfocus>
 							<ondown>13</ondown>
 							<onup>11</onup>
@@ -8538,7 +8553,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFMUS)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFMUS)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemFMUS)</onclick>
 							<onfocus>SetProperty(MenuCategory,music,home)</onfocus>
 							<ondown>14</ondown>
 							<onup>12</onup>
@@ -8585,7 +8601,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFPIC)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFPIC)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemFPIC)</onclick>
 							<onfocus>SetProperty(MenuCategory,pictures,home)</onfocus>
 							<ondown>15</ondown>
 							<onup>13</onup>
@@ -8632,7 +8649,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFTV)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemFTV)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemFTV)</onclick>
 							<onfocus>SetProperty(MenuCategory,livetv,home)</onfocus>
 							<ondown>16</ondown>
 							<onup>14</onup>
@@ -8679,7 +8697,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1ItemF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1ItemF)</onclick>
 							<ondown>17</ondown>
 							<onup>15</onup>
 							<onleft>Back</onleft>
@@ -8725,7 +8744,7 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1IconBg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1IconBg)</onclick>
 							<ondown>18</ondown>
 							<onup>16</onup>
 							<onleft>Back</onleft>
@@ -8771,7 +8790,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt1F)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt1F)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1Txt1F)</onclick>
 							<ondown>19</ondown>
 							<onup>17</onup>
 							<onleft>Back</onleft>
@@ -8817,7 +8837,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt2F)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B1Txt2F)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B1Txt2F)</onclick>
 							<ondown>20</ondown>
 							<onup>18</onup>
 							<onleft>Back</onleft>
@@ -8863,7 +8884,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Bg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Bg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B2Bg)</onclick>
 							<ondown>21</ondown>
 							<onup>19</onup>
 							<onleft>Back</onleft>
@@ -8909,7 +8931,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt1)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt1)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B2Txt1)</onclick>
 							<ondown>22</ondown>
 							<onup>20</onup>
 							<onleft>Back</onleft>
@@ -8955,7 +8978,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt2)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt2)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B2Txt2)</onclick>
 							<ondown>23</ondown>
 							<onup>21</onup>
 							<onleft>Back</onleft>
@@ -9001,7 +9025,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt3)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt3)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B2Txt3)</onclick>
 							<ondown>24</ondown>
 							<onup>22</onup>
 							<onleft>Back</onleft>
@@ -9047,7 +9072,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt4)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B2Txt4)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B2Txt4)</onclick>
 							<ondown>25</ondown>
 							<onup>23</onup>
 							<onleft>Back</onleft>
@@ -9093,7 +9119,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B3Bg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B3Bg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B3Bg)</onclick>
 							<ondown>26</ondown>
 							<onup>24</onup>
 							<onleft>Back</onleft>
@@ -9139,7 +9166,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4Bg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4Bg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B4Bg)</onclick>
 							<ondown>27</ondown>
 							<onup>25</onup>
 							<onleft>Back</onleft>
@@ -9185,7 +9213,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIABg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIABg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIABg)</onclick>
 							<ondown>28</ondown>
 							<onup>26</onup>
 							<onleft>Back</onleft>
@@ -9231,7 +9260,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATitle)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATitle)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATitle)</onclick>
 							<ondown>29</ondown>
 							<onup>27</onup>
 							<onleft>Back</onleft>
@@ -9277,7 +9307,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtNF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtNF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATxtNF)</onclick>
 							<ondown>30</ondown>
 							<onup>28</onup>
 							<onleft>Back</onleft>
@@ -9323,7 +9354,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtFBg)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtFBg)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATxtFBg)</onclick>
 							<ondown>31</ondown>
 							<onup>29</onup>
 							<onleft>Back</onleft>
@@ -9369,7 +9401,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtF)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtF)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATxtF)</onclick>
 							<ondown>32</ondown>
 							<onup>30</onup>
 							<onleft>Back</onleft>
@@ -9415,7 +9448,8 @@
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 							<align>left</align>
 							<aligny>center</aligny>
-							<onclick>RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIAInvalid)</onclick>
+							<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIAInvalid)</onclick>
+							<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIAInvalid)</onclick>
 							<ondown>50</ondown>
 							<onup>31</onup>
 							<onleft>Back</onleft>
@@ -9691,6 +9725,83 @@
 			</control>
 		</control>
 	</include>	
+
+	<include name="DiaTextViewer">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>$INFO[ListItem.Label]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>			
+
+				<!-- Title  -->
+				<control type="label" id="1">
+					<top>80</top>
+					<left>24</left>
+					<width>588</width>
+					<height>156</height>height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font36</font>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+				</control>					
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<width>$PARAM[DIAB2SizeX]</width>
+				<height>$PARAM[DIAB2SizeY]</height>
+
+				<control type="textbox" id="5">
+					<top>24</top>
+					<left>24</left>	
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<font>Font27</font>
+					<align>left</align>
+					<pagecontrol>300</pagecontrol>
+				</control>
+
+				<control type="scrollbar" id="300">
+					<width>0</width>
+					<height>0</height>
+				</control>
+
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+			
+			</control>
+		</control>
+	</include>
 
 	<include name="Model">
 	

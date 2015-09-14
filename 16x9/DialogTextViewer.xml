@@ -1,38 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-	<!-- textviewer -->
-	<defaultcontrol always="true">61</defaultcontrol>
-	<include>DialogZoomAnimation</include>
-
+	<!-- movieinformation -->
+	<defaultcontrol always="true">300</defaultcontrol>
+	<onload condition="IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility,$INFO[Window.Property(xmlfile)],Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility2,$INFO[Window.Property(xmlfile)],Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility2)) + IsEmpty(Window(Home).Property(DialogVisibility3))">SetProperty(DialogVisibility3,$INFO[Window.Property(xmlfile)],Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility3)) + IsEmpty(Window(Home).Property(DialogVisibility4))">SetProperty(DialogVisibility4,$INFO[Window.Property(xmlfile)],Home)</onload>
+	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))">SetProperty(DialogVisibility5,$INFO[Window.Property(xmlfile)],Home)</onload>
+	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility2))">ClearProperty(DialogVisibility,Home)</onunload>
+	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility3))">ClearProperty(DialogVisibility2,Home)</onunload>
+	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility4))">ClearProperty(DialogVisibility3,Home)</onunload>
+	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility5))">ClearProperty(DialogVisibility4,Home)</onunload>
+	<onunload>ClearProperty(DialogVisibility5,Home)</onunload>
+	
 	<controls>
+		
+		<control type="group">
+			<visible>[StringCompare(Window(Home).Property(DialogVisibility),Window.Property(xmlfile)) + IsEmpty(Window(Home).Property(DialogVisibility2))] | 
+					[StringCompare(Window(Home).Property(DialogVisibility2),Window.Property(xmlfile)) + IsEmpty(Window(Home).Property(DialogVisibility3))] |
+					[StringCompare(Window(Home).Property(DialogVisibility3),Window.Property(xmlfile)) + IsEmpty(Window(Home).Property(DialogVisibility4))] |
+					[StringCompare(Window(Home).Property(DialogVisibility4),Window.Property(xmlfile)) + IsEmpty(Window(Home).Property(DialogVisibility5))] |
+					StringCompare(Window(Home).Property(DialogVisibility5),Window.Property(xmlfile))</visible>
+			
+			<include name="DialogPOS">
+				<param name="DialogName" value="DiaTextViewer" />
+			</include>				
 
-		<!-- Background -->
-		<include>DialogBackgroundImage</include>
-
-		<!-- Heading -->
-		<control type="label" id="1">
-			<left>150</left>
-			<top>96</top>
-			<width>1620</width>
-			<height>72</height>
-			<font>Font72</font>
-		</control>
-
-		<!-- Info -->
-		<control type="textbox" id="5">
-			<left>150</left>
-			<top>235</top>
-			<width>1620</width>
-			<height>700</height>
-			<pagecontrol>61</pagecontrol>
-		</control>
-
-		<!-- Scrollbar -->
-		<control type="scrollbar" id="61">
-			<left>150</left>
-			<top>235</top>
-			<width>10</width>
-			<height>716</height>
 		</control>
 
 	</controls>
