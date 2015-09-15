@@ -1551,8 +1551,9 @@
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
+				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1720,8 +1721,9 @@
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
+				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2002,8 +2004,9 @@
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
+				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 			</control>
 			<control type="group">
 				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)]</visible>
@@ -2324,8 +2327,9 @@
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
+				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2520,8 +2524,9 @@
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
+				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 			</control>
 			<control type="image">
 				<left>-12</left>
@@ -2703,7 +2708,7 @@
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
 				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
 				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[CompPrefix]).Position],Home)</onfocus>		
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -3230,7 +3235,8 @@
 					<texturenofocus></texturenofocus>
 					<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
 					<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-					<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+					<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+					<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).Position],Home)</onfocus>		
 				</control>
 				<control type="image">
 					<left>0</left>
