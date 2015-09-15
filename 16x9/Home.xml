@@ -7,9 +7,9 @@
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
 	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
 	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>
+	<onload>ClearProperty(ListPos,Home)</onload>
 	<!--onload>Skin.ToggleSetting(DebugInfo)</onload-->
 	<onunload>SetProperty(BackgroundMEM,$INFO[Container(9000).ListItem.Property(background)],Home)</onunload>
-
 	<controls>
 		<!-- Background -->
 		<include name="Wallpaper">

@@ -343,9 +343,25 @@
 	<include name="SetHorizontal">
 		<orientation>horizontal</orientation>
 		<ondown>99</ondown>
-		<onleft>noop</onleft>
-		<onright condition="!ListItem.HasEpg">noop</onright>
+		<onleft condition="Control.IsVisible(50)">Control.Move(50,-1)</onleft>
+		<onleft condition="Control.IsVisible(51)">Control.Move(51,-1)</onleft>
+		<onleft condition="Control.IsVisible(52)">Control.Move(52,-1)</onleft>
+		<onleft condition="Control.IsVisible(53)">Control.Move(53,-1)</onleft>
+		<onleft condition="Control.IsVisible(54)">Control.Move(54,-1)</onleft>
+		<onleft condition="Control.IsVisible(55)">Control.Move(55,-1)</onleft>
+		<onleft condition="Control.IsVisible(56)">Control.Move(56,-1)</onleft>
+		<onleft condition="Control.IsVisible(57)">Control.Move(57,-1)</onleft>
+		<onleft condition="Control.IsVisible(58)">Control.Move(58,-1)</onleft>
 		<onright condition="ListItem.HasEpg">98</onright>
+		<onright condition="Control.IsVisible(50) + !ListItem.HasEpg">Control.Move(50,1)</onright>
+		<onright condition="Control.IsVisible(51) + !ListItem.HasEpg">Control.Move(51,1)</onright>
+		<onright condition="Control.IsVisible(52) + !ListItem.HasEpg">Control.Move(52,1)</onright>
+		<onright condition="Control.IsVisible(53) + !ListItem.HasEpg">Control.Move(53,1)</onright>
+		<onright condition="Control.IsVisible(54) + !ListItem.HasEpg">Control.Move(54,1)</onright>
+		<onright condition="Control.IsVisible(55) + !ListItem.HasEpg">Control.Move(55,1)</onright>
+		<onright condition="Control.IsVisible(56) + !ListItem.HasEpg">Control.Move(56,1)</onright>
+		<onright condition="Control.IsVisible(57) + !ListItem.HasEpg">Control.Move(57,1)</onright>
+		<onright condition="Control.IsVisible(58) + !ListItem.HasEpg">Control.Move(58,1)</onright>
 		<onup>noop</onup>
 	</include>
 	
@@ -353,9 +369,25 @@
 		<orientation>vertical</orientation>
 		<onright condition="!ListItem.HasEpg">99</onright>
 		<onright condition="ListItem.HasEpg">98</onright>
-		<ondown>noop</ondown>
+		<ondown condition="Control.IsVisible(50)">Control.Move(50,1)</ondown>
+		<ondown condition="Control.IsVisible(51)">Control.Move(51,1)</ondown>
+		<ondown condition="Control.IsVisible(52)">Control.Move(52,1)</ondown>
+		<ondown condition="Control.IsVisible(53)">Control.Move(53,1)</ondown>
+		<ondown condition="Control.IsVisible(54)">Control.Move(54,1)</ondown>
+		<ondown condition="Control.IsVisible(55)">Control.Move(55,1)</ondown>
+		<ondown condition="Control.IsVisible(56)">Control.Move(56,1)</ondown>
+		<ondown condition="Control.IsVisible(57)">Control.Move(57,1)</ondown>
+		<ondown condition="Control.IsVisible(58)">Control.Move(58,1)</ondown>
 		<onleft>noop</onleft>
-		<onup>noop</onup>
+		<onup condition="Control.IsVisible(50)">Control.Move(50,-1)</onup>
+		<onup condition="Control.IsVisible(51)">Control.Move(51,-1)</onup>
+		<onup condition="Control.IsVisible(52)">Control.Move(52,-1)</onup>
+		<onup condition="Control.IsVisible(53)">Control.Move(53,-1)</onup>
+		<onup condition="Control.IsVisible(54)">Control.Move(54,-1)</onup>
+		<onup condition="Control.IsVisible(55)">Control.Move(55,-1)</onup>
+		<onup condition="Control.IsVisible(56)">Control.Move(56,-1)</onup>
+		<onup condition="Control.IsVisible(57)">Control.Move(57,-1)</onup>
+		<onup condition="Control.IsVisible(58)">Control.Move(58,-1)</onup>
 	</include>
 	
 	<!-- Special : Configuring Bloc 2 Rating Position -->

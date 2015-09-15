@@ -2702,7 +2702,8 @@
 				<texturenofocus></texturenofocus>
 				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
 				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>	
+				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
+				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[CompPrefix]).Position],Home)</onfocus>		
 			</control>
 			<control type="image">
 				<left>0</left>
