@@ -1546,7 +1546,8 @@
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->					
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,DISABLED) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],ENABLED)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,ENABLED)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],DISABLED)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,ENABLED)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],IDLEFADE)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],DISABLED)</onclick>
 							<!-- Actions For Bloc 1-->		
 							<!-- Actions For Bloc 2-->
 							<!-- Actions For Bloc 3-->
@@ -1754,7 +1755,8 @@
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->					
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,HIDDEN) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],VISIBLE)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,VISIBLE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],HIDDEN)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,VISIBLE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],IDLEFADE)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],HIDDEN)</onclick>
 							<!-- Actions For Bloc 1-->
 							<!-- Actions For Bloc 2-->
 							<!-- Actions For Bloc 3-->
@@ -2608,7 +2610,7 @@
 
 					<!-- Blocs background preview-->
 					<control type="group">
-						<visible>StringCompare(Container(9300).ListItem.Property(BBShowMEM),VISIBLE) + !IsEmpty(Container(9100).ListItem.Label)</visible>
+						<visible>!StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + !IsEmpty(Container(9100).ListItem.Label)</visible>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -2659,10 +2661,10 @@
 						<aspectratio>scale</aspectratio>
 						<texture>common/white.png</texture>
 						<visible>StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + !IsEmpty(Container(9100).ListItem.Label)</visible>
-						<visible>StringCompare(Container(9300).ListItem.Property(BBShowMEM),VISIBLE) + !IsEmpty(Container(9100).ListItem.Label)</visible>			
+						<visible>!StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + !IsEmpty(Container(9100).ListItem.Label)</visible>			
 					</control>
 					<control type="group">
-						<visible>StringCompare(Container(9300).ListItem.Property(BBShowMEM),VISIBLE) + !IsEmpty(Container(9100).ListItem.Label)</visible>
+						<visible>!StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + !IsEmpty(Container(9100).ListItem.Label)</visible>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -2793,7 +2795,7 @@
 						<animation effect="slide" start="0,0" end="0,236" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,224" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,592" time="100" condition="!StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),C)">Conditional</animation>
-						<visible>StringCompare(Container(9300).ListItem.Property(B3ShowMEM),VISIBLE)</visible>
+						<visible>!StringCompare(Container(9300).ListItem.Property(B3ShowMEM),HIDDEN)</visible>
 					</control>
 					<!-- Bloc4 Preview -->
 					<control type="group">
@@ -2884,7 +2886,7 @@
 						<animation effect="slide" start="0,0" end="0,236" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,224" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,592" time="100" condition="!StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),C)">Conditional</animation>
-						<visible>StringCompare(Container(9300).ListItem.Property(B4ShowMEM),VISIBLE)</visible>
+						<visible>!StringCompare(Container(9300).ListItem.Property(B4ShowMEM),HIDDEN)</visible>
 					</control>
 					<!-- Bloc2 Preview -->
 					<control type="group">
@@ -2975,7 +2977,7 @@
 						<animation effect="slide" start="0,0" end="0,236" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,224" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,592" time="100" condition="!StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),C)">Conditional</animation>
-						<visible>StringCompare(Container(9300).ListItem.Property(B2ShowMEM),VISIBLE)</visible>
+						<visible>!StringCompare(Container(9300).ListItem.Property(B2ShowMEM),HIDDEN)</visible>
 					</control>
 					<!-- Bloc1 Preview -->
 					<control type="group">
@@ -3066,7 +3068,7 @@
 						<animation effect="slide" start="0,0" end="0,236" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,224" time="100" condition="StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(BBSepYMEM),NONE)">Conditional</animation>
 						<animation effect="slide" start="0,0" end="0,592" time="100" condition="!StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(BBSidebarMEM),BOTTOM) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),C)">Conditional</animation>
-						<visible>StringCompare(Container(9300).ListItem.Property(B1ShowMEM),VISIBLE)</visible>
+						<visible>!StringCompare(Container(9300).ListItem.Property(B1ShowMEM),HIDDEN)</visible>
 					</control>
 					<!-- Sidebar -->
 					<control type="group">

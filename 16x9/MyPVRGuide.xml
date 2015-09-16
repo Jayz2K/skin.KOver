@@ -17,27 +17,29 @@
 
 	<controls>
 
-			<!-- Background -->
-			<include name="Wallpaper">
+		<!-- Background -->
+		<include name="Wallpaper">
+			<param name="CompPrefix" value="TV.View1" />
+		</include>	
+		
+		<control type="group">
+		 
+			<include name="DialogPush">
 				<param name="CompPrefix" value="TV.View1" />
-			</include>	
-			
-			<control type="group">
-			 
-				<include name="DialogPush">
-					<param name="CompPrefix" value="TV.View1" />
-				</include>
-			
+			</include>
+		
 			<control type="image">
 				<include name="BgPosition">
 					<param name="Prefix" value="TV.View1" />
 				</include>
 				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
-				<visible>Skin.String(TV.View1.BBShow,VISIBLE)</visible>
+				<visible>!Skin.String(TV.View1.BBShow,HIDDEN)</visible>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
 			</control>				
 			
 		<!-- Bloc 3-->
 		<control type="group">
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>		
 			<include name="BlocPosition">
 				<param name="Prefix" value="TV.View1" />
 				<param name="BlocID" value="B3" />
@@ -50,7 +52,7 @@
 			<include condition="Skin.String(TV.View1.B3SizeY,1ROW)">SizeY356</include>
 			<include condition="Skin.String(TV.View1.B3SizeY,2ROW)">SizeY712</include>
 			<include condition="Skin.String(TV.View1.B3SizeY,3ROW)">SizeY1068</include>		
-			<visible>Skin.String(TV.View1.B3Show,VISIBLE)</visible>
+			<visible>!Skin.String(TV.View1.B3Show,HIDDEN)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -123,25 +125,21 @@
 				<param name="Prefix" value="TV.View1" />
 				<param name="BlocID" value="B4" />
 			</include>
-			<!-- Configuring Horizontal Size -->
-			<include condition="Skin.String(TV.View1.B4SizeX,1COLUMN)">SizeX636</include>
-			<include condition="Skin.String(TV.View1.B4SizeX,2COLUMN)">SizeX1272</include>
-			<include condition="Skin.String(TV.View1.B4SizeX,3COLUMN)">SizeX1908</include>
-			<!-- Configuring Vertical Size -->
-			<include condition="Skin.String(TV.View1.B4SizeY,1ROW)">SizeY356</include>
-			<include condition="Skin.String(TV.View1.B4SizeY,2ROW)">SizeY712</include>
-			<include condition="Skin.String(TV.View1.B4SizeY,3ROW)">SizeY1068</include>		
-			<visible>Skin.String(TV.View1.B4Show,VISIBLE)</visible>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
 			</control>				
 			<control type="videowindow">
 				<left>0</left>
 				<top>0</top>
-				<visible>Skin.String(TV.View1.B4Show,VISIBLE)</visible>
 			</control>
+			<control type="visualisation">
+				<left>0</left>
+				<top>0</top>
+			</control>
+			<visible>!Skin.String(TV.View1.B4Show,HIDDEN)</visible>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>	
 		</control>
 
 		<!-- Bloc 1 -->
@@ -149,18 +147,11 @@
 			<control type="group">
 				<visible>Control.IsVisible(10)</visible>
 				<animation effect="fade" start="100" end="0" time="0" condition="Skin.String(TV.View1.B1Show,HIDDEN)">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
 				<include name="BlocPosition">
 					<param name="Prefix" value="TV.View1" />
 					<param name="BlocID" value="B1" />
 				</include>
-				<!-- Configuring Horizontal Size -->
-				<include condition="Skin.String(TV.View1.B1SizeX,1COLUMN)">SizeX636</include>
-				<include condition="Skin.String(TV.View1.B1SizeX,2COLUMN)">SizeX1272</include>
-				<include condition="Skin.String(TV.View1.B1SizeX,3COLUMN)">SizeX1908</include>
-				<!-- Configuring Vertical Size -->
-				<include condition="Skin.String(TV.View1.B1SizeY,1ROW)">SizeY356</include>
-				<include condition="Skin.String(TV.View1.B1SizeY,2ROW)">SizeY713</include>
-				<include condition="Skin.String(TV.View1.B1SizeY,3ROW)">SizeY1069</include>		
 				
 				<control type="image">
 					<left>0</left>
@@ -213,14 +204,8 @@
 				<param name="Prefix" value="TV.View1" />
 				<param name="BlocID" value="B2" />
 			</include>
-			<!-- Configuring Horizontal Size -->
-			<include condition="Skin.String(TV.View1.B2SizeX,1COLUMN)">SizeX636</include>
-			<include condition="Skin.String(TV.View1.B2SizeX,2COLUMN)">SizeX1272</include>
-			<include condition="Skin.String(TV.View1.B2SizeX,3COLUMN)">SizeX1908</include>
-			<!-- Configuring Vertical Size -->
-			<include condition="Skin.String(TV.View1.B2SizeY,1ROW)">SizeY356</include>
-			<include condition="Skin.String(TV.View1.B2SizeY,2ROW)">SizeY712</include>
-			<include condition="Skin.String(TV.View1.B2SizeY,3ROW)">SizeY1068</include>
+			<visible>!Window.IsVisible(contextmenu)</visible>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
 
 
 				<control type="image">
@@ -228,7 +213,7 @@
 					<top>0</top>
 					<aspectratio>stretch</aspectratio>
 					<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
-					<visible>Skin.String(TV.View1.B2Show,VISIBLE) | ControlGroup(99).HasFocus() | ControlGroup(996).HasFocus()</visible>
+					<visible>!Skin.String(TV.View1.B2Show,HIDDEN) | ControlGroup(99).HasFocus() | ControlGroup(996).HasFocus()</visible>
 				</control>
 				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,1COLUMN) + Skin.String(TV.View1.B2SizeY,1ROW)">
 					<param name="width" value="588" />
@@ -262,7 +247,7 @@
 				</include>
 
 				<control type="group">
-				<visible>Skin.String(TV.View1.B2Show,VISIBLE) + !ControlGroup(99).HasFocus() + !ControlGroup(996).HasFocus()</visible>
+				<visible>!Skin.String(TV.View1.B2Show,HIDDEN) + !ControlGroup(99).HasFocus() + !ControlGroup(996).HasFocus()</visible>
 					<control type="label">
 						<left>12</left>
 						<top>24</top>
@@ -367,7 +352,8 @@
 			<animation effect="slide" start="0,0" end="0,-120" time="100" condition="[Skin.String(TV.View1.DIAPanel,LEFT) | Skin.String(TV.View1.DIAPanel,RIGHT)] + Skin.String(TV.View1.BBSidebar,TOP) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="0,120" time="100" condition="[Skin.String(TV.View1.DIAPanel,LEFT) | Skin.String(TV.View1.DIAPanel,RIGHT)] + Skin.String(TV.View1.BBSidebar,BOTTOM) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-120,0" time="100" condition="[Skin.String(TV.View1.DIAPanel,TOP) | Skin.String(TV.View1.DIAPanel,BOTTOM)] + Skin.String(TV.View1.BBSidebar,LEFT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String(TV.View1.DIAPanel,TOP) | Skin.String(TV.View1.DIAPanel,BOTTOM)] + Skin.String(TV.View1.BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>													
+			<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String(TV.View1.DIAPanel,TOP) | Skin.String(TV.View1.DIAPanel,BOTTOM)] + Skin.String(TV.View1.BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>													
 	
 			<control type="group">		
 				<visible>Skin.String(TV.View1.BBSidebar,LEFT) | Skin.String(TV.View1.BBSidebar,RIGHT)</visible>	

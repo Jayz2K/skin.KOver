@@ -23,16 +23,18 @@
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 					</include>
 					<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
-					<visible>Skin.String($PARAM[CompPrefix].BBShow,VISIBLE)</visible>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
 				</control>				
 				
 				<!-- Bloc 3 -->
 				<control type="group">
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B3Show,IDLEFADE)">Conditonal</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B3" />
 					</include>
-					<visible>Skin.String($PARAM[CompPrefix].B3Show,VISIBLE)</visible>
+					<visible>!Skin.String($PARAM[CompPrefix].B3Show,HIDDEN)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -175,7 +177,6 @@
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B4" />
 					</include>	
-					<visible>Skin.String($PARAM[CompPrefix].B4Show,VISIBLE)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -184,19 +185,20 @@
 					<control type="videowindow">
 						<left>0</left>
 						<top>0</top>
-						<visible>Skin.String($PARAM[CompPrefix].B4Show,VISIBLE)</visible>
 					</control>
 					<control type="visualisation">
 						<left>0</left>
 						<top>0</top>
-						<visible>Skin.String($PARAM[CompPrefix].B4Show,VISIBLE)</visible>
 					</control>
+					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">Conditonal</animation>
 				</control>		
 
 				<!-- Bloc 1 -->	
 				<control type="group">
 					<visible>Control.IsVisible($PARAM[Id])</visible>
-					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)">Conditional</animation>			
+					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B1Show,IDLEFADE)">Conditonal</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B1" />
@@ -294,13 +296,14 @@
 						<param name="BlocID" value="B2" />
 					</include>
 					<visible>!Window.IsVisible(contextmenu)</visible>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B2Show,IDLEFADE)">Conditonal</animation>
 
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
 						<aspectratio>stretch</aspectratio>
 						<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
-						<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) | ControlGroup(99).HasFocus() | Control.HasFocus(97)</visible>
+						<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) | ControlGroup(99).HasFocus() | Control.HasFocus(97)</visible>
 					</control>
 					
 					<include name="ViewOptions" condition="Skin.String($PARAM[CompPrefix].B2SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B2SizeY,1ROW)">
@@ -341,7 +344,7 @@
 					</include>
 
 					<control type="group">
-					<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) + !ControlGroup(99).HasFocus() + !Control.HasFocus(98) + !Control.HasFocus(97)</visible>
+					<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) + !ControlGroup(99).HasFocus() + !Control.HasFocus(98) + !Control.HasFocus(97)</visible>
 						<control type="label">
 							<left>12</left>
 							<top>24</top>
@@ -453,7 +456,7 @@
 					</control>
 					
 					<control type="group">
-					<visible>Skin.String($PARAM[CompPrefix].B2Show,VISIBLE) + !Control.HasFocus(99)  + Control.HasFocus(98)</visible>
+					<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) + !Control.HasFocus(99)  + Control.HasFocus(98)</visible>
 						<control type="label">
 							<left>12</left>
 							<top>24</top>
@@ -558,7 +561,8 @@
 				<animation effect="slide" start="0,0" end="0,-120" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,LEFT) | Skin.String($PARAM[CompPrefix].DIAPanel,RIGHT)] + Skin.String($PARAM[CompPrefix].BBSidebar,TOP) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,120" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,LEFT) | Skin.String($PARAM[CompPrefix].DIAPanel,RIGHT)] + Skin.String($PARAM[CompPrefix].BBSidebar,BOTTOM) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="-120,0" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,TOP) | Skin.String($PARAM[CompPrefix].DIAPanel,BOTTOM)] + Skin.String($PARAM[CompPrefix].BBSidebar,LEFT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>
-				<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,TOP) | Skin.String($PARAM[CompPrefix].DIAPanel,BOTTOM)] + Skin.String($PARAM[CompPrefix].BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>													
+				<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,TOP) | Skin.String($PARAM[CompPrefix].DIAPanel,BOTTOM)] + Skin.String($PARAM[CompPrefix].BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].BBSBHide,IDLEFADE)">Conditonal</animation>												
 
 				<control type="group">		
 					<visible>Skin.String($PARAM[CompPrefix].BBSidebar,LEFT) | Skin.String($PARAM[CompPrefix].BBSidebar,RIGHT)</visible>	
