@@ -1,3 +1,8 @@
+[B]0.48.0[/B]
+- IDLEFADE feature (fade blocs after 3s)
+- Partial fix for last item selection (onback)
+- Minor fixes
+
 [B]0.47.0[/B]
 - New windows skinned
 - Tweaks for PRV thumb
