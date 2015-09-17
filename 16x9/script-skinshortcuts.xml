@@ -140,9 +140,9 @@
 			</focusedlayout>
 
 		</control>
-		
+
 		<!-- Right list -->
-		<control type="list" id="9001">
+		<control type="grouplist" id="9001">
 			<top>324</top>
 			<left>720</left>
 			<width>672</width>
@@ -151,236 +151,156 @@
 			<onright>10</onright>
 			<onup>noop</onup>
 			<ondown>noop</ondown>
-			<scrolltime tween="sine" easing="out">240</scrolltime>
+			<itemgap>1</itemgap>
+			<orientation>vertical</orientation>
+			<usecontrolcoords>true</usecontrolcoords>
+			<scrolltime tween="sine" easing="out">240</scrolltime>	
 
-			<itemlayout width="672" height="119">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>671</width>
-					<height>118</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FF111111">common/white.png</texture>
-				</control>
-				<control type="label">
-					<left>24</left>
-					<top>20</top>
-					<width>499</width>
-					<height>50</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>Font27</font>
-					<textcolor>FF666666</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<control type="label">
-					<left>24</left>
-					<top>50</top>
-					<width>499</width>
-					<height>50</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSmallR</font>
-					<textcolor>FF666666</textcolor>
-					<label>$INFO[ListItem.Label2]</label>
-				</control>
-			</itemlayout>
-
-			<focusedlayout width="672" height="119">
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>671</width>
-					<height>118</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FF111111">common/white.png</texture>
-					<visible>!Control.HasFocus(9001)</visible>
-				</control>
-				<control type="image">
-					<left>0</left>
-					<top>0</top>
-					<width>671</width>
-					<height>118</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FF00AAFF">common/white.png</texture>
-					<visible>Control.HasFocus(9001)</visible>
-				</control>
-				<control type="label">
-					<left>24</left>
-					<top>20</top>
-					<width>499</width>
-					<height>50</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>Font27</font>
-					<textcolor>FFFFFFFF</textcolor>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
-				<control type="label">
-					<left>24</left>
-					<top>50</top>
-					<width>499</width>
-					<height>50</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>FontSmallR</font>
-					<textcolor>FFFFFFFF</textcolor>
-					<label>$INFO[ListItem.Label2]</label>
-				</control>
-			</focusedlayout>
-			<content>
-				<!-- Change shortcut -->
-				<item id="1">
-					<label>$ADDON[script.skinshortcuts 32048]</label>
-					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,401)</onclick>
-				</item>
-				<!-- Change label -->
-				<item id="2">
-					<label>$ADDON[script.skinshortcuts 32025]</label>
-					<label2>$INFO[Container(211).ListItem.Label]</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,305)</onclick>
-				</item>
-				<item id="3">
-				<!-- Change Icon -->
-					<label>$ADDON[script.skinshortcuts 32026]</label>
-					<label2>$INFO[Container(211).ListItem.Property(Icon)]</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,311)</onclick>
-				</item>
-				<!-- Change background -->				
-				<item id="4">
-					<label>$ADDON[script.skinshortcuts 32045]</label>
-					<label2>$INFO[Container(211).ListItem.Property(Background)]</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,310)</onclick>
-				</item>
-				<!-- Change action -->
-				<item id="5">
-					<label>$ADDON[script.skinshortcuts 32027]</label>
-					<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,307)</onclick>
-				</item>
-				<!-- Edit sub menu -->
-				<item id="6">
-					<label>$ADDON[script.skinshortcuts 32072]</label>
-					<label2>-</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,405)</onclick>
-					<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
-				</item>
-				<!-- Edit widget -->
-				<item id="7">
-					<label>$ADDON[script.skinshortcuts 32044]</label>
-					<label2>$INFO[Container(211).ListItem.Property(WidgetName)]</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,312)</onclick>
-					<visible>StringCompare(Window.Property(groupname), mainmenu)</visible>
-				</item>
-				<!-- Move Up -->
-				<item id="8">
-					<label>$ADDON[script.skinshortcuts 32002]</label>
-					<label2>-</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,303)</onclick>
-				</item>
-				<!-- Move Down -->
-				<item id="9">
-					<label>$ADDON[script.skinshortcuts 32003]</label>
-					<label2>-</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,304)</onclick>
-				</item>
-				<!-- Remove -->
-				<item id="10">
-					<label>$ADDON[script.skinshortcuts 32001]</label>
-					<label2>-</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,302)</onclick>
-				</item>
-				<!-- Add item -->
-				<item id="11">
-					<label>$ADDON[script.skinshortcuts 32000]</label>
-					<label2>-</label2>
-					<icon></icon>
-					<thumb></thumb>
-					<onclick>SendClick(1200,301)</onclick>
-				</item>
-			</content>
-		</control>
-		
-		<!-- Ghost Buttons -->
-		<!-- Change shortcut -->
-		<control type="button" id="401">
-			<left>-1000</left>
-		</control>
-
-		<!-- Change label -->
-		<control type="button" id="305">
-			<left>-1000</left>
-		</control>
-		
-		<!-- Change Icon -->
-		<control type="button" id="311" description="Browse for Thumb">
-			<left>-1000</left>
-		</control>
-
-		<!-- Change background -->
-		<control type="button" id="310">
-			<left>-1000</left>
-		</control>
-
-		<!-- Change action -->
-		<control type="button" id="307">
-			<left>-1000</left>
-		</control>
-
-		<!-- Edit sub menu -->
-		<control type="button" id="405">
-			<left>-1000</left>
-		</control>
-
-		<!-- Edit widget -->
-		<control type="button" id="309">
-			<left>-1000</left>	
-		</control>
-
-		<!-- Edit widget -->
-		<control type="button" id="312">
-			<left>-1000</left>	
-		</control>
-		
-		<!-- Move down -->
-		<control type="button" id="304">
-			<left>-1000</left>	
-		</control>
-
-		<!-- Move up -->
-		<control type="button" id="303">
-			<left>-1000</left>	
-		</control>
-
-		<!-- Remove -->
-		<control type="button" id="302">
-			<left>-1000</left>
-		</control>
-
-		<!-- Add item -->
-		<control type="button" id="301">
-			<left>-1000</left>
+			<!-- Change shortcut -->
+			<control type="button" id="401">
+				<label>$ADDON[script.skinshortcuts 32048]</label>
+				<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Change label -->
+			<control type="button" id="305">
+				<label>$ADDON[script.skinshortcuts 32025]</label>
+				<label2>$INFO[Container(211).ListItem.Label]</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Change Icon -->
+			<control type="button" id="311">			
+				<label>$ADDON[script.skinshortcuts 32026]</label>
+				<label2>$INFO[Container(211).ListItem.Property(Icon)]</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Change background -->				
+			<control type="button" id="310">	
+				<label>$ADDON[script.skinshortcuts 32045]</label>
+				<label2>$INFO[Container(211).ListItem.Property(Background)]</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Change action -->
+			<control type="button" id="307">
+				<label>$ADDON[script.skinshortcuts 32027]</label>
+				<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Edit sub menu -->
+			<control type="button" id="405">
+				<label>$ADDON[script.skinshortcuts 32072]</label>
+				<label2>-</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+				<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+			</control>
+			<!-- Edit widget -->
+			<control type="button" id="312">
+				<label>$ADDON[script.skinshortcuts 32044]</label>
+				<label2>$INFO[Container(211).ListItem.Property(WidgetName)]</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+				<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+			</control>
+			<!-- Move Up -->
+			<control type="button" id="303">
+				<label>$ADDON[script.skinshortcuts 32002]</label>
+				<label2>-</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Move Down -->
+			<control type="button" id="304">
+				<label>$ADDON[script.skinshortcuts 32003]</label>
+				<label2>-</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Remove -->
+			<control type="button" id="302">
+				<label>$ADDON[script.skinshortcuts 32001]</label>
+				<label2>-</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
+			<!-- Add item -->
+			<control type="button" id="301">
+				<label>$ADDON[script.skinshortcuts 32000]</label>
+				<label2>-</label2>
+				<left>12</left>
+				<top>20</top>
+				<width>672</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>FF666666</textcolor>
+			</control>
 		</control>
 
 		<!-- Button grouplist -->
