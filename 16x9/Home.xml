@@ -381,8 +381,8 @@
 						<top>0</top>
 						<orientation>vertical</orientation>
 						<onleft>9000</onleft>
-						<onup>noop</onup>
-						<ondown>noop</ondown>
+						<onup>Control.Move(9010,-1)</onup>
+						<ondown>Control.Move(9010,1)</ondown>
 						<onback>9000</onback>
 						<onright>98</onright>
 
