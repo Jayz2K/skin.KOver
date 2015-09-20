@@ -26,6 +26,20 @@
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
 					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
 				</control>				
+
+				<!-- Bloc 4 / special background -->
+				<control type="group">
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B4" />
+					</include>	
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
+					</control>
+					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+				</control>
 				
 				<!-- Bloc 3 -->
 				<control type="group">
