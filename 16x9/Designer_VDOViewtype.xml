@@ -190,7 +190,7 @@
 						<left>0</left>
 						<top>0</top>
 					</control>
-					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN) + [Player.HasVideo | Player.HasAudio]</visible>
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">Conditonal</animation>
 				</control>		
 

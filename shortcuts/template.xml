@@ -10,7 +10,7 @@
 		<property name="art">$INFO[ListItem.Icon]</property>
 
 		<controls>
-			<control type="list" id="9011">
+			<control type="wraplist" id="9011">
 				<left>0</left>
 				<top>60</top>
 				<width>636</width>
@@ -23,6 +23,7 @@
 				<onright>9014</onright>
 				<viewtype label="">list</viewtype>
 				<skinshortcuts>visibility</skinshortcuts>
+				<autoscroll time="8000">System.IdleTime(3) + Control.HasFocus(9000)</autoscroll>
 
 				<itemlayout width="636" height="296">
 				</itemlayout>
