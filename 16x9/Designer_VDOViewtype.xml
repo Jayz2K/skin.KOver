@@ -265,7 +265,7 @@
 						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,POSTER)" name="ListPoster">
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
-						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST)" name="ListFixed">
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST) | Skin.String($PARAM[CompPrefix].B1Typ,BANNER)" name="ListFixed">
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 						<include condition="Window.IsVisible(12600)">WeatherContent</include>

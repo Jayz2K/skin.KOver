@@ -2481,7 +2481,7 @@
 				<height>60</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Font36B</font>
+				<font>Font36R</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 				<label>$VAR[B1Title]</label>
 			</control>
@@ -2509,7 +2509,7 @@
 			<control type="image">
 				<description>Rating value</description>
 				<left>275</left>
-				<posy>93</posy>
+				<posy>98</posy>
 				<width>100</width>
 				<height>20</height>
 				<aspectratio align="left">keep</aspectratio>
@@ -2519,7 +2519,6 @@
 
 		<focusedlayout width="636" height="356">
 			<control type="group">
-			<animation effect="zoom" start="100" end="108" time="200" center="auto">Focus</animation>
 			<control type="button">
 				<texturefocus></texturefocus>
 				<texturenofocus></texturenofocus>
@@ -2527,14 +2526,6 @@
 				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
 				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
 				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
-			<control type="image">
-				<left>-12</left>
-				<top>-12</top>
-				<width>659</width>
-				<height>380</height>
-				<aspectratio>stretch</aspectratio>
-				<texture border="15,15,15,15" colordiffuse="FF000000">common/Shadow1.png</texture>
 			</control>
 			<control type="image">
 				<left>3</left>
@@ -2589,7 +2580,7 @@
 				<height>60</height>
 				<align>left</align>
 				<aligny>center</aligny>
-				<font>Font36B</font>
+				<font>Font36R</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 				<label>$VAR[B1Title]</label>
 			</control>
@@ -2616,7 +2607,7 @@
 			<control type="image">
 				<description>Rating value</description>
 				<left>275</left>
-				<posy>93</posy>
+				<posy>98</posy>
 				<width>100</width>
 				<height>20</height>
 				<aspectratio align="left">keep</aspectratio>
@@ -2698,6 +2689,15 @@
 				<font>FontSmallR</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
 				<label>$VAR[B1SubTitle]</label>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<height>118</height>
+				<align>center</align>
+				<bordersize>0,0,1,0</bordersize>
+				<texture border="0,0,1,0" colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
 		</itemlayout>
 
@@ -2796,6 +2796,24 @@
 				<font>FontSmallR</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
 				<label>$VAR[B1SubTitle]</label>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<height>118</height>
+				<align>center</align>
+				<bordersize>0,0,1,0</bordersize>
+				<texture border="0,0,1,0" colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>113</top>
+				<height>5</height>
+				<align>center</align>
+				<bordersize>0,0,1,0</bordersize>
+				<texture border="0,0,1,0" colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
 		</focusedlayout>
 	</include>

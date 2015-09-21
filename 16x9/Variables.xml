@@ -277,6 +277,11 @@
 		<value>$INFO[ListItem.ActualIcon]</value>		
 	</variable>
 
+	<variable name="ThumbBanner">
+		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+		<value condition="IsEmpty(ListItem.Art(banner)) + !IsEmpty(Window(Home).Property(SkinHelper.MovieSet.0.Banner))">$INFO[Window(Home).Property(SkinHelper.MovieSet.0.Banner)]</value>
+	</variable>	
+
 	<variable name="ThumbPortrait">
 		<value condition="Container.Content(addons) + !ListItem.IsFolder">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="Container.Content(plugins) + !ListItem.IsFolder">$INFO[ListItem.Art(thumb)]</value>
