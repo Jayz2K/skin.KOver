@@ -88,12 +88,12 @@
 		<include condition="!SubString($PARAM[Prefix],HOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeX,2COLUMN)">SizeX1272</include>
 		<include condition="!SubString($PARAM[Prefix],HOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeX,3COLUMN)">SizeX1908</include>
 		<!-- Configuring Vertical Size -->
-		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,1ROW) + [Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)]">SizeY357</include>
-		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,2ROW) + [Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)]">SizeY713</include>
-		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,3ROW) + [Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)]">SizeY1069</include>	
-		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,1ROW) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)">SizeY356</include>
-		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,2ROW) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)">SizeY712</include>
-		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,3ROW) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)">SizeY1068</include>
+		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,1ROW) + [Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)  | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,BANNER)]">SizeY357</include>
+		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,2ROW) + [Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)  | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,BANNER)]">SizeY713</include>
+		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,3ROW) + [Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST)  | Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,BANNER)]">SizeY1069</include>	
+		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,1ROW) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,BANNER)">SizeY356</include>
+		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,2ROW) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,BANNER)">SizeY712</include>
+		<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]SizeY,3ROW) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,WIDELIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,FIXEDLIST) + !Skin.String($PARAM[Prefix].$PARAM[BlocID]Typ,BANNER)">SizeY1068</include>
 	</include>
 	
 	<!-- Horizontal Positions Presets -->

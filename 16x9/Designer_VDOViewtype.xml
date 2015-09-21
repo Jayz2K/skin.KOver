@@ -230,8 +230,8 @@
 						<left>0</left>
 						<top>0</top>
 						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST)">SetVertical</include>
-						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST) + Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN)">SetVertical</include>
-						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST) + !Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN)">SetHorizontal</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + [Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST) | Skin.String($PARAM[CompPrefix].B1Typ,BANNER)] + Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN)">SetVertical</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + [Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST) | Skin.String($PARAM[CompPrefix].B1Typ,BANNER)] + !Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN)">SetHorizontal</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,POSTER)">SetHorizontal</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + [Skin.String($PARAM[CompPrefix].B1Typ,TILES) | Skin.String($PARAM[CompPrefix].B1Typ,FANART) | Skin.String($PARAM[CompPrefix].B1Typ,CARD)] + Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].BBLay,HORIZONTAL)">SetHorizontal</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B1SizeY,1ROW) + [Skin.String($PARAM[CompPrefix].B1Typ,TILES) | Skin.String($PARAM[CompPrefix].B1Typ,FANART) | Skin.String($PARAM[CompPrefix].B1Typ,CARD)] + Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].BBLay,VERTICAL)">SetVertical</include>
