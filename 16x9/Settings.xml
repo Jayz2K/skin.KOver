@@ -20,7 +20,6 @@
 				<param name="Prefix" value="HOM.View1" />
 			</include>
 			<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
-			<visible>Skin.String(HOM.View1.BBShow,VISIBLE)</visible>
 		</control>		
 				
 		<!-- Bloc 1-->

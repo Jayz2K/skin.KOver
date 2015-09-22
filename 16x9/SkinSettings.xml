@@ -1545,12 +1545,13 @@
 							<label2>$VAR[FixedBBSBHideValue]</label2>
 							<icon></icon>
 							<thumb></thumb>
-							<visible>StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW)</visible>
+							<visible>[StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW)] | StringCompare(Container(9000).ListItem.Property(ViewName),HOM)</visible>
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->					
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,DISABLED) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],ENABLED)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,ENABLED)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],IDLEFADE)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],DISABLED)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,ENABLED) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],DISABLED)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,DISABLED)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],IDLEFADE)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],DISABLED)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + !StringCompare(Container(9000).ListItem.Property(ViewName),HOM)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],ENABLED)</onclick>
 							<!-- Actions For Bloc 1-->		
 							<!-- Actions For Bloc 2-->
 							<!-- Actions For Bloc 3-->
@@ -2779,7 +2780,7 @@
 					</control>
 					<!-- Bloc3 Preview -->
 					<control type="group">
-						<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
+						<visible>!IsEmpty(Container(9100).ListItem.Label) + ![StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -2870,7 +2871,7 @@
 					</control>
 					<!-- Bloc4 Preview -->
 					<control type="group">
-						<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
+						<visible>!IsEmpty(Container(9100).ListItem.Label) + ![StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -2961,7 +2962,7 @@
 					</control>
 					<!-- Bloc2 Preview -->
 					<control type="group">
-						<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
+						<visible>!IsEmpty(Container(9100).ListItem.Label) + ![StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
@@ -3052,7 +3053,7 @@
 					</control>
 					<!-- Bloc1 Preview -->
 					<control type="group">
-						<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
+						<visible>!IsEmpty(Container(9100).ListItem.Label) + ![StringCompare(Container(9300).ListItem.Property(BBShowMEM),HIDDEN) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
