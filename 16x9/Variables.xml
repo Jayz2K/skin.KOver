@@ -279,7 +279,8 @@
 
 	<variable name="ThumbBanner">
 		<value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-		<value condition="IsEmpty(ListItem.Art(banner)) + !IsEmpty(Window(Home).Property(SkinHelper.MovieSet.0.Banner))">$INFO[Window(Home).Property(SkinHelper.MovieSet.0.Banner)]</value>
+		<value condition="IsEmpty(ListItem.Art(banner)) + Container.Content(seasons)">$INFO[ListItem.Art(tvshow.banner)]</value>
+		<value condition="Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons)">$INFO[ListItem.Art(fanart)]</value>
 	</variable>	
 
 	<variable name="ThumbPortrait">

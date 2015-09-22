@@ -4,6 +4,12 @@
 	<fontset id="Default" unicode="true">
 
 		<font>
+			<name>FontBanner</name>
+			<filename>Dub.ttf</filename>
+			<size>36</size>
+		</font>
+
+		<font>
 			<name>Font72</name>
 			<filename>RobotoCondensed-Light.ttf</filename>
 			<size>72</size>
@@ -120,6 +126,12 @@
 	</fontset>
 
 	<fontset id="Rajdhani" unicode="true">
+
+		<font>
+			<name>FontBanner</name>
+			<filename>Dub.ttf</filename>
+			<size>36</size>
+		</font>		
 
 		<font>
 			<name>Font72</name>

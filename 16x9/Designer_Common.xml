@@ -2620,32 +2620,80 @@
 	<!-- Fixed List -->
 	<include name="ListFixed">
 		<itemlayout width="636" height="119">
+			<control type="group">
+				<visible>!Skin.String($PARAM[CompPrefix].B1Typ,BANNER) | [Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons)]</visible>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<height>118</height>
+					<align>center</align>
+					<bordersize>0,0,1,0</bordersize>
+					<texture border="0,0,1,0" colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
+					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>118</width>
+					<height>118</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>20</top>
+					<width>499</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font27</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>$VAR[B1Title]</label>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>50</top>
+					<width>499</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+					<label>$VAR[B1SubTitle]</label>
+				</control>
+			</control>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<height>118</height>
 				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				<aspectratio>scale</aspectratio>
+				<bordertexture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</bordertexture>
+				<bordersize>5</bordersize>
+				<texture colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
-			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<width>80</width>
-				<height>80</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-				<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
-			</control>
-			<control type="image">
+			<control type="label">
 				<left>0</left>
 				<top>0</top>
-				<width>118</width>
 				<height>118</height>
 				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<aligny>center</aligny>
+				<font>FontBanner</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<label>[UPPERCASE]$VAR[B1Title][/UPPERCASE]</label>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
 			<control type="group">
 				<right>1</right>
@@ -2667,37 +2715,6 @@
 					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
 				</control>
 			<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-			</control>
-			<control type="label">
-				<left>142</left>
-				<top>20</top>
-				<width>499</width>
-				<height>50</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<label>$VAR[B1Title]</label>
-			</control>
-			<control type="label">
-				<left>142</left>
-				<top>50</top>
-				<width>499</width>
-				<height>50</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>FontSmallR</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-				<label>$VAR[B1SubTitle]</label>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<height>118</height>
-				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
-				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
 		</itemlayout>
 
@@ -2710,49 +2727,97 @@
 				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
 				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
 			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<height>118</height>
-				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+			<control type="group">
+				<visible>!Skin.String($PARAM[CompPrefix].B1Typ,BANNER) | [Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons)]</visible>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<height>118</height>
+					<align>center</align>
+					<bordersize>0,0,1,0</bordersize>
+					<texture border="0,0,1,0" colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<height>118</height>
+					<align>center</align>
+					<bordersize>0,0,1,0</bordersize>
+					<texture border="0,0,1,0" colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>118</width>
+					<height>118</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
+					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>118</width>
+					<height>118</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>20</top>
+					<width>499</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font27</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$VAR[B1Title]</label>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>50</top>
+					<width>499</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+					<label>$VAR[B1SubTitle]</label>
+				</control>
 			</control>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<height>118</height>
 				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+				<aspectratio>scale</aspectratio>
+				<bordertexture colordiffuse="$VAR[CategoryColor]">common/white.png</bordertexture>
+				<bordersize>5</bordersize>
+				<texture colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
-			<control type="image">
+			<control type="label">
 				<left>0</left>
 				<top>0</top>
-				<width>118</width>
 				<height>118</height>
 				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<width>80</width>
-				<height>80</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
-				<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>118</width>
-				<height>118</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<aligny>center</aligny>
+				<font>FontBanner</font>
+				<textcolor>FFFFFFFF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<label>[UPPERCASE]$VAR[B1Title][/UPPERCASE]</label>
+				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
 			<control type="group">
 				<right>1</right>
@@ -2774,46 +2839,6 @@
 					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
 				</control>
 			<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-			</control>
-			<control type="label">
-				<left>142</left>
-				<top>20</top>
-				<width>499</width>
-				<height>50</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-				<label>$VAR[B1Title]</label>
-			</control>
-			<control type="label">
-				<left>142</left>
-				<top>50</top>
-				<width>499</width>
-				<height>50</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>FontSmallR</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-				<label>$VAR[B1SubTitle]</label>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<height>118</height>
-				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
-				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>113</top>
-				<height>5</height>
-				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
 		</focusedlayout>
 	</include>
