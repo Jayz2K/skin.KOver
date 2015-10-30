@@ -215,37 +215,7 @@
 					<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
 					<visible>!Skin.String(TV.View1.B2Show,HIDDEN) | ControlGroup(99).HasFocus() | ControlGroup(996).HasFocus()</visible>
 				</control>
-				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,1COLUMN) + Skin.String(TV.View1.B2SizeY,1ROW)">
-					<param name="width" value="588" />
-					<param name="height" value="305" />
-					<param name="ViewName" value="$INFO[TV.View1.Name)]" />
-				</include>
-				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,1COLUMN) + !Skin.String(TV.View1.B2SizeY,1ROW)">
-					<param name="width" value="588" />
-					<param name="height" value="610" />
-					<param name="ViewName" value="$INFO[TV.View1.Name)]" />
-				</include>
-				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,2COLUMN) + Skin.String(TV.View1.B2SizeY,1ROW)">
-					<param name="width" value="1224" />
-					<param name="height" value="305" />
-					<param name="ViewName" value="$INFO[TV.View1.Name)]" />
-				</include>
-				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,2COLUMN) + !Skin.String(TV.View1.B2SizeY,1ROW)">
-					<param name="width" value="1224" />
-					<param name="height" value="610" />
-					<param name="ViewName" value="$INFO[TV.View1.Name)]" />
-				</include>
-				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,3COLUMN) + Skin.String(TV.View1.B2SizeY,1ROW)">
-					<param name="width" value="1860" />
-					<param name="height" value="305" />
-					<param name="ViewName" value="$INFO[TV.View1.Name)]" />
-				</include>
-				<include name="ViewOptions" condition="Skin.String(TV.View1.B2SizeX,3COLUMN) + !Skin.String(TV.View1.B2SizeY,1ROW)">
-					<param name="width" value="1860" />
-					<param name="height" value="610" />
-					<param name="ViewName" value="$INFO[TV.View1.Name)]" />
-				</include>
-
+				
 				<control type="group">
 				<visible>!Skin.String(TV.View1.B2Show,HIDDEN) + !ControlGroup(99).HasFocus() + !ControlGroup(996).HasFocus()</visible>
 					<control type="label">
@@ -336,6 +306,76 @@
 					</control>
 				</control>
 			</control>
+
+			<!-- Bloc 5 -->	
+			<control type="group"> 
+				<visible>Control.IsVisible(99)</visible>
+				<animation effect="fade" start="100" end="0" time="0" condition="Skin.String(TV.View1.B5Show,HIDDEN)">Conditional</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(99).HasFocus() + !Control.HasFocus(97) + !Window.IsVisible(contextmenu) + Skin.String(TV.View1.B5Show,ONFOCUS)">Conditonal</animation>
+				<include name="BlocPosition">
+					<param name="Prefix" value="TV.View1" />
+					<param name="BlocID" value="B5" />
+				</include>
+
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<aspectratio>stretch</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
+				</control>
+
+				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,1COLUMN) + Skin.String(TV.View1.B5SizeY,1ROW)"> 
+					<param name="width" value="588" /> 
+						<param name="height" value="305" /> 
+						<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="Section" value="TV" /> 
+					<param name="Id" value="10" /> 
+					<param name="CompPrefix" value="TV.View1" />
+				</include> 
+				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,1COLUMN) + !Skin.String(TV.View1.B5SizeY,1ROW)"> 
+					<param name="width" value="588" /> 
+						<param name="height" value="610" /> 
+					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="Section" value="TV" /> 
+					<param name="Id" value="10" /> 
+					<param name="CompPrefix" value="TV.View1" />
+				</include> 
+					<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,2COLUMN) + Skin.String(TV.View1.B5SizeY,1ROW)"> 
+					<param name="width" value="1224" /> 
+						<param name="height" value="305" /> 
+					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="Section" value="TV" /> 
+					<param name="Id" value="10" /> 
+					<param name="CompPrefix" value="TV.View1" />
+				</include> 
+				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,2COLUMN) + !Skin.String(TV.View1.B5SizeY,1ROW)"> 
+					<param name="width" value="1224" /> 
+						<param name="height" value="610" /> 
+					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="Section" value="TV" /> 
+					<param name="Id" value="10" /> 
+					<param name="CompPrefix" value="TV.View1" />
+				</include> 
+				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,3COLUMN) + Skin.String(TV.View1.B5SizeY,1ROW)"> 
+					<param name="width" value="1860" /> 
+					<param name="height" value="305" /> 
+					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="Section" value="TV" /> 
+					<param name="Id" value="10" /> 
+					<param name="CompPrefix" value="TV.View1" />
+				</include> 
+				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,3COLUMN) + !Skin.String(TV.View1.B5SizeY,1ROW)"> 
+					<param name="width" value="1860" /> 
+					<param name="height" value="610" /> 
+					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="Section" value="TV" /> 
+					<param name="Id" value="10" /> 
+					<param name="CompPrefix" value="TV.View1" />
+				</include> 
+
+			</control>								
+
 		</control>
 			
 		<!-- Dialogs Background -->

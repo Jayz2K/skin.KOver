@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<!-- FileManager -->
+	<backgroundcolor>0x00000000</backgroundcolor>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<onload condition="IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility,$INFO[Window.Property(xmlfile)]1,Home)</onload>
 	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility2,$INFO[Window.Property(xmlfile)]2,Home)</onload>
@@ -13,12 +14,7 @@
 	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility5)) + SubString(Window(Home).Property(DialogVisibility4),SettingsProfile) + SubString(Window(Home).Property(DialogVisibility4),$NUMBER[4])">ClearProperty(DialogVisibility4,Home)</onunload>
 	<onunload>ClearProperty(DialogVisibility5,Home)</onunload>
 	
-	<controls>
-
-		<!-- Background -->
-		<include name="Wallpaper">
-			<param name="CompPrefix" value="HOM.View1" />
-		</include>		
+	<controls>	
 
 		<!-- Dialogs Background -->
 		<control type="group">
@@ -98,134 +94,7 @@
 			</include>		
 
 		</control>
-			
-		<!-- Sidebar Position-->	
-		<control type="group">	
-			<visible>!StringCompare(Window(Home).Property(DialogVisibility),VISIBLE)</visible>
-			<control type="group">		
-				<visible>StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)</visible>	
-				<include condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">BarVPreview</include>
-				<animation effect="slide" start="0,0" end="1800,0" time="0" condition="StringCompare(Window(Home).Property(SidebarPos),RIGHT)">Conditional</animation>
-				<animation effect="fade" start="75" end="0" time="200" delay="1000" condition="!Container(50).OnNext + !Container(50).OnPrevious + StringCompare(Window(Home).Property(SidebarPos),RIGHT) + Skin.String(HOM.View1.BBSizeX,3COLUMN) + Skin.String(HOM.View1.BBSizeY,3ROW)">Conditional</animation>	
-				<animation effect="fade" start="75" end="0" time="200" delay="1000" condition="!Container(50).OnNext + !Container(50).OnPrevious + StringCompare(Window(Home).Property(SidebarPos),LEFT) + Skin.String(HOM.View1.BBSizeX,3COLUMN) + Skin.String(HOM.View1.BBSizeY,3ROW)">Conditional</animation>
-				<control type="label">
-					<top>0</top>
-					<left>-400</left>
-					<width>400</width>
-					<height>120</height>
-					<align>right</align>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-					<label>[UPPERCASE]$INFO[System.CurrentWindow][/UPPERCASE]</label>
-					<animation effect="rotate" start="0" end="90" time="0" center="60,60" condition="true">Conditional</animation>
-					<visible>!Window.IsActive(10138)</visible>
-				</control>
-				<control type="label">
-					<top>0</top>
-					<left>-400</left>
-					<width>400</width>
-					<height>120</height>
-					<align>right</align>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-					<label>[UPPERCASE]$LOCALIZE[503][/UPPERCASE]</label>
-					<animation effect="rotate" start="0" end="90" time="0" center="60,60" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="0" time="400" reversible="true" pulse="true" condition="true">Conditional</animation>
-					<visible>Window.IsActive(10138)</visible>
-				</control>
-				<control type="image">
-					<left>20</left>
-					<top>20</top>
-					<width>80</width>
-					<height>80</height>
-					<align>center</align>
-					<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-				</control>
-				<control type="image">
-					<left>35</left>
-					<top>35</top>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[Window(home).Property(MenuIcon)]</texture>
-					<visible>!Window.IsActive(10138)</visible>
-				</control>		
-				<control type="image">
-					<left>35</left>
-					<top>35</top>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/loading.png</texture>
-					<animation effect="rotate" start="0" end="360" time="800" center="auto" loop="true" condition="true">Conditional</animation>
-					<visible>Window.IsActive(10138)</visible>
-				</control>		
-			</control>
-			
-			<control type="group">		
-				<visible>StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)</visible>
-				<include condition="StringCompare(Window(Home).Property(SidebarPos),TOP) | StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">BarHPreview</include>
-				<animation effect="slide" start="0,0" end="0,960" time="0" condition="StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">Conditional</animation>
-				<animation effect="fade" start="75" end="0" time="200" delay="1000" condition="!Container(50).OnNext + !Container(50).OnPrevious + StringCompare(Window(Home).Property(SidebarPos),TOP) + Skin.String(HOM.View1.BBSizeX,3COLUMN) + Skin.String(HOM.View1.BBSizeY,3ROW)">Conditional</animation>	
-				<animation effect="fade" start="75" end="0" time="200" delay="1000" condition="!Container(50).OnNext + !Container(50).OnPrevious + StringCompare(Window(Home).Property(SidebarPos),BOTTOM) + Skin.String(HOM.View1.BBSizeX,3COLUMN) + Skin.String(HOM.View1.BBSizeY,3ROW)">Conditional</animation>		
-				<control type="label">
-					<top>0</top>
-					<left>144</left>
-					<width>400</width>
-					<height>120</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-					<label>[UPPERCASE]$INFO[System.CurrentWindow][/UPPERCASE]</label>
-					<visible>!Window.IsActive(10138)</visible>
-				</control>
-				<control type="label">
-					<top>0</top>
-					<left>144</left>
-					<width>400</width>
-					<height>120</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-					<label>[UPPERCASE]$LOCALIZE[503][/UPPERCASE]</label>
-					<animation effect="fade" start="100" end="0" time="400" reversible="true" pulse="true" condition="true">Conditional</animation>
-					<visible>Window.IsActive(10138)</visible>
-				</control>
-				<control type="image">
-					<left>20</left>
-					<top>20</top>
-					<width>80</width>
-					<height>80</height>
-					<align>center</align>
-					<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-				</control>
-				<control type="image">
-					<left>35</left>
-					<top>35</top>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[Window(home).Property(MenuIcon)]</texture>
-					<visible>!Window.IsActive(10138)</visible>
-				</control>		
-				<control type="image">
-					<left>35</left>
-					<top>35</top>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/loading.png</texture>
-					<animation effect="rotate" start="0" end="360" time="800" center="auto" loop="true" condition="true">Conditional</animation>
-					<visible>Window.IsActive(10138)</visible>
-				</control>			
-			</control>
-		</control>	
-	</controls>
 
+	</controls>
+			
 </window>

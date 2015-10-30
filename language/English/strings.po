@@ -361,3 +361,221 @@ msgstr ""
 msgctxt "#31084"
 msgid "Export color scheme"
 msgstr ""
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr ""
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr ""
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr ""
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr ""
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr ""
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr ""
+
+msgctxt "#31091"
+msgid "Choose the section where you want to edit the viewtype."
+msgstr ""
+
+msgctxt "#31092"
+msgid "Choose the viewtype you want to build/edit. Press left for config, click or press ENTER for more."
+msgstr ""
+
+msgctxt "#31093"
+msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
+msgstr ""
+
+msgctxt "#31094"
+msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
+msgstr ""
+
+msgctxt "#31095"
+msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
+msgstr ""
+
+msgctxt "#31096"
+msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
+msgstr ""
+
+msgctxt "#31097"
+msgid "Apply imported/stored viewtype in template. This will overide the actual viewtype."
+msgstr ""
+
+msgctxt "#31098"
+msgid "Stores the actual viewtype in template. This overide the template content."
+msgstr ""
+
+msgctxt "#31099"
+msgid "Export the template's content to a zip file. Be aware that the template's number is also stored."
+msgstr ""
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr ""
+
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after 5s."
+msgstr ""
+
+msgctxt "#31102"
+msgid "Change the layout orientation or scroll direction for lists."
+msgstr ""
+
+msgctxt "#31103"
+msgid "Change the sidebar position. This is limited by the layout orientation."
+msgstr ""
+
+msgctxt "#31104"
+msgid "Makes the sidebar to autohide. Useful for fullscreen layout, sidebar will fade to not cover infos."
+msgstr ""
+
+msgctxt "#31105"
+msgid "Set the dialog panel (ex. movie infos) position."
+msgstr ""
+
+msgctxt "#31106"
+msgid "Choose panel opening style. 'PUSH' pushes the blocs and 'OVER' shows over blocs."
+msgstr ""
+
+msgctxt "#31107"
+msgid "Insert an horizontal space between blocs. Choose between A and B or B and C."
+msgstr ""
+
+msgctxt "#31108"
+msgid "Insert an vertical space between blocs. Choose between A and B or B and C."
+msgstr ""
+
+msgctxt "#31109"
+msgid "Change the horizontal start position of the element. Can be locked depending of the layout orientation."
+msgstr ""
+
+msgctxt "#31110"
+msgid "Change the vertical start position of the element. Can be locked depending of the layout orientation."
+msgstr ""
+
+msgctxt "#31111"
+msgid "Change the horizontal size of the element. Can be locked/limited by the element's horizontal position."
+msgstr ""
+
+msgctxt "#31112"
+msgid "Change the vertical size of the element. Can be locked/limited by the element's vertical position."
+msgstr ""
+
+msgctxt "#31113"
+msgid "Choose the window background style. 'IMAGE' shows user's picture selected in the next setting."
+msgstr ""
+
+msgctxt "#31114"
+msgid "Choose the main list (library) style. 'BANNER' shows 'FIXEDLIST' if item is not a media."
+msgstr ""
+
+msgctxt "#31115"
+msgid "Browse for a picture to use when background style is set to 'IMAGE'."
+msgstr ""
+
+msgctxt "#31116"
+msgid "Display the playing video over all other background style settings."
+msgstr ""
+
+msgctxt "#31117"
+msgid "Set 'HIDE' to hide bloc 1 (List) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr ""
+
+msgctxt "#31118"
+msgid "Set 'HIDE' to hide bloc 2 (Infos) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr ""
+
+msgctxt "#31119"
+msgid "Set 'HIDE' to hide bloc 3 (Art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr ""
+
+msgctxt "#31120"
+msgid "Set 'HIDE' to hide bloc 4 (Video/Home art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr ""
+
+msgctxt "#31121"
+msgid "Choose key/action to open submenu/options list (Bloc 5)."
+msgstr ""
+
+msgctxt "#31122"
+msgid "Choose key/action to go to previous menu."
+msgstr ""
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr ""
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr ""
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr ""
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr ""
+
+msgctxt "#31127"
+msgid "Submenu"
+msgstr ""
+
+#Settings strings
+
+msgctxt "#31400"
+msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
+msgstr ""
+
+msgctxt "#31401"
+msgid "[B]Configure video settings[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
+msgstr ""
+
+msgctxt "#31402"
+msgid "[B]Configure music settings[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
+msgstr ""
+
+msgctxt "#31403"
+msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options · Configure slideshow"
+msgstr ""
+
+msgctxt "#31404"
+msgid "[B]Configure weather settings[/B][CR][CR]Set various cities to collect weather information"
+msgstr ""
+
+#empty string with id 31405
+
+msgctxt "#31406"
+msgid "[B]Configure system settings[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
+msgstr ""
+
+#empty string with id 31407
+
+msgctxt "#31408"
+msgid "[B]Configure add-ons[/B][CR][CR]Manage your installed add-ons · Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
+msgstr ""
+
+msgctxt "#31409"
+msgid "[B]Configure TV settings[/B][CR][CR]Change full screen info · Manage EPG data settings"
+msgstr ""
+
+msgctxt "#31410"
+msgid "[B]Configure network settings[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgstr ""
+
+msgctxt "#31411"
+msgid "[B]Configure KOver settings[/B][CR][CR]Create / modify viewtypes · Configure Home menu · Change skin colors"
+msgstr ""

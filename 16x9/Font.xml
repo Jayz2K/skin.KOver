@@ -10,6 +10,20 @@
 		</font>
 
 		<font>
+			<name>FontTest</name>
+			<filename>RobotoCondensed-Regular.ttf</filename>
+			<style>uppercase</style>
+			<size>27</size>
+		</font>		
+
+		<font>
+			<name>FontTest</name>
+			<filename>RobotoCondensed-Light.ttf</filename>
+			<style>lowercase</style>
+			<size>21</size>
+		</font>		
+
+		<font>
 			<name>Font72</name>
 			<filename>RobotoCondensed-Light.ttf</filename>
 			<size>72</size>

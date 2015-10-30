@@ -1,42 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <template>
-	<other include="widget-default">
-		<condition tag="property" attribute="name|widgetPath" />
-		<property name="path" tag="property" attribute="name|widgetPath" />
-		<property name="target" tag="property" attribute="name|widgetTarget" />
-		<property name="target"></property>
 
-		<property name="art" tag="property" attribute="name|widgetType" value="episodes">$INFO[ListItem.Art(tvshow.poster)]</property>
-		<property name="art">$INFO[ListItem.Icon]</property>
+	<other include="viewtype">
+		<condition tag="property" attribute="name|viewtype" />
+		<property attribute="name|widgetPath" tag="property" name="path"/>
+		<property attribute="name|widgetTarget" tag="property" name="target"/>
+		<property name="target"/>
+	    <property name="compprefix" tag="property" attribute="name|viewtype" />
+	    <property name="id" tag="mainmenuid" />
 
 		<controls>
-			<control type="wraplist" id="9011">
-				<left>0</left>
-				<top>60</top>
-				<width>636</width>
-				<height>296</height>
-				<onback>9000</onback>
-				<scrolltime>200</scrolltime>
-				<pagecontrol>61</pagecontrol>
-				<orientation>vertical</orientation>
-				<onleft>9000</onleft>
-				<onright>9014</onright>
-				<viewtype label="">list</viewtype>
+
+			<control type="group">
 				<skinshortcuts>visibility</skinshortcuts>
-				<autoscroll time="8000">System.IdleTime(3) + Control.HasFocus(9000)</autoscroll>
-
-				<itemlayout width="636" height="296">
-				</itemlayout>
-
-				<focusedlayout width="636" height="296">
-					<control type="button">
-						<texturefocus></texturefocus>
-						<texturenofocus></texturenofocus>
-						<onfocus>SetProperty(WidgetGenre,$INFO[ListItem.Label])</onfocus>
-					</control>
-				</focusedlayout>
-				<content target="$SKINSHORTCUTS[target]">$SKINSHORTCUTS[path]</content>
+				<include name="HOMViewtype">
+					<param name="Id" value="80$SKINSHORTCUTS[id]" />
+					<param name="CompPrefix" value="$SKINSHORTCUTS[compprefix]" />
+					<param name="Target" value="$SKINSHORTCUTS[target]" />
+					<param name="Path" value="$SKINSHORTCUTS[path]" />
+				</include>
 			</control>
+
 		</controls>
 	</other>
 

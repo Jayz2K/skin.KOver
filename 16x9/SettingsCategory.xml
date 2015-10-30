@@ -4,335 +4,327 @@
 	<onload condition="IsEmpty(Skin.String(KOverInit))">Back</onload>	
 	<backgroundcolor>0x00000000</backgroundcolor>
 	<defaultcontrol always="true">3</defaultcontrol>
-	<onload condition="IsEmpty(Window(settings).Property(ChangeSettingsLevel))">SetFocus(3)</onload>
-	<onload condition="!IsEmpty(Window(settings).Property(ChangeSettingsLevel))">SetFocus(20)</onload>
-	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
-	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
-	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>		
+	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
+	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
+	<onload>Skin.SetString(DIA.View1.BBSidebar,RIGHT)</onload>
+	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>			
+	<onload>Skin.SetString(HOM.View1.Name,Home Layout)</onload>
+	<onload>Skin.SetString(TV.View1.Name,EPG - Locked)</onload>
+	<onunload>ClearProperty(SidebarPos,Home)</onunload>
+	<onunload>ClearProperty(DialogPos,Home)</onunload>
+	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
 
 	<controls>
 
-		<!-- Background -->
-		<include name="Wallpaper">
-			<param name="CompPrefix" value="HOM.View1" />
-		</include>
-		
-		<control type="image">
-			<include name="BgPosition">
-				<param name="Prefix" value="HOM.View1" />
-			</include>
-			<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
-		</control>		
-		
-		<!-- Bloc 1 -->		
+		<!-- Decorative Elements -->
 		<control type="group">
-			<include name="BlocPosition">
-				<param name="Prefix" value="HOM.View1" />
-				<param name="BlocID" value="B3" />
+			<!-- Background -->
+			<include name="Wallpaper">
+				<param name="CompPrefix" value="HOM.View1" />
 			</include>
-			<control type="image">
-				<texture colordiffuse="$INFO[Skin.String(Color.B3Bg)]">common/white.png</texture>
-			</control>	
+
+			<!-- Background -->
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">common/settings.jpg</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
 			</control>
+
+			<!-- Left Panel Background -->
 			<control type="image">
-				<height>178</height>
-				<colordiffuse>55000000</colordiffuse>
-				<texture>common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>24</left>
-				<top>24</top>
-				<width>130</width>
-				<height>130</height>
-				<colordiffuse>$VAR[CategoryColor]</colordiffuse>
-				<texture>material/info2.png</texture>
-			</control>
-			<!-- Settings description -->
-			<control type="textbox" id="6">
-				<left>178</left>
-				<top>24</top>
-				<width>434</width>
-				<height>130</height>
-				<textcolor>FFFFFFFF</textcolor>
-				<font>Font25</font>
-			</control>
-			<control type="textbox">
-				<height>356</height>
-				<label>10047</label>
-				<textcolor>FFFFFF</textcolor>
-				<visible>!IsEmpty(Window(settings).Property(ChangeSettingsLevel))</visible>
-			</control>
-			<control type="image">
-				<top>300</top>
-				<height>56</height>
-				<colordiffuse>FF000000</colordiffuse>
-				<texture>common/white.png</texture>
-			</control>
-			<!-- Settings level button -->
-			<control type="button" id="20">
-				<right>24</right>
-				<top>300</top>
-				<width>588</width>
-				<height>56</height>
-				<font>FontSmallB</font>
-				<label>10037</label>
-				<onleft>ReplaceWindow(settings)</onleft>
-				<onright>noop</onright>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<onclick>SettingsLevelChange</onclick>
-				<textcolor>FFFFFFFF</textcolor>
-				<focusedcolor>FFFFFFFF</focusedcolor>
-				<invalidcolor>55FFFFFF</invalidcolor>
-				<disabledcolor>55FFFFFF</disabledcolor>
-				<visible allowhiddenfocus="true"></visible>
-			</control>
-		</control>
+				<top>0</top>
+				<left>0</left>
+				<width>660</width>
+				<height>1080</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
+			</control>				
 		
-		<!-- Bloc 2 -->
+		</control>
+
 		<control type="group">
-			<include name="BlocPosition">
-				<param name="Prefix" value="HOM.View1" />
-				<param name="BlocID" value="B2" />
-			</include>
-			<control type="image">
-				<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
+			<animation effect="fade" start="100" end="0" time="100" delay="100" condition="!IsEmpty(Window(Home).Property(DialogVisibility))">Conditional</animation>
+
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>12</left>
+				<top>0</top>
+				<height>356</height>
+				<width>636</width>
+
+				<control type="image">
+					<left>24</left>
+					<top>24</top>
+					<width>588</width>
+					<height>308</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">DefaultAddonService.png</texture>
+				</control>
+
+			</control>	
+
+			<!-- Bloc 2 -->
+			<control type="group">
+				<left>12</left>
+				<top>368</top>
+				<height>356</height>
+				<width>636</width>
+
+				<control type="textbox" id="6">
+					<left>24</left>
+					<top>24</top>
+					<width>588</width>
+					<height>308</height>
+					<font>Font27</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
+				</control>
+
+			</control>		
+
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>12</left>
+				<top>724</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>$INFO[System.CurrentWindow]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+					<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
+				</control>		
+
+				<!-- Settings level -->
+				<control type="button" id="20"> 
+					<top>80</top>
+					<left>24</left>
+					<width>588</width>
+					<height>156</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font27</font>
+					<onright>noop</onright> 
+					<onup>noop</onup> 
+					<ondown>noop</ondown> 
+					<onclick>SettingsLevelChange</onclick> 
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor> 
+					<focusedcolor>$INFO[Skin.String(Color.DIATxtNF)]</focusedcolor> 
+					<invalidcolor>$INFO[Skin.String(Color.DIATxtNF)]</invalidcolor> 
+					<disabledcolor>$INFO[Skin.String(Color.DIATxtNF)]</disabledcolor> 
+					<visible allowhiddenfocus="true"></visible> 
+				</control> 		
+
+				<!-- Button grouplist -->
+				<control type="grouplist" id="9003">
+					<right>24</right>
+					<top>267</top>
+					<width>588</width>
+					<height>60</height>
+					<itemgap>1</itemgap>
+					<align>right</align>
+					<onleft>noop</onleft>
+					<onright>3</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+
+					<!-- Settings level -->
+					<control type="button" id="9004">
+						<width>auto</width>
+						<height>60</height>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+						<label>31126</label>
+						<onclick>SettingsLevelChange</onclick>
+						<onright>9005</onright>
+					</control>
+
+					<!-- Close -->
+					<control type="button" id="9005">
+						<width>auto</width>
+						<height>60</height>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+						<label>15067</label>
+						<onclick>Close</onclick>
+						<onleft>9004</onleft>
+						<onright>3</onright>
+					</control>
+
+				</control>
+
+			</control>							
+
+		</control>				
+
+		<!-- Window Content-->
+		<control type="group">
+
+			<control type="label">
+				<top>72</top>
+				<left>752</left>
+				<width>588</width>
+				<height>12</height>
+				<align>left</align>
+				<font>Font36</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<label>31125</label>
+			</control>			
+
+			<!-- Main list -->
+			<control type="grouplist" id="3">
+				<top>123</top>
+				<left>752</left>
+				<height>258</height>
+				<width>1086</width>
+				<itemgap>6</itemgap>
+				<onright>noop</onright>
+				<onleft>9003</onleft>
+				<onup>noop</onup>
+				<ondown>5</ondown>
+				<onback>9003</onback>
+				<orientation>horizontal</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<visible>true</visible>
+			</control>
+
+			<!-- Default group button -->
+			<control type="button" id="10">
+				<width>auto</width>
+				<height>120</height>
+				<font>FontSmall</font>
+				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+				<textwidth min="100" max="400">auto</textwidth>
+				<textoffsetx>36</textoffsetx>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
 			</control>
 
 			<!-- Sub list -->
 			<control type="grouplist" id="5">
-				<left>24</left>
-				<top>24</top>
-				<width>588</width>
-				<height>308</height>
+				<left>752</left>
+				<top>326</top>
+				<width>1086</width>
+				<height>676</height>
 				<itemgap>1</itemgap>
-				<onleft>3</onleft>
-				<onright>3</onright>
+				<onleft>9003</onleft>
+				<onright>noop</onright>
 				<onup>3</onup>
 				<ondown>noop</ondown>
+				<onback>3</onback>
 				<orientation>vertical</orientation>
 				<visible allowhiddenfocus="true">true</visible>
-			</control>
-		</control>
+			</control>			
 
-		<!-- Bloc 3 -->
-		<control type="group">
-			<include name="BlocPosition">
-				<param name="Prefix" value="HOM.View1" />
-				<param name="BlocID" value="B1" />
-			</include>
-			<width>636</width>
-			<height>356</height>
-			<control type="image">
-				<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
-			</control>
-			<control type="label">
-				<left>24</left>
-				<top>24</top>
-				<width>588</width>
+			<!-- Default button -->
+			<control type="button" id="7">
+				<width>1086</width>
 				<height>60</height>
-				<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
-				<font>Font36R</font>
-				<align>left</align>
-				<aligny>center</aligny>
-				<label>$INFO[System.CurrentWindow]</label>
+				<font>Font27</font>
+				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+				<textwidth>auto</textwidth>
+				<textoffsetx>24</textoffsetx>
+				<!--textcolor>FF666666</textcolor-->
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
 			</control>
-			<!-- Main list -->
-			<control type="grouplist" id="3">
-				<left>24</left>
-				<top>88</top>
-				<width>588</width>
-				<height>244</height>
-				<itemgap>1</itemgap>
-				<onfocus>Down</onfocus>
-				<ondown>5</ondown>
-				<onright>5</onright>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
-				<orientation>vertical</orientation>
-				<usecontrolcoords>true</usecontrolcoords>
+
+
+			<!-- Default radiobutton -->
+			<control type="radiobutton" id="8">
+				<width>1086</width>
+				<height>60</height>
+				<font>Font27</font>
+				<textwidth>auto</textwidth>
+				<textoffsetx>24</textoffsetx>
+				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+				<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+				<radiowidth>30</radiowidth>
+				<radioheight>30</radioheight>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+			</control>
+
+			<!-- Default spincontrolex -->
+			<control type="spincontrolex" id="9">
+				<width>1086</width>
+				<height>60</height>
+				<font>Font27</font>
+				<textwidth>auto</textwidth>
+				<textoffsetx>24</textoffsetx>
+				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+				<textureup colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowupfo.png</textureup>
+				<textureupfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowupfo.png</textureupfocus>
+				<texturedown colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowdownfo.png</texturedown>
+				<texturedownfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowdownfo.png</texturedownfocus>
+				<spinwidth>24</spinwidth>
+				<spinheight>60</spinheight>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+			</control>
+
+			<!-- Default sliderex -->
+			<control type="sliderex" id="13">
+				<posx>0</posx>
+				<posy>24</posy>
+				<width>10</width>
+				<height>308</height>		
 				<visible>true</visible>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+				<texturesliderbar colordiffuse="55000000">common/white.png</texturesliderbar>
+				<textureslidernib colordiffuse="$VAR[CategoryColor]">common/white.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/white.png</textureslidernibfocus>
+				<controloffsetx></controloffsetx>
+				<controloffsety></controloffsety>
 			</control>
-		</control>
 
-		<!-- Default group button -->
-		<control type="button" id="10">
-			<width>588</width>
-			<height>60</height>
-			<font>Font27</font>
-			<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-			<textwidth min="100" max="400">auto</textwidth>
-			<textoffsetx>12</textoffsetx>
-			<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-			<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-			<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-			<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-		</control>
+			<!-- Default image -->
+			<control type="image" id="11">
+				<width>612</width>
+				<height>60</height>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+			</control>			
 
-		<!-- Default button -->
-		<control type="button" id="7">
-			<width>588</width>
-			<height>60</height>
-			<font>Font27</font>
-			<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-			<textwidth min="100" max="400">auto</textwidth>
-			<textoffsetx>12</textoffsetx>
-			<!--textcolor>FF666666</textcolor-->
-			<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-			<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-			<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-			<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-		</control>
-
-
-		<!-- Default radiobutton -->
-		<control type="radiobutton" id="8">
-			<width>588</width>
-			<height>60</height>
-			<font>Font27</font>
-			<textwidth>500</textwidth>
-			<textoffsetx>12</textoffsetx>
-			<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-			<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-			<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-			<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-			<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
-			<radiowidth>30</radiowidth>
-			<radioheight>30</radioheight>
-			<radioposx>546</radioposx>
-			<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-			<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-			<disabledcolor>$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-		</control>
-
-		<!-- Default spincontrolex -->
-		<control type="spincontrolex" id="9">
-			<width>588</width>
-			<height>60</height>
-			<font>Font27</font>
-			<textwidth>200</textwidth>
-			<textoffsetx>12</textoffsetx>
-			<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-			<textureup colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowupfo.png</textureup>
-			<textureupfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowupfo.png</textureupfocus>
-			<texturedown colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowdownfo.png</texturedown>
-			<texturedownfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowdownfo.png</texturedownfocus>
-			<spinwidth>24</spinwidth>
-			<spinheight>60</spinheight>
-			<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-			<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-			<invalidcolor>$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-			<disabledcolor>$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-		</control>
-
-		<!-- Default sliderex -->
-		<control type="sliderex" id="13">
-			<posx>0</posx>
-			<posy>24</posy>
-			<width>10</width>
-			<height>308</height>		
-			<visible>true</visible>
-			<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-			<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-			<invalidcolor>$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-			<disabledcolor>$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-			<texturesliderbar colordiffuse="55000000">common/white.png</texturesliderbar>
-			<textureslidernib colordiffuse="$VAR[CategoryColor]">common/white.png</textureslidernib>
-			<textureslidernibfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/white.png</textureslidernibfocus>
-			<controloffsetx></controloffsetx>
-			<controloffsety></controloffsety>
-		</control>
-
-		<!-- Default image -->
-		<control type="image" id="11">
-			<width>612</width>
-			<height>1</height>
-			<texture border="2" colordiffuse="$INFO[Skin.String(Color.B1Txt2NF)]">common/Divider.png</texture>
-		</control>
-
-		<!-- Dialogs Background -->
-		<include name="DialogBgDef">
-			<param name="CompPrefix" value="HOM.View1" />
-		</include>
-		
-		<!-- Sidebar Position-->	
-		<control type="group">
-			<visible>!StringCompare(Window(Home).Property(DialogVisibility),VISIBLE)</visible>
-			<control type="group">		
-				<visible>Skin.String(HOM.View1.BBSidebar,LEFT) | Skin.String(HOM.View1.BBSidebar,RIGHT)</visible>	
-				<include condition="Skin.String(HOM.View1.BBSidebar,LEFT) | Skin.String(HOM.View1.BBSidebar,RIGHT)">BarVPreview</include>
-				<animation effect="slide" start="0,0" end="1800,0" time="0" condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">Conditional</animation>
-				<control type="label">
-					<top>0</top>
-					<left>-400</left>
-					<width>400</width>
-					<height>120</height>
-					<align>right</align>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-					<label>[UPPERCASE]$INFO[Window(home).Property(MenuID)][/UPPERCASE]</label>
-					<animation effect="rotate" start="0" end="90" time="0" center="60,60" condition="true">Conditional</animation>
-				</control>
-				<control type="image">
-					<left>20</left>
-					<top>20</top>
-					<width>80</width>
-					<height>80</height>
-					<align>center</align>
-					<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-				</control>
-				<control type="image">
-					<left>35</left>
-					<top>35</top>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[Window(home).Property(MenuIcon)]</texture>
-				</control>		
-			</control>
-			
-			<control type="group">		
-				<visible>Skin.String(HOM.View1.BBSidebar,TOP) | Skin.String(HOM.View1.BBSidebar,BOTTOM)</visible>
-				<include condition="Skin.String(HOM.View1.BBSidebar,TOP) | Skin.String(HOM.View1.BBSidebar,BOTTOM)">BarHPreview</include>
-				<animation effect="slide" start="0,0" end="0,960" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">Conditional</animation>
-				<control type="label">
-					<top>0</top>
-					<left>144</left>
-					<width>400</width>
-					<height>120</height>
-					<align>left</align>
-					<aligny>center</aligny>
-					<font>Font48</font>
-					<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-					<label>[UPPERCASE]$INFO[Window(home).Property(MenuID)][/UPPERCASE]</label>
-				</control>
-				<control type="image">
-					<left>20</left>
-					<top>20</top>
-					<width>80</width>
-					<height>80</height>
-					<align>center</align>
-					<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-				</control>
-				<control type="image">
-					<left>35</left>
-					<top>35</top>
-					<width>50</width>
-					<height>50</height>
-					<align>center</align>
-					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[Window(home).Property(MenuIcon)]</texture>
-				</control>				
-			</control>
-		</control>	
+		</control>		
 
 	</controls>
 

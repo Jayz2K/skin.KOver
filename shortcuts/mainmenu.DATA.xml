@@ -41,14 +41,6 @@
 		<action>ActivateWindow(Videos,TVShowTitles,return)</action>
 	</shortcut>
 	<shortcut>
-		<label>132</label>
-		<label2>Common Shortcut</label2>
-		<defaultID>132</defaultID>
-		<icon>material/music.png</icon>
-		<thumb />
-		<action>ActivateWindow(MusicLibrary,Albums,return)</action>
-	</shortcut>
-	<shortcut>
 		<label>10005</label>
 		<label2>Common Shortcut</label2>
 		<defaultID>music</defaultID>
@@ -73,7 +65,7 @@
 		<action>ActivateWindow(favourites)</action>
 	</shortcut>
 	<shortcut>
-		<label>$SKIN[31063|skin.conq|Addons]</label>
+		<label>$SKIN[31063|skin.KOver|Addons]</label>
 		<label2>Common Shortcut</label2>
 		<defaultID>31063</defaultID>
 		<icon>material/addons.png</icon>
@@ -111,13 +103,5 @@
 		<icon>material/tv.png</icon>
 		<thumb />
 		<action>ActivateWindow(TVChannels)</action>
-	</shortcut>
-	<shortcut>
-		<label>Radio</label>
-		<label2>Radio</label2>
-		<defaultID>19019</defaultID>
-		<icon>DefaultAudio.png</icon>
-		<thumb />
-		<action>ActivateWindow(RadioChannels)</action>
 	</shortcut>
 </shortcuts>

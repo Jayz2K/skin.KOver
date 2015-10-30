@@ -1,3 +1,9 @@
+[B]0.49.0[/B]
+- Pre BETA release
+- Settings windows refactored
+- New Designer
+- Added home customization
+
 [B]0.48.0[/B]
 - IDLEFADE feature (fade blocs after 3s)
 - Partial fix for last item selection (onback)

@@ -14,6 +14,20 @@
 			</include>		
 
 		</control>
+
+		<control type="button" id="301"><visible>False</visible></control>
+		<control type="button" id="302"><visible>False</visible></control>
+		<control type="button" id="303"><visible>False</visible></control>
+		<control type="button" id="304"><visible>False</visible></control>
+		<control type="button" id="305"><visible>False</visible></control>
+		<control type="button" id="307"><visible>False</visible></control>
+		<control type="button" id="310"><visible>False</visible></control>
+		<control type="button" id="311"><visible>False</visible></control>
+		<control type="button" id="312"><visible>False</visible></control>
+		<control type="button" id="401"><visible>False</visible></control>
+		<control type="button" id="405"><visible>False</visible></control>
+		<control type="button" id="404"><visible>false</visible></control>
+		
 	</controls>
 
 </window>

@@ -29,8 +29,8 @@
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
-				<texture background="true">$VAR[HomeWidgetArt]</texture>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container(9011).ListItem.Art(fanart)) + Control.HasFocus(9011)</visible>
+				<texture background="true" colordiffuse="99FFFFFF">$VAR[WPFanart]</texture>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART)</visible>
 			</control>
 			<control type="image">
 				<texture>common/white.png</texture>
@@ -45,7 +45,11 @@
 			</control>
 		</control>		
 	</include>
-	
+<!-- Sidebar Animation -->
+	<include name="SBHomeAnim">
+			<animation effect="fade" start="100" end="0" time="200" delay="1000" condition="IsEmpty(Window(Home).Property(DialogVisibility)) + System.IdleTime(1) + Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String(HOM.View1.BBSBHide,ENABLED) + !Control.HasFocus(9000)">Conditional</animation>	
+	</include>	
+
 <!-- Sidebar Position -->
 	<include name="BarVPreview">
 		<control type="group">	
@@ -90,6 +94,7 @@
 	</include>
 
 	<include name="BarHPreview">
+		<width>1920</width>
 		<control type="group">	
 			<control type="image">
 				<left>-15</left>
@@ -138,23 +143,18 @@
 			<control type="grouplist" id="99">
 				<left>24</left>
 				<top>24</top>
-				<onup>noop</onup>
-				<ondown>noop</ondown>
 				<height>$PARAM[height]</height>
-				<onleft>50</onleft>
-				<onleft>51</onleft>
-				<onleft>52</onleft>				
-				<onleft>53</onleft>
-				<onleft>54</onleft>
-				<onleft>55</onleft>
-				<onleft>56</onleft>
-				<onleft>57</onleft>
-				<onleft>58</onleft>
-				<onright>noop</onright>
+
+				<onup condition="Skin.String($PARAM[CompPrefix].B5Goback,ONUP)">$PARAM[Id]</onup>
+				<ondown condition="Skin.String($PARAM[CompPrefix].B5Goback,ONDOWN)">$PARAM[Id]</ondown>
+				<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+				<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+				<onback>$PARAM[Id]</onback>
+
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
 				<itemgap>1</itemgap>
-				<visible allowhiddenfocus="true">ControlGroup(99).HasFocus()</visible>
+				<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(97) | Window.IsVisible(contextmenu)">Conditional</animation>
 
 				<!-- Change ViewMode -->
 				<control type="group">
@@ -174,15 +174,10 @@
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onup condition="Skin.String($PARAM[CompPrefix].B5Goback,ONUP)">$PARAM[Id]</onup>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 
 						<onclick>Control.SetFocus(97)</onclick>
 
@@ -226,15 +221,9 @@
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<onup>30</onup>
 						<ondown>3</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -274,15 +263,9 @@
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<onup>2</onup>
 						<ondown>28</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -328,15 +311,9 @@
 						<label>$LOCALIZE[35500]:</label>
 						<onup>2</onup>
 						<ondown>28</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -376,15 +353,9 @@
 						<onup condition="Control.IsEnabled(3)">3</onup>
 						<onup condition="!Control.IsEnabled(3)">30</onup>
 						<ondown>4</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -426,15 +397,9 @@
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<onup>28</onup>
 						<ondown>14</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -479,15 +444,9 @@
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<onup>4</onup>
 						<ondown>19</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -525,15 +484,9 @@
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 						<onup>14</onup>
 						<ondown>93</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -582,15 +535,9 @@
 						<selected>Container.Filtered</selected>
 						<onup>19</onup>
 						<ondown>91</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -631,15 +578,9 @@
 						<onclick condition="!StringCompare(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</onclick>
 						<onup>93</onup>
 						<ondown>92</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -680,15 +621,9 @@
 						<onclick condition="!StringCompare(Playlist.Length(music),0)">ActivateWindow(musicplaylist)</onclick>
 						<onup>91</onup>
 						<ondown>20</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -730,15 +665,9 @@
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<onup>92</onup>
 						<ondown>8</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -778,15 +707,9 @@
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<onup>20</onup>
 						<ondown>16</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -831,15 +754,9 @@
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<onup>8</onup>
 						<ondown>11</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>		
 					<control type="image">
 						<left>10</left>
@@ -886,15 +803,9 @@
 						<selected>System.IsMaster</selected>
 						<onup>16</onup>
 						<ondown>6</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -934,15 +845,9 @@
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<onup>11</onup>
 						<ondown>7</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -982,15 +887,9 @@
 						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
 						<onup>6</onup>
 						<ondown>9</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -1035,15 +934,9 @@
 						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
 						<onup>7</onup>
 						<ondown>95</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback>$PARAM[Id]</onback>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -1101,15 +994,10 @@
 						<onclick condition="Window.IsVisible(pictures)">ActivateWindow(picturessettings)</onclick>
 						<onup>9</onup>
 						<ondown>noop</ondown>
-						<onleft>50</onleft>
-						<onleft>51</onleft>
-						<onleft>52</onleft>				
-						<onleft>53</onleft>
-						<onleft>54</onleft>
-						<onleft>55</onleft>
-						<onleft>56</onleft>
-						<onleft>57</onleft>
-						<onleft>58</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<ondown condition="Skin.String($PARAM[CompPrefix].B5Goback,ONDOWN)">$PARAM[Id]</ondown>	
+						<onback>$PARAM[Id]</onback>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -1139,6 +1027,7 @@
 				<height>$PARAM[height]</height>
 				<onleft>Control.SetFocus(99)</onleft>
 				<onright>noop</onright>
+				<onback>99</onback>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
 				<visible allowhiddenfocus="true">Control.HasFocus(97)</visible>
@@ -1150,7 +1039,7 @@
 						<width>40</width>
 						<height>40</height>
 						<align>center</align>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">$INFO[ListItem.ActualIcon]</texture>
+						<texture background="true" colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
 						<top>0</top>
@@ -1180,7 +1069,7 @@
 						<width>40</width>
 						<height>40</height>
 						<align>center</align>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
+						<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
 						<top>0</top>
@@ -1405,14 +1294,8 @@
 		<width>400</width>
 		<height>80</height>
 		<orientation>horizontal</orientation>
-		<onup condition="Window.IsVisible(12901)">Control.SetFocus(9001)</onup>
-		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onup>
-		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</onup>
-		<onup condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,BOTTOM)">9012</onup>
-		<ondown condition="Window.IsVisible(12901)">Control.SetFocus(9001)</ondown>
-		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</ondown>
-		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</ondown>
-		<ondown condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,TOP)">9012</ondown>
+		<onup condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">96</onup>
+		<ondown condition="Skin.String(HOM.View1.BBSidebar,TOP)">96</ondown>
 	</include>	
 	
 	<include name="HomeV">
@@ -1421,14 +1304,8 @@
 		<width>80</width>
 		<height>400</height>
 		<orientation>vertical</orientation>
-		<onright condition="Window.IsVisible(12901)">Control.SetFocus(9001)</onright>
-		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onright>
-		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</onright>
-		<onright condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,LEFT)">9012</onright>
-		<onleft condition="Window.IsVisible(12901)">Control.SetFocus(9001)</onleft>
-		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT) + !IsEmpty(Container(9000).ListItem.Property(widget)) + !StringCompare(Container(9000).ListItem.Property(widgetName),TV) + !StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])">9011</onleft>
-		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT) + [StringCompare(Container(9000).ListItem.Property(widgetName),TV) | StringCompare(Container(9000).ListItem.Property(widgetName),$LOCALIZE[19023])]">9010</onleft>
-		<onleft condition="!Window.IsVisible(12901) + Skin.String(HOM.View1.BBSidebar,RIGHT)">9012</onleft>
+		<onright condition="Skin.String(HOM.View1.BBSidebar,LEFT)">96</onright>
+		<onleft condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">96</onleft>
 	</include>
 	
 	<include name="OSDH">
@@ -1490,7 +1367,18 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+				<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="image">
+				<left>20</left>
+				<top>20</top>
+				<width>80</width>
+				<height>80</height>
+				<align>center</align>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+				<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1499,7 +1387,8 @@
 				<height>118</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 			</control>
 			<control type="group">
 				<right>1</right>
@@ -1547,99 +1436,196 @@
 		</itemlayout>
 
 		<focusedlayout width="$PARAM[width]" height="118">
-			<control type="button">
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
-				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
-			<control type="image">
+
+			<control type="group">
 				<left>0</left>
-				<top>0</top>
-				<height>118</height>
-				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<height>118</height>
-				<align>center</align>
-				<bordersize>0,0,1,0</bordersize>
-				<texture border="0,0,1,0" colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>118</width>
-				<height>118</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<width>80</width>
-				<height>80</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$VAR[ThumbIcon]</texture>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>118</width>
-				<height>118</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<width>$PARAM[width]</width>
+				<visible>IsEmpty(Window(Home).Property(TVShowNext))</visible>
+				<animation effect="zoom" start="0,100" end="100,100" center="0,59" time="200">VisibleChange</animation>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<height>118</height>
+					<align>center</align>
+					<bordersize>0,0,1,0</bordersize>
+					<texture border="0,0,1,0" colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<height>118</height>
+					<align>center</align>
+					<bordersize>0,0,1,0</bordersize>
+					<texture border="0,0,1,0" colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>118</width>
+					<height>118</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>118</width>
+					<height>118</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
+				</control>
+				<control type="group">
+					<right>1</right>
+					<top>0</top>
+					<width>100</width>
+					<height>100</height>
+					<control type="image">
+						<right>0</right>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					</control>
+					<control type="image">
+						<right>5</right>
+						<top>5</top>
+						<width>25</width>
+						<height>25</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					</control>
+				<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>20</top>
+					<width>499</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font27</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$VAR[B1Title]</label>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>50</top>
+					<width>499</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+					<label>$VAR[B1SubTitle]</label>
+				</control>
 			</control>
 			<control type="group">
-				<right>1</right>
-				<top>0</top>
-				<width>100</width>
-				<height>100</height>
+				<left>0</left>
+				<width>$PARAM[width]</width>
+				<visible>!IsEmpty(Window(Home).Property(TVShowNext))</visible>
+				<animation effect="zoom" start="0" end="100" center="400,45" time="200" condition="!IsEmpty(Window(Home).Property(TVShowNext))">VisibleChange</animation>
 				<control type="image">
-					<right>0</right>
+					<left>0</left>
 					<top>0</top>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<width>$PARAM[width]</width>
+					<height>118</height>
+					<align>center</align>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
 				</control>
 				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<left>0</left>
+					<top>0</top>
+					<width>$PARAM[width]</width>
+					<height>118</height>
+					<align>center</align>
+					<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
 				</control>
-			<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-			</control>
-			<control type="label">
-				<left>142</left>
-				<top>20</top>
-				<width>499</width>
-				<height>50</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-				<label>$VAR[B1Title]</label>
-			</control>
-			<control type="label">
-				<left>142</left>
-				<top>50</top>
-				<width>499</width>
-				<height>50</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>FontSmallR</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-				<label>$VAR[B1SubTitle]</label>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>118</width>
+					<height>118</height>
+					<align>center</align>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1IconBg)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>20</top>
+					<width>370</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font27</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$INFO[ListItem.NextTitle,$LOCALIZE[209] : ,]</label>
+					<visible>ListItem.HasEpg</visible>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>20</top>
+					<width>370</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font27</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$INFO[ListItem.ChannelName,$LOCALIZE[209] : ,]</label>
+					<visible>!ListItem.HasEpg</visible>
+				</control>
+				<control type="label">
+					<left>142</left>
+					<top>50</top>
+					<width>370</width>
+					<height>50</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+					<label>$INFO[ListItem.NextStartTime]$INFO[ListItem.NextEndTime, - ,]</label>
+				</control>
+
 			</control>
 		</focusedlayout>
 	</include>
@@ -1653,7 +1639,7 @@
 				<width>317</width>
 				<height>177</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="22FFFFFF">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
 			</control>
 			<control type="image">
 				<left>100</left>
@@ -1662,8 +1648,18 @@
 				<height>104</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-				<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+				<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="image">
+				<left>100</left>
+				<top>12</top>
+				<width>104</width>
+				<height>104</height>
+				<align>center</align>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+				<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1672,7 +1668,8 @@
 				<height>177</height>
 				<align>center</align>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+				<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1717,21 +1714,13 @@
 		</itemlayout>
 
 		<focusedlayout width="318" height="178">
-			<control type="button">
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
-				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
 				<width>317</width>
 				<height>177</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="22FFFFFF">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
 			</control>
 			<control type="image">
 				<left>100</left>
@@ -1740,8 +1729,18 @@
 				<height>104</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-				<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+				<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="image">
+				<left>100</left>
+				<top>12</top>
+				<width>104</width>
+				<height>104</height>
+				<align>center</align>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+				<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -1750,7 +1749,8 @@
 				<height>177</height>
 				<align>center</align>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+				<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 			</control>
 			<control type="group">
 				<right>0</right>
@@ -1807,7 +1807,7 @@
 	<include name="ListPoster">
 		<itemlayout width="212" height="356">
 			<control type="group">
-				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)]</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] + IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Artist) + [IsEmpty(ListItem.Episode) | [!IsEmpty(ListItem.Episode) + ListItem.IsFolder]]</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1823,8 +1823,8 @@
 					<height>160</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -1833,7 +1833,7 @@
 					<height>305</height>
 					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
 				</control>
 				<control type="group">
 					<right>0</right>
@@ -1869,7 +1869,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)]</visible>
+				<visible>Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | [!IsEmpty(ListItem.Episode) + !ListItem.IsFolder]</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1885,8 +1885,8 @@
 					<height>93</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -1895,7 +1895,28 @@
 					<height>117</height>
 					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+					<visible>IsEmpty(ListItem.Property(labelID))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>211</width>
+					<height>117</height>
+					<align>center</align>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="AA000000">common/white.png</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>59</left>
+					<top>12</top>
+					<width>93</width>
+					<height>93</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="group">
 					<right>0</right>
@@ -1918,6 +1939,7 @@
 					</control>
 				<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 				</control>
+
 				<control type="label">
 					<left>12</left>
 					<posy>133</posy>
@@ -1927,6 +1949,18 @@
 					<font>Font27R</font>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 					<label>$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</label>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="label">
+					<left>12</left>
+					<posy>133</posy>
+					<width>178</width>
+					<height>36</height>
+					<align>left</align>
+					<font>Font27R</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="textbox">
 					<left>12</left>
@@ -1946,10 +1980,22 @@
 					<height>50</height>
 					<aspectratio align="left">keep</aspectratio>
 					<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)</visible>
 				</control>					
+				<control type="label">
+					<right>12</right>
+					<posy>304</posy>
+					<width>178</width>
+					<height>50</height>
+					<align>right</align>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>$INFO[ListItem.EndTime]$INFO[ListItem.EndTime, - ,]</label>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons)</visible>
+				<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons) | !IsEmpty(ListItem.Artist)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1965,8 +2011,8 @@
 					<height>160</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -1975,7 +2021,7 @@
 					<height>211</height>
 					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
 				</control>
 				<control type="textbox">
 					<left>12</left>
@@ -2000,16 +2046,8 @@
 		</itemlayout>
 
 		<focusedlayout width="212" height="356">
-			<control type="button">
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
-				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
 			<control type="group">
-				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)]</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] + IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Artist) + [IsEmpty(ListItem.Episode) | [!IsEmpty(ListItem.Episode) + ListItem.IsFolder]]</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2033,8 +2071,18 @@
 					<height>160</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbIcon]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>25.5</left>
+					<top>72.50</top>
+					<width>160</width>
+					<height>160</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -2043,7 +2091,8 @@
 					<height>305</height>
 					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 				</control>
 				<control type="group">
 					<right>0</right>
@@ -2079,7 +2128,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)]</visible>
+				<visible>Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | [!IsEmpty(ListItem.Episode) + !ListItem.IsFolder]</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2103,8 +2152,8 @@
 					<height>93</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -2113,7 +2162,28 @@
 					<height>117</height>
 					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+					<visible>IsEmpty(ListItem.Property(labelID))</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>0</top>
+					<width>211</width>
+					<height>117</height>
+					<align>center</align>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="AA000000">common/white.png</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>59</left>
+					<top>12</top>
+					<width>93</width>
+					<height>93</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="group">
 					<right>0</right>
@@ -2145,6 +2215,18 @@
 					<font>Font27R</font>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</label>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="label">
+					<left>12</left>
+					<posy>133</posy>
+					<width>178</width>
+					<height>36</height>
+					<align>left</align>
+					<font>Font27R</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="textbox">
 					<left>12</left>
@@ -2164,10 +2246,22 @@
 					<height>50</height>
 					<aspectratio align="left">keep</aspectratio>
 					<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)</visible>
 				</control>					
+				<control type="label">
+					<right>12</right>
+					<posy>304</posy>
+					<width>178</width>
+					<height>50</height>
+					<align>right</align>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$INFO[ListItem.EndTime]$INFO[ListItem.EndTime, - ,]</label>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons)</visible>
+				<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons) | !IsEmpty(ListItem.Artist)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2191,7 +2285,7 @@
 					<height>160</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
 					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
 				</control>
 				<control type="image">
@@ -2201,7 +2295,7 @@
 					<height>211</height>
 					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
 				</control>
 				<control type="textbox">
 					<left>12</left>
@@ -2244,8 +2338,8 @@
 				<height>240</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-				<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+				<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+				<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2255,7 +2349,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
 			</control>
 			<control type="group">
 				<right>0</right>
@@ -2292,11 +2386,20 @@
 				<width>100</width>
 				<height>100</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
-				<visible>Container.Content(songs)</visible>
+				<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
+				<visible>Container.Content(songs) | !IsEmpty(ListItem.Artist)</visible>
+			</control>
+			<control type="image">
+				<left>10</left>
+				<top>266</top>
+				<width>80</width>
+				<height>80</height>
+				<aspectratio>scale</aspectratio>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+				<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			<control type="group">
-				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Container.Content(songs)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Container.Content(songs) | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | !IsEmpty(ListItem.Artist)">Conditional</animation>
 				<control type="label">
 					<left>12</left>
 					<top>266</top>
@@ -2323,14 +2426,6 @@
 		</itemlayout>
 
 		<focusedlayout width="636" height="356">
-			<control type="button">
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
-				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
@@ -2346,8 +2441,8 @@
 				<height>240</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-				<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+				<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+				<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2357,7 +2452,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
 			</control>
 			<control type="group">
 				<right>0</right>
@@ -2402,11 +2497,20 @@
 				<width>100</width>
 				<height>100</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
-				<visible>Container.Content(songs)</visible>
+				<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
+				<visible>Container.Content(songs) | !IsEmpty(ListItem.Artist)</visible>
+			</control>
+			<control type="image">
+				<left>10</left>
+				<top>266</top>
+				<width>80</width>
+				<height>80</height>
+				<aspectratio>scale</aspectratio>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+				<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			<control type="group">
-				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Container.Content(songs)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="100,0" time="0" condition="Container.Content(songs) | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | !IsEmpty(ListItem.Artist)">Conditional</animation>
 				<control type="label">
 					<left>12</left>
 					<top>266</top>
@@ -2451,7 +2555,27 @@
 				<height>350</height>
 				<align>center</align>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+			</control>
+			<control type="image">
+				<left>3</left>
+				<top>3</top>
+				<width>235</width>
+				<height>118</height>
+				<align>center</align>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="AA000000">common/white.png</texture>
+				<visible>!IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="image">
+				<left>3</left>
+				<top>18</top>
+				<width>235</width>
+				<height>80</height>
+				<align>center</align>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="tv.png">$INFO[ListItem.ActualIcon]</texture>
+				<visible>!IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			<control type="group">
 				<right>3</right>
@@ -2494,7 +2618,7 @@
 				<aligny>center</aligny>
 				<font>FontSmallR</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-				<label>$VAR[B2SubTitle]</label>
+				<label fallback="19499">$VAR[B2SubTitle]</label>
 			</control>
 			<control type="textbox">
 				<left>275</left>
@@ -2504,7 +2628,7 @@
 				<font>FontSmall</font>
 				<autoscroll>false</autoscroll>
 				<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-				<label>$VAR[B2Plot]</label>
+				<label fallback="19055">$VAR[B2Plot]</label>
 			</control>
 			<control type="image">
 				<description>Rating value</description>
@@ -2514,19 +2638,22 @@
 				<height>20</height>
 				<aspectratio align="left">keep</aspectratio>
 				<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
+				<visible>IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="label">
+				<left>275</left>
+				<posy>98</posy>
+				<width>310</width>
+				<height>20</height>
+				<font>FontSmallR</font>
+				<label>$VAR[B1SubTitle]</label>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<visible>!IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 		</itemlayout>
 
 		<focusedlayout width="636" height="356">
 			<control type="group">
-			<control type="button">
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
-				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
 			<control type="image">
 				<left>3</left>
 				<top>3</top>
@@ -2550,7 +2677,27 @@
 				<height>350</height>
 				<align>center</align>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+			</control>
+			<control type="image">
+				<left>3</left>
+				<top>3</top>
+				<width>235</width>
+				<height>118</height>
+				<align>center</align>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="AA000000">common/white.png</texture>
+				<visible>!IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="image">
+				<left>3</left>
+				<top>18</top>
+				<width>235</width>
+				<height>80</height>
+				<align>center</align>
+				<aspectratio>keep</aspectratio>
+				<texture background="true" colordiffuse="FFFFFFFF" fallback="tv.png">$INFO[ListItem.ActualIcon]</texture>
+				<visible>!IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			<control type="group">
 				<right>3</right>
@@ -2593,7 +2740,7 @@
 				<aligny>center</aligny>
 				<font>FontSmallR</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-				<label>$VAR[B2SubTitle]</label>
+				<label fallback="19499">$VAR[B2SubTitle]</label>
 			</control>			
 			<control type="textbox">
 				<left>275</left>
@@ -2602,7 +2749,7 @@
 				<height>165</height>
 				<font>FontSmall</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-				<label>$VAR[B2Plot]</label>
+				<label fallback="19055">$VAR[B2Plot]</label>
 			</control>
 			<control type="image">
 				<description>Rating value</description>
@@ -2612,6 +2759,17 @@
 				<height>20</height>
 				<aspectratio align="left">keep</aspectratio>
 				<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
+				<visible>IsEmpty(ListItem.ChannelName)</visible>
+			</control>
+			<control type="label">
+				<left>275</left>
+				<posy>98</posy>
+				<width>310</width>
+				<height>20</height>
+				<font>FontSmallR</font>
+				<label>$VAR[B1SubTitle]</label>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+				<visible>!IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			</control>
 		</focusedlayout>
@@ -2637,8 +2795,18 @@
 					<height>80</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -2647,7 +2815,8 @@
 					<height>118</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 				</control>
 				<control type="label">
 					<left>142</left>
@@ -2680,7 +2849,7 @@
 				<aspectratio>scale</aspectratio>
 				<bordertexture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</bordertexture>
 				<bordersize>5</bordersize>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
 				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
 			<control type="label">
@@ -2719,14 +2888,6 @@
 		</itemlayout>
 
 		<focusedlayout width="636" height="118">
-			<control type="button">
-				<texturefocus></texturefocus>
-				<texturenofocus></texturenofocus>
-				<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-				<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-				<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-				<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-			</control>
 			<control type="group">
 				<visible>!Skin.String($PARAM[CompPrefix].B1Typ,BANNER) | [Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + !Container.Content(movies) + !Container.Content(tvshows) + !Container.Content(seasons)]</visible>
 				<control type="image">
@@ -2761,8 +2922,18 @@
 					<height>80</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
-					<visible>ListItem.IsFolder | IsEmpty(ListItem.Art(thumb))</visible>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
+					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="image">
+					<left>20</left>
+					<top>20</top>
+					<width>80</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$VAR[ThumbIcon]</texture>
+					<visible>[IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName)] + [ListItem.IsFolder | IsEmpty(ListItem.Art(thumb)) | !IsEmpty(ListItem.Property(labelID))]</visible>
 				</control>
 				<control type="image">
 					<left>0</left>
@@ -2771,7 +2942,8 @@
 					<height>118</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
+					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 				</control>
 				<control type="label">
 					<left>142</left>
@@ -2804,7 +2976,7 @@
 				<aspectratio>scale</aspectratio>
 				<bordertexture colordiffuse="$VAR[CategoryColor]">common/white.png</bordertexture>
 				<bordersize>5</bordersize>
-				<texture colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbBanner]</texture>
 				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER)</visible>
 			</control>
 			<control type="label">
@@ -2904,7 +3076,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
+				<texture background="true">$VAR[PVRChannelIcon]</texture>
 			</control>
 		</channellayout>
 		
@@ -2943,7 +3115,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
+				<texture background="true">$VAR[PVRChannelIcon]</texture>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="out" reversible="true" condition="!Control.HasFocus(10)">Conditional</animation>
 			</control>
 		</focusedchannellayout>
@@ -2968,7 +3140,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
+				<texture background="true">$VAR[PVRChannelIcon]</texture>
 			</control>
 			
 			<!-- Channel name -->
@@ -3031,7 +3203,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
+				<texture background="true">$VAR[PVRChannelIcon]</texture>
 			</control>
 			
 			<!-- Channel name -->
@@ -3230,7 +3402,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture fallback="material/tv.png" colordiffuse="FFFFFFFF">$INFO[ListItem.ActualIcon]</texture>
+				<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
 				<visible>!IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			<control type="image">
@@ -3240,7 +3412,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture fallback="material/tv.png" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
+				<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">$INFO[ListItem.ActualIcon]</texture>
 				<visible>IsEmpty(ListItem.ChannelName)</visible>
 			</control>
 			<control type="label">
@@ -3273,14 +3445,7 @@
 				<width>$PARAM[width]</width>
 				<visible>Control.HasFocus(98)</visible>
 				<animation effect="zoom" start="0" end="100" center="400,45" time="200">VisibleChange</animation>
-				<control type="button">
-					<texturefocus></texturefocus>
-					<texturenofocus></texturenofocus>
-					<onfocus>SetProperty(SidebarPos,$INFO[Skin.String($PARAM[CompPrefix].BBSidebar)],Home)</onfocus>
-					<onfocus>SetProperty(DialogPos,$INFO[Skin.String($PARAM[CompPrefix].DIAPanel)],Home)</onfocus>	
-					<onfocus>SetProperty(CompPrefix,$PARAM[CompPrefix],Home)</onfocus>
-					<onfocus>SetProperty(ListPos,$INFO[Container($PARAM[Id]).CurrentItem],Home)</onfocus>		
-				</control>
+
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -3312,7 +3477,7 @@
 					<height>80</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture fallback="material/tv.png" colordiffuse="FFFFFFFF">$INFO[ListItem.ActualIcon]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.ActualIcon]</texture>
 					<visible>!IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="image">
@@ -3322,7 +3487,7 @@
 					<height>80</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture fallback="material/tv.png" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
 					<visible>IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="label">
@@ -3398,7 +3563,7 @@
 					<height>80</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture fallback="material/tv.png" colordiffuse="FFFFFFFF">$INFO[ListItem.ActualIcon]</texture>
+					<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.ActualIcon]</texture>
 					<visible>!IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="image">
@@ -3408,7 +3573,7 @@
 					<height>80</height>
 					<align>center</align>
 					<aspectratio>keep</aspectratio>
-					<texture fallback="material/tv.png" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[ListItem.ActualIcon]</texture>
 					<visible>IsEmpty(ListItem.ChannelName)</visible>
 				</control>
 				<control type="label">

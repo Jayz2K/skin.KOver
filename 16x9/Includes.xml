@@ -5,6 +5,7 @@
 	<include file="Designer_Common.xml" />
 	<include file="Designer_Connector.xml" />
 	<include file="Designer_VDOViewtype.xml" />
+	<include file="Designer_HOMViewtype.xml" />
 	<include file="Dialogs_includes.xml" />
 	<include file="Dialogs_InfosIncludes.xml" />	
 	<include file="Custom_Designer_ColorTool.xml" />

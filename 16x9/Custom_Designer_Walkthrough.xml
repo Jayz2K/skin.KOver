@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1101">
+
+	<!-- Walkthrough -->
+	<zorder>2</zorder>
+	<backgroundcolor>0x00000000</backgroundcolor>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>SetProperty(SidebarPos,LEFT,Home)</onload>
+	<onload>SetProperty(DialogPos,RIGHT,Home)</onload>	
+	<onunload>ClearProperty(SidebarPos,Home)</onunload>
+	<onunload>ClearProperty(DialogPos,Home)</onunload>	
+	<onload>Skin.SetString(HOM.View1.Name,Home Layout)</onload>
+	<onload>Skin.SetString(TV.View1.Name,EPG - Locked)</onload>
+	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
+
+	<controls>
+	
+		<!-- Decorative Elements -->
+		<control type="group">
+			<!-- Background -->
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="FF222222">common/white.png</texture>
+			</control>
+			
+			<!-- Header -->
+			<control type="image">
+				<height>120</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="FF000000">common/white.png</texture>
+			</control>
+			<control type="image">
+				<left>12</left>
+				<top>10</top>
+				<width>80</width>
+				<height>80</height>
+				<align>center</align>
+				<texture colordiffuse="FF00AAFF">common/white.png</texture>
+			</control>
+			<control type="image">
+				<left>27</left>
+				<top>25</top>
+				<width>50</width>
+				<height>50</height>
+				<align>center</align>
+				<aspectratio>keep</aspectratio>
+				<texture colordiffuse="FFFFFFFF">material/designer.png</texture>
+			</control>
+			<control type="label">
+				<top>24</top>
+				<left>118</left>
+				<width>1920</width>
+				<height>50</height>
+				<font>Font48</font>
+				<textcolor>FFAAAAAA</textcolor>
+				<label>31000</label>
+			</control>
+			<control type="image">
+				<top>572</top>
+				<height>508</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="FF000000">common/white.png</texture>
+			</control>
+		</control>
+
+		<control type="image">
+			<left>48</left>
+			<top>168</top>
+			<width>636</width>
+			<height>356</height>
+			<align>center</align>
+			<aspectratio>scale</aspectratio>
+			<texture colordiffuse="FFFFFFFF">$VAR[WTSShot]</texture>
+		</control>		
+
+		<control type="textbox">
+			<left>48</left>
+			<top>620</top>
+			<height>412</height>
+			<width>1824</width>
+			<aligny>center</aligny>
+			<font>Font27</font>
+			<textcolor>FFAAAAAA</textcolor>
+			<label>$VAR[WTPlot]</label>
+		</control>
+
+		<!-- Main List -->
+		<control type="list" id="9000">
+			<top>168</top>
+			<left>732</left>
+			<height>360</height>
+			<width>1140</width>
+			<onup>noop</onup>
+			<ondown>noop</ondown>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<orientation>vertical</orientation>
+			<scrolltime>200</scrolltime>
+			
+			<itemlayout width="1140" height="60">
+				<control type="label">
+					<left>24</left>
+					<top>0</top>
+					<width>1140</width>
+					<height>60</height>
+					<align>left</align>
+					<font>Font27</font>
+					<textcolor>FFAAAAAA</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</itemlayout>
+		
+			<focusedlayout width="1140" height="60">
+				<control type="image">
+					<top>0</top>
+					<left>0</left>
+					<width>1140</width>
+					<height>60</height>
+					<aspectratio>stretch</aspectratio>
+					<texture colordiffuse="FF00AAFF">common/white.png</texture>
+				</control>
+				<control type="label">
+					<left>24</left>
+					<top>0</top>
+					<width>1140</width>
+					<height>60</height>
+					<align>left</align>
+					<font>Font27</font>
+					<textcolor>FFFFFFFF</textcolor>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+			</focusedlayout>
+			
+			<content>
+				<item id="1">
+					<label>31200</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="2">
+					<label>31202</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="3">
+					<label>31204</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="4">
+					<label>31206</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="5">
+					<label>31208</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="6">
+					<label>31210</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="7">
+					<label>31212</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="8">
+					<label>31214</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="9">
+					<label>31216</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="10">
+					<label>31218</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="11">
+					<label>31220</label>
+					<onclick>noop</onclick>
+				</item>
+				<item id="12">
+					<label>31222</label>
+					<onclick>noop</onclick>
+				</item>
+			</content>
+		</control>
+
+	</controls>
+
+</window>

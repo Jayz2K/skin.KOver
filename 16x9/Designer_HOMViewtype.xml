@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+	<include name="HOMViewtype">
+	
+		<control type="group">
+			<visible>Control.IsVisible($PARAM[Id])</visible>	
+
+			<!-- Background -->
+			<control type="image">
+				<texture background="true">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))</visible>
+			</control>
+
+			<control type="group">
+				<animation effect="slide" start="0,0" end="0,120" time="200" condition="StringCompare(Skin.String(HOM.View1.BBSidebar),BOTTOM) + [Skin.String($PARAM[CompPrefix].BBCoordY,C) | [Skin.String($PARAM[CompPrefix].BBCoordY,B) + !Skin.String($PARAM[CompPrefix].BBSizeY,1ROW)]] + Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].BBSizeY,3ROW)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="0,-120" time="200" condition="StringCompare(Skin.String(HOM.View1.BBSidebar),TOP) + Skin.String($PARAM[CompPrefix].BBCoordY,A) + !Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String($PARAM[CompPrefix].BBCoordY,A) + Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].BBSizeY,3ROW)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-120,0" time="200" condition="StringCompare(Skin.String(HOM.View1.BBSidebar),LEFT) + Skin.String($PARAM[CompPrefix].BBCoordX,A) + !Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBCoordX,A) + Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="120,0" time="200" condition="StringCompare(Skin.String(HOM.View1.BBSidebar),RIGHT) + [Skin.String($PARAM[CompPrefix].BBCoordX,C) | [Skin.String($PARAM[CompPrefix].BBCoordX,B) + !Skin.String($PARAM[CompPrefix].BBSizeX,1COLUMN)]] + Skin.String($PARAM[CompPrefix].BBCoordX,C) + Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN)">Conditional</animation>
+			 
+				<include name="DialogPush">
+					<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+				</include>
+			
+				<control type="image">
+					<include name="BgPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+					</include>
+					<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
+				</control>				
+
+				<!-- Bloc 4 / special background -->
+				<control type="group">
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B4" />
+					</include>	
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
+					</control>
+					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+					<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(9001) + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
+				</control>
+				
+				<!-- Bloc 3 -->
+				<control type="group">
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B3Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(9001) + Skin.String($PARAM[CompPrefix].B5B3ShowOF,HIDE)">Conditional</animation>
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B3" />
+					</include>
+					<visible>!Skin.String($PARAM[CompPrefix].B3Show,HIDDEN)</visible>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="$INFO[Skin.String(Color.B3Bg)]">common/white.png</texture>
+					</control>				
+
+					<!-- Episode / Film preview -->
+					<control type="group">
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
+							<visible>StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</texture>
+							<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + !IsEmpty(Container($PARAM[Id]).ListItem.Title)</visible>
+						</control>
+						<control type="group">
+							<visible>!StringCompare(Window(Home).Property(MenuSection),livetv) + !StringCompare(Window(Home).Property(MenuSection),livetv-0)</visible>
+							<control type="group">
+								<right>0</right>
+								<top>0</top>
+								<width>100</width>
+								<height>100</height>
+								<control type="image">
+									<right>0</right>
+									<top>0</top>
+									<aspectratio>scale</aspectratio>
+									<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+								</control>
+								<control type="image">
+									<right>5</right>
+									<top>5</top>
+									<width>25</width>
+									<height>25</height>
+									<aspectratio>scale</aspectratio>
+									<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+								</control>
+							</control>
+							<control type="image">
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="55FFFFFF">material/play.png</texture>
+								<animation effect="zoom" start="100" end="40" time="0" center="auto" condition="true">Conditional</animation>
+								<visible>!Window.IsVisible(12600)</visible>
+							</control>
+							<control type="group">
+								<include name="B3STag">
+									<param name="Prefix" value="$PARAM[CompPrefix]" />
+								</include>
+								<control type="image">
+									<left>0</left>
+									<top>300</top>
+									<height>56</height>
+									<aspectratio aligny="bottom">stretch</aspectratio>
+									<texture colordiffuse="AA000000">common/white.png</texture>
+								</control>
+								<control type="label">
+									<left>12</left>
+									<top>300</top>
+									<width>589</width>
+									<height>56</height>
+									<align>left</align>
+									<textcolor>FFFFFFFF</textcolor>
+									<font>FontSmall</font>
+									<label>$INFO[Container($PARAM[Id]).ListItem.Tagline]</label>
+									<visible>StringCompare(Container(9000).ListItem.Property(widgetType),movies)</visible>
+								</control>
+								<control type="label">
+									<left>12</left>
+									<top>300</top>
+									<width>589</width>
+									<height>56</height>
+									<align>left</align>
+									<textcolor>FFFFFFFF</textcolor>
+									<font>FontSmall</font>
+									<label>$INFO[Container($PARAM[Id]).ListItem.TVShowTitle,, . ]$INFO[Container($PARAM[Id]).ListItem.Season,$LOCALIZE[20373] , . ]$INFO[Container($PARAM[Id]).ListItem.Episode,$LOCALIZE[20359] ,]</label>
+									<visible>StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
+								</control>
+								<control type="label">
+									<left>12</left>
+									<top>300</top>
+									<width>589</width>
+									<height>56</height>
+									<align>left</align>
+									<textcolor>FFFFFFFF</textcolor>
+									<font>FontSmall</font>
+									<label>$INFO[Container($PARAM[Id]).ListItem.Year,(,) ]$INFO[Container($PARAM[Id]).ListItem.Artist]</label>
+									<visible>StringCompare(Container(9000).ListItem.Property(widgetTarget),music)</visible>
+								</control>
+							</control>
+						</control>
+						<control type="group">
+							<visible>StringCompare(Window(Home).Property(MenuSection),livetv) | StringCompare(Window(Home).Property(MenuSection),livetv-0)</visible>
+							<!--control type="multiimage">
+								<left>0</left>
+								<top>0</top>
+								<width>0</width>
+								<height>0</height>
+								<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.Title,, ]$INFO[ListItem.ChannelName]</imagepath>
+							 	<aspectratio>scale</aspectratio>
+							 	<visible>!Control.HasFocus(98) + !IsEmpty(ListItem.Title)</visible>
+							</control>
+							<control type="multiimage">
+								<left>0</left>
+								<top>0</top>
+								<width>0</width>
+								<height>0</height>
+								<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.NextTitle,, ]$INFO[ListItem.ChannelName]</imagepath>
+							 	<aspectratio>scale</aspectratio>
+							 	<visible>Control.HasFocus(98) + !IsEmpty(ListItem.NextTitle)</visible>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>636</width>
+								<height>356</height>
+								<aspectratio>SCALE</aspectratio>
+								<texture colordiffuse="FFFFFFFF">$INFO[Window(Home).Property(SkinHelper.ListItemThumb)]</texture>
+								<visible>[!Control.HasFocus(98) + !IsEmpty(ListItem.Title)] | [Control.HasFocus(98) + !IsEmpty(ListItem.NextTitle)]</visible>
+							</control-->
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<align>left</align>
+								<aligny>top</aligny>
+								<aspectratio>scale</aspectratio>
+								<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
+							</control>
+							<control type="image">
+								<right>24</right>
+								<top>230</top>
+								<width>180</width>
+								<height>100</height>
+								<aspectratio>keep</aspectratio>
+								<texture fallback="material/tv.png" colordiffuse="FFFFFFFF">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="image">
+								<left>0</left>
+								<top>0</top>
+								<width>636</width>
+								<height>125</height>
+								<aspectratio>stretch</aspectratio>
+								<texture colordiffuse="AA000000">common/white.png</texture>
+							</control>
+							<control type="label">
+								<top>20</top>
+								<right>24</right>
+								<width>588</width>
+								<height>48</height>
+								<align>right</align>
+								<font>Font48</font>
+								<textcolor>FFFFFFFF</textcolor>
+								<label>[UPPERCASE]$VAR[B3Title][/UPPERCASE]</label>
+							</control>
+							<control type="label">
+								<top>72</top>
+								<right>24</right>
+								<width>588</width>
+								<height>12</height>
+								<align>right</align>
+								<font>FontSmallB</font>
+								<textcolor>FFFFFFFF</textcolor>
+								<label>$VAR[B3SubTitle]</label>
+							</control>
+						</control>
+					</control>
+				</control>		
+				
+				<!-- Bloc 4 -->
+				<control type="group">
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B4" />
+					</include>	
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
+					</control>				
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="FFFFFFFF">$INFO[Container(9000).ListItem.Property(homeart)]</texture>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<align>left</align>
+						<aligny>top</aligny>
+						<aspectratio>scale</aspectratio>
+						<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</texture>
+						<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + !IsEmpty(Container($PARAM[Id]).ListItem.Title)</visible>
+					</control>
+ 					<control type="image"> 
+ 						<left>0</left> 
+ 						<top>0</top> 
+ 						<height>118</height> 
+ 						<aspectratio>stretch</aspectratio> 
+						<texture colordiffuse="AA000000">common/white.png</texture> 
+ 					</control>
+ 					<control type="label"> 
+						<top>10</top>
+						<height>60</height>
+						<right>24</right> 
+						<align>right</align> 
+						<font>Font36R</font> 
+ 						<textcolor>FFFFFFFF</textcolor> 
+ 						<label>$INFO[Container(9000).ListItem.Label]</label> 
+ 					</control> 
+ 					<control type="label"> 
+						<top>45</top>
+						<height>60</height>
+ 						<right>24</right> 
+						<align>right</align> 
+ 						<font>FontSmallB</font> 
+						<textcolor>FFFFFFFF</textcolor> 
+						<label>$INFO[Container(9000).ListItem.Property(widgetName)]</label>
+						<visible>!IsEmpty(Container(9000).ListItem.Property(widgetName)) + !Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)</visible>
+					</control> 
+					<control type="label"> 
+						<top>45</top>
+						<height>60</height>
+ 						<right>24</right> 
+						<align>right</align> 
+ 						<font>FontSmallB</font> 
+						<textcolor>FFFFFFFF</textcolor> 
+						<label>31127</label>
+						<visible>Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)</visible>
+					</control>
+
+
+					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(9001) + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
+				</control>		
+
+				<!-- Bloc 1 -->	
+				<control type="group">
+					<visible>Control.IsVisible($PARAM[Id])</visible>
+					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(9001) + Skin.String($PARAM[CompPrefix].B5B1ShowOF,HIDE)">Conditional</animation>
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B1" />
+					</include>
+
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
+					</control>	
+
+					<!-- Main menu -->	
+					<control type="panel" id="$PARAM[Id]">
+
+						<left>0</left>
+						<top>0</top>
+
+						<include condition="Skin.String($PARAM[CompPrefix].B1Lay,HORIZONTAL)">SetHorizontal</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Lay,VERTICAL)">SetVertical</include>
+
+						<onup condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONUP)">9001</onup>
+						<onup condition="Skin.String($PARAM[CompPrefix].B1Goback,ONUP)">9000</onup>
+
+						<ondown condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONDOWN)">9001</ondown>
+						<ondown condition="Skin.String($PARAM[CompPrefix].B1Goback,ONDOWN)">9000</ondown>
+
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">9001</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,home)</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + IsEmpty(Window(Home).Property(TVShowNext))">9000</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + !StringCompare(Container(9000).ListItem.Property(widgetType),pvr)">9000</onleft>
+
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,home)</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !IsEmpty(Window(Home).Property(TVShowNext))">9001</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + !StringCompare(Container(9000).ListItem.Property(widgetType),pvr)">9001</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Goback,ONRIGHT)">9000</onright>
+						<onback>9000</onback>
+						
+						<scrolltime>200</scrolltime>
+						<autoscroll time="8000">System.IdleTime(3) + Control.HasFocus(9000)</autoscroll>
+						<viewtype label="$INFO[Skin.String($PARAM[CompPrefix].Name)]">wrap</viewtype>
+						<preloaditems>2</preloaditems>
+						<visible allowhiddenfocus="true">true</visible>
+
+						<include name="ListWide" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST)">
+							<param name="width" value="636" />
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include name="ListWide" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST)">
+							<param name="width" value="1272" />
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include name="ListWide" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST)">
+							<param name="width" value="1908" />
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,TILES)" name="ListTiles">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,FANART)" name="ListFanart">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,CARD)" name="ListCard">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,POSTER)" name="ListPoster">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,FIXEDLIST) | Skin.String($PARAM[CompPrefix].B1Typ,BANNER)" name="ListFixed">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<content target="$PARAM[Target]">$PARAM[Path]</content>
+					</control>	
+					
+				</control>
+				
+				<!-- Bloc 2 -->
+				<control type="group">
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B2" />
+					</include>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B2Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(9001) + Skin.String($PARAM[CompPrefix].B5B2ShowOF,HIDE)">Conditional</animation>
+
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>stretch</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
+						<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) | ControlGroup(99).HasFocus() | Control.HasFocus(97)</visible>
+					</control>
+					
+
+					<control type="group">
+					<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) + !Control.HasFocus(98)</visible>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font72</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>!IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
+						</control>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font48</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
+						</control>
+						<control type="label">
+							<left>24</left>
+							<top>96</top>
+							<width>100</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+							<font>Font36</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).NumItems]</label>
+						</control>
+						<control type="group">
+							<left>148</left>
+							<!-- Configuring Bloc2 Horizontal Text Width -->
+							<include condition="Skin.String($PARAM[CompPrefix].B2SizeX,1COLUMN)">TextW636</include>
+							<include condition="Skin.String($PARAM[CompPrefix].B2SizeX,2COLUMN)">TextW1272</include>
+							<include condition="Skin.String($PARAM[CompPrefix].B2SizeX,3COLUMN)">TextW1908</include>
+							<control type="label">
+								<top>10</top>
+								<height>60</height>
+								<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
+								<font>Font36R</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label fallback="19047">$INFO[Container($PARAM[Id]).ListItem.Title]</label>
+								<visible>IsEmpty(Window(Home).Property(TVSHowNext))</visible>
+							</control>
+							<control type="label">
+								<top>10</top>
+								<height>60</height>
+								<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
+								<font>Font36R</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label fallback="19047">$INFO[Container($PARAM[Id]).ListItem.NextTitle,$LOCALIZE[209] : ,]</label>
+								<visible>!IsEmpty(Window(Home).Property(TVSHowNext))</visible>
+							</control>
+							<control type="label">
+								<top>45</top>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label fallback="19499">$INFO[Container($PARAM[Id]).ListItem.Genre]</label>
+								<visible>IsEmpty(Window(Home).Property(TVSHowNext))</visible>
+							</control>				
+							<control type="label">
+								<top>45</top>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label fallback="19499">$INFO[Container($PARAM[Id]).ListItem.NextGenre]</label>
+								<visible>!IsEmpty(Window(Home).Property(TVSHowNext))</visible>
+							</control>				
+							<control type="textbox">
+								<top>120</top>
+								<!-- Configuring Bloc2 Vertical Plot Height -->
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,1ROW)">PlotH356</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,2ROW)">PlotH712</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,3ROW)">PlotH1068</include>
+								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+								<font>Font25</font>
+								<label fallback="19055">$INFO[Container($PARAM[Id]).ListItem.Plot]</label>
+								<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),songs) + !StringCompare(Container(9000).ListItem.Property(widgetType),albums) + IsEmpty(Window(Home).Property(TVSHowNext))</visible>
+							</control>
+							<control type="textbox">
+								<top>120</top>
+								<!-- Configuring Bloc2 Vertical Plot Height -->
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,1ROW)">PlotH356</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,2ROW)">PlotH712</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,3ROW)">PlotH1068</include>
+								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+								<font>Font25</font>
+								<label fallback="19055">$INFO[Container($PARAM[Id]).ListItem.Year,$LOCALIZE[345] , [CR]]$INFO[Container($PARAM[Id]).ListItem.TrackNumber,$LOCALIZE[554] , [CR]]$INFO[Container($PARAM[Id]).ListItem.DiscNumber,$LOCALIZE[427] , [CR]]$INFO[Container($PARAM[Id]).ListItem.Genre,$LOCALIZE[515] , [CR]]</label>
+								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),songs)</visible>
+							</control>
+							<control type="textbox">
+								<top>120</top>
+								<!-- Configuring Bloc2 Vertical Plot Height -->
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,1ROW)">PlotH356</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,2ROW)">PlotH712</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,3ROW)">PlotH1068</include>
+								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+								<font>Font25</font>
+								<label fallback="19055">$INFO[Container($PARAM[Id]).ListItem.Property(Album_Description)]</label>
+								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),albums)</visible>
+							</control>
+							<control type="textbox">
+								<top>120</top>
+								<!-- Configuring Bloc2 Vertical Plot Height -->
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,1ROW)">PlotH356</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,2ROW)">PlotH712</include>
+								<include condition="Skin.String($PARAM[CompPrefix].B2SizeY,3ROW)">PlotH1068</include>
+								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+								<font>Font25</font>
+								<label fallback="19055">$INFO[Container($PARAM[Id]).ListItem.NextPlot]</label>
+								<visible>!IsEmpty(Window(Home).Property(TVSHowNext))</visible>
+							</control>							
+
+						</control>
+						<control type="group">
+							<include name="B2SRate">
+								<param name="Prefix" value="$PARAM[CompPrefix]" />
+							</include>
+							<control type="image">
+								<description>Rating value</description>
+								<left>148</left>
+								<posy>310</posy>
+								<width>100</width>
+								<height>20</height>
+								<aspectratio align="left">keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[Container($PARAM[Id]).ListItem.StarRating,]</texture>
+								<visible>IsEmpty(Container($PARAM[Id]).ListItem.ChannelName)</visible> 
+							</control>
+							<control type="label">
+								<top>300</top>
+								<right>48</right>
+								<width>300</width>
+								<height>25</height>
+								<align>right</align>
+								<aligny>top</aligny>
+								<font>Font25</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label>$VAR[B2InfoSup]</label>
+								<visible>IsEmpty(Container($PARAM[Id]).ListItem.ChannelName)</visible> 
+							</control>
+							<control type="progress"> 
+								<left>148</left> 
+								<posy>315</posy> 
+								<width>100</width> 
+								<height>10</height> 
+								<texturebg colordiffuse="$VAR[CategoryColor]">common/progressback.png</texturebg> 
+								<lefttexture>-</lefttexture> 
+								<midtexture colordiffuse="$VAR[CategoryColor]">common/progressfront.png</midtexture> 
+								<righttexture>-</righttexture> 
+								<info>Container($PARAM[Id]).ListItem.Progress</info> 
+								<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + IsEmpty(Window(Home).Property(TVSHowNext))</visible> 
+							</control> 
+							<control type="label"> 
+								<top>300</top> 
+								<left>148</left> 
+								<width>300</width> 
+								<height>25</height> 
+								<align>left</align> 
+								<aligny>top</aligny> 
+								<font>Font25</font> 
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor> 
+								<label>$INFO[Container($PARAM[Id]).ListItem.NextStartTime,$LOCALIZE[19126] ,]</label>
+								<visible>!IsEmpty(Window(Home).Property(TVSHowNext))</visible> 
+							</control> 
+							<control type="label"> 
+								<top>300</top> 
+								<right>48</right> 
+								<width>300</width> 
+								<height>25</height> 
+								<align>right</align> 
+								<aligny>top</aligny> 
+								<font>Font25</font> 
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor> 
+								<label>$INFO[Container($PARAM[Id]).ListItem.Duration,$LOCALIZE[180] : ,]</label> 
+								<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + IsEmpty(Window(Home).Property(TVSHowNext))</visible> 
+							</control> 
+						</control>
+					</control>
+					
+					<control type="group">
+					<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) + Control.HasFocus(98)</visible>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font72</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>!IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
+						</control>
+						<control type="label">
+							<left>12</left>
+							<top>24</top>
+							<width>124</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt1)]</textcolor>
+							<font>Font48</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container($PARAM[Id]).CurrentItem]</label>
+							<visible>IntegerGreaterThan(Container($PARAM[Id]).CurrentItem,999)</visible>
+						</control>
+						<control type="label">
+							<left>24</left>
+							<top>96</top>
+							<width>100</width>
+							<height>60</height>
+							<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+							<font>Font36</font>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[Container.NumItems]</label>
+						</control>
+						<control type="group">
+							<left>148</left>
+							<!-- Configuring Bloc2 Horizontal Text Width -->
+							<include condition="Skin.String($PARAM[CompPrefix].B2SizeX,1COLUMN)">TextW636</include>
+							<include condition="Skin.String($PARAM[CompPrefix].B2SizeX,2COLUMN)">TextW1272</include>
+							<include condition="Skin.String($PARAM[CompPrefix].B2SizeX,3COLUMN)">TextW1908</include>
+							<control type="label">
+								<top>10</top>
+								<height>60</height>
+								<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
+								<font>Font36R</font>
+								<align>left</align>
+								<aligny>center</aligny>
+								<label fallback="19047">$INFO[ListItem.NextTitle,$LOCALIZE[209] : ,]</label>
+							</control>
+							<control type="label">
+								<top>45</top>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>FontSmallR</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label fallback="19499">$INFO[ListItem.ChannelName]$INFO[ListItem.NextGenre, - ,]</label>
+							</control>				
+							<control type="textbox">
+								<top>120</top>
+								<!-- Configuring Bloc2 Vertical Plot Height -->
+								<include condition="Skin.String(TV.View1.B2SizeY,1ROW)">PlotH356</include>
+								<include condition="Skin.String(TV.View1.B2SizeY,2ROW)">PlotH712</include>
+								<include condition="Skin.String(TV.View1.B2SizeY,3ROW)">PlotH1068</include>
+								<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+								<font>Font25</font>
+								<label fallback="19055">$INFO[ListItem.NextPlot]</label>
+							</control>
+						</control>
+						<control type="group">
+							<include name="B2SRate">
+								<param name="Prefix" value="TV.View1" />
+							</include>
+							<control type="label">
+								<top>300</top>
+								<left>148</left>
+								<width>300</width>
+								<height>25</height>
+								<align>left</align>
+								<aligny>top</aligny>
+								<font>Font25</font>
+								<textcolor>$INFO[Skin.String(Color.B2Txt4)]</textcolor>
+								<label>$INFO[ListItem.NextStartTime,$LOCALIZE[19126] ,]</label>
+							</control>
+						</control>
+					</control>
+				</control>
+
+				<!-- Bloc 5 -->	
+				<control type="group"> 
+					<visible>Control.IsVisible(9001)</visible>
+					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B5Show,HIDDEN)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B5Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="!Control.HasFocus(9001) + !Window.IsVisible(contextmenu) + Skin.String($PARAM[CompPrefix].B5Show,ONFOCUS)">Conditonal</animation>
+					<include name="BlocPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+						<param name="BlocID" value="B5" />
+					</include>
+
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
+					</control>	
+
+					<!-- Main menu -->	
+					<control type="panel" id="9001">
+
+						<left>0</left>
+						<top>0</top>
+
+						<include condition="Skin.String($PARAM[CompPrefix].B5Lay,HORIZONTAL)">SetHorizontal</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Lay,VERTICAL)">SetVertical</include>
+
+						<onup condition="Skin.String($PARAM[CompPrefix].B5Goback,ONUP) + !IsEmpty(Container(9000).ListItem.Property(widgetType))">$PARAM[Id]</onup>
+						<onup condition="Skin.String($PARAM[CompPrefix].B5Goback,ONUP) + IsEmpty(Container(9000).ListItem.Property(widgetType))">9000</onup>
+						<ondown condition="Skin.String($PARAM[CompPrefix].B5Goback,ONUP)">noop</ondown>
+
+						<ondown condition="Skin.String($PARAM[CompPrefix].B5Goback,ONDOWN) + !IsEmpty(Container(9000).ListItem.Property(widgetType))">$PARAM[Id]</ondown>
+						<ondown condition="Skin.String($PARAM[CompPrefix].B5Goback,ONDOWN) + IsEmpty(Container(9000).ListItem.Property(widgetType))">9000</ondown>
+						<onup condition="Skin.String($PARAM[CompPrefix].B5Goback,ONDOWN)">noop</onup>
+
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT) + !IsEmpty(Container(9000).ListItem.Property(widgetType))">$PARAM[Id]</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT) + IsEmpty(Container(9000).ListItem.Property(widgetType))">9000</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">noop</onright>
+
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT) + !IsEmpty(Container(9000).ListItem.Property(widgetType))">$PARAM[Id]</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT) + IsEmpty(Container(9000).ListItem.Property(widgetType))">9000</onright>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">noop</onleft>
+
+						<onback>Control.SetFocus(9000)</onback>
+						
+						<scrolltime>200</scrolltime>
+						<viewtype label="$INFO[Skin.String($PARAM[CompPrefix].Name)]">list</viewtype>
+						<visible allowhiddenfocus="true">true</visible>
+						<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(contextmenu)">Conditional</animation>
+
+						<include name="ListWide" condition="Skin.String($PARAM[CompPrefix].B5SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B5Typ,WIDELIST)">
+							<param name="width" value="636" />
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include name="ListWide" condition="Skin.String($PARAM[CompPrefix].B5SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B5Typ,WIDELIST)">
+							<param name="width" value="1272" />
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include name="ListWide" condition="Skin.String($PARAM[CompPrefix].B5SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B5Typ,WIDELIST)">
+							<param name="width" value="1908" />
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,TILES)" name="ListTiles">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,FANART)" name="ListFanart">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,CARD)" name="ListCard">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,POSTER)" name="ListPoster">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,FIXEDLIST) | Skin.String($PARAM[CompPrefix].B5Typ,BANNER)" name="ListFixed">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<content>
+							<include>skinshortcuts-submenu</include>
+						</content>
+					</control>	
+					
+				</control>				
+			</control>
+		</control>
+		
+		<!-- Dummy Button for Channels "Next" -->
+		<control type="button" id="98">
+			<left>0</left>
+			<top>0</top>
+			<width>80</width>
+			<height>80</height>
+			<texturefocus colordiffuse="00FFFFFF">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<focusedcolor>-</focusedcolor>
+			<disabledcolor>-</disabledcolor>
+			<onup>ClearProperty(TVShowNext,Home)</onup>
+			<onup>Control.Move($PARAM[Id],-1)</onup>
+			<onleft>ClearProperty(TVShowNext,Home)</onleft>
+			<onright>Control.SetFocus(9001)</onright>
+			<!--onright>ActivateWindow(tvguide)</onright-->
+			<ondown>ClearProperty(TVShowNext,Home)</ondown>
+			<ondown>Control.Move($PARAM[Id],1)</ondown>
+		</control>		
+
+		<!-- Dummy Button for widget focus transfer -->
+		<control type="button" id="96">
+			<left>0</left>
+			<top>0</top>
+			<width>80</width>
+			<height>80</height>
+			<texturefocus colordiffuse="00FFFFFF">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<focusedcolor>-</focusedcolor>
+			<disabledcolor>-</disabledcolor>
+			<onfocus condition="!IsEmpty(Container(9000).ListItem.Property(widgetType)) + [!Skin.String($PARAM[CompPrefix].B1Show,HIDDEN) | Skin.String($PARAM[CompPrefix].B5Show,ONFOCUS)]">Control.SetFocus($PARAM[Id])</onfocus>
+			<onfocus condition="IsEmpty(Container(9000).ListItem.Property(widgetType))">Control.SetFocus(9001)</onfocus>
+			<onfocus condition="Skin.String($PARAM[CompPrefix].B1Show,HIDDEN) + Skin.String($PARAM[CompPrefix].B5Show,VISIBLE)">Control.SetFocus(9001)</onfocus>
+			<onup>noop</onup>
+			<onleft>noop</onleft>
+			<onright>noop</onright>
+			<ondown>noop</ondown>
+		</control>		
+
+	</include>
+
+</includes>

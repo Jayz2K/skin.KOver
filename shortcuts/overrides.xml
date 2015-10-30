@@ -1,63 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <overrides>
+    <widgetRename>False</widgetRename>
+
+    <propertySettings property="homeart" buttonID="412" title="Select Item Art" showNone="True" imageBrowse="True" />
+    <propertySettings property="viewtype" buttonID="411" title="Select Viewtype" showNone="True" imageBrowse="False" />
+
+    <propertydefault labelID="videos" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="movies" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="tvshows" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="music" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="programs" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="1036" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="settings" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="31063" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="pictures" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="livetv" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="13005" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="weather" property="viewtype">HOM.View1</propertydefault>
+    <propertydefault labelID="script.globalsearch" property="viewtype">HOM.View1</propertydefault>
+
+    <propertydefault labelID="videos" property="homeart">homeart/videos.jpg</propertydefault>
+    <propertydefault labelID="movies" property="homeart">homeart/movies.jpg</propertydefault>
+    <propertydefault labelID="tvshows" property="homeart">homeart/tvshows.png</propertydefault>
+    <propertydefault labelID="music" property="homeart">homeart/music.jpg</propertydefault>
+    <propertydefault labelID="programs" property="homeart">homeart/addons.jpg</propertydefault>
+    <propertydefault labelID="1036" property="homeart">homeart/favourites.jpg</propertydefault>
+    <propertydefault labelID="settings" property="homeart">homeart/settings.jpg</propertydefault>
+    <propertydefault labelID="31063" property="homeart">homeart/addons.jpg</propertydefault>
+    <propertydefault labelID="pictures" property="homeart">homeart/pictures.jpg</propertydefault>
+    <propertydefault labelID="livetv" property="homeart">homeart/tv.jpg</propertydefault>
+    <propertydefault labelID="13005" property="homeart">homeart/shutdown.jpg</propertydefault>
+    <propertydefault labelID="weather" property="homeart">homeart/weather.jpg</propertydefault>
+    <propertydefault labelID="script.globalsearch" property="homeart">homeart/search.jpg</propertydefault>
+
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View1.Name))" label="$INFO[Skin.String(HOM.View1.Name)]">HOM.View1</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View2.Name))" label="$INFO[Skin.String(HOM.View2.Name)]">HOM.View2</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View3.Name))" label="$INFO[Skin.String(HOM.View3.Name)]">HOM.View3</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View4.Name))" label="$INFO[Skin.String(HOM.View4.Name)]">HOM.View4</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View5.Name))" label="$INFO[Skin.String(HOM.View5.Name)]">HOM.View5</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View6.Name))" label="$INFO[Skin.String(HOM.View6.Name)]">HOM.View6</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View7.Name))" label="$INFO[Skin.String(HOM.View7.Name)]">HOM.View7</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View8.Name))" label="$INFO[Skin.String(HOM.View8.Name)]">HOM.View8</property> 
+    <property property="viewtype" condition="!IsEmpty(Skin.String(HOM.View9.Name))" label="$INFO[Skin.String(HOM.View9.Name)]">HOM.View9</property> 
 
     <!-- Backgrounds -->	
     <background label="smartshortcuts" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
     <backgroundBrowse default="special://skin/extras/backgrounds/">True</backgroundBrowse>
 
-    <!-- Movies -->
-    <!-- Recent movies -->
-    <widget path="plugin://service.library.data.provider?type=recentmovies&amp;reload=$INFO[Window.Property(recentmovies)]" target="video" type="movies" label="Recent movies" condition="!System.HasAddon(script.skin.helper.service)">RecentMovies</widget>
-    <widgetdefault labelID="movies" condition="!System.HasAddon(script.skin.helper.service)">RecentMovies</widgetdefault>
+    <widget-groupings>
+        <shortcut label="Weather Forecast">WeatherWidget</shortcut>
+        <shortcut label="Favourites">Favourites</shortcut>
+        <shortcut label="TV" widget="TV" widgetType="pvr">pvr://channels/tv/1/;reload=$INFO[Window.Property(recommendedmovies)]&amp;limit=12</shortcut>
 
-    <!-- Recommended movies -->
-    <widget path="plugin://service.library.data.provider?type=recommendedmovies&amp;reload=$INFO[Window.Property(recommendedmovies)]" target="video" type="movies" label="Recommended movies" condition="!System.HasAddon(script.skin.helper.service)">RecommendedMovies</widget>
-
-    <!-- Random movies -->
-    <widget path="plugin://service.library.data.provider?type=randommovies&amp;reload=$INFO[Window.Property(randommovies)]" target="video" type="movies" label="Random movies" condition="!System.HasAddon(script.skin.helper.service)">RandomMovies</widget>
-
-    <!-- Smart(ish) movies -->
-    <widget path="plugin://service.smartish.widgets?type=movies&amp;reload=$INFO[Window.Property(smartish.movies)]" target="video" type="movies" label="Smart(ish) movies" condition="!System.HasAddon(script.skin.helper.service)">SmartMovies</widget>
-
-    <!-- Episodes -->
-    <!-- Recent episodes -->
-    <widget path="plugin://service.library.data.provider?type=recentepisodes&amp;reload=$INFO[Window.Property(recentepisodes)]" target="video" type="episodes" label="Recent episodes" condition="!System.HasAddon(script.skin.helper.service)">RecentEpisodes</widget>
-    <widgetdefault labelID="tvshows" condition="!System.HasAddon(script.skin.helper.service)">RecentEpisodes</widgetdefault>
-
-    <!-- Recommended Recommended episodes -->
-    <widget path="plugin://service.library.data.provider?type=recommendedepisodes&amp;reload=$INFO[Window.Property(recommendedepisodes)]" target="video" type="episodes" label="Recommended episodes" condition="!System.HasAddon(script.skin.helper.service)">RecommendedEpisodes</widget>
-
-    <!-- Random episodes -->
-    <widget path="plugin://service.library.data.provider?type=randomepisodes&amp;reload=$INFO[Window.Property(randomepisodes)]" target="video" type="episodes" label="Random episodes" condition="!System.HasAddon(script.skin.helper.service)">RandomEpisodes</widget>
-
-    <!-- Smart(ish) episodes -->
-    <widget path="plugin://service.smartish.widgets?type=episodes&amp;reload=$INFO[Window.Property(smartish.episodes)]" target="video" type="episodes" label="Smart(ish) episodes" condition="!System.HasAddon(script.skin.helper.service)">SmartEpisodes</widget>
-
-    <!-- Albums -->
-    <!-- Recent albums -->
-    <widget path="plugin://service.library.data.provider?type=recentalbums&amp;reload=$INFO[Window.Property(recentalbums)]" target="music" type="albums" label="Recent albums" condition="!System.HasAddon(script.skin.helper.service)">RecentAlbums</widget>
-    <widgetdefault labelID="132" condition="!System.HasAddon(script.skin.helper.service)">RecentAlbums</widgetdefault>
-
-    <!-- Recommended albums -->
-    <widget path="plugin://service.library.data.provider?type=recommendedalbums&amp;reload=$INFO[Window.Property(recommendedalbums)]" target="music" type="albums" label="Recommended albums" condition="!System.HasAddon(script.skin.helper.service)">RecommendedAlbums</widget>
-
-    <!-- Random albums -->
-    <widget path="plugin://service.library.data.provider?type=randomalbums&amp;reload=$INFO[Window.Property(randomalbums)]" target="music" type="albums" label="Random albums" condition="!System.HasAddon(script.skin.helper.service)">RandomAlbums</widget>
-
-    <!-- Smart(ish) albums -->
-    <widget path="plugin://service.smartish.widgets?type=albums&amp;reload=$INFO[Window.Property(smartish.albums)]" target="music" type="albums" label="Smart(ish) albums" condition="!System.HasAddon(script.skin.helper.service)">SmartAlbums</widget>
+        <!-- Skin.Helper widgets -->
+        <shortcut label="Skin Playlists" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists</shortcut>
+        <shortcut label="Library Data" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=librarydataprovider</shortcut>
+        <shortcut label="Skin Helper" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=scriptwidgets</shortcut>
+        <shortcut label="Extended Info" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=extendedinfo</shortcut>
+        <shortcut label="Smart Shortcuts" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=smartshortcuts</shortcut>
+        <shortcut label="Smartish" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=smartishwidgets</shortcut>
+    </widget-groupings>
 
     <!-- Weather -->
-    <widget label="Weather Forecast">WeatherWidget</widget>
     <widgetdefault labelID="weather">WeatherWidget</widgetdefault>
-
-    <!-- Favourites -->
-    <widget label="Favourites">Favourites</widget>
     <widgetdefault labelID="1036">Favourites</widgetdefault>
-
-    <!-- PVR -->
-    <widget label="TV" condition="!System.HasAddon(script.skin.helper.service)">TV</widget>
-    <widgetdefault labelID="livetv" condition="!System.HasAddon(script.skin.helper.service)">TV</widgetdefault>
+    <widgetdefault labelID="livetv">TV</widgetdefault>
+    <widgetdefault labelID="movies">RecentMovies</widgetdefault>
+    <widgetdefault labelID="tvshows">NextEpisodes</widgetdefault>
+    <widgetdefault labelID="music">RandomAlbums</widgetdefault>
+    <widgetdefault labelID="programs">ProgramAddons</widgetdefault>
 
     <thumbnail label="Actor">special://skin/extras/icons/DefaultActor.png</thumbnail>
     <thumbnail label="Addon">special://skin/extras/icons/DefaultAddon.png</thumbnail>

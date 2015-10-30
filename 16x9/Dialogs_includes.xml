@@ -9816,6 +9816,16 @@
 				<height>356</height>
 				<width>636</width>
 
+				<control type="image">
+					<left>24</left>
+					<top>24</top>
+					<width>588</width>
+					<height>308</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="FFFFFFFF">$INFO[Container(211).ListItem.Property(homeart)]</texture>
+					<animation effect="fade" start="100" end="40" time="200" condition="!StringCompare(Container(300).ListItem.Property(ID),HomeArt)">Conditional</animation>
+				</control>				
+
 				<!-- Main list -->
 				<control type="fixedlist" id="211">
 					<top>100</top>
@@ -9825,7 +9835,7 @@
 					<onleft>Back</onleft>
 					<onright>noop</onright>
 					<onup>noop</onup>
-					<ondown>9001</ondown>
+					<ondown>300</ondown>
 					<orientation>horizontal</orientation>
 					<focusposition>2</focusposition>
 					<scrolltime tween="sine" easing="out">240</scrolltime>
@@ -9890,10 +9900,10 @@
 				<left>$PARAM[DIAB2PosX]</left>
 				<top>$PARAM[DIAB2PosY]</top>
 				<height>356</height>
-				<width>636</width>
+				<width>636</width>		
 
 				<!-- Sub list -->
-				<control type="grouplist" id="9001">
+				<control type="list" id="300">
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
@@ -9902,189 +9912,207 @@
 					<onright>9002</onright>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
-					<itemgap>1</itemgap>
 					<orientation>vertical</orientation>
-					<usecontrolcoords>true</usecontrolcoords>
 					<scrolltime tween="sine" easing="out">240</scrolltime>	
 
-					<!-- Change shortcut -->
-					<control type="button" id="401">
-						<label>$ADDON[script.skinshortcuts 32048]</label>
-						<!--label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2-->
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>	
-					<!-- Change label -->
-					<control type="button" id="305">
-						<label>$ADDON[script.skinshortcuts 32025]</label>
-						<!--label2>$INFO[Container(211).ListItem.Label]</label2-->
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Change Icon -->
-					<control type="button" id="311">			
-						<label>$ADDON[script.skinshortcuts 32026]</label>
-						<!--label2>$INFO[Container(211).ListItem.Property(Icon)]</label2-->
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Change background -->				
-					<control type="button" id="310">	
-						<label>$ADDON[script.skinshortcuts 32045]</label>
-						<!--label2>$INFO[Container(211).ListItem.Property(Background)]</label2-->
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Change action -->
-					<control type="button" id="307">
-						<label>$ADDON[script.skinshortcuts 32027]</label>
-						<!--label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2-->
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Edit sub menu -->
-					<control type="button" id="405">
-						<label>$ADDON[script.skinshortcuts 32072]</label>
-						<label2>-</label2>
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-						<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
-					</control>
-					<!-- Edit widget -->
-					<control type="button" id="312">
-						<label>$ADDON[script.skinshortcuts 32044]</label>
-						<!--label2>$INFO[Container(211).ListItem.Property(WidgetName)]</label2-->
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-						<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
-					</control>
-					<!-- Move Up -->
-					<control type="button" id="303">
-						<label>$ADDON[script.skinshortcuts 32002]</label>
-						<label2>-</label2>
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Move Down -->
-					<control type="button" id="304">
-						<label>$ADDON[script.skinshortcuts 32003]</label>
-						<label2>-</label2>
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Remove -->
-					<control type="button" id="302">
-						<label>$ADDON[script.skinshortcuts 32001]</label>
-						<label2>-</label2>
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
-					<!-- Add item -->
-					<control type="button" id="301">
-						<label>$ADDON[script.skinshortcuts 32000]</label>
-						<label2>-</label2>
-						<width>588</width>
-						<height>60</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font27</font>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-					</control>
+					<itemlayout width="588" height="61">
+						<control type="image">
+							<left>24</left>
+							<top>10</top>
+							<height>40</height>
+							<width>40</width>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.ActualIcon]</texture>
+							<visible>!IsEmpty(ListItem.Label2)</visible>
+						</control>
+						<control type="image">
+							<left>24</left>
+							<top>10</top>
+							<height>40</height>
+							<width>40</width>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.Thumb]</texture>
+							<visible>IsEmpty(ListItem.Label2)</visible>
+						</control>
+						<control type="label">
+							<label>$INFO[ListItem.Label]</label>
+							<left>88</left>
+							<width>540</width>
+							<height>60</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Font27</font>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						</control>
+					</itemlayout>
+
+					<focusedlayout width="588" height="61">
+						<control type="group">
+							<visible>Control.HasFocus(300)</visible>
+							<control type="image">
+								<texture colordiffuse="$VAR[CategoryColor3]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>24</left>
+								<top>10</top>
+								<height>40</height>
+								<width>40</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">$INFO[ListItem.ActualIcon]</texture>
+								<visible>!IsEmpty(ListItem.Label2)</visible>
+							</control>
+							<control type="image">
+								<left>24</left>
+								<top>10</top>
+								<height>40</height>
+								<width>40</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">$INFO[ListItem.Thumb]</texture>
+								<visible>IsEmpty(ListItem.Label2)</visible>
+							</control>
+							<control type="label">
+								<label>$INFO[ListItem.Label]</label>
+								<left>88</left>
+								<width>540</width>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.DIATxtF)]</textcolor>
+							</control>
+						</control>
+						<control type="group">
+							<visible>!Control.HasFocus(300)</visible>
+							<control type="image">
+								<left>24</left>
+								<top>10</top>
+								<height>40</height>
+								<width>40</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.ActualIcon]</texture>
+								<visible>!IsEmpty(ListItem.Label2)</visible>
+							</control>
+							<control type="image">
+								<left>24</left>
+								<top>10</top>
+								<height>40</height>
+								<width>40</width>
+								<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.Thumb]</texture>
+								<visible>IsEmpty(ListItem.Label2)</visible>
+							</control>
+							<control type="label">
+								<label>$INFO[ListItem.Label]</label>
+								<left>88</left>
+								<width>540</width>
+								<height>60</height>
+								<align>left</align>
+								<aligny>center</aligny>
+								<font>Font27</font>
+								<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							</control>
+						</control>
+					</focusedlayout>
+
+					<content>				
+						<!-- Edit widget -->
+						<item>
+							<icon>material/radioon.png</icon>
+							<thumb>material/radiooff.png</thumb>
+							<label>$ADDON[script.skinshortcuts 32044]</label>
+							<label2>$INFO[Container(211).ListItem.Property(WidgetName)]</label2>
+							<onclick>SendClick(312)</onclick>
+							<visible>StringCompare(Window.Property(groupname),mainmenu)</visible> 
+						</item>	
+						<!-- Change background -->		
+						<item>
+							<icon>material/radioon.png</icon>
+							<thumb>material/radiooff.png</thumb>
+							<label>$ADDON[script.skinshortcuts 32045]</label>
+							<label2>$INFO[Container(211).ListItem.Property(backgroundName)]</label2>
+							<onclick>SendClick(310)</onclick>
+							<visible>StringCompare(Window.Property(groupname),mainmenu)</visible> 
+						</item>	
+						<!-- Set ViewType -->
+						<item>
+							<icon>material/radioon.png</icon>
+							<thumb>material/radiooff.png</thumb>
+							<label>Select Viewtype</label>
+							<label2>$INFO[Container(211).ListItem.Property(viewtype)]</label2>
+							<onclick>SetProperty(chooseProperty,viewtype)</onclick>
+							<onclick>SendClick(404)</onclick>
+							<visible>StringCompare(Window.Property(groupname),mainmenu)</visible> 
+						</item>						
+						<!-- Set HomeArt -->
+						<item>
+							<icon>material/radioon.png</icon>
+							<thumb>material/radiooff.png</thumb>
+							<label>Select Bloc 4 Picture</label>
+							<label2>$INFO[Container(211).ListItem.Property(homeart)]</label2>
+							<onclick>SetProperty(chooseProperty,homeart)</onclick>
+							<onclick>SendClick(404)</onclick>
+							<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+							<property name="ID">HomeArt</property>
+						</item>		
+						<!-- Change shortcut -->
+						<item>
+							<icon>material/pencil2.png</icon>
+							<label>$ADDON[script.skinshortcuts 32048]</label>
+							<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+							<onclick>SendClick(401)</onclick>
+						</item>	
+						<!-- Change label -->
+						<item>
+							<icon>material/pencil2.png</icon>
+							<label>$ADDON[script.skinshortcuts 32025]</label>
+							<label2>$INFO[Container(211).ListItem.Label]</label2>
+							<onclick>SendClick(305)</onclick>
+						</item>	
+						<!-- Change Icon -->
+						<item>
+							<icon>material/pencil2.png</icon>
+							<label>$ADDON[script.skinshortcuts 32026]</label>
+							<label2>$ADDON[script.skinshortcuts 32026]</label2>
+							<onclick>SendClick(311)</onclick>
+						</item>	
+						<!-- Change action -->
+						<item>
+							<icon>material/pencil2.png</icon>
+							<label>$ADDON[script.skinshortcuts 32027]</label>
+							<label2>$INFO[Container(211).ListItem.Property(displaypath)]</label2>
+							<onclick>SendClick(307)</onclick>
+						</item>	
+						<!-- Edit sub menu -->
+						<item>
+							<icon>material/pencil2.png</icon>
+							<label>$ADDON[script.skinshortcuts 32072]</label>
+							<label2>$ADDON[script.skinshortcuts 32072]</label2>
+							<onclick>SendClick(405)</onclick>
+							<visible>StringCompare(Window.Property(groupname),mainmenu)</visible> 
+						</item>	
+						<!-- Move Left -->
+						<item>
+							<icon>material/left.png</icon>
+							<label>$ADDON[script.skinshortcuts 32002]</label>
+							<label2>$ADDON[script.skinshortcuts 32002]</label2>
+							<onclick>SendClick(303)</onclick>
+						</item>	
+						<!-- Move Right -->
+						<item>
+							<icon>material/right.png</icon>
+							<label>$ADDON[script.skinshortcuts 32003]</label>
+							<label2>$ADDON[script.skinshortcuts 32003]</label2>
+							<onclick>SendClick(304)</onclick>
+						</item>	
+						<!-- Add item -->
+						<item>
+							<icon>material/playlist.png</icon>
+							<label>$ADDON[script.skinshortcuts 32000]</label>
+							<label2>$ADDON[script.skinshortcuts 32000]</label2>
+							<onclick>SendClick(301)</onclick>
+						</item>	
+						<!-- Remove -->
+						<item>
+							<icon>material/playlistremove.png</icon>
+							<label>$ADDON[script.skinshortcuts 32001]</label>
+							<label2>$ADDON[script.skinshortcuts 32001]</label2>
+							<onclick>SendClick(302)</onclick>
+						</item>	
+					</content>	
 				</control>
 				
 			</control>
@@ -10117,7 +10145,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
-					<label>$INFO[Container(211).ListItem.Property(displaypath)]</label>
+					<label>$VAR[ShortcutValue]</label>
 					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>					
@@ -10130,9 +10158,9 @@
 					<height>60</height>
 					<itemgap>1</itemgap>
 					<align>right</align>
-					<onleft>9001</onleft>
+					<onleft>300</onleft>
 					<onright>noop</onright>
-					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">9001</onup>
+					<onup condition="StringCompare(Window(Home).Property(SidebarPos),LEFT) | StringCompare(Window(Home).Property(SidebarPos),RIGHT)">300</onup>
 					<ondown>noop</ondown>
 					<orientation>horizontal</orientation>
 

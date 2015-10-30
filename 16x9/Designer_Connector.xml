@@ -342,7 +342,11 @@
 	
 	<include name="SetHorizontal">
 		<orientation>horizontal</orientation>
-		<ondown>99</ondown>
+		<!--onback condition="Window.IsVisible(Home)">9000</onback>
+		<ondown condition="Window.IsVisible(Home) + !Control.HasFocus(9001)">9000</ondown>
+		<ondown condition="Window.IsVisible(Home) + Control.HasFocus(9001) + IsEmpty(Container(9000).ListItem.Property(viewtype))">9000</ondown>
+		<ondown condition="Window.IsVisible(Home) + Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(viewtype))">96</ondown>
+		<ondown condition="!Window.IsVisible(Home)">99</ondown>
 		<onleft condition="Control.IsVisible(50)">Control.Move(50,-1)</onleft>
 		<onleft condition="Control.IsVisible(51)">Control.Move(51,-1)</onleft>
 		<onleft condition="Control.IsVisible(52)">Control.Move(52,-1)</onleft>
@@ -362,13 +366,16 @@
 		<onright condition="Control.IsVisible(56) + !ListItem.HasEpg">Control.Move(56,1)</onright>
 		<onright condition="Control.IsVisible(57) + !ListItem.HasEpg">Control.Move(57,1)</onright>
 		<onright condition="Control.IsVisible(58) + !ListItem.HasEpg">Control.Move(58,1)</onright>
-		<onup>noop</onup>
+		<onup condition="Window.IsVisible(Home) + !IsEmpty(Container(9000).ListItem.Property(viewtype)) + !StringCompare(Container(9001).NumItems,0)">Control.SetFocus(9001)</onup-->
 	</include>
 	
 	<include name="SetVertical">
 		<orientation>vertical</orientation>
-		<onright condition="!ListItem.HasEpg">99</onright>
-		<onright condition="ListItem.HasEpg">98</onright>
+		<!--onleft condition="Window.IsVisible(Home) + !Control.HasFocus(9001) + IsEmpty(Window(Home).Property(TVShowNext))">9000</onleft>
+		<onleft condition="Window.IsVisible(Home) + !Control.HasFocus(9001) + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,Home)</onleft>
+		<onleft condition="Window.IsVisible(Home) + Control.HasFocus(9001) + IsEmpty(Container(9000).ListItem.Property(viewtype))">9000</onleft>
+		<onleft condition="Window.IsVisible(Home) + Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(viewtype))">96</onleft>
+
 		<ondown condition="Control.IsVisible(50)">Control.Move(50,1)</ondown>
 		<ondown condition="Control.IsVisible(51)">Control.Move(51,1)</ondown>
 		<ondown condition="Control.IsVisible(52)">Control.Move(52,1)</ondown>
@@ -378,7 +385,13 @@
 		<ondown condition="Control.IsVisible(56)">Control.Move(56,1)</ondown>
 		<ondown condition="Control.IsVisible(57)">Control.Move(57,1)</ondown>
 		<ondown condition="Control.IsVisible(58)">Control.Move(58,1)</ondown>
-		<onleft>noop</onleft>
+
+		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,Home)</onright>
+		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,Home)</onright>
+		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + !IsEmpty(Window(Home).Property(TVShowNext)) + Window.IsVisible(Home)">9001</onright>
+		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + !IsEmpty(Window(Home).Property(TVShowNext)) + !Window.IsVisible(Home)">99</onright>
+		<onright condition="!StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !ListItem.HasEpg">99</onright>
+
 		<onup condition="Control.IsVisible(50)">Control.Move(50,-1)</onup>
 		<onup condition="Control.IsVisible(51)">Control.Move(51,-1)</onup>
 		<onup condition="Control.IsVisible(52)">Control.Move(52,-1)</onup>
@@ -387,7 +400,7 @@
 		<onup condition="Control.IsVisible(55)">Control.Move(55,-1)</onup>
 		<onup condition="Control.IsVisible(56)">Control.Move(56,-1)</onup>
 		<onup condition="Control.IsVisible(57)">Control.Move(57,-1)</onup>
-		<onup condition="Control.IsVisible(58)">Control.Move(58,-1)</onup>
+		<onup condition="Control.IsVisible(58)">Control.Move(58,-1)</onup-->
 	</include>
 	
 	<!-- Special : Configuring Bloc 2 Rating Position -->
@@ -540,62 +553,18 @@
 		<!-- Configuring Horizontal Positioning -->
 		<control type="group">
 			
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,A) + Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX6</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX642</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSepX,AB)">PosX648</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSepX,BC)">PosX636</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,C) + Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX1278</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,C) + Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + !Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX1284</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,A) + !Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,LEFT)">PosX132</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,A) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,LEFT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX768</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,A) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,LEFT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + !Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX780</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,LEFT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX636</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,1COLUMN) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B)">PosX642</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,LEFT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + !Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX624</include>
-			<include condition="!Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,LEFT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,C)">PosX1272</include>
-			<include condition="!Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,RIGHT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,A)">PosX12</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,A) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,RIGHT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX648</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,A) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,RIGHT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + !Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX660</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,RIGHT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX516</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordX,B) + Skin.String($PARAM[Prefix].BBSizeX,2COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,RIGHT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,B) + !Skin.String($PARAM[Prefix].BBSepX,NONE)">PosX504</include>
-			<include condition="!Skin.String($PARAM[Prefix].BBSizeX,3COLUMN) + Skin.String($PARAM[Prefix].BBSidebar,RIGHT) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordX,C)">PosX1152</include>
-	
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,A) + Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY6</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY362</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSepY,AB)">PosY368</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSepY,BC)">PosY356</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,C) + Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY718</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,C) + Skin.String($PARAM[Prefix].BBSizeY,3ROW) + !Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY724</include>
-			<include condition="Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,A) + !Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSidebar,TOP)">PosY132</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,A) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,TOP) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY488</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,A) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,TOP) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + !Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY500</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,TOP) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY356</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,1ROW) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B)">PosY362</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,TOP) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + !Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY344</include>
-			<include condition="!Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSidebar,TOP) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,C)">PosY712</include>
-			<include condition="!Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSidebar,BOTTOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,A)">PosY12</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,A) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,BOTTOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY368</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,A) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,BOTTOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + !Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY380</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,BOTTOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY236</include>
-			<include condition="Skin.String($PARAM[Prefix].BBCoordY,B) + Skin.String($PARAM[Prefix].BBSizeY,2ROW) + Skin.String($PARAM[Prefix].BBSidebar,BOTTOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,B) + !Skin.String($PARAM[Prefix].BBSepY,NONE)">PosY224</include>
-			<include condition="!Skin.String($PARAM[Prefix].BBSizeY,3ROW) + Skin.String($PARAM[Prefix].BBSidebar,BOTTOM) + Skin.String($PARAM[Prefix].$PARAM[BlocID]CoordY,C)">PosY592</include>
-
-			<!-- Configuring Horizontal Size -->
-			<include condition="Skin.String($PARAM[Prefix].B2SizeX,1COLUMN)">SizeX636</include>
-			<include condition="Skin.String($PARAM[Prefix].B2SizeX,2COLUMN)">SizeX1272</include>
-			<include condition="Skin.String($PARAM[Prefix].B2SizeX,3COLUMN)">SizeX1908</include>
-			<!-- Configuring Vertical Size -->
-			<include condition="Skin.String($PARAM[Prefix].B2SizeY,1ROW)">SizeY356</include>
-			<include condition="Skin.String($PARAM[Prefix].B2SizeY,2ROW)">SizeY712</include>
-			<include condition="Skin.String($PARAM[Prefix].B2SizeY,3ROW)">SizeY1068</include>
+			<include name="BlocPosition">
+				<param name="Prefix" value="$PARAM[Prefix]" />
+				<param name="BlocID" value="B5" />
+			</include>
 			
-			<control type="image">
+			<!--control type="image">
 				<left>0</left>
 				<top>0</top>
 				<aspectratio>stretch</aspectratio>
 				<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
 				<visible>ControlGroup(996).HasFocus()</visible>
-			</control>
+			</control-->
 			
 			<!-- Default grouplist Tile -->
 			<control type="grouplist" id="996">
@@ -603,9 +572,9 @@
 				<top>24</top>
 				<height>86%</height>
 				<!-- Configuring Horizontal Size -->
-				<include condition="Skin.String($PARAM[Prefix].B2SizeX,1COLUMN)">ContextW636</include>
-				<include condition="Skin.String($PARAM[Prefix].B2SizeX,2COLUMN)">ContextW1272</include>
-				<include condition="Skin.String($PARAM[Prefix].B2SizeX,3COLUMN)">ContextW1908</include>
+				<include condition="Skin.String($PARAM[Prefix].B5SizeX,1COLUMN)">ContextW636</include>
+				<include condition="Skin.String($PARAM[Prefix].B5SizeX,2COLUMN)">ContextW1272</include>
+				<include condition="Skin.String($PARAM[Prefix].B5SizeX,3COLUMN)">ContextW1908</include>
 				<itemgap>1</itemgap>
 				<onfocus>Down</onfocus>
 				<onleft>Close</onleft>
@@ -615,6 +584,7 @@
 				<orientation>vertical</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>true</visible>
+				<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 			</control>
 				
 			<!-- Default button Tile -->
