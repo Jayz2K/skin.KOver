@@ -144,7 +144,7 @@
 	</variable>
 	
 	<variable name="B1SubTitle">
-		<value condition="!IsEmpty(ListItem.ChannelName)">$INFO[ListItem.EndTime]$INFO[ListItem.EndTime, - ,]</value>
+		<value condition="!IsEmpty(ListItem.ChannelName)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
 		<value condition="!IsEmpty(ListItem.Artist)">$INFO[ListItem.Duration,, ]$LOCALIZE[12391]</value>
 		<value condition="!IsEmpty(ListItem.Episode) + Window.IsVisible(Home)">$INFO[ListItem.TVShowTitle,, . ]$INFO[ListItem.Season,$LOCALIZE[20373] , . ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
 		<value condition="!Control.HasFocus(9001) + StringCompare(Container(9000).ListItem.Property(widgetType),albums)">$INFO[ListItem.Year,(,) ]$INFO[ListItem.Artist]</value>
