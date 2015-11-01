@@ -23,14 +23,14 @@
 					[SubString(Window(Home).Property(DialogVisibility4)YesNo) + SubString(Window(Home).Property(DialogVisibility4),$NUMBER[4]) + IsEmpty(Window(Home).Property(DialogVisibility5))] |
 					[SubString(Window(Home).Property(DialogVisibility5),YesNo)  + SubString(Window(Home).Property(DialogVisibility5),$NUMBER[5])] + !IsEmpty(Skin.String(KOverInit))</visible>
 					
-			<include condition="!Window.Previous(startup)" name="DialogPOS">
+			<include condition="!IsEmpty(Skin.String(KOverInit))" name="DialogPOS">
 				<param name="DialogName" value="DiaYesNo" />
 			</include>							
 
 		</control>
 		
 		<control type="group">
-			<visible>Window.Previous(startup)</visible>
+			<visible>IsEmpty(Skin.String(KOverInit))</visible>
 			
 			<!-- Background -->
 			<control type="image">
