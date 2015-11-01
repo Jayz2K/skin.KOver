@@ -7,7 +7,7 @@
 	<requires>
 		<import addon="xbmc.gui" version="5.10.0"/>
 		<import addon="script.favourites" version="5.0.2"/>
-		<import addon="script.skinshortcuts" version="0.6.0"/>
+		<import addon="script.skinshortcuts" version="0.6.5"/>
 		<import addon="service.skin.widgets" version="0.0.27"/>
 	</requires>
 	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" effectslowdown="1.00" debugging="false">
