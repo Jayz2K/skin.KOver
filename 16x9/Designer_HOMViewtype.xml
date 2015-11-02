@@ -235,20 +235,8 @@
 						<align>right</align> 
  						<font>FontSmallB</font> 
 						<textcolor>FFFFFFFF</textcolor> 
-						<label>$INFO[Container(9000).ListItem.Property(widgetName)]</label>
-						<visible>!IsEmpty(Container(9000).ListItem.Property(widgetName)) + !Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)</visible>
-					</control> 
-					<control type="label"> 
-						<top>45</top>
-						<height>60</height>
- 						<right>24</right> 
-						<align>right</align> 
- 						<font>FontSmallB</font> 
-						<textcolor>FFFFFFFF</textcolor> 
-						<label>31127</label>
-						<visible>Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)</visible>
+						<label fallback="1034">$INFO[Container(9000).ListItem.Property(widgetName)]</label>
 					</control>
-
 
 					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">Conditonal</animation>
@@ -524,7 +512,7 @@
 									<font>Font36R</font>
 									<align>left</align>
 									<aligny>center</aligny>
-									<label fallback="19047">$VAR[Container($PARAM[Id]).ListItem.Label]</label>
+									<label fallback="19047">$INFO[Container($PARAM[Id]).ListItem.Property(LongDay)]</label>
 								</control>
 								<control type="label">
 									<top>45</top>

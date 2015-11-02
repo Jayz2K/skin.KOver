@@ -36,8 +36,6 @@
 
 		<include>skinshortcuts-template-viewtype</include>
 
-
-
 		<!-- Dialogs Background -->
 		<include name="DialogBgDef">
 			<param name="CompPrefix" value="HOM.View1" />

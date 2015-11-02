@@ -45,6 +45,7 @@
 			</control>
 		</control>		
 	</include>
+	
 <!-- Sidebar Animation -->
 	<include name="SBHomeAnim">
 			<animation effect="fade" start="100" end="0" time="200" delay="1000" condition="IsEmpty(Window(Home).Property(DialogVisibility)) + System.IdleTime(1) + Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String(HOM.View1.BBSBHide,ENABLED) + !Control.HasFocus(9000)">Conditional</animation>	
