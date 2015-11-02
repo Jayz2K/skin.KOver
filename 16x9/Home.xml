@@ -100,6 +100,7 @@
 						<onfocus>SetProperty(MenuSection,$INFO[Container(9000).ListItem.Property(submenuVisibility)])</onfocus>
 						<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(defaultID)])</onfocus>
 						<onfocus>SetProperty(MenuArt,$INFO[Container(9000).ListItem.Property(homeart)])</onfocus>
+						<onfocus>ClearProperty(TVSHowNext)</onfocus>
 					</control>
 					<control type="image">
 						<left>0</left>

@@ -69,7 +69,6 @@
 							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
 						</control>
 						<control type="group">
-							<visible>!StringCompare(Window(Home).Property(MenuSection),livetv) + !StringCompare(Window(Home).Property(MenuSection),livetv-0)</visible>
 							<control type="group">
 								<right>0</right>
 								<top>0</top>
@@ -89,12 +88,6 @@
 									<aspectratio>scale</aspectratio>
 									<texture colordiffuse="FFFFFFFF">material/check.png</texture>
 								</control>
-							</control>
-							<control type="image">
-								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="55FFFFFF">material/play.png</texture>
-								<animation effect="zoom" start="100" end="40" time="0" center="auto" condition="true">Conditional</animation>
-								<visible>!Window.IsVisible(12600)</visible>
 							</control>
 							<control type="group">
 								<include name="B3STag">
@@ -117,80 +110,6 @@
 									<font>FontSmall</font>
 									<label>$VAR[B3Tag]</label>
 								</control>
-							</control>
-						</control>
-						<control type="group">
-							<visible>StringCompare(Window(Home).Property(MenuSection),livetv) | StringCompare(Window(Home).Property(MenuSection),livetv-0)</visible>
-							<!--control type="multiimage">
-								<left>0</left>
-								<top>0</top>
-								<width>0</width>
-								<height>0</height>
-								<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.Title,, ]$INFO[ListItem.ChannelName]</imagepath>
-							 	<aspectratio>scale</aspectratio>
-							 	<visible>!Control.HasFocus(98) + !IsEmpty(ListItem.Title)</visible>
-							</control>
-							<control type="multiimage">
-								<left>0</left>
-								<top>0</top>
-								<width>0</width>
-								<height>0</height>
-								<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.NextTitle,, ]$INFO[ListItem.ChannelName]</imagepath>
-							 	<aspectratio>scale</aspectratio>
-							 	<visible>Control.HasFocus(98) + !IsEmpty(ListItem.NextTitle)</visible>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>636</width>
-								<height>356</height>
-								<aspectratio>SCALE</aspectratio>
-								<texture colordiffuse="FFFFFFFF">$INFO[Window(Home).Property(SkinHelper.ListItemThumb)]</texture>
-								<visible>[!Control.HasFocus(98) + !IsEmpty(ListItem.Title)] | [Control.HasFocus(98) + !IsEmpty(ListItem.NextTitle)]</visible>
-							</control-->
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<align>left</align>
-								<aligny>top</aligny>
-								<aspectratio>scale</aspectratio>
-								<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
-							</control>
-							<control type="image">
-								<right>24</right>
-								<top>230</top>
-								<width>180</width>
-								<height>100</height>
-								<aspectratio>keep</aspectratio>
-								<texture fallback="material/tv.png" colordiffuse="FFFFFFFF">$INFO[ListItem.Icon]</texture>
-							</control>
-							<control type="image">
-								<left>0</left>
-								<top>0</top>
-								<width>636</width>
-								<height>125</height>
-								<aspectratio>stretch</aspectratio>
-								<texture colordiffuse="AA000000">common/white.png</texture>
-							</control>
-							<control type="label">
-								<top>20</top>
-								<right>24</right>
-								<width>588</width>
-								<height>48</height>
-								<align>right</align>
-								<font>Font48</font>
-								<textcolor>FFFFFFFF</textcolor>
-								<label>[UPPERCASE]$VAR[B3Title][/UPPERCASE]</label>
-							</control>
-							<control type="label">
-								<top>72</top>
-								<right>24</right>
-								<width>588</width>
-								<height>12</height>
-								<align>right</align>
-								<font>FontSmallB</font>
-								<textcolor>FFFFFFFF</textcolor>
-								<label>$VAR[B3SubTitle]</label>
 							</control>
 						</control>
 					</control>

@@ -64,24 +64,6 @@
 				<aspectratio>scale</aspectratio>
 				<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
 			</control>
-			<control type="multiimage">
-				<left>0</left>
-				<top>0</top>
-				<width>0</width>
-				<height>0</height>
-				<imagepath>plugin://script.skin.helper.service/?action=getthumb&amp;path=$INFO[ListItem.Title,, ]$INFO[ListItem.ChannelName]</imagepath>
-			 	<aspectratio>scale</aspectratio>
-			 	<visible>!IsEmpty(ListItem.Title)</visible>
-			</control>
-			<control type="image">
-				<left>0</left>
-				<top>0</top>
-				<width>636</width>
-				<height>356</height>
-				<aspectratio>SCALE</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$INFO[Window(Home).Property(SkinHelper.ListItemThumb)]</texture>
-				<visible>!IsEmpty(ListItem.Title)</visible>
-			</control>
 			<control type="image">
 				<right>24</right>
 				<top>230</top>
@@ -327,15 +309,15 @@
 
 				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,1COLUMN) + Skin.String(TV.View1.B5SizeY,1ROW)"> 
 					<param name="width" value="588" /> 
-						<param name="height" value="305" /> 
-						<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
+					<param name="height" value="305" /> 
+					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
 					<param name="Section" value="TV" /> 
 					<param name="Id" value="10" /> 
 					<param name="CompPrefix" value="TV.View1" />
 				</include> 
 				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,1COLUMN) + !Skin.String(TV.View1.B5SizeY,1ROW)"> 
 					<param name="width" value="588" /> 
-						<param name="height" value="610" /> 
+					<param name="height" value="610" /> 
 					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
 					<param name="Section" value="TV" /> 
 					<param name="Id" value="10" /> 
@@ -343,7 +325,7 @@
 				</include> 
 					<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,2COLUMN) + Skin.String(TV.View1.B5SizeY,1ROW)"> 
 					<param name="width" value="1224" /> 
-						<param name="height" value="305" /> 
+					<param name="height" value="305" /> 
 					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
 					<param name="Section" value="TV" /> 
 					<param name="Id" value="10" /> 
@@ -351,7 +333,7 @@
 				</include> 
 				<include name="ViewOptions" condition="Skin.String(TV.View1.B5SizeX,2COLUMN) + !Skin.String(TV.View1.B5SizeY,1ROW)"> 
 					<param name="width" value="1224" /> 
-						<param name="height" value="610" /> 
+					<param name="height" value="610" /> 
 					<param name="ViewName" value="$INFO[Skin.String(TV.View1.Name)]" /> 
 					<param name="Section" value="TV" /> 
 					<param name="Id" value="10" /> 

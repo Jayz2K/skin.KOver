@@ -172,7 +172,8 @@
 	
 	<variable name="B2Title">
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Property(LongDay)]</value>
-		<value>$INFO[ListItem.Title]</value>
+		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	
 	<variable name="B2SubTitle">
@@ -209,7 +210,7 @@
 		<value condition="Container.Content(albums) | StringCompare(Container(9000).ListItem.Property(widgetType),albums)">$INFO[ListItem.Property(Album_Description)]</value>
 		<value condition="Container.Content(songs) | StringCompare(Container(9000).ListItem.Property(widgetType),songs)">$INFO[ListItem.Year,$LOCALIZE[345] , [CR]]$INFO[ListItem.TrackNumber,$LOCALIZE[554] , [CR]]$INFO[ListItem.DiscNumber,$LOCALIZE[427] , [CR]]$INFO[ListItem.Genre,$LOCALIZE[515] , [CR]]</value> 
 		<value condition="Container.Content(artists)">$INFO[ListItem.Property(Artist_Description)]</value>
-		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif)">$INFO[ListItem.PictureResolution,$LOCALIZE[169] , [CR]]$INFO[ListItem.PictureCountry,$LOCALIZE[574] , [CR]]$INFO[ListItem.PictureCity,$LOCALIZE[21873] , [CR]]$INFO[ListItem.PictureISO,$LOCALIZE[21836] , [CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] , [CR]]$INFO[ListItem.PictureCamMake,$LOCALIZE[21822] , [CR]]$INFO[ListItem.PictureCamModel,$LOCALIZE[21823] , [CR]]$INFO[ListItem.PictureFlashUsed,$LOCALIZE[21833] , [CR]]$INFO[ListItem.PictureDigitalZoom,$LOCALIZE[21838] , [CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] , [CR]]$INFO[ListItem.PictureExposure,$LOCALIZE[21829] , [CR]]$INFO[ListItem.PictureExpMode,$LOCALIZE[21830] , [CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21832] , [CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] , [CR]]</value>
+		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)">$INFO[ListItem.PictureResolution,$LOCALIZE[169] , [CR]]$INFO[ListItem.PictureCountry,$LOCALIZE[574] , [CR]]$INFO[ListItem.PictureCity,$LOCALIZE[21873] , [CR]]$INFO[ListItem.PictureISO,$LOCALIZE[21836] , [CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] , [CR]]$INFO[ListItem.PictureCamMake,$LOCALIZE[21822] , [CR]]$INFO[ListItem.PictureCamModel,$LOCALIZE[21823] , [CR]]$INFO[ListItem.PictureFlashUsed,$LOCALIZE[21833] , [CR]]$INFO[ListItem.PictureDigitalZoom,$LOCALIZE[21838] , [CR]]$INFO[ListItem.PictureAperture,$LOCALIZE[21826] , [CR]]$INFO[ListItem.PictureExposure,$LOCALIZE[21829] , [CR]]$INFO[ListItem.PictureExpMode,$LOCALIZE[21830] , [CR]]$INFO[ListItem.PictureExpTime,$LOCALIZE[21832] , [CR]]$INFO[ListItem.PictureFocalLen,$LOCALIZE[21827] , [CR]]</value>
 		<value condition="Container.Content(addons)">$INFO[ListItem.Property(Addon.Description)]</value>
 		<value condition="!Window.IsVisible(10615) + !Window.IsVisible(10620)">$INFO[ListItem.Plot]</value>
 	</variable>	
@@ -236,7 +237,7 @@
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title)">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</value>
 		<value condition="Container.Content(episodes) + !ListItem.IsFolder">$INFO[ListItem.Icon]</value>
-		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif)">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</value>
+		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="IsEmpty(ListItem.Art(fanart)) + ListItem.IsFolder + !IsEmpty(Window(Home).Property(MenuArt))">$INFO[Window(Home).Property(MenuArt)]</value>
 		<value condition="IsEmpty(ListItem.Art(fanart))">$INFO[Window(Home).Property(MenuArt)]</value>
@@ -295,7 +296,9 @@
 
 	<variable name="ThumbPortrait">
 		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title)">http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Title]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=poster,fanart,thumb</value>
-		<value condition="!SubString(ListItem.Art(thumb),Default) + IsEmpty(ListItem.ChannelName)">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!SubString(ListItem.Art(thumb),Default) + IsEmpty(ListItem.ChannelName) + !IsEmpty(Container.Content)">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!IsEmpty(ListItem.Property(LongDay))">$INFO[ListItem.Art(thumb)]</value>
 	</variable>
 	
 	<variable name="ThumbLandscape">

@@ -132,12 +132,6 @@
 									<texture colordiffuse="FFFFFFFF">material/check.png</texture>
 								</control>
 							</control>
-							<control type="image">
-								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="55FFFFFF">material/play.png</texture>
-								<animation effect="zoom" start="100" end="40" time="0" center="auto" condition="true">Conditional</animation>
-								<visible>!Window.IsVisible(12600)</visible>
-							</control>
 							<control type="group">
 								<include name="B3STag">
 									<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -282,7 +276,7 @@
 
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,home)</onright>
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !IsEmpty(Window(Home).Property(TVShowNext))">9001</onright>
-						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + !StringCompare(Container(9000).ListItem.Property(widgetType),pvr)">9001</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + [!StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST)]">9001</onright>
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Goback,ONRIGHT)">9000</onright>
 						<onback>9000</onback>
 						
@@ -457,7 +451,7 @@
 									<font>Font36R</font>
 									<align>left</align>
 									<aligny>center</aligny>
-									<label fallback="19047">$VAR[Container($PARAM[Id]).ListItem.Title]</label>
+									<label fallback="19047">$INFO[Container($PARAM[Id]).ListItem.Title]</label>
 								</control>
 								<control type="label">
 									<top>45</top>
