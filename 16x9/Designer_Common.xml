@@ -3135,7 +3135,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true">$VAR[PVRChannelIcon]</texture>
+				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
 				<animation effect="fade" start="100" end="70" time="200" tween="cubic" easing="out" reversible="true" condition="!Control.HasFocus(10)">Conditional</animation>
 			</control>
 		</focusedchannellayout>
@@ -3223,7 +3223,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true">$VAR[PVRChannelIcon]</texture>
+				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
 			</control>
 			
 			<!-- Channel name -->
