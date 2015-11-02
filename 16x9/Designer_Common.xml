@@ -3096,7 +3096,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true">$VAR[PVRChannelIcon]</texture>
+				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
 			</control>
 		</channellayout>
 		
@@ -3160,7 +3160,7 @@
 				<height>80</height>
 				<align>center</align>
 				<aspectratio>keep</aspectratio>
-				<texture background="true">$VAR[PVRChannelIcon]</texture>
+				<texture background="true" fallback="material/tv.png">$VAR[PVRChannelIcon]</texture>
 			</control>
 			
 			<!-- Channel name -->
