@@ -131,8 +131,6 @@
 	</variable>		
 	
 	<variable name="B1Title">
-		<!--value condition="!IsEmpty(ListItem.Property(ChannelName))">$INFO[ListItem.Property(ChannelName)]</value>
-		<value condition="!IsEmpty(ListItem.ChannelName)">$INFO[ListItem.ChannelName]</value-->
 		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
@@ -201,6 +199,7 @@
 	<variable name="B2Plot">
 		<value condition="Window.IsVisible(12600) + StringCompare(Container(50).CurrentItem,1)">[B]$INFO[Container(50).ListItem.Property(Outlook),,[CR]][/B]$INFO[Window(Weather).Property(Current.Temperature),$LOCALIZE[1375]: , °[CR]]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402]: , °[CR]]$INFO[Window(Weather).Property(Current.UVIndex),$LOCALIZE[403]: ,[CR]]$INFO[Window(Weather).Property(Current.Wind),$LOCALIZE[404]: ,[CR]]$INFO[Window(Weather).Property(Current.Humidity),$LOCALIZE[406]: ,[CR]]$INFO[Window(Weather).Property(Current.DewPoint),$LOCALIZE[405]: ,[CR]]</value>
 		<value condition="Window.IsVisible(12600) + !StringCompare(Container(50).CurrentItem,1)">[B]$INFO[Container(50).ListItem.Property(Outlook),,[CR]][/B]$INFO[Container(50).ListItem.Property(LowTemperature),$LOCALIZE[139] , / ]$INFO[Container(50).ListItem.Property(HighTemperature),,°[CR]]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),weather)">[B]$INFO[ListItem.Property(Location)][CR][/B]$INFO[ListItem.Property(Outlook)]</value>
 		<value condition="ListItem.HasEpg">$INFO[ListItem.Plot]</value>
 		<value condition="Container.Content(movies) + IsEmpty(ListItem.Plot)">$INFO[Window(Home).Property(SkinHelper.MovieSet.Title)]</value>
 		<value condition="Container.Content(movies)">$INFO[ListItem.Plot]</value>
@@ -234,48 +233,13 @@
 	</variable>	
 	
 	<variable name="B3Art">
+		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title)">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</value>
-		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Property(WeatherArt)]</value>
-		<value condition="[Window.IsVisible(10621) | Window.IsVisible(10616)] + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
-		<value condition="[Window.IsVisible(10623) | Window.IsVisible(10618)] + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + !IsEmpty(Window(Home).Property(MenuArt))">$INFO[Window(Home).Property(MenuArt)]</value>
-		<!--value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),videos)">common/tvmovie.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),movies)">common/cinema.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),tvshows)">common/tvshows3.png</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),music)">common/tvmusic.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[133])">common/tvmusic.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),settings)">common/settings.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(thumb)) + StringCompare(Window(Home).Property(MenuCategory),pictures)">common/pictures.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),programs)">common/addons2.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),addons)">common/addons2.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[31063])">common/addons2.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[13005])">common/shutdown.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[1036])">common/favourites.jpg</value>
-		<value condition="IsEmpty(ListItem.Art(fanart)) + StringCompare(Window(Home).Property(MenuCategory),livetv)">common/newsroom-big.jpg</value-->
-		<value condition="Window.IsVisible(10028) + IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(fanart]</value>
-		<value condition="Window.IsVisible(10028) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Art(thumb)]</value>
-		<value condition="Window.IsVisible(10500)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(programs)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(addons)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(sets)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="!IsEmpty(ListItem.Art(fanart)) + [Container.Content(movies) | Container.Content(seasons) | Container.Content(tvshows)]">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="!IsEmpty(ListItem.Art(fanart)) + [Container.Content(albums) | Container.Content(songs) | Container.Content(artists)]">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="Container.Content(episodes)">$INFO[ListItem.Icon]</value>
-		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif)">$INFO[ListItem.Art(thumb)]</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),videos)">common/tvmovie.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),movies)">common/cinema.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),tvshows)">common/tvshows3.png</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),music)">common/tvmusic.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[133])">common/tvmusic.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),settings)">common/settings.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),pictures)">common/pictures.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),programs)">common/addons2.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),addons)">common/addons2.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[31063])">common/addons2.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[13005])">common/shutdown.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[1036])">common/favourites.jpg</value>
-		<value condition="ListItem.IsFolder + StringCompare(Window(Home).Property(MenuCategory),livetv)">common/newsroom-big.jpg</value>
+		<value condition="Container.Content(episodes) + !ListItem.IsFolder">$INFO[ListItem.Icon]</value>
+		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif)">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
+		<value condition="IsEmpty(ListItem.Art(fanart)) + ListItem.IsFolder + !IsEmpty(Window(Home).Property(MenuArt))">$INFO[Window(Home).Property(MenuArt)]</value>
+		<value condition="IsEmpty(ListItem.Art(fanart))">$INFO[Window(Home).Property(MenuArt)]</value>
 	</variable>	
 	
 	<variable name="B3Title">

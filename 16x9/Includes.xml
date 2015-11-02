@@ -19,92 +19,99 @@
 			<item id="0">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day0.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day0.LowTemp),, / ]$INFO[Window(Weather).Property(Day0.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day0.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day0.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day0.FanartCode)]</property>
 				<property name="LongDay">$LOCALIZE[33006]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day0.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day0.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day0.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day0.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day0.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day0.Title))</visible>
 			</item>
 			<item id="1">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day1.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day1.LowTemp),, / ]$INFO[Window(Weather).Property(Day1.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day1.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day1.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day1.FanartCode)]</property>
 				<property name="LongDay">$LOCALIZE[33007]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day1.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day1.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day1.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day1.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day1.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day1.Title))</visible>
 			</item>
 			<item id="2">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day2.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day2.LowTemp),, / ]$INFO[Window(Weather).Property(Day2.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day2.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day2.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day2.FanartCode)]</property>
 				<property name="LongDay">$INFO[Window(Weather).Property(Day2.Title)]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day2.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day2.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day2.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day2.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day2.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day2.Title))</visible>
 			</item>
 			<item id="3">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day3.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day3.LowTemp),, / ]$INFO[Window(Weather).Property(Day3.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day3.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day3.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day3.FanartCode)]</property>
 				<property name="LongDay">$INFO[Window(Weather).Property(Day3.Title)]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day3.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day3.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day3.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day3.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day3.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day3.Title))</visible>
 			</item>
 			<item id="4">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day4.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day4.LowTemp),, / ]$INFO[Window(Weather).Property(Day4.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day4.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day4.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day4.FanartCode)]</property>
 				<property name="LongDay">$INFO[Window(Weather).Property(Day4.Title)]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day4.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day4.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day4.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day4.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day4.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day4.Title))</visible>
 			</item>
 			<item id="5">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day5.LowTemp),, / ]$INFO[Window(Weather).Property(Day5.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day5.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day5.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day5.FanartCode)]</property>
 				<property name="LongDay">$INFO[Window(Weather).Property(Day5.Title)]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day5.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day5.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day5.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day5.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day5.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day5.Title))</visible>
 			</item>
 			<item id="6">
 				<onclick>noop</onclick>
                 <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
+                <label2>$INFO[Window(Weather).Property(Day6.LowTemp),, / ]$INFO[Window(Weather).Property(Day6.HighTemp),,°]</label2>
 				<icon>$INFO[Window(Weather).Property(Day6.FanartCode),weather/,.png]</icon>
+				<thumb>$INFO[Window(Weather).Property(Day6.FanartCode),weather/art/,.jpg]</thumb>
+				<property name="Location">$INFO[Window(Weather).Property(Location)]</property>
 				<property name="Fanartcode">$INFO[Window(Weather).Property(Day6.FanartCode)]</property>
 				<property name="LongDay">$INFO[Window(Weather).Property(Day6.Title)]</property>
 				<property name="HighTemperature">$INFO[Window(Weather).Property(Day6.HighTemp)]</property>
 				<property name="LowTemperature">$INFO[Window(Weather).Property(Day6.LowTemp)]</property>
 				<property name="Outlook">$INFO[Window(Weather).Property(Day6.Outlook)]</property>
-				<property name="WeatherArt">$INFO[Window(Weather).Property(Day6.FanartCode),weather/art/,.jpg]</property>
-				<property name="WeatherPoster">$INFO[Window(Weather).Property(Day6.FanartCode),weather/poster/,.jpg]</property>
 				<visible>!IsEmpty(Window(Weather).Property(Day6.Title))</visible>
 			</item>
 		</content>
