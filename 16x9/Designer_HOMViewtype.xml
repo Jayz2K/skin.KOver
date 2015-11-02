@@ -74,6 +74,14 @@
 							<align>left</align>
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="00FFFFFF">$INFO[Weather.Conditions]</texture>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
 						</control>
 						<control type="image">
