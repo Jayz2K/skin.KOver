@@ -152,7 +152,7 @@
 					<onback>99</onback>
 					<rulerunit>6</rulerunit>
 					<!-- Configuring Vertical Size -->
-					<include condition="Skin.String(TV.View1.B1SizeY,1ROW)">SizeY356</include>
+					<include condition="Skin.String(TV.View1.B1SizeY,1ROW)">SizeY357</include>
 					<include condition="Skin.String(TV.View1.B1SizeY,2ROW)">SizeY713</include>
 					<include condition="Skin.String(TV.View1.B1SizeY,3ROW)">SizeY1069</include>		
 					<!-- Include TimeBlocs -->
@@ -162,7 +162,7 @@
 					
 					<pagecontrol>61</pagecontrol>
 					<viewtype label="19032">list</viewtype>
-					<progresstexture colordiffuse="EpgProgress" border="5,5,5,5">common/white.png</progresstexture>
+					<progresstexture colordiffuse="AAFFFFFF" border="5,5,5,5">common/cursor.png</progresstexture>
 					<scrolltime tween="sine" easing="out">240</scrolltime>
 
 					<!-- Include Ruler -->
