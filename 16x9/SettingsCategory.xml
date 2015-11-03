@@ -250,7 +250,6 @@
 				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 				<textwidth>auto</textwidth>
 				<textoffsetx>24</textoffsetx>
-				<!--textcolor>FF666666</textcolor-->
 				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
