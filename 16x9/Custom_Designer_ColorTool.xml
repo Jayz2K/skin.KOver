@@ -76,7 +76,7 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-					<label>$VAR[SettingsInfos]</label>
+					<label>31128</label>
 				</control>
 
 			</control>		
@@ -84,7 +84,7 @@
 			<!-- Bloc 3 -->
 			<control type="group">
 				<left>12</left>
-				<top>724</top>
+				<top>730</top>
 				<height>356</height>
 				<width>636</width>
 
@@ -97,9 +97,9 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
-					<label>31067</label>
+					<label>31000</label>
 					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
-				</control>		
+				</control>	
 
 				<!-- Color Value -->
 				<control type="label">
@@ -109,8 +109,8 @@
 					<height>156</height>height>
 					<align>center</align>
 					<aligny>top</aligny>
-					<font>Font27</font>
-					<label>$VAR[DesignerInfo]</label>
+					<font>Font36</font>
+					<label>31067</label>
 					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
 					<wrapmultiline>true</wrapmultiline>
 				</control>					

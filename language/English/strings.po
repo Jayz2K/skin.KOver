@@ -534,6 +534,10 @@ msgctxt "#31127"
 msgid "Submenu"
 msgstr ""
 
+msgctxt "#31128"
+msgid "Choose the element you want to change the color and click or press 'ENTER'."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"
