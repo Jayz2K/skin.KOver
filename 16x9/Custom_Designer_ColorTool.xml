@@ -2920,10 +2920,10 @@
 								<top>10</top>
 								<height>60</height>
 								<textcolor>$INFO[Skin.String(Color.B2Txt2)]</textcolor>
-								<font>Font36B</font>
+								<font>Font36R</font>
 								<align>left</align>
 								<aligny>center</aligny>
-								<label>Info Bloc : Title</label>
+								<label>31129</label>
 							</control>
 							<control type="label">
 								<top>43</top>
