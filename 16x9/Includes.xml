@@ -189,9 +189,9 @@
 							<animation effect="zoom" start="100" end="125" time="200" center="166,100">Focus</animation>
 							<control type="image">
 								<top>0</top>
-								<left>3</left>
-								<height>258</height>
-								<width>200</width>
+								<left>4</left>
+								<height>256</height>
+								<width>199</width>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(9000)</visible>
 								<texture border="16,16,16,31" colordiffuse="FF000000">common/Shadow2.png</texture>
@@ -350,9 +350,9 @@
 							<animation effect="zoom" start="100" end="125" time="200" center="166,100">Focus</animation>
 							<control type="image">
 								<top>0</top>
-								<left>3</left>
-								<height>258</height>
-								<width>200</width>
+								<left>4</left>
+								<height>256</height>
+								<width>199</width>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(9001)</visible>
 								<texture border="16,16,16,31" colordiffuse="FF000000">common/Shadow2.png</texture>
@@ -493,9 +493,9 @@
 							<animation effect="zoom" start="100" end="125" time="200" center="166,100">Focus</animation>
 							<control type="image">
 								<top>0</top>
-								<left>3</left>
-								<height>258</height>
-								<width>200</width>
+								<left>4</left>
+								<height>256</height>
+								<width>199</width>
 								<aspectratio>stretch</aspectratio>
 								<visible>Control.HasFocus(9002)</visible>
 								<texture border="16,16,16,31" colordiffuse="FF000000">common/Shadow2.png</texture>
