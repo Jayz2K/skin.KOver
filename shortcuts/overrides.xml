@@ -48,7 +48,7 @@
     <backgroundBrowse default="special://skin/extras/backgrounds/">True</backgroundBrowse>
 
     <widget-groupings>
-        <shortcut label="Weather Forecast">WeatherWidget</shortcut>
+        <shortcut label="Weather Forecast" widget="WeatherWidget" widgetType="weather">WeatherWidget</shortcut>
         <shortcut label="Favourites">Favourites</shortcut>
         <shortcut label="TV" widget="TV" widgetType="pvr">pvr://channels/tv/1/;reload=$INFO[Window.Property(recommendedmovies)]&amp;limit=12</shortcut>
 

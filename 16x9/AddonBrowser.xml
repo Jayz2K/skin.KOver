@@ -16,7 +16,17 @@
 
 		<!-- Decorative Elements -->
 		<control type="group">
+			<!-- Background -->
+			<include name="Wallpaper">
+				<param name="CompPrefix" value="HOM.View1" />
+			</include>
 
+			<!-- Background -->
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+			</control>
+			
 			<!-- Left Panel Background -->
 			<control type="image">
 				<top>0</top>
@@ -25,8 +35,7 @@
 				<height>1080</height>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
-			</control>				
-		
+			</control>
 		</control>
 
 		<control type="group">
@@ -278,6 +287,8 @@
 			</control>							
 
 		</control>
+
+		<include>MainSettingsContent</include>		
 		
 	</controls>
 	

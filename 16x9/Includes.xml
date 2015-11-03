@@ -117,6 +117,481 @@
 		</content>
 	</include>
 
+	<!-- Settings furnitures -->
+
+	<include name="MainSettingsContent">
+
+		<!-- Window Content-->
+		<control type="group">
+
+			<control type="label">
+				<top>72</top>
+				<left>752</left>
+				<width>588</width>
+				<height>12</height>
+				<align>left</align>
+				<font>Font36</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<label>31124</label>
+			</control>			
+		
+			<control type="panel" id="9000">
+				<top>123</top>
+				<left>752</left>
+				<height>258</height>
+				<width>1086</width>
+				<onleft>9003</onleft>
+				<onback>9003</onback>
+				<onup>noop</onup>
+				<ondown>9001</ondown>
+				<onright>noop</onright>
+				<scrolltime>200</scrolltime>
+				<pagecontrol>61</pagecontrol>
+				<viewtype label="535">icon</viewtype>
+				<visible>!StringCompare(Container(9000).ListItem.Property(widget),TV) + !StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies) + !StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+				
+					<itemlayout width="176" height="258">
+						<control type="group">
+							<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+							<control type="image">
+								<top>15</top>
+								<left>3</left>
+								<height>213</height>
+								<width>170</width>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>39</left>
+								<top>46</top>
+								<width>98</width>
+								<height>98</height>
+								<aspectratio>keep</aspectratio>
+								<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+								<texture>$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="textbox">
+								<left>19</left>
+								<top>160</top>
+								<width>140</width>
+								<height>120</height>
+								<font>FontSmall</font>
+								<align>center</align>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+					</itemlayout>
+				
+					<focusedlayout width="206" height="258">
+						<control type="group">
+							<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+							<animation effect="zoom" start="100" end="125" time="200" center="166,100">Focus</animation>
+							<control type="image">
+								<top>0</top>
+								<left>3</left>
+								<height>258</height>
+								<width>200</width>
+								<aspectratio>stretch</aspectratio>
+								<visible>Control.HasFocus(9000)</visible>
+								<texture border="16,16,16,31" colordiffuse="FF000000">common/Shadow2.png</texture>
+							</control>
+							<control type="image">
+								<top>15</top>
+								<left>18</left>
+								<height>213</height>
+								<width>170</width>
+								<aspectratio>scale</aspectratio>
+								<visible>Control.HasFocus(9000)</visible>
+								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+							</control>
+							<control type="group">
+								<visible>Control.HasFocus(9000)</visible>
+								<control type="image">
+									<left>54</left>
+									<top>46</top>
+									<width>98</width>
+									<height>98</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>$INFO[Skin.String(Color.B1Txt1F)]</colordiffuse>
+									<texture>$INFO[ListItem.ActualIcon]</texture>
+								</control>
+								<control type="textbox">
+									<left>33</left>
+									<top>160</top>
+									<width>140</width>
+									<height>120</height>
+									<font>FontSmall</font>
+									<align>center</align>
+									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+							<control type="group">
+								<visible>!Control.HasFocus(9000)</visible>
+								<control type="image">
+									<left>54</left>
+									<top>46</top>
+									<width>98</width>
+									<height>98</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+									<texture>$INFO[ListItem.ActualIcon]</texture>
+								</control>
+								<control type="textbox">
+									<left>33</left>
+									<top>160</top>
+									<width>140</width>
+									<height>120</height>
+									<font>FontSmall</font>
+									<align>center</align>
+									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+						</control>
+					</focusedlayout>
+				<content>
+					<item id="1">
+						<label>3</label>
+						<label2>31401</label2>
+						<icon>DefaultVideo.png</icon>
+						<onclick>activatewindow(VideosSettings)</onclick>
+					</item>
+					<item id="2">
+						<label>2</label>
+						<label2>31402</label2>
+						<icon>DefaultMusicAlbums.png</icon>
+						<onclick>activatewindow(MusicSettings)</onclick>
+					</item>
+					<item id="3">
+						<label>1</label>
+						<label2>31403</label2>
+						<icon>DefaultPicture.png</icon>
+						<onclick>activatewindow(PicturesSettings)</onclick>
+					</item>
+					<item id="4">
+						<label>19191</label>
+						<label2>31409</label2>
+						<icon>tv.png</icon>
+						<onclick>activatewindow(pvrsettings)</onclick>
+					</item>
+					<item id="5">
+						<label>8</label>
+						<label2>31404</label2>
+						<icon>DefaultAddonWeather.png</icon>
+						<onclick>activatewindow(WeatherSettings)</onclick>
+					</item>
+				</content>
+			</control>
+
+			<control type="label">
+				<top>406</top>
+				<left>752</left>
+				<width>588</width>
+				<height>12</height>
+				<align>left</align>
+				<font>Font36</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<label>480</label>
+			</control>			
+		
+			<control type="panel" id="9001">
+				<top>456</top>
+				<left>752</left>
+				<height>258</height>
+				<width>1086</width>
+				<onleft>9003</onleft>
+				<onback>9003</onback>
+				<onup>9000</onup>
+				<ondown>9002</ondown>
+				<onright>noop</onright>
+				<scrolltime>200</scrolltime>
+				<pagecontrol>61</pagecontrol>
+				<viewtype label="535">icon</viewtype>
+				<visible>!StringCompare(Container(9000).ListItem.Property(widget),TV) + !StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies) + !StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+				
+					<itemlayout width="176" height="258">
+						<control type="group">
+							<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+							<control type="image">
+								<top>15</top>
+								<left>3</left>
+								<height>213</height>
+								<width>170</width>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>39</left>
+								<top>46</top>
+								<width>98</width>
+								<height>98</height>
+								<aspectratio>keep</aspectratio>
+								<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+								<texture>$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="textbox">
+								<left>18</left>
+								<top>160</top>
+								<width>140</width>
+								<height>120</height>
+								<font>FontSmall</font>
+								<align>center</align>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+					</itemlayout>
+				
+					<focusedlayout width="206" height="258">
+						<control type="group">
+							<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+							<animation effect="zoom" start="100" end="125" time="200" center="166,100">Focus</animation>
+							<control type="image">
+								<top>0</top>
+								<left>3</left>
+								<height>258</height>
+								<width>200</width>
+								<aspectratio>stretch</aspectratio>
+								<visible>Control.HasFocus(9001)</visible>
+								<texture border="16,16,16,31" colordiffuse="FF000000">common/Shadow2.png</texture>
+							</control>
+							<control type="image">
+								<top>15</top>
+								<left>18</left>
+								<height>213</height>
+								<width>170</width>
+								<aspectratio>scale</aspectratio>
+								<visible>Control.HasFocus(9001)</visible>
+								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+							</control>
+							<control type="group">
+								<visible>Control.HasFocus(9001)</visible>
+								<control type="image">
+									<left>54</left>
+									<top>46</top>
+									<width>98</width>
+									<height>98</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>$INFO[Skin.String(Color.B1Txt1F)]</colordiffuse>
+									<texture>$INFO[ListItem.ActualIcon]</texture>
+								</control>
+								<control type="textbox">
+									<left>33</left>
+									<top>160</top>
+									<width>140</width>
+									<height>120</height>
+									<font>FontSmall</font>
+									<align>center</align>
+									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+							<control type="group">
+								<visible>!Control.HasFocus(9001)</visible>
+								<control type="image">
+									<left>54</left>
+									<top>46</top>
+									<width>98</width>
+									<height>98</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+									<texture>$INFO[ListItem.ActualIcon]</texture>
+								</control>
+								<control type="textbox">
+									<left>33</left>
+									<top>160</top>
+									<width>140</width>
+									<height>120</height>
+									<font>FontSmall</font>
+									<align>center</align>
+									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+						</control>
+					</focusedlayout>
+				<content>
+					<item id="1">
+						<label>480</label>
+						<label2>31400</label2>
+						<icon>material/Paint.png</icon>
+						<onclick>activatewindow(AppearanceSettings)</onclick>
+					</item>
+					<item id="2">
+						<label>20077</label>
+						<label2>31411</label2>
+						<icon>DefaultAddonSkin.png</icon>
+						<onclick>activatewindow(SkinSettings)</onclick>
+					</item>
+				</content>
+			</control>			
+
+			<control type="label">
+				<top>739</top>
+				<left>752</left>
+				<width>588</width>
+				<height>12</height>
+				<align>left</align>
+				<font>Font36</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<label>13000</label>
+			</control>			
+		
+			<control type="panel" id="9002">
+				<top>790</top>
+				<left>752</left>
+				<height>258</height>
+				<width>1086</width>
+				<onleft>9003</onleft>
+				<onback>9003</onback>
+				<onup>9001</onup>
+				<ondown>noop</ondown>
+				<onright>noop</onright>
+				<scrolltime>200</scrolltime>
+				<pagecontrol>61</pagecontrol>
+				<viewtype label="535">icon</viewtype>
+				<visible>!StringCompare(Container(9000).ListItem.Property(widget),TV) + !StringCompare(Container(9000).ListItem.Property(submenuVisibility),movies) + !StringCompare(Container(9000).ListItem.Property(submenuVisibility),tvshows)</visible>
+				
+					<itemlayout width="176" height="258">
+						<control type="group">
+							<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+							<control type="image">
+								<top>15</top>
+								<left>3</left>
+								<height>213</height>
+								<width>170</width>
+								<aspectratio>scale</aspectratio>
+								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+							</control>
+							<control type="image">
+								<left>39</left>
+								<top>46</top>
+								<width>98</width>
+								<height>98</height>
+								<aspectratio>keep</aspectratio>
+								<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+								<texture>$INFO[ListItem.ActualIcon]</texture>
+							</control>
+							<control type="textbox">
+								<left>18</left>
+								<top>160</top>
+								<width>140</width>
+								<height>120</height>
+								<font>FontSmall</font>
+								<align>center</align>
+								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+					</itemlayout>
+				
+					<focusedlayout width="206" height="258">
+						<control type="group">
+							<animation effect="fade" start="0" end="100" time="200">Visible</animation>
+							<animation effect="zoom" start="100" end="125" time="200" center="166,100">Focus</animation>
+							<control type="image">
+								<top>0</top>
+								<left>3</left>
+								<height>258</height>
+								<width>200</width>
+								<aspectratio>stretch</aspectratio>
+								<visible>Control.HasFocus(9002)</visible>
+								<texture border="16,16,16,31" colordiffuse="FF000000">common/Shadow2.png</texture>
+							</control>
+							<control type="image">
+								<top>15</top>
+								<left>18</left>
+								<height>213</height>
+								<width>170</width>
+								<aspectratio>scale</aspectratio>
+								<visible>Control.HasFocus(9002)</visible>
+								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+							</control>
+							<control type="group">
+								<visible>Control.HasFocus(9002)</visible>
+								<control type="image">
+									<left>54</left>
+									<top>46</top>
+									<width>98</width>
+									<height>98</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>$INFO[Skin.String(Color.B1Txt1F)]</colordiffuse>
+									<texture>$INFO[ListItem.ActualIcon]</texture>
+								</control>
+								<control type="textbox">
+									<left>33</left>
+									<top>160</top>
+									<width>140</width>
+									<height>120</height>
+									<font>FontSmall</font>
+									<align>center</align>
+									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+							<control type="group">
+								<visible>!Control.HasFocus(9002)</visible>
+								<control type="image">
+									<left>54</left>
+									<top>46</top>
+									<width>98</width>
+									<height>98</height>
+									<aspectratio>keep</aspectratio>
+									<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+									<texture>$INFO[ListItem.ActualIcon]</texture>
+								</control>
+								<control type="textbox">
+									<left>33</left>
+									<top>160</top>
+									<width>140</width>
+									<height>120</height>
+									<font>FontSmall</font>
+									<align>center</align>
+									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+						</control>
+					</focusedlayout>
+				<content>
+					<item id="1">
+						<label>13000</label>
+						<label2>31406</label2>
+						<icon>DefaultAddonService.png</icon>
+						<onclick>activatewindow(SystemSettings)</onclick>
+					</item>
+					<item id="2">
+						<label>705</label>
+						<label2>31410</label2>
+						<icon>DefaultNetwork.png</icon>
+						<onclick>activatewindow(NetworkSettings)</onclick>
+					</item>
+					<item id="3">
+						<label>13200</label>
+						<label2>24020</label2>
+						<icon>DefaultUser.png</icon>
+						<onclick>activatewindow(Profiles)</onclick>
+					</item>
+					<item id="4">
+						<label>24001</label>
+						<label2>31408</label2>
+						<icon>addons.png</icon>
+						<onclick>activatewindow(AddonBrowser)</onclick>
+					</item>
+					<item id="5">
+						<label>130</label>
+						<label2>20085</label2>
+						<icon>DefaultHardDisk.png</icon>
+						<onclick>activatewindow(7)</onclick>
+					</item>
+				</content>
+			</control>			
+		</control>
+		
+	</include>	
+
 	<!-- Dialogs furnitures -->
 
 	<!-- RadioButton -->

@@ -16,71 +16,29 @@
 	
 	<controls>	
 
-		<!-- Dialogs Background -->
+		<!-- Decorative Elements -->
 		<control type="group">
-			<visible>true</visible>
-			<animation effect="slide" start="0,0" end="660,0" time="100" reversible="true" condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + StringCompare(Window(Home).Property(DialogPos),LEFT)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-660,0" time="100" reversible="true" condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + StringCompare(Window(Home).Property(DialogPos),RIGHT)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,380" time="100" reversible="true" condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + StringCompare(Window(Home).Property(DialogPos),TOP)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-380" time="100" reversible="true" condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + StringCompare(Window(Home).Property(DialogPos),BOTTOM)">Conditional</animation>
-				
+			<!-- Background -->
+			<include name="Wallpaper">
+				<param name="CompPrefix" value="HOM.View1" />
+			</include>
+
+			<!-- Background -->
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+			</control>
 			
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),LEFT) + StringCompare(Window(Home).Property(SidebarPos),LEFT)">
-				<param name="PosX" value="-540" />
-				<param name="PosY" value="0" />
-				<param name="Height" value="1080" />
-				<param name="Width" value="660" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),RIGHT) + StringCompare(Window(Home).Property(SidebarPos),RIGHT)">
-				<param name="PosX" value="1800" />
-				<param name="PosY" value="0" />
-				<param name="Height" value="1080" />
-				<param name="Width" value="660" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),TOP) + StringCompare(Window(Home).Property(SidebarPos),TOP)">
-				<param name="PosX" value="0" />
-				<param name="PosY" value="-260" />
-				<param name="Height" value="380" />
-				<param name="Width" value="1920" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),BOTTOM) + StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">
-				<param name="PosX" value="0" />
-				<param name="PosY" value="960" />
-				<param name="Height" value="380" />
-				<param name="Width" value="1920" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),LEFT) + !StringCompare(Window(Home).Property(SidebarPos),LEFT)">
-				<param name="PosX" value="-660" />
-				<param name="PosY" value="0" />
-				<param name="Height" value="1080" />
-				<param name="Width" value="660" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),RIGHT) + !StringCompare(Window(Home).Property(SidebarPos),RIGHT)">
-				<param name="PosX" value="1920" />
-				<param name="PosY" value="0" />
-				<param name="Height" value="1080" />
-				<param name="Width" value="660" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),TOP) + !StringCompare(Window(Home).Property(SidebarPos),TOP)">
-				<param name="PosX" value="0" />
-				<param name="PosY" value="-380" />
-				<param name="Height" value="380" />
-				<param name="Width" value="1920" />
-			</include>
-
-			<include name="DialogBg" condition="StringCompare(Window(Home).Property(DialogPos),BOTTOM) + !StringCompare(Window(Home).Property(SidebarPos),BOTTOM)">
-				<param name="PosX" value="0" />
-				<param name="PosY" value="1080" />
-				<param name="Height" value="380" />
-				<param name="Width" value="1920" />
-			</include>
-		</control>	
+			<!-- Left Panel Background -->
+			<control type="image">
+				<top>0</top>
+				<left>0</left>
+				<width>660</width>
+				<height>1080</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
+			</control>
+		</control>
 		
 		<control type="group">
 			<visible>[SubString(Window(Home).Property(DialogVisibility),SettingsProfile) + SubString(Window(Home).Property(DialogVisibility),$NUMBER[1]) + IsEmpty(Window(Home).Property(DialogVisibility2)) + IsEmpty(Window(Home).Property(DialogVisibility3)) + IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))] | 
@@ -94,6 +52,8 @@
 			</include>		
 
 		</control>
+
+		<include>MainSettingsContent</include>		
 
 	</controls>
 			
