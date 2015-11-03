@@ -469,9 +469,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.WP)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(1)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.WP)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(1)</visible>
+				</control>				
 			</control>
 		</control>
 
@@ -541,9 +553,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SBBg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(2)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBBg)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(2)</visible>
+				</control>					
 			</control>		
 
 			<control type="group">
@@ -595,9 +619,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SBIconNF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(3)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBIconNF)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(3)</visible>
+				</control>							
 			</control>		
 
 			<control type="group">
@@ -649,9 +685,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SBClock)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(4)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBClock)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(4)</visible>
+				</control>							
 			</control>	
 
 			<control type="group">
@@ -703,8 +751,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SBShadow)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(5)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBShadow)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(5)</visible>
 				</control>						
 			</control>	
 
@@ -757,9 +817,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.BBBg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(6)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.BBBg)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(6)</visible>
+				</control>							
 			</control>	
 		</control>
 
@@ -829,8 +901,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Bg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(7)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Bg)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(7)</visible>
 				</control>						
 			</control>	
 
@@ -883,9 +967,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemNF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(8)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemNF)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(8)</visible>
+				</control>							
 			</control>	
 
 			<control type="group">
@@ -937,9 +1033,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1NF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(9)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1NF)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(9)</visible>
+				</control>							
 			</control>	
 
 			<control type="group">
@@ -991,8 +1099,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2NF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(10)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2NF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(10)</visible>
 				</control>						
 			</control>	
 
@@ -1045,8 +1165,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFVDO)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(11)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFVDO)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(11)</visible>
 				</control>						
 			</control>	
 
@@ -1099,9 +1231,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMOV)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(12)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMOV)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(12)</visible>
+				</control>							
 			</control>	
 
 			<control type="group">
@@ -1153,8 +1297,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFSHO)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(13)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFSHO)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(13)</visible>
 				</control>						
 			</control>	
 
@@ -1207,8 +1363,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(14)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(14)</visible>
 				</control>						
 			</control>	
 
@@ -1261,9 +1429,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFPIC)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(15)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFPIC)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(15)</visible>
+				</control>							
 			</control>	
 
 			<control type="group">
@@ -1315,9 +1495,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFTV)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(16)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFTV)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(16)</visible>
+				</control>							
 			</control>	
 
 			<control type="group">
@@ -1369,8 +1561,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(17)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(17)</visible>
 				</control>						
 			</control>	
 
@@ -1423,9 +1627,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1IconBg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(18)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1IconBg)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(18)</visible>
+				</control>							
 			</control>
 
 			<control type="group">
@@ -1477,9 +1693,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1F)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(19)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1F)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(19)</visible>
+				</control>							
 			</control>
 
 			<control type="group">
@@ -1531,9 +1759,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2F)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(20)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2F)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(20)</visible>
+				</control>					
 			</control>
 		</control>
 
@@ -1603,9 +1843,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Bg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(21)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Bg)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(21)</visible>
+				</control>							
 			</control>
 
 			<control type="group">
@@ -1657,9 +1909,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt1)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(22)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt1)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(22)</visible>
+				</control>							
 			</control>
 
 			<control type="group">
@@ -1711,9 +1975,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt2)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(23)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt2)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(23)</visible>
+				</control>							
 			</control>
 
 			<control type="group">
@@ -1765,9 +2041,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt3)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(24)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt3)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(24)</visible>
+				</control>					
 			</control>
 
 			<control type="group">
@@ -1819,9 +2107,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt4)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(25)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt4)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(25)</visible>
+				</control>										
 			</control>
 		</control>
 
@@ -1891,8 +2191,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B3Bg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(26)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B3Bg)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(26)</visible>
 				</control>						
 			</control>
 		</control>
@@ -1963,8 +2275,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4Bg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(27)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B4Bg)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(27)</visible>
 				</control>						
 			</control>
 		</control>
@@ -2035,9 +2359,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIABg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(28)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIABg)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(28)</visible>
+				</control>				
 			</control>
 
 			<control type="group">
@@ -2089,9 +2425,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATitle)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(29)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATitle)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(29)</visible>
+				</control>							
 			</control>
 
 			<control type="group">
@@ -2143,8 +2491,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtNF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(30)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtNF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(30)</visible>
 				</control>						
 			</control>
 
@@ -2197,9 +2557,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtFBg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(31)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtFBg)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(31)</visible>
+				</control>											
 			</control>
 
 			<control type="group">
@@ -2251,8 +2623,20 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(32)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(32)</visible>
 				</control>						
 			</control>
 
@@ -2305,9 +2689,21 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(33)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
 					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
-				</control>						
+					<visible>Control.HasFocus(33)</visible>
+				</control>							
 			</control>
 		</control>		
 
