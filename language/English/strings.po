@@ -303,11 +303,11 @@ msgid "Unselected items"
 msgstr ""
 
 msgctxt "#31070"
-msgid "Unselected text 1 / icon"
+msgid "Unselected text 1[CR]icon"
 msgstr ""
 
 msgctxt "#31071"
-msgid "Unselected text 2 (sub)"
+msgid "Unselected text 2[CR](sub)"
 msgstr ""
 
 msgctxt "#31072"
@@ -323,11 +323,11 @@ msgid "Selected items"
 msgstr ""
 
 msgctxt "#31075"
-msgid "Selected text 1 / icon"
+msgid "Selected text 1[CR]icon"
 msgstr ""
 
 msgctxt "#31076"
-msgid "Selected text 2 (sub)"
+msgid "Selected text 2[CR](sub)"
 msgstr ""
 
 msgctxt "#31077"
