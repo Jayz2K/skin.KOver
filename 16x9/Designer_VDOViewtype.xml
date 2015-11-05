@@ -30,7 +30,7 @@
 				<!-- Bloc 4 / special background -->
 				<control type="group">
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">Conditonal</animation>
-					<animation effect="fade" start="100" end="0" time="200" condition="[ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B4" />
@@ -46,7 +46,7 @@
 				<!-- Bloc 3 -->
 				<control type="group">
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B3Show,IDLEFADE)">Conditonal</animation>
-					<animation effect="fade" start="100" end="0" time="200" condition="[ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B3ShowOF,HIDE)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B3ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B3" />
@@ -90,6 +90,7 @@
 								</control>
 							</control>
 							<control type="group">
+								<visible>!IsEmpty($VAR[B3Tag])</visible>
 								<include name="B3STag">
 									<param name="Prefix" value="$PARAM[CompPrefix]" />
 								</include>
@@ -118,7 +119,7 @@
 				<!-- Bloc 4 -->
 				<control type="group">
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">Conditonal</animation>
-					<animation effect="fade" start="100" end="0" time="200" condition="[ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B4" />
@@ -144,7 +145,7 @@
 					<visible>Control.IsVisible($PARAM[Id])</visible>
 					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B1Show,IDLEFADE)">Conditonal</animation>
-					<animation effect="fade" start="100" end="0" time="200" condition="[ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B1ShowOF,HIDE)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B1ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B1" />
@@ -221,7 +222,7 @@
 				<!-- Bloc 2 -->
 				<control type="group">
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B2Show,IDLEFADE)">Conditonal</animation>
-					<animation effect="fade" start="100" end="0" time="200" condition="[ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B2ShowOF,HIDE)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B2ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B2" />
@@ -443,7 +444,7 @@
 					<visible>Control.IsVisible(99)</visible>
 					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B5Show,HIDDEN)">Conditional</animation>
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].B5Show,IDLEFADE)">Conditonal</animation>
-					<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(99).HasFocus() + !Control.HasFocus(97) + !Window.IsVisible(contextmenu) + Skin.String($PARAM[CompPrefix].B5Show,ONFOCUS)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="200" condition="!Window.IsVisible(contextmenu) + !ControlGroup(99).HasFocus() + !Control.HasFocus(97) + !Window.IsVisible(contextmenu) + Skin.String($PARAM[CompPrefix].B5Show,ONFOCUS)">Conditonal</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 						<param name="BlocID" value="B5" />

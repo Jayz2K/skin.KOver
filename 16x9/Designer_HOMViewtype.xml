@@ -133,6 +133,7 @@
 								</control>
 							</control>
 							<control type="group">
+								<visible>!IsEmpty(Container($PARAM[Id]).ListItem.Tagline) | !IsEmpty(Container($PARAM[Id]).ListItem.TVShowTitle) | !IsEmpty(Container($PARAM[Id]).ListItem.Artist)</visible>
 								<include name="B3STag">
 									<param name="Prefix" value="$PARAM[CompPrefix]" />
 								</include>
