@@ -269,14 +269,14 @@
 						<ondown condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONDOWN)">9001</ondown>
 						<ondown condition="Skin.String($PARAM[CompPrefix].B1Goback,ONDOWN)">9000</ondown>
 
-						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">9001</onleft>
-						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,home)</onleft>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + IsEmpty(Window(Home).Property(TVShowNext))">9000</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,home)</onleft>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Goback,ONLEFT) + !StringCompare(Container(9000).ListItem.Property(widgetType),pvr)">9000</onleft>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">9001</onleft>
 
-						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,home)</onright>
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !IsEmpty(Window(Home).Property(TVShowNext))">9001</onright>
-						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + [!StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST)]">9001</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,home)</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + !StringCompare(Container(9000).ListItem.Property(widgetType),pvr)">9001</onright>
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Goback,ONRIGHT)">9000</onright>
 						<onback>9000</onback>
 						
@@ -771,8 +771,9 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT) + IsEmpty(Container(9000).ListItem.Property(widgetType))">9000</onright>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">noop</onleft>
 
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 						<onback>Control.SetFocus(9000)</onback>
-						
+												
 						<scrolltime>200</scrolltime>
 						<viewtype label="$INFO[Skin.String($PARAM[CompPrefix].Name)]">list</viewtype>
 						<visible allowhiddenfocus="true">true</visible>

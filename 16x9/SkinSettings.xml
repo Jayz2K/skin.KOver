@@ -611,7 +611,7 @@
 								<property name="SubName">B3</property>
 							</item>
 							<item id="6">
-								<label>31015</label>
+								<label>$VAR[B4Name]</label>
 								<label2>31016</label2>
 								<icon>material/pencil.png</icon>
 								<thumb></thumb>
@@ -1425,6 +1425,7 @@
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3)">RunScript(script.skin.helper.service, action=backup, filter=MODEL3 ,promptfilename=true)</onclick>
 							
 							<visible>[StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1) + !IsEmpty(Skin.String(MODEL1.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2) + !IsEmpty(Skin.String(MODEL2.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3) + !IsEmpty(Skin.String(MODEL3.TempName))]</visible>
+							<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
 
 							<property name="Info">31099</property>
 						</item>
@@ -1495,6 +1496,7 @@
 							<onclick>Skin.Reset($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5Goback)</onclick>
 							
 							<visible>[StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1) + !IsEmpty(Skin.String(MODEL1.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL2) + !IsEmpty(Skin.String(MODEL2.TempName))] | [StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL3) + !IsEmpty(Skin.String(MODEL3.TempName))]</visible>
+							<visible>!IsEmpty(Container(9100).ListItem.Label)</visible>
 
 							<property name="Info">31100</property>
 						</item>
@@ -1720,13 +1722,13 @@
 							<label2>$VAR[ShowValue]</label2>
 							<icon></icon>
 							<thumb>material/designervisibility.png</thumb>
-							<visible>!StringCompare(Container(9200).ListItem.Property(SubName),BB) | StringCompare(Container(9200).ListItem.Property(Split),SPLIT)</visible>
+							<visible>!StringCompare(Container(9200).ListItem.Property(SubName),WP) + [!StringCompare(Container(9200).ListItem.Property(SubName),BB) | StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->					
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,HIDDEN) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],VISIBLE)</onclick>
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,VISIBLE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],IDLEFADE)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + !StringCompare(Container(9200).ListItem.Property(SubName),B4) + !StringCompare(Container(9200).ListItem.Property(SubName),B5)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],HIDDEN)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + StringCompare(Container(9200).ListItem.Property(SubName),B4)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],ISPLAYING)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + [!StringCompare(Container(9200).ListItem.Property(SubName),B4) | StringCompare(Container(9000).ListItem.Property(ViewName),HOM)] + !StringCompare(Container(9200).ListItem.Property(SubName),B5)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],HIDDEN)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + !StringCompare(Container(9000).ListItem.Property(ViewName),HOM)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],ISPLAYING)</onclick>
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE) + StringCompare(Container(9200).ListItem.Property(SubName),B5)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],ONFOCUS)</onclick>
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,ISPLAYING)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],HIDDEN)</onclick>	
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,ONFOCUS)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],HIDDEN)</onclick>	
@@ -2640,7 +2642,7 @@
 							<property name="Info">31116</property>
 						</item>
 						<item id="1">
-							<label>31028</label>
+							<label>$VAR[B1Orientation]</label>
 							<label2>$VAR[LayValue]</label2>
 							<icon></icon>
 							<thumb>material/designerlayout.png</thumb>

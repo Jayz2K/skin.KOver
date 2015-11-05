@@ -538,6 +538,18 @@ msgctxt "#31128"
 msgid "Choose the element you want to change the color and click or press 'ENTER'."
 msgstr ""
 
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr ""
+
+msgctxt "#31130"
+msgid "Bloc 4 : Home Art"
+msgstr ""
+
+msgctxt "#31131"
+msgid "Scrolling Orientation"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

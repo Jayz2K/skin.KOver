@@ -169,10 +169,13 @@
 						<ondown condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONDOWN)">99</ondown>
 						<onup condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONDOWN)">noop</onup>
 
+						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + ListItem.HasEpg + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,home)</onleft>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">99</onleft>
-						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">noop</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">noop</onright>	
 
-						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">99</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + ListItem.HasEpg + !IsEmpty(Window(Home).Property(TVShowNext))">99</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + Skin.String($PARAM[CompPrefix].B1Typ,WIDELIST) + ListItem.HasEpg + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,home)</onright>
+						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT) + !ListItem.HasEpg">99</onright>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">noop</onleft>		
 						
 						<scrolltime>200</scrolltime>

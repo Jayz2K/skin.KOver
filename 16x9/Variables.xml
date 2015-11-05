@@ -133,6 +133,7 @@
 	
 	<variable name="B1Title">
 		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+		<value condition="StringCompare(ListItem.Label,..)">$LOCALIZE[210]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 
@@ -174,6 +175,7 @@
 	<variable name="B2Title">
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Property(LongDay)]</value>
 		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
+		<value condition="StringCompare(ListItem.Label,..)">$LOCALIZE[210]</value>
 		<value>$INFO[ListItem.Label]</value>
 	</variable>
 	

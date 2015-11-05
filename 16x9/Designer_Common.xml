@@ -185,7 +185,8 @@
 						<onclick>Control.SetFocus(97)</onclick>
 
 						<ondown condition="Control.IsEnabled(3)">2</ondown>	
-						<ondown condition="!Control.IsEnabled(3)">28</ondown>	
+						<ondown condition="!Control.IsEnabled(3)">28</ondown>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -228,6 +229,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -271,6 +273,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -320,6 +323,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -363,6 +367,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -408,6 +413,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -456,6 +462,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -497,6 +504,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -549,6 +557,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -593,6 +602,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -637,6 +647,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -682,6 +693,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -725,6 +737,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -773,6 +786,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>		
 					<control type="image">
 						<left>10</left>
@@ -823,6 +837,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -866,6 +881,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -909,6 +925,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONLEFT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>
@@ -957,6 +974,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
 						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>	
 					<control type="image">
 						<left>10</left>
@@ -1018,6 +1036,7 @@
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
 						<ondown condition="Skin.String($PARAM[CompPrefix].B5Goback,ONDOWN)">$PARAM[Id]</ondown>	
 						<onback>$PARAM[Id]</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
 					</control>
 					<control type="image">
 						<left>10</left>

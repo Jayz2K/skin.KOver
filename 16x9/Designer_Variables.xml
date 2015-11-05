@@ -10,6 +10,17 @@
 		<value condition="Control.HasFocus(9500)">$INFO[Container(9500).ListItem.Property(Info)]</value>
 	</variable>
 
+<!-- Designer changing labels -->
+	<variable name="B4Name">
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM)">$LOCALIZE[31130]</value>
+		<value>$LOCALIZE[31015]</value>
+	</variable>
+
+	<variable name="B1Orientation">
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) | StringCompare(Container(9200).ListItem.Property(SubName),B5)">$LOCALIZE[31131]</value>
+		<value>$LOCALIZE[31028]</value>
+	</variable>
+
 <!-- Column A coloring -->
 	<variable name="XAColor">
 		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A)">$VAR[CategoryColor]</value>
