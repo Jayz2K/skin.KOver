@@ -283,9 +283,9 @@
 						<item id="1">
 							<label>$VAR[View1Name]</label>
 							<label2>$LOCALIZE[31089] $NUMBER[1]/$NUMBER[9]</label2>
-							<onclick condition="">Control.SetFocus(9500,0)</onclick>
 							<icon>material/view1.png</icon>
 							<thumb>material/editlayer.png</thumb>
+							<onclick>Control.SetFocus(9500,0)</onclick>
 							<visible>true</visible>
 							<property name="ViewName">View1</property>
 							<property name="Info">31092</property>
@@ -674,7 +674,7 @@
 					
 					<content>
 						<item id="1">
-							<label>View settings</label>
+							<label>31132</label>
 							<label2></label2>
 							<icon></icon>
 							<thumb></thumb>
@@ -737,6 +737,7 @@
 					<onback>9100</onback>
 					<orientation>horizontal</orientation>
 					<scrolltime>200</scrolltime>
+					<visible allowhiddenfocus="true"></visible>
 					<animation effect="fade" start="0" end="100" time="0" condition="Control.IsVisible(9400)">Conditional</animation>
 					
 					<itemlayout width="176" height="298">
@@ -925,7 +926,16 @@
 							<label2></label2>
 							<icon></icon>
 							<thumb>material/designerdefaulth.png</thumb>
-							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View1)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View2)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View3)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View4)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View4)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View5)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View5)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View6)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View6)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View7)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View7)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View8)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View8)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View9)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View9)</onclick>
+				
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,IMAGE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,common/wplayer2.png)</onclick>
@@ -1004,7 +1014,16 @@
 							<label2></label2>
 							<icon></icon>
 							<thumb>material/designerdefaultv.png</thumb>
-							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View1)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View2)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View2)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View3)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View3)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View4)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View4)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View5)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View5)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View6)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View6)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View7)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View7)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View8)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View8)</onclick>
+							<onclick condition="StringCompare(Container(9100).ListItem.Property(ViewName),View9)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,View9)</onclick>
+
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,VISIBLE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,IMAGE)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,common/wplayer2.png)</onclick>
@@ -1156,7 +1175,7 @@
 							<icon></icon>
 							<thumb>material/designercopyttov.png</thumb>
 							<!-- Actions for MODEL 1-->				
-							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>					
+							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name,$INFO[Container(9100).ListItem.Property(ViewName)])</onclick>	
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPShow,$INFO[Skin.String(MODEL1.WPShow)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs,$INFO[Skin.String(MODEL1.WPBgs)])</onclick>
 							<onclick condition="StringCompare(Container(9400).ListItem.Property(NumTemp),MODEL1)">Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic,$INFO[Skin.String(MODEL1.WPPic)])</onclick>

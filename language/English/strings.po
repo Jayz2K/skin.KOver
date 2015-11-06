@@ -79,7 +79,7 @@ msgid "Bloc 3"
 msgstr ""
 
 msgctxt "#31015"
-msgid "Bloc 4 : Video Preview"
+msgid "Bloc 4 : Playing Video"
 msgstr ""
 
 msgctxt "#31016"
@@ -548,6 +548,10 @@ msgstr ""
 
 msgctxt "#31131"
 msgid "Scrolling Orientation"
+msgstr ""
+
+msgctxt "#31132"
+msgid "View Settings"
 msgstr ""
 
 #Settings strings

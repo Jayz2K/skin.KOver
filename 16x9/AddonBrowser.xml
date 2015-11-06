@@ -83,11 +83,12 @@
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
-					<ondown>5</ondown>
-					<onright>5</onright>
+					<ondown>noop</ondown>
+					<onright>9003</onright>
 					<height>305</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
+					<visible>!ControlGroup(450).HasFocus()</visible>
 
 					<itemlayout width="588" height="61">
 						<control type="image">
@@ -195,6 +196,95 @@
 					</focusedlayout>	
 
 				</control>
+
+				<!-- Settings list (options) -->
+				<control type="grouplist" id="450">
+					<left>24</left>
+					<top>25</top>
+					<width>636</width>
+					<height>308</height>
+					<itemgap>1</itemgap>
+					<onleft>Control.SetFocus(50)</onleft>
+					<onright>9003</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<onback>Control.SetFocus(50)</onback>
+					<orientation>vertical</orientation>
+					<usecontrolcoords>true</usecontrolcoords>
+					<visible allowhiddenfocus="true">ControlGroup(450).HasFocus()</visible>
+					
+					<!-- Sort Method -->
+					<include name="DiaGroupListButton">
+						<param name="Id" value="3" />
+						<param name="Label" value="103" />
+						<param name="OnLeft" value="Control.SetFocus(50)" />
+						<param name="OnRight" value="Control.SetFocus(9003)" />
+					</include>
+
+					<!-- Sort By -->
+					<control type="togglebutton" id="4">
+						<width>588</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>540</textwidth>
+						<textoffsetx>12</textoffsetx>
+						<label>$LOCALIZE[580] : $LOCALIZE[585]</label>
+						<altlabel>$LOCALIZE[580] : $LOCALIZE[584]</altlabel>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<alttexturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</alttexturefocus>
+						<alttexturenofocus colordiffuse="00FFFFFF">common/white.png</alttexturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<visible>Control.IsEnabled(4)</visible>
+						<onleft>noop</onleft>
+						<onright>10</onright>
+						<onup>noop</onup>
+						<ondown>noop</ondown>
+					</control>
+
+					<!-- Auto Update -->
+					<include name="DiaRadio">
+						<param name="Id" value="5" />
+						<param name="Label" value="24063" />
+						<param name="OnLeft" value="Control.SetFocus(50)" />
+						<param name="OnRight" value="Control.SetFocus(9003)" />
+					</include>		
+
+					<!-- Notifications -->
+					<include name="DiaRadio">
+						<param name="Id" value="6" />
+						<param name="Label" value="25000" />
+						<param name="OnLeft" value="Control.SetFocus(50)" />
+						<param name="OnRight" value="Control.SetFocus(9003)" />
+					</include>		
+
+					<!-- Language Filter -->
+					<include name="DiaRadio">
+						<param name="Id" value="7" />
+						<param name="Label" value="25001" />
+						<param name="OnLeft" value="Control.SetFocus(50)" />
+						<param name="OnRight" value="Control.SetFocus(9003)" />
+					</include>			
+
+					<!-- Hide Broken -->
+					<include name="DiaRadio">
+						<param name="Id" value="8" />
+						<param name="Label" value="24999" />
+						<param name="OnLeft" value="Control.SetFocus(50)" />
+						<param name="OnRight" value="Control.SetFocus(9003)" />
+					</include>	
+
+					<!-- Update Scan -->
+					<include name="DiaGroupListButton">
+						<param name="Id" value="9" />
+						<param name="Label" value="24034" />
+						<param name="OnLeft" value="Control.SetFocus(50)" />
+						<param name="OnRight" value="Control.SetFocus(9003)" />
+					</include>	
+
+				</control>	
 			</control>		
 
 			<!-- Bloc 3 -->
@@ -242,12 +332,12 @@
 					<itemgap>1</itemgap>
 					<align>right</align>
 					<onleft>noop</onleft>
-					<onright>3</onright>
-					<onup>noop</onup>
+					<onright>noop</onright>
+					<onup>50</onup>
 					<ondown>noop</ondown>
 					<orientation>horizontal</orientation>
 
-					<!-- Settings level -->
+					<!-- Options -->
 					<control type="button" id="9004">
 						<width>auto</width>
 						<height>60</height>
@@ -259,8 +349,8 @@
 						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
 						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
 						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-						<label>31126</label>
-						<onclick>SettingsLevelChange</onclick>
+						<label>33063</label>
+						<onclick>Control.SetFocus(450)</onclick>
 						<onright>9005</onright>
 					</control>
 
