@@ -1002,8 +1002,6 @@
 							
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,BOTTOM)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,PUSH)</onclick>						
-
-							<!--onclick>Control.SetFocus(9100)</onclick-->
 							
 							<visible>[[StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + [StringCompare(Skin.String(HOM.View1.BBSidebar),TOP) | StringCompare(Skin.String(HOM.View1.BBSidebar),BOTTOM)]] | !StringCompare(Container(9000).ListItem.Property(ViewName),HOM)] + StringCompare(Container(9400).ListItem.Property(NumTemp),SETTINGS)</visible>
 							<property name="NumTemp"></property>
@@ -1090,8 +1088,6 @@
 
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIAPanel,LEFT)</onclick>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide,PUSH)</onclick>
-
-							<!--onclick>Control.SetFocus(9100)</onclick-->
 							
 							<visible>[[StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + [StringCompare(Skin.String(HOM.View1.BBSidebar),LEFT) | StringCompare(Skin.String(HOM.View1.BBSidebar),RIGHT)]] | !StringCompare(Container(9000).ListItem.Property(ViewName),HOM)] + StringCompare(Container(9400).ListItem.Property(NumTemp),SETTINGS)</visible>
 							<property name="NumTemp"></property>
@@ -2488,64 +2484,6 @@
 							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
 							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
 							<property name="Info">31114</property>
-						</item>
-						<item id="15">
-							<label>31085</label>
-							<label2>$VAR[FixedB3TypValue]</label2>
-							<icon></icon>
-							<thumb></thumb>
-							<!--visible>StringCompare(Container(9200).ListItem.Property(SubName),B3)</visible-->
-							<visible>false</visible>
-							<onback>9200</onback>
-							<!-- Actions For Bloc Background-->	
-							<!-- Actions For Bloc 1-->							
-							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + [StringCompare(Container(9300).ListItem.Label2,THUMB) | IsEmpty(Container(9300).ListItem.Label2)]">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],POSTER)</onclick>
-							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Label2,POSTER)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],FANART)</onclick>
-							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Label2,FANART)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],THUMB)</onclick>
-							<!-- Actions For Bloc 2-->
-							<!-- Actions For Bloc 3-->
-							
-							<property name="EndName">Typ</property>
-							<property name="SetID">$INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)]Typ</property>
-							<property name="BBLayMEM">$VAR[FixedBBLayValue]</property>
-							<property name="BBSidebarMEM">$VAR[FixedBBSidebarValue]</property>
-							<property name="BBSepXMEM">$VAR[FixedBBSepXValue]</property>
-							<property name="BBSepYMEM">$VAR[FixedBBSepYValue]</property>
-							<property name="BBShowMEM">$VAR[FixedBBShowValue]</property>
-							<property name="BBCoordXMEM">$VAR[FixedBBCoordXValue]</property>
-							<property name="BBCoordYMEM">$VAR[FixedBBCoordYValue]</property>
-							<property name="BBSizeXMEM">$VAR[FixedBBSizeXValue]</property>
-							<property name="BBSizeYMEM">$VAR[FixedBBSizeYValue]</property>
-							<property name="B1TypMEM">$VAR[FixedB1TypValue]</property>
-							<property name="B1ShowMEM">$VAR[FixedB1ShowValue]</property>
-							<property name="B1CoordXMEM">$VAR[FixedB1CoordXValue]</property>
-							<property name="B1CoordYMEM">$VAR[FixedB1CoordYValue]</property>
-							<property name="B1SizeXMEM">$VAR[FixedB1SizeXValue]</property>
-							<property name="B1SizeYMEM">$VAR[FixedB1SizeYValue]</property>
-							<property name="B2ShowMEM">$VAR[FixedB2ShowValue]</property>
-							<property name="B2CoordXMEM">$VAR[FixedB2CoordXValue]</property>
-							<property name="B2CoordYMEM">$VAR[FixedB2CoordYValue]</property>
-							<property name="B2SizeXMEM">$VAR[FixedB2SizeXValue]</property>
-							<property name="B2SizeYMEM">$VAR[FixedB2SizeYValue]</property>
-							<property name="B3ShowMEM">$VAR[FixedB3ShowValue]</property>
-							<property name="B3CoordXMEM">$VAR[FixedB3CoordXValue]</property>
-							<property name="B3CoordYMEM">$VAR[FixedB3CoordYValue]</property>
-							<property name="B3SizeXMEM">$VAR[FixedB3SizeXValue]</property>
-							<property name="B3SizeYMEM">$VAR[FixedB3SizeYValue]</property>
-							<property name="B3TypMEM">$VAR[FixedB3TypValue]</property>
-							<property name="B4ShowMEM">$VAR[FixedB4ShowValue]</property>
-							<property name="B4CoordXMEM">$VAR[FixedB4CoordXValue]</property>
-							<property name="B4CoordYMEM">$VAR[FixedB4CoordYValue]</property>
-							<property name="B4SizeXMEM">$VAR[FixedB4SizeXValue]</property>
-							<property name="B4SizeYMEM">$VAR[FixedB4SizeYValue]</property>
-							<property name="DIASlideMEM">$VAR[FixedDIASlideValue]</property>
-							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
-							<property name="B5ShowMEM">$VAR[FixedB5ShowValue]</property>
-							<property name="B5CoordXMEM">$VAR[FixedB5CoordXValue]</property>
-							<property name="B5CoordYMEM">$VAR[FixedB5CoordYValue]</property>
-							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
-							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
-							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
 						</item>
 						<item id="16">
 							<label>31042</label>

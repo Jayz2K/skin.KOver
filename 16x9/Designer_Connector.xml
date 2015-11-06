@@ -342,65 +342,10 @@
 	
 	<include name="SetHorizontal">
 		<orientation>horizontal</orientation>
-		<!--onback condition="Window.IsVisible(Home)">9000</onback>
-		<ondown condition="Window.IsVisible(Home) + !Control.HasFocus(9001)">9000</ondown>
-		<ondown condition="Window.IsVisible(Home) + Control.HasFocus(9001) + IsEmpty(Container(9000).ListItem.Property(viewtype))">9000</ondown>
-		<ondown condition="Window.IsVisible(Home) + Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(viewtype))">96</ondown>
-		<ondown condition="!Window.IsVisible(Home)">99</ondown>
-		<onleft condition="Control.IsVisible(50)">Control.Move(50,-1)</onleft>
-		<onleft condition="Control.IsVisible(51)">Control.Move(51,-1)</onleft>
-		<onleft condition="Control.IsVisible(52)">Control.Move(52,-1)</onleft>
-		<onleft condition="Control.IsVisible(53)">Control.Move(53,-1)</onleft>
-		<onleft condition="Control.IsVisible(54)">Control.Move(54,-1)</onleft>
-		<onleft condition="Control.IsVisible(55)">Control.Move(55,-1)</onleft>
-		<onleft condition="Control.IsVisible(56)">Control.Move(56,-1)</onleft>
-		<onleft condition="Control.IsVisible(57)">Control.Move(57,-1)</onleft>
-		<onleft condition="Control.IsVisible(58)">Control.Move(58,-1)</onleft>
-		<onright condition="ListItem.HasEpg">98</onright>
-		<onright condition="Control.IsVisible(50) + !ListItem.HasEpg">Control.Move(50,1)</onright>
-		<onright condition="Control.IsVisible(51) + !ListItem.HasEpg">Control.Move(51,1)</onright>
-		<onright condition="Control.IsVisible(52) + !ListItem.HasEpg">Control.Move(52,1)</onright>
-		<onright condition="Control.IsVisible(53) + !ListItem.HasEpg">Control.Move(53,1)</onright>
-		<onright condition="Control.IsVisible(54) + !ListItem.HasEpg">Control.Move(54,1)</onright>
-		<onright condition="Control.IsVisible(55) + !ListItem.HasEpg">Control.Move(55,1)</onright>
-		<onright condition="Control.IsVisible(56) + !ListItem.HasEpg">Control.Move(56,1)</onright>
-		<onright condition="Control.IsVisible(57) + !ListItem.HasEpg">Control.Move(57,1)</onright>
-		<onright condition="Control.IsVisible(58) + !ListItem.HasEpg">Control.Move(58,1)</onright>
-		<onup condition="Window.IsVisible(Home) + !IsEmpty(Container(9000).ListItem.Property(viewtype)) + !StringCompare(Container(9001).NumItems,0)">Control.SetFocus(9001)</onup-->
 	</include>
 	
 	<include name="SetVertical">
 		<orientation>vertical</orientation>
-		<!--onleft condition="Window.IsVisible(Home) + !Control.HasFocus(9001) + IsEmpty(Window(Home).Property(TVShowNext))">9000</onleft>
-		<onleft condition="Window.IsVisible(Home) + !Control.HasFocus(9001) + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,Home)</onleft>
-		<onleft condition="Window.IsVisible(Home) + Control.HasFocus(9001) + IsEmpty(Container(9000).ListItem.Property(viewtype))">9000</onleft>
-		<onleft condition="Window.IsVisible(Home) + Control.HasFocus(9001) + !IsEmpty(Container(9000).ListItem.Property(viewtype))">96</onleft>
-
-		<ondown condition="Control.IsVisible(50)">Control.Move(50,1)</ondown>
-		<ondown condition="Control.IsVisible(51)">Control.Move(51,1)</ondown>
-		<ondown condition="Control.IsVisible(52)">Control.Move(52,1)</ondown>
-		<ondown condition="Control.IsVisible(53)">Control.Move(53,1)</ondown>
-		<ondown condition="Control.IsVisible(54)">Control.Move(54,1)</ondown>
-		<ondown condition="Control.IsVisible(55)">Control.Move(55,1)</ondown>
-		<ondown condition="Control.IsVisible(56)">Control.Move(56,1)</ondown>
-		<ondown condition="Control.IsVisible(57)">Control.Move(57,1)</ondown>
-		<ondown condition="Control.IsVisible(58)">Control.Move(58,1)</ondown>
-
-		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + IsEmpty(Window(Home).Property(TVShowNext))">SetProperty(TVShowNext,NEXT,Home)</onright>
-		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + !IsEmpty(Window(Home).Property(TVShowNext))">ClearProperty(TVShowNext,Home)</onright>
-		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + !IsEmpty(Window(Home).Property(TVShowNext)) + Window.IsVisible(Home)">9001</onright>
-		<onright condition="[StringCompare(Container(9000).ListItem.Property(widgetType),pvr) | ListItem.HasEpg] + !IsEmpty(Window(Home).Property(TVShowNext)) + !Window.IsVisible(Home)">99</onright>
-		<onright condition="!StringCompare(Container(9000).ListItem.Property(widgetType),pvr) + !ListItem.HasEpg">99</onright>
-
-		<onup condition="Control.IsVisible(50)">Control.Move(50,-1)</onup>
-		<onup condition="Control.IsVisible(51)">Control.Move(51,-1)</onup>
-		<onup condition="Control.IsVisible(52)">Control.Move(52,-1)</onup>
-		<onup condition="Control.IsVisible(53)">Control.Move(53,-1)</onup>
-		<onup condition="Control.IsVisible(54)">Control.Move(54,-1)</onup>
-		<onup condition="Control.IsVisible(55)">Control.Move(55,-1)</onup>
-		<onup condition="Control.IsVisible(56)">Control.Move(56,-1)</onup>
-		<onup condition="Control.IsVisible(57)">Control.Move(57,-1)</onup>
-		<onup condition="Control.IsVisible(58)">Control.Move(58,-1)</onup-->
 	</include>
 	
 	<!-- Special : Configuring Bloc 2 Rating Position -->
@@ -557,14 +502,6 @@
 				<param name="Prefix" value="$PARAM[Prefix]" />
 				<param name="BlocID" value="B5" />
 			</include>
-			
-			<!--control type="image">
-				<left>0</left>
-				<top>0</top>
-				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
-				<visible>ControlGroup(996).HasFocus()</visible>
-			</control-->
 			
 			<!-- Default grouplist Tile -->
 			<control type="grouplist" id="996">

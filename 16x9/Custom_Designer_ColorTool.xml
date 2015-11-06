@@ -329,7 +329,6 @@
 			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),B3)">Control.SetFocus(9304,0)</onfocus>
 			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),B4)">Control.SetFocus(9305,0)</onfocus>
 			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Control.SetFocus(9306,0)</onfocus>
-			<!--onfocus>9300</onfocus-->
 		</control>
 
 		<control type="label">
