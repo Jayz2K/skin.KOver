@@ -88,7 +88,7 @@
 					<height>305</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
-					<visible>!ControlGroup(450).HasFocus()</visible>
+					<visible>!ControlGroup(9006).HasFocus()</visible>
 
 					<itemlayout width="588" height="61">
 						<control type="image">
@@ -198,7 +198,7 @@
 				</control>
 
 				<!-- Settings list (options) -->
-				<control type="grouplist" id="450">
+				<control type="grouplist" id="9006">
 					<left>24</left>
 					<top>25</top>
 					<width>636</width>
@@ -211,7 +211,7 @@
 					<onback>Control.SetFocus(50)</onback>
 					<orientation>vertical</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
-					<visible allowhiddenfocus="true">ControlGroup(450).HasFocus()</visible>
+					<visible allowhiddenfocus="true">ControlGroup(9006).HasFocus()</visible>
 					
 					<!-- Sort Method -->
 					<include name="DiaGroupListButton">
@@ -350,7 +350,7 @@
 						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
 						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 						<label>33063</label>
-						<onclick>Control.SetFocus(450)</onclick>
+						<onclick>Control.SetFocus(9006)</onclick>
 						<onright>9005</onright>
 					</control>
 
