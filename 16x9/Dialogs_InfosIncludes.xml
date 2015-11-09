@@ -1154,12 +1154,12 @@
 			<onclick>SendClick(10146,7)</onclick>
 			<visible>Control.IsEnabled(7)</visible>
 		</item>
-		<!-- Rollback Button -->
+		<!-- Auto Update -->
 		<item>
-			<label>24048</label>
-			<icon>DefaultFolderBack.png</icon>
-			<onclick>SendClick(10146,11)</onclick>
-			<visible>Control.IsEnabled(11)</visible>
+			<label>$LOCALIZE[21340] : $INFO[Control.GetLabel(13).index(1)]</label>
+			<icon>material/update.png</icon>
+			<onclick>SendClick(10146,13)</onclick>
+			<visible>Control.IsEnabled(13)</visible>
 		</item>
 		<!-- Changelog Button -->
 		<item>

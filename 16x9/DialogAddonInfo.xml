@@ -53,9 +53,11 @@
 			<visible>false</visible>
 		</control>		
 
-		<!-- Rollback Button -->
-		<control type="button" id="11">
+		<!-- Auto Update -->
+		<control type="radiobutton" id="13">
 			<visible>false</visible>
+			<radiowidth />
+ 			<radioheight />
 		</control>		
 
 		<!-- Changelog Button -->
