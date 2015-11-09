@@ -554,6 +554,54 @@ msgctxt "#31132"
 msgid "View Settings"
 msgstr ""
 
+msgctxt "#31133"
+msgid "Select Viewtype"
+msgstr ""
+
+msgctxt "#31134"
+msgid "Move left"
+msgstr ""
+
+msgctxt "#31135"
+msgid "Move right"
+msgstr ""
+
+msgctxt "#31136"
+msgid "Change icon"
+msgstr ""
+
+msgctxt "#31137"
+msgid "Select Bloc 4 Picture"
+msgstr ""
+
+msgctxt "#31138"
+msgid "Bloc 1 Visibility On Focus"
+msgstr ""
+
+msgctxt "#31139"
+msgid "Bloc 2 Visibility On Focus"
+msgstr ""
+
+msgctxt "#31140"
+msgid "Bloc 3 Visibility On Focus"
+msgstr ""
+
+msgctxt "#31141"
+msgid "Bloc 4 Visibility On Focus"
+msgstr ""
+
+msgctxt "#31142"
+msgid "Go Submenu"
+msgstr ""
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr ""
+
+msgctxt "#31144"
+msgid "Over"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

@@ -57,7 +57,7 @@
 				<aligny>center</aligny>
 				<font>Font60R</font>
 				<textcolor>$VAR[InitColor4]</textcolor>
-				<label>Over</label>
+				<label>31144</label>
 				<animation effect="rotate" start="0" end="45" time="0" center="560,500" condition="true">Conditional</animation>
 			</control>
 

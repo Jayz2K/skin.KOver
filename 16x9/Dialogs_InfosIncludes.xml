@@ -1156,9 +1156,11 @@
 		</item>
 		<!-- Auto Update -->
 		<item>
-			<label>$LOCALIZE[21340] : $INFO[Control.GetLabel(13).index(1)]</label>
+			<label>$INFO[Control.GetLabel(13)]</label>
 			<icon>material/update.png</icon>
-			<onclick>SendClick(10146,13)</onclick>
+			<onclick>Control.SetFocus(13)</onclick>
+			<onclick>Select</onclick>
+			<onclick>Control.SetFocus(301)</onclick>
 			<visible>Control.IsEnabled(13)</visible>
 		</item>
 		<!-- Changelog Button -->

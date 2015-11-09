@@ -3150,7 +3150,7 @@
 							<property name="Info">31108</property>
 						</item>
 						<item id="18">
-							<label>Bloc 1 Visibility On Focus</label>
+							<label>31138</label>
 							<label2>$VAR[FixedB1ShowOFValue]</label2>
 							<icon></icon>
 							<thumb>material/designerblochide.png</thumb>
@@ -3209,7 +3209,7 @@
 							<property name="Info">31117</property>
 						</item>
 						<item id="19">
-							<label>Bloc 2 Visibility On Focus</label>
+							<label>31139</label>
 							<label2>$VAR[FixedB2ShowOFValue]</label2>
 							<icon></icon>
 							<thumb>material/designerblochide.png</thumb>
@@ -3268,7 +3268,7 @@
 							<property name="Info">31118</property>
 						</item>
 						<item id="20">
-							<label>Bloc 3 Visibility On Focus</label>
+							<label>31140</label>
 							<label2>$VAR[FixedB3ShowOFValue]</label2>
 							<icon></icon>
 							<thumb>material/designerblochide.png</thumb>
@@ -3327,7 +3327,7 @@
 							<property name="Info">31119</property>
 						</item>
 						<item id="21">
-							<label>Bloc 4 Visibility On Focus</label>
+							<label>31141</label>
 							<label2>$VAR[FixedB4ShowOFValue]</label2>
 							<icon></icon>
 							<thumb>material/designerblochide.png</thumb>
@@ -3386,7 +3386,7 @@
 							<property name="Info">31120</property>
 						</item>
 						<item id="22">
-							<label>Go Submenu</label>
+							<label>31142</label>
 							<label2>$VAR[FixedB1SubmenuValue]</label2>
 							<icon></icon>
 							<thumb>material/designergosub.png</thumb>
@@ -3447,7 +3447,7 @@
 							<property name="Info">31121</property>
 						</item>
 						<item id="23">
-							<label>Go Back</label>
+							<label>31143</label>
 							<label2>$VAR[GobackValue]</label2>
 							<icon></icon>
 							<thumb>material/designergoback.png</thumb>
