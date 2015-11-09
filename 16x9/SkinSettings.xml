@@ -49,7 +49,7 @@
 				<width>636</width>
 		
 				<!-- Main List -->
-				<control type="wraplist" id="9000">
+				<control type="fixedlist" id="9000">
 					<top>100</top>
 					<left>38</left>
 					<width>560</width>
