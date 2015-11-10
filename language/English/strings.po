@@ -602,6 +602,22 @@ msgctxt "#31144"
 msgid "Over"
 msgstr ""
 
+msgctxt "#31145"
+msgid "PVR"
+msgstr ""
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr ""
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr ""
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

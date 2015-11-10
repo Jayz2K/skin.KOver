@@ -8,6 +8,7 @@
 	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>			
 	<onload>Skin.SetString(HOM.View1.Name,Home Layout)</onload>
 	<onload>Skin.SetString(TV.View1.Name,EPG - Locked)</onload>
+	<onload>Control.SetFocus(50)</onload>
 	<onunload>ClearProperty(SidebarPos,Home)</onunload>
 	<onunload>ClearProperty(DialogPos,Home)</onunload>
 	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
@@ -212,6 +213,25 @@
 					<orientation>vertical</orientation>
 					<usecontrolcoords>true</usecontrolcoords>
 					<visible allowhiddenfocus="true">ControlGroup(9006).HasFocus()</visible>
+
+					<control type="button" id="9007">
+						<width>588</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>540</textwidth>
+						<textoffsetx>12</textoffsetx>
+						<label>..</label>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+						<onleft>Control.SetFocus(50)</onleft>
+						<onright>Control.SetFocus(9003)</onright>
+						<onback>Control.SetFocus(50)</onback>
+						<onclick>Control.SetFocus(50)</onclick>
+					</control>					
 					
 					<!-- Sort Method -->
 					<include name="DiaGroupListButton">
@@ -238,10 +258,9 @@
 						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
 						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
 						<visible>Control.IsEnabled(4)</visible>
-						<onleft>noop</onleft>
-						<onright>10</onright>
-						<onup>noop</onup>
-						<ondown>noop</ondown>
+						<onleft>Control.SetFocus(50)</onleft>
+						<onright>Control.SetFocus(9003)</onright>
+						<onback>Control.SetFocus(50)</onback>
 					</control>
 
 					<!-- Auto Update -->

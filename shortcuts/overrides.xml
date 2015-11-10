@@ -47,18 +47,75 @@
     <background label="smartshortcuts" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||plugin://script.skin.helper.service/?action=backgrounds</background>
     <backgroundBrowse default="special://skin/extras/backgrounds/">True</backgroundBrowse>
 
-    <widget-groupings>
-        <shortcut label="Weather Forecast" widget="WeatherWidget" widgetType="weather">WeatherWidget</shortcut>
+    <!--widget-groupings-->
+        <!--shortcut label="Weather Forecast" widget="WeatherWidget" widgetType="weather">WeatherWidget</shortcut>
         <shortcut label="Favourites">Favourites</shortcut>
-        <shortcut label="TV" widget="TV" widgetType="pvr">pvr://channels/tv/1/;reload=$INFO[Window.Property(recommendedmovies)]&amp;limit=12</shortcut>
+        <shortcut label="TV" widget="TV" widgetType="pvr">pvr://channels/tv/1/;reload=$INFO[Window.Property(recommendedmovies)]&amp;limit=12</shortcut-->
 
         <!-- Skin.Helper widgets -->
-        <shortcut label="Skin Playlists" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists</shortcut>
+        <!--shortcut label="Skin Playlists" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists</shortcut>
         <shortcut label="Library Data" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=librarydataprovider</shortcut>
         <shortcut label="Skin Helper" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=scriptwidgets</shortcut>
         <shortcut label="Extended Info" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=extendedinfo</shortcut>
         <shortcut label="Smart Shortcuts" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=smartshortcuts</shortcut>
         <shortcut label="Smartish" type="32010">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=smartishwidgets</shortcut>
+    </widget-groupings-->
+
+     <widget-groupings> 
+        <!-- script.skin.helper.service default widgets --> 
+        <shortcut label="$ADDON[script.skin.helper.service 32063]" type="32010" condition="System.HasAddon(script.skin.helper.service)">||BROWSE||script.skin.helper.service/?action=widgets&amp;path=skinplaylists,scriptwidgets,smartshortcuts,extendedinfo,smartishwidgets,favourites,static</shortcut> 
+        <content>widgets</content> 
+        <node label="32030"> 
+            <content>video</content> 
+            <node label="32040"> 
+                <content>playlist-video</content> 
+            </node> 
+            <node label="32010"> 
+                <content>addon-video</content> 
+            </node> 
+            <node label="32075"> 
+                <content>videosources</content> 
+            </node> 
+        </node> 
+        <node label="32031"> 
+            <content>music</content> 
+            <node label="32040"> 
+                <content>playlist-audio</content> 
+            </node> 
+            <node label="32011"> 
+                <content>addon-audio</content> 
+            </node> 
+            <node label="32075"> 
+                <content>musicsources</content> 
+            </node> 
+        </node> 
+        <node label="32020"> 
+            <content>picturesources</content> 
+        </node> 
+        <node label="31145">
+            <shortcut label="31146 " widget="TV" widgetType="pvr">pvr://channels/tv/1/;reload=$INFO[Window.Property(recommendedmovies)]&amp;limit=12</shortcut>
+        </node>
+        <node label="31147">
+            <shortcut label="31148" widget="WeatherWidget" widgetType="weather">WeatherWidget</shortcut>
+        </node>
+        <node label="32007"> 
+            <node label="32010"> 
+                <content>addon-video</content> 
+            </node> 
+            <node label="32011"> 
+                <content>addon-audio</content> 
+            </node> 
+            <node label="32012"> 
+                <content>addon-image</content> 
+            </node> 
+            <node label="32009"> 
+                <content>addon-program-plugin</content> 
+            </node> 
+            <shortcut label="10001" type="32021" icon="DefaultAddonProgram.png" widget="addon" widgetType="program" widgetTarget="programs">addons://sources/executable</shortcut> 
+            <shortcut label="1037" type="32014" icon="DefaultAddonVideo.png" widget="addon" widgetType="video" widgetTarget="video">addons://sources/video</shortcut> 
+            <shortcut label="1038" type="32019" icon="DefaultAddonMusic.png" widget="addon" widgetType="music" widgetTarget="music">addons://sources/audio</shortcut> 
+            <shortcut label="1039" type="32020" icon="DefaultAddonPicture.png" widget="addon" widgetType="picture" widgetTarget="pictures">addons://sources/image</shortcut> 
+        </node> 
     </widget-groupings>
 
     <!-- Weather -->
