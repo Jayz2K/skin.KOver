@@ -350,7 +350,7 @@
 					<height>60</height>
 					<itemgap>1</itemgap>
 					<align>right</align>
-					<onleft>noop</onleft>
+					<onleft>50</onleft>
 					<onright>noop</onright>
 					<onup>50</onup>
 					<ondown>noop</ondown>
@@ -370,25 +370,8 @@
 						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
 						<label>33063</label>
 						<onclick>Control.SetFocus(9006)</onclick>
-						<onright>9005</onright>
-					</control>
-
-					<!-- Close -->
-					<control type="button" id="9005">
-						<width>auto</width>
-						<height>60</height>
-						<font>Font27</font>
-						<align>center</align>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-						<label>15067</label>
-						<onclick>Close</onclick>
-						<onleft>9004</onleft>
-						<onright>3</onright>
+						<onleft>Control.SetFocus(50)</onleft>
+						<onright>noop</onright>
 					</control>
 
 				</control>

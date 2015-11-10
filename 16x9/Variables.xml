@@ -282,6 +282,7 @@
 		<value condition="!SubString(ListItem.Art(thumb),Default) + IsEmpty(ListItem.ChannelName) + !IsEmpty(Container.Content)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(ListItem.Property(LongDay))">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="!IsEmpty(ListItem.Art(thumb)) + !SubString(ListItem.Art(thumb),Default)">$INFO[ListItem.Art(thumb)]</value>  
 	</variable>
 	
 	<variable name="ThumbLandscape">
