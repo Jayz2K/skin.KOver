@@ -1,28 +1,701 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<window id="1102" type="dialog">
-	<!-- virtualCustom_Settings -->
-	<defaultcontrol always="true">300</defaultcontrol>
-	<onload condition="IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility,$INFO[Window.Property(xmlfile)]1,Home)</onload>
-	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility2,$INFO[Window.Property(xmlfile)]2,Home)</onload>
-	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility2)) + IsEmpty(Window(Home).Property(DialogVisibility3))">SetProperty(DialogVisibility3,$INFO[Window.Property(xmlfile)]3,Home)</onload>
-	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility3)) + IsEmpty(Window(Home).Property(DialogVisibility4))">SetProperty(DialogVisibility4,$INFO[Window.Property(xmlfile)]4,Home)</onload>
-	<onload condition="!IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))">SetProperty(DialogVisibility5,$INFO[Window.Property(xmlfile)]5,Home)</onload>
-	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility2)) + SubString(Window(Home).Property(DialogVisibility),Custom_Settings) + SubString(Window(Home).Property(DialogVisibility),$NUMBER[1])">ClearProperty(DialogVisibility,Home)</onunload>
-	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility3)) + SubString(Window(Home).Property(DialogVisibility2),Custom_Settings) + SubString(Window(Home).Property(DialogVisibility2),$NUMBER[2])">ClearProperty(DialogVisibility2,Home)</onunload>
-	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility4)) + SubString(Window(Home).Property(DialogVisibility3),Custom_Settings) + SubString(Window(Home).Property(DialogVisibility3),$NUMBER[3])">ClearProperty(DialogVisibility3,Home)</onunload>
-	<onunload condition="IsEmpty(Window(Home).Property(DialogVisibility5)) + SubString(Window(Home).Property(DialogVisibility4),Custom_Settings) + SubString(Window(Home).Property(DialogVisibility4),$NUMBER[4])">ClearProperty(DialogVisibility4,Home)</onunload>
-	<onunload>ClearProperty(DialogVisibility5,Home)</onunload>
-	
-	<controls>
-		
-		<control type="group">
-	
-			
-			<include name="DialogPOS">
-				<param name="DialogName" value="DiaSettings" />
-			</include>	
+<?xml version="1.0" encoding="utf-8"?>
+<window id="1102">
+	<!-- KOver custom settings -->
+	<onload condition="IsEmpty(Skin.String(KOverInit))">Back</onload>	
+	<backgroundcolor>0x00000000</backgroundcolor>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
+	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
+	<onload>Skin.SetString(DIA.View1.BBSidebar,RIGHT)</onload>
+	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>			
+	<onload>Skin.SetString(HOM.View1.Name,Home Layout)</onload>
+	<onload>Skin.SetString(TV.View1.Name,EPG - Locked)</onload>
+	<onunload>ClearProperty(SidebarPos,Home)</onunload>
+	<onunload>ClearProperty(DialogPos,Home)</onunload>
+	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
 
-		</control>	
+	<controls>
+
+		<!-- Decorative Elements -->
+		<control type="group">
+			<!-- Background -->
+			<include name="Wallpaper">
+				<param name="CompPrefix" value="HOM.View1" />
+			</include>
+
+			<!-- Background -->
+			<control type="image">
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+			</control>
+
+			<!-- Left Panel Background -->
+			<control type="image">
+				<top>0</top>
+				<left>0</left>
+				<width>660</width>
+				<height>1080</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
+			</control>				
 		
+		</control>
+
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="100" delay="100" condition="!IsEmpty(Window(Home).Property(DialogVisibility))">Conditional</animation>
+
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>12</left>
+				<top>0</top>
+				<height>356</height>
+				<width>636</width>
+
+				<control type="image">
+					<left>24</left>
+					<top>24</top>
+					<width>588</width>
+					<height>308</height>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">DefaultAddonService.png</texture>
+				</control>
+
+			</control>	
+
+			<!-- Bloc 2 -->
+			<control type="group">
+				<left>12</left>
+				<top>368</top>
+				<height>356</height>
+				<width>636</width>
+
+				<control type="textbox" id="6">
+					<left>24</left>
+					<top>24</top>
+					<width>588</width>
+					<height>308</height>
+					<font>Font27</font>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
+				</control>
+
+			</control>		
+
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>12</left>
+				<top>724</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>$INFO[System.CurrentWindow]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+					<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
+				</control>		
+
+				<!-- Settings level -->
+				<control type="button" id="20"> 
+					<top>80</top>
+					<left>24</left>
+					<width>588</width>
+					<height>156</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font27</font>
+					<onright>noop</onright> 
+					<onup>noop</onup> 
+					<ondown>noop</ondown> 
+					<onclick>SettingsLevelChange</onclick> 
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor> 
+					<focusedcolor>$INFO[Skin.String(Color.DIATxtNF)]</focusedcolor> 
+					<invalidcolor>$INFO[Skin.String(Color.DIATxtNF)]</invalidcolor> 
+					<disabledcolor>$INFO[Skin.String(Color.DIATxtNF)]</disabledcolor> 
+					<visible allowhiddenfocus="true"></visible> 
+				</control> 		
+
+				<!-- Button grouplist -->
+				<control type="grouplist" id="9006">
+					<right>24</right>
+					<top>267</top>
+					<width>588</width>
+					<height>60</height>
+					<itemgap>1</itemgap>
+					<align>right</align>
+					<onleft>noop</onleft>
+					<onright>3</onright>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<orientation>horizontal</orientation>
+
+					<!-- Settings level -->
+					<control type="button" id="9004">
+						<width>auto</width>
+						<height>60</height>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+						<label>31126</label>
+						<onclick>SettingsLevelChange</onclick>
+						<onright>9005</onright>
+					</control>
+
+					<!-- Close -->
+					<control type="button" id="9005">
+						<width>auto</width>
+						<height>60</height>
+						<font>Font27</font>
+						<align>center</align>
+						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+						<label>15067</label>
+						<onclick>Close</onclick>
+						<onleft>9004</onleft>
+						<onright>3</onright>
+					</control>
+
+				</control>
+
+			</control>							
+
+		</control>				
+
+		<!-- Window Content-->
+		<control type="group">
+
+			<control type="label">
+				<top>72</top>
+				<left>752</left>
+				<width>588</width>
+				<height>12</height>
+				<align>left</align>
+				<font>Font36</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<label>31125</label>
+			</control>			
+
+			<!-- Main list -->
+			<control type="list" id="9000">
+				<top>123</top>
+				<left>752</left>
+				<height>258</height>
+				<width>1086</width>
+				<itemgap>6</itemgap>
+				<ondown condition="Control.IsVisible(9100)">9100</ondown>
+				<ondown condition="Control.IsVisible(9200)">9200</ondown>
+				<ondown condition="Control.IsVisible(9300)">9300</ondown>
+				<orientation>horizontal</orientation>
+				<usecontrolcoords>true</usecontrolcoords>
+				<visible allowhiddenfocus="true">true</visible>
+
+				<itemlayout width="200" height="120">
+					<control type="image">
+						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+					</control>
+					<control type="label">
+						<height>120</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>FontSmall</font>
+						<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</itemlayout>
+
+				<focusedlayout width="200" height="120">
+					<control type="image">
+						<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+						<animation effect="fade" start="100" end="50" time="0" condition="ControlGroup(9100).HasFocus() | ControlGroup(9200).HasFocus() | ControlGroup(9300).HasFocus()">Conditional</animation>
+					</control>
+					<control type="label">
+						<height>120</height>
+						<label>$INFO[ListItem.Label]</label>
+						<font>FontSmall</font>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+				</focusedlayout>
+
+				<content>
+					<item>
+						<label>General</label>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>Auto Build</label>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>Import / Export</label>
+						<onclick>noop</onclick>
+					</item>
+				</content>
+			</control>					
+
+			<!-- Sub list General -->
+			<control type="grouplist" id="9100">
+				<left>752</left>
+				<top>326</top>
+				<width>1086</width>
+				<height>676</height>
+				<onleft>9003</onleft>
+				<onright>noop</onright>
+				<onup>9000</onup>
+				<ondown>noop</ondown>
+				<onback>3</onback>
+				<orientation>vertical</orientation>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,General)</visible>
+
+				<!-- Enable PVR thumbs -->
+				<control type="radiobutton" id="9101">
+					<label>Enable PVR thumbs</label>
+					<label></label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<onclick>Skin.ToggleSetting(SkinHelper.EnablePVRThumbs)</onclick>
+					<selected>Skin.HasSetting(SkinHelper.EnablePVRThumbs)</selected>
+				</control>		
+
+				<!-- Enable Designer -->
+				<control type="radiobutton" id="9102">
+					<label>Enable Designer</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<onclick>Skin.ToggleSetting(DesignerShow)</onclick>
+					<selected>Skin.HasSetting(DesignerShow)</selected>
+				</control>		
+
+				<!-- Enable Color Tool -->
+				<control type="radiobutton" id="9103">
+					<label>Enable Color tool</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<onclick>Skin.ToggleSetting(ColortoolShow)</onclick>
+					<selected>Skin.HasSetting(ColortoolShow)</selected>
+				</control>	
+
+				<!-- Separator -->
+				<control type="image" id="9104">
+					<width>1086</width>
+					<height>60</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+				</control>
+
+				<!-- Show debug infos -->
+				<control type="radiobutton" id="9105">
+					<label>Show Debug infos</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
+					<selected>Skin.HasSetting(DebugInfo)</selected>
+				</control>	
+						
+			</control>
+
+			<!-- Sub list Auto build -->
+			<control type="grouplist" id="9200">
+				<left>752</left>
+				<top>326</top>
+				<width>1086</width>
+				<height>676</height>
+				<onleft>9003</onleft>
+				<onright>noop</onright>
+				<onup>9000</onup>
+				<ondown>noop</ondown>
+				<onback>3</onback>
+				<orientation>vertical</orientation>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,Auto Build)</visible>
+
+				<!-- Build PVR -->
+				<control type="label" id="9201">
+					<label>Build KOver for PVR</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+				</control>	
+
+				<!-- PVR Horizontal -->
+				<control type="button" id="9202">
+					<label>Horizontal</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+				</control>
+
+				<!-- PVR Vertical -->
+				<control type="button" id="9203">
+					<label>Vertical</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+				</control>
+
+				<!-- Separator -->
+				<control type="image" id="9204">
+					<width>1086</width>
+					<height>60</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+				</control>
+
+				<!-- Build Fullscreen -->
+				<control type="label" id="9205">
+					<label>Build KOver fullscreen</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+				</control>	
+
+				<!-- Classic -->
+				<control type="button" id="9206">
+					<label>Classic</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+				</control>
+
+				<!-- 2/3 -->
+				<control type="button" id="9207">
+					<label>Two-thirds</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+				</control>
+
+				<!-- Hybrid -->
+				<control type="button" id="9208">
+					<label>Hybrid</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+				</control>
+						
+			</control>		
+
+			<!-- Sub list Import / Export -->
+			<control type="grouplist" id="9300">
+				<left>752</left>
+				<top>326</top>
+				<width>1086</width>
+				<height>676</height>
+				<onleft>9003</onleft>
+				<onright>noop</onright>
+				<onup>9000</onup>
+				<ondown>noop</ondown>
+				<onback>3</onback>
+				<orientation>vertical</orientation>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,Import / Export)</visible>
+
+				<!-- Import -->
+				<control type="button" id="9301">
+					<label>Import...</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
+				</control>
+
+				<!-- Separator -->
+				<control type="image" id="9302">
+					<width>1086</width>
+					<height>60</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+				</control>
+
+				<!-- Backup All viewtypes -->
+				<control type="button" id="9303">
+					<label>Backup all viewtype (without Home menu)</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=HOM.|VDO.|MUS.|PIC.|TV.|PRO.,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Backup Home menu -->
+				<control type="button" id="9304">
+					<label>Backup Home menu</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Full Backup -->
+				<control type="button" id="9305">
+					<label>Full backup (viewtypes and Home menu)</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Separator -->
+				<control type="image" id="9306">
+					<width>1086</width>
+					<height>60</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+				</control>
+
+				<!-- Export Home section -->
+				<control type="button" id="9307">
+					<label>Export all 'Home' viewtypes</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=HOM.,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Export Video section -->
+				<control type="button" id="9308">
+					<label>Export all 'Video' viewtypes</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=VDO.,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Export Music section -->
+				<control type="button" id="9309">
+					<label>Export all 'Music' viewtypes</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=MUS.,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Export Pictures section -->
+				<control type="button" id="9310">
+					<label>Export all 'Pictures' viewtypes</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=PIC.,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Export TV section -->
+				<control type="button" id="9311">
+					<label>Export all 'TV' viewtypes</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=TV.,promptfilename=true)</onclick>
+				</control>
+
+				<!-- Export Programs section -->
+				<control type="button" id="9312">
+					<label>Export all 'Programs' viewtypes</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=backup,filter=PRO.,promptfilename=true)</onclick>
+				</control>	
+						
+			</control>				
+
+		</control>		
+
 	</controls>
+
 </window>
