@@ -414,14 +414,28 @@
 					<item id="1">
 						<label>480</label>
 						<label2>31400</label2>
-						<icon>material/Paint.png</icon>
+						<icon>material/designervisibility.png</icon>
 						<onclick>activatewindow(AppearanceSettings)</onclick>
 					</item>
 					<item id="2">
 						<label>20077</label>
 						<label2>31411</label2>
-						<icon>DefaultAddonSkin.png</icon>
+						<icon>material/Paint.png</icon>
 						<onclick>activatewindow(SkinSettings)</onclick>
+					</item>
+					<item id="3">
+						<label>31000</label>
+						<label2>31411</label2>
+						<icon>DefaultAddonSkin.png</icon>
+						<onclick>activatewindow(1102)</onclick>
+						<visible>Skin.HasSetting(DesignerShow)</visible>
+					</item>
+					<item id="4">
+						<label>31067</label>
+						<label2>31411</label2>
+						<icon>material/Palette.png</icon>
+						<onclick>activatewindow(1100)</onclick>
+						<visible>Skin.HasSetting(ColortoolShow)</visible>
 					</item>
 				</content>
 			</control>			

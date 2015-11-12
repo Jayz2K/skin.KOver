@@ -56,7 +56,7 @@
 						<item id="1">
 							<label>-</label>
 							<icon>osd/skipprevious.png</icon>
-							<onclick>PlayerControl(Previous)</onclick>
+							<onclick>PlayerControl(SmallSkipBackward)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV)</visible>
 						</item>			
 						<item id="2">
@@ -85,7 +85,7 @@
 						<item id="7">
 							<label>-</label>
 							<icon>osd/skipnext.png</icon>
-							<onclick>PlayerControl(Next)</onclick>
+							<onclick>PlayerControl(SmallSkipForward)</onclick>
 							<visible>!VideoPlayer.Content(LiveTV)</visible>
 						</item>				
 						<item id="8">

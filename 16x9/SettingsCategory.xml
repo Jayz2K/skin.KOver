@@ -204,7 +204,6 @@
 				<onleft>9003</onleft>
 				<onup>noop</onup>
 				<ondown>5</ondown>
-				<onback>9003</onback>
 				<orientation>horizontal</orientation>
 				<usecontrolcoords>true</usecontrolcoords>
 				<visible>true</visible>
