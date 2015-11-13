@@ -42,7 +42,7 @@
 		</control>
 
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="100" delay="100" condition="Window.IsVisible(script-skinshortcuts.xml)">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="100" delay="100" condition="Window.IsVisible(script-skinshortcuts.xml) | !IsEmpty(Window(Home).Property(DialogVisibility))">Conditional</animation>
 
 			<!-- Bloc 1 -->
 			<control type="group">
