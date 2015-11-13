@@ -916,6 +916,7 @@
 							<icon></icon>
 							<thumb>material/designerrename.png</thumb>
 							<onclick>Skin.SetString($INFO[Container(9000).ListItem.Property(ViewName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]Name)</onclick>
+							<onclick>ReloadSkin()</onclick>
 							<visible>!IsEmpty(Container(9100).ListItem.Label) + StringCompare(Container(9400).ListItem.Property(NumTemp),SETTINGS)</visible>
 							<visible>![StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)] + ![StringCompare(Container(9000).ListItem.Property(ViewName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)]</visible>
 							<property name="NumTemp"></property>

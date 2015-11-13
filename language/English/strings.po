@@ -618,6 +618,182 @@ msgctxt "#31148"
 msgid "Weather Forecast"
 msgstr ""
 
+msgctxt "#31149"
+msgid "Edit Home menu"
+msgstr ""
+
+msgctxt "#31150"
+msgid "Auto build"
+msgstr ""
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr ""
+
+msgctxt "#31152"
+msgid "Enable PVR thumbs"
+msgstr ""
+
+msgctxt "#31153"
+msgid "Enable Designer"
+msgstr ""
+
+msgctxt "#31154"
+msgid "Enable Color tool"
+msgstr ""
+
+msgctxt "#31155"
+msgid "Show Debug Infos"
+msgstr ""
+
+msgctxt "#31156"
+msgid "Build KOver for PVR"
+msgstr ""
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr ""
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr ""
+
+msgctxt "#31159"
+msgid "Build KOver fullscreen"
+msgstr ""
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr ""
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr ""
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr ""
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr ""
+
+msgctxt "#31164"
+msgid "Backup all viewtype (without Home menu)"
+msgstr ""
+
+msgctxt "#31165"
+msgid "Backup Home menu"
+msgstr ""
+
+msgctxt "#31166"
+msgid "Full backup (viewtypes and Home menu)"
+msgstr ""
+
+msgctxt "#31167"
+msgid "Export all 'Home' viewtypes"
+msgstr ""
+
+msgctxt "#31168"
+msgid "Export all 'Video' viewtypes"
+msgstr ""
+
+msgctxt "#31169"
+msgid "Export all 'Music' viewtypes"
+msgstr ""
+
+msgctxt "#31170"
+msgid "Export all 'Pictures' viewtypes"
+msgstr ""
+
+msgctxt "#31171"
+msgid "Export all 'TV' viewtypes"
+msgstr ""
+
+msgctxt "#31172"
+msgid "Export all 'Programs' viewtypes"
+msgstr ""
+
+msgctxt "#31173"
+msgid "Allows to set home menu, submenus and widgets and to choose viewtypes and backgrounds."
+msgstr ""
+
+msgctxt "#31174"
+msgid "Enable this option to allow downloading arts in PVR. This can also download arts in the EPG guide by changing settings in skin.helper script."
+msgstr ""
+
+msgctxt "#31175"
+msgid "Enable this option to give access to the Designer and build your own viewtypes (advanced)."
+msgstr ""
+
+msgctxt "#31176"
+msgid "Enable this option to give access to the Color tool, change the skin colors and create color sets (advanced)."
+msgstr ""
+
+msgctxt "#31177"
+msgid "Enable this option to show debug infos (advanced)."
+msgstr ""
+
+msgctxt "#31178"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in horizontal  / bottom position. Recommended for a mximum view of the playing video."
+msgstr ""
+
+msgctxt "#31179"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in vertical / left position. Recommended for a mximum view of the playing video."
+msgstr ""
+
+msgctxt "#31180"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 3/3 of the screen. Recommended for medias library player."
+msgstr ""
+
+msgctxt "#31181"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 2/3 of the screen. Recommended for medias library player."
+msgstr ""
+
+msgctxt "#31182"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 2/3 and 3/3 of the screen. Recommended for medias library player."
+msgstr ""
+
+msgctxt "#31183"
+msgid "Restore backups, apply new / stored color sets, apply new / stored viewtypes sets."
+msgstr ""
+
+msgctxt "#31184"
+msgid "Backup ALL current viewtypes (from all sections). Home menu is not included. Useful for sharing a complete viewtypes' set."
+msgstr ""
+
+msgctxt "#31185"
+msgid "Backup Home menu. Viewtypes are not included."
+msgstr ""
+
+msgctxt "#31186"
+msgid "Full backup. Viewtypes AND Home menu are included. Useful for duplication on user's multiple devices."
+msgstr ""
+
+msgctxt "#31187"
+msgid "Backup current viewtypes from 'Home' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr ""
+
+msgctxt "#31188"
+msgid "Backup current viewtypes from 'Video' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr ""
+
+msgctxt "#31189"
+msgid "Backup current viewtypes from 'Music' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr ""
+
+msgctxt "#31190"
+msgid "Backup current viewtypes from 'Pictures' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr ""
+
+msgctxt "#31191"
+msgid "Backup current viewtypes from 'TV' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr ""
+
+msgctxt "#31192"
+msgid "Backup current viewtypes from 'Programs' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"
@@ -662,4 +838,16 @@ msgstr ""
 
 msgctxt "#31411"
 msgid "[B]Configure KOver settings[/B][CR][CR]Create / modify viewtypes · Configure Home menu · Change skin colors"
+msgstr ""
+
+msgctxt "#31500"
+msgid "This category contains the settings for home menu editing and showing / hiding advanced features."
+msgstr ""
+
+msgctxt "#31501"
+msgid "This category contains the settings for applying automatic layouts and color sets."
+msgstr ""
+
+msgctxt "#31502"
+msgid "This category contains the settings for importing / exporting user's configurations of KOver."
 msgstr ""

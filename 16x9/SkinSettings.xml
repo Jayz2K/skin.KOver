@@ -69,7 +69,8 @@
 				<height>356</height>
 				<width>636</width>
 
-				<control type="textbox" id="6">
+				<control type="textbox">
+					<label>$VAR[SettingsInfos]</label>
 					<left>24</left>
 					<top>24</top>
 					<width>588</width>
@@ -227,16 +228,19 @@
 
 				<content>
 					<item>
-						<label>General</label>
+						<label>31007</label>
 						<onclick>noop</onclick>
+						<label2>31500</label2>
 					</item>
 					<item>
-						<label>Auto Build</label>
+						<label>31150</label>
 						<onclick>noop</onclick>
+						<label2>31501</label2>
 					</item>
 					<item>
-						<label>Import / Export</label>
+						<label>31151</label>
 						<onclick>noop</onclick>
+						<label2>31502</label2>
 					</item>
 				</content>
 			</control>					
@@ -253,11 +257,11 @@
 				<onup>9000</onup>
 				<ondown>noop</ondown>
 				<orientation>vertical</orientation>
-				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,General)</visible>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,$LOCALIZE[31007])</visible>
 
 				<!-- Edit Home Menu -->
-				<control type="button" id="9201">
-					<label>Edit Home menu</label>
+				<control type="button" id="9101">
+					<label>31149</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -281,7 +285,7 @@
 
 				<!-- Enable PVR thumbs -->
 				<control type="radiobutton" id="9103">
-					<label>Enable PVR thumbs</label>
+					<label>31152</label>
 					<label></label>
 					<width>1086</width>
 					<height>60</height>
@@ -305,7 +309,7 @@
 
 				<!-- Enable Designer -->
 				<control type="radiobutton" id="9104">
-					<label>Enable Designer</label>
+					<label>31153</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -328,7 +332,7 @@
 
 				<!-- Enable Color Tool -->
 				<control type="radiobutton" id="9105">
-					<label>Enable Color tool</label>
+					<label>31154</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -358,7 +362,7 @@
 
 				<!-- Show debug infos -->
 				<control type="radiobutton" id="9107">
-					<label>Show Debug infos</label>
+					<label>31155</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -394,11 +398,11 @@
 				<onup>9000</onup>
 				<ondown>noop</ondown>
 				<orientation>vertical</orientation>
-				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,Auto Build)</visible>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,$LOCALIZE[31150])</visible>
 
 				<!-- Build PVR -->
 				<control type="label" id="9201">
-					<label>Build KOver for PVR</label>
+					<label>31156</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -407,7 +411,7 @@
 
 				<!-- PVR Horizontal -->
 				<control type="button" id="9202">
-					<label>Horizontal</label>
+					<label>31157</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -424,7 +428,7 @@
 
 				<!-- PVR Vertical -->
 				<control type="button" id="9203">
-					<label>Vertical</label>
+					<label>31158</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -448,7 +452,7 @@
 
 				<!-- Build Fullscreen -->
 				<control type="label" id="9205">
-					<label>Build KOver fullscreen</label>
+					<label>31159</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -457,7 +461,7 @@
 
 				<!-- Classic -->
 				<control type="button" id="9206">
-					<label>Classic</label>
+					<label>31160</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -474,7 +478,7 @@
 
 				<!-- 2/3 -->
 				<control type="button" id="9207">
-					<label>Two-thirds</label>
+					<label>31161</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -491,7 +495,7 @@
 
 				<!-- Hybrid -->
 				<control type="button" id="9208">
-					<label>Hybrid</label>
+					<label>31162</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -520,11 +524,11 @@
 				<onup>9000</onup>
 				<ondown>noop</ondown>
 				<orientation>vertical</orientation>
-				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,Import / Export)</visible>
+				<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Label,$LOCALIZE[31151])</visible>
 
 				<!-- Import -->
 				<control type="button" id="9301">
-					<label>Import...</label>
+					<label>31163</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -548,7 +552,7 @@
 
 				<!-- Backup All viewtypes -->
 				<control type="button" id="9303">
-					<label>Backup all viewtype (without Home menu)</label>
+					<label>31164</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -565,7 +569,7 @@
 
 				<!-- Backup Home menu -->
 				<control type="button" id="9304">
-					<label>Backup Home menu</label>
+					<label>31165</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -582,7 +586,7 @@
 
 				<!-- Full Backup -->
 				<control type="button" id="9305">
-					<label>Full backup (viewtypes and Home menu)</label>
+					<label>31166</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -606,7 +610,7 @@
 
 				<!-- Export Home section -->
 				<control type="button" id="9307">
-					<label>Export all 'Home' viewtypes</label>
+					<label>31167</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -623,7 +627,7 @@
 
 				<!-- Export Video section -->
 				<control type="button" id="9308">
-					<label>Export all 'Video' viewtypes</label>
+					<label>31168</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -640,7 +644,7 @@
 
 				<!-- Export Music section -->
 				<control type="button" id="9309">
-					<label>Export all 'Music' viewtypes</label>
+					<label>31169</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -657,7 +661,7 @@
 
 				<!-- Export Pictures section -->
 				<control type="button" id="9310">
-					<label>Export all 'Pictures' viewtypes</label>
+					<label>31170</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -674,7 +678,7 @@
 
 				<!-- Export TV section -->
 				<control type="button" id="9311">
-					<label>Export all 'TV' viewtypes</label>
+					<label>31171</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -691,7 +695,7 @@
 
 				<!-- Export Programs section -->
 				<control type="button" id="9312">
-					<label>Export all 'Programs' viewtypes</label>
+					<label>31172</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
