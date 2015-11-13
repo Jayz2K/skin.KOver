@@ -1131,12 +1131,12 @@
 					<icon>material/view2.png</icon>
 					<onclick>Container.SetViewMode(51)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View2.Name))">Control.SetFocus(51)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,1)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,1)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,1)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,1)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,1)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,1)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,1)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,1)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,1)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,1)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,1)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View2.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,1)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View3.Name)]</label>
@@ -1144,12 +1144,12 @@
 					<icon>material/view3.png</icon>
 					<onclick>Container.SetViewMode(52)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View3.Name))">Control.SetFocus(52)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,2)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,2)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,2)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,2)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,2)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,2)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,2)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,2)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,2)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,2)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,2)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View3.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,2)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View4.Name)]</label>
@@ -1157,12 +1157,12 @@
 					<icon>material/view4.png</icon>
 					<onclick>Container.SetViewMode(53)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View4.Name))">Control.SetFocus(53)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,3)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,3)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,3)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,3)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,3)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,3)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,3)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,3)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,3)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,3)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,3)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View4.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,3)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View5.Name)]</label>
@@ -1170,12 +1170,12 @@
 					<icon>material/view5.png</icon>
 					<onclick>Container.SetViewMode(54)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View5.Name))">Control.SetFocus(54)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,4)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,4)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,4)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,4)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,4)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,4)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,4)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,4)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,4)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,4)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,4)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View5.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,4)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View6.Name)]</label>
@@ -1183,12 +1183,12 @@
 					<icon>material/view6.png</icon>
 					<onclick>Container.SetViewMode(55)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View6.Name))">Control.SetFocus(55)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,5)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,5)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,5)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,5)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,5)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,5)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,5)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,5)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,5)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,5)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,5)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View6.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,5)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View7.Name)]</label>
@@ -1196,12 +1196,12 @@
 					<icon>material/view7.png</icon>
 					<onclick>Container.SetViewMode(56)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View7.Name))">Control.SetFocus(56)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,6)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,6)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,6)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,6)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,6)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,6)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,6)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,6)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,6)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,6)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,6)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View7.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,6)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View8.Name)]</label>
@@ -1209,12 +1209,12 @@
 					<icon>material/view8.png</icon>
 					<onclick>Container.SetViewMode(57)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View8.Name))">Control.SetFocus(57)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,7)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,7)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,7)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,7)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,7)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,7)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,7)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,7)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,7)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,7)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,7)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View8.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,7)</onclick>
 				</item>
 				<item>
 					<label fallback="24020">$INFO[Skin.String($PARAM[Section].View9.Name)]</label>
@@ -1222,12 +1222,12 @@
 					<icon>material/view9.png</icon>
 					<onclick>Container.SetViewMode(58)</onclick>
 					<onclick condition="!IsEmpty(Skin.String($PARAM[Section].View9.Name))">Control.SetFocus(58)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(10035, 9000,1, 9100,8)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(10035, 9000,2, 9100,8)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(10035, 9000,3, 9100,8)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(10035, 9000,4, 9100,8)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(10035, 9000,5, 9100,8)</onclick>
-					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(10035, 9000,6, 9100,8)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,VDO)">ActivateWindowAndFocus(1102, 9000,1, 9100,8)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,MUS)">ActivateWindowAndFocus(1102, 9000,2, 9100,8)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,TV)">ActivateWindowAndFocus(1102, 9000,3, 9100,8)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,PIC)">ActivateWindowAndFocus(1102, 9000,4, 9100,8)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,PRO)">ActivateWindowAndFocus(1102, 9000,5, 9100,8)</onclick>
+					<onclick condition="IsEmpty(Skin.String($PARAM[Section].View9.Name)) + StringCompare(Container(97).ListItem.Label2,WEA)">ActivateWindowAndFocus(1102, 9000,6, 9100,8)</onclick>
 				</item>
 			</content>
 		</control>
