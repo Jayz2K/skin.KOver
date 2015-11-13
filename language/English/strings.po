@@ -619,7 +619,7 @@ msgid "Weather Forecast"
 msgstr ""
 
 msgctxt "#31149"
-msgid "Edit Home menu"
+msgid "Edit Home menu..."
 msgstr ""
 
 msgctxt "#31150"
@@ -797,19 +797,19 @@ msgstr ""
 #Settings strings
 
 msgctxt "#31400"
-msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
+msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
 msgstr ""
 
 msgctxt "#31401"
-msgid "[B]Configure video settings[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
+msgid "[B]Configure video settings[/B][CR][CR]Manage your video library[CR]Set video playback options[CR]Change video listing options[CR]Set subtitle fonts"
 msgstr ""
 
 msgctxt "#31402"
-msgid "[B]Configure music settings[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
+msgid "[B]Configure music settings[/B][CR][CR]Manage your music library[CR]Set music playback options[CR]Change music listing options[CR]Setup song submission[CR]Set karaoke options"
 msgstr ""
 
 msgctxt "#31403"
-msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options · Configure slideshow"
+msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options[CR]Configure slideshow"
 msgstr ""
 
 msgctxt "#31404"
@@ -819,25 +819,37 @@ msgstr ""
 #empty string with id 31405
 
 msgctxt "#31406"
-msgid "[B]Configure system settings[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
+msgid "[B]Configure system settings[/B][CR][CR]Setup and calibrate displays[CR]Configure audio output[CR]Setup remote controls[CR]Set power saving options[CR]Enable debugging[CR]Setup master lock"
 msgstr ""
 
 #empty string with id 31407
 
 msgctxt "#31408"
-msgid "[B]Configure add-ons[/B][CR][CR]Manage your installed add-ons · Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
+msgid "[B]Configure add-ons[/B][CR][CR]Manage your installed add-ons[CR]Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
 msgstr ""
 
 msgctxt "#31409"
-msgid "[B]Configure TV settings[/B][CR][CR]Change full screen info · Manage EPG data settings"
+msgid "[B]Configure TV settings[/B][CR][CR]Change full screen info[CR]Manage EPG data settings"
 msgstr ""
 
 msgctxt "#31410"
-msgid "[B]Configure network settings[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgid "[B]Configure network settings[/B][CR][CR]Setup control of Kodi via UPnP and HTTP[CR]Configure file sharing[CR]Enable Zeroconf[CR]Configure AirPlay"
 msgstr ""
 
 msgctxt "#31411"
-msgid "[B]Configure KOver settings[/B][CR][CR]Create / modify viewtypes · Configure Home menu · Change skin colors"
+msgid "[B]Configure KOver settings[/B][CR][CR]Configure Home menu[CR]Enable advanced tools[CR]Auto build viewtypes sets[CR]Export / Import features"
+msgstr ""
+
+msgctxt "#31412"
+msgid "[B]Configure KOver viewtypes[/B][CR][CR]Create / delete / modify viewtypes using the WYSIWYG editor : KOver Designer"
+msgstr ""
+
+msgctxt "#31413"
+msgid "[B]Configure KOver colors[/B][CR][CR]Create / modify color scheme[CR]Change colors for each parts of the viewtypes[CR]Import previous or shared color sets"
+msgstr ""
+
+msgctxt "#31414"
+msgid "[B]Configure profiles settings[/B][CR][CR]Enable / disable login screen[CR]Set profiles' names and pictures[CR]Set lock settings"
 msgstr ""
 
 msgctxt "#31500"
