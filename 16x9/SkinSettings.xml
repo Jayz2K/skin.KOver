@@ -423,7 +423,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultPVRH.zip)</onclick>
 				</control>
 
 				<!-- PVR Vertical -->
@@ -440,7 +440,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultPVRV.zip)</onclick>
 				</control>
 
 				<!-- Separator -->

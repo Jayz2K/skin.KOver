@@ -9615,6 +9615,86 @@
 		</control>
 	</include>
 
+		<include name="DiaBusy">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>356</height>
+				<width>636</width>
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>503</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>					
+
+				<!-- Please wait -->
+				<control type="label">
+					<top>80</top>
+					<left>24</left>
+					<width>588</width>
+					<height>156</height>height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font36</font>
+					<label>20186</label>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<wrapmultiline>true</wrapmultiline>
+				</control>
+
+				<!-- Scroll -->
+				<control type="image">
+					<left>230</left>
+					<top>200</top>
+					<width>176</width>
+					<height>2</height>
+					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>230</left>
+					<top>200</top>
+					<width>24</width>
+					<height>2</height>
+					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATitle)]">common/white.png</texture>
+					<animation effect="slide" start="0,0" end="152,0" time="800" loop="true" tween="cubic" easing="out" condition="true">Conditional</animation>
+				</control>					
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+			
+			</control>
+		</control>
+	</include>
+
 	<include name="Model">
 	
 		<control type="group">
