@@ -401,7 +401,7 @@
 					<onclick condition="Skin.String(IdleFade,15)">Skin.SetString(IdleFade,20)</onclick>
 					<onclick condition="Skin.String(IdleFade,10)">Skin.SetString(IdleFade,15)</onclick>
 					<onclick condition="Skin.String(IdleFade,5)">Skin.SetString(IdleFade,10)</onclick>
-					<onclick condition="Skin.String(IdleFade,30)">Skin.SetString(IdleFade,5)</onclick>
+					<onclick condition="Skin.String(IdleFade,30) | IsEmpty(Skin.String(IdleFade))">Skin.SetString(IdleFade,5)</onclick>
 				</control>	
 
 				<!-- Separator -->
