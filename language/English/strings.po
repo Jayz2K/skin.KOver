@@ -794,6 +794,14 @@ msgctxt "#31192"
 msgid "Backup current viewtypes from 'Programs' section. Home menu is not included. Useful for sharing a viewtypes' set."
 msgstr ""
 
+msgctxt "#31193"
+msgid "Set the IDLEFADE timer (Designer specific feature) :"
+msgstr ""
+
+msgctxt "#31194"
+msgid "Show 'Watched' flags"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

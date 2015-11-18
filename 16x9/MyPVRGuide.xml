@@ -40,7 +40,12 @@
 
 			<!-- Bloc 4 / special background -->
 			<control type="group">
-				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
 				<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B4ShowOF,HIDE)">Conditional</animation>
 				<include name="BlocPosition">
 					<param name="Prefix" value="TV.View1" />
@@ -56,7 +61,13 @@
 			
 			<!-- Bloc 3-->
 			<control type="group">
-				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation><animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B3ShowOF,HIDE)">Conditional</animation>		
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B3Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B3ShowOF,HIDE)">Conditional</animation>		
 
 				<include name="BlocPosition">
 					<param name="Prefix" value="TV.View1" />
@@ -86,7 +97,12 @@
 			
 			<!-- Bloc 4 -->
 			<control type="group">
-				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B4Show,IDLEFADE)">Conditonal</animation>
 				<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B4ShowOF,HIDE)">Conditional</animation>
 				<include name="BlocPosition">
 					<param name="Prefix" value="TV.View1" />
@@ -113,7 +129,12 @@
 				<control type="group">
 					<visible>Control.IsVisible(10)</visible>
 					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String(TV.View1.B1Show,HIDDEN)">Conditional</animation>
-					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B1Show,IDLEFADE)">Conditonal</animation>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B1ShowOF,HIDE)">Conditional</animation>
 					
 					<include name="BlocPosition">
@@ -173,7 +194,12 @@
 					<param name="BlocID" value="B2" />
 				</include>
 				<visible>!Window.IsVisible(contextmenu)</visible>
-				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B2Show,IDLEFADE)">Conditonal</animation>
 				<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B2ShowOF,HIDE)">Conditional</animation>
 
 				<control type="image">
@@ -279,7 +305,12 @@
 			<control type="group"> 
 				<visible>Control.IsVisible(99)</visible>
 				<animation effect="fade" start="100" end="0" time="0" condition="Skin.String(TV.View1.B5Show,HIDDEN)">Conditional</animation>
-				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B5Show,IDLEFADE)">Conditonal</animation>
 				<animation effect="fade" start="100" end="0" time="200" condition="!ControlGroup(99).HasFocus() + !Control.HasFocus(97) + !Window.IsVisible(contextmenu) + Skin.String(TV.View1.B5Show,ONFOCUS)">Conditonal</animation>
 				<include name="BlocPosition">
 					<param name="Prefix" value="TV.View1" />
@@ -361,7 +392,12 @@
 			<animation effect="slide" start="0,0" end="0,120" time="100" condition="[Skin.String(TV.View1.DIAPanel,LEFT) | Skin.String(TV.View1.DIAPanel,RIGHT)] + Skin.String(TV.View1.BBSidebar,BOTTOM) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="-120,0" time="100" condition="[Skin.String(TV.View1.DIAPanel,TOP) | Skin.String(TV.View1.DIAPanel,BOTTOM)] + Skin.String(TV.View1.BBSidebar,LEFT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
 			<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String(TV.View1.DIAPanel,TOP) | Skin.String(TV.View1.DIAPanel,BOTTOM)] + Skin.String(TV.View1.BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(TV.View1.DIASlide,PUSH)">Conditional</animation>
-			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>													
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
+			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.BBSBHide,IDLEFADE)">Conditonal</animation>												
 	
 			<control type="group">		
 				<visible>Skin.String(TV.View1.BBSidebar,LEFT) | Skin.String(TV.View1.BBSidebar,RIGHT)</visible>	

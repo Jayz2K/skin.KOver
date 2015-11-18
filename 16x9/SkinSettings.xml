@@ -353,6 +353,57 @@
 					<selected>Skin.HasSetting(ColortoolShow)</selected>
 				</control>	
 
+				<!-- Enable Watched Flag -->
+				<control type="radiobutton" id="9106">
+					<label>31194</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<onclick>Skin.ToggleSetting(WatchedFlag)</onclick>
+					<selected>Skin.HasSetting(WatchedFlag)</selected>
+				</control>	
+
+				<!-- Set IdleFade timer -->
+				<control type="button" id="9107">
+					<label>31193</label>
+					<label2>$INFO[Skin.String(IdleFade),,s]</label2>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<onclick condition="Skin.String(IdleFade,25)">Skin.SetString(IdleFade,30)</onclick>
+					<onclick condition="Skin.String(IdleFade,20)">Skin.SetString(IdleFade,25)</onclick>
+					<onclick condition="Skin.String(IdleFade,15)">Skin.SetString(IdleFade,20)</onclick>
+					<onclick condition="Skin.String(IdleFade,10)">Skin.SetString(IdleFade,15)</onclick>
+					<onclick condition="Skin.String(IdleFade,5)">Skin.SetString(IdleFade,10)</onclick>
+					<onclick condition="Skin.String(IdleFade,30)">Skin.SetString(IdleFade,5)</onclick>
+				</control>	
+
 				<!-- Separator -->
 				<control type="image" id="9106">
 					<width>1086</width>
