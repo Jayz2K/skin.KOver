@@ -54,6 +54,7 @@
 	</variable>	
 
 	<variable name="WPFanart">
+		<value condition="!Window.IsVisible(Home) + [SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)]">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="!Window.IsVisible(Home)">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View1)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View2)">$INFO[Container(9012).ListItem.Art(fanart)]</value>

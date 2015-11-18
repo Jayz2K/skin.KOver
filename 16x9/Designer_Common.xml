@@ -10,26 +10,31 @@
 			</control>
 			<control type="image">
 				<texture  background="true">$INFO[Skin.String($PARAM[CompPrefix].WPPic)]</texture>
+				<aspectratio>scale</aspectratio>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE) + !IsEmpty(Skin.String($PARAM[CompPrefix].WPPic))</visible>
 			</control>	
 			<control type="image">
 				<texture background="true">$INFO[Container(9000).ListItem.Property(background)]</texture>
+				<aspectratio>scale</aspectratio>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !IsEmpty(Container(9000).ListItem.Property(background)) + [!Control.HasFocus(9011) | Skin.String($PARAM[CompPrefix].WPBgs,IMAGE)]</visible>
 				<animation condition="True" time="10000" end="130" effect="zoom" pulse="true" easing="inout" tween="cubic" center="auto" start="110">Conditional</animation>
-				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation>				
+				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation>			
 			</control>				
 			<control type="image">
 				<texture background="true">$INFO[Window(Home).Property(BackgroundMEM)]</texture>
 				<visible>SubString(Window.Property(xmlfile),settings)</visible>
+				<aspectratio>scale</aspectratio>
 				<animation condition="True" time="10000" end="130" effect="zoom" pulse="true" easing="inout" tween="cubic" center="auto" start="110">Conditional</animation>
-				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation>				
+				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation>			
 			</control>					
 			<control type="image">
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
+				<aspectratio>scale</aspectratio>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
-				<texture background="true" colordiffuse="99FFFFFF">$VAR[WPFanart]</texture>
+				<texture background="true">$VAR[WPFanart]</texture>
+				<aspectratio>scale</aspectratio>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART)</visible>
 			</control>
 			<control type="image">

@@ -473,7 +473,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultCLASSIC.zip)</onclick>
 				</control>
 
 				<!-- 2/3 -->
@@ -490,7 +490,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultTWOTHIRDS.zip)</onclick>
 				</control>
 
 				<!-- Hybrid -->
@@ -507,7 +507,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=mypath\backup.zip)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultHYBRID.zip)</onclick>
 				</control>
 						
 			</control>		

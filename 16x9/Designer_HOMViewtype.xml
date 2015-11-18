@@ -9,9 +9,11 @@
 			<!-- Background -->
 			<control type="image">
 				<texture background="true">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
+				<aspectratio>scale</aspectratio>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
+				<aspectratio>scale</aspectratio>
 				<texture background="true">$INFO[Container(9000).ListItem.Property(background)]</texture>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !Control.HasFocus($PARAM[Id]) + !IsEmpty(Container(9000).ListItem.Property(background))</visible>
 			</control>
