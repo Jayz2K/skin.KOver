@@ -121,10 +121,12 @@
 				<control type="videowindow">
 					<left>0</left>
 					<top>0</top>
+					<visible>![[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B4ShowOF,HIDE)] + ![System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B4Show,IDLEFADE)]</visible>
 				</control>
 				<control type="visualisation">
 					<left>0</left>
 					<top>0</top>
+					<visible>![[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String(TV.View1.B5B4ShowOF,HIDE)] + ![System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.B4Show,IDLEFADE)] + ![System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.B4Show,IDLEFADE)]</visible>
 				</control>
 				<visible>!Skin.String(TV.View1.B4Show,HIDDEN) + [Player.HasVideo | Player.HasAudio]</visible>
 			</control>		
