@@ -430,7 +430,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31060][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -514,7 +514,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -580,7 +580,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[31068]</label>
 					<font>FontSmall</font>
@@ -646,7 +646,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[31081]</label>
 					<font>FontSmall</font>
@@ -712,7 +712,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[31082]</label>
 					<font>FontSmall</font>
@@ -778,7 +778,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31062]</label>
 					<font>FontSmall</font>
@@ -862,7 +862,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -928,7 +928,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31069]</label>
 					<font>FontSmall</font>
@@ -994,7 +994,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31070]</label>
 					<font>FontSmall</font>
@@ -1060,7 +1060,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31071]</label>
 					<font>FontSmall</font>
@@ -1126,7 +1126,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1212]</label>
 					<font>FontSmall</font>
@@ -1192,7 +1192,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[342]</label>
 					<font>FontSmall</font>
@@ -1258,7 +1258,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[20343]</label>
 					<font>FontSmall</font>
@@ -1324,7 +1324,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1211]</label>
 					<font>FontSmall</font>
@@ -1390,7 +1390,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1213]</label>
 					<font>FontSmall</font>
@@ -1456,7 +1456,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[19020]</label>
 					<font>FontSmall</font>
@@ -1522,7 +1522,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1047]</label>
 					<font>FontSmall</font>
@@ -1588,7 +1588,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31073]</label>
 					<font>FontSmall</font>
@@ -1654,7 +1654,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31075]</label>
 					<font>FontSmall</font>
@@ -1720,7 +1720,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31076]</label>
 					<font>FontSmall</font>
@@ -1804,7 +1804,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -1870,7 +1870,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[31079]</label>
 					<font>FontSmall</font>
@@ -1936,7 +1936,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[369]</label>
 					<font>FontSmall</font>
@@ -2002,7 +2002,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[207]</label>
 					<font>FontSmall</font>
@@ -2068,7 +2068,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[31083]</label>
 					<font>FontSmall</font>
@@ -2152,7 +2152,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31064][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -2236,7 +2236,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31065][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -2320,7 +2320,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
@@ -2386,7 +2386,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[369]</label>
 					<font>FontSmall</font>
@@ -2452,7 +2452,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31072]</label>
 					<font>FontSmall</font>
@@ -2518,7 +2518,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31078]</label>
 					<font>FontSmall</font>
@@ -2584,7 +2584,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31077]</label>
 					<font>FontSmall</font>
@@ -2650,7 +2650,7 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31080]</label>
 					<font>FontSmall</font>

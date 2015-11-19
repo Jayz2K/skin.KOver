@@ -802,6 +802,26 @@ msgctxt "#31194"
 msgid "Show 'Watched' flags"
 msgstr ""
 
+msgctxt "#31195"
+msgid "Apply color schemes"
+msgstr ""
+
+msgctxt "#31196"
+msgid "Default dark"
+msgstr ""
+
+msgctxt "#31197"
+msgid "Default light"
+msgstr ""
+
+msgctxt "#31198"
+msgid "Default FTV style"
+msgstr ""
+
+msgctxt "#31199"
+msgid "Default flat style"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

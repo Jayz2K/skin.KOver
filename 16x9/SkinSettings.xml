@@ -627,6 +627,23 @@
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultFTV.zip)</onclick>
 				</control>
+
+				<!-- FTV -->
+				<control type="button" id="9213">
+					<label>31199</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultFLAT.zip)</onclick>
+				</control>
 						
 			</control>		
 

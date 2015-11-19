@@ -2,8 +2,9 @@
 <window>
 
 	<!-- videoosd -->
-	<defaultcontrol always="true">9000,3</defaultcontrol>
+	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
+	<onload>Control.SetFocus(9000,2)</onload>
 	<onunload>ClearProperty(SidebarPos,Home)</onunload>
 	<zorder>3</zorder>
 
