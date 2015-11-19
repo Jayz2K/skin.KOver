@@ -42,7 +42,6 @@
 			
 		<!-- Sidebar -->	
 		<control type="group">	
-			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
 			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
 			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
 			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>

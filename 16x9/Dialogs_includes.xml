@@ -956,7 +956,7 @@
 							<height>60</height>
 							<align>center</align>
 							<texture colordiffuse="$VAR[CategoryColor3]">common/white.png</texture>
-							<visible>!Control.HasFocus(9000)</visible>
+							<visible>!Control.HasFocus(420)</visible>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -1035,7 +1035,7 @@
 							<height>60</height>
 							<align>center</align>
 							<texture colordiffuse="$VAR[CategoryColor3]">common/white.png</texture>
-							<visible>!Control.HasFocus(9000)</visible>
+							<visible>!Control.HasFocus(420)</visible>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -1105,7 +1105,7 @@
 				</control>
 
 				<!-- Button grouplist -->
-				<control type="grouplist" id="9000">
+				<control type="grouplist" id="420">
 					<right>24</right>
 					<top>284</top>
 					<width>588</width>
@@ -1194,7 +1194,7 @@
 					<top>24</top>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
-					<onright>9000</onright>
+					<onright>420</onright>
 					<height>305</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
@@ -1230,7 +1230,7 @@
 							<height>60</height>
 							<align>center</align>
 							<texture colordiffuse="$VAR[CategoryColor3]">common/white.png</texture>
-							<visible>!Control.HasFocus(9000)</visible>
+							<visible>!Control.HasFocus(420)</visible>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -1274,7 +1274,7 @@
 					<top>24</top>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
-					<onright>9000</onright>
+					<onright>420</onright>
 					<height>305</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
@@ -1310,7 +1310,7 @@
 							<height>60</height>
 							<align>center</align>
 							<texture colordiffuse="$VAR[CategoryColor3]">common/white.png</texture>
-							<visible>!Control.HasFocus(9000)</visible>
+							<visible>!Control.HasFocus(420)</visible>
 						</control>
 						<control type="image">
 							<left>10</left>
@@ -1381,7 +1381,7 @@
 				</control>
 
 				<!-- Button grouplist -->
-				<control type="grouplist" id="9000">
+				<control type="grouplist" id="420">
 					<right>24</right>
 					<top>267</top>
 					<width>588</width>

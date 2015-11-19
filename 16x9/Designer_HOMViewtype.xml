@@ -38,7 +38,12 @@
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
 					</include>
 					<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
-					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
 					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
 				</control>				
 
@@ -348,7 +353,6 @@
 						<onback>9000</onback>
 						
 						<scrolltime>200</scrolltime>
-						<autoscroll time="8000">System.IdleTime(3) + Control.HasFocus(9000)</autoscroll>
 						<viewtype label="$INFO[Skin.String($PARAM[CompPrefix].Name)]">wrap</viewtype>
 						<preloaditems>2</preloaditems>
 						<visible allowhiddenfocus="true">StringCompare(Container(9000).ListItem.Property(widgetType),weather)</visible>

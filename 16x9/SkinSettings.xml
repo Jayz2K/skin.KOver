@@ -405,14 +405,14 @@
 				</control>	
 
 				<!-- Separator -->
-				<control type="image" id="9106">
+				<control type="image" id="9108">
 					<width>1086</width>
 					<height>60</height>
 					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
 				</control>
 
 				<!-- Show debug infos -->
-				<control type="radiobutton" id="9107">
+				<control type="radiobutton" id="9109">
 					<label>31155</label>
 					<width>1086</width>
 					<height>60</height>
@@ -559,6 +559,73 @@
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultHYBRID.zip)</onclick>
+				</control>
+
+				<!-- Separator -->
+				<control type="image" id="9209">
+					<width>1086</width>
+					<height>60</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+				</control>
+
+				<!-- Apply colors -->
+				<control type="label" id="9210">
+					<label>31195</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+				</control>	
+
+				<!-- Dark -->
+				<control type="button" id="9211">
+					<label>31196</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultDARK.zip)</onclick>
+				</control>
+
+				<!-- Light -->
+				<control type="button" id="9212">
+					<label>31197</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultLIGHT.zip)</onclick>
+				</control>
+
+				<!-- FTV -->
+				<control type="button" id="9213">
+					<label>31198</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultFTV.zip)</onclick>
 				</control>
 						
 			</control>		

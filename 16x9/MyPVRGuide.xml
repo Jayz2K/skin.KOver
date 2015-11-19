@@ -35,7 +35,12 @@
 				</include>
 				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
 				<visible>!Skin.String(TV.View1.BBShow,HIDDEN)</visible>
-				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
+				<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String(TV.View1.BBShow,IDLEFADE)">Conditonal</animation>
 			</control>
 
 			<!-- Bloc 4 / special background -->
