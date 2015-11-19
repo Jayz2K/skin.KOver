@@ -145,7 +145,7 @@
 						<onleft>noop</onleft>
 						<onup>noop</onup>
 						<onright>300</onright>
-						<onclick>RunScript(script.skin.helper.service, action=backup, filter=Color|Test)</onclick>
+						<onclick>RunScript(script.skin.helper.service,action=backup,filter=Color,promptfilename=true)</onclick>
 						<onclick>ActivateWindow(1100,return)</onclick>
 					</control>				
 
