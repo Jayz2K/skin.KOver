@@ -296,7 +296,7 @@
 							<icon>material/view2.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View2</property>
 							<property name="Info">31092</property>
 						</item>
@@ -306,7 +306,7 @@
 							<icon>material/view3.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View3</property>
 							<property name="Info">31092</property>
 						</item>
@@ -316,7 +316,7 @@
 							<icon>material/view4.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View4</property>
 							<property name="Info">31092</property>
 						</item>
@@ -326,7 +326,7 @@
 							<icon>material/view5.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View5</property>
 							<property name="Info">31092</property>
 						</item>
@@ -336,7 +336,7 @@
 							<icon>material/view6.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View6</property>
 							<property name="Info">31092</property>
 						</item>
@@ -346,7 +346,7 @@
 							<icon>material/view7.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View7</property>
 							<property name="Info">31092</property>
 						</item>
@@ -356,7 +356,7 @@
 							<icon>material/view8.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View8</property>
 							<property name="Info">31092</property>
 						</item>
@@ -366,7 +366,7 @@
 							<icon>material/view9.png</icon>
 							<thumb>material/editlayer.png</thumb>
 							<onclick>Control.SetFocus(9500,0)</onclick>
-							<visible>true</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(ViewName),WEA)</visible>
 							<property name="ViewName">View9</property>
 							<property name="Info">31092</property>
 						</item>
@@ -644,7 +644,7 @@
 					<onright>9300</onright>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
-					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + [Control.HasFocus(9500) | Control.HasFocus(9400) | IsEmpty(Container(9100).ListItem.Label)] + !Window.IsVisible(1200)</visible>
+					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + [Control.HasFocus(9500) | Control.HasFocus(9400) | IsEmpty(Container(9100).ListItem.Label)] + !Window.IsVisible(1200) + !Control.HaFocus(9300)</visible>
 					
 					<itemlayout width="588" height="60">
 						<control type="label">
@@ -737,8 +737,7 @@
 					<onback>9100</onback>
 					<orientation>horizontal</orientation>
 					<scrolltime>200</scrolltime>
-					<visible allowhiddenfocus="true"></visible>
-					<animation effect="fade" start="0" end="100" time="0" condition="Control.IsVisible(9400)">Conditional</animation>
+					<visible allowhiddenfocus="true">Control.IsVisible(9400)</visible>
 					
 					<itemlayout width="176" height="298">
 						<control type="group">

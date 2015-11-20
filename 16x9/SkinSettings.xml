@@ -628,8 +628,8 @@
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultFTV.zip)</onclick>
 				</control>
 
-				<!-- FTV -->
-				<control type="button" id="9213">
+				<!-- Flat Style -->
+				<control type="button" id="9214">
 					<label>31199</label>
 					<width>1086</width>
 					<height>60</height>
