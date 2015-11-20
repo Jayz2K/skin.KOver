@@ -8,11 +8,6 @@
 	<!-- visualisation -->
 	<controls>
 
-		<!-- Visualisation -->
-		<control type="visualisation" id="2">
-			<visible>Player.HasAudio</visible>
-		</control>
-
 		<!-- Artist slideshow -->
 		<control type="multiimage">
 			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -20,7 +15,12 @@
 			<timeperimage>10000</timeperimage>
 			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
-			<visible>Player.HasAudio + System.HasAddon(script.artistslideshow)</visible>
+			<visible>Player.HasAudio + System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistslideShow)</visible>
+		</control>
+
+		<!-- Visualisation -->
+		<control type="visualisation" id="2">
+			<visible>Player.HasAudio + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]]</visible>
 		</control>
 
 	</controls>

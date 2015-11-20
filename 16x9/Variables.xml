@@ -21,22 +21,41 @@
 		<value condition="Control.HasFocus(9103)">$LOCALIZE[31174]</value>
 		<value condition="Control.HasFocus(9104)">$LOCALIZE[31175]</value>
 		<value condition="Control.HasFocus(9105)">$LOCALIZE[31176]</value>
-		<value condition="Control.HasFocus(9107)">$LOCALIZE[31177]</value>
+
+		<value condition="Control.HasFocus(9106)">$LOCALIZE[31211]</value>
+		<value condition="Control.HasFocus(9107)">$LOCALIZE[31212]</value>
+
+		<value condition="Control.HasFocus(9112)">$LOCALIZE[31177]</value>
+		<value condition="Control.HasFocus(9109)">$LOCALIZE[31209]</value>
+		<value condition="Control.HasFocus(9110)">$LOCALIZE[31210]</value>
 		<value condition="Control.HasFocus(9202)">$LOCALIZE[31178]</value>
 		<value condition="Control.HasFocus(9203)">$LOCALIZE[31179]</value>
 		<value condition="Control.HasFocus(9206)">$LOCALIZE[31180]</value>
 		<value condition="Control.HasFocus(9207)">$LOCALIZE[31181]</value>
 		<value condition="Control.HasFocus(9208)">$LOCALIZE[31182]</value>
+
+		<value condition="Control.HasFocus(9211)">$LOCALIZE[31213]</value>
+		<value condition="Control.HasFocus(9212)">$LOCALIZE[31213]</value>
+		<value condition="Control.HasFocus(9213)">$LOCALIZE[31213]</value>
+		<value condition="Control.HasFocus(9214)">$LOCALIZE[31213]</value>
+
 		<value condition="Control.HasFocus(9301)">$LOCALIZE[31183]</value>
 		<value condition="Control.HasFocus(9303)">$LOCALIZE[31184]</value>
 		<value condition="Control.HasFocus(9304)">$LOCALIZE[31185]</value>
 		<value condition="Control.HasFocus(9305)">$LOCALIZE[31186]</value>
-		<value condition="Control.HasFocus(9307)">$LOCALIZE[31187]</value>
-		<value condition="Control.HasFocus(9308)">$LOCALIZE[31188]</value>
-		<value condition="Control.HasFocus(9309)">$LOCALIZE[31189]</value>
-		<value condition="Control.HasFocus(9310)">$LOCALIZE[31190]</value>
-		<value condition="Control.HasFocus(9311)">$LOCALIZE[31191]</value>
-		<value condition="Control.HasFocus(9312)">$LOCALIZE[31192]</value>
+
+		<value condition="Control.HasFocus(9307)">$LOCALIZE[31214]</value>
+
+		<value condition="Control.HasFocus(9309)">$LOCALIZE[31187]</value>
+		<value condition="Control.HasFocus(9310)">$LOCALIZE[31188]</value>
+		<value condition="Control.HasFocus(9311)">$LOCALIZE[31189]</value>
+		<value condition="Control.HasFocus(9312)">$LOCALIZE[31190]</value>
+		<value condition="Control.HasFocus(9313)">$LOCALIZE[31191]</value>
+		<value condition="Control.HasFocus(9314)">$LOCALIZE[31192]</value>
+
+		<value condition="Control.HasFocus(9401)">$LOCALIZE[31201]</value>
+		<value condition="Control.HasFocus(9402)">$LOCALIZE[31202]</value>
+		<value condition="Control.HasFocus(9403)">$LOCALIZE[31203]</value>
 	</variable>
 
 	<variable name="ShortcutValue">

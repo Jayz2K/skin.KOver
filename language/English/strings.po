@@ -822,6 +822,66 @@ msgctxt "#31199"
 msgid "Default flat style"
 msgstr ""
 
+msgctxt "#31200"
+msgid "Enhancement"
+msgstr ""
+
+msgctxt "#31201"
+msgid "Extended Infos allows KOver to get more widgets and backgrounds in Home. Those are selectable in Home menu configuration."
+msgstr ""
+
+msgctxt "#31202"
+msgid "Artwork Downloader allows KOver to have acces to more arts. Arts like banners, cleararts, discarts, etc... are selectable in libraries item informations."
+msgstr ""
+
+msgctxt "#31203"
+msgid "Artist Slideshow allows KOver to display artists arts as background. You can set more options in KOver settings under 'General Setup' when script is installed."
+msgstr ""
+
+msgctxt "#31204"
+msgid "Install Extended Infos script ..."
+msgstr ""
+
+msgctxt "#31205"
+msgid "Install Artwork Downloader script ..."
+msgstr ""
+
+msgctxt "#31206"
+msgid "Install Artist Slideshow ..."
+msgstr ""
+
+msgctxt "#31207"
+msgid "Show Artist Slideshow as background when music is playing."
+msgstr ""
+
+msgctxt "#31208"
+msgid "Show visualisation effect over Artist slideshow."
+msgstr ""
+
+msgctxt "#31209"
+msgid "Artist Slideshow allows KOver to display artists arts as background. It also displays in viewtypes when 'Video on top' is set to 'VISIBLE' in the Designer."
+msgstr ""
+
+msgctxt "#31210"
+msgid "Set this option to show visualisation over the Artist Slideshow. Only useful when DIRECTX visualisation is set."
+msgstr ""
+
+msgctxt "#31211"
+msgid "Set this option to show the 'WATCHED' status flag on libraries' items."
+msgstr ""
+
+msgctxt "#31212"
+msgid "Adjust time between 5s and 30s for the 'IDLEFADE' option. This is only when an item has this option in the Designer."
+msgstr ""
+
+msgctxt "#31213"
+msgid "Automatically apply a built-in color set. This automatically change the colors for each element."
+msgstr ""
+
+msgctxt "#31214"
+msgid "Backup current color set."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"
@@ -890,4 +950,8 @@ msgstr ""
 
 msgctxt "#31502"
 msgid "This category contains the settings for importing / exporting user's configurations of KOver."
+msgstr ""
+
+msgctxt "#31503"
+msgid "This category contains the settings for activating optional scripts to enhance KOver content."
 msgstr ""

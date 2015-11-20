@@ -127,27 +127,7 @@
 					<onright>301</onright>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
-					<orientation>horizontal</orientation>
-
-					<!-- Export Template -->
-					<control type="button" id="302">
-						<width>auto</width>
-						<height>60</height>
-						<label>31084</label>
-						<font>Font27</font>
-						<align>center</align>
-						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-						<onleft>noop</onleft>
-						<onup>noop</onup>
-						<onright>300</onright>
-						<onclick>RunScript(script.skin.helper.service,action=backup,filter=Color,promptfilename=true)</onclick>
-						<onclick>ActivateWindow(1100,return)</onclick>
-					</control>				
+					<orientation>horizontal</orientation>		
 
 					<!-- Close -->
 					<control type="button" id="300">
@@ -164,7 +144,7 @@
 						<label>15067</label>
 						<onclick>Close</onclick>
 						<onright>301</onright>
-						<onleft>302</onleft>
+						<onleft>noop</onleft>
 					</control>
 
 				</control>					

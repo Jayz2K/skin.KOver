@@ -53,8 +53,16 @@
 			<control type="videowindow">
 				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
 			</control>
+			<control type="multiimage">
+				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<aspectratio>scale</aspectratio>
+				<timeperimage>10000</timeperimage>
+				<fadetime>2000</fadetime>
+				<randomize>true</randomize>
+				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistslideShow)</visible>
+			</control>
 			<control type="visualisation">
-				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
+				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]]</visible>
 			</control>
 		</control>		
 	</include>
