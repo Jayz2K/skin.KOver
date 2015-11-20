@@ -1,3 +1,10 @@
+[B]0.51.0[/B]
+- Added Auto Building viewtypes and colorschemes
+- Added IDLEFADE timer option
+- Added enhancement script installation
+- Added option to toggle 'WATCHED' flags
+- Bug fixes
+
 [B]0.50.0[/B]
 - BETA release
 - Fix for getting focus back to lists after playing item
