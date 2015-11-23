@@ -779,28 +779,7 @@
 						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 						<font>Font36</font>
 						<align>center</align>
-						<label fallback="1000">$INFO[ListItem.TagLine]</label>
-						<visible>!StringCompare(Container(300).ListItem.Label,$LOCALIZE[209]) + !Window.IsVisible(10142)</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>96</height>
-						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
-						<font>Font36</font>
-						<align>center</align>
-						<label fallback="1000">$INFO[VideoPlayer.TagLine]</label>
-						<visible>!StringCompare(Container(300).ListItem.Label,$LOCALIZE[209]) + Window.IsVisible(10142)</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>96</height>
-						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
-						<font>Font36</font>
-						<align>center</align>
-						<label fallback="1000">$INFO[ListItem.NextTitle]</label>
-						<visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[209])</visible>
+						<label fallback="1000">$VAR[InfoDIATitle]</label>
 					</control>
 					<control type="textbox">
 						<top>0</top>
@@ -809,79 +788,8 @@
 						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
 						<font>Font27</font>
 						<align>center</align>
-						<label fallback="19055">$INFO[ListItem.Plot]</label>
-						<visible>Window.IsActive(12003) | Window.IsActive(10602) | Window.IsActive(10603) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[209]) + !Window.IsActive(visualisation)</visible>
+						<label fallback="19055">$VAR[InfoDIAPlot]</label>
 					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[VideoPlayer.Plot]</label>
-						<visible>Window.IsActive(10142) + !Window.IsActive(visualisation)</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[ListItem.Property(Addon.Description)]</label>
-						<visible>Window.IsActive(10146) + !Window.IsActive(visualisation)</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[ListItem.NextPlot]</label>
-						<visible>Window.IsActive(12003) | Window.IsActive(10602) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[209]) + !Window.IsActive(visualisation)</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[ListItem.Property(Artist_Description)]</label>
-						<visible>[Window.IsActive(12001) | Window.IsActive(10135)] + StringCompare(Container(300).ListItem.Label,$LOCALIZE[21891]) + !Window.IsActive(visualisation)</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[ListItem.Property(Album_Description)]</label>
-						<visible>[Window.IsActive(12001) | Window.IsActive(10135)] + StringCompare(Container(300).ListItem.Label,$LOCALIZE[10523]) + !Window.IsActive(visualisation)</visible>
-					</control>		
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[MusicPlayer.Property(Artist_Description)]</label>
-						<visible>Window.IsActive(visualisation) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[21891])</visible>
-					</control>
-					<control type="textbox">
-						<top>0</top>
-						<left>0</left>
-						<height>$PARAM[DIAB2TextY]</height>			
-						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-						<font>Font27</font>
-						<align>center</align>
-						<label fallback="19055">$INFO[MusicPlayer.Property(Album_Description)]</label>
-						<visible>Window.IsActive(visualisation) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[10523])</visible>
-					</control>		
 				</control>
 
 			</control>

@@ -9730,4 +9730,21 @@
 			</control>
 		</control>
 	</include>
+
+	<variable name="InfoDIATitle">
+		<value condition="!StringCompare(Container(300).ListItem.Label,$LOCALIZE[209]) + !Window.IsVisible(10142)">$INFO[ListItem.TagLine]</value>
+		<value condition="!StringCompare(Container(300).ListItem.Label,$LOCALIZE[209]) + Window.IsVisible(10142)">$INFO[ListItem.TagLine]</value>
+		<value condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[209])">$INFO[ListItem.NextTitle]</value>
+	</variable>
+
+	<variable name="InfoDIAPlot">
+		<value condition="Window.IsActive(fullscreeninfo) + !IsEmpty(VideoPlayer.Plot)">$INFO[VideoPlayer.Plot]</value>
+		<value condition="Window.IsActive(visualisation) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[21891])">$INFO[MusicPlayer.Property(Artist_Description)]</value>
+		<value condition="Window.IsActive(visualisation) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[10523])">$INFO[MusicPlayer.Property(Album_Description)]</value>
+		<value condition="Window.IsActive(addoninformation) + !Window.IsActive(visualisation)">$INFO[ListItem.Property(Addon.Description)]</value>
+		<value condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[21891]) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[10523]) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+		<value>$INFO[ListItem.Plot]</value>
+	</variable>
+
 </includes>
