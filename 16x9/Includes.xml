@@ -8,7 +8,6 @@
 	<include file="Designer_HOMViewtype.xml" />
 	<include file="Dialogs_includes.xml" />
 	<include file="Dialogs_InfosIncludes.xml" />	
-	<include file="Custom_Designer_ColorTool.xml" />
 	<include file="Defaults.xml" />
 	<include file="script-skinshortcuts-includes.xml"/>
 	<include file="Variables.xml" />

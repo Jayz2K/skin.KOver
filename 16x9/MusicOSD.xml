@@ -158,13 +158,6 @@
 							<onclick>PlayerControl(Random)</onclick>
 							<visible>!Player.IsRandom</visible>
 						</item>
-						<!-- Lyrics -->
-						<!--item id="6">
-							<label>24013</label>
-							<icon>DefaultAddonLyrics.png</icon>
-							<onclick condition="IsEmpty(Skin.String(LyricAddon))">Skin.SetAddon(LyricAddon,xbmc.python.lyrics)</onclick>
-							<onclick condition="!IsEmpty(Skin.String(LyricAddon))">XBMC.RunScript($INFO[Skin.String(LyricAddon)])</onclick>
-						</item-->
 						<!-- Playlist -->
 						<item id="7">
 							<label>136</label>
@@ -180,7 +173,7 @@
 						<!-- Visualisation Settings -->
 						<item id="9">
 							<label>240</label>
-							<icon>osd/settings.png</icon>
+							<icon>DefaultAddonService.png</icon>
 							<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 						</item>
 						<!-- Visualisation Presets List -->

@@ -2700,7 +2700,7 @@
 					<width>1920</width>
 					<height>1047</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/blue.jpg</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.WP)]">common/white.png</texture>
 				</control>
 				<!-- Blocs Background -->
 				<control type="group">
@@ -2989,6 +2989,217 @@
 							<label>31050</label>
 						</control>
 					</control>
+				</control>
+				<!-- Dialog -->
+				<control type="image">
+					<left>0</left>
+					<top>580</top>
+					<width>1920</width>
+					<height>380</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
+					<animation effect="zoom" start="100,0" end="100,100" time="100" center="960,960" condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
+				</control>
+				<!-- Dialog Bloc1 -->
+				<control type="group">
+					<left>0</left>
+					<top>592</top>
+					<width>636</width>
+					<height>354</height>
+					<animation effect="fade" start="0" end="100" time="100" delay="100" condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
+
+					<!-- Header -->
+					<control type="label">
+						<top>24</top>
+						<left>24</left>
+						<width>588</width>
+						<height>48</height>
+						<align>center</align>
+						<font>Font48</font>
+						<wrapmultiline>true</wrapmultiline>
+						<aligny>center</aligny>
+						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+						<label>31005</label>
+					</control>	
+
+					<!-- Menu -->
+					<control type="label">
+						<top>80</top>
+						<left>24</left>
+						<width>588</width>
+						<height>156</height>height>
+						<align>center</align>
+						<aligny>top</aligny>
+						<font>Font36</font>
+						<textcolor>$VAR[CategoryColor3]</textcolor>
+						<label>33061</label>
+					</control>
+
+					<!-- Button grouplist -->
+					<control type="grouplist">
+						<right>24</right>
+						<top>284</top>
+						<width>588</width>
+						<height>60</height>
+						<itemgap>1</itemgap>
+						<align>right</align>
+						<orientation>horizontal</orientation>	
+						
+						<!-- Cancel -->
+						<control type="button">
+							<right>24</right>
+							<top>267</top>
+							<height>60</height>
+							<width>auto</width>
+							<label>222</label>
+							<font>Font27</font>
+							<align>center</align>
+							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
+							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
+						</control>		
+					</control>
+				</control>
+
+				<!-- Dialog Bloc1 -->
+				<control type="group">
+					<left>648</left>
+					<top>592</top>
+					<width>636</width>
+					<height>354</height>
+					<animation effect="fade" start="0" end="100" time="100" delay="100" condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
+
+					<control type="list">
+						<left>24</left>
+						<top>24</top>
+						<height>305</height>
+						<width>588</width>
+						<scrolltime>200</scrolltime>
+						<orientation>vertical</orientation>			
+
+						<itemlayout width="588" height="61">
+							<control type="image">
+								<left>10</left>
+								<top>10</top>
+								<width>40</width>
+								<height>40</height>
+								<align>center</align>
+								<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.Icon]</texture>
+							</control>
+							<control type="label">
+								<top>0</top>
+								<left>80</left>
+								<width>508</width>
+								<height>60</height>
+								<align>left</align>
+								<font>Font27</font>
+								<scroll>True</scroll>
+								<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</itemlayout>
+						
+						<focusedlayout width="588" height="61">
+							<control type="group">
+								<visible>Control.HasFocus(300)</visible>
+								<control type="image">
+									<left>10</left>
+									<top>10</top>
+									<width>40</width>
+									<height>40</height>
+									<align>center</align>
+									<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.Icon]</texture>
+								</control>
+								<control type="label">
+									<top>0</top>
+									<left>80</left>
+									<width>508</width>
+									<height>60</height>
+									<align>left</align>
+									<font>Font27</font>
+									<scroll>True</scroll>
+									<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>							
+							</control>
+							<control type="group">
+								<visible>!Control.HasFocus(300)</visible>
+								<control type="image">
+									<left>0</left>
+									<top>0</top>
+									<width>588</width>
+									<height>60</height>
+									<align>center</align>
+									<texture colordiffuse="$VAR[CategoryColor3]">common/white.png</texture>
+								</control>
+								<control type="image">
+									<left>10</left>
+									<top>10</top>
+									<width>40</width>
+									<height>40</height>
+									<align>center</align>
+									<texture colordiffuse="$INFO[Skin.String(Color.DIATxtF)]">$INFO[ListItem.Icon]</texture>
+								</control>
+								<control type="label">
+									<top>0</top>
+									<left>80</left>
+									<width>508</width>
+									<height>60</height>
+									<align>left</align>
+									<font>Font27</font>
+									<scroll>True</scroll>
+									<textcolor>$INFO[Skin.String(Color.DIATxtF)]</textcolor>
+									<label>$INFO[ListItem.Label]</label>
+								</control>
+							</control>
+						</focusedlayout>		
+						
+						<content>
+						<!-- Play -->
+						<item>
+							<label>208</label>
+							<icon>material/play.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						<!-- Resume -->
+						<item>
+							<label>13404</label>
+							<icon>material/play.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						<!-- Trailer -->
+						<item>
+							<label>20410</label>
+							<icon>material/videocam.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						<!-- Similar -->		
+						<item>
+							<label>19003</label>
+							<icon>material/search.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						<!-- Refresh -->				
+						<item>
+							<label>184</label>
+							<icon>material/update.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						<!-- Choose Art -->
+						<item>
+							<label>13511</label>
+							<icon>material/artbox.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						<!-- Extra Art -->
+						<item>
+							<label>31054</label>
+							<icon>material/artbox.png</icon>
+							<onclick>noop</onclick>
+						</item>
+						</content>
+					</control>					
+
 				</control>
 				<!-- Sidebar -->
 				<control type="group">	

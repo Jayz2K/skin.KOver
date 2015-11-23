@@ -1335,9 +1335,9 @@
 	
 	<include name="OSDV">
 		<left>20</left>
-		<top>340</top>
+		<top>460</top>
 		<width>80</width>
-		<height>480</height>
+		<height>400</height>
 		<align>center</align>
 		<aligny>center</aligny>
 		<orientation>horizontal</orientation>
@@ -1357,7 +1357,7 @@
 		<left>20</left>
 		<top>0</top>
 		<width>80</width>
-		<height>480</height>
+		<height>320</height>
 		<align>center</align>
 		<aligny>center</aligny>
 		<orientation>vertical</orientation>
