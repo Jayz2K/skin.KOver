@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog">
+    <!-- Extended infos Actors -->
+    <defaultcontrol always="true">300</defaultcontrol>
+    <onload condition="IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility,ExtendedDialog1,Home)</onload>
+    <onload condition="!IsEmpty(Window(Home).Property(DialogVisibility)) + IsEmpty(Window(Home).Property(DialogVisibility2))">SetProperty(DialogVisibility2,ExtendedDialog2,Home)</onload>
+    <onload condition="!IsEmpty(Window(Home).Property(DialogVisibility2)) + IsEmpty(Window(Home).Property(DialogVisibility3))">SetProperty(DialogVisibility3,ExtendedDialog3,Home)</onload>
+    <onload condition="!IsEmpty(Window(Home).Property(DialogVisibility3)) + IsEmpty(Window(Home).Property(DialogVisibility4))">SetProperty(DialogVisibility4,ExtendedDialog4,Home)</onload>
+    <onload condition="!IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))">SetProperty(DialogVisibility5,ExtendedDialog5,Home)</onload>
+    <onunload condition="SubString(Window(Home).Property(DialogVisibility),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility),$NUMBER[1])">ClearProperty(DialogVisibility,Home)</onunload>
+    <onunload condition="SubString(Window(Home).Property(DialogVisibility2),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility2),$NUMBER[2])">ClearProperty(DialogVisibility2,Home)</onunload>
+    <onunload condition="SubString(Window(Home).Property(DialogVisibility3),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility3),$NUMBER[3])">ClearProperty(DialogVisibility3,Home)</onunload>
+    <onunload condition="SubString(Window(Home).Property(DialogVisibility4),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility4),$NUMBER[4])">ClearProperty(DialogVisibility4,Home)</onunload>
+    <onunload>ClearProperty(DialogVisibility5,Home)</onunload>
+    
+    <controls>
+        
+        <control type="group">
+            <visible>[SubString(Window(Home).Property(DialogVisibility),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility),$NUMBER[1]) + IsEmpty(Window(Home).Property(DialogVisibility2)) + IsEmpty(Window(Home).Property(DialogVisibility3)) + IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))] | 
+                    [SubString(Window(Home).Property(DialogVisibility2),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility2),$NUMBER[2]) + IsEmpty(Window(Home).Property(DialogVisibility3)) + IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))] |
+                    [SubString(Window(Home).Property(DialogVisibility3),ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility3),$NUMBER[3]) + IsEmpty(Window(Home).Property(DialogVisibility4)) + IsEmpty(Window(Home).Property(DialogVisibility5))] |
+                    [SubString(Window(Home).Property(DialogVisibility4)ExtendedDialog) + SubString(Window(Home).Property(DialogVisibility4),$NUMBER[4]) + IsEmpty(Window(Home).Property(DialogVisibility5))] |
+                    [SubString(Window(Home).Property(DialogVisibility5),ExtendedDialog)  + SubString(Window(Home).Property(DialogVisibility5),$NUMBER[5])]</visible>
+
+            
+            <include name="DialogPOS">
+                <param name="DialogName" value="DiaExtended1" />
+            </include>              
+
+        </control>
+
+    </controls>
+
+</window>

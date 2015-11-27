@@ -7,7 +7,9 @@
 	<include file="Designer_VDOViewtype.xml" />
 	<include file="Designer_HOMViewtype.xml" />
 	<include file="Dialogs_includes.xml" />
-	<include file="Dialogs_InfosIncludes.xml" />	
+	<include file="Dialogs_InfosIncludes.xml" />
+	<include file="Dialogs_ExtendedIncludes1.xml" />
+	<include file="Dialogs_ExtendedIncludes2.xml" />
 	<include file="Defaults.xml" />
 	<include file="script-skinshortcuts-includes.xml"/>
 	<include file="Variables.xml" />

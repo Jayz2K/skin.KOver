@@ -9695,6 +9695,143 @@
 		</control>
 	</include>
 
+	<include name="DiaExtendedVideoInfo">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>48</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font48</font>
+					<label>$INFO[Window.Property(movie.title)]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>			
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<width>$PARAM[DIAB2SizeX]</width>
+				<height>$PARAM[DIAB2SizeY]</height>
+
+				<control type="panel" id="450">
+					<left>24</left>
+					<top>24</top>
+					<width>1224</width>
+					<height>332</height>
+					<onup>noop</onup>
+					<ondown>noop</ondown>
+					<onright>noop</onright>
+					<onleft>300</onleft>
+					<orientation>horizontal</orientation>
+					<scrolltime>100</scrolltime>		
+
+					<itemlayout width="204" height="332">
+						<control type="image">
+							<left>24</left>
+							<top>52</top>
+							<width>132</width>
+							<height>132</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.ActualIcon]</texture>
+						</control>				
+						<control type="image">
+							<width>180</width>
+							<height>236</height>
+							<aspectratio>scale</aspectratio>
+							<texture>$INFO[ListItem.Art(thumb)]</texture>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>248</top>
+							<width>180</width>
+							<height>38</height>
+							<font>Font25</font>
+							<align>center</align>
+							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>278</top>
+							<width>180</width>
+							<height>36</height>
+							<font>FontSmallR</font>
+							<align>center</align>
+							<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</itemlayout>
+
+					<focusedlayout width="204" height="332">
+						<control type="image">
+							<left>24</left>
+							<top>52</top>
+							<width>132</width>
+							<height>132</height>
+							<aspectratio>scale</aspectratio>
+							<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.ActualIcon]</texture>
+						</control>						
+						<control type="image">
+							<width>180</width>
+							<height>236</height>
+							<colordiffuse>FFFFFFFF</colordiffuse>
+							<aspectratio>scale</aspectratio>
+							<texture>$INFO[ListItem.Art(thumb)]</texture>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>248</top>
+							<width>180</width>
+							<height>38</height>
+							<font>Font25</font>
+							<align>center</align>
+							<textcolor>$VAR[CategoryColor3]</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+						<control type="label">
+							<left>0</left>
+							<top>278</top>
+							<width>180</width>
+							<height>36</height>
+							<font>FontSmallR</font>
+							<align>center</align>
+							<textcolor>$VAR[CategoryColor3]</textcolor>
+							<label>$INFO[ListItem.Label2]</label>
+						</control>
+					</focusedlayout>
+				</control>
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+			
+			</control>
+		</control>
+	</include>	
+
 	<include name="Model">
 	
 		<control type="group">

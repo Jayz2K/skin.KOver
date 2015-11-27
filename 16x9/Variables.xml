@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="ExtendedContent">
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Similar)">plugin://script.extendedinfo?info=similarmovies&amp;&amp;dbid=$INFO[ListItem.DBID]</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Director)">plugin://script.extendedinfo?info=directormovies&amp;&amp;director=$INFO[ListItem.Director]</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.Label]</value>
+	</variable>
+
+	<variable name="ExtendedFallback">
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Similar)">DefaultMovieTitle.png</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Director)">DefaultMovieTitle.png</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast)">DefaultActor.png</value>
+	</variable>
 
 	<variable name="HomePic">
 		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View1)">$INFO[Skin.String(HOM.View1.WPPic)]</value>
@@ -74,6 +85,7 @@
 
 	<variable name="WPFanart">
 		<value condition="!Window.IsVisible(Home) + [SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)]">$INFO[ListItem.Art(thumb)]</value>
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Property(Fanart)]</value>
 		<value condition="!Window.IsVisible(Home)">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View1)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View2)">$INFO[Container(9012).ListItem.Art(fanart)]</value>
@@ -178,6 +190,7 @@
 	</variable>
 	
 	<variable name="B1SubTitle">
+		<value condition="Control.IsVisible(500)">$INFO[ListItem.Premiered,$LOCALIZE[172] ,]</value>
 		<value condition="!IsEmpty(ListItem.ChannelName)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
 		<value condition="!IsEmpty(ListItem.Artist)">$INFO[ListItem.Duration,, ]$LOCALIZE[12391]</value>
 		<value condition="!IsEmpty(ListItem.Episode) + Window.IsVisible(Home)">$INFO[ListItem.TVShowTitle,, . ]$INFO[ListItem.Season,$LOCALIZE[20373] , . ]$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>
@@ -207,6 +220,7 @@
 	</variable>	
 	
 	<variable name="B2Title">
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Title]</value>
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Property(LongDay)]</value>
 		<value condition="!IsEmpty(ListItem.Title)">$INFO[ListItem.Title]</value>
 		<value condition="StringCompare(ListItem.Label,..)">$LOCALIZE[210]</value>
@@ -214,6 +228,7 @@
 	</variable>
 	
 	<variable name="B2SubTitle">
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Genre]</value>
 		<value condition="Window.IsVisible(12600)">$INFO[Window(Weather).Property(Location)]</value>
 		<value condition="ListItem.HasEpg">$INFO[ListItem.ChannelName]$INFO[ListItem.Genre, - ,]</value>
 		<value condition="Window.IsVisible(10615) | Window.IsVisible(10617)">$INFO[ListItem.ChannelName]</value>
@@ -235,6 +250,7 @@
 	</variable>	
 	
 	<variable name="B2Plot">
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Plot]</value>
 		<value condition="Window.IsVisible(12600) + StringCompare(Container(50).CurrentItem,1)">[B]$INFO[Container(50).ListItem.Property(Outlook),,[CR]][/B]$INFO[Window(Weather).Property(Current.Temperature),$LOCALIZE[1375]: , °[CR]]$INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402]: , °[CR]]$INFO[Window(Weather).Property(Current.UVIndex),$LOCALIZE[403]: ,[CR]]$INFO[Window(Weather).Property(Current.Wind),$LOCALIZE[404]: ,[CR]]$INFO[Window(Weather).Property(Current.Humidity),$LOCALIZE[406]: ,[CR]]$INFO[Window(Weather).Property(Current.DewPoint),$LOCALIZE[405]: ,[CR]]</value>
 		<value condition="Window.IsVisible(12600) + !StringCompare(Container(50).CurrentItem,1)">[B]$INFO[Container(50).ListItem.Property(Outlook),,[CR]][/B]$INFO[Container(50).ListItem.Property(LowTemperature),$LOCALIZE[139] , / ]$INFO[Container(50).ListItem.Property(HighTemperature),,°[CR]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(widgetType),weather)">[B]$INFO[ListItem.Property(Location)][CR][/B]$INFO[ListItem.Property(Outlook)]</value>
@@ -253,6 +269,7 @@
 	</variable>	
 	
 	<variable name="B2InfoSup">
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Year]</value>
 		<value condition="!IsEmpty(ListItem.Property(ChannelName))">$INFO[ListItem.Duration]</value>
 		<value condition="Window.IsVisible(12600)">$INFO[Window(Weather).Property(WeatherProvider)]</value>
 		<value condition="ListItem.HasEpg">$INFO[ListItem.Duration]</value>
@@ -271,6 +288,7 @@
 	</variable>	
 	
 	<variable name="B3Art">
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Property(Fanart_small)]</value>
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Art(thumb)]</value>
 		<value condition="Window.IsVisible(tvguide)">http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Label]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=fanart,thumb</value>
 		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title)">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</value>
@@ -282,6 +300,7 @@
 	</variable>	
 	
 	<variable name="B3Tag">
+		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Title]$INFO[Container(500).ListItem.Property(TotalSeasons), . $LOCALIZE[20373] , . ]$INFO[Container(500).ListItem.Property(TotalEpisodes),$LOCALIZE[20359] ,]</value>
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Property(LongDay),,: ]$INFO[Container(50).ListItem.Property(Outlook)]</value>
 		<value condition="Window.IsVisible(10028) + IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Tagline]</value>
 		<value condition="Window.IsVisible(10028) + !IsEmpty(ListItem.Art(tvshow.poster))">$INFO[ListItem.Episode,$LOCALIZE[20359] ,]</value>

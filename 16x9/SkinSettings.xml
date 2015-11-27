@@ -999,6 +999,29 @@
 				    <selected>System.HasAddon(script.artistslideshow)</selected>
 				</control> 
 
+				<!-- Activate Studios Images -->
+				<control type="radiobutton" id="9404">
+				    <label>31215</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+				    <onclick condition="!System.HasAddon(resource.images.studios.white)">RunPlugin(plugin://resource.images.studios.white)</onclick>
+				    <selected>System.HasAddon(resource.images.studios.white)</selected>
+				</control> 
+
 			</control>
 
 		</control>		

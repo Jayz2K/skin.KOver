@@ -179,6 +179,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>!Window.IsVisible(weather) + !Window.IsVisible(tvguide) + !Window.IsVisible(radioguide)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="30">
 						<width>$PARAM[width]</width>
 						<height>60</height>
@@ -227,6 +228,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(2) + Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="2">
 						<width>$PARAM[width]</width>
 						<height>60</height>
@@ -270,6 +272,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(3) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="3">
 						<label>$LOCALIZE[581] : $INFO[Container.SortMethod]</label>
 						<width>$PARAM[width]</width>
@@ -314,6 +317,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(3) + Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="spincontrolex" id="3">
 						<width>$PARAM[width]</width>
 						<height>60</height>
@@ -364,6 +368,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(28) + !Window.IsVisible(12600) + [Window.IsVisible(tvchannels) | Window.IsVisible(tvguide)]</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="28">
 						<width>$PARAM[width]</width>
 						<height>60</height>
@@ -408,6 +413,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(4) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="togglebutton" id="4">
 						<label>$LOCALIZE[580] : $LOCALIZE[584]</label>
 						<altlabel>$LOCALIZE[580] : $LOCALIZE[585]</altlabel>
@@ -454,6 +460,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(14) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="radiobutton" id="14">
 						<label>20367</label>
 						<width>$PARAM[width]</width>
@@ -503,6 +510,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(19) + Container.CanFilter + !Container.CanFilterAdvanced + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="edit" id="19">
 						<label>587</label>
 						<width>$PARAM[width]</width>
@@ -545,6 +553,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(93) + Container.CanFilterAdvanced + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="radiobutton" id="93">
 						<label>587</label>
 						<width>$PARAM[width]</width>
@@ -598,6 +607,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>!StringCompare(Playlist.Length(video),0) + Control.IsEnabled(91) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="91">
 						<label>13350</label>
 						<width>$PARAM[width]</width>
@@ -643,6 +653,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>!StringCompare(Playlist.Length(music),0) + Control.IsEnabled(92) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="92">
 						<label>13350</label>
 						<width>$PARAM[width]</width>
@@ -688,6 +699,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(20) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="togglebutton" id="20">
 						<label>653</label>
 						<altlabel>13353</altlabel>
@@ -734,6 +746,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(8) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="8">
 						<label>137</label>
 						<width>$PARAM[width]</width>
@@ -778,6 +791,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Container.Content(MusicVideos) + Control.IsEnabled(16) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="radiobutton" id="16">
 						<label>589</label>
 						<width>$PARAM[width]</width>
@@ -827,6 +841,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>System.HasLocks + Control.IsEnabled(11) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="radiobutton" id="11">
 						<label>20336</label>
 						<width>$PARAM[width]</width>
@@ -878,6 +893,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>!ListItem.IsFolder + Control.IsEnabled(6) + Window.IsVisible(pictures) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="6">
 						<label>108</label>
 						<width>$PARAM[width]</width>
@@ -922,6 +938,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>ListItem.IsFolder + Control.IsEnabled(7) + Window.IsVisible(pictures) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="7">
 						<label>108</label>
 						<width>$PARAM[width]</width>
@@ -966,6 +983,7 @@
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(9) + Window.IsVisible(pictures) + !Window.IsVisible(12600)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="radiobutton" id="9">
 						<label>13319</label>
 						<width>$PARAM[width]</width>
@@ -1010,12 +1028,12 @@
 					</control>
 				</control>
 
-
 				<!-- Settings -->
 				<control type="group">
 					<height>60</height>
 					<width>$PARAM[width]</width>
 					<visible>Control.IsEnabled(95) + !Window.IsVisible(programs)</visible>
+					<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 					<control type="button" id="95">
 						<label>5</label>
 						<width>$PARAM[width]</width>
@@ -1072,6 +1090,493 @@
 					</control>
 				</control>
 
+				<!-- Extended infos / Type -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsEnabled(5007) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5007">
+						<label>$LOCALIZE[467]:</label>
+						<label2>$INFO[Window.Property(Type)]</label2>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>noop</onup>
+						<ondown>5001</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/view.png</texture>
+						<visible>!Control.HasFocus(5007)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/view.png</texture>
+						<visible>Control.HasFocus(5007)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Sort by -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsEnabled(5001) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5001">
+						<label>$ADDON[script.extendedinfo 32104]</label>
+						<label2>$INFO[Window.Property(Sort_Label)]</label2>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5007</onup>
+						<ondown>5004</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/sortby.png</texture>
+						<visible>!Control.HasFocus(5001)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/sortby.png</texture>
+						<visible>Control.HasFocus(5001)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Order -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsEnabled(5004) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5004">
+						<label>$ADDON[script.extendedinfo 32128]</label>
+						<label2>$INFO[Window.Property(Order_Label)]</label2>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5001</onup>
+						<ondown>5002</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/sort.png</texture>
+						<visible>!Control.HasFocus(5004)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/sort.png</texture>
+						<visible>Control.HasFocus(5004)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Genre -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5002) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5002">
+						<label>515</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5004</onup>
+						<ondown>5003</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5002)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5002)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Release date -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5003) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5003">
+						<label>172</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5002</onup>
+						<ondown>5006</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5003)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5003)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Certification -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5006) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5006">
+						<label>$ADDON[script.extendedinfo 32127]</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5003</onup>
+						<ondown>5008</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5006)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5006)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Actor / Crew -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5008) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5008">
+						<label>$ADDON[script.extendedinfo 32126]</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5006</onup>
+						<ondown>5009</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5008)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5008)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Keyword -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5009) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5009">
+						<label>$ADDON[script.extendedinfo 32114]</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5008</onup>
+						<ondown>5010</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5009)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5009)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Studio -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5010) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5010">
+						<label>572</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5009</onup>
+						<ondown>5012</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5010)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5010)</visible>
+					</control>
+				</control>
+
+				<!-- Extended infos / Vote count -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsVisible(5012) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5012">
+						<label>$ADDON[script.extendedinfo 32111]</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5010</onup>
+						<ondown>5005</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<visible>!Control.HasFocus(5012)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/filter.png</texture>
+						<visible>Control.HasFocus(5012)</visible>
+					</control>
+				</control>			
+
+				<!-- Extended infos / Clear filter -->
+				<control type="group">
+					<height>60</height>
+					<width>$PARAM[width]</width>
+					<visible>Control.IsEnabled(5005) + !Window.IsVisible(12600)</visible>
+					<visible>Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) | Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
+					<control type="button" id="5005">
+						<label>$ADDON[script.extendedinfo 32022]</label>
+						<width>$PARAM[width]</width>
+						<height>60</height>
+						<font>Font27</font>
+						<textwidth>496</textwidth>
+						<textoffsetx>80</textoffsetx>
+						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<onup>5012</onup>
+						<ondown>noop</ondown>
+						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
+						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
+						<onback condition="!Window.IsActive(tvguide) + !Window.IsActive(radioguide)">$PARAM[Id]</onback>
+						<onback condition="Window.IsActive(tvguide) + Window.IsActive(radioguide)">ActivateWindow(Home)</onback>
+						<onfocus>ClearProperty(TVShowNext,home)</onfocus>
+					</control>	
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/designerdelete.png</texture>
+						<visible>!Control.HasFocus(5005)</visible>
+					</control>
+					<control type="image">
+						<left>10</left>
+						<top>10</top>
+						<height>40</height>
+						<width>40</width>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/designerdelete.png</texture>
+						<visible>Control.HasFocus(5005)</visible>
+					</control>
+				</control>	
+
 			</control>
 		
 			<control type="list" id="97">
@@ -1086,6 +1591,7 @@
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
 				<visible allowhiddenfocus="true">Control.HasFocus(97)</visible>
+				<visible>!Window.IsVisible(script-ExtendedInfo Script-VideoList.xml) + !Window.IsVisible(script-ExtendedInfo Script-YoutubeList.xml)</visible>
 
 				<itemlayout width="$PARAM[width]" height="61">
 					<control type="image">
@@ -1822,7 +2328,7 @@
 	<include name="ListPoster">
 		<itemlayout width="212" height="356">
 			<control type="group">
-				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] + IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Artist) + [IsEmpty(ListItem.Episode) | [!IsEmpty(ListItem.Episode) + ListItem.IsFolder]]</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] + IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Artist) + [IsEmpty(ListItem.Episode) | [!IsEmpty(ListItem.Episode) + ListItem.IsFolder]] | Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -1884,7 +2390,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | [!IsEmpty(ListItem.Episode) + !ListItem.IsFolder]</visible>
+				<visible>[Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | [!IsEmpty(ListItem.Episode) + !ListItem.IsFolder]] + !Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2010,7 +2516,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons) | !IsEmpty(ListItem.Artist)</visible>
+				<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons) | !IsEmpty(ListItem.Artist)] + !Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2062,7 +2568,7 @@
 
 		<focusedlayout width="212" height="356">
 			<control type="group">
-				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] + IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Artist) + [IsEmpty(ListItem.Episode) | [!IsEmpty(ListItem.Episode) + ListItem.IsFolder]]</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(artists) + !Container.Content(songs) + !Container.Content(addons) + ![Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] + IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Artist) + [IsEmpty(ListItem.Episode) | [!IsEmpty(ListItem.Episode) + ListItem.IsFolder]] | Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2143,7 +2649,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | [!IsEmpty(ListItem.Episode) + !ListItem.IsFolder]</visible>
+				<visible>[Container.Content(episodes) | [Container.Content(movies) + StringCompare(Window(Home).Property(MenuSection),programs)] | !IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName) | [!IsEmpty(ListItem.Episode) + !ListItem.IsFolder]] + !Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
@@ -2276,7 +2782,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons) | !IsEmpty(ListItem.Artist)</visible>
+				<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(addons) | !IsEmpty(ListItem.Artist)] + !Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)</visible>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>

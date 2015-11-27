@@ -48,7 +48,8 @@
 					<ondown>noop</ondown>
 					<onright condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[33061])">301</onright>
 					<onright condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[33029])">99</onright>
-					<onright condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[206]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[182])">50</onright>
+					<onright condition="[StringCompare(Container(300).ListItem.Label,$LOCALIZE[206]) + !StringCompare(Container(300).ListItem.Property(MenuID),Cast)] | StringCompare(Container(300).ListItem.Label,$LOCALIZE[182])">50</onright>
+					<onright condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) | StringCompare(Container(300).ListItem.Property(MenuID),Director) | StringCompare(Container(300).ListItem.Property(MenuID),Similar)">70</onright>
 					<height>36</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
@@ -107,7 +108,15 @@
 							<label>206</label> <!-- Cast -->
 							<onclick>noop</onclick>
 							<visible>Window.IsVisible(12003)</visible>
-						</item>			
+							<visible>!System.HasAddon(script.extendedinfo)</visible>
+						</item>	
+						<item id="3">
+							<label>206</label> <!-- Cast -->
+							<onclick>noop</onclick>
+							<visible>Window.IsVisible(12003)</visible>
+							<visible>System.HasAddon(script.extendedinfo)</visible>
+							<property name="MenuID">Cast</property>
+						</item>		
 						<item id="3">
 							<label>182</label> <!-- Tracks -->
 							<onclick>noop</onclick>
@@ -133,6 +142,20 @@
 							<onclick>noop</onclick>
 							<visible>Window.IsActive(10602)</visible>
 						</item>						
+						<item id="6">
+							<label>20339</label> <!-- Director -->
+							<onclick>noop</onclick>
+							<visible>!IsEmpty(ListItem.Director)</visible>
+							<visible>System.HasAddon(script.extendedinfo)</visible>
+							<property name="MenuID">Director</property>
+						</item>
+						<item id="7">
+							<label>$ADDON[script.extendedinfo 32069]</label> <!-- Similar -->
+							<onclick>noop</onclick>
+							<visible>!IsEmpty(ListItem.Director)</visible>
+							<visible>System.HasAddon(script.extendedinfo)</visible>
+							<property name="MenuID">Similar</property>
+						</item>		
 					</content>
 				</control>
 
@@ -760,7 +783,19 @@
 				<include name="DiaAlbumTracks" condition="StringCompare(Window(Home).Property(DialogPos),TOP) | StringCompare(Window(Home).Property(DialogPos),BOTTOM)">
 					<param name="width" value="1224" />
 					<param name="height" value="332" />
-				</include>											
+				</include>						
+
+				<!-- Director -->
+				<include name="DiaVideoExtended" condition="StringCompare(Window(Home).Property(DialogPos),LEFT) | StringCompare(Window(Home).Property(DialogPos),RIGHT)">
+					<param name="width" value="612" />
+					<param name="height" value="664" />
+				</include>	
+
+				<include name="DiaVideoExtended" condition="StringCompare(Window(Home).Property(DialogPos),TOP) | StringCompare(Window(Home).Property(DialogPos),BOTTOM)">
+					<param name="width" value="1224" />
+					<param name="height" value="332" />
+				</include>		
+
 
 				<!-- Plot -->
 				<control type="grouplist">
@@ -831,6 +866,13 @@
 
 			</control>
 		</control> 
+
+	    <control type="button" id="51">
+	        <visible allowhiddenfocus="true">false</visible>
+	        <onright>Control.Move(50,1)</onright>
+	        <onleft>Control.Move(50,-1)</onleft>
+	        <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
+	    </control>
 	</include>
 	
 	<include name="DiaVideoCast">  <!-- Video cast for DiaVideoInfos -->
@@ -845,7 +887,7 @@
 			<onleft>300</onleft>
 			<orientation>horizontal</orientation>
 			<scrolltime>100</scrolltime>
-			<visible>Window.IsVisible(12003) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[206])</visible>
+			<visible allowhiddenfocus="true">Window.IsVisible(12003) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[206]) + !System.HasAddon(script.extendedinfo)</visible>
 			<animation effect="fade" start="0" end="100" time="100" reversible="true">VisibleChange</animation>				
 
 			<itemlayout width="204" height="332">
@@ -922,6 +964,114 @@
 					<label>$INFO[ListItem.Label2]</label>
 				</control>
 			</focusedlayout>
+		</control>
+	</include>
+
+	<include name="DiaVideoExtended">  <!-- Video director for DiaVideoInfos -->
+		<control type="group">
+			<animation effect="fade" start="100" end="0" time="0" reversible="true" condition="Container(70).IsUpdating">Conditional</animation>
+			<control type="panel" id="70">
+				<left>24</left>
+				<top>24</top>
+				<width>$PARAM[width]</width>
+				<height>$PARAM[height]</height>
+				<onup>noop</onup>
+				<ondown>noop</ondown>
+				<onright>noop</onright>
+				<onleft>300</onleft>
+				<orientation>horizontal</orientation>
+				<scrolltime>100</scrolltime>
+				<visible>Window.IsVisible(12003) + System.HasAddon(script.extendedinfo)</visible>
+				<animation effect="fade" start="0" end="100" time="100" reversible="true">VisibleChange</animation>				
+
+				<itemlayout width="204" height="332">
+					<control type="image">
+						<left>24</left>
+						<top>52</top>
+						<width>132</width>
+						<height>132</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$VAR[ExtendedFallback]</texture>
+					</control>				
+					<control type="image">
+						<width>180</width>
+						<height>236</height>
+						<aspectratio>scale</aspectratio>
+						<texture>$INFO[ListItem.Art(thumb)]</texture>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>248</top>
+						<width>180</width>
+						<height>38</height>
+						<font>Font25</font>
+						<align>center</align>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>278</top>
+						<width>180</width>
+						<height>36</height>
+						<font>FontSmallR</font>
+						<align>center</align>
+						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</itemlayout>
+
+				<focusedlayout width="204" height="332">
+					<control type="image">
+						<left>24</left>
+						<top>52</top>
+						<width>132</width>
+						<height>132</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$VAR[ExtendedFallback]</texture>
+					</control>						
+					<control type="image">
+						<width>180</width>
+						<height>236</height>
+						<colordiffuse>FFFFFFFF</colordiffuse>
+						<aspectratio>scale</aspectratio>
+						<texture>$INFO[ListItem.Art(thumb)]</texture>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>248</top>
+						<width>180</width>
+						<height>38</height>
+						<font>Font25</font>
+						<align>center</align>
+						<textcolor>$VAR[CategoryColor3]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+					<control type="label">
+						<left>0</left>
+						<top>278</top>
+						<width>180</width>
+						<height>36</height>
+						<font>FontSmallR</font>
+						<align>center</align>
+						<textcolor>$VAR[CategoryColor3]</textcolor>
+						<label>$INFO[ListItem.Label2]</label>
+					</control>
+				</focusedlayout>
+				<content>$VAR[ExtendedContent]</content>
+			</control>
+		</control>
+		<control type="label" id="71">
+			<left>24</left>
+			<top>24</top>
+			<width>$PARAM[width]</width>
+			<height>$PARAM[height]</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<font>Font36</font>
+			<label>Loading...</label>
+			<visible>Window.IsVisible(12003) + StringCompare(Container(300).ListItem.Property(MenuID),Cast) + Container(70).IsUpdating</visible>
+			<animation effect="fade" start="100" end="0" time="400" reversible="true" pulse="true" condition="true">Conditional</animation>	
 		</control>
 	</include>
 

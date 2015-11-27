@@ -882,6 +882,10 @@ msgctxt "#31214"
 msgid "Backup current color set."
 msgstr ""
 
+msgctxt "#31215"
+msgid "Install Image ressource addon (studio logos) ..."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"
