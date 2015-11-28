@@ -3,7 +3,8 @@
 	<variable name="ExtendedContent">
 		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Similar)">plugin://script.extendedinfo?info=similarmovies&amp;&amp;dbid=$INFO[ListItem.DBID]</value>
 		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Director)">plugin://script.extendedinfo?info=directormovies&amp;&amp;director=$INFO[ListItem.Director]</value>
-		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.Label]</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + IsEmpty(ListItem.Episode)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.DBID]</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + !IsEmpty(ListItem.Episode)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[ListItem.DBID]</value>
 	</variable>
 
 	<variable name="ExtendedFallback">
