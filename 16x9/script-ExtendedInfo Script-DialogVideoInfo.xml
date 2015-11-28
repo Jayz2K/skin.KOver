@@ -2,6 +2,11 @@
 <window type="dialog">
     <!-- Extended infos Videos -->
     <defaultcontrol always="true">300</defaultcontrol>
+    <onload>ClearProperty(DialogVisibility,Home)</onload>
+    <onload>ClearProperty(DialogVisibility2,Home)</onload>
+    <onload>ClearProperty(DialogVisibility3,Home)</onload>
+    <onload>ClearProperty(DialogVisibility4,Home)</onload>
+    <onload>ClearProperty(DialogVisibility5,Home)</onload>
     
     <controls>
         
