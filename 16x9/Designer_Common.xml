@@ -1920,7 +1920,7 @@
 					<right>0</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>5</right>
@@ -1928,7 +1928,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -2027,7 +2027,7 @@
 						<right>0</right>
 						<top>0</top>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -2035,7 +2035,7 @@
 						<width>25</width>
 						<height>25</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 					</control>
 				<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 				</control>
@@ -2209,7 +2209,7 @@
 					<right>1</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -2217,7 +2217,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -2282,7 +2282,7 @@
 					<right>1</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -2290,7 +2290,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -2365,7 +2365,7 @@
 						<right>1</right>
 						<top>0</top>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -2373,7 +2373,7 @@
 						<width>25</width>
 						<height>25</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 					</control>
 				<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 				</control>
@@ -2448,7 +2448,7 @@
 						<right>1</right>
 						<top>0</top>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -2456,7 +2456,7 @@
 						<width>25</width>
 						<height>25</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 					</control>
 				<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 				</control>
@@ -2624,7 +2624,7 @@
 						<right>1</right>
 						<top>0</top>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -2632,7 +2632,7 @@
 						<width>25</width>
 						<height>25</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 					</control>
 				<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 				</control>
@@ -2715,7 +2715,7 @@
 						<right>1</right>
 						<top>0</top>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 					</control>
 					<control type="image">
 						<right>5</right>
@@ -2723,7 +2723,7 @@
 						<width>25</width>
 						<height>25</height>
 						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 					</control>
 				<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 				</control>
@@ -2881,7 +2881,7 @@
 					<right>1</right>
 					<top>1</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -2889,7 +2889,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -2984,7 +2984,7 @@
 					<right>1</right>
 					<top>1</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -2992,7 +2992,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -3107,7 +3107,7 @@
 					<right>1</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -3115,7 +3115,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -3229,7 +3229,7 @@
 					<right>1</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -3237,7 +3237,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -3394,7 +3394,7 @@
 					<right>0</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>5</right>
@@ -3402,7 +3402,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>
@@ -3521,7 +3521,7 @@
 					<right>0</right>
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">common/corner.png</texture>
+					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
 				</control>
 				<control type="image">
 					<right>5</right>
@@ -3529,7 +3529,7 @@
 					<width>25</width>
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="FFFFFFFF">material/check.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
 				</control>
 			<visible>Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 			</control>

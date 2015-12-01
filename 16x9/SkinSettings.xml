@@ -26,7 +26,7 @@
 			<!-- Background -->
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.SETBg)]">common/white.png</texture>
 			</control>
 
 			<!-- Left Panel Background -->
@@ -174,7 +174,7 @@
 				<height>12</height>
 				<align>left</align>
 				<font>Font36</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 				<label>31125</label>
 			</control>			
 
@@ -197,14 +197,14 @@
 				<itemlayout width="200" height="120">
 					<control type="image">
 						<width>194</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texture>
 					</control>
 					<control type="label">
 						<height>120</height>
 						<width>194</width>
 						<label>$INFO[ListItem.Label]</label>
 						<font>FontSmall</font>
-						<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
@@ -213,7 +213,7 @@
 				<focusedlayout width="200" height="120">
 					<control type="image">
 						<width>194</width>
-						<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texture>
 						<animation effect="fade" start="100" end="50" time="0" condition="ControlGroup(9100).HasFocus() | ControlGroup(9200).HasFocus() | ControlGroup(9300).HasFocus()">Conditional</animation>
 					</control>
 					<control type="label">
@@ -221,7 +221,7 @@
 						<width>194</width>
 						<label>$INFO[ListItem.Label]</label>
 						<font>FontSmall</font>
-						<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 						<align>center</align>
 						<aligny>center</aligny>
 					</control>
@@ -271,14 +271,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
 				</control>				
 
@@ -286,7 +286,7 @@
 				<control type="image" id="9102">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 				</control>				
 
 				<!-- Enable PVR thumbs -->
@@ -298,17 +298,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<onclick>Skin.ToggleSetting(SkinHelper.EnablePVRThumbs)</onclick>
 					<selected>Skin.HasSetting(SkinHelper.EnablePVRThumbs)</selected>
 				</control>		
@@ -321,17 +321,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<onclick>Skin.ToggleSetting(DesignerShow)</onclick>
 					<selected>Skin.HasSetting(DesignerShow)</selected>
 				</control>		
@@ -344,17 +344,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<onclick>Skin.ToggleSetting(ColortoolShow)</onclick>
 					<selected>Skin.HasSetting(ColortoolShow)</selected>
 				</control>	
@@ -367,17 +367,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<onclick>Skin.ToggleSetting(WatchedFlag)</onclick>
 					<selected>Skin.HasSetting(WatchedFlag)</selected>
 				</control>	
@@ -391,17 +391,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<onclick condition="Skin.String(IdleFade,25)">Skin.SetString(IdleFade,30)</onclick>
 					<onclick condition="Skin.String(IdleFade,20)">Skin.SetString(IdleFade,25)</onclick>
 					<onclick condition="Skin.String(IdleFade,15)">Skin.SetString(IdleFade,20)</onclick>
@@ -414,7 +414,7 @@
 				<control type="image" id="9108">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 					<visible>System.HasAddon(script.artistslideshow)</visible>
 				</control>
 
@@ -426,17 +426,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<visible>System.HasAddon(script.artistslideshow)</visible>
 					<onclick>Skin.ToggleSetting(ArtistslideShow)</onclick>
 					<selected>Skin.HasSetting(ArtistslideShow)</selected>
@@ -450,17 +450,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<visible>Skin.HasSetting(ArtistslideShow) + System.HasAddon(script.artistslideshow)</visible>
 					<onclick>Skin.ToggleSetting(VisualisationShow)</onclick>
 					<selected>Skin.HasSetting(VisualisationShow)</selected>
@@ -470,7 +470,7 @@
 				<control type="image" id="9111">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 				</control>
 
 				<!-- Show debug infos -->
@@ -481,17 +481,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
 					<selected>Skin.HasSetting(DebugInfo)</selected>
 				</control>	
@@ -519,14 +519,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultPVRH.zip)</onclick>
 				</control>
 
@@ -536,14 +536,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultPVRV.zip)</onclick>
 				</control>
 
@@ -551,7 +551,7 @@
 				<control type="image" id="9204">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 				</control>
 
 				<!-- Classic -->
@@ -560,14 +560,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultCLASSIC.zip)</onclick>
 				</control>
 
@@ -577,14 +577,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultTWOTHIRDS.zip)</onclick>
 				</control>
 
@@ -594,14 +594,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/DefaultHYBRID.zip)</onclick>
 				</control>
 
@@ -609,7 +609,7 @@
 				<control type="image" id="9209">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 				</control>
 
 				<!-- Dark -->
@@ -618,15 +618,15 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultDARK.zip)</onclick>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultdark.zip)</onclick>
 				</control>
 
 				<!-- Light -->
@@ -635,15 +635,15 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultLIGHT.zip)</onclick>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultlight.zip)</onclick>
 				</control>
 
 				<!-- FTV -->
@@ -652,15 +652,15 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultFTV.zip)</onclick>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultftv.zip)</onclick>
 				</control>
 
 				<!-- Flat Style -->
@@ -669,15 +669,15 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/DefaultFLAT.zip)</onclick>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultflat.zip)</onclick>
 				</control>
 						
 			</control>		
@@ -703,14 +703,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
 				</control>
 
@@ -718,7 +718,7 @@
 				<control type="image" id="9302">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 				</control>
 
 				<!-- Backup All viewtypes -->
@@ -727,14 +727,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=HOM.|VDO.|MUS.|PIC.|TV.|PRO.,promptfilename=true)</onclick>
 				</control>
 
@@ -744,14 +744,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,promptfilename=true)</onclick>
 				</control>
 
@@ -761,14 +761,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,promptfilename=true)</onclick>
 				</control>
 
@@ -776,7 +776,7 @@
 				<control type="image" id="9306">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 					<visible>Skin.HasSetting(ColortoolShow)</visible>
 				</control>
 
@@ -786,14 +786,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=Color,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(ColortoolShow)</visible>
 				</control>
@@ -802,7 +802,7 @@
 				<control type="image" id="9308">
 					<width>1086</width>
 					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>
 
@@ -812,14 +812,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=HOM.,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>
@@ -830,14 +830,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=VDO.,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>
@@ -848,14 +848,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=MUS.,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>
@@ -866,14 +866,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=PIC.,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>
@@ -884,14 +884,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=TV.,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>
@@ -902,14 +902,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 					<onclick>RunScript(script.skin.helper.service,action=backup,filter=PRO.,promptfilename=true)</onclick>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
 				</control>	
@@ -938,17 +938,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 				    <onclick condition="!System.HasAddon(script.extendedinfo)">RunPlugin(plugin://script.extendedinfo)</onclick>
 				    <selected>System.HasAddon(script.extendedinfo)</selected>
 				</control> 
@@ -961,17 +961,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 				    <onclick condition="!System.HasAddon(script.artwork.downloader)">RunPlugin(plugin://script.artwork.downloader)</onclick>
 				    <selected>System.HasAddon(script.artwork.downloader)</selected>
 				</control> 
@@ -984,17 +984,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 				    <onclick condition="!System.HasAddon(script.artistslideshow)">RunPlugin(plugin://script.artistslideshow)</onclick>
 				    <selected>System.HasAddon(script.artistslideshow)</selected>
 				</control> 
@@ -1007,17 +1007,17 @@
 					<font>Font27</font>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 					<radiowidth>30</radiowidth>
 					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 				    <onclick condition="!System.HasAddon(resource.images.studios.white)">RunPlugin(plugin://resource.images.studios.white)</onclick>
 				    <selected>System.HasAddon(resource.images.studios.white)</selected>
 				</control> 

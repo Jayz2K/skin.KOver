@@ -98,60 +98,82 @@
 					<content>
 						<item id="1">
 							<label>33061</label> <!-- Menu -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 						</item>
 						<item id="2">
 							<label>33029</label> <!-- Details -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 						</item>
 						<item id="3">
 							<label>206</label> <!-- Cast -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>Window.IsVisible(12003)</visible>
 							<visible>!System.HasAddon(script.extendedinfo)</visible>
 						</item>	
 						<item id="3">
 							<label>206</label> <!-- Cast -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>Window.IsVisible(12003)</visible>
 							<visible>System.HasAddon(script.extendedinfo)</visible>
 							<property name="MenuID">Cast</property>
 						</item>		
 						<item id="3">
 							<label>182</label> <!-- Tracks -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>Window.IsVisible(12001) + !Container.Content(artists)</visible>
 						</item>				
 						<item id="4">
 							<label>207</label> <!-- Plot -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>[Window.IsVisible(12003) | Window.IsActive(10602) | Window.IsActive(10142) | Window.IsActive(10146) | Window.IsActive(pvrrecordinginfo)] + !Window.IsActive(visualisation)</visible>
 						</item>
 						<item id="4">
 							<label>21891</label> <!-- Artist Description -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>[Window.IsVisible(12001) | Window.IsVisible(10135) | Window.IsActive(visualisation)] + !Container.Content(albums)</visible>
 						</item>			
 						<item id="4">
 							<label>10523</label> <!-- Album Description -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>[Window.IsVisible(12001) | Window.IsVisible(10135) | Window.IsActive(visualisation)] + !Container.Content(artists)</visible>
 						</item>
 						<item id="5">
 							<label>209</label> <!-- Plot -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>Window.IsActive(10602)</visible>
 						</item>						
 						<item id="6">
 							<label>20339</label> <!-- Director -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>!IsEmpty(ListItem.Director)</visible>
 							<visible>System.HasAddon(script.extendedinfo)</visible>
 							<property name="MenuID">Director</property>
 						</item>
 						<item id="7">
 							<label>$ADDON[script.extendedinfo 32069]</label> <!-- Similar -->
-							<onclick>noop</onclick>
+							<onclick condition="Window.IsVisible(10146)">SendClick(10146,12)</onclick>
+							<onclick condition="Window.IsVisible(10602)">SendClick(10602,5)</onclick>
+							<onclick condition="Window.IsVisible(12003)">SendClick(12003,8)</onclick>
 							<visible>!IsEmpty(ListItem.Director)</visible>
 							<visible>System.HasAddon(script.extendedinfo)</visible>
 							<property name="MenuID">Similar</property>

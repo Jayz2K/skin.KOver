@@ -24,7 +24,7 @@
 			<!-- Background -->
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.SETBg)]">common/white.png</texture>
 			</control>
 			
 			<!-- Left Panel Background -->

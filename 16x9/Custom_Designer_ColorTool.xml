@@ -25,7 +25,7 @@
 			<!-- Background -->
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.SETBg)]">common/white.png</texture>
 			</control>
 			
 			<!-- Left Panel Background -->
@@ -152,13 +152,15 @@
 
 		</control>
 
+		<!-- Window content -->
+
 		<control type="image">
 			<left>732</left>
 			<top>625</top>
 			<width>60</width>
 			<height>60</height>
 			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/down.png</texture>
+			<texture colordiffuse="$INFO[Skin.String(Color.SETTxt1NF)]">material/down.png</texture>
 		</control>
 
 		<control type="image">
@@ -167,7 +169,7 @@
 			<width>60</width>
 			<height>60</height>
 			<aspectratio>keep</aspectratio>
-			<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/up.png</texture>
+			<texture colordiffuse="$INFO[Skin.String(Color.SETTxt1NF)]">material/up.png</texture>
 		</control>
 	
 		<control type="group">
@@ -194,7 +196,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Font27</font>
-						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 						<label fallback="31090">$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
@@ -207,7 +209,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 						<font>Font36</font>
-						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 						<label fallback="31090">$INFO[ListItem.Label]</label>
 					</control>
 				</focusedlayout>
@@ -242,7 +244,7 @@
 						<property name="Split">SPLIT</property>
 					</item>
 					<item>
-						<label>31009</label>
+						<label>$LOCALIZE[31009] + $LOCALIZE[31085]</label>
 						<label2>31010</label2>
 						<icon>material/pencil.png</icon>
 						<thumb></thumb>
@@ -295,6 +297,15 @@
 						<visible>true</visible>
 						<property name="SubName">DIA</property>
 					</item>
+					<item>
+						<label>31221</label>
+						<label2>31222</label2>
+						<icon>material/pencil.png</icon>
+						<thumb></thumb>
+						<onclick>noop</onclick>
+						<visible>true</visible>
+						<property name="SubName">SET</property>
+					</item>
 				</content>
 			</control>
 		</control>
@@ -309,6 +320,7 @@
 			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),B3)">Control.SetFocus(9304,0)</onfocus>
 			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),B4)">Control.SetFocus(9305,0)</onfocus>
 			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Control.SetFocus(9306,0)</onfocus>
+			<onfocus condition="StringCompare(Container(9200).ListItem.Property(SubName),SET)">Control.SetFocus(9307,0)</onfocus>
 		</control>
 
 		<control type="label">
@@ -317,7 +329,7 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9300).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9300).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9300).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9300).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),WP)</visible>
 		</control>
 
@@ -327,7 +339,7 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9301).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9301).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9301).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9301).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),BB)</visible>
 		</control>
 
@@ -337,7 +349,7 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9302).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9302).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9302).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9302).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1)</visible>
 		</control>
 
@@ -347,7 +359,7 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9303).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9303).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9303).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9303).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),B2)</visible>
 		</control>
 
@@ -357,7 +369,7 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9304).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9304).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9304).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9304).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),B3)</visible>
 		</control>
 
@@ -367,9 +379,9 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9305).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9305).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9305).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9305).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),B4)</visible>
-		</control>						
+		</control>					
 
 		<control type="label">
 			<right>80</right>
@@ -377,9 +389,19 @@
 			<width>200</width>
 			<height>60</height>
 			<align>right</align>
-			<label>[COLOR $INFO[Skin.String(Color.B1Txt1NF)]]$INFO[Container(9306).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.B1Txt2NF)]]$INFO[Container(9306).NumItems, | ,][/COLOR]</label>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9306).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9306).NumItems, | ,][/COLOR]</label>
 			<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
 		</control>
+
+		<control type="label">
+			<right>80</right>
+			<top>625</top>
+			<width>200</width>
+			<height>60</height>
+			<align>right</align>
+			<label>[COLOR $INFO[Skin.String(Color.SETTxt1NF)]]$INFO[Container(9307).CurrentItem][/COLOR][COLOR $INFO[Skin.String(Color.SETTxt2NF)]]$INFO[Container(9307).NumItems, | ,][/COLOR]</label>
+			<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+		</control>	
 	
 		<!-- Options List (Detailed values for cross tests in Include_Designer.xml) -->
 		<control type="grouplist" id="9300">
@@ -410,17 +432,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31060][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -448,7 +470,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.WP)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(1)</visible>
 				</control>			
@@ -459,7 +481,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.WP)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(1)</visible>
 				</control>				
@@ -494,17 +516,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -532,7 +554,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBBg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(2)</visible>
 				</control>			
@@ -543,7 +565,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBBg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(2)</visible>
 				</control>					
@@ -560,17 +582,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[31068]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -598,7 +620,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBIconNF)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(3)</visible>
 				</control>			
@@ -609,7 +631,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBIconNF)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(3)</visible>
 				</control>							
@@ -626,17 +648,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[31081]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -664,7 +686,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBClock)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(4)</visible>
 				</control>			
@@ -675,7 +697,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBClock)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(4)</visible>
 				</control>							
@@ -692,17 +714,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31061][CR]$LOCALIZE[31082]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -730,7 +752,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBShadow)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(5)</visible>
 				</control>			
@@ -741,7 +763,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.SBShadow)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(5)</visible>
 				</control>						
@@ -758,17 +780,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31062]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -796,7 +818,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.BBBg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(6)</visible>
 				</control>			
@@ -807,7 +829,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.BBBg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(6)</visible>
 				</control>							
@@ -842,17 +864,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -880,7 +902,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Bg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(7)</visible>
 				</control>			
@@ -891,7 +913,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Bg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(7)</visible>
 				</control>						
@@ -908,17 +930,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31069]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -946,7 +968,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemNF)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(8)</visible>
 				</control>			
@@ -957,7 +979,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemNF)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(8)</visible>
 				</control>							
@@ -974,17 +996,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31070]</label>
 					<font>FontSmall</font>
 					<textwidth>146</textwidth>
 					<textoffsetx>15</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1012,7 +1034,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1NF)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(9)</visible>
 				</control>			
@@ -1023,7 +1045,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1NF)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(9)</visible>
 				</control>							
@@ -1040,17 +1062,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31071]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1078,7 +1100,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2NF)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(10)</visible>
 				</control>			
@@ -1089,7 +1111,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2NF)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(10)</visible>
 				</control>						
@@ -1106,17 +1128,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1212]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1144,7 +1166,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFVDO)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(11)</visible>
 				</control>			
@@ -1155,7 +1177,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFVDO)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(11)</visible>
 				</control>						
@@ -1172,17 +1194,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[342]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1210,7 +1232,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMOV)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(12)</visible>
 				</control>			
@@ -1221,7 +1243,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMOV)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(12)</visible>
 				</control>							
@@ -1238,17 +1260,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[20343]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1276,7 +1298,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFSHO)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(13)</visible>
 				</control>			
@@ -1287,7 +1309,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFSHO)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(13)</visible>
 				</control>						
@@ -1304,17 +1326,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1211]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1342,7 +1364,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(14)</visible>
 				</control>			
@@ -1353,7 +1375,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(14)</visible>
 				</control>						
@@ -1370,17 +1392,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1213]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1408,7 +1430,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFPIC)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(15)</visible>
 				</control>			
@@ -1419,7 +1441,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFPIC)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(15)</visible>
 				</control>							
@@ -1436,17 +1458,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[19020]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1474,7 +1496,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFTV)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(16)</visible>
 				</control>			
@@ -1485,7 +1507,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFTV)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(16)</visible>
 				</control>							
@@ -1502,17 +1524,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1047]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1540,7 +1562,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemF)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(17)</visible>
 				</control>			
@@ -1551,7 +1573,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemF)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(17)</visible>
 				</control>						
@@ -1568,17 +1590,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31073]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1606,7 +1628,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1IconBg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(18)</visible>
 				</control>			
@@ -1617,7 +1639,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1IconBg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(18)</visible>
 				</control>							
@@ -1634,17 +1656,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31075]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1672,7 +1694,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1F)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(19)</visible>
 				</control>			
@@ -1683,7 +1705,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt1F)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(19)</visible>
 				</control>							
@@ -1700,17 +1722,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[535][CR]$LOCALIZE[31076]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1738,7 +1760,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2F)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(20)</visible>
 				</control>			
@@ -1749,7 +1771,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B1Txt2F)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(20)</visible>
 				</control>					
@@ -1784,17 +1806,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1822,7 +1844,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Bg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(21)</visible>
 				</control>			
@@ -1833,7 +1855,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Bg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(21)</visible>
 				</control>							
@@ -1850,17 +1872,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[31079]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1888,7 +1910,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt1)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(22)</visible>
 				</control>			
@@ -1899,7 +1921,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt1)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(22)</visible>
 				</control>							
@@ -1916,17 +1938,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[369]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1954,7 +1976,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt2)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(23)</visible>
 				</control>			
@@ -1965,7 +1987,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt2)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(23)</visible>
 				</control>							
@@ -1982,17 +2004,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[207]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -2020,7 +2042,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt3)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(24)</visible>
 				</control>			
@@ -2031,7 +2053,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt3)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(24)</visible>
 				</control>					
@@ -2048,17 +2070,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31063][CR]$LOCALIZE[31083]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -2086,7 +2108,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt4)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(25)</visible>
 				</control>			
@@ -2097,7 +2119,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B2Txt4)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(25)</visible>
 				</control>										
@@ -2132,17 +2154,17 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31064][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -2170,7 +2192,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B3Bg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(26)</visible>
 				</control>			
@@ -2181,7 +2203,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B3Bg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(26)</visible>
 				</control>						
@@ -2216,23 +2238,23 @@
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31065][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4Bg)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B4Bg)</onclick>
-					<onright>noop</onright>
+					<onright>28</onright>
 					<onleft>9003</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
@@ -2254,7 +2276,7 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B4Bg)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(27)</visible>
 				</control>			
@@ -2265,9 +2287,204 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.B4Bg)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(27)</visible>
+				</control>						
+			</control>
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(28)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),B4)</visible>
+				<control type="button" id="28">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[31217][CR]$LOCALIZE[31218]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4HBg)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B4HBg)</onclick>
+					<onright>29</onright>
+					<onleft>27</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B4HBg)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4HBg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(28)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4HBg)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(28)</visible>
+				</control>						
+			</control>
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(29)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),B4)</visible>
+				<control type="button" id="29">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[31217][CR]$LOCALIZE[31219]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4HTitle)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B4HTitle)</onclick>
+					<onright>30</onright>
+					<onleft>28</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B4HTitle)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4HTitle)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(29)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4HTitle)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(29)</visible>
+				</control>						
+			</control>
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(30)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),B4)</visible>
+				<control type="button" id="30">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[31217][CR]$LOCALIZE[31220]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.B4HSub)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.B4HSub)</onclick>
+					<onright>noop</onright>
+					<onleft>29</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.B4HSub)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4HSub)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(30)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.B4HSub)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(30)</visible>
 				</control>						
 			</control>
 		</control>
@@ -2290,33 +2507,33 @@
 			<visible allowhiddenfocus="true">StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
 
 			<control type="group">
-				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(28)">Conditional</animation>
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(45)">Conditional</animation>
 				<width>176</width>
 				<height>338</height>
 				<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
-				<control type="button" id="28">
+				<control type="button" id="45">
 					<top>15</top>
 					<left>3</left>
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIABg)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIABg)</onclick>
-					<onright>29</onright>
+					<onright>46</onright>
 					<onleft>9003</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
@@ -2338,9 +2555,9 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIABg)][/UPPERCASE]</label>
-					<visible>!Control.HasFocus(28)</visible>
+					<visible>!Control.HasFocus(45)</visible>
 				</control>			
 				<control type="label">
 					<left>15</left>
@@ -2349,41 +2566,41 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIABg)][/UPPERCASE]</label>
-					<visible>Control.HasFocus(28)</visible>
+					<visible>Control.HasFocus(45)</visible>
 				</control>				
 			</control>
 
 			<control type="group">
-				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(29)">Conditional</animation>
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(46)">Conditional</animation>
 				<width>176</width>
 				<height>338</height>
 				<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
-				<control type="button" id="29">
+				<control type="button" id="46">
 					<top>15</top>
 					<left>3</left>
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[369]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATitle)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATitle)</onclick>
-					<onright>30</onright>
-					<onleft>28</onleft>
+					<onright>47</onright>
+					<onleft>45</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
 					<ondown>Control.Move(9200,1)</ondown>
@@ -2404,9 +2621,9 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATitle)][/UPPERCASE]</label>
-					<visible>!Control.HasFocus(29)</visible>
+					<visible>!Control.HasFocus(46)</visible>
 				</control>			
 				<control type="label">
 					<left>15</left>
@@ -2415,41 +2632,41 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATitle)][/UPPERCASE]</label>
-					<visible>Control.HasFocus(29)</visible>
+					<visible>Control.HasFocus(46)</visible>
 				</control>							
 			</control>
 
 			<control type="group">
-				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(30)">Conditional</animation>
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(47)">Conditional</animation>
 				<width>176</width>
 				<height>338</height>
 				<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
-				<control type="button" id="30">
+				<control type="button" id="47">
 					<top>15</top>
 					<left>3</left>
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31072]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtNF)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATxtNF)</onclick>
-					<onright>31</onright>
-					<onleft>29</onleft>
+					<onright>48</onright>
+					<onleft>46</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
 					<ondown>Control.Move(9200,1)</ondown>
@@ -2470,9 +2687,9 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtNF)][/UPPERCASE]</label>
-					<visible>!Control.HasFocus(30)</visible>
+					<visible>!Control.HasFocus(47)</visible>
 				</control>			
 				<control type="label">
 					<left>15</left>
@@ -2481,41 +2698,41 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtNF)][/UPPERCASE]</label>
-					<visible>Control.HasFocus(30)</visible>
+					<visible>Control.HasFocus(47)</visible>
 				</control>						
 			</control>
 
 			<control type="group">
-				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(31)">Conditional</animation>
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(48)">Conditional</animation>
 				<width>176</width>
 				<height>338</height>
 				<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
-				<control type="button" id="31">
+				<control type="button" id="48">
 					<top>15</top>
 					<left>3</left>
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31078]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtFBg)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATxtFBg)</onclick>
-					<onright>32</onright>
-					<onleft>30</onleft>
+					<onright>49</onright>
+					<onleft>47</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
 					<ondown>Control.Move(9200,1)</ondown>
@@ -2536,9 +2753,9 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtFBg)][/UPPERCASE]</label>
-					<visible>!Control.HasFocus(31)</visible>
+					<visible>!Control.HasFocus(48)</visible>
 				</control>			
 				<control type="label">
 					<left>15</left>
@@ -2547,41 +2764,41 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtFBg)][/UPPERCASE]</label>
-					<visible>Control.HasFocus(31)</visible>
+					<visible>Control.HasFocus(48)</visible>
 				</control>											
 			</control>
 
 			<control type="group">
-				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(32)">Conditional</animation>
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(49)">Conditional</animation>
 				<width>176</width>
 				<height>338</height>
 				<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
-				<control type="button" id="32">
+				<control type="button" id="49">
 					<top>15</top>
 					<left>3</left>
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31077]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIATxtF)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIATxtF)</onclick>
-					<onright>33</onright>
-					<onleft>31</onleft>
+					<onright>50</onright>
+					<onleft>48</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
 					<ondown>Control.Move(9200,1)</ondown>
@@ -2602,9 +2819,9 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtF)][/UPPERCASE]</label>
-					<visible>!Control.HasFocus(32)</visible>
+					<visible>!Control.HasFocus(49)</visible>
 				</control>			
 				<control type="label">
 					<left>15</left>
@@ -2613,41 +2830,41 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIATxtF)][/UPPERCASE]</label>
-					<visible>Control.HasFocus(32)</visible>
+					<visible>Control.HasFocus(49)</visible>
 				</control>						
 			</control>
 
 			<control type="group">
-				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(33)">Conditional</animation>
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(50)">Conditional</animation>
 				<width>176</width>
 				<height>338</height>
 				<visible>StringCompare(Container(9200).ListItem.Property(SubName),DIA)</visible>
-				<control type="button" id="33">
+				<control type="button" id="50">
 					<top>15</top>
 					<left>3</left>
 					<height>293</height>
 					<width>170</width>
 					<colordiffuse>FF111111</colordiffuse>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<label>$LOCALIZE[31066][CR]$LOCALIZE[31080]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
 					<textoffsety>140</textoffsety>
-					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor>$INFO[Skin.String(Color.B1Txt2F)]</focusedcolor>
-					<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-					<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
 					<align>center</align>
 					<aligny>top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.DIAInvalid)</onclick>
 					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.DIAInvalid)</onclick>
 					<onright>noop</onright>
-					<onleft>32</onleft>
+					<onleft>49</onleft>
 					<onup>Control.Move(9200,-1)</onup>
 					<ondown>301</ondown>
 					<ondown>Control.Move(9200,1)</ondown>
@@ -2668,8 +2885,224 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(50)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(50)</visible>
+				</control>							
+			</control>
+		</control>
+
+		<control type="grouplist" id="9307">
+			<top>700</top>
+			<left>752</left>
+			<height>338</height>
+			<width>1086</width>
+			<onup>301</onup>
+			<onup>Control.Move(9200,-1)</onup>
+			<ondown>301</ondown>
+			<ondown>Control.Move(9200,1)</ondown>
+			<onleft>9100</onleft>
+			<onright>noop</onright>
+			<onback>9100</onback>
+			<orientation>horizontal</orientation>
+			<itemgap>0</itemgap>
+			<scrolltime>200</scrolltime>
+			<visible allowhiddenfocus="true">StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>			
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(31)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="31">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[31060][CR]$LOCALIZE[19190]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETBg)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETBg)</onclick>
+					<onright>32</onright>
+					<onleft>9003</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETBg)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETBg)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(31)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETBg)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(31)</visible>
+				</control>						
+			</control>	
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(32)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="32">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[535][CR]$LOCALIZE[31069]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETItemNF)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETItemNF)</onclick>
+					<onright>33</onright>
+					<onleft>31</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETItemNF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(32)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETItemNF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(32)</visible>
+				</control>							
+			</control>	
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(33)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="33">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[535][CR]$LOCALIZE[31070]</label>
+					<font>FontSmall</font>
+					<textwidth>146</textwidth>
+					<textoffsetx>15</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETTxt1NF)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETTxt1NF)</onclick>
+					<onright>34</onright>
+					<onleft>32</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETTxt1NF)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt1NF)][/UPPERCASE]</label>
 					<visible>!Control.HasFocus(33)</visible>
 				</control>			
 				<control type="label">
@@ -2679,12 +3112,276 @@
 					<height>60</height>
 					<font>Font27</font>
 					<align>center</align>
-					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-					<label>[UPPERCASE]$INFO[Skin.String(Color.DIAInvalid)][/UPPERCASE]</label>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt1NF)][/UPPERCASE]</label>
 					<visible>Control.HasFocus(33)</visible>
 				</control>							
+			</control>	
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(34)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="34">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[535][CR]$LOCALIZE[31071]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETTxt2NF)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETTxt2NF)</onclick>
+					<onright>41</onright>
+					<onleft>33</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETTxt2NF)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt2NF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(34)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt2NF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(34)</visible>
+				</control>						
+			</control>	
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(41)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="41">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[535][CR]$LOCALIZE[31074][CR]$LOCALIZE[1047]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETItemF)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETItemF)</onclick>
+					<onright>43</onright>
+					<onleft>34</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETItemF)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(41)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETItemF)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(41)</visible>
+				</control>						
+			</control>	
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(43)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="43">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[535][CR]$LOCALIZE[31075]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETTxt1F)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETTxt1F)</onclick>
+					<onright>44</onright>
+					<onleft>41</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt1F)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(43)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt1F)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(43)</visible>
+				</control>							
 			</control>
-		</control>		
+
+			<control type="group">
+				<animation effect="zoom" start="100" end="125" time="200" center="166,100" condition="Control.HasFocus(44)">Conditional</animation>
+				<width>176</width>
+				<height>338</height>
+				<visible>StringCompare(Container(9200).ListItem.Property(SubName),SET)</visible>
+				<control type="button" id="44">
+					<top>15</top>
+					<left>3</left>
+					<height>293</height>
+					<width>170</width>
+					<colordiffuse>FF111111</colordiffuse>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
+					<label>$LOCALIZE[535][CR]$LOCALIZE[31076]</label>
+					<font>FontSmall</font>
+					<textwidth>140</textwidth>
+					<textoffsetx>18</textoffsetx>
+					<textoffsety>140</textoffsety>
+					<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor>$INFO[Skin.String(Color.SETTxt2F)]</focusedcolor>
+					<disabledcolor>$INFO[Skin.String(Color.SETItemNF)]</disabledcolor>
+					<invalidcolor>$INFO[Skin.String(Color.SETItemNF)]</invalidcolor>
+					<align>center</align>
+					<aligny>top</aligny>
+					<wrapmultiline>true</wrapmultiline>
+					<onclick condition="System.HasAddon(script.skin.helper.service)">RunScript(script.skin.helper.service, action=colorpicker, skinstring=Color.SETTxt2F)</onclick>
+					<onclick condition="!System.HasAddon(script.skin.helper.service)">Skin.SetString(Color.SETTxt2F)</onclick>
+					<onright>noop</onright>
+					<onleft>43</onleft>
+					<onup>Control.Move(9200,-1)</onup>
+					<ondown>301</ondown>
+					<ondown>Control.Move(9200,1)</ondown>
+					<onup>301</onup>
+				</control>
+				<control type="image">
+					<left>39</left>
+					<top>46</top>
+					<width>98</width>
+					<height>98</height>
+					<aspectratio>keep</aspectratio>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETTxt2F)]">material/Palette.png</texture>
+				</control>
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt2F)][/UPPERCASE]</label>
+					<visible>!Control.HasFocus(44)</visible>
+				</control>			
+				<control type="label">
+					<left>15</left>
+					<bottom>39</bottom>
+					<width>146</width>
+					<height>60</height>
+					<font>Font27</font>
+					<align>center</align>
+					<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
+					<label>[UPPERCASE]$INFO[Skin.String(Color.SETTxt2F)][/UPPERCASE]</label>
+					<visible>Control.HasFocus(44)</visible>
+				</control>					
+			</control>
+		</control>
 
 		<!-- Elements Preview -->			
 		<control type="group">
@@ -2997,7 +3694,7 @@
 					<width>1920</width>
 					<height>380</height>
 					<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
-					<animation effect="zoom" start="100,0" end="100,100" time="100" center="960,960" condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
+					<animation effect="zoom" start="100,100" end="100,0" time="100" center="960,960" condition="!StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
 				</control>
 				<!-- Dialog Bloc1 -->
 				<control type="group">
@@ -3005,7 +3702,7 @@
 					<top>592</top>
 					<width>636</width>
 					<height>354</height>
-					<animation effect="fade" start="0" end="100" time="100" delay="100" condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
 
 					<!-- Header -->
 					<control type="label">
@@ -3067,7 +3764,7 @@
 					<top>592</top>
 					<width>636</width>
 					<height>354</height>
-					<animation effect="fade" start="0" end="100" time="100" delay="100" condition="StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
+					<animation effect="fade" start="100" end="0" time="100" delay="200" condition="!StringCompare(Container(9200).ListItem.Property(SubName),DIA)">Conditional</animation>
 
 					<control type="list">
 						<left>24</left>

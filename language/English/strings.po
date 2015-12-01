@@ -886,6 +886,42 @@ msgctxt "#31215"
 msgid "Install Image ressource addon (studio logos) ..."
 msgstr ""
 
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr ""
+
+msgctxt "#31217"
+msgid "Home Art"
+msgstr ""
+
+msgctxt "#31218"
+msgid "Header Bkg"
+msgstr ""
+
+msgctxt "#31219"
+msgid "Header Title"
+msgstr ""
+
+msgctxt "#31220"
+msgid "Header Subtitle"
+msgstr ""
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr ""
+
+msgctxt "#31222"
+msgid "Settings"
+msgstr ""
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr ""
+
+msgctxt "#31224"
+msgid "Scroll indicators"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

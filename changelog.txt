@@ -1,3 +1,10 @@
+[B]0.53.0[/B]
+- Added Scroll flags option in deisgner
+- Added possibility to choose bloc3 art type
+- Added more customizable colors
+- Added launch movie at Info double click
+- Bug fixes
+
 [B]0.52.0[/B]
 - Added Extended infos integration
 - Added Image Ressource addon option in settings

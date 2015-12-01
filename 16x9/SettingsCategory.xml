@@ -26,7 +26,7 @@
 			<!-- Background -->
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.SETBg)]">common/white.png</texture>
 			</control>
 
 			<!-- Left Panel Background -->
@@ -189,7 +189,7 @@
 				<height>12</height>
 				<align>left</align>
 				<font>Font36</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 				<label>31125</label>
 			</control>			
 
@@ -214,14 +214,14 @@
 				<width>auto</width>
 				<height>120</height>
 				<font>FontSmall</font>
-				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-				<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+				<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+				<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 				<textwidth min="100" max="400">auto</textwidth>
 				<textoffsetx>36</textoffsetx>
-				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 			</control>
 
 			<!-- Sub list -->
@@ -245,14 +245,14 @@
 				<width>1086</width>
 				<height>60</height>
 				<font>Font27</font>
-				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 				<textwidth>auto</textwidth>
 				<textoffsetx>24</textoffsetx>
-				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 			</control>
 
 
@@ -263,17 +263,17 @@
 				<font>Font27</font>
 				<textwidth>auto</textwidth>
 				<textoffsetx>24</textoffsetx>
-				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-				<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radioon.png</textureradioonfocus>
-				<textureradioonnofocus colordiffuse="$VAR[CategoryColor]">material/radioon.png</textureradioonnofocus>
-				<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/radiooff.png</textureradioofffocus>
-				<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
+				<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+				<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+				<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+				<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
 				<radiowidth>30</radiowidth>
 				<radioheight>30</radioheight>
-				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 			</control>
 
 			<!-- Default spincontrolex -->
@@ -283,18 +283,18 @@
 				<font>Font27</font>
 				<textwidth>auto</textwidth>
 				<textoffsetx>24</textoffsetx>
-				<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+				<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 				<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-				<textureup colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowupfo.png</textureup>
-				<textureupfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowupfo.png</textureupfocus>
-				<texturedown colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowdownfo.png</texturedown>
-				<texturedownfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowdownfo.png</texturedownfocus>
+				<textureup colordiffuse="$INFO[Skin.String(Color.SETTxt1NF)]">common/arrowupfo.png</textureup>
+				<textureupfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">common/arrowupfo.png</textureupfocus>
+				<texturedown colordiffuse="$INFO[Skin.String(Color.SETTxt1NF)]">common/arrowdownfo.png</texturedown>
+				<texturedownfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">common/arrowdownfo.png</texturedownfocus>
 				<spinwidth>24</spinwidth>
 				<spinheight>60</spinheight>
-				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 			</control>
 
 			<!-- Default sliderex -->
@@ -304,13 +304,13 @@
 				<width>10</width>
 				<height>308</height>		
 				<visible>true</visible>
-				<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+				<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+				<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+				<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+				<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				<texturesliderbar colordiffuse="55000000">common/white.png</texturesliderbar>
-				<textureslidernib colordiffuse="$VAR[CategoryColor]">common/white.png</textureslidernib>
-				<textureslidernibfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/white.png</textureslidernibfocus>
+				<textureslidernib colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</textureslidernib>
+				<textureslidernibfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">common/white.png</textureslidernibfocus>
 				<controloffsetx></controloffsetx>
 				<controloffsety></controloffsety>
 			</control>
@@ -319,7 +319,7 @@
 			<control type="image" id="11">
 				<width>612</width>
 				<height>60</height>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/divider.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
 			</control>			
 
 		</control>		

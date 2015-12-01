@@ -104,16 +104,26 @@
 							<align>left</align>
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
-							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,FANART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
 							<align>left</align>
 							<aligny>top</aligny>
-							<aspectratio>scale</aspectratio>
-							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
-							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(poster)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + !Container($PARAM[Id]).Content(episodes)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(season.poster)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + [!IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) | Container($PARAM[Id]).Content(episodes)]</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -122,7 +132,43 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
-							<visible>StringCompare(Container(9000).ListItem.Property(widgetType),episodes) | StringCompare(Container(9000).ListItem.Property(widgetType),weather)</visible>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
+							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + IsEmpty(Container($PARAM[Id]).ListItem.Art(tvshow.poster))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
+						</control>						
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
+							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + !StringCompare(Container(9000).ListItem.Property(widgetType),tvshows)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
+							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + [StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),weather)]</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
+							<visible>StringCompare(Container(9000).ListItem.Property(widgetType),weather)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -165,7 +211,7 @@
 								<textcolor>FFFFFFFF</textcolor>
 								<font>FontSmall</font>
 								<label>$INFO[Container($PARAM[Id]).ListItem.TVShowTitle,, . ]$INFO[Container($PARAM[Id]).ListItem.Season,$LOCALIZE[20373] , . ]$INFO[Container($PARAM[Id]).ListItem.Episode,$LOCALIZE[20359] ,]</label>
-								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
+								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),tvshows)</visible>
 							</control>
 							<control type="label">
 								<left>12</left>
@@ -180,6 +226,88 @@
 							</control>
 						</control>
 					</control>
+
+					<!-- Scroll indicators -->
+					<control type="group">
+						<visible>Skin.String($PARAM[CompPrefix].B1Lay,VERTICAL) + Skin.String($PARAM[CompPrefix].B3Scroll,VISIBLE)</visible>
+						<animation effect="fade" start="100" end="0" time="100" condition="System.IdleTime(1)">Conditional</animation>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasPrevious</visible>
+							<control type="image">
+								<left>0</left> 
+								<top>10%</top> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left> 
+								<top>10%</top> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/up.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasNext</visible>
+							<control type="image">
+								<left>0</left> 
+								<bottom>10%</bottom> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left> 
+								<bottom>10%</bottom> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/down.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Skin.String($PARAM[CompPrefix].B1Lay,HORIZONTAL) + Skin.String($PARAM[CompPrefix].B3Scroll,VISIBLE)</visible>
+						<animation effect="fade" start="100" end="0" time="100" condition="System.IdleTime(1)">Conditional</animation>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasPrevious</visible>
+							<control type="image">
+								<left>10%</left> 
+								<top>0</top> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>10%</left> 
+								<top>0</top> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/left.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasNext</visible>
+							<control type="image">
+								<right>10%</right> 
+								<bottom>0</bottom> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<right>10%</right> 
+								<bottom>0</bottom> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/right.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+					</control>					
 				</control>		
 				
 				<!-- Bloc 4 -->
@@ -201,9 +329,13 @@
 						<top>0</top>
 						<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
 					</control>				
-					<control type="image">
+					<control type="multiimage">
 						<left>0</left>
 						<top>0</top>
+						<timeperimage>5000</timeperimage>
+						<fadetime>2000</fadetime>
+						<pauseatend>10000</pauseatend>
+						<randomize>true</randomize>
 						<texture colordiffuse="FFFFFFFF">$INFO[Container(9000).ListItem.Property(homeart)]</texture>
 					</control>
 					<control type="image">
@@ -220,7 +352,7 @@
  						<top>0</top> 
  						<height>118</height> 
  						<aspectratio>stretch</aspectratio> 
-						<texture colordiffuse="AA000000">common/white.png</texture> 
+						<texture colordiffuse="$INFO[Skin.String(Color.B4HBg)]">common/white.png</texture> 
  					</control>
  					<control type="label"> 
 						<top>10</top>
@@ -228,7 +360,7 @@
 						<right>24</right> 
 						<align>right</align> 
 						<font>Font36R</font> 
- 						<textcolor>FFFFFFFF</textcolor> 
+ 						<textcolor>$INFO[Skin.String(Color.B4HTitle)]</textcolor> 
  						<label>$INFO[Container(9000).ListItem.Label]</label> 
  					</control> 
  					<control type="label"> 
@@ -237,7 +369,7 @@
  						<right>24</right> 
 						<align>right</align> 
  						<font>FontSmallB</font> 
-						<textcolor>FFFFFFFF</textcolor> 
+						<textcolor>$INFO[Skin.String(Color.B4HSub)]</textcolor> 
 						<label fallback="1034">$INFO[Container(9000).ListItem.Property(widgetName)]</label>
 					</control>
 				</control>		
@@ -386,6 +518,88 @@
 						</include>
 						<include>WeatherContent</include>
 					</control>	
+
+					<!-- Scroll indicators -->
+					<control type="group">
+						<visible>Skin.String($PARAM[CompPrefix].B1Lay,VERTICAL) + Skin.String($PARAM[CompPrefix].B1Scroll,VISIBLE) + Control.HasFocus($PARAM[Id])</visible>
+						<animation effect="fade" start="100" end="0" time="100" condition="System.IdleTime(1)">Conditional</animation>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasPrevious</visible>
+							<control type="image">
+								<left>0</left> 
+								<top>10%</top> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left> 
+								<top>10%</top> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/up.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasNext</visible>
+							<control type="image">
+								<left>0</left> 
+								<bottom>10%</bottom> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left> 
+								<bottom>10%</bottom> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/down.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Skin.String($PARAM[CompPrefix].B1Lay,HORIZONTAL) + Skin.String($PARAM[CompPrefix].B1Scroll,VISIBLE) + Control.HasFocus($PARAM[Id])</visible>
+						<animation effect="fade" start="100" end="0" time="100" condition="System.IdleTime(1)">Conditional</animation>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasPrevious</visible>
+							<control type="image">
+								<left>10%</left> 
+								<top>0</top> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>10%</left> 
+								<top>0</top> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/left.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container($PARAM[Id]).HasNext</visible>
+							<control type="image">
+								<right>10%</right> 
+								<bottom>0</bottom> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<right>10%</right> 
+								<bottom>0</bottom> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/right.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+					</control>					
 					
 				</control>
 				
@@ -741,7 +955,7 @@
 							</control>
 						</control>
 					</control>
-				</control>
+				</control> 
 
 				<!-- Bloc 5 -->	
 				<control type="group"> 
@@ -794,7 +1008,8 @@
 						<onback>Control.SetFocus(9000)</onback>
 												
 						<scrolltime>200</scrolltime>
-						<viewtype label="$INFO[Skin.String($PARAM[CompPrefix].Name)]">list</viewtype>
+						<pagecontrol>60</pagecontrol>
+						<viewtype label="">wrap</viewtype>
 						<visible allowhiddenfocus="true">true</visible>
 						<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(contextmenu)">Conditional</animation>
 
@@ -829,6 +1044,84 @@
 							<include>skinshortcuts-submenu</include>
 						</content>
 					</control>	
+
+					<!-- Scroll indicators -->
+					<control type="group">
+						<visible>Skin.String($PARAM[CompPrefix].B5Lay,VERTICAL) + Skin.String($PARAM[CompPrefix].B5Scroll,VISIBLE) + Control.HasFocus(9001)</visible>
+						<animation effect="fade" start="100" end="0" time="100" condition="System.IdleTime(1)">Conditional</animation>
+						<control type="group">
+							<control type="image">
+								<left>0</left> 
+								<top>10%</top> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left> 
+								<top>10%</top> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/up.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<control type="image">
+								<left>0</left> 
+								<bottom>10%</bottom> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>0</left> 
+								<bottom>10%</bottom> 
+								<height>80</height>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/down.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Skin.String($PARAM[CompPrefix].B5Lay,HORIZONTAL) + Skin.String($PARAM[CompPrefix].B5Scroll,VISIBLE) + Control.HasFocus(9001)</visible>
+						<animation effect="fade" start="100" end="0" time="100" condition="System.IdleTime(1)">Conditional</animation>
+						<control type="group">
+							<control type="image">
+								<left>10%</left> 
+								<top>0</top> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<left>10%</left> 
+								<top>0</top> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/left.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+						<control type="group">
+							<control type="image">
+								<right>10%</right> 
+								<bottom>0</bottom> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+							</control>
+							<control type="image">
+								<right>10%</right> 
+								<bottom>0</bottom> 
+								<width>80</width>
+								<aspectratio>keep</aspectratio>
+								<texture colordiffuse="$VAR[CategoryColor]">material/right.png</texture>
+								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
+							</control>
+						</control>
+					</control>
 					
 				</control>				
 			</control>

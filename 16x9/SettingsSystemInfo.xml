@@ -25,7 +25,7 @@
 			<!-- Background -->
 			<control type="image">
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.SETBg)]">common/white.png</texture>
 			</control>
 			
 			<!-- Left Panel Background -->
@@ -164,7 +164,7 @@
 				<height>12</height>
 				<align>left</align>
 				<font>Font36</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 				<label>31125</label>
 			</control>			
 
@@ -190,14 +190,14 @@
 					<width>auto</width>
 					<height>120</height>
 					<font>FontSmall</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<textwidth min="100" max="400">auto</textwidth>
 					<textoffsetx>36</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>		
 
 				<!-- Storage -->				
@@ -206,14 +206,14 @@
 					<width>auto</width>
 					<height>120</height>
 					<font>FontSmall</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<textwidth min="100" max="400">auto</textwidth>
 					<textoffsetx>36</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>	
 
 				<!-- Network -->				
@@ -222,14 +222,14 @@
 					<width>auto</width>
 					<height>120</height>
 					<font>FontSmall</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<textwidth min="100" max="400">auto</textwidth>
 					<textoffsetx>36</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>					
 
 				<!-- Video -->				
@@ -238,14 +238,14 @@
 					<width>auto</width>
 					<height>120</height>
 					<font>FontSmall</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<textwidth min="100" max="400">auto</textwidth>
 					<textoffsetx>36</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>		
 
 				<!-- HardWare -->				
@@ -254,14 +254,14 @@
 					<width>auto</width>
 					<height>120</height>
 					<font>FontSmall</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<textwidth min="100" max="400">auto</textwidth>
 					<textoffsetx>36</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>		
 
 				<!-- PVR -->				
@@ -270,14 +270,14 @@
 					<width>auto</width>
 					<height>120</height>
 					<font>FontSmall</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texturenofocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
 					<textwidth min="100" max="400">auto</textwidth>
 					<textoffsetx>36</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>						
 
 			</control>
@@ -302,14 +302,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="102">
@@ -317,14 +317,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="103">
@@ -332,14 +332,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="104">
@@ -347,14 +347,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="105">
@@ -362,14 +362,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="106">
@@ -377,14 +377,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="107">
@@ -392,14 +392,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="108">
@@ -407,14 +407,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="109">
@@ -422,14 +422,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 				<control type="button" id="110">
@@ -437,14 +437,14 @@
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
-					<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 					<textwidth>auto</textwidth>
 					<textoffsetx>24</textoffsetx>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</invalidcolor>
-					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.B1Txt2NF)]</disabledcolor>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
 				</control>
 
 			</control>			

@@ -132,7 +132,7 @@
 				<height>12</height>
 				<align>left</align>
 				<font>Font36</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 				<label>31124</label>
 			</control>			
 		
@@ -159,7 +159,7 @@
 								<height>213</height>
 								<width>170</width>
 								<aspectratio>scale</aspectratio>
-								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texture>
 							</control>
 							<control type="image">
 								<left>39</left>
@@ -167,7 +167,7 @@
 								<width>98</width>
 								<height>98</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+								<colordiffuse>$INFO[Skin.String(Color.SETTxt2NF)]</colordiffuse>
 								<texture>$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="textbox">
@@ -177,7 +177,7 @@
 								<height>120</height>
 								<font>FontSmall</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</control>
@@ -203,7 +203,7 @@
 								<width>170</width>
 								<aspectratio>scale</aspectratio>
 								<visible>Control.HasFocus(9000)</visible>
-								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texture>
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9000)</visible>
@@ -213,7 +213,7 @@
 									<width>98</width>
 									<height>98</height>
 									<aspectratio>keep</aspectratio>
-									<colordiffuse>$INFO[Skin.String(Color.B1Txt1F)]</colordiffuse>
+									<colordiffuse>$INFO[Skin.String(Color.SETTxt1F)]</colordiffuse>
 									<texture>$INFO[ListItem.ActualIcon]</texture>
 								</control>
 								<control type="textbox">
@@ -223,7 +223,7 @@
 									<height>120</height>
 									<font>FontSmall</font>
 									<align>center</align>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+									<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 							</control>
@@ -235,7 +235,7 @@
 									<width>98</width>
 									<height>98</height>
 									<aspectratio>keep</aspectratio>
-									<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+									<colordiffuse>$INFO[Skin.String(Color.SETTxt2NF)]</colordiffuse>
 									<texture>$INFO[ListItem.ActualIcon]</texture>
 								</control>
 								<control type="textbox">
@@ -245,7 +245,7 @@
 									<height>120</height>
 									<font>FontSmall</font>
 									<align>center</align>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+									<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 							</control>
@@ -292,7 +292,7 @@
 				<height>12</height>
 				<align>left</align>
 				<font>Font36</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 				<label>480</label>
 			</control>			
 		
@@ -319,7 +319,7 @@
 								<height>213</height>
 								<width>170</width>
 								<aspectratio>scale</aspectratio>
-								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texture>
 							</control>
 							<control type="image">
 								<left>39</left>
@@ -327,7 +327,7 @@
 								<width>98</width>
 								<height>98</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+								<colordiffuse>$INFO[Skin.String(Color.SETTxt2NF)]</colordiffuse>
 								<texture>$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="textbox">
@@ -337,7 +337,7 @@
 								<height>120</height>
 								<font>FontSmall</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</control>
@@ -363,7 +363,7 @@
 								<width>170</width>
 								<aspectratio>scale</aspectratio>
 								<visible>Control.HasFocus(9001)</visible>
-								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texture>
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9001)</visible>
@@ -373,7 +373,7 @@
 									<width>98</width>
 									<height>98</height>
 									<aspectratio>keep</aspectratio>
-									<colordiffuse>$INFO[Skin.String(Color.B1Txt1F)]</colordiffuse>
+									<colordiffuse>$INFO[Skin.String(Color.SETTxt1F)]</colordiffuse>
 									<texture>$INFO[ListItem.ActualIcon]</texture>
 								</control>
 								<control type="textbox">
@@ -383,7 +383,7 @@
 									<height>120</height>
 									<font>FontSmall</font>
 									<align>center</align>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+									<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 							</control>
@@ -395,7 +395,7 @@
 									<width>98</width>
 									<height>98</height>
 									<aspectratio>keep</aspectratio>
-									<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+									<colordiffuse>$INFO[Skin.String(Color.SETTxt2NF)]</colordiffuse>
 									<texture>$INFO[ListItem.ActualIcon]</texture>
 								</control>
 								<control type="textbox">
@@ -405,7 +405,7 @@
 									<height>120</height>
 									<font>FontSmall</font>
 									<align>center</align>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+									<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 							</control>
@@ -448,7 +448,7 @@
 				<height>12</height>
 				<align>left</align>
 				<font>Font36</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<textcolor>$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 				<label>13000</label>
 			</control>			
 		
@@ -475,7 +475,7 @@
 								<height>213</height>
 								<width>170</width>
 								<aspectratio>scale</aspectratio>
-								<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texture>
 							</control>
 							<control type="image">
 								<left>39</left>
@@ -483,7 +483,7 @@
 								<width>98</width>
 								<height>98</height>
 								<aspectratio>keep</aspectratio>
-								<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+								<colordiffuse>$INFO[Skin.String(Color.SETTxt2NF)]</colordiffuse>
 								<texture>$INFO[ListItem.ActualIcon]</texture>
 							</control>
 							<control type="textbox">
@@ -493,7 +493,7 @@
 								<height>120</height>
 								<font>FontSmall</font>
 								<align>center</align>
-								<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+								<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 								<label>$INFO[ListItem.Label]</label>
 							</control>
 						</control>
@@ -519,7 +519,7 @@
 								<width>170</width>
 								<aspectratio>scale</aspectratio>
 								<visible>Control.HasFocus(9002)</visible>
-								<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texture>
 							</control>
 							<control type="group">
 								<visible>Control.HasFocus(9002)</visible>
@@ -529,7 +529,7 @@
 									<width>98</width>
 									<height>98</height>
 									<aspectratio>keep</aspectratio>
-									<colordiffuse>$INFO[Skin.String(Color.B1Txt1F)]</colordiffuse>
+									<colordiffuse>$INFO[Skin.String(Color.SETTxt1F)]</colordiffuse>
 									<texture>$INFO[ListItem.ActualIcon]</texture>
 								</control>
 								<control type="textbox">
@@ -539,7 +539,7 @@
 									<height>120</height>
 									<font>FontSmall</font>
 									<align>center</align>
-									<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+									<textcolor>$INFO[Skin.String(Color.SETTxt1F)]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 							</control>
@@ -551,7 +551,7 @@
 									<width>98</width>
 									<height>98</height>
 									<aspectratio>keep</aspectratio>
-									<colordiffuse>$INFO[Skin.String(Color.B1Txt2NF)]</colordiffuse>
+									<colordiffuse>$INFO[Skin.String(Color.SETTxt2NF)]</colordiffuse>
 									<texture>$INFO[ListItem.ActualIcon]</texture>
 								</control>
 								<control type="textbox">
@@ -561,7 +561,7 @@
 									<height>120</height>
 									<font>FontSmall</font>
 									<align>center</align>
-									<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+									<textcolor>$INFO[Skin.String(Color.SETTxt2NF)]</textcolor>
 									<label>$INFO[ListItem.Label]</label>
 								</control>
 							</control>

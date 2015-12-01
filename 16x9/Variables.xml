@@ -298,6 +298,7 @@
 		<value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
 		<value condition="IsEmpty(ListItem.Art(fanart)) + ListItem.IsFolder + !IsEmpty(Window(Home).Property(MenuArt))">$INFO[Window(Home).Property(MenuArt)]</value>
 		<value condition="IsEmpty(ListItem.Art(fanart))">$INFO[Window(Home).Property(MenuArt)]</value>
+		<value>$INFO[Window(Home).Property(MenuArt)]</value>
 	</variable>	
 	
 	<variable name="B3Tag">
