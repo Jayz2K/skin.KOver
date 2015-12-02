@@ -930,6 +930,14 @@ msgctxt "#31226"
 msgid "Furnitures"
 msgstr ""
 
+msgctxt "#31227"
+msgid "Set this option as 'VISIBLE' to display Scroll indicators. Indicators will match the list orientation set in Bloc 1."
+msgstr ""
+
+msgctxt "#31228"
+msgid "Choose the Bloc 3 style (Art). 'DEFAULT' makes KOver to try to search an available landscape Art. Note that depending of the content, the others can be returned empty."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

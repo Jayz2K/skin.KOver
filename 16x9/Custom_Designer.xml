@@ -2498,7 +2498,7 @@
 							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
 							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
 							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
-							<property name="Info">31114</property>
+							<property name="Info">$VAR[BItypeInfo]</property>
 						</item>
 						<item id="16">
 							<label>31042</label>
@@ -3579,7 +3579,7 @@
 							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
 							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
 							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
-							<property name="Info">31114</property>
+							<property name="Info">31227</property>
 						</item>
 					</content>
 				</control>
