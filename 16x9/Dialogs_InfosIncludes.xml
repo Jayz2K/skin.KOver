@@ -881,11 +881,19 @@
 					<left>24</left>
 					<height>308</height>
 					<width>588</width>							
-					<texture colordiffuse="FFFFFFFF">$INFO[Player.Art(thumb)]</texture>
+					<texture colordiffuse="FFFFFFFF">$INFO[VideoPlayer.Cover]</texture>
+					<aspectratio aligny="center">keep</aspectratio>
+					<visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[33061]) + Window.IsVisible(10142)</visible>
+				</control>
+				<control type="image">
+					<top>24</top>
+					<left>24</left>
+					<height>308</height>
+					<width>588</width>							
+					<texture colordiffuse="FFFFFFFF">$INFO[MusicPlayer.Cover]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
 					<visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[33061]) + Window.IsVisible(10142)</visible>
 				</control>			
-
 			</control>
 		</control> 
 
