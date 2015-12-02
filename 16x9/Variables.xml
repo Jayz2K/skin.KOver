@@ -346,7 +346,7 @@
 	<variable name="ThumbIcon">
 		<value condition="Container.Content(addons) + ListItem.IsFolder">$INFO[ListItem.ActualIcon]</value>
 		<value condition="Container.Content(plugins) + ListItem.IsFolder">$INFO[ListItem.ActualIcon]</value>
-		<value>$INFO[ListItem.ActualIcon]</value>		
+		<value>$INFO[ListItem.Icon]</value>		
 	</variable>
 
 	<variable name="ThumbBanner">
