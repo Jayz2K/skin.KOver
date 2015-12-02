@@ -21,6 +21,16 @@
 		<value>$LOCALIZE[31028]</value>
 	</variable>
 
+	<variable name="BItype">
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3)">$LOCALIZE[31225]</value>
+		<value>$LOCALIZE[31041]</value>
+	</variable>
+
+	<variable name="BItypeIcon">
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3)">material/pictures.png</value>
+		<value>material/designerlist.png</value>
+	</variable>
+
 <!-- Column A coloring -->
 	<variable name="XAColor">
 		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>

@@ -545,6 +545,8 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(DIA.View1.DIAPanel,LEFT)</onfocus>		
 				
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.WP,FF007BA7)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.SFBg))">Skin.SetString(Color.SFBg,AA000000)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.SFArrow))">Skin.SetString(Color.SFArrow,NONE)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.SBIconNF,FF666666)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.SBClock,FFFFFFFF)</onfocus>	
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.SBShadow,FF000000)</onfocus>

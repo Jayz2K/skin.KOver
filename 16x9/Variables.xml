@@ -3,8 +3,9 @@
 	<variable name="ExtendedContent">
 		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Similar)">plugin://script.extendedinfo?info=similarmovies&amp;&amp;dbid=$INFO[ListItem.DBID]</value>
 		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Director)">plugin://script.extendedinfo?info=directormovies&amp;&amp;director=$INFO[ListItem.Director]</value>
-		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + IsEmpty(ListItem.Episode)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.DBID]</value>
-		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + !IsEmpty(ListItem.Episode)">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[ListItem.DBID]</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + IsEmpty(ListItem.Episode)">plugin://script.skin.helper.service/?action=getcast&amp;movie=$INFO[ListItem.DBID]&amp;downloadthumbs=true</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + !IsEmpty(ListItem.Episode) + !IsEmpty(ListItem.Property(NumEpisodes))">plugin://script.skin.helper.service/?action=getcast&amp;tvshow=$INFO[ListItem.DBID]&amp;downloadthumbs=true</value>
+		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) + !IsEmpty(ListItem.Episode) + IsEmpty(ListItem.Property(NumEpisodes))">plugin://script.skin.helper.service/?action=getcast&amp;episode=$INFO[ListItem.DBID]&amp;downloadthumbs=true</value>
 	</variable>
 
 	<variable name="ExtendedFallback">
@@ -171,6 +172,21 @@
 
 	<variable name="CategoryColor3">
 		<value condition="!IsEmpty(Skin.String(Color.DIATxtFBg)) + !Skin.String(Color.DIATxtFBg,NONE)">$INFO[Skin.String(Color.DIATxtFBg)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),livetv)">$INFO[Skin.String(Color.B1ItemFTV)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),videos)">$INFO[Skin.String(Color.B1ItemFVDO)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),pictures)">$INFO[Skin.String(Color.B1ItemFPIC)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),tvshows)">$INFO[Skin.String(Color.B1ItemFSHO)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),music)">$INFO[Skin.String(Color.B1ItemFMUS)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),$LOCALIZE[133])">$INFO[Skin.String(Color.B1ItemFMUS)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),movies)">$INFO[Skin.String(Color.B1ItemFMOV)]</value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),programs)"></value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),settings)"></value>
+		<value condition="StringCompare(Window(Home).Property(MenuCategory),13005)"></value> <!-- Power -->
+		<value>$INFO[Skin.String(Color.B1ItemF)]</value>		
+	</variable>		
+
+	<variable name="CategoryColor4">
+		<value condition="!IsEmpty(Skin.String(Color.SFArrow)) + !Skin.String(Color.SFArrow,NONE)">$INFO[Skin.String(Color.SFArrow)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),livetv)">$INFO[Skin.String(Color.B1ItemFTV)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),videos)">$INFO[Skin.String(Color.B1ItemFVDO)]</value>
 		<value condition="StringCompare(Window(Home).Property(MenuCategory),pictures)">$INFO[Skin.String(Color.B1ItemFPIC)]</value>

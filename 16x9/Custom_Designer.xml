@@ -2426,10 +2426,10 @@
 							<property name="Info">31113</property>
 						</item>
 						<item id="14">
-							<label>31041</label>
+							<label>$VAR[BItype]</label>
 							<label2 fallback="31216">$VAR[ListTypeValue]</label2>
 							<icon></icon>
-							<thumb>material/designerlist.png</thumb>
+							<thumb>$VAR[BItypeIcon]</thumb>
 							<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(ViewName),WEA) + !StringCompare(Container(9000).ListItem.Property(ViewName),TV) + !StringCompare(Container(9000).ListItem.Property(ViewName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->	

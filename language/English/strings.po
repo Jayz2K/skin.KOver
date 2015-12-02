@@ -922,6 +922,14 @@ msgctxt "#31224"
 msgid "Scroll indicators"
 msgstr ""
 
+msgctxt "#31225"
+msgid "Art Type"
+msgstr ""
+
+msgctxt "#31226"
+msgid "Furnitures"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

@@ -155,14 +155,14 @@
 								<top>10%</top> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<left>0</left> 
 								<top>10%</top> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/up.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/up.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -173,14 +173,14 @@
 								<bottom>10%</bottom> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<left>0</left> 
 								<bottom>10%</bottom> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/down.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/down.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -195,14 +195,14 @@
 								<top>0</top> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<left>10%</left> 
 								<top>0</top> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/left.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/left.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -213,14 +213,14 @@
 								<bottom>0</bottom> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<right>10%</right> 
 								<bottom>0</bottom> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/right.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/right.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -352,14 +352,14 @@
 								<top>10%</top> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<left>0</left> 
 								<top>10%</top> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/up.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/up.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -370,14 +370,14 @@
 								<bottom>10%</bottom> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<left>0</left> 
 								<bottom>10%</bottom> 
 								<height>80</height>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/down.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/down.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -392,14 +392,14 @@
 								<top>0</top> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<left>10%</left> 
 								<top>0</top> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/left.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/left.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
@@ -410,14 +410,14 @@
 								<bottom>0</bottom> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="AA000000">material/BackSquare.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.SFBg)]">material/BackSquare.png</texture>
 							</control>
 							<control type="image">
 								<right>10%</right> 
 								<bottom>0</bottom> 
 								<width>80</width>
 								<aspectratio>keep</aspectratio>
-								<texture colordiffuse="$VAR[CategoryColor]">material/right.png</texture>
+								<texture colordiffuse="$VAR[CategoryColor4]">material/right.png</texture>
 								<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 							</control>
 						</control>
