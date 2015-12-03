@@ -150,7 +150,7 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
-							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + !StringCompare(Container(9000).ListItem.Property(widgetType),tvshows)</visible>
+							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + !StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) + !StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -159,7 +159,7 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
-							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + [StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),weather)]</visible>
+							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + [StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),episodes) | StringCompare(Container(9000).ListItem.Property(widgetType),weather)]</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -211,7 +211,7 @@
 								<textcolor>FFFFFFFF</textcolor>
 								<font>FontSmall</font>
 								<label>$INFO[Container($PARAM[Id]).ListItem.TVShowTitle,, . ]$INFO[Container($PARAM[Id]).ListItem.Season,$LOCALIZE[20373] , . ]$INFO[Container($PARAM[Id]).ListItem.Episode,$LOCALIZE[20359] ,]</label>
-								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),tvshows)</visible>
+								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
 							</control>
 							<control type="label">
 								<left>12</left>
