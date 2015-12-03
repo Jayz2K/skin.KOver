@@ -112,24 +112,6 @@
 							<top>0</top>
 							<align>left</align>
 							<aligny>top</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(poster)]</texture>
-							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + !Container($PARAM[Id]).Content(episodes)</visible>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<align>left</align>
-							<aligny>top</aligny>
-							<aspectratio>keep</aspectratio>
-							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(season.poster)]</texture>
-							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + [!IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) | Container($PARAM[Id]).Content(episodes)]</visible>
-						</control>
-						<control type="image">
-							<left>0</left>
-							<top>0</top>
-							<align>left</align>
-							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
 							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))</visible>
@@ -141,8 +123,8 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
-							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + IsEmpty(Container($PARAM[Id]).ListItem.Art(tvshow.poster))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
-						</control>						
+							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + IsEmpty(Container($PARAM[Id]).ListItem.Art(tvshow.poster))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(clearart))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + IsEmpty(Container($PARAM[Id]).ListItem.Art(clearlogo))] | [Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + IsEmpty(Container($PARAM[Id]).ListItem.Art(landscape))] | [Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(discart))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
+						</control>	
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
@@ -150,7 +132,7 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
-							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + !StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) + !StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
+							<visible>[[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + IsEmpty(Container($PARAM[Id]).ListItem.Art(tvshow.poster))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(clearart))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + IsEmpty(Container($PARAM[Id]).ListItem.Art(clearlogo))] | [Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + IsEmpty(Container($PARAM[Id]).ListItem.Art(landscape))] | [Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(discart))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))] + !StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) + !StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -159,7 +141,7 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(thumb)]</texture>
-							<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ)) + [StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),episodes) | StringCompare(Container(9000).ListItem.Property(widgetType),weather)]</visible>
+							<visible>[[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(Container($PARAM[Id]).ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + IsEmpty(Container($PARAM[Id]).ListItem.Art(tvshow.poster))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(clearart))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + IsEmpty(Container($PARAM[Id]).ListItem.Art(clearlogo))] | [Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + IsEmpty(Container($PARAM[Id]).ListItem.Art(landscape))] | [Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + IsEmpty(Container($PARAM[Id]).ListItem.Art(discart))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))] + [StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),episodes) | StringCompare(Container(9000).ListItem.Property(widgetType),weather) | StringCompare(Container(9000).ListItem.Property(widgetType),unknown)]</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -179,6 +161,61 @@
 							<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</texture>
 							<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + !IsEmpty(Container($PARAM[Id]).ListItem.Title)</visible>
 						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(poster)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) + !Container($PARAM[Id]).Content(episodes)</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(season.poster)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + [!IsEmpty(Container($PARAM[Id]).ListItem.Art(poster)) | Container($PARAM[Id]).Content(episodes)]</visible>
+						</control>	
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(clearlogo)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(clearlogo))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(clearart)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(clearart))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(landscape)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(landscape))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[Container($PARAM[Id]).ListItem.Art(discart)]</texture>
+							<visible>!StringCompare(Container(9000).ListItem.Property(widgetType),weather) + Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(discart))</visible>
+							<animation effect="rotate" start="0" end="-360" loop="true" time="10000" center="auto" condition="ListItem.IsPlaying">Conditional</animation>
+						</control>				
 						<control type="group">
 							<visible>!IsEmpty(Container($PARAM[Id]).ListItem.Tagline) | !IsEmpty(Container($PARAM[Id]).ListItem.TVShowTitle) | !IsEmpty(Container($PARAM[Id]).ListItem.Artist)</visible>
 							<include name="B3STag">

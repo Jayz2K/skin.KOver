@@ -89,6 +89,24 @@
 							<top>0</top>
 							<align>left</align>
 							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + !IsEmpty(ListItem.Art(thumb))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>scale</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
+							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Art(tvshow.poster))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + IsEmpty(ListItem.Art(clearart))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + IsEmpty(ListItem.Art(clearlogo))] | [Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + IsEmpty(ListItem.Art(landscape))] | [Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + IsEmpty(ListItem.Art(discart))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(poster)]</texture>
 							<visible>Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + !IsEmpty(ListItem.Art(poster)) + !Container($PARAM[Id]).Content(episodes)</visible>
@@ -107,9 +125,18 @@
 							<top>0</top>
 							<align>left</align>
 							<aligny>top</aligny>
-							<aspectratio>scale</aspectratio>
-							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(thumb)]</texture>
-							<visible>Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + !IsEmpty(ListItem.Art(thumb))</visible>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(clearlogo)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(clearart)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + !IsEmpty(ListItem.Art(clearart))</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -117,8 +144,18 @@
 							<align>left</align>
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
-							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
-							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Art(tvshow.poster))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(landscape)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + !IsEmpty(ListItem.Art(landscape))</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(discart)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + !IsEmpty(ListItem.Art(discart))</visible>
+							<animation effect="rotate" start="0" end="-360" loop="true" time="10000" center="auto" condition="ListItem.IsPlaying">Conditional</animation>
 						</control>
 						<control type="group">
 							<include name="B3STag">
