@@ -1,5 +1,9 @@
+[B]0.60.0[/B] BETA 2
+- Activation of custom lists in Bloc 1
+- Bug fixes
+
 [B]0.53.0[/B]
-- Added Scroll flags option in deisgner
+- Added Scroll flags option in designer
 - Added possibility to choose bloc3 art type
 - Added more customizable colors
 - Added launch movie at Info double click
@@ -16,7 +20,7 @@
 - Added option to toggle 'WATCHED' flags
 - Bug fixes
 
-[B]0.50.0[/B]
+[B]0.50.0[/B] BETA 1
 - BETA release
 - Fix for getting focus back to lists after playing item
 - Added missing controls in AddonBrowser
