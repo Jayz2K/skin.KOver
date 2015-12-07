@@ -1305,14 +1305,14 @@
 		<item>
 			<label>4</label>
 			<icon>DefaultAddonPVRClient.png</icon>
-			<onclick>ActivateWindow(Teletext)</onclick>
+			<onclick>ActivateWindow(PVROSDGuide)</onclick>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 		</item>		
 		<!-- teletext -->
 		<item>
 			<label>23050</label>
 			<icon>DefaultAddonTvInfo.png</icon>
-			<onclick>ActivateWindow(PVROSDGuide)</onclick>
+			<onclick>ActivateWindow(Teletext)</onclick>
 			<visible>VideoPlayer.Content(LiveTV)</visible>
 		</item>		
 		<!-- dvdmenu -->
