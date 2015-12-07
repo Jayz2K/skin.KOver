@@ -2440,7 +2440,10 @@
 							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,FANART)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],CARD)</onclick>
 							<onclick condition="!StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,CARD)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],POSTER)</onclick>
 							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,POSTER)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],FIXEDLIST)</onclick>
-							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,FIXEDLIST)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],BANNER)</onclick>
+							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,FIXEDLIST)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],CUSTOM1)</onclick>
+							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,CUSTOM1)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],CUSTOM2)</onclick>
+							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,CUSTOM2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],CUSTOM3)</onclick>
+							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,CUSTOM3)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],BANNER)</onclick>
 							<!-- Actions For Bloc 2-->
 							<!-- Actions For Bloc 3-->
 							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + [StringCompare(Container(9300).ListItem.Label2,$LOCALIZE[31216]) | IsEmpty(Container(9300).ListItem.Label2)]">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],FANART)</onclick>
