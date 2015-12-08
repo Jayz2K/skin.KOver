@@ -24,7 +24,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
-					<label>$INFO[Window.Property(movie.title)]</label>
+					<label>$INFO[Window.Property(title)]</label>
 					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 				</control>
 				<control type="label">
@@ -245,7 +245,7 @@
 						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 						<font>Font36</font>
 						<align>center</align>
-						<label fallback="1000">$INFO[Window.Property(movie.tagline)]</label>
+						<label fallback="1000">$INFO[Window.Property(tagline)]</label>
 					</control>
 					<control type="textbox">
 						<top>0</top>
@@ -254,7 +254,7 @@
 						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
 						<font>Font27</font>
 						<align>center</align>
-						<label fallback="19055">$INFO[Window.Property(movie.plot)]</label>
+						<label fallback="19055">$INFO[Window.Property(plot)]</label>
 					</control>
 				</control>
 				
@@ -303,46 +303,46 @@
 
 					<content>	
 						<item>
-							<label>$INFO[Window.Property(movie.Rating)]</label>
+							<label>$INFO[Window.Property(Rating)]</label>
 							<label2>563</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.Rating))</visible>
+							<visible>!IsEmpty(Window.Property(Rating))</visible>
 						</item>	
 						<item>
-							<label>$INFO[Window.Property(movie.Votes)]</label>
+							<label>$INFO[Window.Property(Votes)]</label>
 							<label2>20350</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.Votes))</visible>
+							<visible>!IsEmpty(Window.Property(Votes))</visible>
 						</item>	
 						<item>
-							<label>$INFO[Window.Property(movie.duration)]</label>
+							<label>$INFO[Window.Property(duration)]</label>
 							<label2>180</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.duration))</visible>
+							<visible>!IsEmpty(Window.Property(duration))</visible>
 						</item>	
 						<item>
-							<label>$INFO[Window.Property(movie.release_date)]</label>
+							<label>$INFO[Window.Property(release_date)]</label>
 							<label2>172</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.release_date))</visible>
+							<visible>!IsEmpty(Window.Property(release_date))</visible>
 						</item>	
 						<item>
-							<label>$INFO[Window.Property(movie.Status)]</label>
+							<label>$INFO[Window.Property(Status)]</label>
 							<label2>126</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.Status))</visible>
+							<visible>!IsEmpty(Window.Property(Status))</visible>
 						</item>	
 						<item>
-							<label>$INFO[Window.Property(movie.Budget)]</label>
+							<label>$INFO[Window.Property(Budget)]</label>
 							<label2>$ADDON[script.extendedinfo 32109]</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.Budget))</visible>
+							<visible>!IsEmpty(Window.Property(Budget))</visible>
 						</item>	
 						<item>
-							<label>$INFO[Window.Property(movie.Revenue)]</label>
+							<label>$INFO[Window.Property(Revenue)]</label>
 							<label2>$ADDON[script.extendedinfo 32108]</label2>
 							<onclick>noop</onclick>
-							<visible>!IsEmpty(Window.Property(movie.Revenue))</visible>
+							<visible>!IsEmpty(Window.Property(Revenue))</visible>
 						</item>	
 					</content>	
 
