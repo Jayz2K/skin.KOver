@@ -166,7 +166,7 @@
 								<top>300</top>
 								<height>56</height>
 								<aspectratio aligny="bottom">stretch</aspectratio>
-								<texture colordiffuse="AA000000">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.B3TagBg)]">common/white.png</texture>
 							</control>
 							<control type="label">
 								<left>12</left>
@@ -174,7 +174,7 @@
 								<width>589</width>
 								<height>56</height>
 								<align>left</align>
-								<textcolor>FFFFFFFF</textcolor>
+								<textcolor>$INFO[Skin.String(Color.B3Tag)]</textcolor>
 								<font>FontSmall</font>
 								<label>$VAR[B3Tag]</label>
 							</control>

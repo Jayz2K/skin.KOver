@@ -938,6 +938,14 @@ msgctxt "#31228"
 msgid "Choose the Bloc 3 style (Art). 'DEFAULT' makes KOver to try to search an available landscape Art. Note that depending of the content, the others can be returned empty."
 msgstr ""
 
+msgctxt "#31229"
+msgid "Tagline bg."
+msgstr ""
+
+msgctxt "#31230"
+msgid "Tagline text"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

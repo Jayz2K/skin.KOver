@@ -571,7 +571,9 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.B2Txt3,FF666666)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.B2Txt4,FFAAAAAA)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.B3Bg,FF111111)</onfocus>
-			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.B4Bg,FF000000)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.B3Bg,FF111111)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.B3TagBg))">Skin.SetString(Color.B3TagBg,AA000000)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.B3Tag))">Skin.SetString(Color.B3Tag,FFFFFFFF)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.B4HBg))">Skin.SetString(Color.B4HBg,AA000000)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.B4HTitle))">Skin.SetString(Color.B4HTitle,FFFFFFFF)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.B4HSub))">Skin.SetString(Color.B4HSub,FFFFFFFF)</onfocus>

@@ -226,7 +226,7 @@
 								<top>300</top>
 								<height>56</height>
 								<aspectratio aligny="bottom">stretch</aspectratio>
-								<texture colordiffuse="AA000000">common/white.png</texture>
+								<texture colordiffuse="$INFO[Skin.String(Color.B3TagBg)]">common/white.png</texture>
 							</control>
 							<control type="label">
 								<left>12</left>
@@ -234,7 +234,7 @@
 								<width>589</width>
 								<height>56</height>
 								<align>left</align>
-								<textcolor>FFFFFFFF</textcolor>
+								<textcolor>$INFO[Skin.String(Color.B3Tag)]</textcolor>
 								<font>FontSmall</font>
 								<label>$INFO[Container($PARAM[Id]).ListItem.Tagline]</label>
 								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),movies)</visible>
@@ -245,7 +245,7 @@
 								<width>589</width>
 								<height>56</height>
 								<align>left</align>
-								<textcolor>FFFFFFFF</textcolor>
+								<textcolor>$INFO[Skin.String(Color.B3Tag)]</textcolor>
 								<font>FontSmall</font>
 								<label>$INFO[Container($PARAM[Id]).ListItem.TVShowTitle,, . ]$INFO[Container($PARAM[Id]).ListItem.Season,$LOCALIZE[20373] , . ]$INFO[Container($PARAM[Id]).ListItem.Episode,$LOCALIZE[20359] ,]</label>
 								<visible>StringCompare(Container(9000).ListItem.Property(widgetType),tvshows) | StringCompare(Container(9000).ListItem.Property(widgetType),episodes)</visible>
@@ -256,7 +256,7 @@
 								<width>589</width>
 								<height>56</height>
 								<align>left</align>
-								<textcolor>FFFFFFFF</textcolor>
+								<textcolor>$INFO[Skin.String(Color.B3Tag)]</textcolor>
 								<font>FontSmall</font>
 								<label>$INFO[Container($PARAM[Id]).ListItem.Year,(,) ]$INFO[Container($PARAM[Id]).ListItem.Artist]</label>
 								<visible>StringCompare(Container(9000).ListItem.Property(widgetTarget),music)</visible>
