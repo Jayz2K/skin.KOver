@@ -499,7 +499,7 @@
 					<colordiffuse>FF111111</colordiffuse>
 					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
-					<label>$LOCALIZE[31060][CR]$LOCALIZE[19190]</label>
+					<label>$LOCALIZE[31231][CR]$LOCALIZE[19190]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
@@ -564,7 +564,7 @@
 					<colordiffuse>FF111111</colordiffuse>
 					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
-					<label>$LOCALIZE[31060][CR]$LOCALIZE[19190]</label>
+					<label>$LOCALIZE[31231][CR]$LOCALIZE[31232]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
@@ -2351,7 +2351,7 @@
 					<colordiffuse>FF111111</colordiffuse>
 					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
-					<label>$LOCALIZE[31064][CR]$LOCALIZE[19190]</label>
+					<label>$LOCALIZE[31064][CR]$LOCALIZE[31229]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>
@@ -2416,7 +2416,7 @@
 					<colordiffuse>FF111111</colordiffuse>
 					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
 					<texturenofocus colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/white.png</texturenofocus>
-					<label>$LOCALIZE[31064][CR]$LOCALIZE[31229]</label>
+					<label>$LOCALIZE[31064][CR]$LOCALIZE[31230]</label>
 					<font>FontSmall</font>
 					<textwidth>140</textwidth>
 					<textoffsetx>18</textoffsetx>

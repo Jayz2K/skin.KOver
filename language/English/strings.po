@@ -946,6 +946,14 @@ msgctxt "#31230"
 msgid "Tagline text"
 msgstr ""
 
+msgctxt "#31231"
+msgid "Scroll flags"
+msgstr ""
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"
