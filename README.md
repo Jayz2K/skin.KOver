@@ -26,7 +26,7 @@ As said, the auto build feature is made for you to not spend time making all you
 You can populate KOver with 5 different viewtypes sets : 2 for a PVR use and 3 for a fullscreen use.
 
 | Name | Description |
-| -------------------------- |  ----------- |
+| :-----------: |  ----------- |
 | **PVR : Horizontal** | Provides a set of viewtypes half screen in horizontal mode. |
 | **PVR : Vertical** | Provides a set of viewtypes half screen in vertical mode. |
 | **Fullscreen : Classic** | Provides a set of viewtypes full screen. Almost all the screen space is used. |
@@ -38,7 +38,7 @@ You can populate KOver with 5 different viewtypes sets : 2 for a PVR use and 3 f
 You can apply 4 built-in color schemes.
 
 | Name | Description |
-| ---------- |  ----------- |
+| :-----------: |  ----------- |
 | **Default dark** | Apply a dark/colorful color scheme. A good one for TVs. It's also the one provided at first launch. |
 | **Default light** | Apply a light/colorful color scheme. A good one for computer screens. |
 | **Default FTV style** | Apply a dark/orange color scheme. Reproduces the FTV UI colors. |
@@ -54,7 +54,7 @@ When using the AUTOBUILD feature, KOver provides 3 default viewtypes you can cho
 #### Customizing Home menu items
 
 | Name | Feature | Description |
-| ---------- | ---------- | ----------- |
+| :-----------: | :-----------: | ----------- |
 | **Select widget** | Common | Choose the widget to display for the item. |
 | **Select background** | Common | Choose the picture to display as wallpaper. |
 | **Select viewtype** | KOver | Choose the viewtype to display for the item. See [Select viewtype](https://github.com/Jayz2K/skin.KOver#select-viewtype) |
@@ -80,7 +80,7 @@ At first launch, you won't see any widget until you set a viewtype made for it (
 If you haven't made viewtypes changes in the designer or if you applied a preset from autobuild, you will get the 3 following viewtypes available when you `Select viewtype`
 
 | Name | Description |
-| ---------- | ----------- |
+| :-----------: | ----------- |
 | **Home Layout** | This is the default viewtype. Only shows submenu for the mainmenu item. |
 | **Libraries** | This is a widget viewtype. Shows the item's widget and switches to submenu using navigation. |
 | **Live TV** | This is a widget viewtype. Shows the item's widget and switches to submenu using navigation. Optimized for live tv widget. |
@@ -111,7 +111,7 @@ KOver Designer is the core of KOver. The whole skin is build around this powerfu
 You can create / change the viewtypes for the following sections
 
 | Name | Description |
-| ---------- | ----------- |
+| :-----------: | ----------- |
 | **Home** | Viewtypes 1 to 9 will be selectable in the "Edit Home menu ...". Each available viewtype can be attached to any main menu item. |
 | **Videos** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to videos, movies and tvshows (video content). |
 | **Music** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to artists, albums (music content). |
@@ -146,7 +146,7 @@ Extended Infos window (SCRIPT) doesn't manage viewtypes. In order to customize i
 Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Each bloc has its specific content
 
 | Name | Description |
-| -------------------------- | - |
+| :-----------: | ----------- |
 | **[Wallpaper](https://github.com/Jayz2K/skin.KOver#wallpaper)** | You can set the wallpaper's style, choose your own picture or just hide it. |
 | **[General Setup](https://github.com/Jayz2K/skin.KOver#general-setup)** | Change the layout orientation or sidebar, dialog panel and separators options. |
 | **[Blocs background](https://github.com/Jayz2K/skin.KOver#blocs-background)** | Change the position, size and visibility of the blocs barckground. |
@@ -161,5 +161,10 @@ Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Ea
 Each blocs has a certain amount of settings you can give different values
 
 ##### Wallpaper
+
+| Name | Description |
+| :-----------: | ----------- |
+| **Background style** | You can choose between `FANART` `COLOR` `IMAGE` . |
+| **Background image** | You can browse for your own picture / pictures set. |
 
 
