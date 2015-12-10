@@ -158,13 +158,63 @@ Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Ea
 
 #### Settings
 
-Each blocs has a certain amount of settings you can give different values
+Each bloc has a certain amount of settings you can give different values. Some are commons to most of the blocs, others are specifics.
+
+##### Common
+
+| Name | Description |
+| :-----------: | ----------- |
+| **Visibility** | You can choose between `VISIBLE` `HIDDEN` `IDLEFADE` `ONFOCUS`. ONFOCUS is available in bloc 5 only. [See idlefade here](https://github.com/Jayz2K/skin.KOver#idlefade). |
+| **Horizontal position (column)** | Set the element's start position on the grid (horizontal). You can choose between `A` `B` `C`. |
+| **Vertical position (row)** | Set the element's start position on the grid (vertical). You can choose between `A` `B` `C`. |
+| **Width** | Set the element's amount of columns on the grid. You can choose between `1COLUMN` `2COLUMN` `3COLUMN`. |
+| **Hight** | Set the element's amount of rows on the grid. You can choose between `1ROW` `2ROW` `3ROW`. |
+
+###### Sizing / positioning limitations
+
+It's usefull for you to know that you CAN'T set a bloc outside the Blocs Background or bigger than it.
+Also, reducing / moving the blocs background will move or reduce the blocs inside it in order to fit the new configuration.
+
+###### Idlefade
+
+The Idelfade feature makes the element to completely fade after a certain amount of seconds. The time fater idlefade starts can be set in
+
+`SETTINGS > SKIN SETTINGS > GENERAL SETUP`
 
 ##### Wallpaper
+
+Specifics :
 
 | Name | Description |
 | :-----------: | ----------- |
 | **Background style** | You can choose between `FANART` `COLOR` `IMAGE` . |
 | **Background image** | You can browse for your own picture / pictures set. |
 
+##### General setup
 
+Specifics :
+
+| Name | Description |
+| :-----------: | ----------- |
+| **Layout Orientation** | Set the whole layout orientation. You can choose between `HORIZONTAL` `VERTICAL`. Mostly used for sidebar position. |
+| **Sidebar Position** | Set the sidebar position (sticks to borders). You can choose between `LEFT` `RIGHT` `TOP` `BOTTOM`. |
+| **Sidebar Autohide** | Set the sidebar to autohide. You can choose between `DISABLED` `ENABLED` `IDLEFADE`. When blocs background is not 3X3, ENABLED is not available. [See idlefade here](https://github.com/Jayz2K/skin.KOver#idlefade). |
+| **Dialog panel Position** | Set the Dialog panel position. You can choose between `LEFT` `RIGHT` `TOP` `BOTTOM`. |
+| **Dialog slide Type** | Set the way the dialog panel opens. You can choose between `PUSH` `OVER`. PUSH slides all blocs when the panel's edge reaches one of them. OVER just slide over everything. |
+| **Horizontal Separator** | Add a 12 pixels gap between blocs (vertically). You can choose between `AB` `BC` `NONE`. |
+| **Vertical Separator** | Add a 12 pixels gap between blocs (horizontally). You can choose between `AB` `BC` `NONE`. |
+
+##### Blocs background
+
+No specifics
+
+##### Bloc1 : List
+
+Specifics :
+
+| Name | Description |
+| :-----------: | ----------- |
+| **List Type** | Set the look of the list. You can choose between `FIXEDLIST` `WIDELIST` `POSTER` `BANNER` `FANART` `TILES` `CARD` `CUSTOM1` `CUSTOM2` `CUSTOM3`. |
+| **List Orientation** | Set the list's scrolling orientation. You can choose between `HORIZONTAL` `VERTICAL`. |
+| **Go Submenu** | Set the position for submenu to open when you reach the end of the list. You can choose between `LEFT` `RIGHT` `TOP` `BOTTOM`. |
+| **Scroll Indicator** | Show scroll indicators over the list. You can choose between `VISIBLE` `HIDDEN`. Matches the List Orientation. |
