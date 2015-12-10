@@ -146,13 +146,20 @@ Extended Infos window (SCRIPT) doesn't manage viewtypes. In order to customize i
 Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Each bloc has its specific content
 
 | Name | Description |
-| -------------------------- | ----------- |
-| **Wallpaper** | You can set the wallpaper's style, choose your own picture or just hide it. |
-| **General Setup** | Change the layout orientation or sidebar, dialog panel and separators options. |
-| **Blocs background** | Change the position, size and visibility of the blocs barckground. |
-| **Bloc 1 : List** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
-| **Bloc 2 : Infos** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
-| **Bloc 3 : Art** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
-| **Bloc 4 : Video / Home art** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
-| **Bloc 5 : Submenu** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
+| -------------------------- | - |
+| **[Wallpaper](https://github.com/Jayz2K/skin.KOver#wallpaper)** | You can set the wallpaper's style, choose your own picture or just hide it. |
+| **[General Setup](https://github.com/Jayz2K/skin.KOver#general-setup)** | Change the layout orientation or sidebar, dialog panel and separators options. |
+| **[Blocs background](https://github.com/Jayz2K/skin.KOver#blocs-background)** | Change the position, size and visibility of the blocs barckground. |
+| **[Bloc 1 : List]** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
+| **[Bloc 2 : Infos]** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
+| **[Bloc 3 : Art]** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
+| **[Bloc 4 : Video / Home art]** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
+| **[Bloc 5 : Submenu]** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
+
+#### Settings
+
+Each blocs has a certain amount of settings you can give different values
+
+##### Wallpaper
+
 
