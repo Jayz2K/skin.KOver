@@ -10,35 +10,35 @@ However, because spending time into making it to look how you want is not the ta
 
 ## Menu
 
-- [First start and Basic features]https://github.com/Jayz2K/skin.KOver#first-start-and-basic-features
- - [Auto Build]https://github.com/Jayz2K/skin.KOver#auto-build
-  - [Auto Build : Viewtypes]https://github.com/Jayz2K/skin.KOver#auto-build--viewtypes
-  - [Auto Build : Colors]https://github.com/Jayz2K/skin.KOver#auto-build--colors
- - [Customizing Home]https://github.com/Jayz2K/skin.KOver#customizing-home
-  - [Customizing Home menu Items]https://github.com/Jayz2K/skin.KOver#customizing-home-menu-items
-  - [Select Viewtype]https://github.com/Jayz2K/skin.KOver#select-viewtype
-- [Advanced Features]https://github.com/Jayz2K/skin.KOver#advanced-features
- - [KOver Designer]https://github.com/Jayz2K/skin.KOver#kover-designer
-  - [Sections]https://github.com/Jayz2K/skin.KOver#sections
-  - [Viewtypes]https://github.com/Jayz2K/skin.KOver#viewtypes
-   - [Exception for EPG]https://github.com/Jayz2K/skin.KOver#exception-for-epg
-   - [Esception for Extended Infos]https://github.com/Jayz2K/skin.KOver#exception-for-extended-infos
-  - [Blocs]https://github.com/Jayz2K/skin.KOver#blocs
-  - [Settings]https://github.com/Jayz2K/skin.KOver#settings
-   - [Common]https://github.com/Jayz2K/skin.KOver#common
-    - [Sizing / positioning limitations]https://github.com/Jayz2K/skin.KOver#sizing--positioning-limitations
-	- [IdleFade]https://github.com/Jayz2K/skin.KOver#idlefade
-   - [Wallpaper]https://github.com/Jayz2K/skin.KOver#wallpaper
-   - [General Setup]https://github.com/Jayz2K/skin.KOver#general-setup
-   - [Blocs Background]https://github.com/Jayz2K/skin.KOver#blocs-background
-   - [Bloc 1 : List]https://github.com/Jayz2K/skin.KOver#bloc1--list
-   - [Bloc 2 : Infos]https://github.com/Jayz2K/skin.KOver#bloc2--infos
-   - [Bloc 3 : Art]https://github.com/Jayz2K/skin.KOver#bloc3--art
-   - [Bloc 4 : Video / Home art]https://github.com/Jayz2K/skin.KOver#bloc4--video--home-art
-   - [Bloc 5 : Submenu]https://github.com/Jayz2K/skin.KOver#bloc5--submenu
-  - [Working with Templates]https://github.com/Jayz2K/skin.KOver#working-with-templates
- - [KOver Color Tool]https://github.com/Jayz2K/skin.KOver#kover-color-tool
- - [Import / Export features]https://github.com/Jayz2K/skin.KOver#import--export-features
+* [First start and Basic features](https://github.com/Jayz2K/skin.KOver#first-start-and-basic-features)
+ * [Auto Build](https://github.com/Jayz2K/skin.KOver#auto-build)
+  * [Auto Build : Viewtypes](https://github.com/Jayz2K/skin.KOver#auto-build--viewtypes)
+  * [Auto Build : Colors](https://github.com/Jayz2K/skin.KOver#auto-build--colors)
+ * [Customizing Home](https://github.com/Jayz2K/skin.KOver#customizing-home)
+  * [Customizing Home menu Items](https://github.com/Jayz2K/skin.KOver#customizing-home-menu-items)
+  * [Select Viewtype](https://github.com/Jayz2K/skin.KOver#select-viewtype)
+* [Advanced Features](https://github.com/Jayz2K/skin.KOver#advanced-features)
+ * [KOver Designer](https://github.com/Jayz2K/skin.KOver#kover-designer)
+  * [Sections](https://github.com/Jayz2K/skin.KOver#sections)
+  * [Viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes)
+   * [Exception for EPG](https://github.com/Jayz2K/skin.KOver#exception-for-epg)
+   * [Esception for Extended Infos](https://github.com/Jayz2K/skin.KOver#exception-for-extended-infos)
+  * [Blocs](https://github.com/Jayz2K/skin.KOver#blocs)
+  * [Settings](https://github.com/Jayz2K/skin.KOver#settings)
+   * [Common](https://github.com/Jayz2K/skin.KOver#common)
+    * [Sizing / positioning limitations](https://github.com/Jayz2K/skin.KOver#sizing--positioning-limitations)
+	* [IdleFade](https://github.com/Jayz2K/skin.KOver#idlefade)
+   * [Wallpaper](https://github.com/Jayz2K/skin.KOver#wallpaper)
+   * [General Setup](https://github.com/Jayz2K/skin.KOver#general-setup)
+   * [Blocs Background](https://github.com/Jayz2K/skin.KOver#blocs-background)
+   * [Bloc 1 : List](https://github.com/Jayz2K/skin.KOver#bloc1--list)
+   * [Bloc 2 : Infos](https://github.com/Jayz2K/skin.KOver#bloc2--infos)
+   * [Bloc 3 : Art](https://github.com/Jayz2K/skin.KOver#bloc3--art)
+   * [Bloc 4 : Video / Home art](https://github.com/Jayz2K/skin.KOver#bloc4--video--home-art)
+   * [Bloc 5 : Submenu](https://github.com/Jayz2K/skin.KOver#bloc5--submenu)
+  * [Working with Templates](https://github.com/Jayz2K/skin.KOver#working-with-templates)
+ * [KOver Color Tool](https://github.com/Jayz2K/skin.KOver#kover-color-tool)
+ * [Import / Export features](https://github.com/Jayz2K/skin.KOver#import--export-features)
  
 
 ## First start and Basic features
