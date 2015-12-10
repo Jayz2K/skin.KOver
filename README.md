@@ -105,6 +105,7 @@ When using the [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild) featu
 #### Select viewtype
 
 As explained above, KOver allows you to build your own [viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes) and attach them to any Home item.
+[View Select viewtype in action (Home)](https://plus.google.com/102331461184341553815/posts/YsYaCubdosu). 
 
 > At first launch, you won't see any widget until you set a [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes) made for it (the default one only shows submenu).
 
@@ -136,6 +137,8 @@ KOver Designer is the core of KOver. The whole skin is build around this powerfu
     > The viewtype you want to create / editor
 	    > The bloc inside the viewtype you want to configure
 		    > The setting you want to change
+			
+[View Designer in action](https://plus.google.com/102331461184341553815/posts/aaZW3tXFNN4)
 			
 #### Sections
 
@@ -210,7 +213,7 @@ Also, reducing / moving the blocs background will move or reduce the blocs insid
 
 ###### Idlefade
 
-> The Idelfade feature makes the element to completely fade after a certain amount of seconds. The time fater idlefade starts can be set in
+> The Idelfade feature makes the element to completely fade after a certain amount of seconds. The time fater idlefade starts can be set in. [View IDLEFADE in video](https://plus.google.com/102331461184341553815/posts/jVhn38FkcsN).
 
 `SETTINGS > SKIN SETTINGS > GENERAL SETUP`
 
@@ -233,7 +236,7 @@ Specifics :
 | **Sidebar Position** | Set the sidebar position (sticks to borders). You can choose between `LEFT` `RIGHT` `TOP` `BOTTOM`. |
 | **Sidebar Autohide** | Set the sidebar to autohide. You can choose between `DISABLED` `ENABLED` `IDLEFADE`. When blocs background is not 3X3, ENABLED is not available. [See idlefade here](https://github.com/Jayz2K/skin.KOver#idlefade). |
 | **Dialog panel Position** | Set the Dialog panel position. You can choose between `LEFT` `RIGHT` `TOP` `BOTTOM`. |
-| **Dialog slide Type** | Set the way the dialog panel opens. You can choose between `PUSH` `OVER`. PUSH slides all blocs when the panel's edge reaches one of them. OVER just slide over everything. |
+| **Dialog slide Type** | Set the way the dialog panel opens. You can choose between `PUSH` `OVER`. PUSH slides all blocs when the panel's edge reaches one of them. OVER just slide over everything. [View Dialog slide Type in video](https://plus.google.com/102331461184341553815/posts/AbV9pR8vYBN). |
 | **Horizontal Separator** | Add a 12 pixels gap between blocs (vertically). You can choose between `AB` `BC` `NONE`. |
 | **Vertical Separator** | Add a 12 pixels gap between blocs (horizontally). You can choose between `AB` `BC` `NONE`. |
 
