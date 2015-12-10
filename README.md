@@ -8,6 +8,8 @@ However, because spending time into making it to look how you want is not the ta
 * [Official Community page](https://plus.google.com/u/0/b/102331461184341553815/communities/101384208271707123426)
 * [Support KOver - Donate](http://pledgie.com/campaigns/30029)
 
+![KOver screenshot](https://raw.githubusercontent.com/Jayz2K/skin.KOver/master/_screenshots/screenshot001.jpg "KOver!")
+
 ## Menu
 
 * [First start and Basic features](https://github.com/Jayz2K/skin.KOver#first-start-and-basic-features)
