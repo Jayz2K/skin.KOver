@@ -17,16 +17,16 @@ When installing KOver and launching it for the first time, it will write some se
 
 ## Auto Build
 
-As said, the auto build feature is made for you to not spend time making all your viewtypes. It's also a good way to see what is possible to do with KOver before you start using the Designer. You will be able to modify the built viewtype after applying the auto build.
-
 `SETTINGS > SKIN SETTINGS > AUTOBUILD`
+
+As said, the auto build feature is made for you to not spend time making all your viewtypes. It's also a good way to see what is possible to do with KOver before you start using the Designer. You will be able to modify the built viewtype after applying the auto build.
 
 ### Auto Build : viewtypes
 
-You can populate KOver with 5 different viewtype : 2 for a PVR use and 3 for a fullscreen use.
+You can populate KOver with 5 different viewtypes sets : 2 for a PVR use and 3 for a fullscreen use.
 
 | Name | Description |
-| ------ |  ----------- |
+| ---------- |  ----------- |
 | **PVR : Horizontal** | Provides a set of viewtypes half screen in horizontal mode. |
 | **PVR : Vertical** | Provides a set of viewtypes half screen in vertical mode. |
 | **Fullscreen : Classic** | Provides a set of viewtypes full screen. Almost all the screen space is used. |
@@ -38,8 +38,33 @@ You can populate KOver with 5 different viewtype : 2 for a PVR use and 3 for a f
 You can apply 4 built-in color schemes.
 
 | Name | Description |
-| ------ |  ----------- |
+| ---------- |  ----------- |
 | **Default dark** | Apply a dark/colorful color scheme. A good one for TVs. It's also the one provided at first launch. |
 | **Default light** | Apply a light/colorful color scheme. A good one for computer screens. |
 | **Default FTV style** | Apply a dark/orange color scheme. Reproduces the FTV UI colors. |
 | **Default Flat style** | Apply a dark/blue color scheme. Gives a 'Flat' style to the UI. |
+
+## Customizing Home
+
+`SETTINGS > SKIN SETTINGS > GENERAL SETUP > EDIT HOME MENU ...`
+
+You can customize KOver home menu like many other skins by setting your menu items and icons. But KOver pushes the personal settings further with extending viewtypes to the Home menu. You can build viewtypes for home like you make them for libraries.
+When using the AUTOBUILD feature, KOver provides 3 default viewtypes you can choose. At first launch, the first viewtype is set by default showing you only the submenus. You might want to change this be settings widgets instead.
+
+### Customizing Home menu items
+
+| Name | Feature | Description |
+| ---------- | ---------- | ----------- |
+| **Select widget** | Common | Choose the widget to display for the item. |
+| **Select background** | Common | Choose the picture to display as wallpaper. |
+| **Select viewtype** | KOver | Choose the viewtype to display for the item. |
+| **Select Bloc 4 Picture** | KOver | Choose an additional picture to display in Bloc 4 (see Designer). |
+| **Choose shortcut** | Common | Choose the target for the item. |
+| **Set label** | Common | Choose the name to display for the item. |
+| **Change icon** | Common | Choose the icon to display for the item. |
+| **Change action** | Common | Overrides the onclick action. |
+| **Customize submenu** | Common | Open the next level settings for the item. |
+| **Move left** | Common | Reorder items. |
+| **Move right** | Common | Reorder items. |
+| **Add** | Common | Add a new item. |
+| **Delete** | Common | Delete item. |
