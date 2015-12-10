@@ -13,7 +13,7 @@ However, because spending time into making it to look how you want is not the ta
 When installing KOver and launching it for the first time, it will write some settings as minimum requirements for the skin to display correctly. Straight after the first start, only one viewtype per section will be available. You have then 2 options :
 
 * Use the [autobuild](https://github.com/Jayz2K/skin.KOver#auto-build) feature to populate viewtypes
-* Use the Designer to build your own viewtypes
+* Use the [Designer](https://github.com/Jayz2K/skin.KOver#kover-designer) to build your own viewtypes
 
 ### Auto Build
 
@@ -57,8 +57,8 @@ When using the [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild) featu
 | :-----------: | :-----------: | ----------- |
 | **Select widget** | Common | Choose the widget to display for the item. |
 | **Select background** | Common | Choose the picture to display as wallpaper. |
-| **Select viewtype** | KOver | Choose the viewtype to display for the item. See [Select viewtype](https://github.com/Jayz2K/skin.KOver#select-viewtype) |
-| **Select Bloc 4 Picture** | KOver | Choose an additional picture to display in Bloc 4 (see Designer). |
+| **[Select viewtype](https://github.com/Jayz2K/skin.KOver#select-viewtype)** | KOver | Choose the viewtype to display for the item. See [Select viewtype](https://github.com/Jayz2K/skin.KOver#select-viewtype) |
+| **Select Bloc 4 Picture** | KOver | Choose an additional picture to display in [Bloc 4](https://github.com/Jayz2K/skin.KOver#bloc4--video--home-art). |
 | **Choose shortcut** | Common | Choose the target for the item. |
 | **Set label** | Common | Choose the name to display for the item. |
 | **Change icon** | Common | Choose the icon to display for the item. |
@@ -71,26 +71,24 @@ When using the [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild) featu
 
 #### Select viewtype
 
-As explained above, KOver allows you to build your own viewtypes and attach them to any Home item.
+As explained above, KOver allows you to build your own [viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes) and attach them to any Home item.
 
-```
-At first launch, you won't see any widget until you set a viewtype made for it (the default one only shows submenu).
-```
+> At first launch, you won't see any widget until you set a [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes) made for it (the default one only shows submenu).
 
-If you haven't made viewtypes changes in the designer or if you applied a preset from [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild), you will get the 3 following viewtypes available when you `Select viewtype`
+If you haven't made viewtypes changes in the designer or if you applied a preset from [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild), you will get the 3 following [viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes) available when you `Select viewtype`
 
 | Name | Description |
 | :-----------: | ----------- |
-| **Home Layout** | This is the default viewtype. Only shows submenu for the mainmenu item. |
-| **Libraries** | This is a widget viewtype. Shows the item's widget and switches to submenu using navigation. |
-| **Live TV** | This is a widget viewtype. Shows the item's widget and switches to submenu using navigation. Optimized for live tv widget. |
+| **Home Layout** | This is the default [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes). Only shows submenu for the mainmenu item. |
+| **Libraries** | This is a widget [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes). Shows the item's widget and switches to submenu using navigation. |
+| **Live TV** | This is a widget [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes). Shows the item's widget and switches to submenu using navigation. Optimized for live tv widget. |
 
 ## Advanced features
 
 Advanced features are what makes KOver different. 3 powerfull tools will let you make thousands of combinations between layouts and colors.
 
-* KOver Designer : A WYSIWYG editor for viewtypes building
-* KOver Color tool : A WYSIWYG editor for color schemes creation
+* [KOver Designer](https://github.com/Jayz2K/skin.KOver#kover-designer) : A WYSIWYG editor for viewtypes building
+* [KOver Color tool](https://github.com/Jayz2K/skin.KOver#kover-color-tool) : A WYSIWYG editor for color schemes creation
 * Import / Export : A set of import / export feature for sharing or importing community creations made with Designer and Color tool
 
 **Since those are advanced features, they are disabled by default. Enable them in**
@@ -108,7 +106,7 @@ KOver Designer is the core of KOver. The whole skin is build around this powerfu
 			
 #### Sections
 
-You can create / change the viewtypes for the following sections
+You can create / change the [viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes) for the following sections
 
 | Name | Description |
 | :-----------: | ----------- |
@@ -126,20 +124,20 @@ In almost all cases, you can create / change up to 9 viewtypes per [section](htt
 You can create a new viewtype in an empty slot with :
 
 * Apply Default Horizontal / Vertical
-* Copy template to view. [See Working with templates]()
+* Copy template to view. [See Working with templates](https://github.com/Jayz2K/skin.KOver#working-with-templates)
 
 You can access more options for an existing viewtype by clicking on ViewX or it's name. You will then be able to :
 
 * Rename the viewtype (the name that will be displayed as selectable)
-* Copy view to template. [See Working with templates]()
+* Copy view to template. [See Working with templates](https://github.com/Jayz2K/skin.KOver#working-with-templates)
 
 ###### Exception for epg
 
-EPG window (KODI) doesn't manage viewtypes. In order to customize it, use only the first viewtype in the **TV** [section](https://github.com/Jayz2K/skin.KOver#sections).
+> EPG window (KODI) doesn't manage [viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes). In order to customize it, use only the first [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes) in the **TV** [section](https://github.com/Jayz2K/skin.KOver#sections).
 
 ###### Exception for extended infos
 
-Extended Infos window (SCRIPT) doesn't manage viewtypes. In order to customize it, use only the first viewtype in the **Programs** [section](https://github.com/Jayz2K/skin.KOver#sections).
+> Extended Infos window (SCRIPT) doesn't manage viewtypes. In order to customize it, use only the first viewtype in the **Programs** [section](https://github.com/Jayz2K/skin.KOver#sections).
 
 #### Blocs
 
@@ -153,7 +151,7 @@ Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Ea
 | **[Bloc 1 : List](https://github.com/Jayz2K/skin.KOver#bloc1--list)** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
 | **[Bloc 2 : Infos](https://github.com/Jayz2K/skin.KOver#bloc2--infos)** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
 | **[Bloc 3 : Art](https://github.com/Jayz2K/skin.KOver#bloc3--art)** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
-| **[Bloc 4 : Video / Home art](https://github.com/Jayz2K/skin.KOver#bloc4--video-home-art)** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
+| **[Bloc 4 : Video / Home art](https://github.com/Jayz2K/skin.KOver#bloc4--video--home-art)** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
 | **[Bloc 5 : Submenu](https://github.com/Jayz2K/skin.KOver#bloc5--submenu)** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
 
 #### Settings
@@ -255,4 +253,31 @@ Specifics :
 | **Go Back** | Set the position for submenu to open when you reach the end of the list. You can choose between `LEFT` `RIGHT` `UP` `DOWN`. |
 | **Scroll Indicator** | Home [section](https://github.com/Jayz2K/skin.KOver#sections) only !. Show scroll indicators over the list. You can choose between `VISIBLE` `HIDDEN`. Matches the List Orientation. |
 
+#### Working with templates
+
+When you have set a [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes), you might want to copy it and only change a few settings like `List type` or `Visibility`. Templates are made for that.
+3 templates slots are available for you to copy existing views into it. You can then recall them to apply on empty [viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes) or override an existing one.
+
+You can access the templates menu by clicking on the [viewtype](https://github.com/Jayz2K/skin.KOver#viewtypes) name. The following options are available :
+
+| Name | Description |
+| :-----------: | ----------- |
+| **Copy View to Template** | Copy all the settings of the current viewtype in the chosen template. |
+| **Copy Template to View** | Copy all the settings from the chosen template to the viewtype. |
+| **Export Template** | Export all the settings of the chosen template in a zip file. |
+| **Delete Template** | Delete all the settings in the template. |
+
+> Please note that copying in both ways will override all targets' settings. You won't be prompted for confirmation.
+
+> Exporting a template keeps the template number. That means exporting template 1 will result in filling template 1 at zip import. Also importing a template will override the template's content.
+
+> It's recommended for export to give a relevant name and the template number to ensure restoring the correct one.
+
 ### KOver Color tool
+
+Many elements of KOver can be colorized. Use the color picker in the Color tool or type directly your own AARRGGBB code. 
+AARRGGBB codes can be obtained easily with an online color picker.
+
+### Import / Export features
+
+In progress ...
