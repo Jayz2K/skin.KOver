@@ -49,7 +49,7 @@ You can apply 4 built-in color schemes.
 `SETTINGS > SKIN SETTINGS > GENERAL SETUP > EDIT HOME MENU ...`
 
 You can customize KOver home menu like many other skins by setting your menu items and icons. But KOver pushes the personal settings further with extending viewtypes to the Home menu. You can build viewtypes for home like you make them for libraries.
-When using the AUTOBUILD feature, KOver provides 3 default viewtypes you can choose. At first launch, the first viewtype is set by default showing you only the submenus. You might want to change this by setting showing widgets instead.
+When using the [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild) feature, KOver provides 3 default viewtypes you can choose. At first launch, the first viewtype is set by default showing you only the submenus. You might want to change this by setting showing widgets instead.
 
 #### Customizing Home menu items
 
@@ -77,7 +77,7 @@ As explained above, KOver allows you to build your own viewtypes and attach them
 At first launch, you won't see any widget until you set a viewtype made for it (the default one only shows submenu).
 ```
 
-If you haven't made viewtypes changes in the designer or if you applied a preset from autobuild, you will get the 3 following viewtypes available when you `Select viewtype`
+If you haven't made viewtypes changes in the designer or if you applied a preset from [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild), you will get the 3 following viewtypes available when you `Select viewtype`
 
 | Name | Description |
 | :-----------: | ----------- |
@@ -153,12 +153,14 @@ Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Ea
 | **[Bloc 1 : List](https://github.com/Jayz2K/skin.KOver#bloc1--list)** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
 | **[Bloc 2 : Infos](https://github.com/Jayz2K/skin.KOver#bloc2--infos)** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
 | **[Bloc 3 : Art](https://github.com/Jayz2K/skin.KOver#bloc3--art)** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
-| **[Bloc 4 : Video / Home art](https://github.com/Jayz2K/skin.KOver#bloc4--video--home-art)** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
+| **[Bloc 4 : Video / Home art](https://github.com/Jayz2K/skin.KOver#bloc4--video-home-art)** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
 | **[Bloc 5 : Submenu](https://github.com/Jayz2K/skin.KOver#bloc5--submenu)** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
 
 #### Settings
 
 Each bloc has a certain amount of settings you can give different values. Some are commons to most of the blocs, others are specifics.
+
+> Please note that some settings will lock others depending on the given value. For example like for [Sizing / positioning limitations](https://github.com/Jayz2K/skin.KOver#sizing--positioning-limitations).
 
 ##### Common
 
@@ -204,6 +206,8 @@ Specifics :
 | **Horizontal Separator** | Add a 12 pixels gap between blocs (vertically). You can choose between `AB` `BC` `NONE`. |
 | **Vertical Separator** | Add a 12 pixels gap between blocs (horizontally). You can choose between `AB` `BC` `NONE`. |
 
+> Also it's important to note a particularity for Home [section](https://github.com/Jayz2K/skin.KOver#sections). Since setting different positions for the sidebar makes the navigation in the mainmenu impossible, only the first viewtype has the options `Layout Orientation` and `Sidebar Position`. Setting them here will apply to all other viewtypes in Home [section](https://github.com/Jayz2K/skin.KOver#sections).
+
 ##### Blocs background
 
 No specifics
@@ -216,5 +220,39 @@ Specifics :
 | :-----------: | ----------- |
 | **List Type** | Set the look of the list. You can choose between `FIXEDLIST` `WIDELIST` `POSTER` `BANNER` `FANART` `TILES` `CARD` `CUSTOM1` `CUSTOM2` `CUSTOM3`. |
 | **List Orientation** | Set the list's scrolling orientation. You can choose between `HORIZONTAL` `VERTICAL`. |
-| **Go Submenu** | Set the position for submenu to open when you reach the end of the list. You can choose between `LEFT` `RIGHT` `TOP` `BOTTOM`. |
+| **Go Submenu** | Set the position for submenu to open when you reach the end of the list. You can choose between `LEFT` `RIGHT` `UP` `DOWN`. |
 | **Scroll Indicator** | Show scroll indicators over the list. You can choose between `VISIBLE` `HIDDEN`. Matches the List Orientation. |
+
+##### Bloc2 : Infos
+
+No specifics
+
+##### Bloc3 : Art
+
+Specifics :
+
+| Name | Description |
+| :-----------: | ----------- |
+| **Art Type** | Set art to show in the bloc. You can choose between `FANART` `POSTER` `THUMB`. When ExtraFanart is enabled, you can also choose `CLEARART` `CLEARLOGO` `DISCART`. |
+| **Scroll Indicator** | Show scroll indicators over the arts. You can choose between `VISIBLE` `HIDDEN`. Matches the Bloc1 : List Orientation. |
+
+##### Bloc4 : Video / Home art
+
+No specifics
+
+##### Bloc5 : Submenu
+
+Specifics :
+
+| Name | Description |
+| :-----------: | ----------- |
+| **List Type** | Home [section](https://github.com/Jayz2K/skin.KOver#sections) only !. Set the look of the list. You can choose between `FIXEDLIST` `WIDELIST` `POSTER` `BANNER` `FANART` `TILES` `CARD`. |
+| **List Orientation** | Home [section](https://github.com/Jayz2K/skin.KOver#sections) only !. Set the list's scrolling orientation. You can choose between `HORIZONTAL` `VERTICAL`. |
+| **Bloc1 Visibility on Focus** | Set the [Bloc 1](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
+| **Bloc2 Visibility on Focus** | Set the [Bloc 2](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
+| **Bloc3 Visibility on Focus** | Set the [Bloc 3](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
+| **Bloc4 Visibility on Focus** | Set the [Bloc 4](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
+| **Go Back** | Set the position for submenu to open when you reach the end of the list. You can choose between `LEFT` `RIGHT` `UP` `DOWN`. |
+| **Scroll Indicator** | Home [section](https://github.com/Jayz2K/skin.KOver#sections) only !. Show scroll indicators over the list. You can choose between `VISIBLE` `HIDDEN`. Matches the List Orientation. |
+
+### KOver Color tool
