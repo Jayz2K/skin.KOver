@@ -12,7 +12,7 @@ However, because spending time into making it to look how you want is not the ta
 
 When installing KOver and launching it for the first time, it will write some settings as minimum requirements for the skin to display correctly. Straight after the first start, only one viewtype per section will be available. You have then 2 options :
 
-* Use the autobuild feature to populate viewtypes
+* Use the [autobuild](https://github.com/Jayz2K/skin.KOver#auto-build) feature to populate viewtypes
 * Use the Designer to build your own viewtypes
 
 ## Auto Build
