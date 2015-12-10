@@ -150,11 +150,11 @@ Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Ea
 | **[Wallpaper](https://github.com/Jayz2K/skin.KOver#wallpaper)** | You can set the wallpaper's style, choose your own picture or just hide it. |
 | **[General Setup](https://github.com/Jayz2K/skin.KOver#general-setup)** | Change the layout orientation or sidebar, dialog panel and separators options. |
 | **[Blocs background](https://github.com/Jayz2K/skin.KOver#blocs-background)** | Change the position, size and visibility of the blocs barckground. |
-| **[Bloc 1 : List]** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
-| **[Bloc 2 : Infos]** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
-| **[Bloc 3 : Art]** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
-| **[Bloc 4 : Video / Home art]** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
-| **[Bloc 5 : Submenu]** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
+| **[Bloc 1 : List](https://github.com/Jayz2K/skin.KOver#bloc1--list)** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
+| **[Bloc 2 : Infos](https://github.com/Jayz2K/skin.KOver#bloc2--infos)** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
+| **[Bloc 3 : Art](https://github.com/Jayz2K/skin.KOver#bloc3--art)** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
+| **[Bloc 4 : Video / Home art](https://github.com/Jayz2K/skin.KOver#bloc4--video--home-art)** | If you're in home [section](https://github.com/Jayz2K/skin.KOver#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
+| **[Bloc 5 : Submenu](https://github.com/Jayz2K/skin.KOver#bloc5--submenu)** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
 
 #### Settings
 
@@ -172,12 +172,12 @@ Each bloc has a certain amount of settings you can give different values. Some a
 
 ###### Sizing / positioning limitations
 
-It's usefull for you to know that you CAN'T set a bloc outside the Blocs Background or bigger than it.
+> It's usefull for you to know that you CAN'T set a bloc outside the Blocs Background or bigger than it.
 Also, reducing / moving the blocs background will move or reduce the blocs inside it in order to fit the new configuration.
 
 ###### Idlefade
 
-The Idelfade feature makes the element to completely fade after a certain amount of seconds. The time fater idlefade starts can be set in
+> The Idelfade feature makes the element to completely fade after a certain amount of seconds. The time fater idlefade starts can be set in
 
 `SETTINGS > SKIN SETTINGS > GENERAL SETUP`
 
