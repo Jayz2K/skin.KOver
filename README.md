@@ -133,7 +133,7 @@ Advanced features are what makes KOver different. 3 powerfull tools will let you
 
 ### KOver Designer
 
-![Designer screenshot](https://raw.githubusercontent.com/Jayz2K/skin.KOver/master/_screenshots/screenshot001.jpg "Designer!")
+![Designer screenshot](https://raw.githubusercontent.com/Jayz2K/skin.KOver/master/_screenshots/screenshot002.jpg "Designer!")
 
 KOver Designer is the core of KOver. The whole skin is build around this powerful layout manager. The designer has been made to be as simple as possible to use straight forward. It works with a tree logic :
 
@@ -315,7 +315,7 @@ You can access the templates menu by clicking on the [viewtype](https://github.c
 
 ### KOver Color tool
 
-![Colortool screenshot](https://raw.githubusercontent.com/Jayz2K/skin.KOver/master/_screenshots/screenshot001.jpg "Colortool!")
+![Colortool screenshot](https://raw.githubusercontent.com/Jayz2K/skin.KOver/master/_screenshots/screenshot003.jpg "Colortool!")
 
 Many elements of KOver can be colorized. Use the color picker in the Color tool or type directly your own AARRGGBB code. 
 AARRGGBB codes can be obtained easily with an online color picker.
