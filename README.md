@@ -46,7 +46,7 @@ However, because spending time into making it to look how you want is not the ta
 	  *[Backup](#backup)
 	  *[Export color scheme](#export-color-scheme)
 	  *[Export viewtypes](#export-viewtypes)
-* [Expert Features](#expert-feature--custom-lists)
+* [Expert Feature : custom lists](#expert-feature--custom-lists)
   * [Example for Designer_CustomList1.xml](#example-for-designer_customlist1xml)
  
 
