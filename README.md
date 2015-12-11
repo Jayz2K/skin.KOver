@@ -388,9 +388,9 @@ Those are linked as follow :
 
 | List Type | File linked to |
 | :-----------: | ----------- |
-| **CUSTOM1** | Designer_CustomList1.xml |
-| **CUSTOM2** | Designer_CustomList2.xml |
-| **CUSTOM3** | Designer_CustomList3.xml |
+| **CUSTOM1** | [Designer_CustomList1.xml](./16x9/Designer_CustomList1.xml) |
+| **CUSTOM2** | [Designer_CustomList2.xml](./16x9/Designer_CustomList2.xml) |
+| **CUSTOM3** | [Designer_CustomList3.xml](./16x9/Designer_CustomList3.xml) |
 
 > You can find those files in the skin's folder ./skin.KOver/16x9/
 
