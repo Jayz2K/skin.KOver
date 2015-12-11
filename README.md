@@ -398,7 +398,7 @@ Explanations are included directly in the files :
 
 ### Example for Designer_CustomList1.xml
 
-```javascript
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<!-- BUILD YOUR OWN LIST TYPE INSIDE KOver 
