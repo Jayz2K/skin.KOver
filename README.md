@@ -398,7 +398,7 @@ Explanations are included directly in the files :
 
 ### Example for Designer_CustomList1.xml
 
-```python
+```javascript
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<!-- BUILD YOUR OWN LIST TYPE INSIDE KOver 
@@ -436,7 +436,7 @@ Explanations are included directly in the files :
 		$INFO[Skin.String(Color.B1ItemNF)] : Bloc 1 unselected item (itemlayout) background
 		$INFO[Skin.String(Color.B1Txt1NF)] : Text 1 unselected item (itemlayout) usually used for titles and icons
 		$INFO[Skin.String(Color.B1Txt2NF)] : Text 2 unselected item (itemlayout) usually used for subtitles
-		$VAR[CategoryColor] : Bloc 1 elected item (focusedlayout) background. Changes with the category
+		$VAR[CategoryColor] : Bloc 1 selected item (focusedlayout) background. Changes with the category
 		$INFO[Skin.String(Color.B1IconBg)] : Icon background overlay (focusedlayout). Shows over the Bloc 1 selected item
 		$INFO[Skin.String(Color.B1Txt1F)] : Text 1 selected item (focusedlayout) usually used for titles and icons
 		$INFO[Skin.String(Color.B1Txt2F)] : Text 2 selected item (focusedlayout) usually used for subtitles
