@@ -52,7 +52,7 @@ However, because spending time into making it to look how you want is not the ta
 
 ## First start and Basic features
 
-When installing KOver and launching it for the first time, it will write some settings (minimum requirements) for the skin to display correctly. Straight after the first start, only one viewtype per section will be available. You have then 2 options :
+When installing KOver and launching it for the first time, it will write some settings (minimum requirements) for the skin to display correctly. Straight after the first start, only one [viewtype](#viewtypes) per section will be available. You have then 2 options :
 
 * Use the [autobuild](#auto-build) feature to populate viewtypes
 * Use the [Designer](#kover-designer) to build your own viewtypes
@@ -61,23 +61,23 @@ When installing KOver and launching it for the first time, it will write some se
 
 `SETTINGS > SKIN SETTINGS > AUTOBUILD`
 
-As said, the auto build feature is made for you to not spend time making all your viewtypes. It's also a good way to see what is possible to do with KOver before you start using the Designer. You will be able to modify the built viewtypes after applying the auto build.
+As said, the auto build feature is made for you to not spend time making all your [viewtypes](#viewtypes). It's also a good way to see what is possible to do with KOver before you start using the [Designer](#kover-designer). You will be able to modify the built [viewtypes](#viewtypes) after applying the auto build.
 
 #### Auto Build : viewtypes
 
-You can populate KOver with 5 different viewtypes sets : 2 for a PVR use and 3 for a fullscreen use.
+You can populate KOver with 5 different [viewtypes](#viewtypes) sets : 2 for a PVR use and 3 for a fullscreen use.
 
 | Name | Mode | Description |
 | :-----------: | :------: | ----------- |
-| **PVR : Horizontal** | Half screen | Provides a set of viewtypes in horizontal mode. |
-| **PVR : Vertical** | Half screen | Provides a set of viewtypes in vertical mode. |
-| **Fullscreen : Classic** | Full screen | Provides a set of viewtypes using all screen space. |
-| **Fullscreen : Two-thirds** | Full screen | Provides a set of viewtypes using 2/3 of the screen. Gives a more confortable view. |
-| **Fullscreen : Hybrid** | Full screen | Provides a set of viewtypes combining some viewtypes from the 2 above presets. |
+| **PVR : Horizontal** | Half screen | Provides a set of [viewtypes](#viewtypes) in horizontal mode. |
+| **PVR : Vertical** | Half screen | Provides a set of [viewtypes](#viewtypes) in vertical mode. |
+| **Fullscreen : Classic** | Full screen | Provides a set of [viewtypes](#viewtypes) using all screen space. |
+| **Fullscreen : Two-thirds** | Full screen | Provides a set of [viewtypes](#viewtypes) using 2/3 of the screen. Gives a more confortable view. |
+| **Fullscreen : Hybrid** | Full screen | Provides a set of [viewtypes](#viewtypes) combining some of the 2 above presets. |
 
 #### Auto Build : colors
 
-You can apply 4 built-in color schemes.
+You can apply 4 built-in [color schemes](#kover-color-tool).
 
 | Name | Description |
 | :-----------: |  ----------- |
@@ -90,8 +90,8 @@ You can apply 4 built-in color schemes.
 
 `SETTINGS > SKIN SETTINGS > GENERAL SETUP > EDIT HOME MENU ...`
 
-You can customize KOver's home menu like many other skins by setting your menu items and icons. But KOver pushes the personal settings further by extending viewtypes to the Home menu. You can build viewtypes for Home like you make them for libraries.
-When using the [autobuild](#autobuild) feature, KOver provides 3 default viewtypes you can choose. At first launch, the first viewtype is set by default to show you only the submenus. You might want to change this by setting to show widgets instead.
+You can customize KOver's home menu like many other skins by setting your menu items and icons. But KOver pushes the personal settings further by extending [viewtypes](#viewtypes) to the Home menu. You can build [viewtypes](#viewtypes) for Home like you make them for libraries.
+When using the [autobuild](#autobuild) feature, KOver provides 3 default [viewtypes](#viewtypes) you can choose. At first launch, the first [viewtypes](#viewtype) is set by default to show you only the submenus. You might want to change this by setting to show widgets instead.
 
 #### Customizing Home menu items
 
@@ -132,7 +132,7 @@ Advanced features are what makes KOver different. 3 powerful tools will let you 
 
 * [KOver Designer](#kover-designer) : A WYSIWYG editor for viewtypes building
 * [KOver Color tool](#kover-color-tool) : A WYSIWYG editor for color schemes creation
-* Import / Export : A set of import / export feature for sharing or importing community creations made with Designer and Color tool
+* [Import / Export](#import--export-features) : A set of import / export feature for sharing or importing community creations made with Designer and Color tool
 
 **Since those are advanced features, they are disabled by default. Enable them in**
 
@@ -157,13 +157,13 @@ You can create / change the [viewtypes](#viewtypes) for the following sections
 
 | Name | Description |
 | :-----------: | ----------- |
-| **Home** | Viewtypes 1 to 9 will be selectable in the "Edit Home menu ...". Each available viewtype can be attached to any main menu item. |
-| **Videos** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to videos, movies and tvshows (video content). |
-| **Music** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to artists, albums (music content). |
-| **TV** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to channels, epg (PVR content). See [exception for epg](#exception-for-epg). |
-| **Pictures** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to pictures. |
-| **Programs** | Viewtypes 1 to 9 will be selectable in the library context menu. Apply to addons, programs and some addons content. See [exception for extended infos](#exception-for-extended-infos). |
-| **Weather** | Viewtypes 1 only applies to Weather. Weather window (KODI) doesn't manage viewtypes. |
+| **Home** | [Viewtypes](#viewtypes) 1 to 9 will be selectable in the "[Edit Home menu ...](#customize-home)". Each available viewtype can be attached to any main menu item. |
+| **Videos** | [Viewtypes](#viewtypes) 1 to 9 will be selectable in the library context menu. Apply to videos, movies and tvshows (video content). |
+| **Music** | [Viewtypes](#viewtypes) 1 to 9 will be selectable in the library context menu. Apply to artists, albums (music content). |
+| **TV** | [Viewtypes](#viewtypes) 1 to 9 will be selectable in the library context menu. Apply to channels, epg (PVR content). See [exception for epg](#exception-for-epg). |
+| **Pictures** | [Viewtypes](#viewtypes) 1 to 9 will be selectable in the library context menu. Apply to pictures. |
+| **Programs** | [Viewtypes](#viewtypes) 1 to 9 will be selectable in the library context menu. Apply to addons, programs and some addons content. See [exception for extended infos](#exception-for-extended-infos). |
+| **Weather** | [Viewtype](#viewtypes) 1 only applies to Weather. Weather window (KODI) doesn't manage viewtypes. |
 
 #### Viewtypes
 
@@ -171,12 +171,12 @@ In almost all cases, you can create / change up to 9 viewtypes per [section](#se
 You can create a new viewtype in an empty slot with :
 
 * Apply Default Horizontal / Vertical
-* Copy template to view. [See Working with templates](#working-with-templates)
+* Copy [template](#working-with-templates) to view.
 
 You can access more options for an existing viewtype by clicking on ViewX or it's name. You will then be able to :
 
 * Rename the viewtype (the name that will be displayed as selectable)
-* Copy view to template. [See Working with templates](#working-with-templates)
+* Copy view to [template](#working-with-templates).
 
 ###### Exception for epg
 
@@ -184,7 +184,7 @@ You can access more options for an existing viewtype by clicking on ViewX or it'
 
 ###### Exception for extended infos
 
-> Extended Infos window (SCRIPT) doesn't manage viewtypes. In order to customize it, use only the first viewtype in the **Programs** [section](#sections).
+> Extended Infos window (SCRIPT) doesn't manage viewtypes. In order to customize it, use only the first [viewtype](#viewtypes) in the **Programs** [section](#sections).
 
 #### Blocs
 
@@ -198,12 +198,12 @@ Each viewtype is made of wallpaper, furnitures, 5 blocs and their background. Ea
 | **[Bloc 1 : List](#bloc1--list)** | Dedicated to the main nav list (ex. movies, songs). Change the position, size, visibility and list type. |
 | **[Bloc 2 : Infos](#bloc2--infos)** | Dedicated to the selected item informations (ex. Duration, plot and iten position in the list). Change the position, size and visibility. |
 | **[Bloc 3 : Art](#bloc3--art)** | Dedicated to the selected item art (ex. Fanart, thumb). Change the position, size and visibility. |
-| **[Bloc 4 : Video / Home art](#bloc4--video--home-art)** | If you're in home [section](#select-viewtype), display the homeart set in Edit Home menu ... .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
+| **[Bloc 4 : Video / Home art](#bloc4--video--home-art)** | If you're in home [section](#select-viewtype), display the homeart set in [Edit Home menu ...](#customize-home) .If you're not in Home, embed the current playing video. Change the position, size and visibility. |
 | **[Bloc 5 : Submenu](#bloc5--submenu)** | Dedicated to the item context menu. Change the position, size and visibility. Also toggles visibility of the other blocs. |
 
 #### Settings
 
-Each bloc has a certain amount of settings you can give different values. Some are commons to most of the blocs, others are specifics.
+Each bloc has a certain amount of settings you can give different values. Some are [commons](#common) to most of the blocs, others are specifics.
 
 > Please note that some settings will lock others depending on the given value. For example like for [Sizing / positioning limitations](#sizing--positioning-limitations).
 
