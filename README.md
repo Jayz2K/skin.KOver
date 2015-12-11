@@ -380,6 +380,7 @@ This will generate a zip containing the current [Color scheme](#kover-color-tool
 ## Expert feature : custom lists
 
 **This feature is reserved for users with some coding skills**
+
 Custom lists is a feature that allows you to code your own list types in [Bloc 1](#bloc1--list) with the benefits of the built-in layout management.
 That means coding those lists following the explainations will make them to adapt themselves in size, position and colors to the [Kover Designer's](#kover-designer) settings.
 
