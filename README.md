@@ -1,7 +1,7 @@
 # KOver [A Customizable KODI skin]
 
 KOver (for KODI Overlay) offers a different approach of KODI skins. Not just purely designed, it also offers to the user the possibility to **customize it and make thousands of configurations**.
-Born to be a PVR oriented skin with a half screen approach, the way the layout was coded evolved in time to allow to dynamically **change positions, sizes, colors and much more to your needs**.
+Born to be a PVR oriented skin with a half screen view in mind, the way the layout was coded evolved to allow to dynamically **change positions, sizes, colors and much more to your needs**.
 However, because spending time into making it to look how you want is not the taste of everyone, **KOver can also build itself** with some presets.
 
 * [Official Development thread](http://forum.kodi.tv/showthread.php?tid=207581)
@@ -24,7 +24,7 @@ However, because spending time into making it to look how you want is not the ta
     * [Sections](https://github.com/Jayz2K/skin.KOver#sections)
     * [Viewtypes](https://github.com/Jayz2K/skin.KOver#viewtypes)
       * [Exception for EPG](https://github.com/Jayz2K/skin.KOver#exception-for-epg)
-      * [Esception for Extended Infos](https://github.com/Jayz2K/skin.KOver#exception-for-extended-infos)
+      * [Exception for Extended Infos](https://github.com/Jayz2K/skin.KOver#exception-for-extended-infos)
     * [Blocs](https://github.com/Jayz2K/skin.KOver#blocs)
     * [Settings](https://github.com/Jayz2K/skin.KOver#settings)
       * [Common](https://github.com/Jayz2K/skin.KOver#common)
@@ -40,12 +40,12 @@ However, because spending time into making it to look how you want is not the ta
       * [Bloc 5 : Submenu](https://github.com/Jayz2K/skin.KOver#bloc5--submenu)
     * [Working with Templates](https://github.com/Jayz2K/skin.KOver#working-with-templates)
   * [KOver Color Tool](https://github.com/Jayz2K/skin.KOver#kover-color-tool)
-  * [Import / Export features](https://github.com/Jayz2K/skin.KOver#import--export-features)
+  * [Import / Export features](#import--export-features)
  
 
 ## First start and Basic features
 
-When installing KOver and launching it for the first time, it will write some settings as minimum requirements for the skin to display correctly. Straight after the first start, only one viewtype per section will be available. You have then 2 options :
+When installing KOver and launching it for the first time, it will write some settings (minimum requirements) for the skin to display correctly. Straight after the first start, only one viewtype per section will be available. You have then 2 options :
 
 * Use the [autobuild](https://github.com/Jayz2K/skin.KOver#auto-build) feature to populate viewtypes
 * Use the [Designer](https://github.com/Jayz2K/skin.KOver#kover-designer) to build your own viewtypes
@@ -54,19 +54,19 @@ When installing KOver and launching it for the first time, it will write some se
 
 `SETTINGS > SKIN SETTINGS > AUTOBUILD`
 
-As said, the auto build feature is made for you to not spend time making all your viewtypes. It's also a good way to see what is possible to do with KOver before you start using the Designer. You will be able to modify the built viewtype after applying the auto build.
+As said, the auto build feature is made for you to not spend time making all your viewtypes. It's also a good way to see what is possible to do with KOver before you start using the Designer. You will be able to modify the built viewtypes after applying the auto build.
 
 #### Auto Build : viewtypes
 
 You can populate KOver with 5 different viewtypes sets : 2 for a PVR use and 3 for a fullscreen use.
 
-| Name | Description |
-| :-----------: |  ----------- |
-| **PVR : Horizontal** | Provides a set of viewtypes half screen in horizontal mode. |
-| **PVR : Vertical** | Provides a set of viewtypes half screen in vertical mode. |
-| **Fullscreen : Classic** | Provides a set of viewtypes full screen. Almost all the screen space is used. |
-| **Fullscreen : Two-thirds** | Provides a set of viewtypes full screen. 2/3 of the screen is used, gives a more confortable view. |
-| **Fullscreen : Hybrid** | Provides a set of viewtypes full screen. Combine some viewtype of the 2 above presets. |
+| Name | Mode | Description |
+| :-----------: | :------: | ----------- |
+| **PVR : Horizontal** | Half screen | Provides a set of viewtypes in horizontal mode. |
+| **PVR : Vertical** | Half screen | Provides a set of viewtypes in vertical mode. |
+| **Fullscreen : Classic** | Full screen | Provides a set of viewtypes using all screen space. |
+| **Fullscreen : Two-thirds** | Full screen | Provides a set of viewtypes using 2/3 of the screen. Gives a more confortable view. |
+| **Fullscreen : Hybrid** | Full screen | Provides a set of viewtypes combining some viewtypes from the 2 above presets. |
 
 #### Auto Build : colors
 
@@ -83,8 +83,8 @@ You can apply 4 built-in color schemes.
 
 `SETTINGS > SKIN SETTINGS > GENERAL SETUP > EDIT HOME MENU ...`
 
-You can customize KOver home menu like many other skins by setting your menu items and icons. But KOver pushes the personal settings further with extending viewtypes to the Home menu. You can build viewtypes for home like you make them for libraries.
-When using the [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild) feature, KOver provides 3 default viewtypes you can choose. At first launch, the first viewtype is set by default showing you only the submenus. You might want to change this by setting showing widgets instead.
+You can customize KOver's home menu like many other skins by setting your menu items and icons. But KOver pushes the personal settings further by extending viewtypes to the Home menu. You can build viewtypes for Home like you make them for libraries.
+When using the [autobuild](https://github.com/Jayz2K/skin.KOver#autobuild) feature, KOver provides 3 default viewtypes you can choose. At first launch, the first viewtype is set by default to show you only the submenus. You might want to change this by setting to show widgets instead.
 
 #### Customizing Home menu items
 
@@ -121,7 +121,7 @@ If you haven't made viewtypes changes in the designer or if you applied a preset
 
 ## Advanced features
 
-Advanced features are what makes KOver different. 3 powerfull tools will let you make thousands of combinations between layouts and colors.
+Advanced features are what makes KOver different. 3 powerful tools will let you make thousands of combinations between layouts and colors.
 
 * [KOver Designer](https://github.com/Jayz2K/skin.KOver#kover-designer) : A WYSIWYG editor for viewtypes building
 * [KOver Color tool](https://github.com/Jayz2K/skin.KOver#kover-color-tool) : A WYSIWYG editor for color schemes creation
@@ -135,7 +135,7 @@ Advanced features are what makes KOver different. 3 powerfull tools will let you
 
 ![Designer screenshot](https://raw.githubusercontent.com/Jayz2K/skin.KOver/master/_screenshots/screenshot002.jpg "Designer!")
 
-KOver Designer is the core of KOver. The whole skin is build around this powerful layout manager. The designer has been made to be as simple as possible to use straight forward. It works with a tree logic :
+KOver Designer is the core of KOver. The whole skin is built around this powerful layout manager. The designer has been made to be as simple as possible for a straight forward use. It works with a tree logic :
 
 > Section where you want to create the viewtype
     > The viewtype you want to create / editor
@@ -290,7 +290,7 @@ Specifics :
 | **Bloc2 Visibility on Focus** | Set the [Bloc 2](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
 | **Bloc3 Visibility on Focus** | Set the [Bloc 3](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
 | **Bloc4 Visibility on Focus** | Set the [Bloc 4](https://github.com/Jayz2K/skin.KOver#blocs) visibility if Bloc5 has focus. You can choose between `VISIBLE` `HIDDEN`. |
-| **Go Back** | Set the position for submenu to open when you reach the end of the list. You can choose between `LEFT` `RIGHT` `UP` `DOWN`. |
+| **Go Back** | Set the position for submenu to close when you reach the end of the list. You can choose between `LEFT` `RIGHT` `UP` `DOWN`. |
 | **Scroll Indicator** | Home [section](https://github.com/Jayz2K/skin.KOver#sections) only !. Show scroll indicators over the list. You can choose between `VISIBLE` `HIDDEN`. Matches the List Orientation. |
 
 #### Working with templates
