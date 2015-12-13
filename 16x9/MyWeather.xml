@@ -12,54 +12,6 @@
 			<param name="CompPrefix" value="WEA.View1" />
 			<param name="Section" value="WEA" />
 		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View2.Name))" name="VDOViewtype">
-			<param name="Id" value="51" />
-			<param name="IclPrefix" value="WEAView2" />
-			<param name="CompPrefix" value="WEA.View2" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View3.Name))" name="VDOViewtype">
-			<param name="Id" value="52" />
-			<param name="IclPrefix" value="WEAView3" />
-			<param name="CompPrefix" value="WEA.View3" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View4.Name))" name="VDOViewtype">
-			<param name="Id" value="53" />
-			<param name="IclPrefix" value="WEAView4" />
-			<param name="CompPrefix" value="WEA.View4" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View5.Name))" name="VDOViewtype">
-			<param name="Id" value="54" />
-			<param name="IclPrefix" value="WEAView5" />
-			<param name="CompPrefix" value="WEA.View5" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View6.Name))" name="VDOViewtype">
-			<param name="Id" value="55" />
-			<param name="IclPrefix" value="WEAView6" />
-			<param name="CompPrefix" value="WEA.View6" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View7.Name))" name="VDOViewtype">
-			<param name="Id" value="56" />
-			<param name="IclPrefix" value="WEAView7" />
-			<param name="CompPrefix" value="WEA.View7" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View8.Name))" name="VDOViewtype">
-			<param name="Id" value="57" />
-			<param name="IclPrefix" value="WEAView8" />
-			<param name="CompPrefix" value="WEA.View8" />
-			<param name="Section" value="WEA" />
-		</include>
-		<include condition="!IsEmpty(Skin.String(WEA.View9.Name))" name="VDOViewtype">
-			<param name="Id" value="58" />
-			<param name="IclPrefix" value="WEAView9" />
-			<param name="CompPrefix" value="WEA.View9" />
-			<param name="Section" value="WEA" />
-		</include>
 	
 	</controls>
 	

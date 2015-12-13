@@ -954,6 +954,14 @@ msgctxt "#31232"
 msgid "Arrows"
 msgstr ""
 
+msgctxt "#31233"
+msgid "Lists"
+msgstr ""
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

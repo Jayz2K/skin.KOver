@@ -528,7 +528,7 @@
 						<onright>9300</onright>
 						<orientation>vertical</orientation>
 						<scrolltime>200</scrolltime>
-						<visible>!Window.IsVisible(1100) + !Control.HasFocus(9500) + !Control.HasFocus(9400) + !IsEmpty(Container(9100).ListItem.Label) + !Window.IsVisible(1200)</visible>
+						<visible>!Window.IsVisible(1100) + !Control.HasFocus(9500) + !Control.HasFocus(9400) + !IsEmpty(Container(9100).ListItem.Label)</visible>
 						
 						<itemlayout width="588" height="60">
 							<control type="label">
@@ -646,7 +646,7 @@
 					<onright>9300</onright>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
-					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + [Control.HasFocus(9500) | Control.HasFocus(9400) | IsEmpty(Container(9100).ListItem.Label)] + !Window.IsVisible(1200) + !Control.HaFocus(9300)</visible>
+					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + [Control.HasFocus(9500) | Control.HasFocus(9400) | IsEmpty(Container(9100).ListItem.Label)] + !Control.HaFocus(9300)</visible>
 					
 					<itemlayout width="588" height="60">
 						<control type="label">
@@ -1562,7 +1562,7 @@
 					<onback>9100</onback>
 					<orientation>horizontal</orientation>
 					<scrolltime>200</scrolltime>
-					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + !Control.HasFocus(5) + !Control.HasFocus(9500) + !Control.HasFocus(9400) + !IsEmpty(Container(9100).ListItem.Label) + !Window.IsVisible(1200)</visible>
+					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + !Control.HasFocus(5) + !Control.HasFocus(9500) + !Control.HasFocus(9400) + !IsEmpty(Container(9100).ListItem.Label)</visible>
 					
 					<itemlayout width="176" height="338">
 						<control type="group">
@@ -3595,8 +3595,6 @@
 			
 			<!-- Elements Preview -->			
 			<control type="group">
-				<visible>!Window.IsActive(1200)</visible>
-
 					
 				<control type="group">
 					<top>60</top>

@@ -1099,7 +1099,7 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<font>Font36</font>
-			<label>Loading...</label>
+			<label>31234</label>
 			<visible>Window.IsVisible(12003) + StringCompare(Container(300).ListItem.Property(MenuID),Cast) + Container(70).IsUpdating</visible>
 			<animation effect="fade" start="100" end="0" time="400" reversible="true" pulse="true" condition="true">Conditional</animation>	
 		</control>

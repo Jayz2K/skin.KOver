@@ -3,7 +3,7 @@
 	<!-- selectdialog -->
 	<zorder>2</zorder>
 	<defaultcontrol always="true">211</defaultcontrol>
-	
+
 	<controls>
 		
 		<control type="group">
@@ -15,12 +15,16 @@
 
 		</control>
 
+		<control type="button" id="111"><visible>False</visible></control>
 		<control type="button" id="301"><visible>False</visible></control>
 		<control type="button" id="302"><visible>False</visible></control>
 		<control type="button" id="303"><visible>False</visible></control>
 		<control type="button" id="304"><visible>False</visible></control>
 		<control type="button" id="305"><visible>False</visible></control>
+		<control type="button" id="306"><visible>False</visible></control>
 		<control type="button" id="307"><visible>False</visible></control>
+		<control type="button" id="308"><visible>False</visible></control>
+		<control type="button" id="309"><visible>False</visible></control>
 		<control type="button" id="310"><visible>False</visible></control>
 		<control type="button" id="311"><visible>False</visible></control>
 		<control type="button" id="312"><visible>False</visible></control>

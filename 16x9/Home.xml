@@ -92,7 +92,7 @@
 
 				<itemlayout width="80" height="80">
 					<control type="image">
-						<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(98)">Conditional</animation>
+						<animation effect="fade" start="100" end="0" time="200" condition="Control.HasFocus(98)">Conditional</animation>
 						<left>15</left>
 						<top>15</top>
 						<width>50</width>

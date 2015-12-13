@@ -138,7 +138,7 @@
 							<property name="MenuID">Youtube</property>
 						</item>		
 						<item id="6">
-							<label>Lists</label> <!-- Lists -->
+							<label>31233</label> <!-- Lists -->
 							<onclick>noop</onclick>
 							<visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
 							<property name="MenuID">Lists</property>

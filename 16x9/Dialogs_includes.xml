@@ -1158,16 +1158,7 @@
 					<width>588</width>							
 					<texture  colordiffuse="FFFFFFFF">$INFO[ListItem.Icon]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
-					<visible>!SubString(ListItem.Icon,Default) + !SubString(Control.GetLabel(416),*)</visible>
-				</control>
-				<control type="image">
-					<top>24</top>
-					<left>24</left>
-					<height>308</height>
-					<width>588</width>	
-					<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[ListItem.Icon]</texture>
-					<aspectratio aligny="center">keep</aspectratio>
-					<visible>!SubString(ListItem.Icon,Default) + SubString(Control.GetLabel(416),*)</visible>
+					<visible>!SubString(ListItem.Icon,Default)</visible>
 				</control>
 				<control type="image">
 					<top>24</top>

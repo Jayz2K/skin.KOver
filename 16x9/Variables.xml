@@ -89,15 +89,6 @@
 		<value condition="!Window.IsVisible(Home) + [SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)]">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Property(Fanart)]</value>
 		<value condition="!Window.IsVisible(Home)">$INFO[ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View1)">$INFO[Container(9011).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View2)">$INFO[Container(9012).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View3)">$INFO[Container(9013).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View4)">$INFO[Container(9014).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View5)">$INFO[Container(9015).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View6)">$INFO[Container(9016).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View7)">$INFO[Container(9017).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View8)">$INFO[Container(9018).ListItem.Art(fanart)]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(viewtype),View9)">$INFO[Container(9019).ListItem.Art(fanart)]</value>
 	</variable>
 
 	<variable name="InitColor1">
