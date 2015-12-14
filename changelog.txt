@@ -1,3 +1,8 @@
+[B]0.60.1[/B]
+- Reworked visualisation background
+- Mapped users colors (unselected) to Fanart and Tiles
+- Bug fixes and code cleanup
+
 [B]0.60.0[/B] BETA 2
 - Activation of custom lists in Bloc 1
 - Bug fixes

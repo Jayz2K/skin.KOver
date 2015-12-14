@@ -2,7 +2,7 @@
 <window>
 	<!-- selectdialog -->
 	<zorder>2</zorder>
-	<defaultcontrol always="true">211</defaultcontrol>
+	<defaultcontrol always="true">212</defaultcontrol>
 
 	<controls>
 		

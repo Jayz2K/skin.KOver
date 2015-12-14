@@ -48,10 +48,13 @@
 			<control type="image">
 				<texture>common/white.png</texture>
 				<colordiffuse>FF000000</colordiffuse>
-				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
+				<visible>[Player.HasVideo | Player.HasAudio] + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
 			</control>
 			<control type="videowindow">
 				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
+			</control>
+			<control type="visualisation">
+				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]]</visible>
 			</control>
 			<control type="multiimage">
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -60,9 +63,7 @@
 				<fadetime>2000</fadetime>
 				<randomize>true</randomize>
 				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistslideShow)</visible>
-			</control>
-			<control type="visualisation">
-				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]]</visible>
+				<animation effect="fade" start="100" end="50" time="0" condition="Skin.HasSetting(VisualisationShow)">Conditional</animation>
 			</control>
 		</control>		
 	</include>
@@ -2198,7 +2199,8 @@
 				<width>317</width>
 				<height>50</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="AA000000">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="group">
 				<right>0</right>
@@ -2229,7 +2231,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>FontSmallR</font>
-				<textcolor>FFFFFFFF</textcolor>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 				<label>$VAR[B1Title]</label>
 			</control>
 		</itemlayout>
@@ -2899,7 +2901,8 @@
 				<width>635</width>
 				<height>100</height>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="AA000000">common/white.png</texture>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				<animation effect="fade" start="100" end="80" time="0" condition="true">Conditional</animation>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -2929,7 +2932,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Font27B</font>
-					<textcolor>FFFFFFFF</textcolor>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 					<label>$VAR[B1Title]</label>
 				</control>
 				<control type="label">
@@ -2940,7 +2943,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>FontSmallR</font>
-					<textcolor>FFAAAAAA</textcolor>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
 					<label>$VAR[B1SubTitle]</label>
 				</control>
 			</control>

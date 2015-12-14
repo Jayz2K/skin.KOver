@@ -9203,6 +9203,16 @@
 				<height>356</height>
 				<width>636</width>
 
+				<!-- Dummy button for 211 focus -->
+				<control type="button" id="212">
+					<visible allowhiddenfocus="true">false</visible>
+					<onleft>211</onleft>
+					<onright>211</onright>
+					<onup>noop</onup>
+					<ondown>Control.SetFocus(300,0)</ondown>
+					<onclick>noop</onclick>
+				</control>
+
 				<control type="image">
 					<left>24</left>
 					<top>24</top>
@@ -9297,8 +9307,8 @@
 					<height>308</height>
 					<onleft>211</onleft>
 					<onright>9002</onright>
-					<onup>noop</onup>
-					<ondown>noop</ondown>
+					<onup>211</onup>
+					<ondown>9002</ondown>
 					<orientation>vertical</orientation>
 					<scrolltime tween="sine" easing="out">240</scrolltime>	
 
