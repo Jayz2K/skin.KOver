@@ -1,3 +1,7 @@
+[B]0.60.2[/B]
+- Added possibility to choose pictures as Blocs background
+- Code cleanup and improvements
+
 [B]0.60.1[/B]
 - Reworked visualisation background
 - Mapped users colors (unselected) to Fanart and Tiles

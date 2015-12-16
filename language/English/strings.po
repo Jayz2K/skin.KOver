@@ -179,7 +179,7 @@ msgid "Height"
 msgstr ""
 
 msgctxt "#31040"
-msgid "Background Style"
+msgid "Background[CR]Style"
 msgstr ""
 
 msgctxt "#31041"
@@ -187,7 +187,7 @@ msgid "List Type"
 msgstr ""
 
 msgctxt "#31042"
-msgid "Background image"
+msgid "Background[CR]Image"
 msgstr ""
 
 msgctxt "#31043"

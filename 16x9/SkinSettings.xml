@@ -527,7 +527,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrh.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrh.autobuild)</onclick>
 				</control>
 
 				<!-- PVR Vertical -->
@@ -544,7 +544,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrv.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrv.autobuild)</onclick>
 				</control>
 
 				<!-- Separator -->
@@ -568,7 +568,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultclassic.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultclassic.autobuild)</onclick>
 				</control>
 
 				<!-- 2/3 -->
@@ -585,7 +585,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulttwothirds.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulttwothirds.autobuild)</onclick>
 				</control>
 
 				<!-- Hybrid -->
@@ -602,7 +602,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulthybrid.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulthybrid.autobuild)</onclick>
 				</control>
 
 				<!-- Separator -->
@@ -626,7 +626,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultdark.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultdark.autobuild)</onclick>
 				</control>
 
 				<!-- Light -->
@@ -643,7 +643,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultlight.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultlight.autobuild)</onclick>
 				</control>
 
 				<!-- FTV -->
@@ -660,7 +660,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultftv.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultftv.autobuild)</onclick>
 				</control>
 
 				<!-- Flat Style -->
@@ -677,7 +677,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultflat.shb)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/colorschemes/defaultflat.autobuild)</onclick>
 				</control>
 						
 			</control>		

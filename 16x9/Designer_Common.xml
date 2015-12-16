@@ -20,7 +20,7 @@
 				<fadetime>2000</fadetime>
 				<pauseatend>10000</pauseatend>
 				<randomize>true</randomize>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !IsEmpty(Container(9000).ListItem.Property(background)) + [!Control.HasFocus(9011) | Skin.String($PARAM[CompPrefix].WPBgs,IMAGE)]</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !IsEmpty(Container(9000).ListItem.Property(background)) + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE)</visible>
 				<animation condition="True" time="10000" end="130" effect="zoom" pulse="true" easing="inout" tween="cubic" center="auto" start="110">Conditional</animation>
 				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation>			
 			</control>				

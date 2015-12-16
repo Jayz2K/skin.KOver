@@ -45,7 +45,23 @@
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
 					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
 					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
-				</control>				
+					<visible>IsEmpty(Skin.String($PARAM[CompPrefix].BBPic)) | !Skin.String($PARAM[CompPrefix].BBBgs,IMAGE)</visible>
+				</control>
+				<control type="image">
+					<include name="BgPosition">
+						<param name="Prefix" value="$PARAM[CompPrefix]" />
+					</include>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].BBPic)]</texture>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">Conditonal</animation>
+					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
+					<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].BBPic)) + Skin.String($PARAM[CompPrefix].BBBgs,IMAGE)</visible>
+				</control>	
 
 				<!-- Bloc 4 / special background -->
 				<control type="group">
@@ -64,6 +80,14 @@
 						<left>0</left>
 						<top>0</top>
 						<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
+						<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B4Pic)) | !Skin.String($PARAM[CompPrefix].B4Bgs,IMAGE)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B4Pic)]</texture>
+						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B4Pic)) + Skin.String($PARAM[CompPrefix].B4Bgs,IMAGE)</visible>
 					</control>
 					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
 				</control>
@@ -86,7 +110,15 @@
 						<left>0</left>
 						<top>0</top>
 						<texture colordiffuse="$INFO[Skin.String(Color.B3Bg)]">common/white.png</texture>
-					</control>				
+						<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B3Pic)) | !Skin.String($PARAM[CompPrefix].B3Bgs,IMAGE)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B3Pic)]</texture>
+						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B3Pic)) + Skin.String($PARAM[CompPrefix].B3Bgs,IMAGE)</visible>
+					</control>		
 
 					<!-- Episode / Film preview -->
 					<control type="group">
@@ -365,7 +397,15 @@
 						<left>0</left>
 						<top>0</top>
 						<texture colordiffuse="$INFO[Skin.String(Color.B4Bg)]">common/white.png</texture>
-					</control>				
+						<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B4Pic)) | !Skin.String($PARAM[CompPrefix].B4Bgs,IMAGE)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B4Pic)]</texture>
+						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B4Pic)) + Skin.String($PARAM[CompPrefix].B4Bgs,IMAGE)</visible>
+					</control>		
 					<control type="multiimage">
 						<left>0</left>
 						<top>0</top>
@@ -431,7 +471,15 @@
 						<left>0</left>
 						<top>0</top>
 						<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
-					</control>	
+						<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B1Pic)) | !Skin.String($PARAM[CompPrefix].B1Bgs,IMAGE)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B1Pic)]</texture>
+						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B1Pic)) + Skin.String($PARAM[CompPrefix].B1Bgs,IMAGE)</visible>
+					</control>
 
 					<!-- Main menu -->	
 					<control type="panel" id="$PARAM[Id]">
@@ -660,6 +708,15 @@
 						<aspectratio>stretch</aspectratio>
 						<texture colordiffuse="$INFO[Skin.String(Color.B2Bg)]">common/white.png</texture>
 						<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) | ControlGroup(99).HasFocus() | Control.HasFocus(97)</visible>
+						<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B2Pic)) | !Skin.String($PARAM[CompPrefix].B2Bgs,IMAGE)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B2Pic)]</texture>
+						<visible>!Skin.String($PARAM[CompPrefix].B2Show,HIDDEN) | ControlGroup(99).HasFocus() | Control.HasFocus(97)</visible>
+						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B2Pic)) + Skin.String($PARAM[CompPrefix].B2Bgs,IMAGE)</visible>
 					</control>
 					
 
@@ -1014,7 +1071,15 @@
 						<left>0</left>
 						<top>0</top>
 						<texture colordiffuse="$INFO[Skin.String(Color.B1Bg)]">common/white.png</texture>
-					</control>	
+						<visible>IsEmpty(Skin.String($PARAM[CompPrefix].B5Pic)) | !Skin.String($PARAM[CompPrefix].B5Bgs,IMAGE)</visible>
+					</control>
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B5Pic)]</texture>
+						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B5Pic)) + Skin.String($PARAM[CompPrefix].B5Bgs,IMAGE)</visible>
+					</control>
 
 					<!-- Main menu -->	
 					<control type="panel" id="9001">
