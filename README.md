@@ -216,6 +216,8 @@ Each bloc has a certain amount of settings you can give different values. Some a
 | **Vertical position (row)** | Set the element's start position on the grid (vertical). You can choose between `A` `B` `C`. |
 | **Width** | Set the element's amount of columns on the grid. You can choose between `1COLUMN` `2COLUMN` `3COLUMN`. |
 | **Hight** | Set the element's amount of rows on the grid. You can choose between `1ROW` `2ROW` `3ROW`. |
+| **Background style** | You can choose between `FANART` `COLOR` `IMAGE` . 'FANART' is selectable for [Wallpaper](#wallpaper) only. |
+| **Background image** | You can browse for your own picture / pictures set. |
 
 ###### Sizing / positioning limitations
 
@@ -234,8 +236,7 @@ Specifics :
 
 | Name | Description |
 | :-----------: | ----------- |
-| **Background style** | You can choose between `FANART` `COLOR` `IMAGE` . |
-| **Background image** | You can browse for your own picture / pictures set. |
+| **Video on top** | You can choose between `VISIBLE` `HIDDEN` . When 'VISIBLE', it always show the playing video over the Background setting. |
 
 ##### General setup
 
