@@ -190,10 +190,10 @@
 						<label>$LOCALIZE[582] : $PARAM[ViewName]</label>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup condition="Skin.String($PARAM[CompPrefix].B5Goback,ONUP)">$PARAM[Id]</onup>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
 						<onright condition="Skin.String($PARAM[CompPrefix].B5Goback,ONRIGHT)">$PARAM[Id]</onright>	
@@ -211,7 +211,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/view.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/view.png</texture>
 						<visible>!Control.HasFocus(30)</visible>
 					</control>
 					<control type="image">
@@ -238,10 +238,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup>30</onup>
 						<ondown>3</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -255,7 +255,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/update.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/update.png</texture>
 						<visible>!Control.HasFocus(2)</visible>
 					</control>
 					<control type="image">
@@ -283,10 +283,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup>2</onup>
 						<ondown>28</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -300,7 +300,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/sortby.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/sortby.png</texture>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>
 					<control type="image">
@@ -327,16 +327,16 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textureup colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">common/arrowupfo.png</textureup>
+						<textureup colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowupfo.png</textureup>
 						<textureupfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowupfo.png</textureupfocus>
-						<texturedown colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">common/arrowdownfo.png</texturedown>
+						<texturedown colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/arrowdownfo.png</texturedown>
 						<texturedownfocus colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">common/arrowdownfo.png</texturedownfocus>
 						<spinwidth>24</spinwidth>
 						<spinheight>60</spinheight>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<label>$LOCALIZE[35500]:</label>
 						<onup>2</onup>
 						<ondown>28</ondown>
@@ -351,7 +351,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/world.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/world.png</texture>
 						<visible>!Control.HasFocus(3)</visible>
 					</control>
 					<control type="image">
@@ -378,10 +378,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup condition="Control.IsEnabled(3)">3</onup>
 						<onup condition="!Control.IsEnabled(3)">30</onup>
 						<ondown>4</ondown>
@@ -396,7 +396,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">tv.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">tv.png</texture>
 						<visible>!Control.HasFocus(28)</visible>
 					</control>
 					<control type="image">
@@ -427,9 +427,9 @@
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 						<alttexturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</alttexturefocus>
 						<alttexturenofocus colordiffuse="00FFFFFF">common/white.png</alttexturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>28</onup>
 						<ondown>14</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
@@ -443,7 +443,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/sort.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/sort.png</texture>
 						<visible>!Control.HasFocus(4)</visible>
 					</control>
 					<control type="image">
@@ -477,9 +477,9 @@
 						<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
 						<radiowidth>30</radiowidth>
 						<radioheight>30</radioheight>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>4</onup>
 						<ondown>19</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
@@ -493,7 +493,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/eye.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/eye.png</texture>
 						<visible>!Control.HasFocus(14)</visible>
 					</control>
 					<control type="image">
@@ -519,7 +519,7 @@
 						<font>Font27</font>
 						<textwidth>496</textwidth>
 						<textoffsetx>80</textoffsetx>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
@@ -536,7 +536,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(19)</visible>
 					</control>
 					<control type="image">
@@ -570,9 +570,9 @@
 						<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
 						<radiowidth>30</radiowidth>
 						<radioheight>30</radioheight>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onclick>Left</onclick>
 						<onclick>Left</onclick>
 						<onclick>Filter</onclick>
@@ -590,7 +590,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(93)</visible>
 					</control>
 					<control type="image">
@@ -618,10 +618,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onclick condition="!StringCompare(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</onclick>
 						<onup>93</onup>
 						<ondown>92</ondown>
@@ -636,7 +636,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/playlist.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/playlist.png</texture>
 						<visible>!Control.HasFocus(91)</visible>
 					</control>
 					<control type="image">
@@ -664,10 +664,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onclick condition="!StringCompare(Playlist.Length(music),0)">ActivateWindow(musicplaylist)</onclick>
 						<onup>91</onup>
 						<ondown>20</ondown>
@@ -682,7 +682,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/playlist.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/playlist.png</texture>
 						<visible>!Control.HasFocus(92)</visible>
 					</control>
 					<control type="image">
@@ -713,9 +713,9 @@
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
 						<alttexturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</alttexturefocus>
 						<alttexturenofocus colordiffuse="00FFFFFF">common/white.png</alttexturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>92</onup>
 						<ondown>8</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -729,7 +729,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/update.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/update.png</texture>
 						<visible>!Control.HasFocus(20)</visible>
 					</control>
 					<control type="image">
@@ -757,10 +757,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup>20</onup>
 						<ondown>16</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
@@ -774,7 +774,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/search.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/search.png</texture>
 						<visible>!Control.HasFocus(8)</visible>
 					</control>
 					<control type="image">
@@ -808,9 +808,9 @@
 						<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
 						<radiowidth>30</radiowidth>
 						<radioheight>30</radioheight>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>8</onup>
 						<ondown>11</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
@@ -824,7 +824,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/item3.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/item3.png</texture>
 						<visible>!Control.HasFocus(16)</visible>
 					</control>
 					<control type="image">
@@ -858,9 +858,9 @@
 						<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
 						<radiowidth>30</radiowidth>
 						<radioheight>30</radioheight>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onclick>XBMC.Mastermode</onclick>
 						<selected>System.IsMaster</selected>
 						<onup>16</onup>
@@ -876,7 +876,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/lock.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/lock.png</texture>
 						<visible>!Control.HasFocus(11)</visible>
 					</control>
 					<control type="image">
@@ -904,10 +904,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup>11</onup>
 						<ondown>7</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
@@ -921,7 +921,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/view.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/view.png</texture>
 						<visible>!Control.HasFocus(6)</visible>
 					</control>
 					<control type="image">
@@ -949,10 +949,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onup>6</onup>
 						<ondown>9</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B1Submenu,ONRIGHT)">$PARAM[Id]</onleft>
@@ -966,7 +966,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/view.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/view.png</texture>
 						<visible>!Control.HasFocus(7)</visible>
 					</control>
 					<control type="image">
@@ -1000,9 +1000,9 @@
 						<textureradiooffnofocus colordiffuse="$VAR[CategoryColor]">material/radiooff.png</textureradiooffnofocus>
 						<radiowidth>30</radiowidth>
 						<radioheight>30</radioheight>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>7</onup>
 						<ondown>95</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1016,7 +1016,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">osd/randomon.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">osd/randomon.png</texture>
 						<visible>!Control.HasFocus(9)</visible>
 					</control>
 					<control type="image">
@@ -1044,10 +1044,10 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
-						<invalidcolor>$INFO[Skin.String(Color.B2Txt3)]</invalidcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
+						<invalidcolor>$INFO[Skin.String(Color.B1Txt1NF)]</invalidcolor>
 						<onclick condition="Window.IsVisible(videos)">ActivateWindow(videossettings)</onclick>
 						<onclick condition="Window.IsVisible(weather)">ActivateWindow(weathersettings)</onclick>
 						<onclick condition="Window.IsVisible(musicfiles)">ActivateWindow(musicsettings)</onclick>
@@ -1078,7 +1078,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/settings.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/settings.png</texture>
 						<visible>!Control.HasFocus(95)</visible>
 					</control>
 					<control type="image">
@@ -1107,9 +1107,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>noop</onup>
 						<ondown>5001</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1123,7 +1123,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/view.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/view.png</texture>
 						<visible>!Control.HasFocus(5007)</visible>
 					</control>
 					<control type="image">
@@ -1152,9 +1152,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5007</onup>
 						<ondown>5004</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1168,7 +1168,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/sortby.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/sortby.png</texture>
 						<visible>!Control.HasFocus(5001)</visible>
 					</control>
 					<control type="image">
@@ -1197,9 +1197,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5001</onup>
 						<ondown>5002</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1213,7 +1213,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/sort.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/sort.png</texture>
 						<visible>!Control.HasFocus(5004)</visible>
 					</control>
 					<control type="image">
@@ -1241,9 +1241,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5004</onup>
 						<ondown>5003</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1257,7 +1257,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5002)</visible>
 					</control>
 					<control type="image">
@@ -1285,9 +1285,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5002</onup>
 						<ondown>5006</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1301,7 +1301,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5003)</visible>
 					</control>
 					<control type="image">
@@ -1329,9 +1329,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5003</onup>
 						<ondown>5008</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1345,7 +1345,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5006)</visible>
 					</control>
 					<control type="image">
@@ -1373,9 +1373,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5006</onup>
 						<ondown>5009</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1389,7 +1389,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5008)</visible>
 					</control>
 					<control type="image">
@@ -1417,9 +1417,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5008</onup>
 						<ondown>5010</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1433,7 +1433,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5009)</visible>
 					</control>
 					<control type="image">
@@ -1461,9 +1461,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5009</onup>
 						<ondown>5012</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1477,7 +1477,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5010)</visible>
 					</control>
 					<control type="image">
@@ -1505,9 +1505,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5010</onup>
 						<ondown>5005</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1521,7 +1521,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/filter.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/filter.png</texture>
 						<visible>!Control.HasFocus(5012)</visible>
 					</control>
 					<control type="image">
@@ -1549,9 +1549,9 @@
 						<textoffsetx>80</textoffsetx>
 						<texturefocus colordiffuse="$VAR[CategoryColor]">common/white.png</texturefocus>
 						<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-						<textcolor>$INFO[Skin.String(Color.B2Txt3)]</textcolor>
+						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<focusedcolor>$INFO[Skin.String(Color.B1Txt1F)]</focusedcolor>
-						<disabledcolor>$INFO[Skin.String(Color.B2Txt3)]</disabledcolor>
+						<disabledcolor>$INFO[Skin.String(Color.B1Txt1NF)]</disabledcolor>
 						<onup>5012</onup>
 						<ondown>noop</ondown>
 						<onleft condition="Skin.String($PARAM[CompPrefix].B5Goback,ONLEFT)">$PARAM[Id]</onleft>
@@ -1565,7 +1565,7 @@
 						<top>10</top>
 						<height>40</height>
 						<width>40</width>
-						<texture colordiffuse="$INFO[Skin.String(Color.B2Txt3)]">material/designerdelete.png</texture>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">material/designerdelete.png</texture>
 						<visible>!Control.HasFocus(5005)</visible>
 					</control>
 					<control type="image">
