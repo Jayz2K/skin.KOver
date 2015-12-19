@@ -15,6 +15,11 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
+		<license>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</license>
+		<forum>http://forum.kodi.tv/forumdisplay.php?fid=252</forum>
+		<website></website>
+		<email></email>
+		<source>https://github.com/Jayz2K/skin.KOver</source>
 		<summary lang="en">KOver [Kodi Overlay]. A customizable skin. Build your own views and color sets.</summary>
 		<disclaimer lang="en">Mouse and Touch device not supported</disclaimer>
 		<description lang="en"></description>
