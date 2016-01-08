@@ -198,6 +198,7 @@
 	</variable>
 	
 	<variable name="B1SubTitle">
+		<value condition="Window.IsVisible(tvrecordings) + !ListItem.IsFolder">$INFO[ListItem.StartDate]$INFO[ListItem.StartTime, - ,]</value>
 		<value condition="Control.IsVisible(500)">$INFO[ListItem.Premiered,$LOCALIZE[172] ,]</value>
 		<value condition="!IsEmpty(ListItem.ChannelName)">$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ,]</value>
 		<value condition="!IsEmpty(ListItem.Artist)">$INFO[ListItem.Duration,, ]$LOCALIZE[12391]</value>
