@@ -413,6 +413,7 @@
 						<fadetime>2000</fadetime>
 						<pauseatend>10000</pauseatend>
 						<randomize>true</randomize>
+						<aspectratio>scale</aspectratio>
 						<imagepath colordiffuse="FFFFFFFF">$INFO[Container(9000).ListItem.Property(homeart)]</imagepath>
 					</control>
 					<control type="image">
