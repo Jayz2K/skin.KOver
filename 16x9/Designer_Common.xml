@@ -111,6 +111,115 @@
 		</control>
 	</include>
 
+	<include name="BarVPreviewMedium">
+		<control type="group">
+			<animation effect="slide" start="0,0" end="210,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-210,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="image">
+				<left>-15</left>
+				<top>-15</top>
+				<width>360</width>
+				<height>1110</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="16,16,16,16" colordiffuse="$INFO[Skin.String(Color.SBShadow)]">common/Shadow1.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>330</width>
+				<height>1080</height>
+				<texture colordiffuse="$INFO[Skin.String(Color.SBBg)]">common/white.png</texture>
+			</control>
+		</control>
+		<control type="group">
+			<animation effect="slide" start="0,0" end="105,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-105,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="label">
+				<top>920</top>
+				<left>0</left>
+				<width>330</width>
+				<height>60</height>
+				<align>center</align>
+				<font>Font72B</font>
+				<scroll>True</scroll>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(hh)]</label>
+			</control>
+			<control type="label">
+				<top>1000</top>
+				<left>0</left>
+				<width>330</width>
+				<height>60</height>
+				<align>center</align>
+				<font>Font72</font>
+				<scroll>True</scroll>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(mm)]</label>
+			</control>
+		</control>
+	</include>	
+
+	<include name="BarVPreviewLarge">
+		<control type="group">	
+			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="image">
+				<left>-15</left>
+				<top>-15</top>
+				<width>678</width>
+				<height>1110</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="16,16,16,16" colordiffuse="$INFO[Skin.String(Color.SBShadow)]">common/Shadow1.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>648</width>
+				<height>1080</height>
+				<texture colordiffuse="$INFO[Skin.String(Color.SBBg)]">common/white.png</texture>
+			</control>
+		</control>
+		<control type="group">
+			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="label">
+				<top>920</top>
+				<left>0</left>
+				<width>120</width>
+				<height>60</height>
+				<align>center</align>
+				<font>Font72B</font>
+				<scroll>True</scroll>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(hh)]</label>
+			</control>
+			<control type="label">
+				<top>1000</top>
+				<left>0</left>
+				<width>120</width>
+				<height>60</height>
+				<align>center</align>
+				<font>Font72</font>
+				<scroll>True</scroll>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(mm)]</label>
+			</control>
+		</control>
+		<!--control type="group">
+			<control type="label">
+				<bottom>5</bottom>
+				<left>120</left>
+				<width>358</width>
+				<height>60</height>
+				<align>right</align>
+				<font>Font27</font>
+				<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
+				<label>$INFO[System.Date]</label>
+				<visible>Control.HasFocus(9000)</visible>
+			</control>			
+		</control-->
+	</include>	
+
 	<include name="BarHPreview">
 		<width>1920</width>
 		<control type="group">	
@@ -152,6 +261,184 @@
 				<label>$INFO[System.Time(mm)]</label>
 			</control>
 		</control>
+	</include>
+
+	<include name="BarHPreviewMedium">
+		<width>1920</width>
+		<control type="group">	
+			<animation effect="slide" start="0,0" end="0,70" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-70" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="image">
+				<left>-15</left>
+				<top>-15</top>
+				<width>1950</width>
+				<height>220</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="16,16,16,16" colordiffuse="$INFO[Skin.String(Color.SBShadow)]">common/Shadow1.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>190</height>
+				<texture colordiffuse="$INFO[Skin.String(Color.SBBg)]">common/white.png</texture>
+			</control>
+		</control>
+		<control type="group">	
+			<animation effect="slide" start="0,0" end="0,37" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-37" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="label">
+				<top>0</top>
+				<right>104</right>
+				<width>80</width>
+				<height>190</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Font72B</font>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(hh)]</label>
+			</control>
+			<control type="label">
+				<top>0</top>
+				<right>24</right>
+				<width>80</width>
+				<height>190</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Font72</font>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(mm)]</label>
+			</control>
+		</control>
+	</include>
+
+	<include name="BarHPreviewLarge">
+		<width>1920</width>
+		<control type="group">	
+			<animation effect="slide" start="0,0" end="0,248" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-248" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="image">
+				<left>-15</left>
+				<top>-15</top>
+				<width>1950</width>
+				<height>398</height>
+				<aspectratio>stretch</aspectratio>
+				<texture border="16,16,16,16" colordiffuse="$INFO[Skin.String(Color.SBShadow)]">common/Shadow1.png</texture>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>1920</width>
+				<height>368</height>
+				<texture colordiffuse="$INFO[Skin.String(Color.SBBg)]">common/white.png</texture>
+			</control>
+		</control>
+		<control type="group">	
+			<animation effect="slide" start="0,0" end="0,130" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-130" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<control type="label">
+				<top>0</top>
+				<right>104</right>
+				<width>80</width>
+				<height>380</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Font72B</font>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(hh)]</label>
+			</control>
+			<control type="label">
+				<top>0</top>
+				<right>24</right>
+				<width>80</width>
+				<height>380</height>
+				<align>right</align>
+				<aligny>center</aligny>
+				<font>Font72</font>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(mm)]</label>
+			</control>
+		</control>
+		<!--control type="group">
+			<animation effect="slide" start="0,0" end="0,300" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">Conditional</animation>
+			<control type="label">
+				<top>5</top>
+				<right>24</right>
+				<width>358</width>
+				<height>60</height>
+				<align>right</align>
+				<font>Font27</font>
+				<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
+				<label>$INFO[System.Date]</label>
+				<visible>Control.HasFocus(9000)</visible>
+			</control>			
+		</control-->
+	</include>
+
+	<include name="HomeH">
+		<left>20</left>
+		<top>20</top>
+		<width>400</width>
+		<height>80</height>
+		<orientation>horizontal</orientation>
+		<onup condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">96</onup>
+		<ondown condition="Skin.String(HOM.View1.BBSidebar,TOP)">96</ondown>
+		<focusposition>0</focusposition>
+	</include>	
+
+	<include name="HomeHMedium">
+		<left>20</left>
+		<top>20</top>
+		<width>1074</width>
+		<height>190</height>
+		<orientation>horizontal</orientation>
+		<onup condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">96</onup>
+		<ondown condition="Skin.String(HOM.View1.BBSidebar,TOP)">96</ondown>
+		<focusposition>0</focusposition>
+	</include>	
+
+	<include name="HomeHLarge">
+		<left>0</left>
+		<top>0</top>
+		<width>1660</width>
+		<height>380</height>
+		<orientation>horizontal</orientation>
+		<onup condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">96</onup>
+		<ondown condition="Skin.String(HOM.View1.BBSidebar,TOP)">96</ondown>
+		<focusposition>3</focusposition>
+	</include>	
+	
+	<include name="HomeV">
+		<left>20</left>
+		<top>20</top>
+		<width>80</width>
+		<height>400</height>
+		<orientation>vertical</orientation>
+		<onright condition="Skin.String(HOM.View1.BBSidebar,LEFT)">96</onright>
+		<onleft condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">96</onleft>
+		<focusposition>0</focusposition>
+	</include>
+
+	<include name="HomeVMedium">
+		<left>90</left>
+		<top>20</top>
+		<width>330</width>
+		<height>550</height>
+		<orientation>vertical</orientation>
+		<onright condition="Skin.String(HOM.View1.BBSidebar,LEFT)">96</onright>
+		<onleft condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">96</onleft>
+		<focusposition>0</focusposition>
+	</include>
+
+	<include name="HomeVLarge">
+		<left>20</left>
+		<top>20</top>
+		<width>660</width>
+		<height>700</height>
+		<orientation>vertical</orientation>
+		<onright condition="Skin.String(HOM.View1.BBSidebar,LEFT)">96</onright>
+		<onleft condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">96</onleft>
+		<focusposition>0</focusposition>
 	</include>
 
 <!-- View Options buttons -->	
@@ -1808,26 +2095,6 @@
 				<texture colordiffuse="$VAR[CategoryColor2]">common/white.png</texture>
 			</control>
 		</control>		
-	</include>
-	
-	<include name="HomeH">
-		<left>20</left>
-		<top>20</top>
-		<width>400</width>
-		<height>80</height>
-		<orientation>horizontal</orientation>
-		<onup condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">96</onup>
-		<ondown condition="Skin.String(HOM.View1.BBSidebar,TOP)">96</ondown>
-	</include>	
-	
-	<include name="HomeV">
-		<left>20</left>
-		<top>20</top>
-		<width>80</width>
-		<height>400</height>
-		<orientation>vertical</orientation>
-		<onright condition="Skin.String(HOM.View1.BBSidebar,LEFT)">96</onright>
-		<onleft condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">96</onleft>
 	</include>
 	
 	<include name="OSDH">

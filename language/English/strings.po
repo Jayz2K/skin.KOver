@@ -962,6 +962,14 @@ msgctxt "#31234"
 msgid "Loading ..."
 msgstr ""
 
+msgctxt "#31235"
+msgid "Home Menu size"
+msgstr ""
+
+msgctxt "#31236"
+msgid "Choose Home menu size. This adjusts the Sidebar with different layouts."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

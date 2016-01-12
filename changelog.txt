@@ -1,3 +1,10 @@
+[B]0.71.0[/B]
+- Added Item Recording date in recordings
+- Fix for broken IDLEFADE
+- Added Home menu styles (NEW FEATURE)
+- Fix attempt for unmatching Arts in EPG
+- Added foced 'icon only' for EPG
+
 [B]0.70.0[/B] BETA 3
 - Fix sidebar to disappear with IDLEFADE + extended infos
 - Fix panel animation (layout 3x3 + PUSH + sidebar/dialog TOP)
