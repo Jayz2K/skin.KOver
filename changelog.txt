@@ -1,3 +1,10 @@
+[B]0.72.0[/B]
+- Home menu styles improvements
+- Fix for missing BUSY icon on non default home menu
+- Added playing video override in Home Bloc 4 (Designer)
+- Fix wrong aspectration in Home Bloc 4
+- Code cleanup
+
 [B]0.71.0[/B]
 - Added Item Recording date in recordings
 - Fix for broken IDLEFADE
