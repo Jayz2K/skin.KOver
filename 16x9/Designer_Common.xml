@@ -132,12 +132,50 @@
 			</control>
 		</control>
 		<control type="group">
-			<animation effect="slide" start="0,0" end="105,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-105,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<control type="label">
 				<top>920</top>
 				<left>0</left>
+				<width>159</width>
+				<height>60</height>
+				<align>right</align>
+				<font>Font72B</font>
+				<scroll>True</scroll>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(hh)]</label>
+			</control>
+			<control type="label">
+				<top>920</top>
+				<left>171</left>
+				<width>159</width>
+				<height>60</height>
+				<align>left</align>
+				<font>Font72</font>
+				<scroll>True</scroll>
+				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
+				<label>$INFO[System.Time(mm)]</label>
+			</control>
+			<control type="label">
+				<bottom>45</bottom>
+				<left>0</left>
 				<width>330</width>
+				<height>60</height>
+				<align>center</align>
+				<font>FontSmallB</font>
+				<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
+				<label>[UPPERCASE]$INFO[System.Date][/UPPERCASE]</label>
+				<visible>Control.HasFocus(9000)</visible>
+			</control>			
+		</control>
+		<control type="group">
+			<visible>!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">Conditional</animation>
+			<control type="label">
+				<top>920</top>
+				<left>0</left>
+				<width>120</width>
 				<height>60</height>
 				<align>center</align>
 				<font>Font72B</font>
@@ -148,7 +186,7 @@
 			<control type="label">
 				<top>1000</top>
 				<left>0</left>
-				<width>330</width>
+				<width>120</width>
 				<height>60</height>
 				<align>center</align>
 				<font>Font72</font>
@@ -334,6 +372,22 @@
 				<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
 				<label>$INFO[System.Time(mm)]</label>
 			</control>
+		</control>
+		<control type="group">
+			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+			<animation effect="slide" start="0,0" end="0,120" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">Conditional</animation>
+			<control type="label">
+				<top>5</top>
+				<left>0</left>
+				<width>1896</width>
+				<height>60</height>
+				<align>right</align>
+				<font>FontSmallB</font>
+				<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
+				<label>[UPPERCASE]$INFO[System.Date][/UPPERCASE]</label>
+				<visible>Control.HasFocus(9000)</visible>
+			</control>			
 		</control>
 	</include>
 

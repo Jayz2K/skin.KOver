@@ -126,6 +126,7 @@
 						<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">$INFO[ListItem.Icon]</texture>
 						<visible>!Window.IsActive(10138)</visible>
 						<visible>Control.HasFocus(9000)</visible>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 					</control>
 				</itemlayout>
 
@@ -142,38 +143,43 @@
 						<visible>!Window.IsActive(10138)</visible>
 						<visible>Control.HasFocus(9000)</visible>
 						<animation effect="slide" start="0,0" end="0,35" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) | Skin.String(HOM.View1.BBSidebar,TOP)">Conditional</animation>
-						<animation effect="fade" start="0" end="100" time="100">VisibleChange</animation>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 					</control>
 				</itemlayout>
 
 				<itemlayout width="636" height="80" condition="Skin.String(HomeSize,LARGE) + [Skin.String(HOM.View1.BBSidebar,LEFT) | Skin.String(HOM.View1.BBSidebar,RIGHT)]">
-					<control type="label">
-						<top>0</top>
-						<right>180</right>
-						<width>660</width>
-						<height>80</height>
-						<align>right</align>
-						<aligny>center</aligny>
-						<font>Font36</font>
-						<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>!Window.IsActive(10138)</visible>
-						<visible>Control.HasFocus(9000) + Skin.String(HOM.View1.BBSidebar,LEFT)</visible>
-					</control>
-					<control type="label">
-						<top>0</top>
-						<left>180</left>
-						<width>660</width>
-						<height>80</height>
-						<align>left</align>
-						<aligny>center</aligny>
-						<font>Font36</font>
-						<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>!Window.IsActive(10138)</visible>
-						<visible>Control.HasFocus(9000) + Skin.String(HOM.View1.BBSidebar,RIGHT)</visible>
+					<control type="group">
+						<visible>Control.HasFocus(9000)</visible>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
+						<control type="label">
+							<top>0</top>
+							<right>180</right>
+							<width>660</width>
+							<height>80</height>
+							<align>right</align>
+							<aligny>center</aligny>
+							<font>Font36</font>
+							<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!Window.IsActive(10138)</visible>
+							<visible>Skin.String(HOM.View1.BBSidebar,LEFT)</visible>
+						</control>
+						<control type="label">
+							<top>0</top>
+							<left>180</left>
+							<width>660</width>
+							<height>80</height>
+							<align>left</align>
+							<aligny>center</aligny>
+							<font>Font36</font>
+							<textcolor>$INFO[Skin.String(Color.SBIconNF)]</textcolor>
+							<label>$INFO[ListItem.Label]</label>
+							<visible>!Window.IsActive(10138)</visible>
+							<visible>Skin.String(HOM.View1.BBSidebar,RIGHT)</visible>
+						</control>
 					</control>
 				</itemlayout>
+
 				<itemlayout width="260" height="380" condition="Skin.String(HomeSize,LARGE) + [Skin.String(HOM.View1.BBSidebar,TOP) | Skin.String(HOM.View1.BBSidebar,BOTTOM)]">
 					<control type="label">
 						<top>0</top>
@@ -187,6 +193,7 @@
 						<label>$INFO[ListItem.Label]</label>
 						<visible>!Window.IsActive(10138)</visible>
 						<visible>Control.HasFocus(9000)</visible>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 					</control>
 				</itemlayout>
 
@@ -280,6 +287,7 @@
 							<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Window.IsActive(10138) + Control.HasFocus(9000)</visible>
+							<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 						</control>
 						<control type="image">
 							<left>15</left>
@@ -308,6 +316,7 @@
 					</control>
 					<control type="group">
 						<visible>Control.HasFocus(9000) + Skin.String(HOM.View1.BBSidebar,LEFT)</visible>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 						<control type="image">
 							<right>100</right>
 							<top>20</top>
@@ -331,6 +340,7 @@
 					</control>
 					<control type="group">
 						<visible>Control.HasFocus(9000) + Skin.String(HOM.View1.BBSidebar,RIGHT)</visible>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 						<control type="image">
 							<left>100</left>
 							<top>20</top>
@@ -366,7 +376,7 @@
 					</control>
 					<control type="group">
 						<visible>Control.HasFocus(9000)</visible>
-						<animation effect="fade" start="0" end="100" time="100">VisibleChange</animation>
+						<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 						<control type="image">
 							<left>0</left>
 							<top>250</top>
