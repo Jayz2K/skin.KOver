@@ -4696,6 +4696,16 @@
 	</variable>
 
 	<variable name="FixedWPVDOTopValue">
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(HOM.View1.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(HOM.View2.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(HOM.View3.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(HOM.View4.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(HOM.View5.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(HOM.View6.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(HOM.View7.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(HOM.View8.B4VDOTop)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(HOM.View9.B4VDOTop)]</value>
+
 		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(HOM.View1.WPVDOTop)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(HOM.View2.WPVDOTop)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(HOM.View3.WPVDOTop)]</value>

@@ -89,7 +89,7 @@
 						<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].B4Pic)]</texture>
 						<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].B4Pic)) + Skin.String($PARAM[CompPrefix].B4Bgs,IMAGE)</visible>
 					</control>
-					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN) + [!Skin.String($PARAM[CompPrefix].B4VDOTop,VISIBLE) + !Player.HasVideo]</visible>
 				</control>
 				
 				<!-- Bloc 3 -->
@@ -425,6 +425,16 @@
 						<texture background="true">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</texture>
 						<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + !IsEmpty(Container($PARAM[Id]).ListItem.Title)</visible>
 					</control>
+					<control type="group">
+						<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].B4VDOTop,VISIBLE)</visible>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<texture colordiffuse="FF000000">common/white.png</texture>
+						</control>
+						<control type="videowindow">
+						</control>			
+					</control>		
  					<control type="image"> 
  						<left>0</left> 
  						<top>0</top> 

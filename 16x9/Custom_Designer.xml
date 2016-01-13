@@ -2589,7 +2589,7 @@
 							<label2>$VAR[FixedWPVDOTopValue]</label2>
 							<icon></icon>
 							<thumb>material/designervideotop.png</thumb>
-							<visible>StringCompare(Container(9200).ListItem.Property(SubName),WP)</visible>
+							<visible>StringCompare(Container(9200).ListItem.Property(SubName),WP) | [StringCompare(Container(9000).ListItem.Property(ViewName),HOM) + StringCompare(Container(9200).ListItem.Property(SubName),B4)]</visible>
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->	
 							<onclick condition="StringCompare(Container(9300).ListItem.Label2,HIDDEN) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],VISIBLE)</onclick>
