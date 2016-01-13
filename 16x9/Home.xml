@@ -427,6 +427,17 @@
 						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">$INFO[Window(home).Property(MenuIcon)]</texture>
 						<visible>!Window.IsActive(10138)</visible>
 					</control>
+					<control type="image">
+						<left>35</left>
+						<top>35</top>
+						<width>50</width>
+						<height>50</height>
+						<align>center</align>
+						<aspectratio>keep</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/loading.png</texture>
+						<animation effect="rotate" start="0" end="360" time="800" center="auto" loop="true" condition="true">Conditional</animation>
+						<visible>Window.IsActive(10138)</visible>
+					</control>
 				</control>
 			</control>	
 			<control type="label">
