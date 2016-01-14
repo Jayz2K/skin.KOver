@@ -6,7 +6,6 @@
 	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
 	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
 	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
-	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>
 	<onload>ClearProperty(ListPos,Home)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,8)</onload>
 	<onunload>SetProperty(BackgroundMEM,$INFO[Container(9000).ListItem.Property(background)],Home)</onunload>
@@ -206,6 +205,7 @@
 						<onfocus>SetProperty(MenuSection,$INFO[Container(9000).ListItem.Property(submenuVisibility)])</onfocus>
 						<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(defaultID)])</onfocus>
 						<onfocus>SetProperty(MenuArt,$INFO[Container(9000).ListItem.Property(homeart)])</onfocus>
+						<onfocus>SetProperty(CompPrefix,$INFO[Container(9000).ListItem.Property(viewtype)])</onfocus>
 						<onfocus>ClearProperty(TVSHowNext)</onfocus>
 					</control>
 					<control type="image">
@@ -248,6 +248,7 @@
 						<onfocus>SetProperty(MenuSection,$INFO[Container(9000).ListItem.Property(submenuVisibility)])</onfocus>
 						<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(defaultID)])</onfocus>
 						<onfocus>SetProperty(MenuArt,$INFO[Container(9000).ListItem.Property(homeart)])</onfocus>
+						<onfocus>SetProperty(CompPrefix,$INFO[Container(9000).ListItem.Property(viewtype)])</onfocus>
 						<onfocus>ClearProperty(TVSHowNext)</onfocus>
 					</control>
 					<control type="group">
@@ -312,6 +313,7 @@
 						<onfocus>SetProperty(MenuSection,$INFO[Container(9000).ListItem.Property(submenuVisibility)])</onfocus>
 						<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(defaultID)])</onfocus>
 						<onfocus>SetProperty(MenuArt,$INFO[Container(9000).ListItem.Property(homeart)])</onfocus>
+						<onfocus>SetProperty(CompPrefix,$INFO[Container(9000).ListItem.Property(viewtype)])</onfocus>
 						<onfocus>ClearProperty(TVSHowNext)</onfocus>
 					</control>
 					<control type="group">
@@ -372,6 +374,7 @@
 						<onfocus>SetProperty(MenuSection,$INFO[Container(9000).ListItem.Property(submenuVisibility)])</onfocus>
 						<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(defaultID)])</onfocus>
 						<onfocus>SetProperty(MenuArt,$INFO[Container(9000).ListItem.Property(homeart)])</onfocus>
+						<onfocus>SetProperty(CompPrefix,$INFO[Container(9000).ListItem.Property(viewtype)])</onfocus>
 						<onfocus>ClearProperty(TVSHowNext)</onfocus>
 					</control>
 					<control type="group">
