@@ -1,8 +1,9 @@
 [B]0.72.0[/B]
 - Home menu styles improvements
 - Fix for missing BUSY icon on non default home menu
-- Added playing video override in Home Bloc 4 (Designer)
+- Added playing video / audio override in Home Bloc 4 (Designer)
 - Fix wrong aspectration in Home Bloc 4
+- Fix for art in PVR when thumb is returned by the addon
 - Code cleanup
 
 [B]0.71.0[/B]

@@ -435,6 +435,26 @@
 						<control type="videowindow">
 						</control>			
 					</control>		
+					<control type="group">
+						<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].B4VDOTop,VISIBLE)</visible>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<texture colordiffuse="FF000000">common/white.png</texture>
+						</control>
+						<control type="visualisation">
+							<visible>!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]</visible>
+						</control>	
+						<control type="multiimage">
+							<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+							<aspectratio>scale</aspectratio>
+							<timeperimage>10000</timeperimage>
+							<fadetime>2000</fadetime>
+							<randomize>true</randomize>
+							<visible>System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistslideShow)</visible>
+							<animation effect="fade" start="100" end="50" time="0" condition="Skin.HasSetting(VisualisationShow)">Conditional</animation>
+						</control>
+					</control>		
  					<control type="image"> 
  						<left>0</left> 
  						<top>0</top> 
