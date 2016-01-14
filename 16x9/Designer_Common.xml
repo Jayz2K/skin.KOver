@@ -113,8 +113,8 @@
 
 	<include name="BarVPreviewMedium">
 		<control type="group">
-			<animation effect="slide" start="0,0" end="210,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-210,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="210,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-210,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
 			<control type="image">
 				<left>-15</left>
 				<top>-15</top>
@@ -132,7 +132,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<control type="label">
 				<top>920</top>
@@ -169,7 +169,7 @@
 			</control>			
 		</control>
 		<control type="group">
-			<visible>!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<visible>!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<animation effect="slide" start="0,0" end="210,0" time="0" condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">Conditional</animation>
 			<control type="label">
@@ -199,8 +199,8 @@
 
 	<include name="BarVPreviewLarge">
 		<control type="group">	
-			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-528,0" time="100" condition="Skin.String(HOM.View1.BBSidebar,LEFT) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
 			<control type="image">
 				<left>-15</left>
 				<top>-15</top>
@@ -218,7 +218,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<control type="label">
 				<top>920</top>
@@ -255,7 +255,7 @@
 			</control>			
 		</control>
 		<control type="group">
-			<visible>!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<visible>!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<animation effect="slide" start="0,0" end="528,0" time="0" condition="Skin.String(HOM.View1.BBSidebar,RIGHT)">Conditional</animation>
 			<control type="label">
@@ -329,8 +329,8 @@
 	<include name="BarHPreviewMedium">
 		<width>1920</width>
 		<control type="group">	
-			<animation effect="slide" start="0,0" end="0,70" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-70" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,70" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-70" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
 			<control type="image">
 				<left>-15</left>
 				<top>-15</top>
@@ -348,8 +348,8 @@
 			</control>
 		</control>
 		<control type="group">	
-			<animation effect="slide" start="0,0" end="0,37" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-37" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,37" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-37" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
 			<control type="label">
 				<top>0</top>
 				<right>104</right>
@@ -374,7 +374,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,120" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">Conditional</animation>
 			<control type="label">
@@ -394,8 +394,8 @@
 	<include name="BarHPreviewLarge">
 		<width>1920</width>
 		<control type="group">	
-			<animation effect="slide" start="0,0" end="0,248" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-248" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,248" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-248" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
 			<control type="image">
 				<left>-15</left>
 				<top>-15</top>
@@ -414,8 +414,8 @@
 		</control>
 		<control type="group">	
 			<animation effect="slide" start="0,0" end="0,-40" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,160" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="0,-130" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility))]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,160" time="100" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,-130" time="100" condition="Skin.String(HOM.View1.BBSidebar,TOP) + [!Control.HasFocus(9000) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]">Conditional</animation>
 			<control type="label">
 				<top>0</top>
 				<right>104</right>
@@ -440,7 +440,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
+			<visible>Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 			<animation effect="fade" start="0" end="100" time="400">Visible</animation>
 			<animation effect="slide" start="0,0" end="0,300" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM)">Conditional</animation>
 			<control type="label">
