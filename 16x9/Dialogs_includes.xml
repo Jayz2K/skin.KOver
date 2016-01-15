@@ -1156,7 +1156,7 @@
 					<left>24</left>
 					<height>308</height>
 					<width>588</width>							
-					<texture  colordiffuse="FFFFFFFF">$INFO[ListItem.Icon]</texture>
+					<texture colordiffuse="FFFFFFFF">$INFO[ListItem.Icon]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
 					<visible>!SubString(ListItem.Icon,Default)</visible>
 				</control>
@@ -4212,7 +4212,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
-					<label>19142</label>
+					<label>19065</label>
 					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 				</control>	
 
@@ -4230,11 +4230,11 @@
 					<ondown>noop</ondown>
 					<orientation>horizontal</orientation>
 
-					<!-- Search Button -->
+					<!-- Ok Button -->
 					<control type="button" id="28">
 						<width>auto</width>
 						<height>60</height>
-						<label>137</label>
+						<label>186</label>
 						<font>Font27</font>
 						<align>center</align>
 						<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>

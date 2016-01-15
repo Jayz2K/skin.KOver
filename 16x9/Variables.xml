@@ -300,8 +300,8 @@
 	<variable name="B3Art">
 		<value condition="Control.IsVisible(500)">$INFO[Container(500).ListItem.Property(Fanart_small)]</value>
 		<value condition="Window.IsVisible(12600)">$INFO[Container(50).ListItem.Art(thumb)]</value>
-		<value condition="Window.IsVisible(tvguide) + !IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Icon]</value>
-		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(thumb))">$INFO[Container($PARAM[Id]).ListItem.Icon]</value>
+		<value condition="Window.IsVisible(tvguide) + !Skin.HasSetting(SkinHelper.EnablePVRThumbs)">$INFO[ListItem.Icon]</value>
+		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title) + !Skin.HasSetting(SkinHelper.EnablePVRThumbs)">$INFO[Container($PARAM[Id]).ListItem.Icon]</value>
 		<value condition="Window.IsVisible(tvguide)">http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Title]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=fanart,thumb</value>
 		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title)">http://localhost:52307/getpvrthumb&amp;title=$INFO[Container($PARAM[Id]).ListItem.Title]&amp;channel=$INFO[Container($PARAM[Id]).ListItem.ChannelName]&amp;type=fanart,thumb</value>
 		<value condition="Container.Content(episodes) + !ListItem.IsFolder">$INFO[ListItem.Icon]</value>
