@@ -2646,7 +2646,8 @@
 							<label2 fallback="31216">$VAR[ListTypeValue]</label2>
 							<icon></icon>
 							<thumb>$VAR[BItypeIcon]</thumb>
-							<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(ViewName),WEA) + !StringCompare(Container(9000).ListItem.Property(ViewName),TV) + !StringCompare(Container(9000).ListItem.Property(ViewName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
+							<!--visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(ViewName),WEA) + !StringCompare(Container(9000).ListItem.Property(ViewName),TV) + !StringCompare(Container(9000).ListItem.Property(ViewName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible-->
+							<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(ViewName),WEA) + !StringCompare(Container(9000).ListItem.Property(ViewName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(ViewName),HOM)]</visible>
 							<onback>9200</onback>
 							<!-- Actions For Bloc Background-->	
 							<!-- Actions For Bloc 1-->							
