@@ -12,16 +12,6 @@
 				<aspectratio>scale</aspectratio>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))</visible>
 			</control>
-			<control type="multiimage">
-				<aspectratio>scale</aspectratio>
-				<imagepath>$INFO[Container(9000).ListItem.Property(background)]</imagepath>
-				<timeperimage>5000</timeperimage>
-				<fadetime>2000</fadetime>
-				<pauseatend>10000</pauseatend>
-				<randomize>true</randomize>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !Control.HasFocus($PARAM[Id]) + !IsEmpty(Container(9000).ListItem.Property(background))</visible>
-			</control>
-
 
 			<control type="group">
 				<animation effect="slide" start="0,0" end="0,120" time="200" condition="StringCompare(Skin.String(HOM.View1.BBSidebar),BOTTOM) + [Skin.String($PARAM[CompPrefix].BBCoordY,C) | [Skin.String($PARAM[CompPrefix].BBCoordY,B) + !Skin.String($PARAM[CompPrefix].BBSizeY,1ROW)]] + Control.HasFocus(9000) + IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].BBSizeY,3ROW)">Conditional</animation>
