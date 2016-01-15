@@ -631,7 +631,7 @@ msgid "Import / Export"
 msgstr ""
 
 msgctxt "#31152"
-msgid "Enable PVR thumbs"
+msgid "Force search for PVR thumbs"
 msgstr ""
 
 msgctxt "#31153"
@@ -719,7 +719,7 @@ msgid "Allows to set home menu, submenus and widgets and to choose viewtypes and
 msgstr ""
 
 msgctxt "#31174"
-msgid "Enable this option to allow downloading arts in PVR. This can also download arts in the EPG guide by changing settings in skin.helper script."
+msgid "Enable this option to force downloading arts in PVR. This can also download arts in the EPG guide by changing settings in skin.helper script. This is useful when the backend is not returning arts."
 msgstr ""
 
 msgctxt "#31175"
