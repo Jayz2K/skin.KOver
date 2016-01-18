@@ -10,7 +10,7 @@
 			<control type="image">
 				<texture background="true">$INFO[Container($PARAM[Id]).ListItem.Art(fanart)]</texture>
 				<aspectratio>scale</aspectratio>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart))</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(Container($PARAM[Id]).ListItem.Art(fanart)) + [IsEmpty(Container(9000).ListItem.Property(background) | Control.HasFocus($PARAM[Id])]</visible>
 			</control>
 
 			<control type="group">
