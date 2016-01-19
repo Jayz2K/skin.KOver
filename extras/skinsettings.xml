@@ -181,7 +181,7 @@
 	</setting>
 
 <!-- Blocs Horizontal Size option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="1COLUMN" label="1 Column" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="material/designersizex.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="1COLUMN" label="1 Column" condition="StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="material/designersizex.png" description="">
 
 		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],1COLUMN)</onselect>
 		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],1COLUMN)</onselect>
@@ -202,7 +202,7 @@
 		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>
 
 	</setting>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="2COLUMN" label="2 Column" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="material/designersizex.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="2COLUMN" label="2 Column" condition="StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="material/designersizex.png" description="">
 
 		<onselect condition="StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],2COLUMN)</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],2COLUMN)</onselect>
@@ -277,7 +277,7 @@
 	</setting>	
 
 <!-- Blocs Vertical Size option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="1ROW" label="1 Row" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="material/designersizey.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="1ROW" label="1 Row" condition="StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="material/designersizey.png" description="">
 
 		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],1ROW)</onselect>
 		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],1ROW)</onselect>
@@ -298,7 +298,7 @@
 		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>
 
 	</setting>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="2ROW" label="2 Row" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="material/designersizey.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="2ROW" label="2 Row" condition="StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="material/designersizey.png" description="">
 
 		<onselect condition="StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],2ROW)</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],2ROW)</onselect>
