@@ -3029,7 +3029,7 @@
 							<label>31224</label>
 							<label2 fallback="31223">$VAR[ScrollFlags]</label2>
 							<icon></icon>
-							<thumb>material/scrolldir.png</thumb>
+							<thumb>material/designerscrolldir.png</thumb>
 							<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | StringCompare(Container(9200).ListItem.Property(SubName),B3) | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
 

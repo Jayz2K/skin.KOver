@@ -875,7 +875,7 @@
 					<width>588</width>										
 					<texture  colordiffuse="FFFFFFFF">$INFO[Container(6).ListItem.Icon]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
-					<visible>!SubString(Container(6).ListItem.Icon,Default) + Control.IsVisible(6)</visible>
+					<visible>!SubString(Container(6).ListItem.Icon,designer) + !SubString(Container(6).ListItem.Icon,Default) + Control.IsVisible(6)</visible>
 				</control>
 				<control type="image">
 					<top>24</top>
@@ -884,7 +884,7 @@
 					<width>588</width>		
 					<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[Container(6).ListItem.Icon]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
-					<visible>SubString(Container(6).ListItem.Icon,Default) + Control.IsVisible(6)</visible>
+					<visible>[SubString(Container(6).ListItem.Icon,designer) | SubString(Container(6).ListItem.Icon,Default)] + Control.IsVisible(6)</visible>
 				</control>
 				<control type="image">
 					<top>24</top>
@@ -893,7 +893,7 @@
 					<width>588</width>			
 					<texture  colordiffuse="FFFFFFFF">$INFO[Container(3).ListItem.Icon]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
-					<visible>!SubString(Container(3).ListItem.Icon,Default) + Control.IsVisible(3)</visible>
+					<visible>!SubString(Container(6).ListItem.Icon,designer) + !SubString(Container(3).ListItem.Icon,Default) + Control.IsVisible(3)</visible>
 				</control>
 				<control type="image">
 					<top>24</top>
@@ -902,7 +902,7 @@
 					<width>588</width>			
 					<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">$INFO[Container(3).ListItem.Icon]</texture>
 					<aspectratio aligny="center">keep</aspectratio>
-					<visible>SubString(Container(3).ListItem.Icon,Default) + Control.IsVisible(3)</visible>
+					<visible>[SubString(Container(6).ListItem.Icon,designer) | SubString(Container(6).ListItem.Icon,Default)] + Control.IsVisible(3)</visible>
 				</control>							
 
 			</control>
