@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+
+<!-- Bloc Visibility option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="VISIBLE" label="Visible" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="IDLEFADE" label="IdleFade" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ISPLAYING" label="IsPlaying" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ONFOCUS" label="OnFocus" condition="StringCompare(Window(Home).Property(SubName),B5)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="HIDDEN" label="Hidden" condition="" icon="" description=""/>
+
+<!-- Blocs Horizontal Coordinates option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="A" label="A" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN) + !StringCompare(Window(Home).Property(B1CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN) + !StringCompare(Window(Home).Property(B2CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN) + !StringCompare(Window(Home).Property(B3CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN) + !StringCompare(Window(Home).Property(B4CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN) + !StringCompare(Window(Home).Property(B5CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),B) + StringCompare(Window(Home).Property(B1CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),B) + StringCompare(Window(Home).Property(B2CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),B) + StringCompare(Window(Home).Property(B3CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),B) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),B) + StringCompare(Window(Home).Property(B5CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B1CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B2CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B3CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B5CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="B" label="B" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(B1CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5CoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],2COLUMN)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="C" label="C" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],C)</onselect>
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],1COLUMN)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="A" label="A" condition="!StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),A)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="B" label="B" condition="!StringCompare(Window(Home).Property(SubName),BB) + [StringCompare(Window(Home).Property(BBCoordXMEM),B) | [StringCompare(Window(Home).Property(BBCoordXMEM),A) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)]]" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B3SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B5SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],2COLUMN)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(B1SizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(B2SizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(B3SizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(B4SizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(B5SizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],1COLUMN)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="C" label="C" condition="!StringCompare(Window(Home).Property(SubName),BB) + [StringCompare(Window(Home).Property(BBCoordXMEM),C) | [StringCompare(Window(Home).Property(BBCoordXMEM),B) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)] | [StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN)]]" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],1COLUMN)</onselect>
+
+	</setting>
+
+<!-- Blocs Vertical Coordinates option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordY]" value="A" label="A" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),1ROW) + !StringCompare(Window(Home).Property(B1CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),1ROW) + !StringCompare(Window(Home).Property(B2CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),1ROW) + !StringCompare(Window(Home).Property(B3CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),1ROW) + !StringCompare(Window(Home).Property(B4CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),1ROW) + !StringCompare(Window(Home).Property(B5CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B) + StringCompare(Window(Home).Property(B1CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B) + StringCompare(Window(Home).Property(B2CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B) + StringCompare(Window(Home).Property(B3CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B) + StringCompare(Window(Home).Property(B5CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(B1CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(B2CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(B3CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(B5CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordY]" value="B" label="B" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(B1CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5CoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],2ROW)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordY]" value="C" label="C" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],C)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],C)</onselect>
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],1ROW)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordY]" value="A" label="A" condition="!StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),A)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordY]" value="B" label="B" condition="!StringCompare(Window(Home).Property(SubName),BB) + [StringCompare(Window(Home).Property(BBCoordYMEM),B) | [StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)]]" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B3SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B5SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],2ROW)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(B1SizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(B2SizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(B3SizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(B4SizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(B5SizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],1ROW)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordY]" value="C" label="C" condition="!StringCompare(Window(Home).Property(SubName),BB) + [StringCompare(Window(Home).Property(BBCoordYMEM),C) | [StringCompare(Window(Home).Property(BBCoordYMEM),B) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)] | [StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)]]" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],1ROW)</onselect>
+
+	</setting>
+
+<!-- Blocs Horizontal Size option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="1COLUMN" label="1 Column" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],1COLUMN)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],1COLUMN)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="2COLUMN" label="2 Column" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5SizeXMEM),3COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],2COLUMN)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B1SizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B1CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B2SizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B2CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B3SizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B3CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B4SizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(B5SizeXMEM),2COLUMN) + StringCompare(Window(Home).Property(B5CoordXMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(B1CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>		
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordX],B)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="3COLUMN" label="3 Column" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordX],A)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="1COLUMN" label="1 Column" condition="!StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],1COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],1COLUMN)</onselect>
+
+	</setting>	
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="2COLUMN" label="2 Column" condition="!StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],2COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],2COLUMN)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],B)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),B) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),B) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),B) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),B) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),B) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],A)</onselect>		
+
+	</setting>	
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeX]" value="3COLUMN" label="3 Column" condition="!StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeX],3COLUMN)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordX],A)</onselect>
+
+	</setting>	
+
+<!-- Blocs Vertical Size option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="1ROW" label="1 Row" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],1ROW)</onselect>
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],1ROW)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),A)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="2ROW" label="2 Row" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5SizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],2ROW)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B1SizeYMEM),2ROW) + StringCompare(Window(Home).Property(B1CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B2SizeYMEM),2ROW) + StringCompare(Window(Home).Property(B2CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B3SizeYMEM),2ROW) + StringCompare(Window(Home).Property(B3CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B4SizeYMEM),2ROW) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) + StringCompare(Window(Home).Property(B5SizeYMEM),2ROW) + StringCompare(Window(Home).Property(B5CoordYMEM),B)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],A)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(B1CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B2CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B3CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B4CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(B5CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(BBCoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordY],B)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="3ROW" label="3 Row" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="True">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordY],A)</onselect>
+
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="1ROW" label="1 Row" condition="!StringCompare(Window(Home).Property(SubName),BB)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],1ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],1ROW)</onselect>
+
+	</setting>	
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="2ROW" label="2 Row" condition="!StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],2ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],2ROW)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],B)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),C)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],B)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),B) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),B) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),B) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),B) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),B) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],A)</onselect>		
+
+	</setting>	
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SizeY]" value="3ROW" label="3 Row" condition="!StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)" icon="" description="">
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1SizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2SizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3SizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4SizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5SizeY],3ROW)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B1)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B1CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B2)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B2CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B3)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B3CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B4)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B4CoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),B5)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,B5CoordY],A)</onselect>
+
+	</setting>	
+
+<!-- Background Style option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="COLOR" label="Color" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="IMAGE" label="Image" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="FANART" label="Fanart" condition="StringCompare(Window(Home).Property(SubName),WP)" icon="" description=""/>
+
+<!-- Video on Top option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,VDOTop]" value="VISIBLE" label="Visible" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,VDOTop]" value="HIDDEN" label="Hidden" condition="" icon="" description=""/>
+
+<!-- Lists Type option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DEFAULT" label="Default" condition="StringCompare(Window(Home).Property(SubName),B3)" icon="" description="">
+		<onselect condition="True">Skin.Reset($INFO[Window(Home).Property(IDPrefix),,Typ])</onselect>
+	</setting>	
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="WIDELIST" label="Wide List" condition="!StringCompare(Window(Home).Property(SubName),B3)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="TILES" label="Tiles" condition="!StringCompare(Window(Home).Property(SubName),B3)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FANART" label="Fanart" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CARD" label="Card" condition="!StringCompare(Window(Home).Property(SubName),B3)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="POSTER" label="Poster" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FIXEDLIST" label="Fixed List" condition="!StringCompare(Window(Home).Property(SubName),B3)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="BANNER" label="Banner" condition="!StringCompare(Window(Home).Property(SubName),B3)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="THUMB" label="Thumb" condition="StringCompare(Window(Home).Property(SubName),B3)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARART" label="Clear Art" condition="StringCompare(Window(Home).Property(SubName),B3) + System.HasAddon(script.artwork.downloader)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CEARLOGO" label="Cear Logo" condition="StringCompare(Window(Home).Property(SubName),B3) + System.HasAddon(script.artwork.downloader)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DISCART" label="Disc Art" condition="StringCompare(Window(Home).Property(SubName),B3) + System.HasAddon(script.artwork.downloader)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="LANDSCAPE" label="Landscape" condition="StringCompare(Window(Home).Property(SubName),B3) + System.HasAddon(script.artwork.downloader)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM1" label="Custom1" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM2" label="Custom2" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM3" label="Custom3" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="" description=""/>
+
+<!-- Layout Orientation option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Lay]" value="HORIZONTAL" label="Horizontal" condition="" icon="" description="">
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,DIAPanel],BOTTOM)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.DIAPanel],BOTTOM)</onselect>		
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.DIAPanel],BOTTOM)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.DIAPanel],BOTTOM)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.DIAPanel],BOTTOM)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.DIAPanel],BOTTOM)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.DIAPanel],BOTTOM)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.DIAPanel],BOTTOM)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBLay],HORIZONTAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBCoordX],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSizeX],3COLUMN)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],BOTTOM)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.DIAPanel],BOTTOM)</onselect>	
+
+	</setting>
+
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Lay]" value="VERTICAL" label="Vertical" condition="" icon="" description="">
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,DIAPanel],LEFT)</onselect>
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.DIAPanel],LEFT)</onselect>		
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.DIAPanel],LEFT)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.DIAPanel],LEFT)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.DIAPanel],LEFT)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.DIAPanel],LEFT)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.DIAPanel],LEFT)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.DIAPanel],LEFT)</onselect>	
+
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBLay],VERTICAL)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBCoordY],A)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSizeY],3ROW)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],LEFT)</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.DIAPanel],LEFT)</onselect>	
+
+	</setting>
+
+<!-- Sidebar Position option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="TOP" label="Top" condition="StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="" description="">
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="BOTTOM" label="Bottom" condition="StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="" description="">
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="LEFT" label="Left" condition="StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="" description="">
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+	</setting>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="RIGHT" label="Right" condition="StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="" description="">
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View5.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View5.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View6.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View6.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View7.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View7.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
+	</setting>
+
+<!-- Sidebar Autohide option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="ENABLED" label="Enabled" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="DISABLED" label="Disabled" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="IDLEFADE" label="Idle Fade" condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="HIDDEN" label="Hidden" condition="" icon="" description=""/>
+
+<!-- Dialog Panel Position option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="TOP" label="Top" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="BOTTOM" label="Bottom" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="LEFT" label="Left" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="RIGHT" label="Right" condition="" icon="" description=""/>
+
+<!-- Dialog Slide Type option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="PUSH" label="Push" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="OVER" label="Over" condition="" icon="" description=""/>
+
+<!-- Vertical Separator option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="BC" label="BC" condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) | [StringCompare(Window(Home).Property(BBCoordYMEM),B) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)]" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="NONE" label="None" condition="" icon="" description=""/>
+
+<!-- Horizontal Separator option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordXMEM),A) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="BC" label="BC" condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) | [StringCompare(Window(Home).Property(BBCoordXMEM),B) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)]" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="NONE" label="None" condition="" icon="" description=""/>
+
+<!-- Bloc 1 Visibility option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B1ShowOF]" value="SHOW" label="Show" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B1ShowOF]" value="HIDE" label="Hide" condition="" icon="" description=""/>
+
+<!-- Bloc 2 Visibility option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B2ShowOF]" value="SHOW" label="Show" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B2ShowOF]" value="HIDE" label="Hide" condition="" icon="" description=""/>
+
+<!-- Bloc 3 Visibility option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B3ShowOF]" value="SHOW" label="Show" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B3ShowOF]" value="HIDE" label="Hide" condition="" icon="" description=""/>
+
+<!-- Bloc 4 Visibility option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B4ShowOF]" value="SHOW" label="Show" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B4ShowOF]" value="HIDE" label="Hide" condition="" icon="" description=""/>
+
+<!-- Bloc 1 Go SubMneu option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONLEFT" label="On Left" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONRIGHT" label="On Right" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONUP" label="On Up" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONDOWN" label="On Down" condition="" icon="" description=""/>
+
+<!-- Bloc 1 Go Back option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONLEFT" label="On Left" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONRIGHT" label="On Right" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONUP" label="On Up" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONDOWN" label="On Down" condition="" icon="" description=""/>
+
+<!-- Scroll Flags option -->
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Scroll]" value="VISIBLE" label="Visible" condition="" icon="" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Scroll]" value="HIDDEN" label="Hidden" condition="" icon="" description="">
+		<onselect condition="True">Skin.Reset($INFO[Window(Home).Property(IDPrefix),,Scroll])</onselect>
+	</setting>
+
+</settings>
