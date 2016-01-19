@@ -431,7 +431,8 @@
 						<label>31000</label>
 						<label2>31412</label2>
 						<icon>DefaultAddonSkin.png</icon>
-						<onclick>activatewindow(1102)</onclick>
+						<onclick condition="!Skin.HasSetting(DesignerShowV1)">activatewindow(1101)</onclick>
+						<onclick condition="Skin.HasSetting(DesignerShowV1)">activatewindow(1102)</onclick>
 						<visible>Skin.HasSetting(DesignerShow)</visible>
 					</item>
 					<item id="4">
