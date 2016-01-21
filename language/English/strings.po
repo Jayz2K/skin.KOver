@@ -970,6 +970,30 @@ msgctxt "#31236"
 msgid "Choose Home menu size. This adjusts the Sidebar with different layouts."
 msgstr ""
 
+msgctxt "#31237"
+msgid "Move Bloc"
+msgstr ""
+
+msgctxt "#31238"
+msgid "Resize Bloc"
+msgstr ""
+
+msgctxt "#31239"
+msgid "Use Keyboard / Remote direction keys to move / resize.[CR]Press ENTER to swith move / resize.[CR]Press RETURN to exit."
+msgstr ""
+
+msgctxt "#31240"
+msgid "Move"
+msgstr ""
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr ""
+
+msgctxt "#31242"
+msgid "CONFIGURE"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

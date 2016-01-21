@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="BlocEditorTitle">
+		<value condition="Control.HasFocus(9600)">$LOCALIZE[31237]</value>
+		<value condition="Control.HasFocus(9700)">$LOCALIZE[31238]</value>
+	</variable>
+
+	<variable name="BlocEditorPopup">
+		<value condition="Control.HasFocus(9600)">$LOCALIZE[31240]</value>
+		<value condition="Control.HasFocus(9700)">$LOCALIZE[31241]</value>
+	</variable>	
+
 	<variable name="ExtendedContent">
 		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Similar)">plugin://script.extendedinfo?info=similarmovies&amp;&amp;dbid=$INFO[ListItem.DBID]</value>
 		<value condition="StringCompare(Container(300).ListItem.Property(MenuID),Director)">plugin://script.extendedinfo?info=directormovies&amp;&amp;director=$INFO[ListItem.Director]</value>
