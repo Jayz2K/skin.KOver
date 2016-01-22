@@ -991,7 +991,11 @@ msgid "Resize"
 msgstr ""
 
 msgctxt "#31242"
-msgid "CONFIGURE"
+msgid "Keep OSD controls always sticking to bottom"
+msgstr ""
+
+msgctxt "#31243"
+msgid "Run Designer in safe mode (Designer V1)"
 msgstr ""
 
 #Settings strings

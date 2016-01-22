@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="DesignerValueTranslator">
+		<value condition="StringCompare(Container(9300).ListItem.Label2,VISIBLE)">Visible</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE)">Idle Fade</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,ISPLAYING)">Is Playing</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,ONFOCUS)">On Focus</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,HIDDEN)">Hidden</value>
+
+		<value condition="StringCompare(Container(9300).ListItem.Label2,DEFAULT)">Default</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,WIDELIST)">Wide List</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,TILES)">Tiles</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,FANART)">Fanart</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,CARD)">Card</value>
+		<value condition="StringCompare(Container(9300).ListItem.Label2,POSTER)">Poster</value>
+	</variable>
+
 	<variable name="BlocEditorTitle">
 		<value condition="Control.HasFocus(9600)">$LOCALIZE[31237]</value>
 		<value condition="Control.HasFocus(9700)">$LOCALIZE[31238]</value>

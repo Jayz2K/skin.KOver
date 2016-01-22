@@ -333,9 +333,9 @@
 					<selected>Skin.HasSetting(SkinHelper.EnablePVRThumbs)</selected>
 				</control>		
 
-				<!-- Epg icon only -->
-				<!--control type="radiobutton" id="9114">
-					<label>Force 'Channel Icon only' in EPG</label>
+				<!-- Force EPG sticking to bottom -->
+				<control type="radiobutton" id="9115">
+					<label>31242</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -352,9 +352,16 @@
 					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
-					<onclick>Skin.ToggleSetting(EPGChannelIcon)</onclick>
-					<selected>Skin.HasSetting(EPGChannelIcon)</selected>
-				</control-->		
+					<onclick>Skin.ToggleSetting(ForceOSDBottom)</onclick>
+					<selected>Skin.HasSetting(ForceOSDBottom)</selected>
+				</control>		
+
+				<!-- Separator -->
+				<control type="image" id="9116">
+					<width>1086</width>
+					<height>60</height>
+					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
+				</control>		
 
 				<!-- Enable Designer -->
 				<control type="radiobutton" id="9104">
@@ -381,7 +388,7 @@
 
 				<!-- Enable Designer Safe mode-->
 				<control type="radiobutton" id="9114">
-					<label>Run Designer in safe mode (Designer V1)</label>
+					<label>31243</label>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
