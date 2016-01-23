@@ -3,6 +3,136 @@
 
 	<fontset id="Default" unicode="true">
 
+	<font>
+            <name>Font-Header</name>
+            <filename>Roboto-Black.ttf</filename>
+            <size>75</size>
+        </font>
+        <font>
+            <name>Font-Sublabel</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+        <font>
+            <name>Font-HomeMenu</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>28</size>
+        </font>
+        <font>
+            <name>Font-Button</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>32</size>
+        </font>
+        <font>
+            <name>Font-Button-Black</name>
+            <filename>Roboto-Black.ttf</filename>
+            <size>32</size>
+        </font>
+        <font>
+            <name>Font-ListInfo-Bold</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>30</size>
+            <linespacing>1.08</linespacing>
+        </font>
+        <font>
+            <name>Font-ListInfo</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>30</size>
+            <linespacing>1.08</linespacing>
+        </font>
+        <font>
+            <name>Font-ListInfo-Big</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>38</size>
+            <linespacing>1.08</linespacing>
+        </font>
+        <font>
+            <name>Font-ListInfo-Small</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>27</size>
+        </font>
+        <font>
+            <name>Font-RSS</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
+            <name>Font-ListInfo-Small-Bold</name>
+            <filename>Roboto-Bold.ttf</filename>
+            <size>27</size>
+        </font>
+        <font>
+            <name>Font-OSD</name>
+            <filename>Roboto-Regular.ttf</filename>
+            <size>25</size>
+            <aspect>0.9</aspect>
+        </font>
+        <font>
+            <name>Font-InfoBox-Title</name>
+            <filename>Roboto-Black.ttf</filename>
+            <size>36</size>
+        </font>
+        <font>
+            <name>Font-WidgetInfoTitle</name>
+            <filename>Roboto-Black.ttf</filename>
+            <size>48</size>
+        </font>
+<!-- Ajout Font -->        
+        <font>
+            <name>Font-Flag</name>
+            <filename>RobotoCondensed-Bold.ttf</filename>
+            <size>40</size>
+        </font>
+<!-- Ajout Font -->          
+        <font>
+            <name>NextUpTitle</name>
+            <filename>RobotoCondensed-Bold.ttf</filename>
+            <size>26</size>
+        </font>
+<!-- Ajout Font -->          
+        <font>
+            <name>NextUpRemaining</name>
+            <filename>RobotoCondensed-Bold.ttf</filename>
+            <size>38</size>
+        </font>
+<!-- Ajout Font -->          
+        <font>
+            <name>NextUpPlot</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>20</size>
+        </font>        
+<!-- Ajout Font -->          
+        <font>
+            <name>Font-Music1</name>
+            <filename>Roboto-Black.ttf</filename>
+            <size>70</size>
+        </font>
+<!-- Ajout Font -->          
+        <font>
+            <name>Font-Music2</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>21</size>
+        </font>      
+<!-- Ajout Font -->          
+        <font>
+            <name>Font-Music3</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>48</size>
+        </font>
+<!-- Ajout Font -->      
+        <font>
+            <name>MusicVisualisation</name>
+            <style>uppercase</style>
+            <filename>RobotoCondensed-Bold.ttf</filename>
+            <size>25</size>
+        </font>
+<!-- Ajout Font -->      
+        <font>
+            <name>Lyrics</name>
+            <filename>WCManoNegra-Light.ttf</filename>
+            <size>42</size>
+        </font>
+
 		<font>
 			<name>FontBanner</name>
 			<filename>RobotoCondensed-Bold.ttf</filename>
@@ -267,6 +397,7 @@
 			<filename>Rajdhani-Bold.ttf</filename>
 			<size>21</size>
 		</font>
+	
 
 	</fontset>
 

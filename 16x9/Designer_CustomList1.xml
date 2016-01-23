@@ -50,38 +50,55 @@
 	<include name="Custom1">
 	<!-- TO HERE -->
 
-		<itemlayout width="$PARAM[width]" height="71">
+		<itemlayout width="212" height="213">
 			<control type="image">
-				<height>70</height>
+				<height>212</height>
 				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				<texture fallback="osd/audio.png">$VAR[ThumbPortrait]</texture>
 			</control>
 			<control type="label">
-				<height>70</height>
-				<left>24</left>
-				<align>left</align>
+				<height>370</height>
+				<left>0</left>
+				<align>center</align>
 				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<label>$INFO[ListItem.Label]</label>
+				<font>FontSmallR</font>
+	<textcolor>75ffffff</textcolor>
+				<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]$INFO[ListItem.Label]</label>
 			</control>
-		</itemlayout>
+			</itemlayout>
 
-		<focusedlayout width="$PARAM[width]" height="71">
+		<focusedlayout width="212" height="213">
 			<control type="image">
-				<height>70</height>
+				<height>212</height>
 				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+				<texture fallback="osd/audio.png">$VAR[ThumbPortrait]</texture>
+</control>
+<control type="image">
+					<left>-7</left>
+					<top>-6</top>
+					<width>225</width>
+					<height>225</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="$VAR[CategoryColor]">common/flag_frame3.png</texture>
+
 			</control>
-			<control type="label">
-				<height>70</height>
-				<left>24</left>
-				<align>left</align>
+<control type="image">
+					<left>4</left>
+					<top>168</top>
+					<width>203</width>
+					<height>40</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="ff000000">common/white.png</texture>
+</control>
+				<control type="label">
+				<height>370</height>
+				<left>0</left>
+				<align>center</align>
 				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
+				<font>FontSmallR</font>
+<textcolor>FFFFFFFF</textcolor>
+	<label>$INFO[ListItem.Label]</label>
+		     	</control>
 		</focusedlayout>
 
 	<!-- DO NOT MODIFY FROM HERE -->		

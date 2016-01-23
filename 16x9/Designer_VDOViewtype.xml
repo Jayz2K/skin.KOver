@@ -201,15 +201,13 @@
 								<aspectratio aligny="bottom">stretch</aspectratio>
 								<texture colordiffuse="$INFO[Skin.String(Color.B3TagBg)]">common/white.png</texture>
 							</control>
-							<control type="label">
-								<left>12</left>
-								<top>300</top>
-								<width>589</width>
-								<height>56</height>
-								<align>left</align>
-								<textcolor>$INFO[Skin.String(Color.B3Tag)]</textcolor>
-								<font>FontSmall</font>
-								<label>$VAR[B3Tag]</label>
+							<control type="image">
+								<left>450</left>
+								<top>200</top>
+								<width>400</width>
+								<height>155</height>
+								<align>center</align>
+								<texture>$INFO[Skin.String(artworklocation)]$INFO[ListItem.Artist,,/logo.png]</texture>
 							</control>
 						</control>
 					</control>
