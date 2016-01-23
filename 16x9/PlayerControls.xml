@@ -1,177 +1,1076 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
-
-	<!-- Player Controls -->
-	<defaultcontrol always="true">9000,3</defaultcontrol>
-	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
-	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
-	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>	
-	<onunload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onunload>
-	<onunload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onunload>	
-	<onunload>SetProperty(CompPrefix,HOM.View1,Home)</onunload>	
-	<zorder>3</zorder>
-
-	<controls>
-		<control type="group">
-			<visible>Player.HasMedia + Window.IsActive(PlayerControls)</visible>	
-			<control type="grouplist">
-				<include condition="Skin.String(HOM.View1.BBLay,VERTICAL) + !Skin.HasSetting(ForceOSDBottom)">OSDV</include>
-				<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL) | Skin.HasSetting(ForceOSDBottom)">OSDH</include>
-				<visible>!Window.IsVisible(fullscreeninfo)</visible>
-				<control type="list" id="9000">
-					<focusposition>0</focusposition>
-					<scrolltime>200</scrolltime>
-					<include condition="Skin.String(HOM.View1.BBLay,VERTICAL) + !Skin.HasSetting(ForceOSDBottom)">OSDVMenu</include>
-					<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL) | Skin.HasSetting(ForceOSDBottom)">OSDHMenu</include>
-					<animation effect="slide" start="0,0" end="1800,0" time="0" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + !Skin.HasSetting(ForceOSDBottom)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,960" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) | Skin.HasSetting(ForceOSDBottom)">Conditional</animation>
-
-					<itemlayout width="80" height="80">
-						<control type="image">
-							<left>15</left>
-							<top>15</top>
-							<width>50</width>
-							<height>50</height>
-							<align>center</align>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">$INFO[ListItem.Icon]</texture>
-						</control>
-					</itemlayout>
-
-					<focusedlayout width="80" height="80">
-						<control type="button">
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
-							<onfocus>SetProperty(MenuID,$INFO[Container(9000).ListItem.Label])</onfocus>
-							<onfocus>SetProperty(MenuIcon,$INFO[Container(9000).ListItem.Icon])</onfocus>
-							<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(LabelID)])</onfocus>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>15</top>
-							<width>50</width>
-							<height>50</height>
-							<align>center</align>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[CategoryColor]">$INFO[ListItem.Icon]</texture>
-						</control>
-					</focusedlayout>
-					<content>
-						<item id="1">
-							<label>-</label>
-							<icon>osd/skipprevious.png</icon>
-							<onclick>PlayerControl(Previous)</onclick>
-						</item>			
-						<item id="2">
-							<label>-</label>
-							<icon>osd/rewind.png</icon>
-							<onclick>PlayerControl(Rewind)</onclick>
-						</item>		
-						<item id="3">
-							<label>-</label>
-							<icon>osd/play.png</icon>
-							<onclick>PlayerControl(Play)</onclick>
-						</item>
-						<item id="4">
-							<label>-</label>
-							<icon>osd/stop.png</icon>
-							<onclick>PlayerControl(Stop)</onclick>
-						</item>
-						<item id="5">
-							<label>-</label>
-							<icon>osd/ffwd.png</icon>
-							<onclick>PlayerControl(Forward)</onclick>
-						</item>	
-						<item id="6">
-							<label>-</label>
-							<icon>osd/skipnext.png</icon>
-							<onclick>PlayerControl(Next)</onclick>
-						</item>						
-					</content>
-				</control>
-
-				<control type="list" id="9001">
-					<focusposition>0</focusposition>
-					<scrolltime>200</scrolltime>
-					<include condition="Skin.String(HOM.View1.BBLay,VERTICAL) + !Skin.HasSetting(ForceOSDBottom)">OSDVMenu</include>
-					<include condition="Skin.String(HOM.View1.BBLay,HORIZONTAL) | Skin.HasSetting(ForceOSDBottom)">OSDHMenu</include>
-					<animation effect="slide" start="0,0" end="1800,0" time="0" condition="Skin.String(HOM.View1.BBSidebar,RIGHT) + !Skin.HasSetting(ForceOSDBottom)">Conditional</animation>
-					<animation effect="slide" start="0,0" end="0,960" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) | Skin.HasSetting(ForceOSDBottom)">Conditional</animation>
-
-					<itemlayout width="80" height="80">
-						<control type="image">
-							<left>15</left>
-							<top>15</top>
-							<width>50</width>
-							<height>50</height>
-							<align>center</align>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$INFO[Skin.String(Color.SBIconNF)]">$INFO[ListItem.Icon]</texture>
-						</control>
-					</itemlayout>
-
-					<focusedlayout width="80" height="80">
-						<control type="button">
-							<texturefocus></texturefocus>
-							<texturenofocus></texturenofocus>
-							<onfocus>SetProperty(MenuID,$INFO[Container(9000).ListItem.Label])</onfocus>
-							<onfocus>SetProperty(MenuIcon,$INFO[Container(9000).ListItem.Icon])</onfocus>
-							<onfocus>SetProperty(MenuCategory,$INFO[Container(9000).ListItem.Property(LabelID)])</onfocus>
-						</control>
-						<control type="image">
-							<left>15</left>
-							<top>15</top>
-							<width>50</width>
-							<height>50</height>
-							<align>center</align>
-							<aspectratio>keep</aspectratio>
-							<texture colordiffuse="$VAR[CategoryColor]">$INFO[ListItem.Icon]</texture>
-						</control>
-					</focusedlayout>
-					<content>
-						<!-- Infos -->
-						<item id="1">
-							<label>36501</label>
-							<icon>material/info1.png</icon>
-							<onclick>ActivateWindow(fullscreeninfo)</onclick>
-						</item>
-						<!-- Repeat One ON -->					
-						<item id="2">
-							<label>486</label>
-							<icon>osd/repeaton.png</icon>
-							<onclick>PlayerControl(Repeat)</onclick>
-							<visible>Playlist.IsRepeat</visible>
-						</item>
-						<item id="3">
-							<label>486</label>
-							<icon>osd/repeatone.png</icon>
-							<onclick>PlayerControl(Repeat)</onclick>
-							<visible>Playlist.IsRepeatOne</visible>
-						</item>
-						<!-- Repeat OFF -->					
-						<item id="4">
-							<label>486</label>
-							<icon>osd/repeatoff.png</icon>
-							<onclick>PlayerControl(Repeat)</onclick>
-							<visible>!Playlist.IsRepeat + !Playlist.IsRepeatOne</visible>
-						</item>
-						<!-- Random -->					
-						<item id="5">
-							<label>590</label>
-							<icon>osd/randomon.png</icon>
-							<onclick>PlayerControl(Random)</onclick>
-							<visible>Player.IsRandom</visible>
-						</item>
-						<!-- Random -->					
-						<item id="6">
-							<label>590</label>
-							<icon>osd/randomoff.png</icon>
-							<onclick>PlayerControl(Random)</onclick>
-							<visible>!Player.IsRandom</visible>
-						</item>
-					</content>
-				</control>	
+    <defaultcontrol always="true">14</defaultcontrol>
+    <zorder>20</zorder>
+    <onload condition="!Player.HasMedia">Close</onload>
+    <controls>
+        <include>GlobalOverlay</include>
+        <control type="group">
+            <width>669</width>
+            <animation effect="slide" start="-668" end="0" time="150" tween="quadratic">Visible</animation>
+            <animation effect="slide" start="-668" end="0" time="150" tween="quadratic">WindowOpen</animation>
+            <animation effect="slide" end="-668" start="0" time="150" tween="quadratic">Hidden</animation>
+            <animation effect="slide" end="-668" start="0" time="150" tween="quadratic">WindowClose</animation>
+            <control type="group">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>642</width>
+                <height>1100</height>
+            </control>
+	<control type="image">
+				<width>642</width>
+				<height>1080</height>
+			<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
 			</control>
-		</control>
-	</controls>
+            <control type="group">
+                <posy>294</posy>
+                <control type="group">
+                    <right>14</right>
+                    <centertop>60</centertop>
+                    <height>100</height>
+                    <width>100</width>
+                    <control type="image" description="Back">
+                        <left>0</left>
+                        <centertop>50%</centertop>
+                        <width>100</width>
+                        <height>100</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture>progress/loading-back.png</texture>
+                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+                    </control>
+                    <control type="image" description="Play">
+                        <left>0</left>
+                        <centertop>50%</centertop>
+                        <width>100</width>
+                        <height>100</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">progress/play.png</texture>
+                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+<!-- Modification Visible -->                        
+                        <visible>!Player.Paused + !Player.Forwarding + !Player.Rewinding</visible>
+                    </control>
+                    <control type="image" description="Pause">
+                        <left>0</left>
+                        <centertop>50%</centertop>
+                        <width>100</width>
+                        <height>100</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">progress/pause.png</texture>
+                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+                        <visible>Player.Paused</visible>
+                    </control>
+<!-- Ajout Control -->                    
+                    <control type="image" description="Pause">
+                        <left>0</left>
+                        <centertop>50%</centertop>
+                        <width>100</width>
+                        <height>100</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">progress/ff.png</texture>
+                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+                        <visible>Player.Forwarding</visible>
+                    </control>
+<!-- Ajout Control -->                        
+                    <control type="image" description="Pause">
+                        <left>0</left>
+                        <centertop>50%</centertop>
+                        <width>100</width>
+                        <height>100</height>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">progress/rw.png</texture>
+                        <animation effect="fade" start="0" end="100" time="150">VisibleChange</animation>
+                        <visible>Player.Rewinding</visible>
+                    </control>
+                    <control type="progress" id="933">
+                        <texturebg>-</texturebg>
+                        <lefttexture>-</lefttexture>
+                        <midtexture>-</midtexture>
+                        <righttexture>-</righttexture>
+                        <info>Player.Progress</info>
+                        <visible>false</visible>
+                    </control>
+                    <control type="image">
+                        <left>0</left>
+                        <centertop>50%</centertop>
+                        <width>100</width>
+                        <height>100</height>
+                        <texture>$INFO[Control.GetLabel(933),progress/circle/p,.png]</texture>
+                        <aspectratio align="center">keep</aspectratio>
+                        <visible>!IsEmpty(Player.Duration)</visible>
+                    </control>
+                  
+                </control>
+        
+                <control type="label">
+                    <left>30</left>
+                    <right>30</right>
+                    <posy>10</posy>
+                    <height>69</height>
+                    <align>left</align>
+<!-- Modification Textcolor -->                    
+                    <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                    <font>Font-InfoBox-Title</font>
+                    <label>13350</label>
+                    <visible>Player.HasAudio</visible>
+                </control>
+                <control type="label">
+                    <left>30</left>
+                    <right>30</right>
+                    <posy>43</posy>
+                    <height>69</height>
+                    <align>left</align>
+                    <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                    <font>Font-ListInfo-Small-Bold</font>
+                    <label>[COLOR=$INFO[Skin.String(Color.B3Tag.base)]]$INFO[Container(9100).NumItems,,[/COLOR] $LOCALIZE[134]]</label>
+                    <visible>Player.HasAudio</visible>
+                </control>
+              <control type="label">
+                    <left>30</left>
+                    <right>30</right>
+                    <posy>10</posy>
+                    <height>69</height>
+                    <align>left</align>                   
+                    <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                    <font>Font-InfoBox-Title</font>
+                    <label>13350</label>
+                    <visible>Player.HasVideo</visible>
+                </control>
+                <control type="label">
+                    <left>30</left>
+                    <right>30</right>
+                    <posy>43</posy>
+                    <height>69</height>
+                    <align>left</align>
+                    <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                    <font>Font-ListInfo-Small-Bold</font>
+                    
+                    <label>[COLOR=$INFO[Skin.String(Color.B3Tag.base)]]$INFO[Container(9100).NumItems,,[/COLOR] $LOCALIZE[3]]</label>
+
+                    <visible>Player.HasVideo</visible>
+                </control> -->
+            </control>
+
+            <control type="group">
+                <posy>30</posy>
+                <width>642</width>
+			
+               <!-- <control type="image">
+                    <left>30</left>
+                    <width>260</width>
+                    <height>260</height>
+                    <texture>$INFO[Player.Art(thumb)]</texture>
+                    <aspectratio aligny="center" align="center">keep</aspectratio>
+                    <visible>Player.HasAudio</visible>
+                </control> -->
+
+               <!-- <control type="image">
+                    <left>30</left>
+                    <width>182</width>
+                    <height>260</height>
+                    <texture background="true" colordiffuse="FFFFFFFF" fallback="DefaultVideo.png">$VAR[ThumbPortrait]</texture>
+                    <aspectratio aligny="center" align="center">stretch</aspectratio>
+                    <visible>Player.HasVideo</visible>
+                </control> -->
+
+<!-- Ajout Control -->                
+                <control type="image">
+                    <posx>20</posx>
+                    <posy>-10</posy>
+                    <height>280</height>
+                    <width>280</width>
+                    <texture fallback="DefaultAudio.png">$INFO[MusicPlayer.offset(0).Cover]</texture>
+                    <visible>Player.HasAudio</visible>
+                </control>
+                
+<!-- Ajout Control -->                
+              <!-- <control type="image">
+                    <posx>40</posx>
+                    <posy>-10</posy>
+                    <height>280</height>
+                    <width>202</width>
+                    <texture background="true" colordiffuse="FFFFFFFF" fallback="DefaultVideo.png">$VAR[ThumbPortrait]</texture>
+                    <visible>Player.HasVideo</visible>
+                </control> -->
+<control type="image">
+                    <posx>side</posx>
+                    <posy>55</posy>
+                    <height>360</height>
+                    <width>640</width>
+                    <texture colordiffuse="PosterBorder">common/black.png</texture>
+                    <visible>Player.HasVideo</visible>
+                </control>
+                <control type="videowindow">
+                    <posx>side</posx>
+                    <posy>55</posy>
+                    <height>360</height>
+                    <width>640</width>
+                    <visible>Player.HasVideo</visible>
+                </control>
+               
+
+                <control type="grouplist">
+                    <top>4</top>
+                    <bottom>0</bottom>
+<!-- Modification Left -->                    
+                    <left>320</left>
+<!-- Modification Right -->                     
+                    <right>20</right>
+                    <orientation>vertical</orientation>
+                    <itemgap>8</itemgap>
+                    <visible>true</visible>
+<!-- Ajout Visible -->                    
+                    <visible>Player.HasAudio</visible>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    
+                    <control type="label" description="Artist">
+                        <top>0</top>
+                        <width>100%</width>
+                        <height>48</height>
+                        <font>Font-InfoBox-Title</font>
+                        <align>center</align>
+<!-- Ajout Scroll -->                        
+                        <scroll>yes</scroll>
+                        <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                        <label>$INFO[MusicPlayer.offset(0).Artist]</label>
+                    </control>
+                    
+                    <control type="label" description="Album">                 
+                        <width>100%</width>
+                        <height>40</height>
+                        <font>Font-ListInfo-Small-Bold</font>
+                        <align>center</align>
+<!-- Ajout Scroll -->                        
+                        <scroll>yes</scroll>                        
+                        <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                        <label>[I][UPPERCASE]$INFO[MusicPlayer.offset(0).Album,][/UPPERCASE][/I]</label>
+                    </control>
+                    
+                    <control type="label" description="Title">             
+                        <width>100%</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <font>Font-RSS</font>
+                        <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+<!-- Ajout Scroll -->                        
+                        <scroll>yes</scroll> 
+<!-- Modification Label -->                                                  
+                        <label>$INFO[MusicPlayer.offset(0).Title,]</label>
+                    </control>
+<control type="image">
+					<width>150</width>
+					<height>20</height>
+					<left>77</left>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]" fallback="rating0.png">$INFO[Player.StarRating]</texture>
+
+</control>
+<!-- Modification Control Grouplist -->
+                    <control type="grouplist">                   
+                        <top>8</top>
+                        <width>100%</width>
+                        <height>35</height>
+                        <orientation>horizontal</orientation>
+                        <align>center</align>
+                        <itemgap>8</itemgap>
+                        <usecontrolcoords>true</usecontrolcoords>
+                        <visible>true</visible>
+                        <visible>Player.HasAudio</visible>
+                            <control type="image">
+                                <width>91</width>
+                                <height>35</height>
+                                <texture fallback="indicator/fallback.png" colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">$INFO[MusicPlayer.Channels,indicator/channels/,.png]</texture>
+                                <visible>!IsEmpty(MusicPlayer.Channels)</visible>
+                            </control>
+                            <control type="image">
+                                <width>91</width>
+                                <height>35</height>
+                                <texture fallback="indicator/fallback.png" colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">$INFO[MusicPlayer.Codec,indicator/audio/,.png]</texture>
+                                <visible>!IsEmpty(MusicPlayer.Codec)</visible>
+                            </control>
+	                  <control type="group">
+                                <width>120</width>
+                                <height>35</height>
+                            <control type="image" description="button back">
+                                <width>105</width>
+                                <height>35</height>
+                                <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">common/cadre.png</texture>
+                                <visible>!IsEmpty(MusicPlayer.Bitrate)</visible>
+                            </control>
+                            <control type="label">
+                                <width>103</width>
+                                <height>33</height>
+                                <align>center</align>
+                                <aligny>center</aligny>
+                                <label>[COLOR=$INFO[Skin.String(Color.B3Tag.base)]]$INFO[MusicPlayer.BitRate][/COLOR] kbps</label>
+                                <font>MusicVisualisation</font>                  
+                                <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                                <visible>!IsEmpty(MusicPlayer.Bitrate)</visible>
+                            </control>
+                </control>
+                </control>          
+                    
+                    <control type="label" description="Duration">             
+                        <width>100%</width>
+                        <height>40</height>
+                        <font>Font-ListInfo-Bold</font>
+                        <align>center</align>
+                  <textcolor>$INFO[Skin.String(Color.B3Tag.base)]</textcolor>
+                        <label>$INFO[Player.Time][COLOR=$INFO[Skin.String(Color.SETTxt1F.base)]] / [/COLOR]$INFO[Player.Duration]</label>
+                    </control>
+                </control>
+                
+                
+<!-- Ajout Control Grouplist -->                
+                <control type="grouplist">
+                    <top>0</top>
+                    <bottom>0</bottom>             
+                    <left>30</left>
+                    <right>30</right>
+                    <orientation>vertical</orientation>
+                    <itemgap>12</itemgap>
+                    <visible>true</visible>               
+                    <visible>Player.HasVideo</visible>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    
+                    <control type="label" description="Artist">
+                        <top>0</top>                     
+                        <width>100%</width>
+                        <height>48</height>
+                        <font>Font-InfoBox-Title</font>
+                        <align>center</align>
+                        <scroll>yes</scroll>   <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                        <label>$INFO[Player.Title]</label>
+
+                    </control>
+                                        
+                    <control type="label" description="AlbumYear">                 
+                        <width>100%</width>
+                        <height>40</height>
+                        <align>center</align>
+                        <scroll>yes</scroll>
+                        <font>Font-RSS</font>
+                        <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                        <label>[I]$VAR[Label_PlayerControl_ByLine][/I]</label>
+                    </control>
+            
+                <control type="grouplist">                   
+                        <top>320</top>
+                        <width>100%</width>
+                        <height>35</height>
+                        <orientation>horizontal</orientation>
+                        <align>center</align>
+                        <itemgap>8</itemgap>
+                        <usecontrolcoords>true</usecontrolcoords>
+                        <visible>true</visible>
+                        <visible>Player.HasVideo</visible>
+                        <control type="image">
+                                <width>51</width>
+                                <height>35</height>
+                                <texture fallback="indicator/fallback.png" colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">$INFO[VideoPlayer.VideoResolution,indicator/resolution/,.png]</texture>
+                                <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
+                            </control> 
+                            <control type="image">
+                                <width>91</width>
+                                <height>35</height>
+                                <texture fallback="indicator/fallback.png" colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">$INFO[VideoPlayer.VideoCodec,indicator/video/,.png]</texture>
+                                <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
+                            </control>  
+                            <control type="image">
+                                <width>91</width>
+                                <height>35</height>
+                                <texture fallback="indicator/fallback.png" colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">$INFO[VideoPlayer.AudioCodec,indicator/audio/,.png]</texture>
+                                <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
+                            </control>      
+                            <control type="image">
+                                <width>91</width>
+                                <height>35</height>
+                                <texture fallback="indicator/fallback.png" colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">$INFO[VideoPlayer.AudioChannels,indicator/channels/,.png]</texture>
+                                <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
+                            </control>                                    
+                    </control>
+                    
+                    <control type="label" description="Duration">              
+                        <width>100%</width>
+                        <height>40</height>
+                        <font>Font-ListInfo-Bold</font>
+                        <align>center</align>
+                        <textcolor>$INFO[Skin.String(Color.B3Tag.base)]</textcolor>
+                        <label>$INFO[Player.Time][COLOR=$INFO[Skin.String(Color.SETTxt1F.base)]] / [/COLOR]$INFO[Player.Duration]</label>
+                    </control>
+                </control>
+            
+                
+              <!-- <control type="image">
+                    <posx>side</posx>
+                    <posy>380</posy>
+                    <height>580</height>
+                    <width>627</width>
+                    <texture colordiffuse="PosterBorder">common/white.png</texture>
+                    <visible>Player.HasVideo</visible>
+                </control>
+                <control type="videowindow">
+                    <posx>side</posx>
+                    <posy>380</posy>
+                    <height>580</height>
+                    <width>627</width>
+                    <visible>Player.HasVideo</visible>
+                </control> -->
+                <control type="list" id="9100">
+                    <visible>Player.HasAudio</visible>
+                    <posx>0</posx>
+                    <posy>370</posy>
+                    <height>600</height>
+                    <width>642</width>
+                    <onleft>14</onleft>
+                    <onright>14</onright>
+                    <onup>noop</onup>
+                    <ondown>14</ondown>
+                    <orientation>vertical</orientation>
+                    <itemlayout height="60" width="642">
+                        <control type="image">
+                            <left>-8</left>
+                            <centertop>50%</centertop>
+                            <height>32</height>
+                            <width>32</width>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">indicator/playwhite.png</texture>
+                            <visible>!IsEmpty(ListItem.Property(IsPlaying))</visible>
+                        </control>
+                        <control type="label">
+                            <left>30</left>
+                            <right>30</right>
+                            <height>100%</height>
+                            <aligny>center</aligny>
+                            <align>left</align>
+                            <font>Font-ListInfo-Small</font>
+                            <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                            <label>$INFO[ListItem.Label]</label>
+                            <selectedcolor>ListLabel</selectedcolor>
+                        </control>
+                        <control type="label">
+                            <left>30</left>
+                            <right>30</right>
+                            <height>100%</height>
+                            <aligny>center</aligny>
+                            <align>right</align>
+                            <font>Font-ListInfo-Small</font>
+                            <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                            <label>$INFO[ListItem.Label2]</label>
+                            <selectedcolor>ListLabel</selectedcolor>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="60" width="642">
+                        <control type="group">
+                            <visible>!Control.HasFocus(9100)</visible>
+                            <control type="image">
+                                <left>-8</left>
+                                <centertop>50%</centertop>
+                                <height>32</height>
+                                <width>32</width>
+                                <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">indicator/playwhite.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(IsPlaying))</visible>
+                            </control>
+                            <control type="label">
+                                <left>30</left>
+                                <right>30</right>
+                                <height>100%</height>
+                                <aligny>center</aligny>
+                                <align>left</align>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                                <label>$INFO[ListItem.Label]</label>
+                                <selectedcolor>ListLabel</selectedcolor>
+                            </control>
+                            <control type="label">
+                                <left>30</left>
+                                <right>30</right>
+                                <height>100%</height>
+                                <aligny>center</aligny>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                                <label>$INFO[ListItem.Label2]</label>
+                                <selectedcolor>ListLabel</selectedcolor>
+                            </control>
+                        </control>
+                        <control type="group">
+                            <visible>Control.HasFocus(9100)</visible>
+                            <control type="image">
+                                <width>642</width>
+                                <height>100%</height>
+                                <texture colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texture>
+                            </control>
+                            <control type="image">
+                                <left>-8</left>
+                                <centertop>50%</centertop>
+                                <height>32</height>
+                                <width>32</width>
+                                <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">indicator/playwhite.png</texture>
+                                <visible>!IsEmpty(ListItem.Property(IsPlaying))</visible>
+                            </control>
+                            <control type="label">
+                                <left>30</left>
+                                <right>30</right>
+                                <height>100%</height>
+                                <aligny>center</aligny>
+                                <align>left</align>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                                <label>$INFO[ListItem.Label]</label>
+                                <selectedcolor>ListLabel</selectedcolor>
+                                                           </control>
+                            <control type="label">
+                                <left>30</left>
+                                <right>30</right>
+                                <height>100%</height>
+                                <aligny>center</aligny>
+                                <align>right</align>
+                                <font>Font-ListInfo-Small</font>
+                                <textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+                                <label>$INFO[ListItem.Label2]</label>
+                                                            </control>
+                        </control>
+                    </focusedlayout>
+                    <content>
+                        <item id="1">
+                            <label>$INFO[MusicPlayer.offset(-20).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-20).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-20).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-20)</onclick>
+                            <visible>MusicPlayer.offset(-20).Exists</visible>
+                        </item>
+                        <item id="2">
+                            <label>$INFO[MusicPlayer.offset(-19).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-19).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-19).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-19)</onclick>
+                            <visible>MusicPlayer.offset(-19).Exists</visible>
+                        </item>
+                        <item id="3">
+                            <label>$INFO[MusicPlayer.offset(-18).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-18).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-18).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-18)</onclick>
+                            <visible>MusicPlayer.offset(-18).Exists</visible>
+                        </item>
+                        <item id="4">
+                            <label>$INFO[MusicPlayer.offset(-17).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-17).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-17).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-17)</onclick>
+                            <visible>MusicPlayer.offset(-17).Exists</visible>
+                        </item>
+                        <item id="5">
+                            <label>$INFO[MusicPlayer.offset(-16).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-16).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-16).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-16)</onclick>
+                            <visible>MusicPlayer.offset(-16).Exists</visible>
+                        </item>
+                        <item id="6">
+                            <label>$INFO[MusicPlayer.offset(-15).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-15).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-15).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-15)</onclick>
+                            <visible>MusicPlayer.offset(-15).Exists</visible>
+                        </item>
+                        <item id="7">
+                            <label>$INFO[MusicPlayer.offset(-14).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-14).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-14).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-14)</onclick>
+                            <visible>MusicPlayer.offset(-14).Exists</visible>
+                        </item>
+                        <item id="8">
+                            <label>$INFO[MusicPlayer.offset(-13).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-13).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-13).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-13)</onclick>
+                            <visible>MusicPlayer.offset(-13).Exists</visible>
+                        </item>
+                        <item id="9">
+                            <label>$INFO[MusicPlayer.offset(-12).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-12).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-12).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-12)</onclick>
+                            <visible>MusicPlayer.offset(-12).Exists</visible>
+                        </item>
+                        <item id="10">
+                            <label>$INFO[MusicPlayer.offset(-11).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-11).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-11).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-11)</onclick>
+                            <visible>MusicPlayer.offset(-11).Exists</visible>
+                        </item>
+                        <item id="11">
+                            <label>$INFO[MusicPlayer.offset(-10).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-10).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-10).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-10)</onclick>
+                            <visible>MusicPlayer.offset(-10).Exists</visible>
+                        </item>
+                        <item id="12">
+                            <label>$INFO[MusicPlayer.offset(-9).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-9).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-9).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-9)</onclick>
+                            <visible>MusicPlayer.offset(-9).Exists</visible>
+                        </item>
+                        <item id="13">
+                            <label>$INFO[MusicPlayer.offset(-8).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-8).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-8).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-8)</onclick>
+                            <visible>MusicPlayer.offset(-8).Exists</visible>
+                        </item>
+                        <item id="14">
+                            <label>$INFO[MusicPlayer.offset(-7).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-7).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-7).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-7)</onclick>
+                            <visible>MusicPlayer.offset(-7).Exists</visible>
+                        </item>
+                        <item id="15">
+                            <label>$INFO[MusicPlayer.offset(-6).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-6).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-6).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-6)</onclick>
+                            <visible>MusicPlayer.offset(-6).Exists</visible>
+                        </item>
+                        <item id="16">
+                            <label>$INFO[MusicPlayer.offset(-5).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-5).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-5).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-5)</onclick>
+                            <visible>MusicPlayer.offset(-5).Exists</visible>
+                        </item>
+                        <item id="17">
+                            <label>$INFO[MusicPlayer.offset(-4).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-4).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-4).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-4)</onclick>
+                            <visible>MusicPlayer.offset(-4).Exists</visible>
+                        </item>
+                        <item id="18">
+                            <label>$INFO[MusicPlayer.offset(-3).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-3).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-3).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-3)</onclick>
+                            <visible>MusicPlayer.offset(-3).Exists</visible>
+                        </item>
+                        <item id="19">
+                            <label>$INFO[MusicPlayer.offset(-2).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-2).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-2).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-2)</onclick>
+                            <visible>MusicPlayer.offset(-2).Exists</visible>
+                        </item>
+                        <item id="20">
+                            <label>$INFO[MusicPlayer.offset(-1).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(-1).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(-1).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(-1)</onclick>
+                            <visible>MusicPlayer.offset(-1).Exists</visible>
+                        </item>
+                        
+                        <item id="21">
+                            <label>$INFO[MusicPlayer.offset(0).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(0).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(0).PlaylistPosition]</property>
+                            <property name="IsPlaying">1</property>
+                            <onclick>Playlist.PlayOffset(0)</onclick>
+                            <visible>MusicPlayer.offset(0).Exists</visible>
+                        </item>
+                        <item id="22">
+                            <label>$INFO[MusicPlayer.offset(1).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(1).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(1).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(1)</onclick>
+                            <visible>MusicPlayer.offset(1).Exists</visible>
+                        </item>
+                        <item id="23">
+                            <label>$INFO[MusicPlayer.offset(2).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(2).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(2).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(2)</onclick>
+                            <visible>MusicPlayer.offset(2).Exists</visible>
+                        </item>
+                        <item id="24">
+                            <label>$INFO[MusicPlayer.offset(3).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(3).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(3).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(3)</onclick>
+                            <visible>MusicPlayer.offset(3).Exists</visible>
+                        </item>
+                        <item id="25">
+                            <label>$INFO[MusicPlayer.offset(4).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(4).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(4).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(4)</onclick>
+                            <visible>MusicPlayer.offset(4).Exists</visible>
+                        </item>
+                        <item id="26">
+                            <label>$INFO[MusicPlayer.offset(5).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(5).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(5).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(5)</onclick>
+                            <visible>MusicPlayer.offset(5).Exists</visible>
+                        </item>
+                        <item id="27">
+                            <label>$INFO[MusicPlayer.offset(6).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(6).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(6).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(6)</onclick>
+                            <visible>MusicPlayer.offset(6).Exists</visible>
+                        </item>
+                        <item id="28">
+                            <label>$INFO[MusicPlayer.offset(7).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(7).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(7).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(7)</onclick>
+                            <visible>MusicPlayer.offset(7).Exists</visible>
+                        </item>
+                        <item id="29">
+                            <label>$INFO[MusicPlayer.offset(8).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(8).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(8).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(8)</onclick>
+                            <visible>MusicPlayer.offset(8).Exists</visible>
+                        </item>
+                        <item id="30">
+                            <label>$INFO[MusicPlayer.offset(9).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(9).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(9).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(9)</onclick>
+                            <visible>MusicPlayer.offset(9).Exists</visible>
+                        </item>
+                        <item id="31">
+                            <label>$INFO[MusicPlayer.offset(10).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(10).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(10).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(10)</onclick>
+                            <visible>MusicPlayer.offset(10).Exists</visible>
+                        </item>
+                        <item id="32">
+                            <label>$INFO[MusicPlayer.offset(11).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(11).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(11).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(11)</onclick>
+                            <visible>MusicPlayer.offset(11).Exists</visible>
+                        </item>
+                        <item id="33">
+                            <label>$INFO[MusicPlayer.offset(12).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(12).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(12).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(12)</onclick>
+                            <visible>MusicPlayer.offset(12).Exists</visible>
+                        </item>
+                        <item id="34">
+                            <label>$INFO[MusicPlayer.offset(13).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(13).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(13).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(13)</onclick>
+                            <visible>MusicPlayer.offset(13).Exists</visible>
+                        </item>
+                        <item id="35">
+                            <label>$INFO[MusicPlayer.offset(14).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(14).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(14).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(14)</onclick>
+                            <visible>MusicPlayer.offset(14).Exists</visible>
+                        </item>
+                        <item id="36">
+                            <label>$INFO[MusicPlayer.offset(15).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(15).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(15).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(15)</onclick>
+                            <visible>MusicPlayer.offset(15).Exists</visible>
+                        </item>
+                        <item id="37">
+                            <label>$INFO[MusicPlayer.offset(16).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(16).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(16).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(16)</onclick>
+                            <visible>MusicPlayer.offset(16).Exists</visible>
+                        </item>
+                        <item id="38">
+                            <label>$INFO[MusicPlayer.offset(17).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(17).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(17).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(17)</onclick>
+                            <visible>MusicPlayer.offset(17).Exists</visible>
+                        </item>
+                        <item id="39">
+                            <label>$INFO[MusicPlayer.offset(18).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(18).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(18).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(18)</onclick>
+                            <visible>MusicPlayer.offset(18).Exists</visible>
+                        </item>
+                        <item id="40">
+                            <label>$INFO[MusicPlayer.offset(19).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(19).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(19).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(19)</onclick>
+                            <visible>MusicPlayer.offset(19).Exists</visible>
+                        </item>
+                        <item id="41">
+                            <label>$INFO[MusicPlayer.offset(20).Title]</label>
+                            <label2>$INFO[MusicPlayer.offset(20).Duration]</label2>
+                            <property name="TrackNumber">$INFO[MusicPlayer.offset(20).PlaylistPosition]</property>
+                            <onclick>Playlist.PlayOffset(20)</onclick>
+                            <visible>MusicPlayer.offset(20).Exists</visible>
+                        </item>
+
+                    </content>
+                </control>
+            </control>
+
+            
+            <control type="group">
+                <height>64</height>
+                <bottom>64</bottom>
+                <width>642</width>
+                <control type="grouplist" id="101">
+                    <top>64</top>
+                    <left>-64</left>
+                    <right>-64</right>
+                    <height>64</height>
+                    <itemgap>16</itemgap>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <control type="button" id="1">
+                        <description>Repeat</description>
+                        <onclick>XBMC.PlayerControl(Repeat)</onclick>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus>noop</texturefocus>
+                        <texturenofocus>noop</texturenofocus>
+                    </control>
+
+                    <control type="group" id="501">
+                        <left>-64</left>
+                        <width>48</width>
+                        <height>48</height>
+                        <control type="image" description="repeat-one-nf">
+                            <width>48</width>
+                            <height>48</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/repeat-one.png</texture>
+                            <visible>Playlist.IsRepeatOne</visible>
+                            <visible>!Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-one-fo">
+                            <width>48</width>
+                            <height>48</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/repeat-one.png</texture>
+                            <visible>Playlist.IsRepeatOne</visible>
+                            <visible>Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-all-nf">
+                            <width>48</width>
+                            <height>48</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/repeat-all.png</texture>
+                            <visible>Playlist.IsRepeat</visible>
+                            <visible>!Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-all-fo">
+                            <width>48</width>
+                            <height>48</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/repeat-all.png</texture>
+                            <visible>Playlist.IsRepeat</visible>
+                            <visible>Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-off-nf">
+                            <width>48</width>
+                            <height>48</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/repeat-off.png</texture>
+                            <visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
+                            <visible>!Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-off-fo">
+                            <width>48</width>
+                            <height>48</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/repeat-off.png</texture>
+                            <visible>!Playlist.IsRepeatOne + !Playlist.IsRepeat</visible>
+                            <visible>Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-check-fo">
+                            <top>42</top>
+                            <left>42</left>
+                            <width>16</width>
+                            <height>16</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/minicheck.png</texture>
+                            <visible>Playlist.IsRepeat | Playlist.IsRepeatOne</visible>
+                            <visible>Control.HasFocus(1)</visible>
+                        </control>
+                        <control type="image" description="repeat-check-fo">
+                            <top>42</top>
+                            <left>42</left>
+                            <width>16</width>
+                            <height>16</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/minicheck.png</texture>
+                            <visible>Playlist.IsRepeat | Playlist.IsRepeatOne</visible>
+                            <visible>!Control.HasFocus(1)</visible>
+                        </control>
+                    </control>
+
+                    <control type="button" id="9001">
+                        <description>Playlist</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <onclick>Close</onclick>
+                        <onclick condition="Player.HasAudio">ActivateWindow(MusicPlaylist)</onclick>
+                        <onclick condition="Player.HasVideo">ActivateWindow(VideoPlaylist)</onclick>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/playlist.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/playlist.png</texturenofocus>
+                    </control>
+
+                    <control type="button" id="12">
+                        <description>Skip Back</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]" flipx="true">osd/next.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]" flipx="true">osd/next.png</texturenofocus>
+                        <onclick>PlayerControl(Previous)</onclick>
+                    </control>
+
+                    <control type="button" id="13">
+                        <description>Rewind</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]" flipx="true">osd/ff.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]" flipx="true">osd/ff.png</texturenofocus>
+                        <onclick>PlayerControl(Rewind)</onclick>
+                        <enable>Player.SeekEnabled</enable>
+                        <animation effect="fade" start="100" end="33" time="100" condition="!Player.SeekEnabled">Conditional</animation>
+                    </control>
+
+                    <control type="togglebutton" id="14">
+                        <description>Play/Pause</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <altlabel></altlabel>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/pause.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/pause.png</texturenofocus>
+                        <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                        <alttexturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/play.png</alttexturefocus>
+                        <alttexturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/play.png</alttexturenofocus>
+                        <onclick>PlayerControl(Play)</onclick>
+                        <enable>Player.PauseEnabled</enable>
+                        <animation effect="fade" start="100" end="33" time="100" condition="!Player.PauseEnabled">Conditional</animation>
+                    </control>
+
+                    <control type="button" id="15">
+                        <description>Stop</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/stop.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/stop.png</texturenofocus>
+                        <onclick>PlayerControl(Stop)</onclick>
+                        <onclick>Close</onclick>
+                    </control>
+
+                    <control type="button" id="16">
+                        <description>Fast Forward</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/ff.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/ff.png</texturenofocus>
+                        <onclick>PlayerControl(Forward)</onclick>
+                        <enable>Player.SeekEnabled</enable>
+                        <animation effect="fade" start="100" end="33" time="100" condition="!Player.SeekEnabled">Conditional</animation>
+                    </control>
+
+                    <control type="button" id="17">
+                        <description>Next</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/next.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/next.png</texturenofocus>
+                        <onclick>PlayerControl(Next)</onclick>
+                    </control>
+
+                    <control type="button" id="9002">
+                        <description>Visualisation</description>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <onclick>Close</onclick>
+                        <onclick condition="Player.HasAudio">ActivateWindow(Visualisation)</onclick>
+                        <onclick condition="Player.HasVideo">ActivateWindow(FullscreenVideo)</onclick>
+<!-- Modification Texturefocus -->                        
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/visualisation2.png</texturefocus>
+<!-- Modification Texturenfocus -->                          
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/visualisation2.png</texturenofocus>
+                    </control>
+
+                    <control type="button" id="6">
+                        <description>Random</description>
+                        <onclick>XBMC.PlayerControl(Random)</onclick>
+                        <width>48</width>
+                        <height>48</height>
+                        <label></label>
+                        <font>noop</font>
+                        <onup>9100</onup>
+                        <texturefocus colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/shuffle.png</texturefocus>
+                        <texturenofocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F.base)]">osd/shuffle.png</texturenofocus>
+                    </control>
+
+                    <control type="group" description="shuffle-check">
+                        <top>64</top>
+                        <right>380</right>
+                        <width>48</width>
+                        <height>48</height>
+                        <control type="image" description="shuffle-check-fo">
+                            <top>42</top>
+                            <left>-20</left>
+                            <width>16</width>
+                            <height>16</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/minicheck.png</texture>
+                            <visible>Playlist.IsRandom</visible>
+                            <visible>Control.HasFocus(6)</visible>
+                        </control>
+                        <control type="image" description="shuffle-check-fo">
+                            <top>42</top>
+                            <left>-20</left>
+                            <width>16</width>
+                            <height>16</height>
+                            <texture colordiffuse="$INFO[Skin.String(Color.B3Tag.base)]">osd/minicheck.png</texture>
+                            <visible>Playlist.IsRandom</visible>
+                            <visible>!Control.HasFocus(6)</visible>
+                        </control>
+                    </control>
+
+                    
+                </control>
+
+                
+            </control>
+        </control>
+    </controls>
 </window>
