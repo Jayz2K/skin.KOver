@@ -1079,3 +1079,8 @@ msgstr ""
 msgctxt "#31505"
 msgid "Similar Artists"
 msgstr ""
+
+msgctxt "#31506"
+msgid "Animation effect for Artist slideshow."
+msgstr ""
+
