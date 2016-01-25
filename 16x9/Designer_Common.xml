@@ -21,8 +21,8 @@
 				<pauseatend>10000</pauseatend>
 				<randomize>true</randomize>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !IsEmpty(Container(9000).ListItem.Property(background)) + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE)</visible>
-				<animation condition="True" time="10000" end="130" effect="zoom" pulse="true" easing="inout" tween="cubic" center="auto" start="110">Conditional</animation>
-				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation>			
+				<!--animation condition="True" time="10000" end="130" effect="zoom" pulse="true" easing="inout" tween="cubic" center="auto" start="110">Conditional</animation>
+				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation-->			
 			</control>				
 			<control type="multiimage">
 				<imagepath>$INFO[Window(Home).Property(BackgroundMEM)]</imagepath>
@@ -2831,58 +2831,7 @@
 					<aspectratio>scale</aspectratio>
 					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
 				</control>
-				<control type="group">
-					<right>0</right>
-					<top>0</top>
-					<width>100</width>
-					<height>100</height>
-					<control type="image">
-						<right>1</right>
-						<top>0</top>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-					</control>
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-						<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<right>6</right>
-						<top>6</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-						<visible>ListItem.IsResumable</visible>
-					</control>
-					<!-- Recording image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<!-- Timer image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>			
-
-				<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-				</control>
+				<include>ItemOverlay</include>
 				<control type="label">
 					<left>9</left>
 					<top>304</top>
@@ -2945,58 +2894,7 @@
 					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
 					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 				</control>
-				<control type="group">
-					<right>0</right>
-					<top>0</top>
-					<width>100</width>
-					<height>100</height>
-					<control type="image">
-						<right>1</right>
-						<top>0</top>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-					</control>
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-						<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<right>6</right>
-						<top>6</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-						<visible>ListItem.IsResumable</visible>
-					</control>
-					<!-- Recording image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<!-- Timer image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>			
-
-				<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-				</control>
+				<include>ItemOverlay</include>
 				<control type="label">
 					<left>12</left>
 					<posy>133</posy>
@@ -3151,58 +3049,7 @@
 					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
 					<visible>IsEmpty(ListItem.Property(ChannelName)) + IsEmpty(ListItem.ChannelName) + IsEmpty(ListItem.Property(labelID))</visible>
 				</control>
-				<control type="group">
-					<right>0</right>
-					<top>0</top>
-					<width>100</width>
-					<height>100</height>
-					<control type="image">
-						<right>1</right>
-						<top>0</top>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-					</control>
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-						<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<right>6</right>
-						<top>6</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-						<visible>ListItem.IsResumable</visible>
-					</control>
-					<!-- Recording image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<!-- Timer image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>			
-
-				<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-				</control>
+				<include>ItemOverlay</include>
 				<control type="label">
 					<left>9</left>
 					<top>304</top>
@@ -3273,58 +3120,7 @@
 					<texture background="true" colordiffuse="FFFFFFFF" fallback="material/tv.png">$VAR[ThumbTV]</texture>
 					<visible>!IsEmpty(ListItem.Property(ChannelName)) | !IsEmpty(ListItem.ChannelName)</visible>
 				</control>
-				<control type="group">
-					<right>0</right>
-					<top>0</top>
-					<width>100</width>
-					<height>100</height>
-					<control type="image">
-						<right>1</right>
-						<top>0</top>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-					</control>
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-						<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-					</control>
-					<control type="image">
-						<right>6</right>
-						<top>6</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-						<visible>ListItem.IsResumable</visible>
-					</control>
-					<!-- Recording image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-						<visible>ListItem.IsRecording</visible>
-					</control>
-					<!-- Timer image -->
-					<control type="image">
-						<right>5</right>
-						<top>5</top>
-						<width>25</width>
-						<height>25</height>
-						<aspectratio>scale</aspectratio>
-						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-					</control>			
-
-				<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-				</control>
+				<include>ItemOverlay</include>
 				<control type="label">
 					<left>12</left>
 					<posy>133</posy>
@@ -3470,58 +3266,7 @@
 				<aspectratio>scale</aspectratio>
 				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
 			</control>
-			<control type="group">
-				<right>0</right>
-				<top>0</top>
-				<width>100</width>
-				<height>100</height>
-				<control type="image">
-					<right>1</right>
-					<top>1</top>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-				</control>
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-					<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<!-- Recording image -->
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-					<visible>ListItem.IsRecording</visible>
-				</control>
-				<!-- Timer image -->
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-				</control>			
-
-			<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-			</control>
+			<include>ItemOverlay</include>
 			<control type="image">
 				<left>0</left>
 				<top>256</top>
@@ -3605,58 +3350,7 @@
 				<aspectratio>scale</aspectratio>
 				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbLandscape]</texture>
 			</control>
-			<control type="group">
-				<right>0</right>
-				<top>0</top>
-				<width>100</width>
-				<height>100</height>
-				<control type="image">
-					<right>1</right>
-					<top>1</top>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-				</control>
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-					<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<!-- Recording image -->
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-					<visible>ListItem.IsRecording</visible>
-				</control>
-				<!-- Timer image -->
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-				</control>			
-
-			<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-			</control>
+			<include>ItemOverlay</include>
 			<control type="image">
 				<left>0</left>
 				<top>256</top>
@@ -3769,6 +3463,7 @@
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
 					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
+					<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable | ListItem.IsRecording | ListItem.HasTimer</visible>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -3809,7 +3504,7 @@
 					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 				</control>			
 
-			<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
+				<visible>Skin.HasSetting(WatchedFlag)</visible>
 			</control>
 			<control type="label">
 				<left>275</left>
@@ -3922,6 +3617,7 @@
 					<top>0</top>
 					<aspectratio>scale</aspectratio>
 					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
+					<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable | ListItem.IsRecording | ListItem.HasTimer</visible>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -3962,7 +3658,7 @@
 					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 				</control>			
 
-			<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
+				<visible>Skin.HasSetting(WatchedFlag)</visible>
 			</control>
 			<control type="label">
 				<left>275</left>
@@ -4108,58 +3804,7 @@
 				<label>[UPPERCASE]$VAR[B1Title][/UPPERCASE]</label>
 				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
-			<control type="group">
-				<right>1</right>
-				<top>0</top>
-				<width>100</width>
-				<height>100</height>
-				<control type="image">
-					<right>0</right>
-					<top>0</top>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-				</control>
-				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-					<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<!-- Recording image -->
-				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-					<visible>ListItem.IsRecording</visible>
-				</control>
-				<!-- Timer image -->
-				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-				</control>			
-
-			<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-			</control>
+			<include>ItemOverlay</include>
 		</itemlayout>
 
 		<focusedlayout width="636" height="118">
@@ -4266,58 +3911,7 @@
 				<label>[UPPERCASE]$VAR[B1Title][/UPPERCASE]</label>
 				<visible>Skin.String($PARAM[CompPrefix].B1Typ,BANNER) + IsEmpty(ListItem.Art(banner)) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 			</control>
-			<control type="group">
-				<right>1</right>
-				<top>0</top>
-				<width>100</width>
-				<height>100</height>
-				<control type="image">
-					<right>0</right>
-					<top>0</top>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-				</control>
-				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-					<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
-				</control>
-				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-					<visible>ListItem.IsResumable</visible>
-				</control>
-				<!-- Recording image -->
-				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-					<visible>ListItem.IsRecording</visible>
-				</control>
-				<!-- Timer image -->
-				<control type="image">
-					<right>5</right>
-					<top>5</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-				</control>			
-
-			<visible>[Skin.HasSetting(WatchedFlag) + [Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(tvshows) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | ListItem.IsResumable] | ListItem.IsRecording | ListItem.HasTimer</visible>
-			</control>
+			<include>ItemOverlay</include>
 		</focusedlayout>
 	</include>
 	
@@ -4716,6 +4310,61 @@
 			</control>
 
 		</focusedlayout>
+	</include>
+
+	<include name="ItemOverlay">
+		<control type="group">
+			<right>1</right>
+			<top>0</top>
+			<width>100</width>
+			<height>100</height>
+			<control type="image">
+				<right>0</right>
+				<top>0</top>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
+				<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable | ListItem.IsRecording | ListItem.HasTimer</visible>
+			</control>
+			<control type="image">
+				<right>5</right>
+				<top>5</top>
+				<width>25</width>
+				<height>25</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
+				<visible>StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+			</control>
+			<control type="image">
+				<right>6</right>
+				<top>6</top>
+				<width>25</width>
+				<height>25</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
+				<visible>ListItem.IsResumable</visible>
+			</control>
+			<!-- Recording image -->
+			<control type="image">
+				<right>5</right>
+				<top>5</top>
+				<width>25</width>
+				<height>25</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
+				<visible>ListItem.IsRecording</visible>
+			</control>
+			<!-- Timer image -->
+			<control type="image">
+				<right>5</right>
+				<top>5</top>
+				<width>25</width>
+				<height>25</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
+				<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+			</control>			
+		<visible>Skin.HasSetting(WatchedFlag)</visible>
+		</control>
 	</include>
 		
 </includes>

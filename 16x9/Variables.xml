@@ -377,6 +377,7 @@
 
 	<variable name="ThumbPortrait">
 		<value condition="!IsEmpty(ListItem.ChannelName) + !IsEmpty(ListItem.Title)">http://localhost:52307/getpvrthumb&amp;title=$INFO[ListItem.Title]&amp;channel=$INFO[ListItem.ChannelName]&amp;type=poster,fanart,thumb</value>
+		<value condition="!IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.ChannelName)">$INFO[ListItem.Art(poster)]</value>
 		<value condition="!SubString(ListItem.Art(thumb),Default) + IsEmpty(ListItem.ChannelName) + !IsEmpty(Container.Content)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="SubString(ListItem.Label,jpg) | SubString(ListItem.Label,png) | SubString(ListItem.Label,gif) | SubString(ListItem.Label,bmp)">$INFO[ListItem.Art(thumb)]</value>
 		<value condition="!IsEmpty(ListItem.Property(LongDay))">$INFO[ListItem.Art(thumb)]</value>
