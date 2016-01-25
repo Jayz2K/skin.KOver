@@ -3472,7 +3472,7 @@
 					<height>25</height>
 					<aspectratio>scale</aspectratio>
 					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-					<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
+					<visible>StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
 				</control>
 				<control type="image">
 					<right>6</right>
@@ -3562,155 +3562,155 @@
 
 		<focusedlayout width="636" height="356">
 			<control type="group">
-			<control type="image">
-				<left>3</left>
-				<top>3</top>
-				<width>629</width>
-				<height>350</height>
-				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="22FFFFFF">common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>3</left>
-				<top>3</top>
-				<width>629</width>
-				<height>350</height>
-				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
-			</control>
-			<control type="image">
-				<left>3</left>
-				<top>3</top>
-				<width>235</width>
-				<height>350</height>
-				<align>center</align>
-				<aspectratio>scale</aspectratio>
-				<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
-			</control>
-			<control type="image">
-				<left>3</left>
-				<top>3</top>
-				<width>235</width>
-				<height>118</height>
-				<align>center</align>
-				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="AA000000">common/white.png</texture>
-				<visible>!IsEmpty(ListItem.ChannelName)</visible>
-			</control>
-			<control type="image">
-				<left>3</left>
-				<top>18</top>
-				<width>235</width>
-				<height>80</height>
-				<align>center</align>
-				<aspectratio>keep</aspectratio>
-				<texture background="true" colordiffuse="FFFFFFFF" fallback="tv.png">$INFO[ListItem.ActualIcon]</texture>
-				<visible>!IsEmpty(ListItem.ChannelName)</visible>
-			</control>
-			<control type="group">
-				<right>3</right>
-				<top>3</top>
-				<width>100</width>
-				<height>100</height>
 				<control type="image">
-					<right>1</right>
-					<top>0</top>
+					<left>3</left>
+					<top>3</top>
+					<width>629</width>
+					<height>350</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
-					<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable | ListItem.IsRecording | ListItem.HasTimer</visible>
+					<texture colordiffuse="22FFFFFF">common/white.png</texture>
 				</control>
 				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
+					<left>3</left>
+					<top>3</top>
+					<width>629</width>
+					<height>350</height>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-					<visible>!ListItem.HasTimer + !ListItem.IsRecording + !ListItem.IsResumable</visible>
+					<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
 				</control>
 				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
+					<left>3</left>
+					<top>3</top>
+					<width>235</width>
+					<height>350</height>
+					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
-					<visible>ListItem.IsResumable</visible>
+					<texture background="true" colordiffuse="FFFFFFFF">$VAR[ThumbPortrait]</texture>
 				</control>
-				<!-- Recording image -->
 				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
+					<left>3</left>
+					<top>3</top>
+					<width>235</width>
+					<height>118</height>
+					<align>center</align>
 					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
-					<visible>ListItem.IsRecording</visible>
+					<texture colordiffuse="AA000000">common/white.png</texture>
+					<visible>!IsEmpty(ListItem.ChannelName)</visible>
 				</control>
-				<!-- Timer image -->
 				<control type="image">
-					<right>6</right>
-					<top>6</top>
-					<width>25</width>
-					<height>25</height>
-					<aspectratio>scale</aspectratio>
-					<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
-					<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
-				</control>			
+					<left>3</left>
+					<top>18</top>
+					<width>235</width>
+					<height>80</height>
+					<align>center</align>
+					<aspectratio>keep</aspectratio>
+					<texture background="true" colordiffuse="FFFFFFFF" fallback="tv.png">$INFO[ListItem.ActualIcon]</texture>
+					<visible>!IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="group">
+					<right>3</right>
+					<top>3</top>
+					<width>100</width>
+					<height>100</height>
+					<control type="image">
+						<right>1</right>
+						<top>0</top>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$VAR[CategoryColor]">common/corner.png</texture>
+						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) | ListItem.IsResumable | ListItem.IsRecording | ListItem.HasTimer</visible>
+					</control>
+					<control type="image">
+						<right>6</right>
+						<top>6</top>
+						<width>25</width>
+						<height>25</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
+						<visible>StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+					</control>
+					<control type="image">
+						<right>6</right>
+						<top>6</top>
+						<width>25</width>
+						<height>25</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/pause.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<!-- Recording image -->
+					<control type="image">
+						<right>6</right>
+						<top>6</top>
+						<width>25</width>
+						<height>25</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">osd/record.png</texture>
+						<visible>ListItem.IsRecording</visible>
+					</control>
+					<!-- Timer image -->
+					<control type="image">
+						<right>6</right>
+						<top>6</top>
+						<width>25</width>
+						<height>25</height>
+						<aspectratio>scale</aspectratio>
+						<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/clock.png</texture>
+						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
+					</control>			
 
-				<visible>Skin.HasSetting(WatchedFlag)</visible>
-			</control>
-			<control type="label">
-				<left>275</left>
-				<top>13</top>
-				<width>310</width>
-				<height>60</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>Font36R</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-				<label>$VAR[B1Title]</label>
-			</control>
-			<control type="label">
-				<top>46</top>
-				<left>275</left>
-				<width>310</width>
-				<height>60</height>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>FontSmallR</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-				<label fallback="19499">$VAR[B2SubTitle]</label>
-			</control>			
-			<control type="textbox">
-				<left>275</left>
-				<top>160</top>
-				<width>310</width>
-				<height>165</height>
-				<font>FontSmall</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
-				<label fallback="19055">$VAR[B2Plot]</label>
-			</control>
-			<control type="image">
-				<description>Rating value</description>
-				<left>275</left>
-				<posy>98</posy>
-				<width>100</width>
-				<height>20</height>
-				<aspectratio align="left">keep</aspectratio>
-				<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
-				<visible>IsEmpty(ListItem.ChannelName)</visible>
-			</control>
-			<control type="label">
-				<left>275</left>
-				<posy>98</posy>
-				<width>310</width>
-				<height>20</height>
-				<font>FontSmallR</font>
-				<label>$VAR[B1SubTitle]</label>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-				<visible>!IsEmpty(ListItem.ChannelName)</visible>
-			</control>
+					<visible>Skin.HasSetting(WatchedFlag)</visible>
+				</control>
+				<control type="label">
+					<left>275</left>
+					<top>13</top>
+					<width>310</width>
+					<height>60</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>Font36R</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<label>$VAR[B1Title]</label>
+				</control>
+				<control type="label">
+					<top>46</top>
+					<left>275</left>
+					<width>310</width>
+					<height>60</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>FontSmallR</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+					<label fallback="19499">$VAR[B2SubTitle]</label>
+				</control>			
+				<control type="textbox">
+					<left>275</left>
+					<top>160</top>
+					<width>310</width>
+					<height>165</height>
+					<font>FontSmall</font>
+					<textcolor>$INFO[Skin.String(Color.B1Txt2F)]</textcolor>
+					<label fallback="19055">$VAR[B2Plot]</label>
+				</control>
+				<control type="image">
+					<description>Rating value</description>
+					<left>275</left>
+					<posy>98</posy>
+					<width>100</width>
+					<height>20</height>
+					<aspectratio align="left">keep</aspectratio>
+					<texture colordiffuse="$VAR[CategoryColor]" fallback="rating0.png">$INFO[ListItem.StarRating,]</texture>
+					<visible>IsEmpty(ListItem.ChannelName)</visible>
+				</control>
+				<control type="label">
+					<left>275</left>
+					<posy>98</posy>
+					<width>310</width>
+					<height>20</height>
+					<font>FontSmallR</font>
+					<label>$VAR[B1SubTitle]</label>
+					<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+					<visible>!IsEmpty(ListItem.ChannelName)</visible>
+				</control>
 			</control>
 		</focusedlayout>
 	</include>
