@@ -62,13 +62,25 @@
 						<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
 						<label>$INFO[Player.Time] / $INFO[Player.Duration]</label>
 					</control>
+					<control type="progress">
+						<left>142</left>
+						<top>80</top>
+						<width>458</width>
+						<height>10</height>
+						<info>Player.ProgressCache</info>
+						<texturebg colordiffuse="$INFO[Skin.String(Color.B1Txt2NF)]">common/white.png</texturebg>
+						<lefttexture>-</lefttexture>
+						<midtexture colordiffuse="$INFO[Skin.String(Color.B1Txt1NF)]">common/white.png</midtexture>
+						<righttexture>-</righttexture>
+						<overlaytexture>-</overlaytexture>
+					</control>		
 					<control type="progress" id="1">
 						<left>142</left>
 						<top>80</top>
 						<width>458</width>
 						<height>10</height>
 						<info>Player.Progress</info>
-						<texturebg colordiffuse="$INFO[Skin.String(Color.B1Txt2NF)]">common/white.png</texturebg>
+						<texturebg colordiffuse="00ffffff">common/white.png</texturebg>
 						<lefttexture>-</lefttexture>
 						<midtexture colordiffuse="$VAR[CategoryColor]">common/white.png</midtexture>
 						<righttexture>-</righttexture>
