@@ -916,7 +916,7 @@
 				<height>357</height>
 
 				<!-- List -->
-				<control type="list" id="3">
+				<control type="panel" id="3">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -994,7 +994,7 @@
 				</control>
 
 				<!-- List -->
-				<control type="list" id="6">
+				<control type="panel" id="6">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -1180,7 +1180,7 @@
 				<width>636</width>
 
 				<!-- List -->
-				<control type="list" id="450">
+				<control type="panel" id="450">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -1260,7 +1260,7 @@
 
 				<!-- List -->
 
-				<control type="list" id="451">
+				<control type="panel" id="451">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -1855,7 +1855,7 @@
 				<width>636</width>
 				
 				<!-- Path list -->
-				<control type="list" id="10">
+				<control type="panel" id="10">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -1931,7 +1931,7 @@
 				<width>636</width>
 				
 				<!-- Main list -->
-				<control type="list" id="300">
+				<control type="panel" id="300">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -2645,7 +2645,7 @@
 					</control>							
 
 					<!-- Scraper list -->
-					<control type="list" id="21">
+					<control type="panel" id="21">
 						<width>588</width>
 						<height>183</height>
 						<onleft>noop</onleft>
@@ -3300,7 +3300,7 @@
 				</control>				
 
 				<!-- Grouped channels -->
-				<control type="list" id="12">
+				<control type="panel" id="12">
 					<left>24</left>
 					<top>85</top>
 					<onup>noop</onup>
@@ -3386,7 +3386,7 @@
 				</control>				
 
 				<!-- UnGrouped channels -->
-				<control type="list" id="11">
+				<control type="panel" id="11">
 					<left>24</left>
 					<top>85</top>
 					<onup>noop</onup>
@@ -3617,7 +3617,7 @@
 				<width>636</width>
 
 				<!-- Grouped channels -->
-				<control type="list" id="20">
+				<control type="panel" id="20">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -4486,7 +4486,7 @@
 				<width>636</width>
 
 				<!-- Main List -->
-				<control type="list" id="450">
+				<control type="panel" id="450">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -4752,7 +4752,7 @@
 				<width>636</width>
 
 				<!-- Rules list -->
-				<control type="list" id="10">
+				<control type="panel" id="10">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -5118,7 +5118,7 @@
 				<width>636</width>
 
 				<!-- Rules list -->
-				<control type="list" id="150">
+				<control type="panel" id="150">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -5191,7 +5191,7 @@
 				<width>636</width>
 
 				<!-- Rules list -->
-				<control type="list" id="120">
+				<control type="panel" id="120">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -5480,7 +5480,7 @@
 				<height>$PARAM[DIAB2SizeY]</height>
 
 				<!-- Channels list -->
-				<control type="list" id="11">
+				<control type="panel" id="11">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -5839,7 +5839,7 @@
 				<width>636</width>
 
 				<!-- Guide list -->
-				<control type="list" id="11">
+				<control type="panel" id="11">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -5965,7 +5965,7 @@
 				</control>	
 
 				<!-- Browser -->
-				<control type="list" id="50">
+				<control type="panel" id="50">
 					<left>24</left>
 					<top>85</top>
 					<onup>noop</onup>
@@ -6119,7 +6119,7 @@
 				</control>	
 
 				<!-- Playlist -->
-				<control type="list" id="100">
+				<control type="panel" id="100">
 					<left>24</left>
 					<top>85</top>
 					<onup>noop</onup>
@@ -6382,7 +6382,7 @@
 				</control>	
 
 				<!-- Browser -->
-				<control type="list" id="20">
+				<control type="panel" id="20">
 					<left>24</left>
 					<top>85</top>
 					<onup>noop</onup>
@@ -6535,7 +6535,7 @@
 				</control>	
 
 				<!-- Browser -->
-				<control type="list" id="21">
+				<control type="panel" id="21">
 					<left>24</left>
 					<top>85</top>
 					<onup>noop</onup>
@@ -6787,7 +6787,7 @@
 				<width>636</width>
 
 				<!-- Browser -->
-				<control type="list" id="2">
+				<control type="panel" id="2">
 					<left>24</left>
 					<top>24</top>
 					<onup>noop</onup>
@@ -9300,7 +9300,7 @@
 				<width>636</width>		
 
 				<!-- Sub list -->
-				<control type="list" id="300">
+				<control type="panel" id="300">
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
