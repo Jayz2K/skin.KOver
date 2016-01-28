@@ -37,7 +37,7 @@
 				<visible>Player.HasAudio + [[StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View1) + Skin.String(HOM.View1.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View2) + Skin.String(HOM.View2.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View3) + Skin.String(HOM.View3.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View4) + Skin.String(HOM.View4.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View5) + Skin.String(HOM.View5.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View6) + Skin.String(HOM.View6.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View7) + Skin.String(HOM.View7.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View8) + Skin.String(HOM.View8.WPVDOTop,VISIBLE)] | [StringCompare(Container(9000).ListItem.Property(viewtype),HOM.View9) + Skin.String(HOM.View9.WPVDOTop,VISIBLE)]] + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]]</visible>
 			</control>
 			<control type="multiimage">
-				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<imagepath background="true">$VAR[AddonsBkg]</imagepath>
 				<aspectratio>scale</aspectratio>
 				<timeperimage>10000</timeperimage>
 				<fadetime>2000</fadetime>

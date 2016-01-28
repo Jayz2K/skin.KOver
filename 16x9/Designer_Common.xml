@@ -57,7 +57,7 @@
 				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]]</visible>
 			</control>
 			<control type="multiimage">
-				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
+				<imagepath background="true">$VAR[AddonsBkg]</imagepath>
 				<aspectratio>scale</aspectratio>
 				<timeperimage>10000</timeperimage>
 				<fadetime>2000</fadetime>

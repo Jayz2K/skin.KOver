@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="AddonsBkg">
+		<value condition="!IsEmpty(Window(Visualisation).Property(ArtistSlideshow))">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</value>
+		<value condition="IsEmpty(Window(Visualisation).Property(ArtistSlideshow))">$INFO[ListItem.Art(fanart)]</value>
+	</variable>
+
 	<variable name="DesignerValueTranslator">
 		<value condition="StringCompare(Container(9300).ListItem.Label2,VISIBLE)">Visible</value>
 		<value condition="StringCompare(Container(9300).ListItem.Label2,IDLEFADE)">Idle Fade</value>
