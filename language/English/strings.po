@@ -998,6 +998,22 @@ msgctxt "#31243"
 msgid "Run Designer in safe mode (Designer V1)"
 msgstr ""
 
+msgctxt "#31244"
+msgid "Install TvTunes"
+msgstr ""
+
+msgctxt "#31245"
+msgid "Audio / Video themes"
+msgstr ""
+
+msgctxt "#31246"
+msgid "Image ressource (studios) allows KOver to display studios logos in movies / shows infos."
+msgstr ""
+
+msgctxt "#31247"
+msgid "TvTunes allows KOver to play audio video theme in movies / tv shows library."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

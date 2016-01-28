@@ -1372,6 +1372,13 @@
 			<onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
 			<visible>System.HasAddon(script.artwork.downloader) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
 		</item>
+		<!-- TvTunes -->
+		<item>
+			<label>31245</label>
+			<icon>DefaultMusicAlbums.png</icon>
+			<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
+			<visible>SySystem.HasAddon(script.tvtunes) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+		</item>
 	</include>	
 
 	<include name="PVRGuideInfoList">
