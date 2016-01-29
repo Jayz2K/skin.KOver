@@ -1377,7 +1377,7 @@
 			<label>31245</label>
 			<icon>DefaultMusicAlbums.png</icon>
 			<onclick>RunScript(script.tvtunes,mode=solo)</onclick>
-			<visible>SySystem.HasAddon(script.tvtunes) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+			<visible>System.HasAddon(script.tvtunes) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
 		</item>
 	</include>	
 
