@@ -116,6 +116,11 @@
 				<animation effect="slide" start="0,0" end="0,960" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + Skin.String(HomeSize,DEFAULT)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,890" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + Skin.String(HomeSize,MEDIUM)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="0,672" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) + Skin.String(HomeSize,LARGE)">Conditional</animation>
+				<onfocus>ClearProperty(DialogVisibility,Home)</onfocus>
+				<onfocus>ClearProperty(DialogVisibility2,Home)</onfocus>
+				<onfocus>ClearProperty(DialogVisibility3,Home)</onfocus>
+				<onfocus>ClearProperty(DialogVisibility4,Home)</onfocus>
+				<onfocus>ClearProperty(DialogVisibility5,Home)</onfocus>
 
 				<itemlayout width="80" height="80" condition="Skin.String(HomeSize,DEFAULT) | IsEmpty(Skin.String(HomeSize))">
 					<control type="image">
