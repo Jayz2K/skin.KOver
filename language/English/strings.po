@@ -1014,6 +1014,10 @@ msgctxt "#31247"
 msgid "TvTunes allows KOver to play audio / video themes in movies and tv shows libraries."
 msgstr ""
 
+msgctxt "#31248"
+msgid "Fallback[CR]Picture"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

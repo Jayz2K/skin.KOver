@@ -2500,7 +2500,7 @@
 							<icon></icon>
 							<thumb>$VAR[BItypeIcon]</thumb>
 							<!--visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + !StringCompare(Container(9000).ListItem.Property(SectionName),TV) + !StringCompare(Container(9000).ListItem.Property(SectionName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(SectionName),HOM)]</visible-->
-							<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + !StringCompare(Container(9000).ListItem.Property(SectionName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(SectionName),HOM)]</visible>
+							<visible>StringCompare(Container(9200).ListItem.Property(SubName),B1) | [StringCompare(Container(9200).ListItem.Property(SubName),B3) + !StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + !StringCompare(Container(9000).ListItem.Property(SectionName),PIC)] | [StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9000).ListItem.Property(SectionName),HOM)] | [StringCompare(Container(9200).ListItem.Property(SubName),B4) + !StringCompare(Container(9000).ListItem.Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
 
 							<include>OnclickProps</include>
