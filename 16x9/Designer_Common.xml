@@ -6,12 +6,12 @@
 		<control type="group">
 			<control type="image">
 				<texture background="true" colordiffuse="$INFO[Skin.String(Color.WP)]">common/white.png</texture>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)]</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]]</visible>
 			</control>
 			<control type="image">
 				<texture background="true">$INFO[Skin.String($PARAM[CompPrefix].WPPic)]</texture>
 				<aspectratio>scale</aspectratio>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE) + !IsEmpty(Skin.String($PARAM[CompPrefix].WPPic))</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]] + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE) + !IsEmpty(Skin.String($PARAM[CompPrefix].WPPic))</visible>
 			</control>	
 			<control type="multiimage">
 				<imagepath>$INFO[Container(9000).ListItem.Property(background)]</imagepath>
@@ -20,7 +20,7 @@
 				<fadetime>2000</fadetime>
 				<pauseatend>10000</pauseatend>
 				<randomize>true</randomize>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + !IsEmpty(Container(9000).ListItem.Property(background)) + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE)</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]] + !IsEmpty(Container(9000).ListItem.Property(background)) + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE)</visible>
 				<!--animation condition="True" time="10000" end="130" effect="zoom" pulse="true" easing="inout" tween="cubic" center="auto" start="110">Conditional</animation>
 				<animation condition="True" time="5000" end="10,10" effect="slide" pulse="true" easing="inout" tween="cubic" start="-10,-10">Conditional</animation-->			
 			</control>				
@@ -38,20 +38,20 @@
 			<control type="image">
 				<texture background="true">$INFO[ListItem.Art(fanart)]</texture>
 				<aspectratio>scale</aspectratio>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(ListItem.Art(fanart))</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]] + Skin.String($PARAM[CompPrefix].WPBgs,FANART) + !IsEmpty(ListItem.Art(fanart))</visible>
 			</control>
 			<control type="image">
 				<texture background="true">$VAR[WPFanart]</texture>
 				<aspectratio>scale</aspectratio>
-				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)] + Skin.String($PARAM[CompPrefix].WPBgs,FANART)</visible>
+				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]] + Skin.String($PARAM[CompPrefix].WPBgs,FANART)</visible>
 			</control>
 			<control type="image">
 				<texture>common/white.png</texture>
 				<colordiffuse>FF000000</colordiffuse>
-				<visible>[Player.HasVideo | Player.HasAudio] + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))</visible>
+				<visible>[Player.HasVideo | Player.HasAudio] + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | !Skin.HasSetting(TvTunesNoBackground)]</visible>
 			</control>
 			<control type="videowindow">
-				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE)</visible>
+				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + !Skin.HasSetting(TvTunesNoBackground)</visible>
 			</control>
 			<control type="visualisation">
 				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))</visible>

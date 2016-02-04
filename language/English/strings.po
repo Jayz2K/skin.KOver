@@ -851,11 +851,11 @@ msgid "Install Artist Slideshow ..."
 msgstr ""
 
 msgctxt "#31207"
-msgid "Show Artist Slideshow as background when music is playing."
+msgid "- Show Artist Slideshow as background when music is playing."
 msgstr ""
 
 msgctxt "#31208"
-msgid "Show visualisation effect over Artist slideshow."
+msgid "- Show visualisation effect over Artist slideshow."
 msgstr ""
 
 msgctxt "#31209"
@@ -1016,6 +1016,14 @@ msgstr ""
 
 msgctxt "#31248"
 msgid "Fallback[CR]Picture"
+msgstr ""
+
+msgctxt "#31249"
+msgid "- Hide TvTunes video theme as fullscreen background."
+msgstr ""
+
+msgctxt "#31250"
+msgid "This prevent video playback to show as fullscreen background while browsing library. Useful when already set in Designer Bloc 4 to keep picture instead. This only applies to TvTunes video themes."
 msgstr ""
 
 #Settings strings

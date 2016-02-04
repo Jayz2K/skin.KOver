@@ -2,12 +2,13 @@
 <settings>
 
 <!-- Bloc Visibility option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="VISIBLE" label="Visible" condition="" icon="material/designervisibility.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="HIDDEN" label="Hidden" condition="" icon="material/designervisibility.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="VISIBLE" label="Visible" condition="!StringCompare(Window(Home).Property(SubName),B4) | [StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(SectionName),HOM)[" icon="material/designervisibility.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="IDLEFADE" label="IdleFade" condition="" icon="material/designervisibility.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ISPLAYING" label="IsPlaying" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="material/designervisibility.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="TVTUNES" label="TvTunes" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM) + System.HasAddon(script.tvtunes)" icon="material/designervisibility.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ONFOCUS" label="OnFocus" condition="StringCompare(Window(Home).Property(SubName),B5)" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="HIDDEN" label="Hidden" condition="" icon="material/designervisibility.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="FALLBACK" label="Fallback" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="material/designervisibility.png" description=""/>
 
 <!-- Blocs Horizontal Coordinates option -->
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="A" label="A" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="material/designerposx.png" description="">
@@ -398,7 +399,7 @@
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="BANNER" label="Banner" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="THUMB" label="Thumb" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARART" label="Clear Art" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CEARLOGO" label="Cear Logo" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARLOGO" label="Cear Logo" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DISCART" label="Disc Art" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="LANDSCAPE" label="Landscape" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM1" label="Custom1" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description=""/>

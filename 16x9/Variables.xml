@@ -97,6 +97,7 @@
 		<value condition="Control.HasFocus(9403)">$LOCALIZE[31203]</value>
 		<value condition="Control.HasFocus(9404)">$LOCALIZE[31246]</value>
 		<value condition="Control.HasFocus(9405)">$LOCALIZE[31247]</value>
+		<value condition="Control.HasFocus(9406)">$LOCALIZE[31250]</value>
 	</variable>
 
 	<variable name="ShortcutValue">

@@ -485,62 +485,6 @@
 				</control>	
 
 				<!-- Separator -->
-				<control type="image" id="9108">
-					<width>1086</width>
-					<height>60</height>
-					<texture colordiffuse="$INFO[Skin.String(Color.SETItemNF)]">common/divider.png</texture>
-					<visible>System.HasAddon(script.artistslideshow)</visible>
-				</control>
-
-				<!-- Enable Artist Slideshow -->
-				<control type="radiobutton" id="9109">
-					<label>31207</label>
-					<width>1086</width>
-					<height>60</height>
-					<font>Font27</font>
-					<textwidth>auto</textwidth>
-					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
-					<radiowidth>30</radiowidth>
-					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
-					<visible>System.HasAddon(script.artistslideshow)</visible>
-					<onclick>Skin.ToggleSetting(ArtistslideShow)</onclick>
-					<selected>Skin.HasSetting(ArtistslideShow)</selected>
-				</control>	
-
-				<!-- Show visualisation over slideshow -->
-				<control type="radiobutton" id="9110">
-					<label>31208</label>
-					<width>1086</width>
-					<height>60</height>
-					<font>Font27</font>
-					<textwidth>auto</textwidth>
-					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
-					<radiowidth>30</radiowidth>
-					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
-					<visible>Skin.HasSetting(ArtistslideShow) + System.HasAddon(script.artistslideshow)</visible>
-					<onclick>Skin.ToggleSetting(VisualisationShow)</onclick>
-					<selected>Skin.HasSetting(VisualisationShow)</selected>
-				</control>	
-
-				<!-- Separator -->
 				<control type="image" id="9111">
 					<width>1086</width>
 					<height>60</height>
@@ -1050,6 +994,54 @@
 				    <selected>System.HasAddon(script.artwork.downloader)</selected>
 				</control> 
 
+				<!-- Enable Artist Slideshow -->
+				<control type="radiobutton" id="9109">
+					<label>31207</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<visible>System.HasAddon(script.artistslideshow)</visible>
+					<onclick>Skin.ToggleSetting(ArtistslideShow)</onclick>
+					<selected>Skin.HasSetting(ArtistslideShow)</selected>
+				</control>	
+
+				<!-- Show visualisation over slideshow -->
+				<control type="radiobutton" id="9110">
+					<label>31208</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<visible>Skin.HasSetting(ArtistslideShow) + System.HasAddon(script.artistslideshow)</visible>
+					<onclick>Skin.ToggleSetting(VisualisationShow)</onclick>
+					<selected>Skin.HasSetting(VisualisationShow)</selected>
+				</control>	
+
 				<!-- Activate Artist Slideshow -->
 				<control type="radiobutton" id="9403">
 				    <label>31206</label>
@@ -1118,6 +1110,30 @@
 				    <onclick condition="!System.HasAddon(script.tvtunes)">RunPlugin(plugin://script.tvtunes)</onclick>
 				    <selected>System.HasAddon(script.tvtunes)</selected>
 				</control> 
+
+				<!-- Show TvTunes Video fullscreen -->
+				<control type="radiobutton" id="9406">
+					<label>31249</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+					<visible>System.HasAddon(script.tvtunes)</visible>
+					<onclick>Skin.ToggleSetting(TvTunesNoBackground)</onclick>
+					<selected>Skin.HasSetting(TvTunesNoBackground)</selected>
+				</control>	
 
 			</control>
 
