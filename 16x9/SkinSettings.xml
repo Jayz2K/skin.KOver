@@ -994,6 +994,29 @@
 				    <selected>System.HasAddon(script.artwork.downloader)</selected>
 				</control> 
 
+				<!-- Activate Artist Slideshow -->
+				<control type="radiobutton" id="9403">
+				    <label>31206</label>
+					<width>1086</width>
+					<height>60</height>
+					<font>Font27</font>
+					<textwidth>auto</textwidth>
+					<textoffsetx>24</textoffsetx>
+					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
+					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
+					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
+					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
+					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
+					<radiowidth>30</radiowidth>
+					<radioheight>30</radioheight>
+					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
+					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
+					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
+				    <onclick condition="!System.HasAddon(script.artistslideshow)">RunPlugin(plugin://script.artistslideshow)</onclick>
+				    <selected>System.HasAddon(script.artistslideshow)</selected>
+				</control> 
+
 				<!-- Enable Artist Slideshow -->
 				<control type="radiobutton" id="9109">
 					<label>31207</label>
@@ -1040,30 +1063,7 @@
 					<visible>Skin.HasSetting(ArtistslideShow) + System.HasAddon(script.artistslideshow)</visible>
 					<onclick>Skin.ToggleSetting(VisualisationShow)</onclick>
 					<selected>Skin.HasSetting(VisualisationShow)</selected>
-				</control>	
-
-				<!-- Activate Artist Slideshow -->
-				<control type="radiobutton" id="9403">
-				    <label>31206</label>
-					<width>1086</width>
-					<height>60</height>
-					<font>Font27</font>
-					<textwidth>auto</textwidth>
-					<textoffsetx>24</textoffsetx>
-					<texturefocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">common/white.png</texturefocus>
-					<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-					<textureradioonfocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radioon.png</textureradioonfocus>
-					<textureradioonnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radioon.png</textureradioonnofocus>
-					<textureradioofffocus colordiffuse="$INFO[Skin.String(Color.SETTxt1F)]">material/radiooff.png</textureradioofffocus>
-					<textureradiooffnofocus colordiffuse="$INFO[Skin.String(Color.SETItemF)]">material/radiooff.png</textureradiooffnofocus>
-					<radiowidth>30</radiowidth>
-					<radioheight>30</radioheight>
-					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
-					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
-					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
-				    <onclick condition="!System.HasAddon(script.artistslideshow)">RunPlugin(plugin://script.artistslideshow)</onclick>
-				    <selected>System.HasAddon(script.artistslideshow)</selected>
-				</control> 
+				</control>
 
 				<!-- Activate Studios Images -->
 				<control type="radiobutton" id="9404">

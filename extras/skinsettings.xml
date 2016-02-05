@@ -2,13 +2,13 @@
 <settings>
 
 <!-- Bloc Visibility option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="HIDDEN" label="Hidden" condition="" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="VISIBLE" label="Visible" condition="!StringCompare(Window(Home).Property(SubName),B4) | [StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(SectionName),HOM)[" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="IDLEFADE" label="IdleFade" condition="" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ISPLAYING" label="IsPlaying" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="TVTUNES" label="TvTunes" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM) + System.HasAddon(script.tvtunes)" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ONFOCUS" label="OnFocus" condition="StringCompare(Window(Home).Property(SubName),B5)" icon="material/designervisibility.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="FALLBACK" label="Fallback" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="material/designervisibility.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="HIDDEN" label="Hidden" condition="" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="VISIBLE" label="Visible" condition="!StringCompare(Window(Home).Property(SubName),B4) | [StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(SectionName),HOM)]" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="IDLEFADE" label="IdleFade" condition="" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ISPLAYING" label="IsPlaying" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="TVTUNES" label="TvTunes" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM) + System.HasAddon(script.tvtunes)" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="ONFOCUS" label="OnFocus" condition="StringCompare(Window(Home).Property(SubName),B5)" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="FALLBACK" label="Fallback" condition="StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>
 
 <!-- Blocs Horizontal Coordinates option -->
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,CoordX]" value="A" label="A" condition="StringCompare(Window(Home).Property(SubName),BB)" icon="material/designerposx.png" description="">
@@ -375,39 +375,39 @@
 	</setting>	
 
 <!-- Background Style option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="COLOR" label="Color" condition="" icon="material/designerbgstyle.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="IMAGE" label="Image" condition="" icon="material/designerbgstyle.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="FANART" label="Fanart" condition="StringCompare(Window(Home).Property(SubName),WP)" icon="material/designerbgstyle.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="COLOR" label="Color" condition="" icon="material/designerbgstyle.png" description="$LOCALIZE[31113]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="IMAGE" label="Image" condition="" icon="material/designerbgstyle.png" description="$LOCALIZE[31113]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Bgs]" value="FANART" label="Fanart" condition="StringCompare(Window(Home).Property(SubName),WP)" icon="material/designerbgstyle.png" description="$LOCALIZE[31113]"/>
 
 <!-- Video on Top option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,VDOTop]" value="VISIBLE" label="Visible" condition="" icon="material/designervideotop.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,VDOTop]" value="HIDDEN" label="Hidden" condition="" icon="material/designervideotop.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,VDOTop]" value="VISIBLE" label="Visible" condition="" icon="material/designervideotop.png" description="$LOCALIZE[31116]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,VDOTop]" value="HIDDEN" label="Hidden" condition="" icon="material/designervideotop.png" description="$LOCALIZE[31116]"/>
 
 <!-- Lists Type option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DEFAULT" label="Default" condition="StringCompare(Window(Home).Property(SubName),B3)" icon="material/designerpictures.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DEFAULT" label="Default" condition="StringCompare(Window(Home).Property(SubName),B3)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]">
 		<onselect condition="True">Skin.Reset($INFO[Window(Home).Property(IDPrefix),,Typ])</onselect>
 	</setting>	
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="NONE" label="None" condition="StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="WIDELIST" label="Wide List" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="TILES" label="Tiles" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FANART" label="Fanart" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FANART" label="Fanart" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CARD" label="Card" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="POSTER" label="Poster" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="POSTER" label="Poster" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FIXEDLIST" label="Fixed List" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="BANNER" label="Banner" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="THUMB" label="Thumb" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARART" label="Clear Art" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARLOGO" label="Cear Logo" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DISCART" label="Disc Art" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="LANDSCAPE" label="Landscape" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM1" label="Custom1" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM2" label="Custom2" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM3" label="Custom3" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="NONE" label="None" condition="StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="WIDELIST" label="Wide List" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="TILES" label="Tiles" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FANART" label="Fanart" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FANART" label="Fanart" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CARD" label="Card" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="POSTER" label="Poster" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="POSTER" label="Poster" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="FIXEDLIST" label="Fixed List" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="BANNER" label="Banner" condition="!StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="THUMB" label="Thumb" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARART" label="Clear Art" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CLEARLOGO" label="Cear Logo" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="DISCART" label="Disc Art" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="LANDSCAPE" label="Landscape" condition="StringCompare(Window(Home).Property(SubName),B3) | StringCompare(Window(Home).Property(SubName),B4) + System.HasAddon(script.artwork.downloader)" icon="material/designerpictures.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM1" label="Custom1" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM2" label="Custom2" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Typ]" value="CUSTOM3" label="Custom3" condition="StringCompare(Window(Home).Property(SubName),B1)" icon="material/designerlist.png" description="$VAR[BItypeInfo]"/>
 
 <!-- Layout Orientation option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Lay]" value="HORIZONTAL" label="Horizontal" condition="" icon="material/designerlayout.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Lay]" value="HORIZONTAL" label="Horizontal" condition="" icon="material/designerlayout.png" description="$LOCALIZE[31102]">
 		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordX],A)</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeX],3COLUMN)</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSidebar],BOTTOM)</onselect>
@@ -463,7 +463,7 @@
 
 	</setting>
 
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Lay]" value="VERTICAL" label="Vertical" condition="" icon="material/designerlayout.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Lay]" value="VERTICAL" label="Vertical" condition="" icon="material/designerlayout.png" description="$LOCALIZE[31102]">
 		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBCoordY],A)</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSizeY],3ROW)</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SubName),BB)">Skin.SetString($INFO[Window(Home).Property(CompPrefix),,BBSidebar],LEFT)</onselect>
@@ -520,7 +520,7 @@
 	</setting>
 
 <!-- Sidebar Position option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="TOP" label="Top" condition="StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="material/designersidebar.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="TOP" label="Top" condition="StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="material/designersidebar.png" description="$LOCALIZE[31103]">
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
@@ -530,7 +530,7 @@
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 	</setting>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="BOTTOM" label="Bottom" condition="StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="material/designersidebar.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="BOTTOM" label="Bottom" condition="StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)" icon="material/designersidebar.png" description="$LOCALIZE[31103]">
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
@@ -540,7 +540,7 @@
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 	</setting>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="LEFT" label="Left" condition="StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="material/designersidebar.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="LEFT" label="Left" condition="StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="material/designersidebar.png" description="$LOCALIZE[31103]">
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
@@ -550,7 +550,7 @@
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View8.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View8.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View9.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View9.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 	</setting>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="RIGHT" label="Right" condition="StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="material/designersidebar.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Sidebar]" value="RIGHT" label="Right" condition="StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)" icon="material/designersidebar.png" description="$LOCALIZE[31103]">
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View2.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View2.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View3.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View3.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
 		<onselect condition="StringCompare(Window(Home).Property(SectionName),HOM) + !IsEmpty(Skin.String(HOM.View4.Name))">Skin.SetString($INFO[Window(Home).Property(SectionName),,View4.BBSidebar],$INFO[Skin.String(HOM.View1.BBLay)])</onselect>
@@ -562,62 +562,62 @@
 	</setting>
 
 <!-- Sidebar Autohide option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="ENABLED" label="Enabled" condition="" icon="material/designersidebarhide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="DISABLED" label="Disabled" condition="" icon="material/designersidebarhide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="IDLEFADE" label="Idle Fade" condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)" icon="material/designersidebarhide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="HIDDEN" label="Hidden" condition="" icon="material/designersidebarhide.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="ENABLED" label="Enabled" condition="" icon="material/designersidebarhide.png" description="$LOCALIZE[31104]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="DISABLED" label="Disabled" condition="" icon="material/designersidebarhide.png" description="$LOCALIZE[31104]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="IDLEFADE" label="Idle Fade" condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)" icon="material/designersidebarhide.png" description="$LOCALIZE[31104]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="HIDDEN" label="Hidden" condition="" icon="material/designersidebarhide.png" description="$LOCALIZE[31104]"/>
 
 <!-- Dialog Panel Position option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="TOP" label="Top" condition="" icon="material/designerpanel.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="BOTTOM" label="Bottom" condition="" icon="material/designerpanel.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="LEFT" label="Left" condition="" icon="material/designerpanel.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="RIGHT" label="Right" condition="" icon="material/designerpanel.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="TOP" label="Top" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="BOTTOM" label="Bottom" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="LEFT" label="Left" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="RIGHT" label="Right" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
 
 <!-- Dialog Slide Type option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="PUSH" label="Push" condition="" icon="material/designerpanelslide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="OVER" label="Over" condition="" icon="material/designerpanelslide.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="PUSH" label="Push" condition="" icon="material/designerpanelslide.png" description="$LOCALIZE[31106]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="OVER" label="Over" condition="" icon="material/designerpanelslide.png" description="$LOCALIZE[31106]"/>
 
 <!-- Vertical Separator option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)" icon="material/designersepy.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="BC" label="BC" condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) | [StringCompare(Window(Home).Property(BBCoordYMEM),B) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)]" icon="material/designersepy.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="NONE" label="None" condition="" icon="material/designersepy.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)" icon="material/designersepy.png" description="$LOCALIZE[31107]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="BC" label="BC" condition="StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) | [StringCompare(Window(Home).Property(BBCoordYMEM),B) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)]" icon="material/designersepy.png" description="$LOCALIZE[31107]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="NONE" label="None" condition="" icon="material/designersepy.png" description="$LOCALIZE[31107]"/>
 
 <!-- Horizontal Separator option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordXMEM),A) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)" icon="material/designersepx.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="BC" label="BC" condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) | [StringCompare(Window(Home).Property(BBCoordXMEM),B) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)]" icon="material/designersepx.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="NONE" label="None" condition="" icon="material/designersepx.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordXMEM),A) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)" icon="material/designersepx.png" description="$LOCALIZE[31108]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="BC" label="BC" condition="StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) | [StringCompare(Window(Home).Property(BBCoordXMEM),B) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)]" icon="material/designersepx.png" description="$LOCALIZE[31108]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepX]" value="NONE" label="None" condition="" icon="material/designersepx.png" description="$LOCALIZE[31108]"/>
 
 <!-- Bloc 1 Visibility option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B1ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B1ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B1ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31117]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B1ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31117]"/>
 
 <!-- Bloc 2 Visibility option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B2ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B2ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B2ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31118]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B2ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31118]"/>
 
 <!-- Bloc 3 Visibility option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B3ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B3ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B3ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31119]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B3ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31119]"/>
 
 <!-- Bloc 4 Visibility option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B4ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,B4ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B4ShowOF]" value="SHOW" label="Show" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31120]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,B4ShowOF]" value="HIDE" label="Hide" condition="" icon="material/designerblochide.png" description="$LOCALIZE[31120]"/>
 
 <!-- Bloc 1 Go SubMneu option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONLEFT" label="On Left" condition="" icon="material/designergosub.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONRIGHT" label="On Right" condition="" icon="material/designergosub.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONUP" label="On Up" condition="" icon="material/designergosub.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONDOWN" label="On Down" condition="" icon="material/designergosub.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONLEFT" label="On Left" condition="" icon="material/designergosub.png" description="$LOCALIZE[31121]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONRIGHT" label="On Right" condition="" icon="material/designergosub.png" description="$LOCALIZE[31121]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONUP" label="On Up" condition="" icon="material/designergosub.png" description="$LOCALIZE[31121]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Submenu]" value="ONDOWN" label="On Down" condition="" icon="material/designergosub.png" description="$LOCALIZE[31121]"/>
 
 <!-- Bloc 1 Go Back option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONLEFT" label="On Left" condition="" icon="material/designergoback.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONRIGHT" label="On Right" condition="" icon="material/designergoback.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONUP" label="On Up" condition="" icon="material/designergoback.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONDOWN" label="On Down" condition="" icon="material/designergoback.png" description=""/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONLEFT" label="On Left" condition="" icon="material/designergoback.png" description="$LOCALIZE[31122]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONRIGHT" label="On Right" condition="" icon="material/designergoback.png" description="$LOCALIZE[31122]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONUP" label="On Up" condition="" icon="material/designergoback.png" description="$LOCALIZE[31122]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Goback]" value="ONDOWN" label="On Down" condition="" icon="material/designergoback.png" description="$LOCALIZE[31122]"/>
 
 <!-- Scroll Flags option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Scroll]" value="VISIBLE" label="Visible" condition="" icon="material/designerscrolldir.png" description=""/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,Scroll]" value="HIDDEN" label="Hidden" condition="" icon="material/designerscrolldir.png" description="">
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Scroll]" value="VISIBLE" label="Visible" condition="" icon="material/designerscrolldir.png" description="$LOCALIZE[31127]"/>
+	<setting id="$INFO[Window(Home).Property(IDPrefix),,Scroll]" value="HIDDEN" label="Hidden" condition="" icon="material/designerscrolldir.png" description="$LOCALIZE[31127]">
 		<onselect condition="True">Skin.Reset($INFO[Window(Home).Property(IDPrefix),,Scroll])</onselect>
 	</setting>
 

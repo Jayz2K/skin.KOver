@@ -4,6 +4,7 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
 	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
+	<onload>SetProperty(DesignerActive,TRUE,Home)</onload>
 	<onload>Skin.SetString(DIA.View1.BBSidebar,RIGHT)</onload>
 	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>			
 	<onload>Skin.SetString(HOM.View1.Name,Home Layout)</onload>
@@ -11,6 +12,7 @@
 	<onunload>ClearProperty(SidebarPos,Home)</onunload>
 	<onunload>ClearProperty(DialogPos,Home)</onunload>
 	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
+	<onunload>ClearProperty(DesignerActive,Home)</onunload>
 
 	<controls>
 	
@@ -170,7 +172,7 @@
 						<top>80</top>
 						<left>24</left>
 						<width>588</width>
-						<height>156</height>height>
+						<height>156</height>
 						<align>center</align>
 						<aligny>top</aligny>
 						<font>Font27</font>
@@ -545,7 +547,7 @@
 						<top>80</top>
 						<left>24</left>
 						<width>588</width>
-						<height>156</height>height>
+						<height>156</height>
 						<align>center</align>
 						<aligny>top</aligny>
 						<font>Font27</font>
@@ -2037,8 +2039,6 @@
 							<property name="Info">31101</property>
 						</item>
 
-<!-- New Move / Resize control -->
-
 						<item id="9">
 							<label>$LOCALIZE[31240] &amp; $LOCALIZE[31241]</label>
 							<label2>Y:$VAR[CoordYLabel] X:$VAR[CoordXLabel] [$VAR[SizeYLabel]X$VAR[SizeXLabel]]</label2>
@@ -2095,226 +2095,6 @@
 							<property name="Info">31109</property>
 						</item>
 
-
-
-<!-- -->
-
-						<!--item id="9">
-							<label>31036</label>
-							<label2>$VAR[CoordXValue]</label2>
-							<icon>$VAR[CoordXIcons]</icon>
-							<thumb>material/designerposx.png</thumb>
-							<visible>!StringCompare(Container(9200).ListItem.Property(SubName),WP) + !StringCompare(Container(9200).ListItem.Property(SubName),SB) + [!StringCompare(Container(9200).ListItem.Property(SubName),BB) | StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
-							<onback>9200</onback>
-
-							<include>OnclickProps</include>
-							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]CoordX,header=$INFO[Container(9300).ListItem.Label])</onclick>
-							
-							<property name="EndName">CoordX</property>
-							<property name="SetID">$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)]CoordX</property>
-							<property name="BBLayMEM">$VAR[FixedBBLayValue]</property>
-							<property name="BBSidebarMEM">$VAR[FixedBBSidebarValue]</property>
-							<property name="BBSepXMEM">$VAR[FixedBBSepXValue]</property>
-							<property name="BBSepYMEM">$VAR[FixedBBSepYValue]</property>
-							<property name="BBShowMEM">$VAR[FixedBBShowValue]</property>
-							<property name="BBCoordXMEM">$VAR[FixedBBCoordXValue]</property>
-							<property name="BBCoordYMEM">$VAR[FixedBBCoordYValue]</property>
-							<property name="BBSizeXMEM">$VAR[FixedBBSizeXValue]</property>
-							<property name="BBSizeYMEM">$VAR[FixedBBSizeYValue]</property>
-							<property name="B1TypMEM">$VAR[FixedB1TypValue]</property>
-							<property name="B1ShowMEM">$VAR[FixedB1ShowValue]</property>
-							<property name="B1CoordXMEM">$VAR[FixedB1CoordXValue]</property>
-							<property name="B1CoordYMEM">$VAR[FixedB1CoordYValue]</property>
-							<property name="B1SizeXMEM">$VAR[FixedB1SizeXValue]</property>
-							<property name="B1SizeYMEM">$VAR[FixedB1SizeYValue]</property>
-							<property name="B2ShowMEM">$VAR[FixedB2ShowValue]</property>
-							<property name="B2CoordXMEM">$VAR[FixedB2CoordXValue]</property>
-							<property name="B2CoordYMEM">$VAR[FixedB2CoordYValue]</property>
-							<property name="B2SizeXMEM">$VAR[FixedB2SizeXValue]</property>
-							<property name="B2SizeYMEM">$VAR[FixedB2SizeYValue]</property>
-							<property name="B3ShowMEM">$VAR[FixedB3ShowValue]</property>
-							<property name="B3CoordXMEM">$VAR[FixedB3CoordXValue]</property>
-							<property name="B3CoordYMEM">$VAR[FixedB3CoordYValue]</property>
-							<property name="B3SizeXMEM">$VAR[FixedB3SizeXValue]</property>
-							<property name="B3SizeYMEM">$VAR[FixedB3SizeYValue]</property>
-							<property name="B3TypMEM">$VAR[FixedB3TypValue]</property>
-							<property name="B4ShowMEM">$VAR[FixedB4ShowValue]</property>
-							<property name="B4CoordXMEM">$VAR[FixedB4CoordXValue]</property>
-							<property name="B4CoordYMEM">$VAR[FixedB4CoordYValue]</property>
-							<property name="B4SizeXMEM">$VAR[FixedB4SizeXValue]</property>
-							<property name="B4SizeYMEM">$VAR[FixedB4SizeYValue]</property>
-							<property name="DIASlideMEM">$VAR[FixedDIASlideValue]</property>
-							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
-							<property name="B5ShowMEM">$VAR[FixedB5ShowValue]</property>
-							<property name="B5CoordXMEM">$VAR[FixedB5CoordXValue]</property>
-							<property name="B5CoordYMEM">$VAR[FixedB5CoordYValue]</property>
-							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
-							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
-							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
-							<property name="Info">31109</property>
-						</item>
-						<item id="10">
-							<label>31037</label>
-							<label2>$VAR[CoordYValue]</label2>
-							<icon>$VAR[CoordYIcons]</icon>
-							<thumb>material/designerposy.png</thumb>
-							<visible>!StringCompare(Container(9200).ListItem.Property(SubName),WP) + !StringCompare(Container(9200).ListItem.Property(SubName),SB) + [!StringCompare(Container(9200).ListItem.Property(SubName),BB) | StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
-							<onback>9200</onback>
-
-							<include>OnclickProps</include>
-							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]CoordY,header=$INFO[Container(9300).ListItem.Label])</onclick>
-							
-							<property name="EndName">CoordY</property>
-							<property name="SetID">$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)]CoordY</property>
-							<property name="BBLayMEM">$VAR[FixedBBLayValue]</property>
-							<property name="BBSidebarMEM">$VAR[FixedBBSidebarValue]</property>
-							<property name="BBSepXMEM">$VAR[FixedBBSepXValue]</property>
-							<property name="BBSepYMEM">$VAR[FixedBBSepYValue]</property>
-							<property name="BBShowMEM">$VAR[FixedBBShowValue]</property>
-							<property name="BBCoordXMEM">$VAR[FixedBBCoordXValue]</property>
-							<property name="BBCoordYMEM">$VAR[FixedBBCoordYValue]</property>
-							<property name="BBSizeXMEM">$VAR[FixedBBSizeXValue]</property>
-							<property name="BBSizeYMEM">$VAR[FixedBBSizeYValue]</property>
-							<property name="B1TypMEM">$VAR[FixedB1TypValue]</property>
-							<property name="B1ShowMEM">$VAR[FixedB1ShowValue]</property>
-							<property name="B1CoordXMEM">$VAR[FixedB1CoordXValue]</property>
-							<property name="B1CoordYMEM">$VAR[FixedB1CoordYValue]</property>
-							<property name="B1SizeXMEM">$VAR[FixedB1SizeXValue]</property>
-							<property name="B1SizeYMEM">$VAR[FixedB1SizeYValue]</property>
-							<property name="B2ShowMEM">$VAR[FixedB2ShowValue]</property>
-							<property name="B2CoordXMEM">$VAR[FixedB2CoordXValue]</property>
-							<property name="B2CoordYMEM">$VAR[FixedB2CoordYValue]</property>
-							<property name="B2SizeXMEM">$VAR[FixedB2SizeXValue]</property>
-							<property name="B2SizeYMEM">$VAR[FixedB2SizeYValue]</property>
-							<property name="B3ShowMEM">$VAR[FixedB3ShowValue]</property>
-							<property name="B3CoordXMEM">$VAR[FixedB3CoordXValue]</property>
-							<property name="B3CoordYMEM">$VAR[FixedB3CoordYValue]</property>
-							<property name="B3SizeXMEM">$VAR[FixedB3SizeXValue]</property>
-							<property name="B3SizeYMEM">$VAR[FixedB3SizeYValue]</property>
-							<property name="B3TypMEM">$VAR[FixedB3TypValue]</property>
-							<property name="B4ShowMEM">$VAR[FixedB4ShowValue]</property>
-							<property name="B4CoordXMEM">$VAR[FixedB4CoordXValue]</property>
-							<property name="B4CoordYMEM">$VAR[FixedB4CoordYValue]</property>
-							<property name="B4SizeXMEM">$VAR[FixedB4SizeXValue]</property>
-							<property name="B4SizeYMEM">$VAR[FixedB4SizeYValue]</property>
-							<property name="DIASlideMEM">$VAR[FixedDIASlideValue]</property>
-							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
-							<property name="B5ShowMEM">$VAR[FixedB5ShowValue]</property>
-							<property name="B5CoordXMEM">$VAR[FixedB5CoordXValue]</property>
-							<property name="B5CoordYMEM">$VAR[FixedB5CoordYValue]</property>
-							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
-							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
-							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
-							<property name="Info">31110</property>
-						</item>
-						<item id="11">
-							<label>31038</label>
-							<label2>$VAR[SizeXValue]</label2>
-							<icon>$VAR[SizeXIcons]</icon>
-							<thumb>material/designersizex.png</thumb>
-							<visible>!StringCompare(Container(9200).ListItem.Property(SubName),WP) + !StringCompare(Container(9200).ListItem.Property(SubName),SB) + [!StringCompare(Container(9200).ListItem.Property(SubName),BB) | StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
-							<onback>9200</onback>
-
-							<include>OnclickProps</include>
-							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]SizeX,header=$INFO[Container(9300).ListItem.Label])</onclick>
-
-							<property name="EndName">SizeX</property>
-							<property name="SetID">$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)]SizeX</property>
-							<property name="BBLayMEM">$VAR[FixedBBLayValue]</property>
-							<property name="BBSidebarMEM">$VAR[FixedBBSidebarValue]</property>
-							<property name="BBSepXMEM">$VAR[FixedBBSepXValue]</property>
-							<property name="BBSepYMEM">$VAR[FixedBBSepYValue]</property>
-							<property name="BBShowMEM">$VAR[FixedBBShowValue]</property>
-							<property name="BBCoordXMEM">$VAR[FixedBBCoordXValue]</property>
-							<property name="BBCoordYMEM">$VAR[FixedBBCoordYValue]</property>
-							<property name="BBSizeXMEM">$VAR[FixedBBSizeXValue]</property>
-							<property name="BBSizeYMEM">$VAR[FixedBBSizeYValue]</property>
-							<property name="B1TypMEM">$VAR[FixedB1TypValue]</property>
-							<property name="B1ShowMEM">$VAR[FixedB1ShowValue]</property>
-							<property name="B1CoordXMEM">$VAR[FixedB1CoordXValue]</property>
-							<property name="B1CoordYMEM">$VAR[FixedB1CoordYValue]</property>
-							<property name="B1SizeXMEM">$VAR[FixedB1SizeXValue]</property>
-							<property name="B1SizeYMEM">$VAR[FixedB1SizeYValue]</property>
-							<property name="B2ShowMEM">$VAR[FixedB2ShowValue]</property>
-							<property name="B2CoordXMEM">$VAR[FixedB2CoordXValue]</property>
-							<property name="B2CoordYMEM">$VAR[FixedB2CoordYValue]</property>
-							<property name="B2SizeXMEM">$VAR[FixedB2SizeXValue]</property>
-							<property name="B2SizeYMEM">$VAR[FixedB2SizeYValue]</property>
-							<property name="B3ShowMEM">$VAR[FixedB3ShowValue]</property>
-							<property name="B3CoordXMEM">$VAR[FixedB3CoordXValue]</property>
-							<property name="B3CoordYMEM">$VAR[FixedB3CoordYValue]</property>
-							<property name="B3SizeXMEM">$VAR[FixedB3SizeXValue]</property>
-							<property name="B3SizeYMEM">$VAR[FixedB3SizeYValue]</property>
-							<property name="B3TypMEM">$VAR[FixedB3TypValue]</property>
-							<property name="B4ShowMEM">$VAR[FixedB4ShowValue]</property>
-							<property name="B4CoordXMEM">$VAR[FixedB4CoordXValue]</property>
-							<property name="B4CoordYMEM">$VAR[FixedB4CoordYValue]</property>
-							<property name="B4SizeXMEM">$VAR[FixedB4SizeXValue]</property>
-							<property name="B4SizeYMEM">$VAR[FixedB4SizeYValue]</property>
-							<property name="DIASlideMEM">$VAR[FixedDIASlideValue]</property>
-							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
-							<property name="B5ShowMEM">$VAR[FixedB5ShowValue]</property>
-							<property name="B5CoordXMEM">$VAR[FixedB5CoordXValue]</property>
-							<property name="B5CoordYMEM">$VAR[FixedB5CoordYValue]</property>
-							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
-							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
-							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
-							<property name="Info">31111</property>
-						</item>
-						<item id="12">
-							<label>31039</label>
-							<label2>$VAR[SizeYValue]</label2>
-							<icon>$VAR[SizeYIcons]</icon>
-							<thumb>material/designersizey.png</thumb>
-							<visible>!StringCompare(Container(9200).ListItem.Property(SubName),WP) + !StringCompare(Container(9200).ListItem.Property(SubName),SB) + [!StringCompare(Container(9200).ListItem.Property(SubName),BB) | StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
-							<onback>9200</onback>
-
-							<include>OnclickProps</include>
-							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]SizeY,header=$INFO[Container(9300).ListItem.Label])</onclick>
-
-							<property name="EndName">SizeY</property>
-							<property name="SetID">$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)]SizeY</property>
-							<property name="BBLayMEM">$VAR[FixedBBLayValue]</property>
-							<property name="BBSidebarMEM">$VAR[FixedBBSidebarValue]</property>
-							<property name="BBSepXMEM">$VAR[FixedBBSepXValue]</property>
-							<property name="BBSepYMEM">$VAR[FixedBBSepYValue]</property>
-							<property name="BBShowMEM">$VAR[FixedBBShowValue]</property>
-							<property name="BBCoordXMEM">$VAR[FixedBBCoordXValue]</property>
-							<property name="BBCoordYMEM">$VAR[FixedBBCoordYValue]</property>
-							<property name="BBSizeXMEM">$VAR[FixedBBSizeXValue]</property>
-							<property name="BBSizeYMEM">$VAR[FixedBBSizeYValue]</property>
-							<property name="B1TypMEM">$VAR[FixedB1TypValue]</property>
-							<property name="B1ShowMEM">$VAR[FixedB1ShowValue]</property>
-							<property name="B1CoordXMEM">$VAR[FixedB1CoordXValue]</property>
-							<property name="B1CoordYMEM">$VAR[FixedB1CoordYValue]</property>
-							<property name="B1SizeXMEM">$VAR[FixedB1SizeXValue]</property>
-							<property name="B1SizeYMEM">$VAR[FixedB1SizeYValue]</property>
-							<property name="B2ShowMEM">$VAR[FixedB2ShowValue]</property>
-							<property name="B2CoordXMEM">$VAR[FixedB2CoordXValue]</property>
-							<property name="B2CoordYMEM">$VAR[FixedB2CoordYValue]</property>
-							<property name="B2SizeXMEM">$VAR[FixedB2SizeXValue]</property>
-							<property name="B2SizeYMEM">$VAR[FixedB2SizeYValue]</property>
-							<property name="B3ShowMEM">$VAR[FixedB3ShowValue]</property>
-							<property name="B3CoordXMEM">$VAR[FixedB3CoordXValue]</property>
-							<property name="B3CoordYMEM">$VAR[FixedB3CoordYValue]</property>
-							<property name="B3SizeXMEM">$VAR[FixedB3SizeXValue]</property>
-							<property name="B3SizeYMEM">$VAR[FixedB3SizeYValue]</property>
-							<property name="B3TypMEM">$VAR[FixedB3TypValue]</property>
-							<property name="B4ShowMEM">$VAR[FixedB4ShowValue]</property>
-							<property name="B4CoordXMEM">$VAR[FixedB4CoordXValue]</property>
-							<property name="B4CoordYMEM">$VAR[FixedB4CoordYValue]</property>
-							<property name="B4SizeXMEM">$VAR[FixedB4SizeXValue]</property>
-							<property name="B4SizeYMEM">$VAR[FixedB4SizeYValue]</property>
-							<property name="DIASlideMEM">$VAR[FixedDIASlideValue]</property>
-							<property name="DIAPanelMEM">$VAR[FixedDIAPanelValue]</property>
-							<property name="B5ShowMEM">$VAR[FixedB5ShowValue]</property>
-							<property name="B5CoordXMEM">$VAR[FixedB5CoordXValue]</property>
-							<property name="B5CoordYMEM">$VAR[FixedB5CoordYValue]</property>
-							<property name="B5SizeXMEM">$VAR[FixedB5SizeXValue]</property>
-							<property name="B5SizeYMEM">$VAR[FixedB5SizeYValue]</property>
-							<property name="B5TypMEM">$VAR[FixedB5TypValue]</property>
-							<property name="Info">31112</property>
-						</item-->
 						<item id="13">
 							<label>31040</label>
 							<label2 fallback="COLOR">$VAR[BgsValue]</label2>

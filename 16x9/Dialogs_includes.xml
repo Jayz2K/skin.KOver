@@ -1085,7 +1085,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -1096,12 +1096,26 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
 					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
 					<label>$INFO[ListItem.Label]</label>
+				</control>
+				<!-- Title -->
+				<control type="label">
+					<top>80</top>
+					<left>24</left>
+					<width>588</width>
+					<height>156</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<font>Font27</font>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+					<label>$INFO[Container(6).ListItem.Label2]</label>
+					<visible>!IsEmpty(Window(Home).Property(DesignerActive))</visible>
+					<wrapmultiline>true</wrapmultiline>
 				</control>
 
 				<!-- Button grouplist -->
@@ -1351,7 +1365,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -1363,7 +1377,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -2764,7 +2778,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -2855,7 +2869,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -3189,7 +3203,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -3202,7 +3216,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -3463,7 +3477,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -3805,7 +3819,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -3818,7 +3832,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -3985,7 +3999,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -4070,7 +4084,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -4082,7 +4096,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -4208,7 +4222,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -4384,7 +4398,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -4547,7 +4561,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -4828,7 +4842,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -5046,7 +5060,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -5266,7 +5280,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -5279,7 +5293,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>60</height>height>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>Font36</font>
@@ -5292,7 +5306,7 @@
 					<top>267</top>
 					<left>24</left>
 					<width>588</width>
-					<height>60</height>height>
+					<height>60</height>
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>Font27</font>
@@ -5355,7 +5369,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -5797,7 +5811,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -5810,7 +5824,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -5956,7 +5970,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>Font36R</font>
@@ -6110,7 +6124,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>Font36R</font>
@@ -6264,7 +6278,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -6282,7 +6296,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -6374,7 +6388,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>Font36R</font>
@@ -6527,7 +6541,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>left</align>
 					<aligny>top</aligny>
 					<font>Font36R</font>
@@ -6679,7 +6693,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -6692,7 +6706,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -6707,7 +6721,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -6931,7 +6945,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -7075,7 +7089,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -7088,7 +7102,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -7209,7 +7223,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -7222,7 +7236,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -8887,7 +8901,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -9013,7 +9027,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -9026,7 +9040,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -9131,7 +9145,7 @@
 					<top>24</top>
 					<left>24</left>
 					<width>588</width>
-					<height>48</height>height>
+					<height>48</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font48</font>
@@ -9144,7 +9158,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -9538,7 +9552,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
@@ -9657,7 +9671,7 @@
 					<top>80</top>
 					<left>24</left>
 					<width>588</width>
-					<height>156</height>height>
+					<height>156</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<font>Font36</font>
