@@ -3,6 +3,7 @@
 - Added option to force OSD bottom
 - Added missing overlay flags in recordings
 - Added progress cache in OSD
+- Added TvTunes Integration
 - Fixed moving background in settings
 - Fixed extended infos display pb in Home
 - Fixed bkg slideshow to reload in Home
