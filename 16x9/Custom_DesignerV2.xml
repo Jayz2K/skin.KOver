@@ -2648,12 +2648,12 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Container(9200).ListItem.Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<!--include>OnclickProps</include>
-							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]DIAPanel,header=$INFO[Container(9300).ListItem.Label])</onclick-->
+							<include>OnclickProps</include>
+							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(CompPrefix)]DIAPanel,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<!-- Actions For Bloc Background-->					
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,OVER) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],PUSH)</onclick>
-							<onclick condition="StringCompare(Container(9300).ListItem.Label2,PUSH)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],OVER)</onclick>
+							<!--onclick condition="StringCompare(Container(9300).ListItem.Label2,OVER) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],PUSH)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,PUSH)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],OVER)</onclick-->
 							<!-- Actions For Bloc 1-->		
 							<!-- Actions For Bloc 2-->
 							<!-- Actions For Bloc 3-->							
@@ -2710,8 +2710,11 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Container(9200).ListItem.Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
-							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]DIASlide,header=$INFO[Container(9300).ListItem.Label])</onclick>
+							<!--include>OnclickProps</include>
+							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(CompPrefix)]DIASlide,header=$INFO[Container(9300).ListItem.Label])</onclick-->
+
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,OVER) | IsEmpty(Container(9300).ListItem.Label2)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],PUSH)</onclick>
+							<onclick condition="StringCompare(Container(9300).ListItem.Label2,PUSH)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],OVER)</onclick>
 
 							<property name="EndName">DIASlide</property>
 							<property name="SetID">$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]DIASlide</property>

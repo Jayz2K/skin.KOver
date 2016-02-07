@@ -568,14 +568,14 @@
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,SBHide]" value="HIDDEN" label="Hidden" condition="" icon="material/designersidebarhide.png" description="$LOCALIZE[31104]"/>
 
 <!-- Dialog Panel Position option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="TOP" label="Top" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="BOTTOM" label="Bottom" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="LEFT" label="Left" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIAPanel]" value="RIGHT" label="Right" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(CompPrefix),,DIAPanel]" value="TOP" label="Top" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(CompPrefix),,DIAPanel]" value="BOTTOM" label="Bottom" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(CompPrefix),,DIAPanel]" value="LEFT" label="Left" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
+	<setting id="$INFO[Window(Home).Property(CompPrefix),,DIAPanel]" value="RIGHT" label="Right" condition="" icon="material/designerpanel.png" description="$LOCALIZE[31105]"/>
 
 <!-- Dialog Slide Type option -->
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="PUSH" label="Push" condition="" icon="material/designerpanelslide.png" description="$LOCALIZE[31106]"/>
-	<setting id="$INFO[Window(Home).Property(IDPrefix),,DIASlide]" value="OVER" label="Over" condition="" icon="material/designerpanelslide.png" description="$LOCALIZE[31106]"/>
+	<setting id="$INFO[Window(Home).Property(CompPrefix),,DIASlide]" value="PUSH" label="Push" condition="" icon="material/designerpanelslide.png" description="$LOCALIZE[31106]"/>
+	<setting id="$INFO[Window(Home).Property(CompPrefix),,DIASlide]" value="OVER" label="Over" condition="" icon="material/designerpanelslide.png" description="$LOCALIZE[31106]"/>
 
 <!-- Vertical Separator option -->
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,SepY]" value="AB" label="AB" condition="StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)" icon="material/designersepy.png" description="$LOCALIZE[31107]"/>
