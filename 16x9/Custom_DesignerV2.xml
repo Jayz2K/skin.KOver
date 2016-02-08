@@ -1595,7 +1595,7 @@
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]Name,ACTIVE)</onclick>								
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPShow,$VAR[ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPBGs,$VAR[FixedWPBgsValue])</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPPic,$VAR[FixedWPBgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPPic,$VAR[FixedWPPicValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPVDOTop,$VAR[FixedWPVDOTopValue])</onclick>							
 
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBBGs,$VAR[FixedBBBgsValue])</onclick>
@@ -2162,7 +2162,7 @@
 						</item>
 						<item id="16">
 							<label>31042</label>
-							<label2 fallback="EMPTY">$VAR[FixedWPPicValue]</label2>
+							<label2 fallback="EMPTY">$VAR[WPPicValue]</label2>
 							<icon></icon>
 							<thumb>material/designerbgpic.png</thumb>
 							<visible>![StringCompare(Container(9200).ListItem.Property(SubName),BB) + !StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
