@@ -161,6 +161,7 @@
 							<aspectratio>keep</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(clearlogo)]</texture>
 							<visible>Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + !IsEmpty(ListItem.Art(clearlogo))</visible>
+							<animation effect="zoom" start="100" end="75" time="0" center="auto" condition="true">Conditional</animation>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -188,6 +189,7 @@
 							<aspectratio>keep</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(discart)]</texture>
 							<visible>Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + !IsEmpty(ListItem.Art(discart))</visible>
+							<animation effect="zoom" start="100" end="85" time="0" center="auto" condition="true">Conditional</animation>
 							<animation effect="rotate" start="0" end="-360" loop="true" time="10000" center="auto" condition="ListItem.IsPlaying">Conditional</animation>
 						</control>
 						<control type="group">

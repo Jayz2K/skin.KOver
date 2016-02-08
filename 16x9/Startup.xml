@@ -593,6 +593,7 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.SETTxt1F))">Skin.SetString(Color.SETTxt1F,FFFFFFFF)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(Color.SETTxt2F))">Skin.SetString(Color.SETTxt2F,FFDDDDDD)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(HomeSize))">Skin.SetString(HomeSize,DEFAULT)</onfocus>
+			<onfocus condition="IsEmpty(Skin.String(KOverInit)) | IsEmpty(Skin.String(IdleFade))">Skin.SetString(IdleFade,5)</onfocus>
 			
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.SBBg,EE000000)</onfocus>
 
