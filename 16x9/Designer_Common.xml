@@ -47,7 +47,7 @@
 				<visible>[Player.HasVideo | Player.HasAudio] + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | !Skin.HasSetting(TvTunesNoBackground)]</visible>
 			</control>
 			<control type="videowindow">
-				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + !Skin.HasSetting(TvTunesNoBackground)</visible>
+				<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) | !Skin.HasSetting(TvTunesNoBackground)]</visible>
 			</control>
 			<control type="visualisation">
 				<visible>Player.HasAudio + Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) + [!Skin.HasSetting(ArtistslideShow) | [System.HasAddon(script.artistslideshow) + Skin.HasSetting(VisualisationShow)]] + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))</visible>

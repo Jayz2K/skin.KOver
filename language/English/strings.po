@@ -1026,6 +1026,10 @@ msgctxt "#31250"
 msgid "This prevent video playback to show as fullscreen background while browsing library. Useful when already set in Designer Bloc 4 to keep picture instead. This only applies to TvTunes video themes."
 msgstr ""
 
+msgctxt "#31251"
+msgid "Up Next..."
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

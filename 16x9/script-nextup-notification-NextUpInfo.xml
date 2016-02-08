@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">3012</defaultcontrol>
+	<onload>Dialog.Close(fullscreeninfo,true)</onload>
+	<onload>Dialog.Close(videoosd,true)</onload>
+	<visible>IsActive(fullscreenvideo)</visible>
+
+	<controls>
+		<control type="label" id="3000">
+			<visible>false</visible>
+		</control>
+		<control type="textbox" id="3001">
+			<visible>false</visible>
+		</control>
+		<control type="label" id="3002">
+			<visible>false</visible>
+		</control>
+		<control type="label" id="3003">
+			<visible>false</visible>
+		</control>
+		<control type="label" id="3004">
+			<visible>false</visible>
+		</control>
+		<control type="image" id="3005">
+			<visible>false</visible>
+		</control>
+		<control type="image" id="3006">
+			<visible>false</visible>
+		</control>
+		<control type="image" id="3008">
+			<visible>false</visible>
+		</control>
+		<control type="image" id="3009">
+			<visible>false</visible>
+		</control>
+		<control type="image" id="3010">
+			<visible>false</visible>
+		</control>
+		<control type="label" id="3011">
+			<visible>false</visible>
+		</control>
+		<control type="button" id="3012">
+			<visible allowhiddenfocus="true">false</visible>
+			<onback>SendClick(3013)</onback>
+		</control>
+		<control type="button" id="3013">
+			<visible allowhiddenfocus="true">false</visible>
+		</control>
+		<control type="label" id="3015">
+			<visible>false</visible>
+		</control>
+		<control type="label" id="3016">
+			<visible>false</visible>
+		</control>
+		<control type="label" id="3018">
+			<visible>false</visible>
+		</control>
+
+		<control type="group">
+			<right>132</right>
+			<bottom>132</bottom>
+			<height>560</height>
+			<width>318</width>
+			<animation effect="zoom" start="100,0" end="100,100" time="400" center="auto">WindowOpen</animation>
+
+			<!-- Background -->
+			<control type="image">
+				<top>0</top>
+				<height>560</height>
+				<aspectratio>stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+			</control>
+			<!-- Background -->
+			<control type="image">
+				<top>0</top>
+				<height>80</height>
+				<aspectratio>stretch</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemF)]">common/white.png</texture>
+			</control>
+			<!-- Header Label -->
+			<control type="label">
+				<description>Next Up</description>
+				<left>24</left>
+				<top>0</top>
+				<height>80</height>
+				<width>270</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27R</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+				<label>31251</label>
+			</control>	
+			<!-- Episode thumb -->
+			<control type="image">
+				<left>0</left>
+				<top>80</top>
+				<height>178</height>
+				<width>318</width>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="FFFFFFFF">$INFO[Control.GetLabel(3008)]</texture>
+				<animation type="WindowOpen" reversible="false">
+					<effect type="zoom" start="100,0" end="100,100" time="400" delay="2000" center="auto"/>
+					<effect type="fade" start="0" end="100" time="400" delay="2000"/>
+				</animation>
+			</control>
+			<!-- TvShow fanart -->
+			<control type="image">
+				<left>0</left>
+				<top>80</top>
+				<height>178</height>
+				<width>318</width>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="FFFFFFFF">$INFO[Control.GetLabel(3005)]</texture>
+				<animation type="WindowOpen" reversible="false">
+					<effect type="zoom" start="100,100" end="100,100" time="1600"/>
+					<effect type="zoom" start="100,100" end="100,0" time="400" delay="1600" center="auto"/>
+					<effect type="fade" start="100" end="0" time="400" delay="1600"/>
+				</animation>
+			</control>
+			<!-- Infos first line -->
+			<control type="label">
+				<left>24</left>
+				<top>282</top>
+				<height>54</height>
+				<width>270</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font27</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<label>$INFO[Control.GetLabel(3015),Season ,][CR]$INFO[Control.GetLabel(3016),Episode ,]</label>
+			</control>			
+			<!-- Infos second line -->
+			<control type="label" id="3000">
+				<description>Episode Title</description>
+				<left>24</left>
+				<top>360</top>
+				<height>52</height>
+				<width>270</width>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>FontSmall</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt2NF)]</textcolor>
+			</control>		
+
+		</control>
+		
+	</controls>
+</window>
