@@ -1444,12 +1444,12 @@
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]TempName,$INFO[Container(9400).ListItem.Property(NumTemp)])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]Name,ACTIVE)</onclick>								
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPShow,$VAR[ShowValue])</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPBGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPBGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPPic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]WPPic)</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPBGs,$VAR[FixedWPBgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPPic,$VAR[FixedWPBgsValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]WPVDOTop,$VAR[FixedWPVDOTopValue])</onclick>							
 
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBBGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBBGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBPic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]BBPic)</onclick>						
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBBGs,$VAR[FixedBBBgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBPic,$VAR[FixedBBPicValue])</onclick>						
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBLay,$VAR[FixedBBLayValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSidebar,$VAR[FixedBBSidebarValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]BBSBHide,$VAR[FixedBBSBHideValue])</onclick>
@@ -1464,8 +1464,8 @@
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIAPanel,$VAR[FixedDIAPanelValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]DIASlide,$VAR[FixedDIASlideValue])</onclick>								
 							
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1BGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1BGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Pic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1Pic)</onclick>						
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1BGs,$VAR[FixedB1BgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Pic,$VAR[FixedB1PicValue])</onclick>						
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Lay,$VAR[FixedB1LayValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Show,$VAR[FixedB1ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1CoordX,$VAR[FixedB1CoordXValue])</onclick>
@@ -1476,32 +1476,32 @@
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Submenu,$VAR[FixedB1SubmenuValue])</onclick>	
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B1Goback,$VAR[FixedB1GobackValue])</onclick>	
 
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2BGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B2BGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2Pic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B2Pic)</onclick>	
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2BGs,$VAR[FixedB2BgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2Pic,$VAR[FixedB2PicValue])</onclick>	
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2Show,$VAR[FixedB2ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2CoordX,$VAR[FixedB2CoordXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2CoordY,$VAR[FixedB2CoordYValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2SizeX,$VAR[FixedB2SizeXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B2SizeY,$VAR[FixedB2SizeYValue])</onclick>
 							
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3BGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B3BGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3Pic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B3Pic)</onclick>								
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3BGs,$VAR[FixedB3BgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3Pic,$VAR[FixedB3PicValue])</onclick>								
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3Show,$VAR[FixedB3ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3CoordX,$VAR[FixedB3CoordXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3CoordY,$VAR[FixedB3CoordYValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3SizeX,$VAR[FixedB3SizeXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B3SizeY,$VAR[FixedB3SizeYValue])</onclick>
 							
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4BGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4BGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4Pic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4Pic)</onclick>						
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4BGs,$VAR[FixedB4BgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4Pic,$VAR[FixedB4PicValue])</onclick>						
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4Show,$VAR[FixedB4ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4CoordX,$VAR[FixedB4CoordXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4CoordY,$VAR[FixedB4CoordYValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4SizeX,$VAR[FixedB4SizeXValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B4SizeY,$VAR[FixedB4SizeYValue])</onclick>
 
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5BGs,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B5BGs)</onclick>
-							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5Pic,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B5Pic)</onclick>	
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5BGs,$VAR[FixedB5BgsValue])</onclick>
+							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5Pic,$VAR[FixedB5PicValue])</onclick>	
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5Lay,$VAR[FixedB5LayValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5Show,$VAR[FixedB5ShowValue])</onclick>
 							<onclick>Skin.SetString($INFO[Container(9400).ListItem.Property(NumTemp),,.]B5CoordX,$VAR[FixedB5CoordXValue])</onclick>
