@@ -1,57 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-	<defaultcontrol always="true">3012</defaultcontrol>
+	<defaultcontrol always="true">4012</defaultcontrol>
 	<onload>Dialog.Close(fullscreeninfo,true)</onload>
 	<onload>Dialog.Close(videoosd,true)</onload>
 
 	<controls>
-		<control type="label" id="3000">
+		<control type="label" id="4000">
 			<visible>false</visible>
 		</control>
-		<control type="textbox" id="3001">
+		<control type="image" id="4001">
 			<visible>false</visible>
 		</control>
-		<control type="label" id="3002">
+		<control type="image" id="4002">
 			<visible>false</visible>
 		</control>
-		<control type="label" id="3003">
+		<control type="label" id="4003">
 			<visible>false</visible>
 		</control>
-		<control type="label" id="3004">
+		<control type="label" id="4004">
 			<visible>false</visible>
 		</control>
-		<control type="image" id="3005">
+		<control type="image" id="4005">
 			<visible>false</visible>
 		</control>
-		<control type="image" id="3006">
+		<control type="textbox" id="4006">
 			<visible>false</visible>
 		</control>
-		<control type="image" id="3008">
+		<control type="image" id="4007">
 			<visible>false</visible>
 		</control>
-		<control type="image" id="3009">
+		<control type="label" id="4008">
 			<visible>false</visible>
 		</control>
-		<control type="image" id="3010">
+		<control type="label" id="4009">
 			<visible>false</visible>
 		</control>
-		<control type="label" id="3011">
+		<control type="label" id="4010">
 			<visible>false</visible>
 		</control>
-		<control type="button" id="3012">
-			<visible allowhiddenfocus="true">false</visible>
-			<onback>SendClick(3013)</onback>
-		</control>
-		<control type="button" id="3013">
-			<visible allowhiddenfocus="true">false</visible>
-		</control>
-		<control type="label" id="3015">
+		<control type="label" id="4011">
 			<visible>false</visible>
 		</control>
-		<control type="label" id="3016">
+		<control type="image" id="4014">
 			<visible>false</visible>
 		</control>
-		<control type="label" id="3018">
+		<control type="label" id="4018">
 			<visible>false</visible>
 		</control>
 
@@ -67,7 +60,7 @@
 				<height>225</height>
 				<width>400</width>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$INFO[Control.GetLabel(3008)]</texture>
+				<texture colordiffuse="FF666666">$INFO[Control.GetLabel(4002)]</texture>
 				<animation type="WindowOpen" reversible="false">
 					<effect type="zoom" start="100,0" end="100,100" time="400" delay="2400" center="auto"/>
 					<effect type="fade" start="0" end="100" time="400" delay="2400"/>
@@ -80,13 +73,47 @@
 				<height>225</height>
 				<width>400</width>
 				<aspectratio>scale</aspectratio>
-				<texture colordiffuse="FFFFFFFF">$INFO[Control.GetLabel(3005)]</texture>
+				<texture colordiffuse="FF666666">$INFO[Control.GetLabel(4007)]</texture>
 				<animation type="WindowOpen" reversible="false">
 					<effect type="zoom" start="100,100" end="100,100" time="2000"/>
 					<effect type="zoom" start="100,100" end="100,0" time="400" delay="2000" center="auto"/>
 					<effect type="fade" start="100" end="0" time="400" delay="2000"/>
 				</animation>
 			</control>
+
+			<control type="button" id="4012">
+				<left>100</left>
+				<top>72</top>
+				<width>120</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus />
+      			<texturenofocus />
+      			<label>Yes</label>
+      			<font>Font27R</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+				<focusedcolor>$INFO[Skin.String(Color.B1ItemF)]</focusedcolor>
+				<onback>SendClick(4013)</onback>
+				<onright>4013</onright>
+			</control>
+
+			<control type="button" id="4013">
+				<right>100</right>
+				<top>72</top>
+				<width>120</width>
+				<height>80</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<texturefocus />
+      			<texturenofocus />
+      			<label>No</label>
+      			<font>Font27R</font>
+				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+				<focusedcolor>$INFO[Skin.String(Color.B1ItemF)]</focusedcolor>
+				<onleft>4012</onleft>
+			</control>
+
 			<!-- Header Label -->
 			<control type="label">
 				<description>Next Up</description>
@@ -99,7 +126,7 @@
 				<font>Font36</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 				<shadowcolor>$INFO[Skin.String(Color.B1ItemNF)]</shadowcolor>
-				<label>31251</label>
+				<label>Continue Watching ?</label>
 			</control>
 		</control>		
 
@@ -178,7 +205,7 @@
 			</control>
 
 			<!-- Heading -->
-			<control type="label" id="3000">
+			<control type="label" id="4010">
 				<left>142</left>
 				<top>20</top>
 				<width>352</width>
@@ -199,7 +226,7 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>FontSmallR</font>
-				<label>$INFO[Control.GetLabel(3015),Season , - ]$INFO[Control.GetLabel(3016),Episode ,]</label>
+				<label>$INFO[Control.GetLabel(4008),Season , - ]$INFO[Control.GetLabel(4009),Episode ,]</label>
 				<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
 			</control>
 
