@@ -8360,6 +8360,69 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(HOM.View9.B5Typ)]</value>
 	</variable>
 
+	<variable name="FixedB4TypValue">
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(VDO.View1.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(VDO.View2.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(VDO.View3.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(VDO.View4.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(VDO.View5.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(VDO.View6.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(VDO.View7.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(VDO.View8.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),VDO) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(VDO.View9.B4Typ)]</value>
+
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(MUS.View1.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(MUS.View2.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(MUS.View3.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(MUS.View4.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(MUS.View5.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(MUS.View6.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(MUS.View7.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(MUS.View8.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),MUS) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(MUS.View9.B4Typ)]</value>
+
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(TV.View1.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(TV.View2.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(TV.View3.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(TV.View4.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(TV.View5.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(TV.View6.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(TV.View7.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(TV.View8.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),TV) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(TV.View9.B4Typ)]</value>
+
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(PIC.View1.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(PIC.View2.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(PIC.View3.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(PIC.View4.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(PIC.View5.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(PIC.View6.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(PIC.View7.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(PIC.View8.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PIC) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(PIC.View9.B4Typ)]</value>
+
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(PRO.View1.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(PRO.View2.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(PRO.View3.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(PRO.View4.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(PRO.View5.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(PRO.View6.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(PRO.View7.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(PRO.View8.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),PRO) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(PRO.View9.B4Typ)]</value>
+
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(WEA.View1.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(WEA.View2.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View3)">$INFO[Skin.String(WEA.View3.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View4)">$INFO[Skin.String(WEA.View4.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View5)">$INFO[Skin.String(WEA.View5.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View6)">$INFO[Skin.String(WEA.View6.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View7)">$INFO[Skin.String(WEA.View7.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View8)">$INFO[Skin.String(WEA.View8.B4Typ)]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),WEA) + StringCompare(Container(9100).ListItem.Property(ViewName),View9)">$INFO[Skin.String(WEA.View9.B4Typ)]</value>
+	</variable>
+
+
 	<variable name="FixedB5ShowValue">
 		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View1)">$INFO[Skin.String(HOM.View1.B5Show)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(SectionName),HOM) + StringCompare(Container(9100).ListItem.Property(ViewName),View2)">$INFO[Skin.String(HOM.View2.B5Show)]</value>
