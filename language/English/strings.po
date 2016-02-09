@@ -1030,6 +1030,14 @@ msgctxt "#31251"
 msgid "Up Next..."
 msgstr ""
 
+msgctxt "#31252"
+msgid "Install NextUp notifications ..."
+msgstr ""
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

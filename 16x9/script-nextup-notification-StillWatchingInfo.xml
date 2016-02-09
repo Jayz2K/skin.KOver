@@ -90,7 +90,7 @@
 				<aligny>center</aligny>
 				<texturefocus />
       			<texturenofocus />
-      			<label>Yes</label>
+      			<label>107</label>
       			<font>Font27R</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 				<focusedcolor>$INFO[Skin.String(Color.B1ItemF)]</focusedcolor>
@@ -107,7 +107,7 @@
 				<aligny>center</aligny>
 				<texturefocus />
       			<texturenofocus />
-      			<label>No</label>
+      			<label>106</label>
       			<font>Font27R</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 				<focusedcolor>$INFO[Skin.String(Color.B1ItemF)]</focusedcolor>
@@ -126,7 +126,7 @@
 				<font>Font36</font>
 				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
 				<shadowcolor>$INFO[Skin.String(Color.B1ItemNF)]</shadowcolor>
-				<label>Continue Watching ?</label>
+				<label>31253</label>
 			</control>
 		</control>		
 
