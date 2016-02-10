@@ -476,12 +476,13 @@
 					<textcolor fallback="FF666666">$INFO[Skin.String(Color.SETTxt1NF)]</textcolor>
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
-					<onclick condition="Skin.String(IdleFade,25)">Skin.SetString(IdleFade,30)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=IdleFade,header=$LOCALIZE[31303])</onclick>
+					<!--onclick condition="Skin.String(IdleFade,25)">Skin.SetString(IdleFade,30)</onclick>
 					<onclick condition="Skin.String(IdleFade,20)">Skin.SetString(IdleFade,25)</onclick>
 					<onclick condition="Skin.String(IdleFade,15)">Skin.SetString(IdleFade,20)</onclick>
 					<onclick condition="Skin.String(IdleFade,10)">Skin.SetString(IdleFade,15)</onclick>
 					<onclick condition="Skin.String(IdleFade,5)">Skin.SetString(IdleFade,10)</onclick>
-					<onclick condition="Skin.String(IdleFade,30) | IsEmpty(Skin.String(IdleFade))">Skin.SetString(IdleFade,5)</onclick>
+					<onclick condition="Skin.String(IdleFade,30) | IsEmpty(Skin.String(IdleFade))">Skin.SetString(IdleFade,5)</onclick-->
 				</control>	
 
 				<!-- Separator -->

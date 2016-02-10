@@ -871,7 +871,7 @@ msgid "Set this option to show the 'WATCHED' status flag on libraries' items."
 msgstr ""
 
 msgctxt "#31212"
-msgid "Adjust time between 5s and 30s for the 'IDLEFADE' option. This is only when an item has this option in the Designer."
+msgid "Adjust time for the 'IDLEFADE' option. This is only when an item has this option in the Designer."
 msgstr ""
 
 msgctxt "#31213"
@@ -1036,6 +1036,218 @@ msgstr ""
 
 msgctxt "#31253"
 msgid "Continue watching ?"
+msgstr ""
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr ""
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr ""
+
+msgctxt "#31256"
+msgid "Hide after timer inactivity"
+msgstr ""
+
+msgctxt "#31257"
+msgid "Show when media is playing"
+msgstr ""
+
+msgctxt "#31258"
+msgid "Show when TvTunes plays video"
+msgstr ""
+
+msgctxt "#31259"
+msgid "Show when list has focus"
+msgstr ""
+
+msgctxt "#31260"
+msgid "Show fallback only"
+msgstr ""
+
+msgctxt "#31261"
+msgid "Set width 1 column"
+msgstr ""
+
+msgctxt "#31262"
+msgid "Set width 2 columns"
+msgstr ""
+
+msgctxt "#31263"
+msgid "Set width 3 columns"
+msgstr ""
+
+msgctxt "#31264"
+msgid "Set height 1 row"
+msgstr ""
+
+msgctxt "#31265"
+msgid "Set height 2 rows"
+msgstr ""
+
+msgctxt "#31266"
+msgid "Set height 3 rows"
+msgstr ""
+
+msgctxt "#31267"
+msgid "Fill with color"
+msgstr ""
+
+msgctxt "#31268"
+msgid "Fill with user's picture"
+msgstr ""
+
+msgctxt "#31269"
+msgid "Fill with List item Fanart"
+msgstr ""
+
+msgctxt "#31270"
+msgid "Default"
+msgstr ""
+
+msgctxt "#31271"
+msgid "No fallback"
+msgstr ""
+
+msgctxt "#31272"
+msgid "Wide List"
+msgstr ""
+
+msgctxt "#31273"
+msgid "Tiles"
+msgstr ""
+
+msgctxt "#31274"
+msgid "Card"
+msgstr ""
+
+msgctxt "#31275"
+msgid "Poster"
+msgstr ""
+
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr ""
+
+msgctxt "#31277"
+msgid "Banner"
+msgstr ""
+
+msgctxt "#31278"
+msgid "Thumb"
+msgstr ""
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr ""
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr ""
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr ""
+
+msgctxt "#31282"
+msgid "Landscape"
+msgstr ""
+
+msgctxt "#31283"
+msgid "Custom List 1"
+msgstr ""
+
+msgctxt "#31284"
+msgid "Custom List 2"
+msgstr ""
+
+msgctxt "#31285"
+msgid "Custom List 3"
+msgstr ""
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr ""
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr ""
+
+msgctxt "#31288"
+msgid "Stick to Top"
+msgstr ""
+
+msgctxt "#31289"
+msgid "Stick to Bottom"
+msgstr ""
+
+msgctxt "#31290"
+msgid "Stick to Left"
+msgstr ""
+
+msgctxt "#31291"
+msgid "Stick to Right"
+msgstr ""
+
+msgctxt "#31292"
+msgid "Hide bar at scroll end"
+msgstr ""
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr ""
+
+msgctxt "#31294"
+msgid "Push blocs"
+msgstr ""
+
+msgctxt "#31295"
+msgid "Show over blocs"
+msgstr ""
+
+msgctxt "#31296"
+msgid "Still visible if B5 has focus"
+msgstr ""
+
+msgctxt "#31297"
+msgid "Hide if B5 has focus"
+msgstr ""
+
+msgctxt "#31298"
+msgid "Activate pressing Left"
+msgstr ""
+
+msgctxt "#31299"
+msgid "Activate pressing Right"
+msgstr ""
+
+msgctxt "#31300"
+msgid "Activate pressing Up"
+msgstr ""
+
+msgctxt "#31301"
+msgid "Activate pressing Down"
+msgstr ""
+
+msgctxt "#31302"
+msgid "Fanart"
+msgstr ""
+
+msgctxt "#31303"
+msgid "IdleFade Timer"
+msgstr ""
+
+msgctxt "#31304"
+msgid "Seconds"
+msgstr ""
+
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr ""
+
+msgctxt "#31306"
+msgid "Choose picture..."
 msgstr ""
 
 #Settings strings

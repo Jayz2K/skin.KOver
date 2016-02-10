@@ -1,3 +1,13 @@
+[B]0.80.1[/B]
+- Designer V2 BETA2
+- Update for import / export with new features
+- Added Bloc4 FALLBACK arts
+- Added NextUp notifications
+- Reworked IDLEFADE feature
+- Localized labels in Designer V2
+- Fix for missing settings at startup
+- Process bug fixes and code improvements
+
 [B]0.80.0[/B] BETA 4
 - Designer V2 BETA
 - Added option to force OSD bottom

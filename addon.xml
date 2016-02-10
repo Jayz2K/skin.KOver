@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
 	id="skin.kover"
-	version="0.80.0"
+	version="0.80.1"
 	name="KOver"
 	provider-name="Jayz2K">
 	<requires>

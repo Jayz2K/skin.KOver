@@ -8,9 +8,13 @@
 				<texture background="true" colordiffuse="$INFO[Skin.String(Color.WP)]">common/white.png</texture>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]]</visible>
 			</control>
-			<control type="image">
-				<texture background="true">$INFO[Skin.String($PARAM[CompPrefix].WPPic)]</texture>
+			<control type="multiimage">
+				<imagepath>$INFO[Skin.String($PARAM[CompPrefix].WPPic)]</imagepath>
 				<aspectratio>scale</aspectratio>
+				<timeperimage>5000</timeperimage>
+				<fadetime>2000</fadetime>
+				<pauseatend>10000</pauseatend>
+				<randomize>true</randomize>
 				<visible>[!Player.HasVideo | !Skin.String($PARAM[CompPrefix].WPVDOTop,VISIBLE) | [!IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + Skin.HasSetting(TvTunesNoBackground)]] + Skin.String($PARAM[CompPrefix].WPBgs,IMAGE) + !IsEmpty(Skin.String($PARAM[CompPrefix].WPPic))</visible>
 			</control>	
 			<control type="multiimage">
