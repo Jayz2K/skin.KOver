@@ -201,7 +201,7 @@
 								<aspectratio aligny="bottom">stretch</aspectratio>
 								<texture colordiffuse="$INFO[Skin.String(Color.B3TagBg)]">common/white.png</texture>
 							</control>
-							<control type="image">
+							<control type="image" id="8767">
 								<left>450</left>
 								<top>200</top>
 								<width>400</width>
@@ -209,6 +209,16 @@
 								<align>center</align>
 								<texture>$INFO[Skin.String(artworklocation)]$INFO[ListItem.Artist,,/logo.png]</texture>
 							</control>
+<control type="label">
+					<left>65</left>
+					<top>200</top>
+					<height>195</height>
+					<font>Font-Music1</font>
+					<align>center</align>	
+										<textcolor>$INFO[Skin.String(Color.SETTxt1F.base)]</textcolor>
+					<label>$VAR[B3Tag]</label>
+<visible>IsEmpty(Control.GetLabel(111111))</visible>
+				</control>
 						</control>
 					</control>
 

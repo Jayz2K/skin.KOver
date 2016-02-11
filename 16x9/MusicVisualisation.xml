@@ -19,7 +19,7 @@
 			<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 			<aspectratio>scale</aspectratio>
 			<timeperimage>10000</timeperimage>
-			<fadetime>600</fadetime>
+			<fadetime>2000</fadetime>
 			<randomize>true</randomize>
 			<loop>yes</loop>
 			<visible>Player.HasAudio + System.HasAddon(script.artistslideshow) + Skin.HasSetting(ArtistslideShow)</visible>

@@ -50,39 +50,66 @@
 	<include name="Custom2">
 	<!-- TO HERE -->
 
-		<itemlayout width="$PARAM[width]" height="71">
-			<control type="image">
-				<height>70</height>
+		<itemlayout width="636" height="356">
+			<control type="image" id="13412">
+				<height>356</height>
 				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="$INFO[Skin.String(Color.B1ItemNF)]">common/white.png</texture>
+				<texture fallback="osd/audio.png">$VAR[ThumbLandscape]</texture>
 			</control>
-			<control type="label">
-				<height>70</height>
-				<left>24</left>
-				<align>left</align>
+<control type="image" id="123123">
+					<left>160</left>
+					<top>260</top>
+					<width>320</width>
+					<height>124</height>
+					<aspectratio>keep</aspectratio>									<texture>$INFO[Skin.String(artworklocation)]$INFO[ListItem.Artist,,/logo.png]</texture>
+							</control>
+			 <control type="label">
+				<height>670</height>
+				<left>0</left>
+				<align>center</align>
 				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1NF)]</textcolor>
-				<label>$INFO[ListItem.Label]</label>
+				<font>Font36B</font>
+	<textcolor>75ffffff</textcolor>
+				<label>[UPPERCASE]$INFO[Skin.String(Color.B1ItemFMUS)][/UPPERCASE]$INFO[ListItem.Artist]</label>
+<visible>IsEmpty(Control.GetLabel(123123))</visible>
 			</control>
-		</itemlayout>
 
-		<focusedlayout width="$PARAM[width]" height="71">
+			</itemlayout>
+
+		<focusedlayout width="636" height="356">
 			<control type="image">
-				<height>70</height>
+				<height>356</height>
 				<aspectratio>stretch</aspectratio>
-				<texture colordiffuse="$VAR[CategoryColor]">common/white.png</texture>
+				<texture fallback="osd/audio.png">$VAR[ThumbLandscape]</texture>
+</control>
+<control type="image">
+					<left>0</left>
+					<top>-18</top>
+					<width>636</width>
+					<height>400</height>
+					<aspectratio>scale</aspectratio>
+					<texture colordiffuse="$VAR[CategoryColor]">common/thumb_episode_frame.png</texture>
+
 			</control>
-			<control type="label">
-				<height>70</height>
-				<left>24</left>
-				<align>left</align>
+<control type="image">
+					<left>160</left>
+					<top>260</top>
+					<width>320</width>
+					<height>124</height>
+					<aspectratio>keep</aspectratio>
+												<texture>$INFO[Skin.String(artworklocation)]$INFO[ListItem.Artist,,/logo.png]</texture>
+							</control>
+				 <control type="label">
+				<height>670</height>
+				<left>0</left>
+				<align>center</align>
 				<aligny>center</aligny>
-				<font>Font27</font>
-				<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
-				<label>$INFO[ListItem.Label]</label>
-			</control>
+				<font>Font36B</font>
+<textcolor>FFFFFFFF</textcolor>
+	<label>$INFO[ListItem.Label]</label>
+		     	</control>
 		</focusedlayout>
+
 
 	<!-- DO NOT MODIFY FROM HERE -->		
 	</include>

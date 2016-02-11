@@ -38,7 +38,7 @@
                                 <selectedcolor>$INFO[Skin.String(Color.B3Tag.base)]</selectedcolor>
                                 <info>ListItem.Label</info>
 <!-- Ajout Textcolor -->                                 
-                                <textcolor>50ffffff</textcolor>
+                                <textcolor>35ffffff</textcolor>
                                 <font>Lyrics</font>
                             </control>
                         </itemlayout>
