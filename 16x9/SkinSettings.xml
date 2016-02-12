@@ -387,7 +387,7 @@
 				</control>		
 
 				<!-- Enable Designer Safe mode-->
-				<control type="radiobutton" id="9114">
+				<!--control type="radiobutton" id="9114">
 					<label>31243</label>
 					<width>1086</width>
 					<height>60</height>
@@ -408,7 +408,7 @@
 					<onclick>Skin.ToggleSetting(DesignerShowV1)</onclick>
 					<selected>Skin.HasSetting(DesignerShowV1)</selected>
 					<visible>Skin.HasSetting(DesignerShow)</visible>
-				</control>		
+				</control-->		
 
 				<!-- Enable Color Tool -->
 				<control type="radiobutton" id="9105">

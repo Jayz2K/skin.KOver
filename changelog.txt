@@ -1,4 +1,6 @@
 [B]0.80.2[/B]
+- End of Designer V1 support
+- Designer V2 Final (speed improvement)
 - Added SQUARE List type
 - Fix wrong text formatting Fixed list
 - Fix missing variable

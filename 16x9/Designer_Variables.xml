@@ -50,90 +50,165 @@
 
 <!-- Column A coloring -->
 	<variable name="XAColor">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+
 		<value>$INFO[Skin.String(Color.DIATxtNF)]</value>
 	</variable>
 
 	<variable name="XBColor">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(B1SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(B2SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(B3SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(B5SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>		
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),A) + !StringCompare(Window(Home).Property(B1SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),A) + !StringCompare(Window(Home).Property(B2SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),A) + !StringCompare(Window(Home).Property(B3SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),A) + !StringCompare(Window(Home).Property(B4SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),A) + !StringCompare(Window(Home).Property(B5SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>		
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),A) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),A) + !StringCompare(Window(Home).Property(B1SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),A) + !StringCompare(Window(Home).Property(B2SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),A) + !StringCompare(Window(Home).Property(B3SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),A) + !StringCompare(Window(Home).Property(B4SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),A) + !StringCompare(Window(Home).Property(B5SizeXMEM),1COLUMN)">$INFO[Skin.String(Color.SETItemF)]</value>		
+
 		<value>$INFO[Skin.String(Color.DIATxtNF)]</value>
 	</variable>
 
 	<variable name="XCColor">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + [[StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN)] | [StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),B) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + [[StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),A) + StringCompare(Container(9300).ListItem.Property(B1SizeXMEM),3COLUMN)] | [StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),B) + !StringCompare(Container(9300).ListItem.Property(B1SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + [[StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),A) + StringCompare(Container(9300).ListItem.Property(B2SizeXMEM),3COLUMN)] | [StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),B) + !StringCompare(Container(9300).ListItem.Property(B2SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + [[StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),A) + StringCompare(Container(9300).ListItem.Property(B3SizeXMEM),3COLUMN)] | [StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),B) + !StringCompare(Container(9300).ListItem.Property(B3SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + [[StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),A) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),3COLUMN)] | [StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),B) + !StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + [[StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),A) + StringCompare(Container(9300).ListItem.Property(B5SizeXMEM),3COLUMN)] | [StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),B) + !StringCompare(Container(9300).ListItem.Property(B5SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>		
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + [[StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(BBCoordXMEM),B) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + [[StringCompare(Window(Home).Property(B1CoordXMEM),A) + StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B1CoordXMEM),B) + !StringCompare(Window(Home).Property(B1SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + [[StringCompare(Window(Home).Property(B2CoordXMEM),A) + StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B2CoordXMEM),B) + !StringCompare(Window(Home).Property(B2SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + [[StringCompare(Window(Home).Property(B3CoordXMEM),A) + StringCompare(Window(Home).Property(B3SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B3CoordXMEM),B) + !StringCompare(Window(Home).Property(B3SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + [[StringCompare(Window(Home).Property(B4CoordXMEM),A) + StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B4CoordXMEM),B) + !StringCompare(Window(Home).Property(B4SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + [[StringCompare(Window(Home).Property(B5CoordXMEM),A) + StringCompare(Window(Home).Property(B5SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B5CoordXMEM),B) + !StringCompare(Window(Home).Property(B5SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordXMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + [[StringCompare(Window(Home).Property(BBCoordXMEM),A) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(BBCoordXMEM),B) + !StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + [[StringCompare(Window(Home).Property(B1CoordXMEM),A) + StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B1CoordXMEM),B) + !StringCompare(Window(Home).Property(B1SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + [[StringCompare(Window(Home).Property(B2CoordXMEM),A) + StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B2CoordXMEM),B) + !StringCompare(Window(Home).Property(B2SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + [[StringCompare(Window(Home).Property(B3CoordXMEM),A) + StringCompare(Window(Home).Property(B3SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B3CoordXMEM),B) + !StringCompare(Window(Home).Property(B3SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + [[StringCompare(Window(Home).Property(B4CoordXMEM),A) + StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B4CoordXMEM),B) + !StringCompare(Window(Home).Property(B4SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + [[StringCompare(Window(Home).Property(B5CoordXMEM),A) + StringCompare(Window(Home).Property(B5SizeXMEM),3COLUMN)] | [StringCompare(Window(Home).Property(B5CoordXMEM),B) + !StringCompare(Window(Home).Property(B5SizeXMEM),1COLUMN)]]">$INFO[Skin.String(Color.SETItemF)]</value>		
+
 		<value>$INFO[Skin.String(Color.DIATxtNF)]</value>
 	</variable>
 
 	<variable name="YAColor">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),A)">$INFO[Skin.String(Color.SETItemF)]</value>
+
 		<value>$INFO[Skin.String(Color.DIATxtNF)]</value>
 	</variable>
 
 	<variable name="YBColor">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(B1SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(B2SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(B3SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(B5SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>		
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),A) + !StringCompare(Window(Home).Property(B1SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),A) + !StringCompare(Window(Home).Property(B2SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),A) + !StringCompare(Window(Home).Property(B3SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),A) + !StringCompare(Window(Home).Property(B4SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),A) + !StringCompare(Window(Home).Property(B5SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>		
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),B)">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),A) + !StringCompare(Window(Home).Property(B1SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),A) + !StringCompare(Window(Home).Property(B2SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),A) + !StringCompare(Window(Home).Property(B3SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),A) + !StringCompare(Window(Home).Property(B4SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),A) + !StringCompare(Window(Home).Property(B5SizeYMEM),1ROW)">$INFO[Skin.String(Color.SETItemF)]</value>		
+
 		<value>$INFO[Skin.String(Color.DIATxtNF)]</value>
 	</variable>
 
 	<variable name="YCColor">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + [[StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW)] | [StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + [[StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),A) + StringCompare(Container(9300).ListItem.Property(B1SizeYMEM),3ROW)] | [StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(B1SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + [[StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),A) + StringCompare(Container(9300).ListItem.Property(B2SizeYMEM),3ROW)] | [StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(B2SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + [[StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),A) + StringCompare(Container(9300).ListItem.Property(B3SizeYMEM),3ROW)] | [StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(B3SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + [[StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),A) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),3ROW)] | [StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + [[StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),A) + StringCompare(Container(9300).ListItem.Property(B5SizeYMEM),3ROW)] | [StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),B) + !StringCompare(Container(9300).ListItem.Property(B5SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>		
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + [[StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(BBCoordYMEM),B) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + [[StringCompare(Window(Home).Property(B1CoordYMEM),A) + StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B1CoordYMEM),B) + !StringCompare(Window(Home).Property(B1SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + [[StringCompare(Window(Home).Property(B2CoordYMEM),A) + StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B2CoordYMEM),B) + !StringCompare(Window(Home).Property(B2SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + [[StringCompare(Window(Home).Property(B3CoordYMEM),A) + StringCompare(Window(Home).Property(B3SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B3CoordYMEM),B) + !StringCompare(Window(Home).Property(B3SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + [[StringCompare(Window(Home).Property(B4CoordYMEM),A) + StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B4CoordYMEM),B) + !StringCompare(Window(Home).Property(B4SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + [[StringCompare(Window(Home).Property(B5CoordYMEM),A) + StringCompare(Window(Home).Property(B5SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B5CoordYMEM),B) + !StringCompare(Window(Home).Property(B5SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>		
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),C)">$INFO[Skin.String(Color.SETItemF)]</value>
+
+		<value condition="StringCompare(Window(Home).Property(SubName),BB) + [[StringCompare(Window(Home).Property(BBCoordYMEM),A) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(BBCoordYMEM),B) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B1) + [[StringCompare(Window(Home).Property(B1CoordYMEM),A) + StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B1CoordYMEM),B) + !StringCompare(Window(Home).Property(B1SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B2) + [[StringCompare(Window(Home).Property(B2CoordYMEM),A) + StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B2CoordYMEM),B) + !StringCompare(Window(Home).Property(B2SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B3) + [[StringCompare(Window(Home).Property(B3CoordYMEM),A) + StringCompare(Window(Home).Property(B3SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B3CoordYMEM),B) + !StringCompare(Window(Home).Property(B3SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B4) + [[StringCompare(Window(Home).Property(B4CoordYMEM),A) + StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B4CoordYMEM),B) + !StringCompare(Window(Home).Property(B4SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>
+		<value condition="StringCompare(Window(Home).Property(SubName),B5) + [[StringCompare(Window(Home).Property(B5CoordYMEM),A) + StringCompare(Window(Home).Property(B5SizeYMEM),3ROW)] | [StringCompare(Window(Home).Property(B5CoordYMEM),B) + !StringCompare(Window(Home).Property(B5SizeYMEM),1ROW)]]">$INFO[Skin.String(Color.SETItemF)]</value>		
+
 		<value>$INFO[Skin.String(Color.DIATxtNF)]</value>
 	</variable>
 
@@ -8814,158 +8889,158 @@
 	</variable>
 
 	<variable name="SidebarIcons">	
-		<value condition="!StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) | !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW)">material/limited.png</value>
+		<value condition="!StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN) | !StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)">material/limited.png</value>
 	</variable>
 	
 	<variable name="SepYIcons">	
-		<value condition="StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW)">material/limited.png</value>
-		<value condition="StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),1ROW)">material/lock.png</value>
+		<value condition="StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">material/limited.png</value>
+		<value condition="StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)">material/lock.png</value>
 	</variable>		
 	
 	<variable name="SepXIcons">	
-		<value condition="StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),2COLUMN)">material/limited.png</value>
-		<value condition="StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),1COLUMN)">material/lock.png</value>
+		<value condition="StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">material/limited.png</value>
+		<value condition="StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)">material/lock.png</value>
 	</variable>		
 	
 	<variable name="CoordXIcons">	
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL)">material/lock.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),2COLUMN)">material/limited.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),1COLUMN)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)">material/lock.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">material/limited.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)">material/lock.png</value>
 	</variable>	
 	
 	<variable name="CoordYIcons">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL)">material/lock.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW)">material/limited.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),1ROW)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)">material/lock.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">material/limited.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)">material/lock.png</value>
 	</variable>
 
 	<variable name="MoveResizeIcons">
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + !StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),3COLUMN) + !StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),3COLUMN)">material/limited.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + !StringCompare(Window(Home).Property(BBCoordXMEM),3COLUMN) + !StringCompare(Window(Home).Property(BBCoordXMEM),3COLUMN)">material/limited.png</value>
 	</variable>
 
 	<variable name="CoordXLabel">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4CoordXMEM),A)">A</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">B</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordXMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">C</value>
 	</variable>
 
 	<variable name="SizeXLabel">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),1COLUMN)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1SizeXMEM),1COLUMN)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2SizeXMEM),1COLUMN)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3SizeXMEM),1COLUMN)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),1COLUMN)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),1COLUMN)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1SizeXMEM),1COLUMN)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2SizeXMEM),1COLUMN)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3SizeXMEM),1COLUMN)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4SizeXMEM),1COLUMN)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4SizeXMEM),1COLUMN)">$NUMBER[1]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),2COLUMN)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1SizeXMEM),2COLUMN)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2SizeXMEM),2COLUMN)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3SizeXMEM),2COLUMN)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),2COLUMN)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),2COLUMN)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1SizeXMEM),2COLUMN)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2SizeXMEM),2COLUMN)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3SizeXMEM),2COLUMN)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4SizeXMEM),2COLUMN)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4SizeXMEM),2COLUMN)">$NUMBER[2]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1SizeXMEM),3COLUMN)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2SizeXMEM),3COLUMN)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3SizeXMEM),3COLUMN)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),3COLUMN)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4SizeXMEM),3COLUMN)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),3COLUMN)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1SizeXMEM),3COLUMN)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2SizeXMEM),3COLUMN)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3SizeXMEM),3COLUMN)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4SizeXMEM),3COLUMN)">$NUMBER[3]</value>
 	</variable>
 
 	<variable name="CoordYLabel">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),A)">A</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),A)">A</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4CoordYMEM),A)">A</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B)">B</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">B</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">B</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),C)">C</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBCoordYMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">C</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">C</value>
 	</variable>
 
 	<variable name="SizeYLabel">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),1ROW)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1SizeYMEM),1ROW)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2SizeYMEM),1ROW)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3SizeYMEM),1ROW)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),1ROW)">$NUMBER[1]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),1ROW)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1SizeYMEM),1ROW)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2SizeYMEM),1ROW)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3SizeYMEM),1ROW)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4SizeYMEM),1ROW)">$NUMBER[1]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4SizeYMEM),1ROW)">$NUMBER[1]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1SizeYMEM),2ROW)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2SizeYMEM),2ROW)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3SizeYMEM),2ROW)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),2ROW)">$NUMBER[2]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),2ROW)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1SizeYMEM),2ROW)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2SizeYMEM),2ROW)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3SizeYMEM),2ROW)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4SizeYMEM),2ROW)">$NUMBER[2]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4SizeYMEM),2ROW)">$NUMBER[2]</value>
 
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1SizeYMEM),3ROW)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2SizeYMEM),3ROW)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3SizeYMEM),3ROW)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),3ROW)">$NUMBER[3]</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Container(9300).ListItem.Property(B4SizeYMEM),3ROW)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1SizeYMEM),3ROW)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2SizeYMEM),3ROW)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3SizeYMEM),3ROW)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)">$NUMBER[3]</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B5) + StringCompare(Window(Home).Property(B4SizeYMEM),3ROW)">$NUMBER[3]</value>
 	</variable>
 	
 	<variable name="SizeXIcons">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL)">material/lock.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),1COLUMN)">material/lock.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),2COLUMN)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),VERTICAL) + StringCompare(Window(Home).Property(BBCoordXMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),VERTICAL) + StringCompare(Window(Home).Property(BBCoordXMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL)">material/lock.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),1COLUMN)">material/lock.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeXMEM),2COLUMN)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordXMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordXMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordXMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordXMEM),C)">material/lock.png</value>
 
 	</variable>
 	
 	<variable name="SizeYIcons">
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL)">material/lock.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),1ROW)">material/lock.png</value>
-		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),2ROW)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),B)">material/limited.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),C)">material/lock.png</value>
-		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL) + StringCompare(Window(Home).Property(BBCoordYMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),HORIZONTAL) + StringCompare(Window(Home).Property(BBCoordYMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBLayMEM),VERTICAL)">material/lock.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),1ROW)">material/lock.png</value>
+		<value condition="!StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Window(Home).Property(BBSizeYMEM),2ROW)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),B)">material/limited.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Window(Home).Property(B1CoordYMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B2) + StringCompare(Window(Home).Property(B2CoordYMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B3) + StringCompare(Window(Home).Property(B3CoordYMEM),C)">material/lock.png</value>
+		<value condition="StringCompare(Container(9200).ListItem.Property(SubName),B4) + StringCompare(Window(Home).Property(B4CoordYMEM),C)">material/lock.png</value>
 	</variable>
 
 	<variable name="FixedDIASlideValue">
