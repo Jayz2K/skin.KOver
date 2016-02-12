@@ -1250,6 +1250,10 @@ msgctxt "#31306"
 msgid "Choose picture..."
 msgstr ""
 
+msgctxt "#31307"
+msgid "Square"
+msgstr ""
+
 #Settings strings
 
 msgctxt "#31400"

@@ -61,7 +61,7 @@
 					<orientation>horizontal</orientation>
 					<focusposition>2</focusposition>
 					<scrolltime tween="sine" easing="out">240</scrolltime>
-					<visible allowhiddenfocus="true"></visible>
+					<visible allowhiddenfocus="true">true</visible>
 					
 					<itemlayout width="104" height="120">
 						<control type="image">
@@ -2681,7 +2681,8 @@
 							<!-- Actions For Bloc 1-->							
 							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + [StringCompare(Container(9300).ListItem.Label2,BANNER) | IsEmpty(Container(9300).ListItem.Label2)]">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],WIDELIST)</onclick>
 							<onclick condition="!StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,WIDELIST)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],TILES)</onclick>
-							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,TILES)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],FANART)</onclick>
+							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,TILES)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],SQUARE)</onclick>
+							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,SQUARE)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],FANART)</onclick>
 							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,FANART)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],CARD)</onclick>
 							<onclick condition="!StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,CARD)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],POSTER)</onclick>
 							<onclick condition="StringCompare(Container(9200).ListItem.Property(SubName),B1) + StringCompare(Container(9300).ListItem.Label2,POSTER)">Skin.SetString($INFO[Container(9300).ListItem.Property(SetID)],FIXEDLIST)</onclick>

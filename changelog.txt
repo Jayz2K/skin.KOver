@@ -1,3 +1,10 @@
+[B]0.80.2[/B]
+- Added SQUARE List type
+- Fix wrong text formatting Fixed list
+- Fix missing variable
+- Fix missing dialogkaitoast icons
+- Code cleanup an improvements
+
 [B]0.80.1[/B]
 - Designer V2 BETA2
 - Update for import / export with new features

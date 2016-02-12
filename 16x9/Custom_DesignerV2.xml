@@ -209,7 +209,7 @@
 						<orientation>horizontal</orientation>
 						<focusposition>2</focusposition>
 						<scrolltime tween="sine" easing="out">240</scrolltime>
-						<visible allowhiddenfocus="true"></visible>
+						<visible allowhiddenfocus="true">true</visible>
 						
 						<itemlayout width="104" height="120">
 							<control type="image">
@@ -4059,7 +4059,6 @@
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
-				<left>0</left>
 
 				<onback>9300</onback>
 				<onclick>Control.SetFocus(9700)</onclick>
@@ -4093,7 +4092,7 @@
 				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B2CoordX,B)</onright>
 				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B3CoordXMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B3CoordX,B)</onright>
 				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B4CoordXMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4CoordX,B)</onright>
-				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),A">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B5CoordX,B)</onright>
+				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B5CoordXMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B5CoordX,B)</onright>
 
 				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B1CoordXMEM),B)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordX,C)</onright>
 				<onright condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),VERTICAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordXMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeXMEM),3COLUMN) + StringCompare(Container(9300).ListItem.Property(B2CoordXMEM),B)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B2CoordX,C)</onright>
@@ -4139,7 +4138,7 @@
 				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B2CoordY,B)</ondown>
 				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B3CoordYMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B3CoordY,B)</ondown>
 				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B4CoordYMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B4CoordY,B)</ondown>
-				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),A">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B5CoordY,B)</ondown>
+				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B5CoordYMEM),A)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B5CoordY,B)</ondown>
 
 				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B1CoordYMEM),B)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B1CoordY,C)</ondown>
 				<ondown condition="StringCompare(Container(9300).ListItem.Property(BBLayMEM),HORIZONTAL) + StringCompare(Container(9200).ListItem.Property(SubName),BB) + StringCompare(Container(9300).ListItem.Property(BBCoordYMEM),A) + !StringCompare(Container(9300).ListItem.Property(BBSizeYMEM),3ROW) + StringCompare(Container(9300).ListItem.Property(B2CoordYMEM),B)">Skin.SetString($INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]B2CoordY,C)</ondown>
@@ -4217,7 +4216,6 @@
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
-				<left>0</left>
 
 				<onback>9300</onback>
 				<onclick>Control.SetFocus(9600)</onclick>

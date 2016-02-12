@@ -526,6 +526,9 @@
 						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,TILES)" name="ListTiles">
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,SQUARE)" name="ListSquare">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,FANART)" name="ListFanart">
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
@@ -724,6 +727,9 @@
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,TILES)" name="ListTiles">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,SQUARE)" name="ListSquare">
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B1Typ,FANART)" name="ListFanart">
@@ -1255,6 +1261,9 @@
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,TILES)" name="ListTiles">
+							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+						</include>
+						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,SQUARE)" name="ListSquare">
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 						<include condition="Skin.String($PARAM[CompPrefix].B5Typ,FANART)" name="ListFanart">
