@@ -9,13 +9,18 @@
 	</setting>
 
 <!-- IdleFade Timer -->
-	<setting id="IdleFade" value="3" label="3 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
-	<setting id="IdleFade" value="5" label="5 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
-	<setting id="IdleFade" value="10" label="10 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
-	<setting id="IdleFade" value="15" label="15 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
-	<setting id="IdleFade" value="20" label="20 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
-	<setting id="IdleFade" value="25" label="25 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
-	<setting id="IdleFade" value="30" label="30 $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="3" label="[B]3[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="5" label="[B]5[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="10" label="[B]10[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="15" label="[B]15[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="20" label="[B]20[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="25" label="[B]25[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+	<setting id="IdleFade" value="30" label="[B]30[/B] $LOCALIZE[31304]" condition="" icon="material/timer.png" description="$LOCALIZE[31212]"/>
+
+<!-- Home Menu size -->
+	<setting id="HOM.MenuSize" value="DEFAULT" label="[B]DEFAULT[/B] - $LOCALIZE[31270]" condition="" icon="material/home.png" description="$LOCALIZE[31236]"/>
+	<setting id="HOM.MenuSize" value="MEDIUM" label="[B]MEDIUM[/B] - $LOCALIZE[31308]" condition="" icon="material/home.png" description="$LOCALIZE[31236]"/>
+	<setting id="HOM.MenuSize" value="LARGE" label="[B]LARGE[/B] - $LOCALIZE[31309]" condition="" icon="material/home.png" description="$LOCALIZE[31236]"/>
 
 <!-- Bloc Visibility option -->
 	<setting id="$INFO[Window(Home).Property(IDPrefix),,Show]" value="HIDDEN" label="[B]HIDDEN[/B] - $LOCALIZE[31254]" condition="" icon="material/designervisibility.png" description="$LOCALIZE[31101]"/>

@@ -122,7 +122,7 @@
 					<focusedcolor>$INFO[Skin.String(Color.DIATxtNF)]</focusedcolor> 
 					<invalidcolor>$INFO[Skin.String(Color.DIATxtNF)]</invalidcolor> 
 					<disabledcolor>$INFO[Skin.String(Color.DIATxtNF)]</disabledcolor> 
-					<visible allowhiddenfocus="true"></visible> 
+					<visible allowhiddenfocus="true">true</visible> 
 				</control> 		
 
 				<!-- Button grouplist -->
@@ -184,14 +184,12 @@
 				<left>752</left>
 				<height>258</height>
 				<width>1086</width>
-				<itemgap>6</itemgap>
 				<ondown condition="Control.IsVisible(9100)">9100</ondown>
 				<ondown condition="Control.IsVisible(9200)">9200</ondown>
 				<ondown condition="Control.IsVisible(9300)">9300</ondown>
 				<ondown condition="Control.IsVisible(9400)">9400</ondown>
 				<onleft>9006</onleft>
 				<orientation>horizontal</orientation>
-				<usecontrolcoords>true</usecontrolcoords>
 				<visible allowhiddenfocus="true">true</visible>
 
 				<itemlayout width="200" height="120">
@@ -285,7 +283,7 @@
 				<!-- Home Menu Size-->
 				<control type="button" id="9113">
 					<label>31235</label>
-					<label2 fallback="DEFAULT">$INFO[Skin.String(HomeSize)]</label2>
+					<label2 fallback="DEFAULT">$INFO[Skin.String(HOM.MenuSize)]</label2>
 					<width>1086</width>
 					<height>60</height>
 					<font>Font27</font>
@@ -297,9 +295,10 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
-					<onclick condition="IsEmpty(Skin.String(HomeSize)) | Skin.String(HomeSize,LARGE)">Skin.SetString(HomeSize,DEFAULT)</onclick>
-					<onclick condition="Skin.String(HomeSize,DEFAULT)">Skin.SetString(HomeSize,MEDIUM)</onclick>
-					<onclick condition="Skin.String(HomeSize,MEDIUM)">Skin.SetString(HomeSize,LARGE)</onclick>
+					<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=HOM.MenuSize,header=$LOCALIZE[31235])</onclick>
+					<!--onclick condition="IsEmpty(Skin.String(HOM.MenuSize)) | Skin.String(HOM.MenuSize,LARGE)">Skin.SetString(HOM.MenuSize,DEFAULT)</onclick>
+					<onclick condition="Skin.String(HOM.MenuSize,DEFAULT)">Skin.SetString(HOM.MenuSize,MEDIUM)</onclick>
+					<onclick condition="Skin.String(HOM.MenuSize,MEDIUM)">Skin.SetString(HOM.MenuSize,LARGE)</onclick-->
 				</control>			
 
 				<!-- Separator -->
