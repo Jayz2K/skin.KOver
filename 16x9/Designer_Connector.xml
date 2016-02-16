@@ -1,8 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
+	<include name="CustomLists">
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW)">
+			<param name="width" value="636" />
+			<param name="height" value="356" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW)">
+			<param name="width" value="1272" />
+			<param name="height" value="356" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW)">
+			<param name="width" value="1908" />
+			<param name="height" value="356" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW)">
+			<param name="width" value="636" />
+			<param name="height" value="712" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW)">
+			<param name="width" value="1272" />
+			<param name="height" value="712" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW)">
+			<param name="width" value="1908" />
+			<param name="height" value="712" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW)">
+			<param name="width" value="636" />
+			<param name="height" value="1068" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW)">
+			<param name="width" value="1272" />
+			<param name="height" value="1068" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+		<include name="$PARAM[CustomId]" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW)">
+			<param name="width" value="1908" />
+			<param name="height" value="1068" />
+			<param name="CompPrefix" value="$PARAM[CompPrefix]" />
+		</include>
+	</include>
+
 		<!-- Designer forwarding properties -->
-	<include name="OnleftProps">
+	<include name="OnMoveProps">
 
 		<onleft>SetProperty(BBLayMEM,$VAR[FixedBBLayValue],Home)</onleft>
 		<onleft>SetProperty(BBSidebarMEM,$VAR[FixedBBSidebarValue],Home)</onleft>
@@ -192,57 +240,6 @@
 
 		<!-- Designer forwarding properties -->
 	<include name="OnfocusProps">
-
-		<onfocus>SetProperty(BBLayMEM,$VAR[FixedBBLayValue],Home)</onfocus>
-		<onfocus>SetProperty(BBSidebarMEM,$VAR[FixedBBSidebarValue],Home)</onfocus>
-		<onfocus>SetProperty(BBSepXMEM,$VAR[FixedBBSepXValue],Home)</onfocus>
-		<onfocus>SetProperty(BBSepYMEM,$VAR[FixedBBSepYValue],Home)</onfocus>
-		<onfocus>SetProperty(BBShowMEM,$VAR[FixedBBShowValue],Home)</onfocus>
-		<onfocus>SetProperty(BBCoordXMEM,$VAR[FixedBBCoordXValue],Home)</onfocus>
-		<onfocus>SetProperty(BBCoordYMEM,$VAR[FixedBBCoordYValue],Home)</onfocus>
-		<onfocus>SetProperty(BBSizeXMEM,$VAR[FixedBBSizeXValue],Home)</onfocus>
-		<onfocus>SetProperty(BBSizeYMEM,$VAR[FixedBBSizeYValue],Home)</onfocus>
-		<onfocus>SetProperty(B1TypMEM,$VAR[FixedB1TypValue],Home)</onfocus>
-		<onfocus>SetProperty(B1ShowMEM,$VAR[FixedB1ShowValue],Home)</onfocus>
-		<onfocus>SetProperty(B1CoordXMEM,$VAR[FixedB1CoordXValue],Home)</onfocus>
-		<onfocus>SetProperty(B1CoordYMEM,$VAR[FixedB1CoordYValue],Home)</onfocus>
-		<onfocus>SetProperty(B1SizeXMEM,$VAR[FixedB1SizeXValue],Home)</onfocus>
-		<onfocus>SetProperty(B1SizeYMEM,$VAR[FixedB1SizeYValue],Home)</onfocus>
-		<onfocus>SetProperty(B2ShowMEM,$VAR[FixedB2ShowValue],Home)</onfocus>
-		<onfocus>SetProperty(B2CoordXMEM,$VAR[FixedB2CoordXValue],Home)</onfocus>
-		<onfocus>SetProperty(B2CoordYMEM,$VAR[FixedB2CoordYValue],Home)</onfocus>
-		<onfocus>SetProperty(B2SizeXMEM,$VAR[FixedB2SizeXValue],Home)</onfocus>
-		<onfocus>SetProperty(B2SizeYMEM,$VAR[FixedB2SizeYValue],Home)</onfocus>
-		<onfocus>SetProperty(B3ShowMEM,$VAR[FixedB3ShowValue],Home)</onfocus>
-		<onfocus>SetProperty(B3CoordXMEM,$VAR[FixedB3CoordXValue],Home)</onfocus>
-		<onfocus>SetProperty(B3CoordYMEM,$VAR[FixedB3CoordYValue],Home)</onfocus>
-		<onfocus>SetProperty(B3SizeXMEM,$VAR[FixedB3SizeXValue],Home)</onfocus>
-		<onfocus>SetProperty(B3SizeYMEM,$VAR[FixedB3SizeYValue],Home)</onfocus>
-		<onfocus>SetProperty(B3TypMEM,$VAR[FixedB3TypValue],Home)</onfocus>
-		<onfocus>SetProperty(B4ShowMEM,$VAR[FixedB4ShowValue],Home)</onfocus>
-		<onfocus>SetProperty(B4CoordXMEM,$VAR[FixedB4CoordXValue],Home)</onfocus>
-		<onfocus>SetProperty(B4CoordYMEM,$VAR[FixedB4CoordYValue],Home)</onfocus>
-		<onfocus>SetProperty(B4SizeXMEM,$VAR[FixedB4SizeXValue],Home)</onfocus>
-		<onfocus>SetProperty(B4SizeYMEM,$VAR[FixedB4SizeYValue],Home)</onfocus>
-		<onfocus>SetProperty(DIASlideMEM,$VAR[FixedDIASlideValue],Home)</onfocus>
-		<onfocus>SetProperty(DIAPanelMEM,$VAR[FixedDIAPanelValue],Home)</onfocus>
-		<onfocus>SetProperty(B5ShowMEM,$VAR[FixedB5ShowValue],Home)</onfocus>
-		<onfocus>SetProperty(B5CoordXMEM,$VAR[FixedB5CoordXValue],Home)</onfocus>
-		<onfocus>SetProperty(B5CoordYMEM,$VAR[FixedB5CoordYValue],Home)</onfocus>
-		<onfocus>SetProperty(B5SizeXMEM,$VAR[FixedB5SizeXValue],Home)</onfocus>
-		<onfocus>SetProperty(B5SizeYMEM,$VAR[FixedB5SizeYValue],Home)</onfocus>
-		<onfocus>SetProperty(B5TypMEM,$VAR[FixedB5TypValue],Home)</onfocus>					
-
-		<onfocus>SetProperty(SectionName,$INFO[Container(9000).ListItem.Property(SectionName)],Home)</onfocus>
-		<onfocus>SetProperty(ViewName,$INFO[Container(9100).ListItem.Property(ViewName)],Home)</onfocus>
-		<onfocus>SetProperty(SubName,$INFO[Container(9200).ListItem.Property(SubName)],Home)</onfocus>
-		<onfocus>SetProperty(CompPrefix,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.],Home)</onfocus>
-		<onfocus>SetProperty(IDPrefix,$INFO[Container(9000).ListItem.Property(SectionName),,.]$INFO[Container(9100).ListItem.Property(ViewName),,.]$INFO[Container(9200).ListItem.Property(SubName)],Home)</onfocus>
-
-	</include>
-
-	<!-- Skin.Helper forwarding properties -->
-	<include name="onfocusProps">
 
 		<onfocus>SetProperty(BBLayMEM,$VAR[FixedBBLayValue],Home)</onfocus>
 		<onfocus>SetProperty(BBSidebarMEM,$VAR[FixedBBSidebarValue],Home)</onfocus>

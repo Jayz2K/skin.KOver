@@ -473,141 +473,28 @@
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="636" />
-							<param name="height" value="356" />
+						<include name="CustomLists" condition="Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
+							<param name="CustomId" value="Custom1" />
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="1272" />
-							<param name="height" value="356" />
+						<include name="CustomLists" condition="Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
+							<param name="CustomId" value="Custom2" />
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="1908" />
-							<param name="height" value="356" />
+						<include name="CustomLists" condition="Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
+							<param name="CustomId" value="Custom3" />
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="636" />
-							<param name="height" value="712" />
+						<include name="CustomLists" condition="Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM4)">
+							<param name="CustomId" value="Custom4" />
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="1272" />
-							<param name="height" value="712" />
+						<include name="CustomLists" condition="Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM5)">
+							<param name="CustomId" value="Custom5" />
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="1908" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="636" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="1272" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom1" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM1)">
-							<param name="width" value="1908" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="636" />
-							<param name="height" value="356" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="1272" />
-							<param name="height" value="356" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="1908" />
-							<param name="height" value="356" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="636" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="1272" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="1908" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="636" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="1272" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom2" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM2)">
-							<param name="width" value="1908" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="636" />
-							<param name="height" value="356" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="1272" />
-							<param name="height" value="356" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,1ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="1908" />
-							<param name="height" value="356" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="636" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="1272" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,2ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="1908" />
-							<param name="height" value="712" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,1COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="636" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,2COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="1272" />
-							<param name="height" value="1068" />
-							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
-						</include>
-						<include name="Custom3" condition="Skin.String($PARAM[CompPrefix].B1SizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].B1Sizey,3ROW) + Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM3)">
-							<param name="width" value="1908" />
-							<param name="height" value="1068" />
+						<include name="CustomLists" condition="Skin.String($PARAM[CompPrefix].B1Typ,CUSTOM6)">
+							<param name="CustomId" value="Custom6" />
 							<param name="CompPrefix" value="$PARAM[CompPrefix]" />
 						</include>
 

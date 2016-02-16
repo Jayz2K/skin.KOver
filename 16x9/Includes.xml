@@ -6,9 +6,12 @@
 	<include file="Designer_Connector.xml" />
 	<include file="Designer_VDOViewtype.xml" />
 	<include file="Designer_HOMViewtype.xml" />
-	<include file="Designer_CustomList1.xml" />
-	<include file="Designer_CustomList2.xml" />
-	<include file="Designer_CustomList3.xml" />
+	<include condition="!IsEmpty(Window(Home).Property(CUSTOM1))" file="Designer_CustomList1.xml" />
+	<include condition="!IsEmpty(Window(Home).Property(CUSTOM2))" file="Designer_CustomList2.xml" />
+	<include condition="!IsEmpty(Window(Home).Property(CUSTOM3))" file="Designer_CustomList3.xml" />
+	<include condition="!IsEmpty(Window(Home).Property(CUSTOM4))" file="Designer_CustomList4.xml" />
+	<include condition="!IsEmpty(Window(Home).Property(CUSTOM5))" file="Designer_CustomList5.xml" />
+	<include condition="!IsEmpty(Window(Home).Property(CUSTOM6))" file="Designer_CustomList6.xml" />
 	<include file="Dialogs_includes.xml" />
 	<include file="Dialogs_InfosIncludes.xml" />
 	<include file="Dialogs_ExtendedIncludes1.xml" />

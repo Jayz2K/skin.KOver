@@ -1574,14 +1574,14 @@
 				<!-- Scroll -->
 				<control type="image">
 					<left>230</left>
-					<top>200</top>
+					<bottom>24</bottom>
 					<width>176</width>
 					<height>2</height>
 					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/white.png</texture>
 				</control>
 				<control type="image">
 					<left>230</left>
-					<top>200</top>
+					<bottom>24</bottom>
 					<width>24</width>
 					<height>2</height>
 					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATitle)]">common/white.png</texture>
@@ -9684,14 +9684,14 @@
 				<!-- Scroll -->
 				<control type="image">
 					<left>230</left>
-					<top>200</top>
+					<bottom>24</bottom>
 					<width>176</width>
 					<height>2</height>
 					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/white.png</texture>
 				</control>
 				<control type="image">
 					<left>230</left>
-					<top>200</top>
+					<bottom>24</bottom>
 					<width>24</width>
 					<height>2</height>
 					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATitle)]">common/white.png</texture>

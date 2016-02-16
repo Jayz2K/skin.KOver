@@ -2,6 +2,12 @@
 <window id="1101">
 	<backgroundcolor>0x00000000</backgroundcolor>
 	<defaultcontrol always="true">9000</defaultcontrol>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList1.xml,windowprop=CUSTOM1)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList2.xml,windowprop=CUSTOM2)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList3.xml,windowprop=CUSTOM3)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList4.xml,windowprop=CUSTOM4)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList5.xml,windowprop=CUSTOM5)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList6.xml,windowprop=CUSTOM6)</onload>
 	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
 	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
 	<onload>SetProperty(DesignerActive,TRUE,Home)</onload>
@@ -2029,7 +2035,7 @@
 							<onback>9200</onback>
 
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Show,header=$INFO[Container(9300).ListItem.Label])</onclick>
-							<include>OnclickProps</include>
+
 			
 							<property name="EndName">Show</property>
 							<property name="SetID">$INFO[Window(Home).Property(SectionName),,.]$INFO[Window(Home).Property(ViewName),,.]$INFO[Window(Home).Property(SubName)]Show</property>
@@ -2062,7 +2068,7 @@
 							<visible>![StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Bgs,header=$INFO[Container(9300).ListItem.Label])</onclick>			
 							
 							<property name="EndName">Bgs</property>
@@ -2077,7 +2083,7 @@
 							<visible>![StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Container(9200).ListItem.Property(Split),SPLIT)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick condition="StringCompare(Window(Home).Property(SubName),WP)">RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Pic,header=$INFO[Container(9300).ListItem.Label])</onclick>	
 							<onclick condition="!StringCompare(Window(Home).Property(SubName),WP)">Skin.SetImage($INFO[Container(9300).ListItem.Property(SetID)])</onclick>
 							
@@ -2093,7 +2099,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),WP) | [StringCompare(Window(Home).Property(SectionName),HOM) + StringCompare(Window(Home).Property(SubName),B4)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]VDOTop,header=$INFO[Container(9300).ListItem.Label])</onclick>	
 							
 							<property name="EndName">VDOTop</property>
@@ -2108,7 +2114,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B1) | [StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SectionName),WEA) + !StringCompare(Window(Home).Property(SectionName),PIC)] | [StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(SectionName),HOM)] | [StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Typ,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">Typ</property>
@@ -2123,7 +2129,7 @@
 							<visible>[StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + [[StringCompare(Window(Home).Property(SectionName),HOM) + StringCompare(Window(Home).Property(ViewName),View1)] | !StringCompare(Window(Home).Property(SectionName),HOM)]] | StringCompare(Window(Home).Property(SubName),B1) | [StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Lay,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">Lay</property>
@@ -2138,7 +2144,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),BB) + !StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + [[StringCompare(Window(Home).Property(SectionName),HOM) + StringCompare(Window(Home).Property(ViewName),View1)] | !StringCompare(Window(Home).Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Sidebar,header=$INFO[Container(9300).ListItem.Label])</onclick>
 							<property name="EndName">Sidebar</property>
 							<property name="SetID">$INFO[Window(Home).Property(SectionName),,.]$INFO[Window(Home).Property(ViewName),,.]$INFO[Window(Home).Property(SubName)]Sidebar</property>
@@ -2152,7 +2158,7 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Window(Home).Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]SBHide,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">SBHide</property>
@@ -2168,7 +2174,7 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Window(Home).Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(CompPrefix)]DIAPanel,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">DIAPanel</property>
@@ -2183,7 +2189,7 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Window(Home).Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(CompPrefix)]DIASlide,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">DIASlide</property>
@@ -2198,7 +2204,7 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Window(Home).Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]SepY,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">SepY</property>
@@ -2213,7 +2219,7 @@
 							<visible>!StringCompare(Container(9200).ListItem.Property(Split),SPLIT) + StringCompare(Window(Home).Property(SubName),BB)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]SepX,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">SepX</property>
@@ -2228,7 +2234,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B5)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]B1ShowOF,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">B1ShowOF</property>
@@ -2243,7 +2249,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B5)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]B2ShowOF,header=$INFO[Container(9300).ListItem.Label])</onclick>		
 
 							<property name="EndName">B2ShowOF</property>
@@ -2258,7 +2264,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B5)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]B3ShowOF,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">B3ShowOF</property>
@@ -2273,7 +2279,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B5)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]B4ShowOF,header=$INFO[Container(9300).ListItem.Label])</onclick>
 							
 							<property name="EndName">B4ShowOF</property>
@@ -2288,7 +2294,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B1)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Submenu,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">Submenu</property>
@@ -2303,7 +2309,7 @@
 							<visible>[StringCompare(Window(Home).Property(SectionName),HOM) + StringCompare(Window(Home).Property(SubName),B1)] | StringCompare(Window(Home).Property(SubName),B5)</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Goback,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">Goback</property>
@@ -2318,7 +2324,7 @@
 							<visible>StringCompare(Window(Home).Property(SubName),B1) | StringCompare(Window(Home).Property(SubName),B3) | [StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
 
-							<include>OnclickProps</include>
+
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Scroll,header=$INFO[Container(9300).ListItem.Label])</onclick>
 
 							<property name="EndName">Scroll</property>
@@ -3307,7 +3313,7 @@
 				<ondown condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),A) + !StringCompare(Window(Home).Property(BBSizeYMEM),1ROW) + !StringCompare(Window(Home).Property(B5SizeYMEM),3ROW) + ![StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(B5SizeYMEM),2ROW)]">Skin.SetString($INFO[Window(Home).Property(SectionName),,.]$INFO[Window(Home).Property(ViewName),,.]$INFO[Window(Home).Property(SubName)]CoordY,B)</ondown>
 				<ondown condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),B) + !StringCompare(Window(Home).Property(B5SizeYMEM),2ROW) + [StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) | [StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B)]]">Skin.SetString($INFO[Window(Home).Property(SectionName),,.]$INFO[Window(Home).Property(ViewName),,.]$INFO[Window(Home).Property(SubName)]CoordY,C)</ondown>
 
-				<include>OnleftProps</include>
+				<include>OnMoveProps</include>
 
 			</control>
 
@@ -3483,7 +3489,7 @@
 				<ondown condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),A) + StringCompare(Window(Home).Property(B5SizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBSizeYMEM),3ROW)">Skin.SetString($INFO[Window(Home).Property(SectionName),,.]$INFO[Window(Home).Property(ViewName),,.]$INFO[Window(Home).Property(SubName)]SizeY,3ROW)</ondown>
 				<ondown condition="StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(B5CoordYMEM),B) + StringCompare(Window(Home).Property(B5SizeYMEM),1ROW) + [StringCompare(Window(Home).Property(BBSizeYMEM),3ROW) | [StringCompare(Window(Home).Property(BBSizeYMEM),2ROW) + StringCompare(Window(Home).Property(BBCoordYMEM),B)]]">Skin.SetString($INFO[Window(Home).Property(SectionName),,.]$INFO[Window(Home).Property(ViewName),,.]$INFO[Window(Home).Property(SubName)]SizeY,2ROW)</ondown>
 
-				<include>OnleftProps</include>
+				<include>OnMoveProps</include>
 
 			</control>
 

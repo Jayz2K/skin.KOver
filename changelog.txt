@@ -1,3 +1,10 @@
+[B]0.80.3[/B]
+- Extended Custom Lists to 6
+- Modified custom lists process (no override)
+- Cosmetics fixes
+- Fix Forced OSD to bottom panel wrong place
+- Code cleanup
+
 [B]0.80.2[/B]
 - End of Designer V1 support
 - Designer V2 Final (speed improvement)

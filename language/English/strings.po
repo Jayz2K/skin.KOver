@@ -1155,15 +1155,15 @@ msgid "Landscape"
 msgstr ""
 
 msgctxt "#31283"
-msgid "Custom List 1"
+msgid "Custom List"
 msgstr ""
 
 msgctxt "#31284"
-msgid "Custom List 2"
+msgid ""
 msgstr ""
 
 msgctxt "#31285"
-msgid "Custom List 3"
+msgid ""
 msgstr ""
 
 msgctxt "#31286"

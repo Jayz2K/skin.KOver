@@ -3,8 +3,12 @@
 	<!-- seekbar -->
 	<defaultcontrol always="true">901</defaultcontrol>
 	<visible>[VideoPlayer.IsFullscreen | Window.IsVisible(visualisation)] + [Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding | Window.IsVisible(videoosd) | Window.IsVisible(musicosd) | Window.IsVisible(fullscreeninfo) | Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings) | Window.IsVisible(numericinput) | Window.IsVisible(pvrosdchannels) | Window.IsVisible(pvrosdguide)]</visible>
-	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
-	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
+	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
+	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>
+	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,BOTTOM,Home)</onload>
+	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,BOTTOM,Home)</onload>
+	<onload>Skin.SetString(DIA.View1.BBSidebar,BOTTOM)</onload>
+	<onload>Skin.SetString(DIA.View1.DIAPanel,BOTTOM)</onload>	
 	<onload>SetProperty(CompPrefix,HOM.View1,Home)</onload>	
 	<onunload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onunload>
 	<onunload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onunload>	
@@ -90,9 +94,12 @@
 			</control>
 
 			<!-- Dialogs Background -->
-			<include name="DialogBgDef">
+			<include name="DialogBgDef" condition="!Skin.HasSetting(ForceOSDBottom)">
 				<param name="CompPrefix" value="HOM.View1" />
-			</include>					
+			</include>
+			<include name="DialogBgDef" condition="Skin.HasSetting(ForceOSDBottom)">
+				<param name="CompPrefix" value="DIA.View1" />
+			</include>			
 			
 			<!-- Sidebar Position-->	
 			<control type="group">	

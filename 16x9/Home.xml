@@ -4,8 +4,16 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onload>
 	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
-	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
-	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>	
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList1.xml,windowprop=CUSTOM1)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList2.xml,windowprop=CUSTOM2)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList3.xml,windowprop=CUSTOM3)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList4.xml,windowprop=CUSTOM4)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList5.xml,windowprop=CUSTOM5)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList6.xml,windowprop=CUSTOM6)</onload>
+	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
+	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>
+	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,BOTTOM,Home)</onload>
+	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,BOTTOM,Home)</onload>
 	<onload>ClearProperty(ListPos,Home)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,8)</onload>
 	<onload condition="IsEmpty(Skin.String(HOM.MenuSize))">Skin.SetString(HOM.MenuSize,DEFAULT)</onload>
