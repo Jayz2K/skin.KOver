@@ -2,12 +2,12 @@
 <window>
 	<!-- startup -->
     <defaultcontrol always="true">300</defaultcontrol>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList1.xml,windowprop=CUSTOM1)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList2.xml,windowprop=CUSTOM2)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList3.xml,windowprop=CUSTOM3)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList4.xml,windowprop=CUSTOM4)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList5.xml,windowprop=CUSTOM5)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList6.xml,windowprop=CUSTOM6)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList1.xml,skinstring=CUSTOM1)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList2.xml,skinstring=CUSTOM2)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList3.xml,skinstring=CUSTOM3)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList4.xml,skinstring=CUSTOM4)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList5.xml,skinstring=CUSTOM5)</onload>
+	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList6.xml,skinstring=CUSTOM6)</onload>
 
 	<controls>
 
