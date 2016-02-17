@@ -1,6 +1,11 @@
+[B]0.90.0[/B] RC
+- Code cleanup
+- Preparation for stable release
+
 [B]0.80.3[/B]
 - Extended Custom Lists to 6
 - Modified custom lists process (no override)
+- Added Designer BANNER option in bloc 3 and 4
 - Cosmetics fixes
 - Fix Forced OSD to bottom panel wrong place
 - Code cleanup
