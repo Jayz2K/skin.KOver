@@ -113,7 +113,7 @@
 							<aligny>top</aligny>
 							<aspectratio>scale</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$VAR[B3Art]</texture>
-							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Art(tvshow.poster))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + IsEmpty(ListItem.Art(clearart))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + IsEmpty(ListItem.Art(clearlogo))] | [Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + IsEmpty(ListItem.Art(landscape))] | [Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + IsEmpty(ListItem.Art(discart))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
+							<visible>[Skin.String($PARAM[CompPrefix].B3Typ,THUMB) + IsEmpty(ListItem.Art(thumb))] | [Skin.String($PARAM[CompPrefix].B3Typ,FANART) + IsEmpty(ListItem.Art(fanart))] | [Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + IsEmpty(ListItem.Art(poster)) + IsEmpty(ListItem.Art(tvshow.poster))] | [Skin.String($PARAM[CompPrefix].B3Typ,BANNER) + IsEmpty(ListItem.Art(banner))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARART) + IsEmpty(ListItem.Art(clearart))] | [Skin.String($PARAM[CompPrefix].B3Typ,CLEARLOGO) + IsEmpty(ListItem.Art(clearlogo))] | [Skin.String($PARAM[CompPrefix].B3Typ,LANDSCAPE) + IsEmpty(ListItem.Art(landscape))] | [Skin.String($PARAM[CompPrefix].B3Typ,DISCART) + IsEmpty(ListItem.Art(discart))] | IsEmpty(Skin.String($PARAM[CompPrefix].B3Typ))</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -131,7 +131,16 @@
 							<aligny>top</aligny>
 							<aspectratio>keep</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(season.poster)]</texture>
-							<visible>Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + [!IsEmpty(ListItem.Art(poster)) | Container($PARAM[Id]).Content(episodes)]</visible>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,POSTER) + [!IsEmpty(ListItem.Art(season.poster)) | Container($PARAM[Id]).Content(episodes)]</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(banner)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B3Typ,BANNER) + !IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
@@ -342,6 +351,15 @@
 							<aspectratio>keep</aspectratio>
 							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(season.poster)]</texture>
 							<visible>Skin.String($PARAM[CompPrefix].B4Typ,POSTER) + [!IsEmpty(ListItem.Art(poster)) | Container($PARAM[Id]).Content(episodes)]</visible>
+						</control>
+						<control type="image">
+							<left>0</left>
+							<top>0</top>
+							<align>left</align>
+							<aligny>top</aligny>
+							<aspectratio>keep</aspectratio>
+							<texture background="true" colordiffuse="FFFFFFFF">$INFO[ListItem.Art(banner)]</texture>
+							<visible>Skin.String($PARAM[CompPrefix].B4Typ,BANNER) + !IsEmpty(ListItem.Art(banner))</visible>
 						</control>
 						<control type="image">
 							<left>0</left>
