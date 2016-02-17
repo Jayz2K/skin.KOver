@@ -2,12 +2,6 @@
 <window id="1101">
 	<backgroundcolor>0x00000000</backgroundcolor>
 	<defaultcontrol always="true">9000</defaultcontrol>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList1.xml,windowprop=CUSTOM1)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList2.xml,windowprop=CUSTOM2)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList3.xml,windowprop=CUSTOM3)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList4.xml,windowprop=CUSTOM4)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList5.xml,windowprop=CUSTOM5)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList6.xml,windowprop=CUSTOM6)</onload>
 	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
 	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
 	<onload>SetProperty(DesignerActive,TRUE,Home)</onload>
@@ -598,59 +592,15 @@
 							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
 							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
 							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-							<label>31001</label>
-							<onclick>RunScript(script.skinshortcuts,type=manage&amp;group=mainmenu)</onclick>
+							<label>31312</label>
+							<onclick>reloadskin</onclick>
+							<onclick>activatewindow(1102)</onclick>
 							<onfocus>noop</onfocus>
 							<onunfocus>noop</onunfocus>
 							<onup>9100</onup>
 							<ondown>0</ondown>
 							<onleft>0</onleft>
 							<onright>2</onright>
-							<visible>!StringCompare(Window(Home).Property(ViewName),HomeMenu)</visible>
-						</control>
-
-						<!-- ColorTool -->
-						<control type="button" id="2">
-							<width>auto</width>
-							<height>60</height>
-							<font>Font27</font>
-							<align>center</align>
-							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-							<label>31002</label>
-							<onclick>ActivateWindow(1100,return)</onclick>
-							<onfocus>noop</onfocus>
-							<onunfocus>noop</onunfocus>
-							<onup>9100</onup>
-							<ondown>0</ondown>
-							<onleft>1</onleft>
-							<onright>3</onright>
-						</control>
-
-						<!-- Import -->
-						<control type="button" id="3">
-							<width>auto</width>
-							<height>60</height>
-							<font>Font27</font>
-							<align>center</align>
-							<texturefocus colordiffuse="$VAR[CategoryColor3]">common/white.png</texturefocus>
-							<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
-							<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
-							<focusedcolor>$INFO[Skin.String(Color.DIATxtF)]</focusedcolor>
-							<disabledcolor>$INFO[Skin.String(Color.DIAInvalid)]</disabledcolor>
-							<invalidcolor>$INFO[Skin.String(Color.DIAInvalid)]</invalidcolor>
-							<label>31003</label>
-							<onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
-							<onfocus>noop</onfocus>
-							<onunfocus>noop</onunfocus>
-							<onup>9100</onup>
-							<ondown>0</ondown>
-							<onleft>2</onleft>
-							<onright>noop</onright>
 						</control>
 
 					</control>						
@@ -1849,6 +1799,12 @@
 					<onback>9100</onback>
 					<orientation>horizontal</orientation>
 					<scrolltime>200</scrolltime>
+					<onfocus>ClearProperty(CUSTOM1,Home)</onfocus>
+					<onfocus>ClearProperty(CUSTOM2,Home)</onfocus>
+					<onfocus>ClearProperty(CUSTOM3,Home)</onfocus>
+					<onfocus>ClearProperty(CUSTOM4,Home)</onfocus>
+					<onfocus>ClearProperty(CUSTOM5,Home)</onfocus>
+					<onfocus>ClearProperty(CUSTOM6,Home)</onfocus>
 					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + !Control.HasFocus(5) + !Control.HasFocus(9500) + !Control.HasFocus(9400) + !IsEmpty(Container(9100).ListItem.Label)</visible>
 					
 					<itemlayout width="176" height="338">
@@ -1908,6 +1864,7 @@
 						<control type="button">
 							<texturefocus></texturefocus>
 							<texturenofocus></texturenofocus>
+
 							<include>OnfocusProps</include>
 						</control>
 						<control type="group">
@@ -2113,7 +2070,6 @@
 							<thumb>$VAR[BItypeIcon]</thumb>
 							<visible>StringCompare(Window(Home).Property(SubName),B1) | [StringCompare(Window(Home).Property(SubName),B3) + !StringCompare(Window(Home).Property(SectionName),WEA) + !StringCompare(Window(Home).Property(SectionName),PIC)] | [StringCompare(Window(Home).Property(SubName),B5) + StringCompare(Window(Home).Property(SectionName),HOM)] | [StringCompare(Window(Home).Property(SubName),B4) + !StringCompare(Window(Home).Property(SectionName),HOM)]</visible>
 							<onback>9200</onback>
-
 
 							<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=$INFO[Window(Home).Property(IDPrefix)]Typ,header=$INFO[Container(9300).ListItem.Label])</onclick>
 

@@ -9848,6 +9848,93 @@
 		</control>
 	</include>	
 
+	<include name="DiaListCheck">
+	
+		<control type="group">
+		<animation effect="fade" start="0" end="100" time="100" delay="100">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="100" delay="100">WindowClose</animation>
+	
+			<!-- Bloc 1 -->
+			<control type="group">
+				<left>$PARAM[DIAB1PosX]</left>
+				<top>$PARAM[DIAB1PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<control type="image">
+					<top>24</top>
+					<left>24</left>
+					<height>308</height>
+					<width>588</width>	
+					<texture colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">DefaultFile.png</texture>
+					<aspectratio aligny="center">keep</aspectratio>
+				</control>
+				
+			</control>
+			
+			<!-- Bloc 2 -->
+			<control type="group">
+				<visible>!Window.IsVisible(10106)</visible>
+				<left>$PARAM[DIAB2PosX]</left>
+				<top>$PARAM[DIAB2PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Details -->
+				<control type="textbox">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>288</height>
+					<align>left</align>
+					<font>Font27</font>
+					<autoscroll>False</autoscroll>
+					<label>$VAR[CUSTOM1Check][CR]$VAR[CUSTOM2Check][CR]$VAR[CUSTOM3Check][CR]$VAR[CUSTOM4Check][CR]$VAR[CUSTOM5Check][CR]$VAR[CUSTOM6Check]</label>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+				</control>
+				
+			</control>
+			
+			<!-- Bloc 3 -->
+			<control type="group">
+				<left>$PARAM[DIAB3PosX]</left>
+				<top>$PARAM[DIAB3PosY]</top>
+				<height>356</height>
+				<width>636</width>
+
+				<!-- Heading -->
+				<control type="label">
+					<top>24</top>
+					<left>24</left>
+					<width>588</width>
+					<height>70</height>
+					<align>center</align>
+					<font>Font48</font>
+					<label>31311</label>
+					<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+				</control>
+
+				<!-- Scroll -->
+				<control type="image">
+					<left>230</left>
+					<bottom>140</bottom>
+					<width>176</width>
+					<height>2</height>
+					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATxtNF)]">common/white.png</texture>
+				</control>
+				<control type="image">
+					<left>230</left>
+					<bottom>140</bottom>
+					<width>24</width>
+					<height>2</height>
+					<texture border="1,12,1,1" colordiffuse="$INFO[Skin.String(Color.DIATitle)]">common/white.png</texture>
+					<animation effect="slide" start="0,0" end="152,0" time="800" loop="true" tween="cubic" easing="out" condition="true">Conditional</animation>
+				</control>
+			
+			</control>
+		</control>
+	</include>
+
 	<include name="Model">
 	
 		<control type="group">

@@ -1,5 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<variable name="CUSTOM1Check">
+		<value condition="!IsEmpty(Skin.String(CUSTOM1))">$LOCALIZE[31283] $NUMBER[1]$INFO[Skin.String(CUSTOM1), ,]</value>
+		<value>$LOCALIZE[31283] $NUMBER[1] $LOCALIZE[31310]</value>
+	</variable>
+
+	<variable name="CUSTOM2Check">
+		<value condition="!IsEmpty(Skin.String(CUSTOM2))">$LOCALIZE[31283] $NUMBER[1]$INFO[Skin.String(CUSTOM2), ,]</value>
+		<value>$LOCALIZE[31283] $NUMBER[2] $LOCALIZE[31310]</value>
+	</variable>
+
+	<variable name="CUSTOM3Check">
+		<value condition="!IsEmpty(Skin.String(CUSTOM3))">$LOCALIZE[31283] $NUMBER[3]$INFO[Skin.String(CUSTOM3), ,]</value>
+		<value>$LOCALIZE[31283] $NUMBER[3] $LOCALIZE[31310]</value>
+	</variable>
+
+	<variable name="CUSTOM4Check">
+		<value condition="!IsEmpty(Skin.String(CUSTOM4))">$LOCALIZE[31283] $NUMBER[4]$INFO[Skin.String(CUSTOM4), ,]</value>
+		<value>$LOCALIZE[31283] $NUMBER[4] $LOCALIZE[31310]</value>
+	</variable>
+
+	<variable name="CUSTOM5Check">
+		<value condition="!IsEmpty(Skin.String(CUSTOM5))">$LOCALIZE[31283] $NUMBER[5]$INFO[Skin.String(CUSTOM5), ,]</value>
+		<value>$LOCALIZE[31283] $NUMBER[5] $LOCALIZE[31310]</value>
+	</variable>
+
+	<variable name="CUSTOM6Check">
+		<value condition="!IsEmpty(Skin.String(CUSTOM6))">$LOCALIZE[31283] $NUMBER[6]$INFO[Skin.String(CUSTOM6), ,]</value>
+		<value>$LOCALIZE[31283] $NUMBER[6] $LOCALIZE[31310]</value>
+	</variable>
+
 <!-- IdleFade timer -->
 	<include name="IdleFadeTimer">
 		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(IdleFade,3)">Conditonal</animation>
