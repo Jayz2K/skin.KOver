@@ -1799,12 +1799,6 @@
 					<onback>9100</onback>
 					<orientation>horizontal</orientation>
 					<scrolltime>200</scrolltime>
-					<onfocus>ClearProperty(CUSTOM1,Home)</onfocus>
-					<onfocus>ClearProperty(CUSTOM2,Home)</onfocus>
-					<onfocus>ClearProperty(CUSTOM3,Home)</onfocus>
-					<onfocus>ClearProperty(CUSTOM4,Home)</onfocus>
-					<onfocus>ClearProperty(CUSTOM5,Home)</onfocus>
-					<onfocus>ClearProperty(CUSTOM6,Home)</onfocus>
 					<visible allowhiddenfocus="true">!Window.IsVisible(1100) + !Control.HasFocus(5) + !Control.HasFocus(9500) + !Control.HasFocus(9400) + !IsEmpty(Container(9100).ListItem.Label)</visible>
 					
 					<itemlayout width="176" height="338">
@@ -3113,7 +3107,7 @@
 
 			<!-- Control for Move -->
 			<control type="button" id="9600">
-				<label>test</label>
+				<label></label>
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
@@ -3275,7 +3269,7 @@
 
 			<!-- Control for Size -->
 			<control type="button" id="9700">
-				<label>test</label>
+				<label></label>
 				<left>0</left>
 				<top>0</top>
 				<right>0</right>
