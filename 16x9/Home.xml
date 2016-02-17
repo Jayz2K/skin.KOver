@@ -4,12 +4,6 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onload>
 	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList1.xml,windowprop=CUSTOM1)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList2.xml,windowprop=CUSTOM2)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList3.xml,windowprop=CUSTOM3)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList4.xml,windowprop=CUSTOM4)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList5.xml,windowprop=CUSTOM5)</onload>
-	<onload>RunScript(script.skin.helper.service,action=fileexists,file=special://skin/16x9/Designer_CustomList6.xml,windowprop=CUSTOM6)</onload>
 	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
 	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>
 	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,BOTTOM,Home)</onload>
@@ -353,7 +347,7 @@
 							<align>right</align>
 							<aligny>center</aligny>
 							<font>Font60</font>
-							<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+							<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Window.IsActive(10138)</visible>
 						</control>
@@ -377,7 +371,7 @@
 							<align>left</align>
 							<aligny>center</aligny>
 							<font>Font60</font>
-							<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+							<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Window.IsActive(10138)</visible>
 						</control>
@@ -414,7 +408,7 @@
 							<align>center</align>
 							<aligny>center</aligny>
 							<font>Font60</font>
-							<textcolor>$INFO[Skin.String(Color.B1Txt1F)]</textcolor>
+							<textcolor>$INFO[Skin.String(Color.SBClock)]</textcolor>
 							<label>$INFO[ListItem.Label]</label>
 							<visible>!Window.IsActive(10138)</visible>
 						</control>
