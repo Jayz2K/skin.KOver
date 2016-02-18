@@ -932,7 +932,7 @@
 				<animation effect="fade" start="100" end="0" time="200" condition="IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml) + System.IdleTime(1) + Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String($PARAM[CompPrefix].BBSBHide,ENABLED)">Conditional</animation>	
 				<animation effect="fade" start="100" end="0" time="200" condition="IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml) + [ControlGroup(99).HasFocus() | Control.HasFocus(97) | Window.IsVisible(contextmenu)] + Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String($PARAM[CompPrefix].BBSBHide,ENABLED)">Conditional</animation>		
 
-				<visible>!Skin.String($PARAM[CompPrefix].BBSBHide,HIDDEN)</visible>
+				<visible>!Skin.String($PARAM[CompPrefix].BBSBHide,HIDDEN) | !IsEmpty(Window(Home).Property(DialogVisibility)) | Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) | Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)</visible>
 
 				<control type="group">		
 					<visible>Skin.String($PARAM[CompPrefix].BBSidebar,LEFT) | Skin.String($PARAM[CompPrefix].BBSidebar,RIGHT)</visible>	
