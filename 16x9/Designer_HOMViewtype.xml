@@ -366,7 +366,7 @@
 				
 				<!-- Bloc 4 -->
 				<control type="group">
-					<visible>!Skin.String($PARAM[CompPrefix].B4Show,HIDDEN)</visible>
+					<visible>Skin.String($PARAM[CompPrefix].B4Show,VISIBLE) | Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE) | [Skin.String($PARAM[CompPrefix].B4Show,ISPLAYING) + [Player.HasVideo | [Player.HasAudio + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))]]]</visible>
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">IdleFadeTimer</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | Control.HasFocus(9001)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
@@ -406,7 +406,7 @@
 						<visible>!IsEmpty(Container($PARAM[Id]).ListItem.ChannelName) + !IsEmpty(Container($PARAM[Id]).ListItem.Title)</visible>
 					</control>
 					<control type="group">
-						<visible>Player.HasVideo + Skin.String($PARAM[CompPrefix].B4VDOTop,VISIBLE)</visible>
+						<visible>Player.HasVideo + [Skin.String($PARAM[CompPrefix].B4VDOTop,VISIBLE) | Skin.String($PARAM[CompPrefix].B4VDOTop,ISPLAYING)]</visible>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
