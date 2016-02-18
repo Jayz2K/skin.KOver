@@ -412,14 +412,14 @@ Those are linked as follow :
 
 | List Type | File linked to | Include name |
 | :-----------: | ----------- | ----------- |
-| **CUSTOM1** | [Designer_CustomList1.xml](./16x9/Designer_CustomList1.xml) | <include name="Custom1"> |
-| **CUSTOM2** | [Designer_CustomList2.xml](./16x9/Designer_CustomList2.xml) | <include name="Custom2"> |
-| **CUSTOM3** | [Designer_CustomList3.xml](./16x9/Designer_CustomList3.xml) | <include name="Custom3"> |
-| **CUSTOM4** | [Designer_CustomList4.xml](./16x9/Designer_CustomList4.xml) | <include name="Custom4"> |
-| **CUSTOM5** | [Designer_CustomList5.xml](./16x9/Designer_CustomList5.xml) | <include name="Custom5"> |
-| **CUSTOM6** | [Designer_CustomList6.xml](./16x9/Designer_CustomList6.xml) | <include name="Custom6"> |
+| **CUSTOM1** | [Designer_CustomList1.xml](https://drive.google.com/open?id=0B0PL_QSOtQ-ZeFRUMVhfRzREdm8) | include name="Custom1" |
+| **CUSTOM2** | [Designer_CustomList2.xml](https://drive.google.com/file/d/0B0PL_QSOtQ-ZbUEwX1BPM3BuMTA/view?usp=sharing) | include name="Custom2" |
+| **CUSTOM3** | [Designer_CustomList3.xml](https://drive.google.com/file/d/0B0PL_QSOtQ-ZaER5Mk1WZ1BTQjQ/view?usp=sharing) | include name="Custom3" |
+| **CUSTOM4** | [Designer_CustomList4.xml]() | include name="Custom4" |
+| **CUSTOM5** | [Designer_CustomList5.xml]() | include name="Custom5" |
+| **CUSTOM6** | [Designer_CustomList6.xml]() | include name="Custom6" |
 
-> You have to create a new file using xml editor and paste the code below. When done, save it with the exact name as above. The number in the filename MUST match the custom include name numnber (ex : Designer_CustomList1.xml must have include name <include name="Custom1">). Be warned that the filename is case sensitive !!!
+> You have to create a new file using xml editor and paste the code below. When done, save it with the exact name as above. The number in the filename MUST match the custom include name numnber (ex : Designer_CustomList1.xml must have include name="Custom1"). Be warned that the filename is case sensitive !!!
 
 Explanations in the code below :
 
