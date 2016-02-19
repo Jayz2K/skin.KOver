@@ -512,6 +512,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onclick>
 					<onclick condition="Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onclick>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrh.autobuild)</onclick>
 				</control>
@@ -530,6 +531,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onclick>
 					<onclick condition="Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onclick>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrv.autobuild)</onclick>
 				</control>
@@ -555,6 +557,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onclick>
 					<onclick condition="!Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onclick>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultclassic.autobuild)</onclick>
 				</control>
@@ -573,6 +576,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onclick>
 					<onclick condition="!Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onclick>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulttwothirds.autobuild)</onclick>
 				</control>
@@ -591,6 +595,7 @@
 					<focusedcolor fallback="FFFFFFFF">$INFO[Skin.String(Color.SETTxt1F)]</focusedcolor>
 					<invalidcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</invalidcolor>
 					<disabledcolor fallback="FFCCCCCC">$INFO[Skin.String(Color.SETTxt2NF)]</disabledcolor>
+					<onclick condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onclick>
 					<onclick condition="!Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onclick>
 					<onclick>RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulthybrid.autobuild)</onclick>
 				</control>
