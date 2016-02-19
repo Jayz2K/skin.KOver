@@ -4,13 +4,10 @@
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;levels=0)</onload>
 	<onload condition="System.HasAddon(script.favourites)">RunScript(script.favourites)</onload>
-	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
-	<onload condition="!Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>
-	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(SidebarPos,BOTTOM,Home)</onload>
-	<onload condition="Skin.HasSetting(ForceOSDBottom)">SetProperty(DialogPos,BOTTOM,Home)</onload>
 	<onload>ClearProperty(ListPos,Home)</onload>
 	<onload>Skin.SetString(SkinHelper.RandomFanartDelay,8)</onload>
-	<onload condition="IsEmpty(Skin.String(HOM.MenuSize))">Skin.SetString(HOM.MenuSize,DEFAULT)</onload>
+	<onload>SetProperty(SidebarPos,$INFO[Skin.String(HOM.View1.BBSidebar)],Home)</onload>
+	<onload>SetProperty(DialogPos,$INFO[Skin.String(HOM.View1.DIAPanel)],Home)</onload>
 	<onunload>SetProperty(BackgroundMEM,$INFO[Container(9000).ListItem.Property(background)],Home)</onunload>
 	<controls>
 
@@ -59,6 +56,15 @@
 			
 		<!-- Sidebar -->	
 		<control type="group">	
+			<animation effect="slide" start="0,0" end="660,0" time="100" condition="Skin.String(HOM.View1.DIAPanel,LEFT) + [Skin.String(HOM.View1.BBSidebar,TOP) | Skin.String(HOM.View1.BBSidebar,BOTTOM)] + !IsEmpty(Window(Home).Property(DialogVisibility)) + Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-660,0" time="100" condition="Skin.String(HOM.View1.DIAPanel,RIGHT) + [Skin.String(HOM.View1.BBSidebar,TOP) | Skin.String(HOM.View1.BBSidebar,BOTTOM)] + !IsEmpty(Window(Home).Property(DialogVisibility)) + Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,380" time="100" condition="Skin.String(HOM.View1.DIAPanel,TOP) + [Skin.String(HOM.View1.BBSidebar,RIGHT) | Skin.String(HOM.View1.BBSidebar,LEFT)] + !IsEmpty(Window(Home).Property(DialogVisibility)) + Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>			
+			<animation effect="slide" start="0,0" end="0,-380" time="100" condition="Skin.String(HOM.View1.DIAPanel,BOTTOM) + [Skin.String(HOM.View1.BBSidebar,RIGHT) | Skin.String(HOM.View1.BBSidebar,LEFT)] + !IsEmpty(Window(Home).Property(DialogVisibility)) + Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>		
+			<animation effect="slide" start="0,0" end="0,-120" time="100" condition="[Skin.String(HOM.View1.DIAPanel,LEFT) | Skin.String(HOM.View1.DIAPanel,RIGHT)] + Skin.String(HOM.View1.BBSidebar,TOP) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="0,120" time="100" condition="[Skin.String(HOM.View1.DIAPanel,LEFT) | Skin.String(HOM.View1.DIAPanel,RIGHT)] + Skin.String(HOM.View1.BBSidebar,BOTTOM) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-120,0" time="100" condition="[Skin.String(HOM.View1.DIAPanel,TOP) | Skin.String(HOM.View1.DIAPanel,BOTTOM)] + Skin.String(HOM.View1.BBSidebar,LEFT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>
+			<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String(HOM.View1.DIAPanel,TOP) | Skin.String(HOM.View1.DIAPanel,BOTTOM)] + Skin.String(HOM.View1.BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String(HOM.View1.DIASlide,PUSH)">Conditional</animation>
+				
 			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
 			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
 			<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15) + Skin.String(HOM.View1.BBSBHide,IDLEFADE)">Conditonal</animation>
