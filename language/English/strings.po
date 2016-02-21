@@ -1163,7 +1163,7 @@ msgid ""
 msgstr ""
 
 msgctxt "#31285"
-msgid ""
+msgid "KODI Subtitles"
 msgstr ""
 
 msgctxt "#31286"
