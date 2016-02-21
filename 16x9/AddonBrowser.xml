@@ -40,7 +40,7 @@
 		</control>
 
 		<control type="group">
-			<animation effect="fade" start="100" end="0" time="100" delay="100" condition="!IsEmpty(Window(Home).Property(DialogVisibility))">Conditional</animation>
+			<animation effect="fade" start="100" end="0" time="100" delay="100" condition="!IsEmpty(Window(Home).Property(DialogVisibility)) | !IsEmpty(Window(Home).Property(DialogVisibility2)) | !IsEmpty(Window(Home).Property(DialogVisibility3)) | !IsEmpty(Window(Home).Property(DialogVisibility4)) | !IsEmpty(Window(Home).Property(DialogVisibility5))">Conditional</animation>
 
 			<!-- Bloc 1 -->
 			<control type="group">
