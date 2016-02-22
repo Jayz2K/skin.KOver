@@ -6,7 +6,7 @@
 	</variable>
 
 	<variable name="CUSTOM2Check">
-		<value condition="!IsEmpty(Skin.String(CUSTOM2))">$LOCALIZE[31283] $NUMBER[1]$INFO[Skin.String(CUSTOM2), ,]</value>
+		<value condition="!IsEmpty(Skin.String(CUSTOM2))">$LOCALIZE[31283] $NUMBER[2]$INFO[Skin.String(CUSTOM2), ,]</value>
 		<value>$LOCALIZE[31283] $NUMBER[2] $LOCALIZE[31310]</value>
 	</variable>
 
