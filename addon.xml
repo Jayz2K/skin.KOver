@@ -14,14 +14,14 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="16x9" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">KOver [Kodi Overlay]. A customizable skin. Build your own views and color sets.</summary>
+		<description lang="en_GB">KOver (for KODI Overlay) offers a different approach of KODI skins. Not just purely designed, it also offers to the user the possibility to customize it and make thousands of configurations. KOver embeds two powerful WYSIWYG editors : The Designer and the Color tool. Move, resize, change content and colors ... make it yours !</description>
+		<disclaimer lang="en_GB">Mouse and Touch device not supported</disclaimer>
 		<platform>all</platform>
 		<license>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</license>
 		<forum>http://forum.kodi.tv/forumdisplay.php?fid=252</forum>
 		<website>https://plus.google.com/communities/101384208271707123426</website>
 		<email></email>
 		<source>https://github.com/Jayz2K/skin.KOver</source>
-		<summary lang="en">KOver [Kodi Overlay]. A customizable skin. Build your own views and color sets.</summary>
-		<disclaimer lang="en">Mouse and Touch device not supported</disclaimer>
-		<description lang="en">KOver (for KODI Overlay) offers a different approach of KODI skins. Not just purely designed, it also offers to the user the possibility to customize it and make thousands of configurations. KOver embeds two powerful WYSIWYG editors : The Designer and the Color tool. Move, resize, change content and colors ... make it yours !</description>
 	</extension>
 </addon>
