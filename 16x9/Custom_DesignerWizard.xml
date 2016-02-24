@@ -5,10 +5,12 @@
 	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
 	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
 	<onload>Skin.SetString(DIA.View1.BBSidebar,RIGHT)</onload>
-	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>			
+	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>	
+	<onload>SetProperty(DesignerActive,TRUE,Home)</onload>		
 	<onunload>ClearProperty(SidebarPos,Home)</onunload>
 	<onunload>ClearProperty(DialogPos,Home)</onunload>
 	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
+	<onunload>ClearProperty(DesignerActive,Home)</onunload>
 
 	<controls>
 
