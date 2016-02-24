@@ -231,7 +231,7 @@ msgid "Video on top"
 msgstr ""
 
 msgctxt "#31053"
-msgid "Muted"
+msgid "Visualisation presets"
 msgstr ""
 
 msgctxt "#31054"
@@ -387,7 +387,7 @@ msgid "Choose the section where you want to edit the viewtype."
 msgstr ""
 
 msgctxt "#31092"
-msgid "Choose the viewtype you want to build/edit. Press left for config, click or press ENTER for more."
+msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
 msgstr ""
 
 msgctxt "#31093"
@@ -594,6 +594,7 @@ msgctxt "#31143"
 msgid "Go Back"
 msgstr ""
 
+#Do not translate 31144 : Copy msgid to msgstr as is (used for logo name)
 msgctxt "#31144"
 msgid "Over"
 msgstr ""
@@ -882,6 +883,7 @@ msgctxt "#31215"
 msgid "Install Image ressource addon (studio logos) ..."
 msgstr ""
 
+#Do not translate 31216 : Copy msgid to msgstr as is (used for variable fallback)
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr ""
@@ -1268,7 +1270,51 @@ msgctxt "#31312"
 msgid "Update Custom Lists"
 msgstr ""
 
-#empty strings from id 31313 to 31399
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr ""
+
+msgctxt "#31314"
+msgid "At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options."
+msgstr ""
+
+msgctxt "#31315"
+msgid "Welcome !"
+msgstr ""
+
+msgctxt "#31316"
+msgid "Choose a prebuilt configuration"
+msgstr ""
+
+msgctxt "#31317"
+msgid "Go to Designer"
+msgstr ""
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr ""
+
+msgctxt "#31319"
+msgid "Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window."
+msgstr ""
+
+msgctxt "#31320"
+msgid "Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window."
+msgstr ""
+
+msgctxt "#31321"
+msgid "Exit the wizard. You can go back to the wizard via the skin settings window."
+msgstr ""
+
+msgctxt "#31322"
+msgid "Do not show me again"
+msgstr ""
+
+msgctxt "#31323"
+msgid "Open the startup wizard..."
+msgstr ""
+
+#empty strings from id 31324 to 31399
 #Settings strings
 
 msgctxt "#31400"

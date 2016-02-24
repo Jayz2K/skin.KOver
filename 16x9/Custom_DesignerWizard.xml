@@ -66,7 +66,7 @@
 						<align>center</align>
 						<aligny>top</aligny>
 						<font>Font48</font>
-						<label>Welcome !</label>
+						<label>31315</label>
 						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
 						<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
 					</control>		
@@ -128,7 +128,7 @@
 				<aligny>center</aligny>
 				<font>Font60R</font>
 				<textcolor>$VAR[InitColor4]</textcolor>
-				<label>Over</label>
+				<label>31144</label>
 				<animation effect="rotate" start="0" end="45" time="0" center="560,500" condition="true">Conditional</animation>
 			</control>			
 	
@@ -145,7 +145,7 @@
 				<aligny>center</aligny>
 				<font>Font60</font>
 				<textcolor>$VAR[InitColor5]</textcolor>
-				<label>Wizard ...</label>		
+				<label>31313</label>		
 			</control>	
 
 			<control type="label">
@@ -158,7 +158,7 @@
 				<font>FontSmallR</font>
 				<textcolor>$VAR[InitColor5]</textcolor>
 				<scroll>true</scroll>
-				<label>At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options.</label>		
+				<label>31314</label>		
 			</control>	
 
 			<control type="image">
@@ -178,7 +178,7 @@
 				<width>1164</width>
 				<onup>noop</onup>
 				<ondown>301</ondown>
-				<onright>nooè</onright>
+				<onright>noop</onright>
 				<height>305</height>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
@@ -221,22 +221,22 @@
 
 				<content>
 					<item>
-						<label>Choose a prebuilt configuration</label>
+						<label>31316</label>
 						<label2></label2>
 						<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=WizardPreset,header=$LOCALIZE[31150])</onclick>
-						<property name="Info">Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window.</property>
+						<property name="Info">$LOCALIZE[31319]</property>
 					</item>
 					<item>
-						<label>Go to Designer</label>
+						<label>31317</label>
 						<label2></label2>
 						<onclick>ReplaceWindow(1101)</onclick>
-						<property name="Info">Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window.</property>
+						<property name="Info">$LOCALIZE[31320]</property>
 					</item>
 					<item>
-						<label>Exit</label>
+						<label>31318</label>
 						<label2></label2>
 						<onclick>ReplaceWindow(home)</onclick>
-						<property name="Info">Exit the wizard. You can go back to the wizard via the skin settings window.</property>
+						<property name="Info">$LOCALIZE[31321]</property>
 					</item>
 				</content>
 			</control>
@@ -244,7 +244,7 @@
 
 		<!-- Show / Don't show at startup -->
 		<control type="radiobutton" id="301">
-			<label>Do not show me again</label>
+			<label>31322</label>
 			<label></label>
 			<bottom>48</bottom>
 			<left>708</left>

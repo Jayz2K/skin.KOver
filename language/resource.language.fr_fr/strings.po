@@ -229,8 +229,8 @@ msgid "Video on top"
 msgstr "Vidéo en premier plan"
 
 msgctxt "#31053"
-msgid "Muted"
-msgstr "Muet"
+msgid "Visualisation presets"
+msgstr "Préréglages de visualisation"
 
 msgctxt "#31054"
 msgid "Extra art"
@@ -385,8 +385,8 @@ msgid "Choose the section where you want to edit the viewtype."
 msgstr "Choisissez la section où vous souhaitez modifier le type de vue."
 
 msgctxt "#31092"
-msgid "Choose the viewtype you want to build/edit. Press left for config, click or press ENTER for more."
-msgstr "Choisissez le type de vue que vous voulez créer / modifier. Appuyez sur gauche pour config, cliquez ou appuyez sur Entrée pour plus."
+msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
+msgstr "Choisissez le type de vue que vous voulez créer / modifier. Appuyez sur droite pour config, cliquez ou appuyez sur Entrée pour plus."
 
 msgctxt "#31093"
 msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
@@ -1259,6 +1259,50 @@ msgstr "Verificaion des fichiers"
 msgctxt "#31312"
 msgid "Update Custom Lists"
 msgstr "Actualisation des listes personnalisées"
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Assistant..."
+
+msgctxt "#31314"
+msgid "At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options."
+msgstr "Au premier démarrage, KOver est configuré avec le minimum requis. Vous devez appliquer un configuration prédéfinie ou ouvrir le Designer pour créer toutes les vues et options nécessaires."
+
+msgctxt "#31315"
+msgid "Welcome !"
+msgstr "Bienvenue !"
+
+msgctxt "#31316"
+msgid "Choose a prebuilt configuration"
+msgstr "Choisir une configuration prédéfinie"
+
+msgctxt "#31317"
+msgid "Go to Designer"
+msgstr "Ouvrir le Designer"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Quitter"
+
+msgctxt "#31319"
+msgid "Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window."
+msgstr "Choisir cette option pour permettre à KOver de s'auto-construire. Choisir parmi 5 modèles pour appliquer les paramètres correspondant à votre choix (recommandé). Vous pourrez toujours appliquer les autres configurations ultérieurement via l'écran de paramètres de la skin."
+
+msgctxt "#31320"
+msgid "Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window."
+msgstr "Choisir cette option pour construire KOver soi-même. Ceci ouvrira l'outil Designer (avancé). Il est recommandé d'appliquer une configuration prédéfinie au premier démarrage. Vous pourrez toujours accéder au Designer plus tard via l'écran de paramètres de la skin."
+
+msgctxt "#31321"
+msgid "Exit the wizard. You can go back to the wizard via the skin settings window."
+msgstr "Quitter l'assistant. Vous pourrez toujours retourner à l'assistant via l'écran de paramètres de la skin."
+
+msgctxt "#31322"
+msgid "Do not show me again"
+msgstr "Ne plus afficher"
+
+msgctxt "#31323"
+msgid "Open the startup wizard..."
+msgstr "Ouvrir l'assistant de démarrage..."
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
