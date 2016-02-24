@@ -594,7 +594,7 @@ msgctxt "#31143"
 msgid "Go Back"
 msgstr ""
 
-#Do not translate 31144 : Copy msgid to msgstr as is (used for logo name)
+#. Do not translate 31144 : Copy msgid to msgstr as is (used for logo name)
 msgctxt "#31144"
 msgid "Over"
 msgstr ""
@@ -883,7 +883,7 @@ msgctxt "#31215"
 msgid "Install Image ressource addon (studio logos) ..."
 msgstr ""
 
-#Do not translate 31216 : Copy msgid to msgstr as is (used for variable fallback)
+#. Do not translate 31216 : Copy msgid to msgstr as is (used for variable fallback)
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr ""
