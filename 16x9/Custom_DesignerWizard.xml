@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1103">
+	<!-- Wizard -->
+    <defaultcontrol always="true">300</defaultcontrol>
+	<onload>SetProperty(SidebarPos,RIGHT,Home)</onload>
+	<onload>SetProperty(DialogPos,LEFT,Home)</onload>
+	<onload>Skin.SetString(DIA.View1.BBSidebar,RIGHT)</onload>
+	<onload>Skin.SetString(DIA.View1.DIAPanel,LEFT)</onload>			
+	<onunload>ClearProperty(SidebarPos,Home)</onunload>
+	<onunload>ClearProperty(DialogPos,Home)</onunload>
+	<onunload>ClearProperty(DialogVisibility,Home)</onunload>
+
+	<controls>
+
+		<!-- Background -->
+		<control type="image">
+			<top>0</top>
+			<left>0</left>
+			<width>1920</width>
+			<height>1080</height>
+			<colordiffuse>$VAR[InitColor1]</colordiffuse>
+			<texture background="true">common/white.png</texture>
+			<visible>true</visible>
+		</control>		
+
+		<!-- Decorative Elements -->
+		<control type="group">
+
+			<!-- Left Panel Background -->
+			<control type="image">
+				<top>0</top>
+				<left>0</left>
+				<width>660</width>
+				<height>1080</height>
+				<aspectratio>scale</aspectratio>
+				<texture colordiffuse="$INFO[Skin.String(Color.DIABg)]">common/white.png</texture>
+				<animation effect="slide" start="-660,0" end="0,0" time="400">WindowOpen</animation>
+			</control>				
+
+			<control type="group">
+				<animation effect="fade" start="0" end="100" time="200" delay="400">WindowOpen</animation>
+				<animation effect="fade" start="100" end="0" time="100" delay="100" condition="Window.IsVisible(script-skinshortcuts.xml) | !IsEmpty(Window(Home).Property(DialogVisibility))">Conditional</animation>
+
+				<!-- Bloc 1 -->
+				<control type="group">
+					<left>12</left>
+					<top>0</top>
+					<height>356</height>
+					<width>636</width>
+
+				</control>	
+
+				<!-- Bloc 2 -->
+				<control type="group">
+					<left>12</left>
+					<top>368</top>
+					<height>356</height>
+					<width>636</width>
+
+					<!-- Heading -->
+					<control type="label">
+						<top>24</top>
+						<left>24</left>
+						<width>588</width>
+						<height>48</height>
+						<align>center</align>
+						<aligny>top</aligny>
+						<font>Font48</font>
+						<label>Welcome !</label>
+						<textcolor>$INFO[Skin.String(Color.DIATitle)]</textcolor>
+						<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
+					</control>		
+
+				</control>		
+
+				<!-- Bloc 3 -->
+				<control type="group">
+					<left>12</left>
+					<top>724</top>
+					<height>356</height>
+					<width>636</width>
+
+					<control type="textbox">
+						<label>$INFO[Container(300).ListItem.Property(Info)]</label>
+						<left>24</left>
+						<top>24</top>
+						<width>588</width>
+						<height>308</height>
+						<font>Font27</font>
+						<align>center</align>
+						<aligny>center</aligny>
+						<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+						<animation effect="fade" start="100" end="0" time="0" condition="Window.IsVisible(selectdialog)">Conditional</animation>
+					</control>
+
+				</control>			
+			</control>				
+
+		</control>					
+
+		<control type="group">
+			<animation effect="slide" start="0,0" end="360,-240" time="400">WindowOpen</animation>
+			<!-- Logo -->
+			<control type="image">
+				<left>324</left>
+				<top>334</top>
+				<width>356</width>
+				<height>356</height>
+				<colordiffuse>$VAR[InitColor2]</colordiffuse>
+				<texture>common/kodi.png</texture>
+				<aspectratio aligny="center">keep</aspectratio>
+			</control>			
+			<control type="image">
+				<left>476</left>
+				<top>334</top>
+				<width>356</width>
+				<height>356</height>
+				<colordiffuse>$VAR[InitColor3]</colordiffuse>
+				<texture>common/kover.png</texture>
+				<aspectratio aligny="center">keep</aspectratio>
+			</control>			
+			<control type="label">
+				<left>550</left>
+				<top>490</top>
+				<width>499</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font60R</font>
+				<textcolor>$VAR[InitColor4]</textcolor>
+				<label>Over</label>
+				<animation effect="rotate" start="0" end="45" time="0" center="560,500" condition="true">Conditional</animation>
+			</control>			
+	
+		</control>	
+
+		<control type="group">
+			<animation effect="fade" start="0" end="100" time="200" delay="400">WindowOpen</animation>
+			<control type="label">
+				<left>708</left>
+				<top>568</top>
+				<width>1164</width>
+				<height>50</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>Font60</font>
+				<textcolor>$VAR[InitColor5]</textcolor>
+				<label>Wizard ...</label>		
+			</control>	
+
+			<control type="label">
+				<left>708</left>
+				<top>648</top>
+				<width>1164</width>
+				<height>20</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>FontSmallR</font>
+				<textcolor>$VAR[InitColor5]</textcolor>
+				<scroll>true</scroll>
+				<label>At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options.</label>		
+			</control>	
+
+			<control type="image">
+				<left>708</left>
+				<top>680</top>
+				<width>1164</width>
+				<height>1</height>
+				<colordiffuse>$VAR[InitColor2]</colordiffuse>
+				<texture>common/white.png</texture>
+				<aspectratio aligny="center">stretch</aspectratio>
+			</control>	
+
+			<!-- List -->
+			<control type="panel" id="300">
+				<left>708</left>
+				<top>708</top>
+				<width>1164</width>
+				<onup>noop</onup>
+				<ondown>301</ondown>
+				<onright>nooè</onright>
+				<height>305</height>
+				<scrolltime>200</scrolltime>
+				<orientation>vertical</orientation>
+
+				<itemlayout width="1164" height="61">
+					<control type="label">
+						<top>0</top>
+						<left>24</left>
+						<width>1164</width>
+						<height>60</height>
+						<align>left</align>
+						<font>Font27</font>
+						<textcolor>$VAR[InitColor5]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				
+				<focusedlayout width="1164" height="61">
+					<control type="image">
+						<left>0</left>
+						<top>0</top>
+						<width>1164</width>
+						<height>60</height>
+						<align>center</align>
+						<texture colordiffuse="$VAR[InitColor3]">common/white.png</texture>
+						<visible>!Control.HasFocus(420)</visible>
+					</control>
+					<control type="label">
+						<top>0</top>
+						<left>24</left>
+						<width>1164</width>
+						<height>60</height>
+						<align>left</align>
+						<font>Font27</font>
+						<scroll>True</scroll>
+						<textcolor>$VAR[InitColor4]</textcolor>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</focusedlayout>	
+
+				<content>
+					<item>
+						<label>Choose a prebuilt configuration</label>
+						<label2></label2>
+						<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=WizardPreset,header=$LOCALIZE[31150])</onclick>
+						<property name="Info">Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window.</property>
+					</item>
+					<item>
+						<label>Go to Designer</label>
+						<label2></label2>
+						<onclick>ReplaceWindow(1101)</onclick>
+						<property name="Info">Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window.</property>
+					</item>
+					<item>
+						<label>Exit</label>
+						<label2></label2>
+						<onclick>ReplaceWindow(home)</onclick>
+						<property name="Info">Exit the wizard. You can go back to the wizard via the skin settings window.</property>
+					</item>
+				</content>
+			</control>
+		</control>
+
+		<!-- Show / Don't show at startup -->
+		<control type="radiobutton" id="301">
+			<label>Do not show me again</label>
+			<label></label>
+			<bottom>48</bottom>
+			<left>708</left>
+			<width>1164</width>
+			<height>60</height>
+			<font>Font27</font>
+			<textwidth>auto</textwidth>
+			<textoffsetx>78</textoffsetx>
+			<texturefocus colordiffuse="$VAR[InitColor3]">common/white.png</texturefocus>
+			<texturenofocus colordiffuse="00FFFFFF">common/white.png</texturenofocus>
+			<textureradioonfocus colordiffuse="$VAR[InitColor4]">material/radioon.png</textureradioonfocus>
+			<textureradioonnofocus colordiffuse="$VAR[InitColor3]">material/radioon.png</textureradioonnofocus>
+			<textureradioofffocus colordiffuse="$VAR[InitColor4]">material/radiooff.png</textureradioofffocus>
+			<textureradiooffnofocus colordiffuse="$VAR[InitColor3]">material/radiooff.png</textureradiooffnofocus>
+			<radiowidth>30</radiowidth>
+			<radioheight>30</radioheight>
+			<radioposx>24</radioposx>
+			<textcolor fallback="FF666666">$VAR[InitColor5]</textcolor>
+			<focusedcolor fallback="FFFFFFFF">$VAR[InitColor4]</focusedcolor>
+			<invalidcolor fallback="FFCCCCCC">$VAR[InitColor5]</invalidcolor>
+			<onup>300</onup>
+			<onclick>Skin.ToggleSetting(WizardNotShow)</onclick>
+			<selected>Skin.HasSetting(WizardNotShow)</selected>
+		</control>											
+
+	</controls>
+
+</window>
