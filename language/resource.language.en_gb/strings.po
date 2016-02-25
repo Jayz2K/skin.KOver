@@ -1314,6 +1314,18 @@ msgctxt "#31323"
 msgid "Open the startup wizard..."
 msgstr ""
 
+msgctxt "#31324"
+msgid "Do not turn off your device or force close KODI."
+msgstr ""
+
+msgctxt "#31325"
+msgid "A large amount of settings is being written. This can take some time depending of the system.[CR]Do not turn off your device or force close KODI."
+msgstr ""
+
+msgctxt "#31326"
+msgid "Still processing...[CR]Do not turn off your device or force close KODI."
+msgstr ""
+
 #empty strings from id 31324 to 31399
 #Settings strings
 

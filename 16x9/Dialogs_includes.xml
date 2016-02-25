@@ -9680,6 +9680,20 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 
+				<!-- Details -->
+				<control type="textbox">
+					<top>120</top>
+					<left>24</left>
+					<width>588</width>
+					<height>200</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<font>Font27</font>
+					<autoscroll>False</autoscroll>
+					<info>Window(Home).Property(BusyInfo)</info>
+					<textcolor>$INFO[Skin.String(Color.DIATxtNF)]</textcolor>
+				</control>
+
 				<!-- Scroll -->
 				<control type="image">
 					<left>230</left>

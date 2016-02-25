@@ -4,26 +4,41 @@
 	<setting id="WizardPreset" value="PVRH" label="$LOCALIZE[31156] : $LOCALIZE[31157]" condition="" icon="wizard/pvrh.png" description="$LOCALIZE[31178]">
 		<onselect condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onselect>
 		<onselect condition="Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo1,SetProperty(BusyInfo,$LOCALIZE[31324],Home),00:15,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo2,SetProperty(BusyInfo,$LOCALIZE[31325],Home),00:30,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo3,SetProperty(BusyInfo,$LOCALIZE[31326],Home),01:00,silent)</onselect>
 		<onselect condition="">RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrh.autobuild)</onselect>
 	</setting>
 	<setting id="WizardPreset" value="PVRV" label="$LOCALIZE[31156] : $LOCALIZE[31158]" condition="" icon="wizard/pvrv.png" description="$LOCALIZE[31179]">
 		<onselect condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onselect>
 		<onselect condition="Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo1,SetProperty(BusyInfo,$LOCALIZE[31324],Home),00:15,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo2,SetProperty(BusyInfo,$LOCALIZE[31325],Home),00:30,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo3,SetProperty(BusyInfo,$LOCALIZE[31326],Home),01:00,silent)</onselect>
 		<onselect condition="">RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultpvrv.autobuild)</onselect>
 	</setting>
 	<setting id="WizardPreset" value="FULLCALSSIC" label="$LOCALIZE[31159] : $LOCALIZE[31160]" condition="" icon="wizard/fullclassic.png" description="$LOCALIZE[31180]">
 		<onselect condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onselect>
 		<onselect condition="!Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo1,SetProperty(BusyInfo,$LOCALIZE[31324],Home),00:15,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo2,SetProperty(BusyInfo,$LOCALIZE[31325],Home),00:30,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo3,SetProperty(BusyInfo,$LOCALIZE[31326],Home),01:00,silent)</onselect>
 		<onselect condition="">RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaultclassic.autobuild)</onselect>
 	</setting>
 	<setting id="WizardPreset" value="FULL23" label="$LOCALIZE[31159] : $LOCALIZE[31161]" condition="" icon="wizard/full23.png" description="$LOCALIZE[31181]">
 		<onselect condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onselect>
 		<onselect condition="!Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo1,SetProperty(BusyInfo,$LOCALIZE[31324],Home),00:15,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo2,SetProperty(BusyInfo,$LOCALIZE[31325],Home),00:30,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo3,SetProperty(BusyInfo,$LOCALIZE[31326],Home),01:00,silent)</onselect>
 		<onselect condition="">RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulttwothirds.autobuild)</onselect>
 	</setting>
 	<setting id="WizardPreset" value="FULLHYBRID" label="$LOCALIZE[31159] : $LOCALIZE[31162]" condition="" icon="wizard/fullhybrid.png" description="$LOCALIZE[31182]">
 		<onselect condition="!Skin.HasSetting(TvTunesNoBackground)">Skin.ToggleSetting(TvTunesNoBackground)</onselect>
 		<onselect condition="!Skin.HasSetting(ForceOSDBottom)">Skin.ToggleSetting(ForceOSDBottom)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo1,SetProperty(BusyInfo,$LOCALIZE[31324],Home),00:15,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo2,SetProperty(BusyInfo,$LOCALIZE[31325],Home),00:30,silent)</onselect>
+		<onselect condition="">AlarmClock(BusyInfo3,SetProperty(BusyInfo,$LOCALIZE[31326],Home),01:00,silent)</onselect>
 		<onselect condition="">RunScript(script.skin.helper.service,action=restore,silent=special://skin/extras/autobuild/defaulthybrid.autobuild)</onselect>
 	</setting>
 
