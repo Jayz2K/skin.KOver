@@ -252,7 +252,7 @@ msgstr "Álbumes recientes"
 
 msgctxt "#31058"
 msgid "Recommended albums"
-msgstr "Álbumes Recomendado"
+msgstr "Álbumes Recomendados"
 
 msgctxt "#31059"
 msgid "Random albums"
