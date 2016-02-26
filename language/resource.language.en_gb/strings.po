@@ -1279,7 +1279,7 @@ msgid "At first start, KOver is built with the minimum requirements. You need to
 msgstr ""
 
 msgctxt "#31315"
-msgid "Welcome !"
+msgid "Welcome"
 msgstr ""
 
 msgctxt "#31316"

@@ -1269,8 +1269,8 @@ msgid "At first start, KOver is built with the minimum requirements. You need to
 msgstr "Au premier démarrage, KOver est configuré avec le minimum requis. Vous devez appliquer un configuration prédéfinie ou ouvrir le Designer pour créer toutes les vues et options nécessaires."
 
 msgctxt "#31315"
-msgid "Welcome !"
-msgstr "Bienvenue !"
+msgid "Welcome"
+msgstr "Bienvenue"
 
 msgctxt "#31316"
 msgid "Choose a prebuilt configuration"
