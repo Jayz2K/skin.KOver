@@ -1326,7 +1326,7 @@ msgctxt "#31326"
 msgid "Still processing...[CR]Do not turn off your device or force close KODI."
 msgstr ""
 
-#empty strings from id 31324 to 31399
+#empty strings from id 31327 to 31399
 #Settings strings
 
 msgctxt "#31400"
