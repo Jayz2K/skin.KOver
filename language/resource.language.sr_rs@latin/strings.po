@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Nasumični albumi"
 
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Sat"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Podmeni"

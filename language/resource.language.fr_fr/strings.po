@@ -1152,6 +1152,10 @@ msgctxt "#31283"
 msgid "Custom List"
 msgstr "Liste personnalisée"
 
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "Sous-titres KODI"
+
 msgctxt "#31286"
 msgid "Horizontal"
 msgstr "Horizontal"

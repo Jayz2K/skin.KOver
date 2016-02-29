@@ -9,14 +9,12 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Kodi Translation Team\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/kodi-skins/language/es_ES/)\n"
+"Language-Team: Spanish (Spain) (http://www.transifex.com/projects/p/kodi-skins/language/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: es_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#Misc labels
 
 msgctxt "#31000"
 msgid "KOver Designer"
@@ -252,7 +250,7 @@ msgstr "Álbumes recientes"
 
 msgctxt "#31058"
 msgid "Recommended albums"
-msgstr "Álbumes Recomendados"
+msgstr "Álbumes recomendados"
 
 msgctxt "#31059"
 msgid "Random albums"
@@ -386,10 +384,6 @@ msgctxt "#31091"
 msgid "Choose the section where you want to edit the viewtype."
 msgstr "Elegir la sección donde quieres editar la vista"
 
-msgctxt "#31092"
-msgid "Choose the viewtype you want to build/edit. Press left for config, click or press ENTER for more."
-msgstr "Elegir la vista que quieres editar/construir. Pulsar derecha para configurar, presionar o pulsar ENTER para mas."
-
 msgctxt "#31093"
 msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
 msgstr "Cambiar el nombre de la vista. Este se mostrara 'tal cual' en la selección de vistas de librerías"
@@ -476,7 +470,7 @@ msgstr "Escoger el tipo de fondo de la ventana. 'IMAGEN' muestra la foto escogid
 
 msgctxt "#31114"
 msgid "Choose the main list (library) style. 'BANNER' shows 'FIXEDLIST' if item is not a media."
-msgstr "Escoger el tipo de lista principal (librería). 'PANCARTA' muestra 'LISTAFIJA' si el articulo no es un media" 
+msgstr "Escoger el tipo de lista principal (librería). 'PANCARTA' muestra 'LISTAFIJA' si el articulo no es un media"
 
 msgctxt "#31115"
 msgid "Browse for a picture to use when background style is set to 'IMAGE'."
@@ -556,11 +550,11 @@ msgstr "Seleccionar Vista"
 
 msgctxt "#31134"
 msgid "Move left"
-msgstr "Mover a la izquierda"
+msgstr "Mueve izquierda"
 
 msgctxt "#31135"
 msgid "Move right"
-msgstr "Mover a la derecha"
+msgstr "Mueve derecha"
 
 msgctxt "#31136"
 msgid "Change icon"
@@ -862,18 +856,6 @@ msgctxt "#31210"
 msgid "Set this option to show visualisation over the Artist Slideshow. Only useful when DIRECTX visualisation is set."
 msgstr "Ajustar esta opción para mostrar visualizaciones encima de Artist Slideshow. Útil solamente cuando la visualización DirectX es habilitada."
 
-msgctxt "#31211"
-msgid "Set this option to show the 'WATCHED' status flag on libraries' items."
-msgstr ""
-
-msgctxt "#31212"
-msgid "Adjust time for the 'IDLEFADE' option. This is only when an item has this option in the Designer."
-msgstr ""
-
-msgctxt "#31213"
-msgid "Automatically apply a built-in color set. This automatically change the colors for each element."
-msgstr ""
-
 msgctxt "#31214"
 msgid "Backup current color set."
 msgstr "Hacer copia de seguridad de grupos de colores actuales."
@@ -908,47 +890,15 @@ msgstr "Ventana de ajustes"
 
 msgctxt "#31222"
 msgid "Settings"
-msgstr "Ajustes"
+msgstr "Opciones"
 
 msgctxt "#31223"
 msgid "HIDDEN"
 msgstr "OCULTAR"
 
-msgctxt "#31224"
-msgid "Scroll indicators"
-msgstr ""
-
 msgctxt "#31225"
 msgid "Art Type"
 msgstr "Tipo de Arte"
-
-msgctxt "#31226"
-msgid "Furnitures"
-msgstr ""
-
-msgctxt "#31227"
-msgid "Set this option as 'VISIBLE' to display Scroll indicators. Indicators will match the list orientation set in Bloc 1."
-msgstr ""
-
-msgctxt "#31228"
-msgid "Choose the Bloc 3 style (Art). 'DEFAULT' makes KOver to try to search an available landscape Art. Note that depending of the content, the others can be returned empty."
-msgstr ""
-
-msgctxt "#31229"
-msgid "Tagline bg."
-msgstr ""
-
-msgctxt "#31230"
-msgid "Tagline text"
-msgstr ""
-
-msgctxt "#31231"
-msgid "Scroll flags"
-msgstr ""
-
-msgctxt "#31232"
-msgid "Arrows"
-msgstr ""
 
 msgctxt "#31233"
 msgid "Lists"
@@ -986,14 +936,10 @@ msgctxt "#31241"
 msgid "Resize"
 msgstr "Cambiar de tamaño"
 
-msgctxt "#31242"
-msgid "Keep OSD controls always sticking to bottom"
-msgstr ""
-
 msgctxt "#31243"
 msgid "Run Designer in safe mode (Designer V1)"
 msgstr "Correr Designer en modo seguro (Designer V1)"
- 
+
 msgctxt "#31244"
 msgid "Install TvTunes ..."
 msgstr "Instalar TvTunes..."
@@ -1009,18 +955,6 @@ msgstr "Image Resources (studios) permite a KOver mostrar logos de estudios en i
 msgctxt "#31247"
 msgid "TvTunes allows KOver to play audio / video themes in movies and tv shows libraries."
 msgstr "TvTunes permite a KOver tocar temas de audio / video en las librerías de películas y series"
-
-msgctxt "#31248"
-msgid "Fallback[CR]Picture"
-msgstr ""
-
-msgctxt "#31249"
-msgid "- Hide TvTunes video theme as fullscreen background."
-msgstr ""
-
-msgctxt "#31250"
-msgid "This prevent video playback to show as fullscreen background while browsing library. Useful when already set in Designer Bloc 4 to keep picture instead. This only applies to TvTunes video themes."
-msgstr ""
 
 msgctxt "#31251"
 msgid "Up Next..."
@@ -1042,25 +976,9 @@ msgctxt "#31255"
 msgid "Always show"
 msgstr "Mostrar siempre"
 
-msgctxt "#31256"
-msgid "Hide after timer inactivity"
-msgstr ""
-
-msgctxt "#31257"
-msgid "Show when media is playing"
-msgstr ""
-
-msgctxt "#31258"
-msgid "Show when TvTunes plays video"
-msgstr ""
-
 msgctxt "#31259"
 msgid "Show when list has focus"
 msgstr "Mostrar cuando la lista esta en foco"
-
-msgctxt "#31260"
-msgid "Show fallback only"
-msgstr ""
 
 msgctxt "#31261"
 msgid "Set width 1 column"
@@ -1102,10 +1020,6 @@ msgctxt "#31270"
 msgid "Default"
 msgstr "Default"
 
-msgctxt "#31271"
-msgid "No fallback"
-msgstr ""
-
 msgctxt "#31272"
 msgid "Wide List"
 msgstr "Lista Ancha"
@@ -1120,7 +1034,7 @@ msgstr "Tarjeta"
 
 msgctxt "#31275"
 msgid "Poster"
-msgstr "Póster"
+msgstr "Poster"
 
 msgctxt "#31276"
 msgid "Fixed List"
@@ -1128,11 +1042,7 @@ msgstr "Lista Fija"
 
 msgctxt "#31277"
 msgid "Banner"
-msgstr "Pancarta"
-
-msgctxt "#31278"
-msgid "Thumb"
-msgstr ""
+msgstr "Banner"
 
 msgctxt "#31279"
 msgid "Clear Art"
@@ -1181,10 +1091,6 @@ msgstr "Adherir a la izquierda"
 msgctxt "#31291"
 msgid "Stick to Right"
 msgstr "Adherir a la derecha"
-
-msgctxt "#31292"
-msgid "Hide bar at scroll end"
-msgstr ""
 
 msgctxt "#31293"
 msgid "Always visible"
@@ -1244,7 +1150,7 @@ msgstr "Escoger imagen..."
 
 msgctxt "#31307"
 msgid "Square"
-msgstr "Cuadrado"
+msgstr "Square"
 
 msgctxt "#31308"
 msgid "Medium"
@@ -1266,76 +1172,6 @@ msgctxt "#31312"
 msgid "Update Custom Lists"
 msgstr "Actualizando Listas Personalizadas"
 
-#Settings strings
-
-msgctxt "#31400"
-msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
-msgstr ""
-
-msgctxt "#31401"
-msgid "[B]Configure video settings[/B][CR][CR]Manage your video library[CR]Set video playback options[CR]Change video listing options[CR]Set subtitle fonts"
-msgstr ""
-
-msgctxt "#31402"
-msgid "[B]Configure music settings[/B][CR][CR]Manage your music library[CR]Set music playback options[CR]Change music listing options[CR]Setup song submission[CR]Set karaoke options"
-msgstr ""
-
-msgctxt "#31403"
-msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options[CR]Configure slideshow"
-msgstr ""
-
-msgctxt "#31404"
-msgid "[B]Configure weather settings[/B][CR][CR]Set various cities to collect weather information"
-msgstr ""
-
-#empty string with id 31405
-
-msgctxt "#31406"
-msgid "[B]Configure system settings[/B][CR][CR]Setup and calibrate displays[CR]Configure audio output[CR]Setup remote controls[CR]Set power saving options[CR]Enable debugging[CR]Setup master lock"
-msgstr ""
-
-#empty string with id 31407
-
-msgctxt "#31408"
-msgid "[B]Configure add-ons[/B][CR][CR]Manage your installed add-ons[CR]Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
-msgstr ""
-
-msgctxt "#31409"
-msgid "[B]Configure TV settings[/B][CR][CR]Change full screen info[CR]Manage EPG data settings"
-msgstr ""
-
-msgctxt "#31410"
-msgid "[B]Configure network settings[/B][CR][CR]Setup control of Kodi via UPnP and HTTP[CR]Configure file sharing[CR]Enable Zeroconf[CR]Configure AirPlay"
-msgstr ""
-
-msgctxt "#31411"
-msgid "[B]Configure KOver settings[/B][CR][CR]Configure Home menu[CR]Enable advanced tools[CR]Auto build viewtypes sets[CR]Export / Import features"
-msgstr ""
-
-msgctxt "#31412"
-msgid "[B]Configure KOver viewtypes[/B][CR][CR]Create / delete / modify viewtypes using the WYSIWYG editor : KOver Designer"
-msgstr ""
-
-msgctxt "#31413"
-msgid "[B]Configure KOver colors[/B][CR][CR]Create / modify color scheme[CR]Change colors for each parts of the viewtypes[CR]Import previous or shared color sets"
-msgstr ""
-
-msgctxt "#31414"
-msgid "[B]Configure profiles settings[/B][CR][CR]Enable / disable login screen[CR]Set profiles' names and pictures[CR]Set lock settings"
-msgstr ""
-
-msgctxt "#31500"
-msgid "This category contains the settings for home menu editing and showing / hiding advanced features."
-msgstr ""
-
 msgctxt "#31501"
 msgid "This category contains the settings for applying automatic layouts and color sets."
 msgstr "Esta categoria contiene los ajustes para aplicar diseños y grupos de colores automáticos"
-
-msgctxt "#31502"
-msgid "This category contains the settings for importing / exporting user's configurations of KOver."
-msgstr ""
-
-msgctxt "#31503"
-msgid "This category contains the settings for activating optional scripts to enhance KOver content."
-msgstr ""

@@ -40,10 +40,6 @@ msgctxt "#31007"
 msgid "General Setup"
 msgstr "Grundeinstellungen"
 
-msgctxt "#31057"
-msgid "Recent albums"
-msgstr "Neueste Alben"
-
 msgctxt "#31008"
 msgid "Blocs background"
 msgstr "Blocs Hintergrund"
@@ -71,10 +67,6 @@ msgstr "Bloc 3 : Grafik"
 msgctxt "#31014"
 msgid "Bloc 3"
 msgstr "Bloc 3"
-
-msgctxt "#31015"
-msgid "Bloc 4 : Playing Video"
-msgstr ""
 
 msgctxt "#31016"
 msgid "Bloc 4"
@@ -438,7 +430,7 @@ msgstr "Setzt die Position des Dialog Panels (z.B. für Film-Inofs)."
 
 msgctxt "#31106"
 msgid "Choose panel opening style. 'PUSH' pushes the blocs and 'OVER' shows over blocs."
-msgstr "Wählt die Art der Panel-Öffnung. 'SCHIEBEN' schiebt den bloc beiseite "ÜBER" blendet das Panel über dem bloc ein."
+msgstr "Wählt die Art der Panel-Öffnung. 'SCHIEBEN' schiebt den bloc beiseite \"ÜBER\" blendet das Panel über dem bloc ein."
 
 msgctxt "#31107"
 msgid "Insert an horizontal space between blocs. Choose between A and B or B and C."
@@ -468,12 +460,10 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Nach rechts verschieben"
 
-#. Do not translate 31144 : Copy msgid to msgstr as is (used for logo name)
 msgctxt "#31144"
 msgid "Over"
 msgstr "Over"
 
-#. Do not translate 31216 : Copy msgid to msgstr as is (used for variable fallback)
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr "DEFAULT"

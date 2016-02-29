@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Album Casuali"
 
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Orologio"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Sottomenù"
