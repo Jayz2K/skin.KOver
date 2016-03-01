@@ -117,6 +117,12 @@
 								<property name="Info">$LOCALIZE[31319]</property>
 							</item>
 							<item>
+								<label>31195</label>
+								<label2></label2>
+								<onclick>RunScript(script.skin.helper.service,action=setskinsetting,setting=WizardColor,header=$LOCALIZE[31150])</onclick>
+								<property name="Info">$LOCALIZE[31319]</property>
+							</item>
+							<item>
 								<label>31317</label>
 								<label2></label2>
 								<onclick>ReplaceWindow(1101)</onclick>
