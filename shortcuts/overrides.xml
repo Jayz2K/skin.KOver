@@ -28,7 +28,7 @@
 
     <propertydefault labelID="videos" property="homeart">homeart/videos.jpg</propertydefault>
     <propertydefault labelID="movies" property="homeart">homeart/movies.jpg</propertydefault>
-    <propertydefault labelID="tvshows" property="homeart">homeart/tvshows.png</propertydefault>
+    <propertydefault labelID="tvshows" property="homeart">homeart/tvshows.jpg</propertydefault>
     <propertydefault labelID="music" property="homeart">homeart/music.jpg</propertydefault>
     <propertydefault labelID="programs" property="homeart">homeart/addons.jpg</propertydefault>
     <propertydefault labelID="1036" property="homeart">homeart/favourites.jpg</propertydefault>
