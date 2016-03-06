@@ -1272,6 +1272,10 @@ msgctxt "#31314"
 msgid "At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options."
 msgstr "Pirmą kartą paleidus, KOver nustatytas naudojant minimalius reikalavimus. Jums reikia pritaikyti iš anksto nustatytą konfigūraciją arba eiti į dizainerį, jei norite susikurti reikalingus rodinių tipus ir parinktis."
 
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Sveiki"
+
 msgctxt "#31316"
 msgid "Choose a prebuilt configuration"
 msgstr "Pasirinkti iš anksto nustatytą konfigūraciją"
@@ -1303,6 +1307,18 @@ msgstr "Daugiau nerodyti"
 msgctxt "#31323"
 msgid "Open the startup wizard..."
 msgstr "Atidaryti paleidimo vedlį"
+
+msgctxt "#31324"
+msgid "Do not turn off your device or force close KODI."
+msgstr "Neišjunkite įrenginio ar priverstinai neišjunkite KODI."
+
+msgctxt "#31325"
+msgid "A large amount of settings is being written. This can take some time depending of the system.[CR]Do not turn off your device or force close KODI."
+msgstr "Įrašomas didelis kiekis nustatymų. Priklausomai nuo jūsų sistemos, tai gali šiek tiek užtrukti.[CR]Neišjunkite įrenginio ar priverstinai neišjunkite KODI."
+
+msgctxt "#31326"
+msgid "Still processing...[CR]Do not turn off your device or force close KODI."
+msgstr "Vis dar apdorojama...[CR]Neišjunkite įrenginio ar priverstinai neišjunkite KODI."
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"

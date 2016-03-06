@@ -16,6 +16,162 @@ msgstr ""
 "Language: pl_PL\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "Projektant skóry KOver"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Menu startowe"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Kolory"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importuj"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Dostosuj"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Okna dialogowe"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Tapeta"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Ogólna konfiguracja"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Tło bloków"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blok 1 : Lista"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blok 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Blok 2 : Informacje"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blok 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Blok 3 : Grafika"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Blok 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blok 4 : Odtwarzanie wideo"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blok 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Przemianuj widok"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Szablon 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Szablon 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Szablon 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Usuń widok"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Zastosuj szablon dla widoku"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Skopiuj widok do szablonu"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Usuń szablon"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Eksportuj szablon"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Pozycja menu boczne"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Ukrywaj menu boczne"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Separator poziomy"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Separator pionowy"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "widoczność"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Pozycja pozioma (kolumna)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Pozycja pionowa (wiersz)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Szerokość"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Wysokość"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Typ listy"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Obraz[CR]tła"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Zwiększ"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Zmniejsz"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Albumy ostatnio dodane"
@@ -27,6 +183,26 @@ msgstr "Albumy polecane"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Albumy w losowej kolejności"
+
+msgctxt "#31060"
+msgid "Window"
+msgstr "Okno"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Menu boczne"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Tło bloków"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Zegar"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Tło bloków"
 
 msgctxt "#31127"
 msgid "Submenu"
@@ -43,6 +219,38 @@ msgstr "Przesuń w lewo"
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Ustawienia"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "UKRYTY"
+
+msgctxt "#31224"
+msgid "Scroll indicators"
+msgstr "Paski przewijania"
+
+msgctxt "#31225"
+msgid "Art Type"
+msgstr "Typ grafiki"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Strzałki"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Listy"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Wczytywanie..."
+
+msgctxt "#31235"
+msgid "Home Menu size"
+msgstr "Wielkość menu startowego"
+
+msgctxt "#31244"
+msgid "Install TvTunes ..."
+msgstr "Zainstaluj dodatek TvTunes ..."
 
 msgctxt "#31275"
 msgid "Poster"

@@ -16,6 +16,134 @@ msgstr ""
 "Language: sr_RS@latin\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "KOver Dizajner"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Glavni Izbor"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Boje"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Uvezi"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Prilagodi"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dijalozi"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Pozadina"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Glavna Podešavanja"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Pozadina blokova"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blok 1 : Lista"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blok 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Blok 2 : Info"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blok 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Blok 3 : Slike"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Blok 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blok 4 : Trenutni Video"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blok 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Preimenjuj Prikaz"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Primeni Podrazumevano Horizontalno"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Primeni Podrazumevano Vertikalno"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Moj Šablon 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Moj Šablon 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Moj Šablon 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Obriši Prikaz"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Primeni Šablon Za Prikaz"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Kopiraj Prikaz u Šablon"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Obriši Šablon"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Izvezi Šablon"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Orijentacija Prikaza"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Pozicija trake sa strane"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "Pozicija dijalog panela "
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Auto-skrivanje trake sa strane"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Skorašnji albumi"
@@ -28,9 +156,17 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Nasumični albumi"
 
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Pozadina blokova"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Sat"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Pozadina blokova"
 
 msgctxt "#31127"
 msgid "Submenu"
@@ -46,7 +182,7 @@ msgstr "Poster"
 
 msgctxt "#31277"
 msgid "Banner"
-msgstr "Banner"
+msgstr "Zastava"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -54,7 +190,7 @@ msgstr "Pejzažno"
 
 msgctxt "#31302"
 msgid "Fanart"
-msgstr "Slika Ljubitelja"
+msgstr "Slike ljubitelja"
 
 msgctxt "#31304"
 msgid "Seconds"

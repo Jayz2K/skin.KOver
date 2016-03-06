@@ -1308,6 +1308,18 @@ msgctxt "#31323"
 msgid "Open the startup wizard..."
 msgstr "Ouvrir l'assistant de démarrage..."
 
+msgctxt "#31324"
+msgid "Do not turn off your device or force close KODI."
+msgstr "Ne pas éteindre l'appareil ou forcer la fermeture de KODI"
+
+msgctxt "#31325"
+msgid "A large amount of settings is being written. This can take some time depending of the system.[CR]Do not turn off your device or force close KODI."
+msgstr "Un grand nombre de paramètres est en cours d'écriture. Ceci peut durer un certain temps dépendant du système.[CR]Ne pas éteindre l'appareil ou forcer la fermeture de KODI."
+
+msgctxt "#31326"
+msgid "Still processing...[CR]Do not turn off your device or force close KODI."
+msgstr "Toujours en cours...[CR]Ne pas éteindre l'appareil ou forcer la fermeture de KODI."
+
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
 msgstr "[B]Configurer les paramètres d'apparence[/B][CR][CR]Changer de skin[CR]Choisir la langue et la région[CR]Changer les options de listing[CR]Paramétrer l'économiseur d'écran"

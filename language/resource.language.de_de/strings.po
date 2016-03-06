@@ -448,6 +448,10 @@ msgctxt "#31110"
 msgid "Change the vertical start position of the element. Can be locked depending of the layout orientation."
 msgstr "Wechselt die vertikale Start-Position des Elements. Kann gesperrt sein je nach Orientierung des Layouts."
 
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Blocs Hintergrund"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Untermenü"
