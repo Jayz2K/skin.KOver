@@ -1,3 +1,7 @@
+[B]1.1.1[/B]
+- Fix for template import
+- Fix watched flag showing on resumable
+
 [B]1.1.0[/B]
 - Added startup wizard
 - Improved default skinshortcuts settings

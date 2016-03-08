@@ -4833,7 +4833,7 @@
 				<height>25</height>
 				<aspectratio>scale</aspectratio>
 				<texture colordiffuse="$INFO[Skin.String(Color.B1Txt1F)]">material/check.png</texture>
-				<visible>StringCompare(ListItem.Overlay,OverlayWatched.png)</visible>
+				<visible>StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
 			</control>
 			<control type="image">
 				<right>6</right>
