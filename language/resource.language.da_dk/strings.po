@@ -28,6 +28,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Indstillinger"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Bred Liste"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Plakat"
@@ -35,6 +39,18 @@ msgstr "Plakat"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Klar kunst"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Klar logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Diskkunst"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -47,3 +63,7 @@ msgstr "Fankunst"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Firkant"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Stor"

@@ -180,6 +180,10 @@ msgctxt "#31088"
 msgid "Name :"
 msgstr "Име :"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Изглед"
+
 msgctxt "#31124"
 msgid "Libraries settings"
 msgstr "Настройки на библиотеките"
@@ -195,6 +199,14 @@ msgstr "Видими настройки"
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Подменю"
+
+msgctxt "#31134"
+msgid "Move left"
+msgstr "Премести наляво"
+
+msgctxt "#31135"
+msgid "Move right"
+msgstr "Премести надясно"
 
 msgctxt "#31146"
 msgid "TV channels"
@@ -236,6 +248,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Настройки"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Широк списък"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Плакат"
@@ -247,6 +263,18 @@ msgstr "Банер"
 msgctxt "#31278"
 msgid "Thumb"
 msgstr "Миниатюра"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Изчистено изображение"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Изчистено лого"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Изображения на диска"
 
 msgctxt "#31282"
 msgid "Landscape"

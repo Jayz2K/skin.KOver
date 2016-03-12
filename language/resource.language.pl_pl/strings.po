@@ -252,6 +252,10 @@ msgctxt "#31244"
 msgid "Install TvTunes ..."
 msgstr "Zainstaluj dodatek TvTunes ..."
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Duża lista"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Plakat"
@@ -259,6 +263,18 @@ msgstr "Plakat"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Baner"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Przezrocze"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Przezrocze dysku"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -275,3 +291,7 @@ msgstr "Sekund"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Kwadrat"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Duży"

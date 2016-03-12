@@ -16,25 +16,541 @@ msgstr ""
 "Language: it_IT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "KOver Designer"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Menù Home"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Colori"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importa"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Personalizza"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialoghi"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Sfondo"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Setup Generale"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Sfondo Blocchi"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blocco 1 : Lista"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blocco 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Blocco 2 : Info"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blocco 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Blocco 3 : Art"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Blocco 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blocco 4 : Riproduz. Video"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blocco 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Rinomina Vista"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Applica Predefinito Orizzontale"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Applica Predefinito Verticale"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Mio Modello 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Mio Modello 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Mio Modello 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Cancella Vista"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Applica Modello alla Vista"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Copia Vista nel Modello"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Cancella Modello"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Esporta Modello"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Orientamento Layout"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Posizione Sidebar"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "Posizione Pannello Dialogo"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Nascondi automaticamente Sidebar"
+
+msgctxt "#31032"
+msgid "Dialog slide type"
+msgstr "Tipo scorrimento Dialogo"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Separatore Orizzontale"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Separatore Verticale"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "visibilità"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Posizione Orizzontale (colonna)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Posizione Verticale (riga)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Larghezza"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Altezza"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Stile[CR]Sfondo"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Tipo Lista"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Immagine[CR]Sfondo"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Lista : Oggetto Selezionato 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Info Sottotitoli"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Lista : Oggetto non selezionato 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Lista : Oggetto non selezionato 3"
+
+msgctxt "#31047"
+msgid "Info Bloc : Sub info"
+msgstr "Blocco Info: Info Sottotitoli"
+
+msgctxt "#31048"
+msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
+msgstr "Testo 3 - Info Trama [CR]per oggetto selezionato nel Blocco 1"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Es : Durata"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Tag oggetto selezionato"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Home"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Video in primo piano"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Preset visualizzazione"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Extra Art"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Aumenta"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Riduci"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Album recenti"
 
 msgctxt "#31058"
 msgid "Recommended albums"
-msgstr "Album raccomandati"
+msgstr "Album consigliati"
 
 msgctxt "#31059"
 msgid "Random albums"
-msgstr "Album Casuali"
+msgstr "Album casuali"
+
+msgctxt "#31060"
+msgid "Window"
+msgstr "Finestra"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Sidebar"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Sfondo Blocchi"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Blocco Info"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "Blocco Art"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Blocco Video"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialogo"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Editor Colore"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Icone non selezionate"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Oggetti non selezionati"
+
+msgctxt "#31070"
+msgid "Unselected text 1[CR]icon"
+msgstr "Icona[CR]testo non selezionato 1"
+
+msgctxt "#31071"
+msgid "Unselected text 2[CR](sub)"
+msgstr "Testo non selezionato 2[CR](sottotitolo)"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Testo non selezionato"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Sfondo icona selezionata"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Oggetti selezionati"
+
+msgctxt "#31075"
+msgid "Selected text 1[CR]icon"
+msgstr "Icona[CR]testo selezionato 1"
+
+msgctxt "#31076"
+msgid "Selected text 2[CR](sub)"
+msgstr "Testo selezionato 2[CR](sottotitolo)"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Testo selezionato"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Sfondo oggetto selezionato"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Numero oggetto selezionato"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Testo non valido"
 
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Orologio"
 
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Ombra"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Altre info"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Esporta schema colori"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Blocco 5 : Sottomenù"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Blocco 5"
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "Sezione KODI"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nome :"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Tipo Vista"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Vuoto"
+
+msgctxt "#31091"
+msgid "Choose the section where you want to edit the viewtype."
+msgstr "Scegli la sezione dove vuoi modificare il tipo di vista."
+
+msgctxt "#31092"
+msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
+msgstr "Scegli il tipo di vista che vuoi creare/modificare. Premi Destra per configurare, clicca o premi INVIO per altro."
+
+msgctxt "#31093"
+msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
+msgstr "Rinomina il tipo di vista. Questo sarà mostrato 'com'è' nella selezione del tipo di vista per la libreria."
+
+msgctxt "#31094"
+msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
+msgstr "Applica il tipo di vista orizzontale integrato. Una buona partenza per layout con sidebar in ALTO o in BASSO."
+
+msgctxt "#31095"
+msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
+msgstr "Applica il tipo di vista verticale integrato. Una buona partenza per layout con sidebar a SINISTRA o DESTRA."
+
+msgctxt "#31096"
+msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
+msgstr "Cancella il tipo di vista. Non sarà più disponibile nella selezione di tipi di vista per la libreria."
+
+msgctxt "#31097"
+msgid "Apply imported/stored viewtype in template. This will overide the actual viewtype."
+msgstr "Applica tipi di vista importati/salvati nel modello. Questo sovrascriverà il tipo di vista attuale."
+
+msgctxt "#31098"
+msgid "Stores the actual viewtype in template. This overide the template content."
+msgstr "Salva il tipo di vista corrente nel modello. Questo sovrascrive il contenuto del modello."
+
+msgctxt "#31099"
+msgid "Export the template's content to a zip file. Be aware that the template's number is also stored."
+msgstr "Esporta il contenuto del modello in un file zip. Attenzione che sarà salvato anche il numero del modello."
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr "Cancella il contenuto del modello."
+
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after 5s."
+msgstr "Scegli la visibilità dell'oggetto. SFUMA fa scomparire l'oggetto dopo 5s."
+
+msgctxt "#31102"
+msgid "Change the layout orientation or scroll direction for lists."
+msgstr "Cambia l'orientamento del layout o la direzione dello scorrimento per le liste."
+
+msgctxt "#31103"
+msgid "Change the sidebar position. This is limited by the layout orientation."
+msgstr "Cambia la posizione della sidebar. Questo è limitato dall'orientamento del layout."
+
+msgctxt "#31104"
+msgid "Makes the sidebar to autohide. Useful for fullscreen layout, sidebar will fade to not cover infos."
+msgstr "Fai in modo che la sidebar si nasconda automaticamente. Utile per un layout a schermo intero, la sidebar sfumerà per non coprire le informazioni."
+
+msgctxt "#31105"
+msgid "Set the dialog panel (ex. movie infos) position."
+msgstr "Imposta la posizione del pannello di dialogo (es. info Film)."
+
+msgctxt "#31106"
+msgid "Choose panel opening style. 'PUSH' pushes the blocs and 'OVER' shows over blocs."
+msgstr "Scegli lo stile di apertura del pannello. 'SPINGI' spinge i blocchi e 'SOVRAPPONI' mostra blocchi sovrapposti."
+
+msgctxt "#31107"
+msgid "Insert an horizontal space between blocs. Choose between A and B or B and C."
+msgstr "Inserisci uno spazio orizzontale fra i blocchi. Scegli fra A e B o B e C."
+
+msgctxt "#31108"
+msgid "Insert an vertical space between blocs. Choose between A and B or B and C."
+msgstr "Inserisci uno spazio verticale fra i blocchi. Scegli fra A e B o B e C."
+
+msgctxt "#31109"
+msgid "Change the horizontal start position of the element. Can be locked depending of the layout orientation."
+msgstr "Cambia la posizione di inizio orizzontale dell'elemento. Può essere bloccata a seconda dell'orientamento del layout."
+
+msgctxt "#31110"
+msgid "Change the vertical start position of the element. Can be locked depending of the layout orientation."
+msgstr "Cambia la posizione di inizio verticale dell'elemento. Può essere bloccata a seconda dell'orientamento del layout."
+
+msgctxt "#31111"
+msgid "Change the horizontal size of the element. Can be locked/limited by the element's horizontal position."
+msgstr "Cambia la dimensione orizzontale dell'elemento. Può essere bloccata/limitata dalla posizione orizzontale dell'elemento."
+
+msgctxt "#31112"
+msgid "Change the vertical size of the element. Can be locked/limited by the element's vertical position."
+msgstr "Cambia la dimensione verticale dell'elemento. Può essere bloccata/limitata dalla posizione verticale dell'elemento."
+
+msgctxt "#31113"
+msgid "Choose the window background style. 'IMAGE' shows user's picture selected in the next setting."
+msgstr "Scegli lo stile dello sfondo della finestra. 'IMMAGINE' mostra l'immagine selezionata dall'utente nell'impostazione successiva."
+
+msgctxt "#31114"
+msgid "Choose the main list (library) style. 'BANNER' shows 'FIXEDLIST' if item is not a media."
+msgstr "Scegli lo stile per la lista principale (libreria). 'BANNER' mostra 'LISTAFISSA' se l'oggetto non è un file multimediale."
+
+msgctxt "#31115"
+msgid "Browse for a picture to use when background style is set to 'IMAGE'."
+msgstr "Cerca un'immagine da usare quando lo stile sfondo è impostato su 'IMMAGINE'."
+
+msgctxt "#31116"
+msgid "Display the playing video over all other background style settings."
+msgstr "Mostra il video in riproduzione sopra tutte le altre impostazioni dello stile sfondo."
+
+msgctxt "#31117"
+msgid "Set 'HIDE' to hide bloc 1 (List) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Imposta 'NASCONDI' per nascondere il Blocco 1 (Lista) quando è selezionato il sottomenù/lista opzioni. Utile quando i blocchi condividono la stessa posizione."
+
+msgctxt "#31118"
+msgid "Set 'HIDE' to hide bloc 2 (Infos) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Imposta 'NASCONDI' per nascondere il Blocco 1 (Info) quando è selezionato il sottomenù/lista opzioni. Utile quando i blocchi condividono la stessa posizione."
+
+msgctxt "#31119"
+msgid "Set 'HIDE' to hide bloc 3 (Art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Imposta 'NASCONDI' per nascondere il Blocco 3 (Art) quando è selezionato il sottomenù/lista opzioni. Utile quando i blocchi condividono la stessa posizione."
+
+msgctxt "#31120"
+msgid "Set 'HIDE' to hide bloc 4 (Video/Home art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Imposta 'NASCONDI' per nascondere il Blocco 4 (Video/Art Home) quando è selezionato il sottomenù/lista opzioni. Utile quando i blocchi condividono la stessa posizione."
+
+msgctxt "#31121"
+msgid "Choose key/action to open submenu/options list (Bloc 5)."
+msgstr "Scegli tasto/azione per aprire il sottomenù/lista opzioni (Blocco 5)."
+
+msgctxt "#31122"
+msgid "Choose key/action to go to previous menu."
+msgstr "Scegli tasto/azione per tornare al menù precedente."
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Sfondo Blocchi"
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "Impostazioni Librerie"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Sottocategoria"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "Cambia livello impostazioni"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Sottomenù"
+
+msgctxt "#31128"
+msgid "Choose the element you want to change the color and click or press 'ENTER'."
+msgstr "Scegli l'elemento di cui vuoi cambiare il colore e clicca o premi 'INVIO'."
+
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr "Blocco Info : Titolo"
+
+msgctxt "#31130"
+msgid "Bloc 4 : Home Art"
+msgstr "Blocco 4 : Art Home"
+
+msgctxt "#31131"
+msgid "Scrolling Orientation"
+msgstr "Orientamento scorrimento"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Impostazioni Vista"
+
+msgctxt "#31133"
+msgid "Select Viewtype"
+msgstr "Scegli Tipo Vista"
 
 msgctxt "#31134"
 msgid "Move left"
@@ -43,6 +559,198 @@ msgstr "Sposta a sinistra"
 msgctxt "#31135"
 msgid "Move right"
 msgstr "Sposta a destra"
+
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Cambia icona"
+
+msgctxt "#31137"
+msgid "Select Bloc 4 Picture"
+msgstr "Scegli immagine Blocco 4"
+
+msgctxt "#31138"
+msgid "Bloc 1 Visibility On Focus"
+msgstr "Visibilità Blocco 1 selezionato"
+
+msgctxt "#31139"
+msgid "Bloc 2 Visibility On Focus"
+msgstr "Visibilità Blocco 2 selezionato"
+
+msgctxt "#31140"
+msgid "Bloc 3 Visibility On Focus"
+msgstr "Visibilità Blocco 3 selezionato"
+
+msgctxt "#31141"
+msgid "Bloc 4 Visibility On Focus"
+msgstr "Visibilità Blocco 4 selezionato"
+
+msgctxt "#31142"
+msgid "Go Submenu"
+msgstr "Vai al Sottomenù"
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Torna indietro"
+
+msgctxt "#31144"
+msgid "Over"
+msgstr "Sopra"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Canali TV"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Meteo"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Previsioni Meteo"
+
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Modifica menù Home..."
+
+msgctxt "#31150"
+msgid "Auto build"
+msgstr "Crea automaticamente"
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Importa / Esporta"
+
+msgctxt "#31152"
+msgid "Force search for PVR thumbs"
+msgstr "Forza ricerca anteprime PVR"
+
+msgctxt "#31153"
+msgid "Enable Designer"
+msgstr "Abilita Designer"
+
+msgctxt "#31154"
+msgid "Enable Color tool"
+msgstr "Abilita strumento Colore"
+
+msgctxt "#31155"
+msgid "Show Debug Infos"
+msgstr "Mostra informazioni debug"
+
+msgctxt "#31156"
+msgid "Build KOver for PVR"
+msgstr "Crea KOver per PVR"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Orizzontale"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Verticale"
+
+msgctxt "#31159"
+msgid "Build KOver fullscreen"
+msgstr "Crea KOver a schermo intero"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Classico"
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr "Due-terzi"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "Ibrido"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Importa..."
+
+msgctxt "#31164"
+msgid "Backup all viewtype (without Home menu)"
+msgstr "Backup di tutti i tipi vista (senza menù Home)"
+
+msgctxt "#31165"
+msgid "Backup Home menu"
+msgstr "Backup menù Home"
+
+msgctxt "#31166"
+msgid "Full backup (viewtypes and Home menu)"
+msgstr "Backup completo (tipi vista e menù Home)"
+
+msgctxt "#31167"
+msgid "Export all 'Home' viewtypes"
+msgstr "Esporta tutti i tipi vista 'Home'"
+
+msgctxt "#31168"
+msgid "Export all 'Video' viewtypes"
+msgstr "Esporta tutti i tipi vista 'Video'"
+
+msgctxt "#31169"
+msgid "Export all 'Music' viewtypes"
+msgstr "Esporta tutti i tipi vista 'Musica'"
+
+msgctxt "#31170"
+msgid "Export all 'Pictures' viewtypes"
+msgstr "Esporta tutti i tipi vista 'Immagini'"
+
+msgctxt "#31171"
+msgid "Export all 'TV' viewtypes"
+msgstr "Esporta tutti i tipi vista 'TV'"
+
+msgctxt "#31172"
+msgid "Export all 'Programs' viewtypes"
+msgstr "Esporta tutti i tipi vista 'Programmi'"
+
+msgctxt "#31173"
+msgid "Allows to set home menu, submenus and widgets and to choose viewtypes and backgrounds."
+msgstr "Permette di impostare il menù home, i sottomenù e i widget e scegliere i tipi di vista e gli sfondi."
+
+msgctxt "#31174"
+msgid "Enable this option to force downloading arts in PVR. This can also download arts in the EPG guide by changing settings in skin.helper script. This is useful when the backend is not returning arts."
+msgstr "Abilita questa opzione per forzare il download di anteprime per PVR. Questo può anche scaricare anteprime nella guida EPG cambiando le impostazioni nello script skin.helper. Utile quando il backend non fornisce anteprime."
+
+msgctxt "#31175"
+msgid "Enable this option to give access to the Designer and build your own viewtypes (advanced)."
+msgstr "Abilita questa opzione per darti accesso al Designer e creare i tuoi tipi di vista personalizzati (avanzato)."
+
+msgctxt "#31176"
+msgid "Enable this option to give access to the Color tool, change the skin colors and create color sets (advanced)."
+msgstr "Abilita questa opzione per darti accesso allo strumento Colore, cambiare i colori della skin e creare set di colori (avanzato)."
+
+msgctxt "#31177"
+msgid "Enable this option to show debug infos (advanced)."
+msgstr "Abilita questa opzione per mostra info di debug (avanzato)."
+
+msgctxt "#31178"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in horizontal  / bottom position. Recommended for a mximum view of the playing video."
+msgstr "Crea automaticamente tipi di vista in tutte le sezioni per un uso PVR. I tipi di vista saranno impostati a 1/3 dello schermo in orizzontale / posizione dal basso. Consigliato per la massima visibilità del video in riproduzione."
+
+msgctxt "#31179"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in vertical / left position. Recommended for a mximum view of the playing video."
+msgstr "Crea automaticamente tipi di vista in tutte le sezioni per un uso PVR. I tipi di vista saranno impostati a 1/3 dello schermo in verticale / posizione da sinistra. Consigliato per la massima visibilità del video in riproduzione."
+
+msgctxt "#31180"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 3/3 of the screen. Recommended for medias library player."
+msgstr "Crea automaticamente tipi di vista in tutte le sezioni per un uso a schermo intero. I tipi di vista saranno impostati a 3/3 dello schermo. Consigliato per la riproduzione di librerie multimediali."
+
+msgctxt "#31181"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 2/3 of the screen. Recommended for medias library player."
+msgstr "Crea automaticamente tipi di vista in tutte le sezioni per un uso a schermo intero. I tipi di vista saranno impostati a 2/3 dello schermo. Consigliato per la riproduzione di librerie multimediali."
+
+msgctxt "#31182"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 2/3 and 3/3 of the screen. Recommended for medias library player."
+msgstr "Crea automaticamente tipi di vista in tutte le sezioni per un uso a schermo intero. I tipi di vista saranno impostati a 2/3 e 3/3 dello schermo. Consigliato per la riproduzione di librerie multimediali."
+
+msgctxt "#31183"
+msgid "Restore backups, apply new / stored color sets, apply new / stored viewtypes sets."
+msgstr "Ripristina backup, applica set di colori nuovi / salvati, applica set di tipi di vista nuovi / salvati."
 
 msgctxt "#31222"
 msgid "Settings"
@@ -56,9 +764,29 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Artwork dischi"
+
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Landscape"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Orizzontale"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Verticale"
 
 msgctxt "#31302"
 msgid "Fanart"

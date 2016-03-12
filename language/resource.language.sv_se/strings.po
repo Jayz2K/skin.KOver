@@ -44,6 +44,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Inställningar"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Bred lista"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Poster"
@@ -51,6 +55,18 @@ msgstr "Poster"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banderoll"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Rensa bilder"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Rensa logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Skivbilder"
 
 msgctxt "#31282"
 msgid "Landscape"

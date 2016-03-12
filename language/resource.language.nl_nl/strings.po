@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Willekeurige albums"
 
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Klok"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Gebruik een eindige lijst voor het submenu"
@@ -44,6 +48,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Instellingen"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Brede Lijst"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Poster"
@@ -51,6 +59,18 @@ msgstr "Poster"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Lege Afbeelding"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Leeg logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -67,3 +87,7 @@ msgstr "Seconden"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Vierkant"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Groot"

@@ -44,6 +44,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "설정"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "넓은 목록"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "포스터"
@@ -51,6 +55,18 @@ msgstr "포스터"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "배너"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "클리어 아트"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "클리어 로고"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -67,3 +83,7 @@ msgstr "초"
 msgctxt "#31307"
 msgid "Square"
 msgstr "정사각형"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "크게"

@@ -44,6 +44,18 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Arty"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disk Art"
+
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Na šířku"

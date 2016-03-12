@@ -36,6 +36,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Innstillinger"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Vid liste"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Plakat"
@@ -43,6 +47,18 @@ msgstr "Plakat"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Plateillustrasjoner"
 
 msgctxt "#31282"
 msgid "Landscape"

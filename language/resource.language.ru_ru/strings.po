@@ -36,6 +36,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Настройки"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Широкий Список"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Постер"

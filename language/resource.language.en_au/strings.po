@@ -44,6 +44,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Settings"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Wide List"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Poster"
@@ -51,6 +55,10 @@ msgstr "Poster"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"

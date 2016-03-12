@@ -44,6 +44,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "设置"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "宽列表"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "海报"
@@ -51,6 +55,18 @@ msgstr "海报"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "横幅"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "光碟图片"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -67,3 +83,7 @@ msgstr "秒"
 msgctxt "#31307"
 msgid "Square"
 msgstr "方块"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "大"

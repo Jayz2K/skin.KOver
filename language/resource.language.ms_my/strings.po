@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Album rawak"
 
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Jam"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenu"
@@ -44,6 +48,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Seting"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Senarai Lebar"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Poster"
@@ -51,6 +59,18 @@ msgstr "Poster"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Seni Kosong"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Logo Kosong"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Seni Cakera"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -67,3 +87,7 @@ msgstr "Saat"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Petak"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Besar"

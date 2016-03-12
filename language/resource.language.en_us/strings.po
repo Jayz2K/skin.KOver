@@ -1272,6 +1272,10 @@ msgctxt "#31314"
 msgid "At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options."
 msgstr "At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options."
 
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Welcome"
+
 msgctxt "#31316"
 msgid "Choose a prebuilt configuration"
 msgstr "Choose a prebuilt configuration"
@@ -1303,6 +1307,18 @@ msgstr "Do not show me again"
 msgctxt "#31323"
 msgid "Open the startup wizard..."
 msgstr "Open the startup wizard..."
+
+msgctxt "#31324"
+msgid "Do not turn off your device or force close KODI."
+msgstr "Do not turn off your device or force close KODI."
+
+msgctxt "#31325"
+msgid "A large amount of settings is being written. This can take some time depending of the system.[CR]Do not turn off your device or force close KODI."
+msgstr "A large amount of settings is being written. This can take some time depending of the system.[CR]Do not turn off your device or force close KODI."
+
+msgctxt "#31326"
+msgid "Still processing...[CR]Do not turn off your device or force close KODI."
+msgstr "Still processing...[CR]Do not turn off your device or force close KODI."
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"

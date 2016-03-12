@@ -36,6 +36,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Configuracións"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Listaxe Ampla"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Póster"
@@ -43,6 +47,18 @@ msgstr "Póster"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Cartaz"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"

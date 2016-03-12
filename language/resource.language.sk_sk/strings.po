@@ -44,6 +44,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Transparent"
 
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
+
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Na šírku"

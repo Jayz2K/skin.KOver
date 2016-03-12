@@ -28,6 +28,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "系統設定"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "寬版列表"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "海報"

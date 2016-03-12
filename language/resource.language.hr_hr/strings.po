@@ -36,6 +36,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Postavke"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Široki popis"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Plakat"
@@ -43,6 +47,18 @@ msgstr "Plakat"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Transparent"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Očisti omot albuma"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Očisti logotip"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Slika omota diska"
 
 msgctxt "#31282"
 msgid "Landscape"

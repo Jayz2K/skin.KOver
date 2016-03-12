@@ -36,6 +36,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "การตั้งค่า"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "รายการแบบกว้าง"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "โปสเตอร์"
@@ -43,6 +47,18 @@ msgstr "โปสเตอร์"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "ป้าย"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "งานศิลป์ แบบใส"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "โลโก้ แบบใส"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -55,3 +71,7 @@ msgstr "แฟนอาร์ต"
 msgctxt "#31304"
 msgid "Seconds"
 msgstr "วินาที"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "ใหญ่"

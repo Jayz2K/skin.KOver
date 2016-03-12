@@ -44,6 +44,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Il·lustracions de disc"
+
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Apaïsat"

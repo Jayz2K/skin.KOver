@@ -44,6 +44,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Wide List"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Αφίσα"
@@ -51,6 +55,18 @@ msgstr "Αφίσα"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Πανό"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"
@@ -67,3 +83,7 @@ msgstr "Δευτερόλεπτα"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Τετράγωνο"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Μεγάλο"
