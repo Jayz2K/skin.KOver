@@ -16,6 +16,46 @@ msgstr ""
 "Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Couleurs"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importer"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Personnaliser"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Arrière-plan"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Largeur"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Hauteur"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Type de liste"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Accueil"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Augmenter"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Diminuer"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Albums récents"
@@ -27,6 +67,26 @@ msgstr "Albums recommandés"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Albums aléatoires"
+
+msgctxt "#31060"
+msgid "Window"
+msgstr "Fenêtre"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Éditeur de couleur"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Horloge"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nom :"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Vide"
 
 msgctxt "#31127"
 msgid "Submenu"
@@ -40,9 +100,53 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Déplacer à droite"
 
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Changer l'icône"
+
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr "DÉFAUT"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Paramètres"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "CACHÉ"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Flèches"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Listes"
+
+msgctxt "#31240"
+msgid "Move"
+msgstr "Déplacer"
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr "Redimentionner"
+
+msgctxt "#31244"
+msgid "Install TvTunes ..."
+msgstr "Installer TvTunes ..."
+
+msgctxt "#31245"
+msgid "Audio / Video themes"
+msgstr "Thème audio / vidéo"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "Toujours montrer"
+
+msgctxt "#31267"
+msgid "Fill with color"
+msgstr "Remplir avec une couleur"
 
 msgctxt "#31272"
 msgid "Wide List"
@@ -72,6 +176,10 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Paysage"
 
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "Sous-titres KODI"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanart"
@@ -80,10 +188,34 @@ msgctxt "#31304"
 msgid "Seconds"
 msgstr "Secondes"
 
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr "Choisir le dossier des photos"
+
+msgctxt "#31306"
+msgid "Choose picture..."
+msgstr "Choisir la photo"
+
 msgctxt "#31307"
 msgid "Square"
 msgstr "Carré"
 
+msgctxt "#31308"
+msgid "Medium"
+msgstr "Moyen"
+
 msgctxt "#31309"
 msgid "Large"
 msgstr "Grand"
+
+msgctxt "#31310"
+msgid "Not found !"
+msgstr "Pas trouvé!"
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Bienvenue"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Sortir"

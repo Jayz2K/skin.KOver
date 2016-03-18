@@ -144,6 +144,54 @@ msgctxt "#31031"
 msgid "Sidebar Autohide"
 msgstr "Auto-skrivanje trake sa strane"
 
+msgctxt "#31035"
+msgid "visibility"
+msgstr "vidljivost"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Horizontalna Pozicija (kolona)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Vertikalna Pozicija (red)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Širina"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Visina"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Pozadinski[CR]Stil"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Tip Liste"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Pozadinska[CR]Slika"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Lista : Izabrana Stavka 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Pod Info"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Lista : Neizabrana Stavka 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Lista : Neizabrana Stavka 3"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Skorašnji albumi"

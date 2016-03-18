@@ -164,6 +164,10 @@ msgctxt "#31042"
 msgid "Background[CR]Image"
 msgstr "Obraz[CR]tła"
 
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Zdefiniowane szablony wizualizacji"
+
 msgctxt "#31055"
 msgid "Increase"
 msgstr "Zwiększ"
@@ -196,9 +200,33 @@ msgctxt "#31062"
 msgid "Blocs background"
 msgstr "Tło bloków"
 
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Niepoprawny tekst"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Zegar"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Cień"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Inne informacje"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nazwa :"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Widok"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Pusty"
 
 msgctxt "#31123"
 msgid "Blocs background"
@@ -215,6 +243,10 @@ msgstr "Przesuń w prawo"
 msgctxt "#31135"
 msgid "Move right"
 msgstr "Przesuń w lewo"
+
+msgctxt "#31206"
+msgid "Install Artist Slideshow ..."
+msgstr "Zainstaluj dodatek Artist Slideshow ..."
 
 msgctxt "#31222"
 msgid "Settings"
