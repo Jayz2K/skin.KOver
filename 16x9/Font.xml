@@ -8,6 +8,12 @@
 			<filename>RobotoCondensed-Bold.ttf</filename>
 			<size>36</size>
 		</font>
+		
+		<font>
+			<name>Font110B</name>
+			<filename>RobotoCondensed-Bold.ttf</filename>
+			<size>110</size>
+		</font>		
 
 		<font>
 			<name>Font72</name>
