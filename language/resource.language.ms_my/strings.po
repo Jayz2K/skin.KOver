@@ -16,6 +16,230 @@ msgstr ""
 "Language: ms_MY\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "Pereka KOver"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Menu Rumah"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Warna"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Import"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Suai"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialog"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Kertas Dinding"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Persediaan Am"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Latar belakang bloc"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Bloc 1 : Senarai"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Bloc 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Bloc 2 : Maklumat"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Bloc 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Bloc 3 : Seni"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Bloc 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Bloc 4 : Memainkan Video"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Bloc 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Namakan Semula Paparan"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Laksana Mengufuk Lalai"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Laksana Menegak Lalai"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Templat Saya 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Templat Saya 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Templat Saya 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Padam Paparan"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Laksana Templat Ke Paparan"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Salin Paparan Ke Templat"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Padam Templat"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Eksport Templat"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Orientasi Bentangan"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Kedudukan Palang Sisi"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "Kedudukan panel dialog"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Auto-sembunyi Palang Sisi"
+
+msgctxt "#31032"
+msgid "Dialog slide type"
+msgstr "Jenis leret dialog"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Pemisah Mengufuk"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Pemisah Menegak"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "ketampakan"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Kedudukan Mengufuk (lajur)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Kedudukan Menegak (baris)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Lebar"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Tinggi"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Gaya[CR]Latar Belakang"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Jenis Senarai"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Imej[CR]Latar Belakang"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Senarai : Item Terpilih 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Sub maklumat"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Senarai : Item Tidak Terpilih 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Senarai : Item Tidak Terpilih 3"
+
+msgctxt "#31047"
+msgid "Info Bloc : Sub info"
+msgstr "Bloc Maklumat : Sub maklumat"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Ex : Jangka Masa"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Tag Item Terpilih"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Rumah"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Video paling atas"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Praset pengvisualan"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Seni ekstra"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Naik"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Turun"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Album terkini"
@@ -28,13 +252,153 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Album rawak"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Tetingkap"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Palang sisi"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Latar belakang bloc"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Bloc maklumat"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "Bloc seni"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Bloc video"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialog"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Penyunting warna"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Ikon tidak terpilih"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Item tidak terpilih"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Teks tidak terpilih"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Latar belakang ikon terpilih"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Item terpilih"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Teks terpilih"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Latar belakang item terpilih"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Bilangan item terpilih"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Teks tidak sah"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Jam"
 
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Bayang"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Maklumat lain"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Eksport skema warna"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Bloc 5 : Submenu"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Bloc 5"
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "Seksyen KODI"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nama :"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Jenis paparan"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Kosong"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Latar belakang bloc"
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "Tetapan pustaka"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Subkategori"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "Ubah aras tetapan"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenu"
+
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr "Bloc maklumat ; Tajuk"
+
+msgctxt "#31130"
+msgid "Bloc 4 : Home Art"
+msgstr "Bloc 4 : Seni Rumah"
+
+msgctxt "#31131"
+msgid "Scrolling Orientation"
+msgstr "Orientasi Penatalan"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Tetapan Paparan"
+
+msgctxt "#31133"
+msgid "Select Viewtype"
+msgstr "Pilih Jenis Paparan"
 
 msgctxt "#31134"
 msgid "Move left"
@@ -44,21 +408,293 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Alih kanan"
 
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Ubah ikon"
+
+msgctxt "#31137"
+msgid "Select Bloc 4 Picture"
+msgstr "Pilih Gambar Bloc 4"
+
+msgctxt "#31142"
+msgid "Go Submenu"
+msgstr "Submenu Pergi"
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Undur"
+
+msgctxt "#31144"
+msgid "Over"
+msgstr "Atas"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Saluran TV"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Cuaca"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Ramalan Cuaca"
+
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Sunting menu Rumah..."
+
+msgctxt "#31150"
+msgid "Auto build"
+msgstr "Auto-bina"
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Import / Eksport"
+
+msgctxt "#31152"
+msgid "Force search for PVR thumbs"
+msgstr "Paksa gelintar untuk lakaran kenit PVR"
+
+msgctxt "#31153"
+msgid "Enable Designer"
+msgstr "Benarkan Pereka"
+
+msgctxt "#31154"
+msgid "Enable Color tool"
+msgstr "Benarkan alat Warna"
+
+msgctxt "#31155"
+msgid "Show Debug Infos"
+msgstr "Tunjuk Maklumat Nyahpepijat"
+
+msgctxt "#31156"
+msgid "Build KOver for PVR"
+msgstr "Binaan KOver untuk PVR"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Mengufuk"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Menegak"
+
+msgctxt "#31159"
+msgid "Build KOver fullscreen"
+msgstr "Binaan KOver berskrin penuh"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Klasik"
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr "Dua-pertiga"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "Hidbrid"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Import..."
+
+msgctxt "#31165"
+msgid "Backup Home menu"
+msgstr "Sandar menu Rumah"
+
+msgctxt "#31196"
+msgid "Default dark"
+msgstr "Gelap lalai"
+
+msgctxt "#31197"
+msgid "Default light"
+msgstr "Cerah lalai"
+
+msgctxt "#31198"
+msgid "Default FTV style"
+msgstr "Gaya FTV lalai"
+
+msgctxt "#31199"
+msgid "Default flat style"
+msgstr "Gaya rata lalai"
+
+msgctxt "#31200"
+msgid "Enhancement"
+msgstr "Penambahbaikan"
+
+msgctxt "#31205"
+msgid "Install Artwork Downloader script ..."
+msgstr "Pasang skrip Pemuat Turun Kerja Seni ..."
+
+msgctxt "#31206"
+msgid "Install Artist Slideshow ..."
+msgstr "Pasang Paparan Slaid Artis ..."
+
+msgctxt "#31208"
+msgid "- Show visualisation effect over Artist slideshow."
+msgstr "- Tunjuk kesan pengvisualan terhadap paparan slaid Artis"
+
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr "LALAI"
+
+msgctxt "#31217"
+msgid "Home Art"
+msgstr "Seni Rumah"
+
+msgctxt "#31219"
+msgid "Header Title"
+msgstr "Tajuk Pengepala"
+
+msgctxt "#31220"
+msgid "Header Subtitle"
+msgstr "Sarikata Pengepala"
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr "Tetingkap tetapan"
+
 msgctxt "#31222"
 msgid "Settings"
-msgstr "Seting"
+msgstr "Tetapan"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "TERSEMBUNYI"
+
+msgctxt "#31224"
+msgid "Scroll indicators"
+msgstr "Tatal penunjuk"
+
+msgctxt "#31225"
+msgid "Art Type"
+msgstr "Jenis Seni"
+
+msgctxt "#31226"
+msgid "Furnitures"
+msgstr "Perabot"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Anak Panah"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Senarai"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Memuatkan ..."
+
+msgctxt "#31235"
+msgid "Home Menu size"
+msgstr "Saiz Menu Rumah"
+
+msgctxt "#31237"
+msgid "Move Bloc"
+msgstr "Bloc Alih"
+
+msgctxt "#31238"
+msgid "Resize Bloc"
+msgstr "Bloc Saiz Semula"
+
+msgctxt "#31240"
+msgid "Move"
+msgstr "Alih"
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr "Saiz Semula"
+
+msgctxt "#31242"
+msgid "Keep OSD controls always sticking to bottom"
+msgstr "Kekalkan kawalan OSD sentiasa melekat di bahagian bawah"
+
+msgctxt "#31244"
+msgid "Install TvTunes ..."
+msgstr "Pasang TvTunes ..."
+
+msgctxt "#31245"
+msgid "Audio / Video themes"
+msgstr "Tema Audio / Video"
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr "Terus menonton ?"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "Jangan tunjuk"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "Sentiasa tunjuk"
+
+msgctxt "#31256"
+msgid "Hide after timer inactivity"
+msgstr "Sembunyi selepas ketidakaktifan pemasa"
+
+msgctxt "#31257"
+msgid "Show when media is playing"
+msgstr "Tunjuk bila media dimainkan"
+
+msgctxt "#31260"
+msgid "Show fallback only"
+msgstr "Tunjuk jatuh-balik sahaja"
+
+msgctxt "#31261"
+msgid "Set width 1 column"
+msgstr "Tetapan lebar lajur 1"
+
+msgctxt "#31262"
+msgid "Set width 2 columns"
+msgstr "Tetapan lebar lajur 2"
+
+msgctxt "#31263"
+msgid "Set width 3 columns"
+msgstr "Tetapan lebar lajur 3"
+
+msgctxt "#31270"
+msgid "Default"
+msgstr "Lalai"
+
+msgctxt "#31271"
+msgid "No fallback"
+msgstr "Tiada jatuh-balik"
 
 msgctxt "#31272"
 msgid "Wide List"
 msgstr "Senarai Lebar"
 
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "Jubin"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "Kad"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Poster"
 
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr "Senarai Tetap"
+
 msgctxt "#31277"
 msgid "Banner"
-msgstr "Banner"
+msgstr "Sepanduk"
+
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Lakaran Kenit"
 
 msgctxt "#31279"
 msgid "Clear Art"
@@ -76,6 +712,26 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Lanskap"
 
+msgctxt "#31283"
+msgid "Custom List"
+msgstr "Senarai Suai"
+
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "Sarikata KODI"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Mengufuk"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Menegak"
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Sentiasa tampak"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Seni Peminat"
@@ -84,10 +740,58 @@ msgctxt "#31304"
 msgid "Seconds"
 msgstr "Saat"
 
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr "Pilih folder gambar..."
+
+msgctxt "#31306"
+msgid "Choose picture..."
+msgstr "Pilih gambar..."
+
 msgctxt "#31307"
 msgid "Square"
 msgstr "Petak"
 
+msgctxt "#31308"
+msgid "Medium"
+msgstr "Sederhana"
+
 msgctxt "#31309"
 msgid "Large"
 msgstr "Besar"
+
+msgctxt "#31310"
+msgid "Not found !"
+msgstr "Tidak ditemui !"
+
+msgctxt "#31311"
+msgid "Checking Files"
+msgstr "Memeriksa Fail"
+
+msgctxt "#31312"
+msgid "Update Custom Lists"
+msgstr "Kemaskini Senarai Suai"
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Bestari..."
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Selamat Datang"
+
+msgctxt "#31316"
+msgid "Choose a prebuilt configuration"
+msgstr "Pilih satu konfigurasi pra-binaan"
+
+msgctxt "#31317"
+msgid "Go to Designer"
+msgstr "Pergi ke Pereka"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Keluar"
+
+msgctxt "#31322"
+msgid "Do not show me again"
+msgstr "Jangan tunjuk saya lagi"
