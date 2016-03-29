@@ -423,7 +423,7 @@ msgid "Delete the template's content."
 msgstr ""
 
 msgctxt "#31101"
-msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after 5s."
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
 msgstr ""
 
 msgctxt "#31102"
@@ -1324,6 +1324,18 @@ msgstr ""
 
 msgctxt "#31326"
 msgid "Still processing...[CR]Do not turn off your device or force close KODI."
+msgstr ""
+
+msgctxt "#31327"
+msgid "Show after timer inactivity"
+msgstr ""
+
+msgctxt "#31328"
+msgid "Toggle the element's visibility. REVIDLEFADE makes the element to show after XX seconds (set by user)."
+msgstr ""
+
+msgctxt "#31329"
+msgid "Set the reverse IDLEFADE timer (Designer specific feature) :"
 msgstr ""
 
 #empty strings from id 31327 to 31399

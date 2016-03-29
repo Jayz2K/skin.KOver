@@ -32,13 +32,32 @@
 
 <!-- IdleFade timer -->
 	<include name="IdleFadeTimer">
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(IdleFade,3)">Conditonal</animation>
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5)">Conditonal</animation>
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10)">Conditonal</animation>
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15)">Conditonal</animation>
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20)">Conditonal</animation>
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25)">Conditonal</animation>
-		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30)">Conditonal</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(3) + Skin.String(IdleFade,3)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(5) + Skin.String(IdleFade,5)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(10) + Skin.String(IdleFade,10)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(15) + Skin.String(IdleFade,15)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(20) + Skin.String(IdleFade,20)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(25) + Skin.String(IdleFade,25)">Conditional</animation>
+		<animation effect="fade" start="100" end="0" time="400" reversible="false" condition="System.IdleTime(30) + Skin.String(IdleFade,30)">Conditional</animation>
+	</include>
+
+<!-- Reverse IdleFade timer -->
+	<include name="RevIdleFadeTimer">
+		<animation effect="fade" start="0" end="100" time="400" delay="3000" reversible="false" condition="Skin.String(RevIdleFade,3)">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="5000" reversible="false" condition="Skin.String(RevIdleFade,5)">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="10000" reversible="false" condition="Skin.String(RevIdleFade,10)">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="15000" reversible="false" condition="Skin.String(RevIdleFade,15)">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="20000" reversible="false" condition="Skin.String(RevIdleFade,20)">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="25000" reversible="false" condition="Skin.String(RevIdleFade,25)">WindowOpen</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="30000" reversible="false" condition="Skin.String(RevIdleFade,30)">WindowOpen</animation>
+
+		<animation effect="fade" start="0" end="100" time="400" delay="3000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,3)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="5000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,5)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="10000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,10)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="15000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,15)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="20000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,20)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="25000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,25)">Conditional</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="30000" reversible="false" condition="!Container($PARAM[Id]).OnNext + !Container($PARAM[Id]).OnPrevious + Skin.String(RevIdleFade,30)">Conditional</animation>
 	</include>
 
 <!-- Designer infos -->

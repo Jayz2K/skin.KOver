@@ -24,6 +24,9 @@
 					</include>
 					<texture colordiffuse="$INFO[Skin.String(Color.BBBg)]">common/white.png</texture>
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].BBShow,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
 					<visible>IsEmpty(Skin.String($PARAM[CompPrefix].BBPic)) | !Skin.String($PARAM[CompPrefix].BBBgs,IMAGE)</visible>
 				</control>
@@ -34,6 +37,9 @@
 					<aspectratio>scale</aspectratio>
 					<texture colordiffuse="FFFFFFFF">$INFO[Skin.String($PARAM[CompPrefix].BBPic)]</texture>
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].BBShow,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].BBShow,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<visible>!Skin.String($PARAM[CompPrefix].BBShow,HIDDEN)</visible>
 					<visible>!IsEmpty(Skin.String($PARAM[CompPrefix].BBPic)) + Skin.String($PARAM[CompPrefix].BBBgs,IMAGE)</visible>
 				</control>
@@ -42,6 +48,9 @@
 				<!-- Bloc 4 / special background -->
 				<control type="group">
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B4Show,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -66,6 +75,9 @@
 				<!-- Bloc 3 -->
 				<control type="group">
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B3Show,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B3Show,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B3ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -291,6 +303,9 @@
 				<!-- Bloc 4 -->
 				<control type="group">
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B4Show,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B4Show,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B4ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -410,6 +425,9 @@
 					<visible>Control.IsVisible($PARAM[Id])</visible>
 					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B1Show,HIDDEN)">Conditional</animation>
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B1Show,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B1Show,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B1ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -607,6 +625,9 @@
 				<!-- Bloc 2 -->
 				<control type="group">
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B2Show,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B2Show,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="[Window.IsVisible(contextmenu) | ControlGroup(99).HasFocus() | Control.HasFocus(97)] + Skin.String($PARAM[CompPrefix].B5B2ShowOF,HIDE)">Conditional</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -838,6 +859,9 @@
 					<visible>Control.IsVisible(99)</visible>
 					<animation effect="fade" start="100" end="0" time="0" condition="Skin.String($PARAM[CompPrefix].B5Show,HIDDEN)">Conditional</animation>
 					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B5Show,IDLEFADE)">IdleFadeTimer</include>
+					<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].B5Show,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 					<animation effect="fade" start="100" end="0" time="200" condition="!Window.IsVisible(contextmenu) + !ControlGroup(99).HasFocus() + !Control.HasFocus(97) + !Window.IsVisible(contextmenu) + Skin.String($PARAM[CompPrefix].B5Show,ONFOCUS)">Conditonal</animation>
 					<include name="BlocPosition">
 						<param name="Prefix" value="$PARAM[CompPrefix]" />
@@ -927,6 +951,9 @@
 				<animation effect="slide" start="0,0" end="-120,0" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,TOP) | Skin.String($PARAM[CompPrefix].DIAPanel,BOTTOM)] + Skin.String($PARAM[CompPrefix].BBSidebar,LEFT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>
 				<animation effect="slide" start="0,0" end="120,0" time="100" condition="[Skin.String($PARAM[CompPrefix].DIAPanel,TOP) | Skin.String($PARAM[CompPrefix].DIAPanel,BOTTOM)] + Skin.String($PARAM[CompPrefix].BBSidebar,RIGHT) + !IsEmpty(Window(Home).Property(DialogVisibility)) + !Skin.String($PARAM[CompPrefix].DIASlide,PUSH)">Conditional</animation>
 				<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].BBSBHide,IDLEFADE)">IdleFadeTimer</include>
+				<include condition="!Window.IsActive(10138) + Skin.String($PARAM[CompPrefix].BBSBHide,REVIDLEFADE)" name="RevIdleFadeTimer">
+						<param name="Id" value="$PARAM[Id]" />
+					</include>
 
 				<animation effect="fade" start="100" end="75" time="0" condition="IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml) + Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String($PARAM[CompPrefix].BBSBHide,ENABLED)">Conditional</animation>	
 				<animation effect="fade" start="100" end="0" time="200" condition="IsEmpty(Window(Home).Property(DialogVisibility)) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml) + System.IdleTime(1) + Skin.String($PARAM[CompPrefix].BBSizeX,3COLUMN) + Skin.String($PARAM[CompPrefix].BBSizeY,3ROW) + Skin.String($PARAM[CompPrefix].BBSBHide,ENABLED)">Conditional</animation>	

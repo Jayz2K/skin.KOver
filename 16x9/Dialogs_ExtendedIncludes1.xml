@@ -43,7 +43,7 @@
 				<!-- Main list -->
 				<control type="wraplist" id="300">
 					<left>24</left>
-					<top>80</top>
+					<top>90</top>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
 					<onright condition="StringCompare(Container(300).ListItem.Property(MenuID),Details)">99</onright>
@@ -54,16 +54,16 @@
 					<onright condition="StringCompare(Container(300).ListItem.Property(MenuID),MovieCrew)">550</onright>
 					<onright condition="StringCompare(Container(300).ListItem.Property(MenuID),TvShowCrew)">650</onright>
 					<onright condition="StringCompare(Container(300).ListItem.Property(MenuID),Tagged)">750</onright>
-					<height>36</height>
+					<height>44</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
 
-					<itemlayout width="588" height="36">
+					<itemlayout width="588" height="44">
 						<control type="label">
 							<top>0</top>
 							<left>0</left>
 							<width>588</width>
-							<height>36</height>
+							<height>44</height>
 							<align>center</align>
 							<font>Font36</font>
 							<scroll>True</scroll>
@@ -72,12 +72,12 @@
 						</control>
 					</itemlayout>
 
-					<focusedlayout width="588" height="36">
+					<focusedlayout width="588" height="44">
 						<control type="label">
 							<top>0</top>
 							<left>0</left>
 							<width>588</width>
-							<height>36</height>
+							<height>44</height>
 							<align>center</align>
 							<font>Font36</font>
 							<scroll>True</scroll>
@@ -89,7 +89,7 @@
 							<top>0</top>
 							<left>0</left>
 							<width>588</width>
-							<height>36</height>
+							<height>44</height>
 							<align>center</align>
 							<font>Font36</font>
 							<scroll>True</scroll>

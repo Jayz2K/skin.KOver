@@ -751,6 +751,9 @@
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(Color.SBBg,EE000000)</onfocus>
 
             <onfocus condition="System.HasAddon(script.skin.info.service)">RunScript(script.skin.info.service)</onfocus>
+
+            <!--onfocus condition="Skin.HasSetting(Use_Startup_Playlist)">PlayMedia($INFO[Skin.String(Startup_Playlist_Path)])</onfocus-->
+
             <onfocus condition="Skin.HasSetting(WizardNotShow)">ReplaceWindow(home)</onfocus>
             <onfocus condition="!Skin.HasSetting(WizardNotShow)">ReplaceWindow(1103)</onfocus>
 			<onfocus condition="IsEmpty(Skin.String(KOverInit))">Skin.SetString(KOverInit,DONE)</onfocus>            
@@ -824,7 +827,7 @@
 			<textcolor>$VAR[InitColor2]</textcolor>
 			<label>20186</label>
 			<animation effect="fade" start="0" end="100" time="200" condition="true">Conditional</animation>
-		</control>											
+		</control>			
 
 	</controls>
 

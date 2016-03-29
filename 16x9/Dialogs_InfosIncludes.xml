@@ -43,23 +43,23 @@
 				<!-- Main list -->
 				<control type="wraplist" id="300">
 					<left>24</left>
-					<top>80</top>
+					<top>90</top>
 					<onup>noop</onup>
 					<ondown>noop</ondown>
 					<onright condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[33061])">301</onright>
 					<onright condition="StringCompare(Container(300).ListItem.Label,$LOCALIZE[33029])">99</onright>
 					<onright condition="[StringCompare(Container(300).ListItem.Label,$LOCALIZE[206]) + !StringCompare(Container(300).ListItem.Property(MenuID),Cast)] | StringCompare(Container(300).ListItem.Label,$LOCALIZE[182])">50</onright>
 					<onright condition="StringCompare(Container(300).ListItem.Property(MenuID),Cast) | StringCompare(Container(300).ListItem.Property(MenuID),Director) | StringCompare(Container(300).ListItem.Property(MenuID),Similar)">70</onright>
-					<height>36</height>
+					<height>44</height>
 					<scrolltime>200</scrolltime>
 					<orientation>vertical</orientation>
 
-					<itemlayout width="588" height="36">
+					<itemlayout width="588" height="44">
 						<control type="label">
 							<top>0</top>
 							<left>0</left>
 							<width>588</width>
-							<height>36</height>
+							<height>44</height>
 							<align>center</align>
 							<font>Font36</font>
 							<scroll>True</scroll>
@@ -68,12 +68,12 @@
 						</control>
 					</itemlayout>
 
-					<focusedlayout width="588" height="36">
+					<focusedlayout width="588" height="44">
 						<control type="label">
 							<top>0</top>
 							<left>0</left>
 							<width>588</width>
-							<height>36</height>
+							<height>44</height>
 							<align>center</align>
 							<font>Font36</font>
 							<scroll>True</scroll>
@@ -85,7 +85,7 @@
 							<top>0</top>
 							<left>0</left>
 							<width>588</width>
-							<height>36</height>
+							<height>44</height>
 							<align>center</align>
 							<font>Font36</font>
 							<scroll>True</scroll>
