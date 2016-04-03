@@ -1338,7 +1338,7 @@ msgctxt "#31329"
 msgid "Set the reverse IDLEFADE timer (Designer specific feature) :"
 msgstr ""
 
-#empty strings from id 31327 to 31399
+#empty strings from id 31330 to 31399
 #Settings strings
 
 msgctxt "#31400"
