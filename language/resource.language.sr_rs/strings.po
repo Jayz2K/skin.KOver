@@ -16,6 +16,14 @@ msgstr ""
 "Language: sr_RS\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
+msgctxt "#31059"
+msgid "Random albums"
+msgstr "Насумични албуми"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Сат"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Подмени"
@@ -24,9 +32,17 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Поставке"
 
+msgctxt "#31275"
+msgid "Poster"
+msgstr "Постер"
+
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Прекривен"
+
+msgctxt "#31282"
+msgid "Landscape"
+msgstr "Хоризонтално"
 
 msgctxt "#31302"
 msgid "Fanart"

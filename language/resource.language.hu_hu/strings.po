@@ -16,6 +16,30 @@ msgstr ""
 "Language: hu_HU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Főmenü"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Színek"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importálás"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Testreszabás"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Háttérkép"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Általános beállítások"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Jelenlegi albumok"

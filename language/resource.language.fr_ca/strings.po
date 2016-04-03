@@ -104,6 +104,10 @@ msgctxt "#31136"
 msgid "Change icon"
 msgstr "Changer l'icône"
 
+msgctxt "#31145"
+msgid "PVR"
+msgstr "Numériscope"
+
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr "DÉFAUT"

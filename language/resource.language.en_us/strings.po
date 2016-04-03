@@ -420,10 +420,6 @@ msgctxt "#31100"
 msgid "Delete the template's content."
 msgstr "Delete the template's content."
 
-msgctxt "#31101"
-msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after 5s."
-msgstr "Toggle the element's visibility. IDLEFADE makes the element to disappear after 5s."
-
 msgctxt "#31102"
 msgid "Change the layout orientation or scroll direction for lists."
 msgstr "Change the layout orientation or scroll direction for lists."

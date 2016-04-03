@@ -420,10 +420,6 @@ msgctxt "#31100"
 msgid "Delete the template's content."
 msgstr "Supprimer le contenu du modèle."
 
-msgctxt "#31101"
-msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after 5s."
-msgstr "Activer la visibilité de l'élément, IDLEFADE fait disparaitre l'élément après 5s."
-
 msgctxt "#31102"
 msgid "Change the layout orientation or scroll direction for lists."
 msgstr "Changer l'orientation de la mise en page ou la direction de défilement des listes."
