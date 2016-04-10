@@ -420,6 +420,10 @@ msgctxt "#31100"
 msgid "Delete the template's content."
 msgstr "Ištrinti šablono turinį."
 
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
+msgstr "Perjungti elementų matomumą. Naudojant IDLEFADE  elementas išnyks po XX sekundžių (nustato vartotojas)."
+
 msgctxt "#31102"
 msgid "Change the layout orientation or scroll direction for lists."
 msgstr "Pakeisti šio sąrašo išdėstymo orientaciją ar slinkimo kryptį."
@@ -1038,7 +1042,7 @@ msgstr "Rodyti visada"
 
 msgctxt "#31256"
 msgid "Hide after timer inactivity"
-msgstr "Slėpti basibaigus neaktyvumo laikmačiui"
+msgstr "Slėpti pasibaigus neaktyvumo laikmačiui"
 
 msgctxt "#31257"
 msgid "Show when media is playing"
@@ -1315,6 +1319,18 @@ msgstr "Įrašomas didelis kiekis nustatymų. Priklausomai nuo jūsų sistemos, 
 msgctxt "#31326"
 msgid "Still processing...[CR]Do not turn off your device or force close KODI."
 msgstr "Vis dar apdorojama...[CR]Neišjunkite įrenginio ar priverstinai neišjunkite KODI."
+
+msgctxt "#31327"
+msgid "Show after timer inactivity"
+msgstr "Rodyti pasibaigus neaktyvumo laikmačiui"
+
+msgctxt "#31328"
+msgid "Toggle the element's visibility. REVIDLEFADE makes the element to show after XX seconds (set by user)."
+msgstr "Perjungti elementų matomumą. Naudojant REVIDLEFADE elementas išnyks po XX sekundžių (nustato vartotojas)."
+
+msgctxt "#31329"
+msgid "Set the reverse IDLEFADE timer (Designer specific feature) :"
+msgstr "Nustatyti atvirkštinį IDLEFADE laikmatį (specifinė dizainerio funkcija):"
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
