@@ -387,7 +387,7 @@
 
 	<variable name="PlayerStatus">
 		<value condition="Player.Playing + Window.IsActive(seekbar)">$LOCALIZE[575]</value>
-		<value condition="Player.Paused + Window.IsActive(seekbar)">$LOCALIZE[112]</value>
+		<value condition="Player.Paused + Window.IsActive(seekbar)">$INFO[Player.Title,$LOCALIZE[112] - ,]</value>
 		<value condition="Player.Forwarding2x">x2</value>
 		<value condition="Player.Forwarding4x">x4</value>
 		<value condition="Player.Forwarding8x">x8</value>
