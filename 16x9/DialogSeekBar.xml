@@ -22,7 +22,7 @@
 				<!-- Progress -->
 				<control type="group">
 					<animation effect="slide" start="0,0" end="0,238" time="0" condition="Skin.String(HOM.View1.BBSidebar,BOTTOM) | Skin.HasSetting(ForceOSDBottom)">Conditional</animation>
-					<visible>!Window.IsVisible(10153) + !Window.IsVisible(10124) + !Window.IsVisible(10123) + !Window.IsVisible(10125) + !Window.IsVisible(fullscreeninfo)</visible>
+					<visible>!Window.IsVisible(10153) + !Window.IsVisible(10124) + !Window.IsVisible(10610) + !Window.IsVisible(10611) + !Window.IsVisible(10123) + !Window.IsVisible(10125) + !Window.IsVisible(fullscreeninfo)</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
