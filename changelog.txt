@@ -3,6 +3,7 @@
 - Added reverse IdleFade
 - Unlocked custom lists in Bloc5 (Home)
 - Added Font 110B for screensaver plugin
+- Added Player filename when paused
 - Fix for seekbar showing under pvr dialogs
 
 [B]1.1.1[/B]
