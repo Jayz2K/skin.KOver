@@ -187,7 +187,7 @@
 
 			<!-- Dialogs Panel -->
 			<control type="group">
-				<visible>!Control.HasFocus(9600) + !Control.HasFocus(9700)</visible>
+				<visible>!Control.HasFocus(9600) + !Control.HasFocus(9700) + IsEmpty(Window(Home).Property(DialogVisibility))</visible>
 
 				<!-- Bloc 1 -->
 				<control type="group">
