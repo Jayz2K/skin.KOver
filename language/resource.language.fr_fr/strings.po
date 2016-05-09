@@ -420,6 +420,10 @@ msgctxt "#31100"
 msgid "Delete the template's content."
 msgstr "Supprimer le contenu du modèle."
 
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
+msgstr "Basculer la visibilité de l'élément. IDLEFADE fait disparaître l’élément après XX secondes (défini par l'utilisateur)."
+
 msgctxt "#31102"
 msgid "Change the layout orientation or scroll direction for lists."
 msgstr "Changer l'orientation de la mise en page ou la direction de défilement des listes."
@@ -1315,6 +1319,14 @@ msgstr "Un grand nombre de paramètres est en cours d'écriture. Ceci peut durer
 msgctxt "#31326"
 msgid "Still processing...[CR]Do not turn off your device or force close KODI."
 msgstr "Toujours en cours...[CR]Ne pas éteindre l'appareil ou forcer la fermeture de KODI."
+
+msgctxt "#31328"
+msgid "Toggle the element's visibility. REVIDLEFADE makes the element to show after XX seconds (set by user)."
+msgstr "Basculer la visibilité de l'élément. REVIDLEFADE fait apparaître l’élément après XX secondes (défini par l'utilisateur)."
+
+msgctxt "#31329"
+msgid "Set the reverse IDLEFADE timer (Designer specific feature) :"
+msgstr "Régler le compte à rebours pour IDLEFADE (fonction spécifique du concepteur) :"
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"

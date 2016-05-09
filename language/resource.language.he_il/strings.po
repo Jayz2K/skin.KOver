@@ -16,6 +16,142 @@ msgstr ""
 "Language: he_IL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "תפריט הבית"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "צבעים"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "יבוא"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "התאמה אישית"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "דיאלוגים"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "טפט"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "הגדרות כלליות"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "רקע לבלוקים"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "בלוק 1 : רשימה"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "בלוק 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "בלוק 2 : מידע"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "בלוק 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "בלוק 3: אמנות"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "בלוק 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "בלוק 4: לנגן וידאו "
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "בלוק 4"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "התבנית שלי 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "התבנית שלי 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "התבנית שלי 3"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "מחק תבנית"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "תבנית ייצוא"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "כיווני פריסה"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "מיקום סרגל הצדדי"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "המיקום בפאנל דיאלוג"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "ההסתרה האוטומטית של הסרגל הצדדי"
+
+msgctxt "#31032"
+msgid "Dialog slide type"
+msgstr "סוג שקופית דיאלוג"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "מפריד אופקי"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "מפריד אנכי"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "רוחב"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "גובה"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "סוג רשימה"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "רשימה: נבחר פריט 1"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "רשימה: נבחר פריט 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "רשימה: נבחר פריט 3"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "אלבומים אחרונים"
@@ -28,9 +164,129 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "אלבומים אקראיים"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "חלון"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "הסרגל צדדי"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "רקע לבלוקים"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "בלוק מידע"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "בלוק אמנות"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "בלוק וידאו"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "דיאלוג"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "עורך צבעים"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "סמלים שלא נבחרו"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "פריטים שלא נבחרו"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "טקסט שלא נבחר"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "רקע אייקון נבחר"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "פריטים נבחרים"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "טקסט נבחר"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "רקע פריט נבחר"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "מספר פריט נבחר"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "טקסט לא חוקי"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "שעון"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "צל"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "בלוק 5: תפריט משנה"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "בלוק 5"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "שם:"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "ריק"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "רקע לבלוקים"
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "הגדרות ספריות"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "קטגוריית משנה"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "שינוי הגדרות רמות"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "תת תפריט"
+
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr "בלוק מידע: כותרת"
+
+msgctxt "#31130"
+msgid "Bloc 4 : Home Art"
+msgstr "בלוק 4: ראשי אמנות"
+
+msgctxt "#31131"
+msgid "Scrolling Orientation"
+msgstr "כיווני גלילה"
 
 msgctxt "#31134"
 msgid "Move left"
@@ -40,17 +296,129 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "הזזה ימינה"
 
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "שינוי סמל"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "ערוצי טלוויזיה"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "מזג אוויר"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "תחזית מזג אוויר"
+
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "עריכת תפרית בית..."
+
+msgctxt "#31150"
+msgid "Auto build"
+msgstr "בנייה אוטומטי"
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "יבוא ויצוא"
+
+msgctxt "#31154"
+msgid "Enable Color tool"
+msgstr "אפשר כלי צבעים"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "אופקי"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "אנכי"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "קלאסי"
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr "שני שליש"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "היברידי"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "יבוא..."
+
+msgctxt "#31194"
+msgid "Show 'Watched' flags"
+msgstr "הצג דגלים 'שניצפו'"
+
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr "ברירת מחדל"
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr "חלון הגדרות"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "אפשרויות"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "מוסתר"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "רשימות"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "טוען ..."
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr "שינוי גודל"
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr "המשך לצפות?"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "אל תציג"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "הצג תמיד"
+
+msgctxt "#31270"
+msgid "Default"
+msgstr "ברירת מחדל"
 
 msgctxt "#31272"
 msgid "Wide List"
 msgstr "רשימה רחבה"
 
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "אריחים"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "כרטיס"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "פוסטר"
+
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr "רשימה קבועה"
 
 msgctxt "#31277"
 msgid "Banner"
@@ -71,6 +439,18 @@ msgstr "Disc Art"
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "לנדסקייפ"
+
+msgctxt "#31283"
+msgid "Custom List"
+msgstr "רשימה מותאמת אישית"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "אופקי"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "אנכי"
 
 msgctxt "#31302"
 msgid "Fanart"

@@ -32,6 +32,66 @@ msgctxt "#31006"
 msgid "Wallpaper"
 msgstr "Arrière-plan"
 
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Réglages initiaux"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Arrière-plan des blocs"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Bloc 1 : Liste"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Bloc 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Bloc 2 : Information"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Bloc 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Bloc 3 : Art"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Bloc 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Bloc 4 : Vidéo en cours de lecture"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Bloc 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Renommer la vue"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Mon modèle 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Mon modèle 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Mon modèle 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Supprimer la vue"
+
 msgctxt "#31038"
 msgid "Width"
 msgstr "Largeur"
@@ -43,6 +103,22 @@ msgstr "Hauteur"
 msgctxt "#31041"
 msgid "List Type"
 msgstr "Type de liste"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Liste : item sélectionné 1"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Liste : item non sélectionné 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Liste : Item non sélectionné 3"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Ex : durée"
 
 msgctxt "#31051"
 msgid "Home"
@@ -72,6 +148,10 @@ msgctxt "#31060"
 msgid "Window"
 msgstr "Fenêtre"
 
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Arrière-plan des blocs"
+
 msgctxt "#31067"
 msgid "Color editor"
 msgstr "Éditeur de couleur"
@@ -80,6 +160,10 @@ msgctxt "#31081"
 msgid "Clock"
 msgstr "Horloge"
 
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "Section KODI"
+
 msgctxt "#31088"
 msgid "Name :"
 msgstr "Nom :"
@@ -87,6 +171,10 @@ msgstr "Nom :"
 msgctxt "#31090"
 msgid "Empty"
 msgstr "Vide"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Arrière-plan des blocs"
 
 msgctxt "#31127"
 msgid "Submenu"
@@ -108,6 +196,34 @@ msgctxt "#31145"
 msgid "PVR"
 msgstr "Numériscope"
 
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Météo"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Classic"
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr "Deux tiers"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "Hybrid"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Importer ..."
+
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr "DÉFAUT"
@@ -127,6 +243,10 @@ msgstr "Flèches"
 msgctxt "#31233"
 msgid "Lists"
 msgstr "Listes"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Chargement ..."
 
 msgctxt "#31240"
 msgid "Move"
@@ -148,21 +268,65 @@ msgctxt "#31255"
 msgid "Always show"
 msgstr "Toujours montrer"
 
+msgctxt "#31261"
+msgid "Set width 1 column"
+msgstr "Définir la largeur de la colonne 1"
+
+msgctxt "#31262"
+msgid "Set width 2 columns"
+msgstr "Définir la largeur de la colonne 2"
+
+msgctxt "#31263"
+msgid "Set width 3 columns"
+msgstr "Définir la largeur de la colonne 3"
+
+msgctxt "#31264"
+msgid "Set height 1 row"
+msgstr "Définir la hauteur de la rangée 1"
+
+msgctxt "#31265"
+msgid "Set height 2 rows"
+msgstr "Définir la hauteur de la rangée 2"
+
+msgctxt "#31266"
+msgid "Set height 3 rows"
+msgstr "Définir la hauteur de la rangée 3"
+
 msgctxt "#31267"
 msgid "Fill with color"
 msgstr "Remplir avec une couleur"
+
+msgctxt "#31270"
+msgid "Default"
+msgstr "Défaut"
 
 msgctxt "#31272"
 msgid "Wide List"
 msgstr "Liste large"
 
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "Carreaux"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "Cartes"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Affiche"
 
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr "Liste fixe"
+
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Bannière"
+
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Imagette"
 
 msgctxt "#31279"
 msgid "Clear Art"
@@ -180,9 +344,49 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Paysage"
 
+msgctxt "#31283"
+msgid "Custom List"
+msgstr "Liste personnalisée"
+
 msgctxt "#31285"
 msgid "KODI Subtitles"
 msgstr "Sous-titres KODI"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "#31288"
+msgid "Stick to Top"
+msgstr "Attacher en haut"
+
+msgctxt "#31289"
+msgid "Stick to Bottom"
+msgstr "Attacher en bas"
+
+msgctxt "#31290"
+msgid "Stick to Left"
+msgstr "Attacher à gauche"
+
+msgctxt "#31291"
+msgid "Stick to Right"
+msgstr "Attacher à droite"
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Toujours visible"
+
+msgctxt "#31296"
+msgid "Still visible if B5 has focus"
+msgstr "Afficher si B5 à le focus"
+
+msgctxt "#31297"
+msgid "Hide if B5 has focus"
+msgstr "Cacher si B5 à le focus"
 
 msgctxt "#31302"
 msgid "Fanart"
