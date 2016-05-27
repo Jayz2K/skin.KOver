@@ -16,6 +16,18 @@ msgstr ""
 "Language: sq_AL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Menyja Kryesore"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Ngjyrat"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importo"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Ndërmeny"

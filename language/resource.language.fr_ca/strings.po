@@ -16,6 +16,10 @@ msgstr ""
 "Language: fr_CA\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Menu d'accueil"
+
 msgctxt "#31002"
 msgid "Colors"
 msgstr "Couleurs"
@@ -27,6 +31,10 @@ msgstr "Importer"
 msgctxt "#31004"
 msgid "Customize"
 msgstr "Personnaliser"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialogues"
 
 msgctxt "#31006"
 msgid "Wallpaper"
@@ -124,6 +132,14 @@ msgctxt "#31051"
 msgid "Home"
 msgstr "Accueil"
 
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Préréglages de visualisation"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Art supplémentaire"
+
 msgctxt "#31055"
 msgid "Increase"
 msgstr "Augmenter"
@@ -148,17 +164,73 @@ msgctxt "#31060"
 msgid "Window"
 msgstr "Fenêtre"
 
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Menu latéral"
+
 msgctxt "#31062"
 msgid "Blocs background"
 msgstr "Arrière-plan des blocs"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Bloc information"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "Bloc artistique"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Bloc vidéo"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialogue"
 
 msgctxt "#31067"
 msgid "Color editor"
 msgstr "Éditeur de couleur"
 
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Texte sélectionné"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Élément d'arrière-plan sélectionné"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Nombre d'éléments sélectionnés"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Texte invalide"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Horloge"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Ombrage"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Information supplémentaire"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Exporter les schémas chromatiques"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Bloc 5 : Sous-menu"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Bloc 5"
 
 msgctxt "#31087"
 msgid "KODI Section"
@@ -196,9 +268,21 @@ msgctxt "#31145"
 msgid "PVR"
 msgstr "Numériscope"
 
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Chaînes télé"
+
 msgctxt "#31147"
 msgid "Weather"
 msgstr "Météo"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Prévisions météorologiques"
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Importer / Exporter"
 
 msgctxt "#31157"
 msgid "Horizontal"
@@ -224,9 +308,49 @@ msgctxt "#31163"
 msgid "Import..."
 msgstr "Importer ..."
 
+msgctxt "#31165"
+msgid "Backup Home menu"
+msgstr "Arrière-plan du menu d'accueil"
+
+msgctxt "#31194"
+msgid "Show 'Watched' flags"
+msgstr "Montrer les drapeaux \"visionné\""
+
+msgctxt "#31195"
+msgid "Apply color schemes"
+msgstr "Appliquer les schémas chromatiques"
+
+msgctxt "#31196"
+msgid "Default dark"
+msgstr "Défaut foncé"
+
+msgctxt "#31197"
+msgid "Default light"
+msgstr "Défaut clair"
+
+msgctxt "#31200"
+msgid "Enhancement"
+msgstr "Mise en évidance"
+
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr "DÉFAUT"
+
+msgctxt "#31218"
+msgid "Header Bkg"
+msgstr "Arrière-plan de l'entête"
+
+msgctxt "#31219"
+msgid "Header Title"
+msgstr "Titre de l'entête"
+
+msgctxt "#31220"
+msgid "Header Subtitle"
+msgstr "Sous-titre de l'entête"
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr "Fenêtre des paramètres"
 
 msgctxt "#31222"
 msgid "Settings"
@@ -235,6 +359,14 @@ msgstr "Paramètres"
 msgctxt "#31223"
 msgid "HIDDEN"
 msgstr "CACHÉ"
+
+msgctxt "#31224"
+msgid "Scroll indicators"
+msgstr "Indicateurs de défilement"
+
+msgctxt "#31226"
+msgid "Furnitures"
+msgstr "Garnitures"
 
 msgctxt "#31232"
 msgid "Arrows"
@@ -247,6 +379,14 @@ msgstr "Listes"
 msgctxt "#31234"
 msgid "Loading ..."
 msgstr "Chargement ..."
+
+msgctxt "#31237"
+msgid "Move Bloc"
+msgstr "Déplacer le bloc"
+
+msgctxt "#31238"
+msgid "Resize Bloc"
+msgstr "Redimentionner le bloc"
 
 msgctxt "#31240"
 msgid "Move"
@@ -264,9 +404,25 @@ msgctxt "#31245"
 msgid "Audio / Video themes"
 msgstr "Thème audio / vidéo"
 
+msgctxt "#31251"
+msgid "Up Next..."
+msgstr "Prochainement..."
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr "Poursuivre le visionnement"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "Ne pas afficher"
+
 msgctxt "#31255"
 msgid "Always show"
 msgstr "Toujours montrer"
+
+msgctxt "#31258"
+msgid "Show when TvTunes plays video"
+msgstr "Afficher lorsque TvTunes joue des vidéos"
 
 msgctxt "#31261"
 msgid "Set width 1 column"
@@ -420,6 +576,10 @@ msgctxt "#31310"
 msgid "Not found !"
 msgstr "Pas trouvé!"
 
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Assistant..."
+
 msgctxt "#31315"
 msgid "Welcome"
 msgstr "Bienvenue"
@@ -427,3 +587,19 @@ msgstr "Bienvenue"
 msgctxt "#31318"
 msgid "Exit"
 msgstr "Sortir"
+
+msgctxt "#31322"
+msgid "Do not show me again"
+msgstr "Ne plus m'afficher"
+
+msgctxt "#31323"
+msgid "Open the startup wizard..."
+msgstr "Ouvrir l'assistant de démarrage"
+
+msgctxt "#31324"
+msgid "Do not turn off your device or force close KODI."
+msgstr "Ne pas éteindre votre appareil ou forcer la fermeture de Kodi."
+
+msgctxt "#31327"
+msgid "Show after timer inactivity"
+msgstr "Afficher la minuteries d'inactivité"

@@ -1320,6 +1320,10 @@ msgctxt "#31326"
 msgid "Still processing...[CR]Do not turn off your device or force close KODI."
 msgstr "Toujours en cours...[CR]Ne pas éteindre l'appareil ou forcer la fermeture de KODI."
 
+msgctxt "#31327"
+msgid "Show after timer inactivity"
+msgstr "Affiche après l'inactivité du timer"
+
 msgctxt "#31328"
 msgid "Toggle the element's visibility. REVIDLEFADE makes the element to show after XX seconds (set by user)."
 msgstr "Basculer la visibilité de l'élément. REVIDLEFADE fait apparaître l’élément après XX secondes (défini par l'utilisateur)."

@@ -88,6 +88,10 @@ msgctxt "#31017"
 msgid "Rename View"
 msgstr "Przemianuj widok"
 
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Zastosuj domyślny poziomy"
+
 msgctxt "#31020"
 msgid "My Template 1"
 msgstr "Szablon 1"
@@ -164,9 +168,17 @@ msgctxt "#31042"
 msgid "Background[CR]Image"
 msgstr "Obraz[CR]tła"
 
+msgctxt "#31051"
+msgid "Home"
+msgstr "Start"
+
 msgctxt "#31053"
 msgid "Visualisation presets"
 msgstr "Zdefiniowane szablony wizualizacji"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Dodatkowa grafika"
 
 msgctxt "#31055"
 msgid "Increase"
@@ -200,6 +212,18 @@ msgctxt "#31062"
 msgid "Blocs background"
 msgstr "Tło bloków"
 
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Ikony niezaznaczone"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Pozycje niezaznaczone"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Pozycje zaznaczone"
+
 msgctxt "#31080"
 msgid "Invalid text"
 msgstr "Niepoprawny tekst"
@@ -215,6 +239,10 @@ msgstr "Cień"
 msgctxt "#31083"
 msgid "Other infos"
 msgstr "Inne informacje"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Eksportuj motyw kolorów"
 
 msgctxt "#31088"
 msgid "Name :"
@@ -243,6 +271,10 @@ msgstr "Przesuń w prawo"
 msgctxt "#31135"
 msgid "Move right"
 msgstr "Przesuń w lewo"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "Telewizja"
 
 msgctxt "#31206"
 msgid "Install Artist Slideshow ..."
@@ -283,6 +315,38 @@ msgstr "Wielkość menu startowego"
 msgctxt "#31244"
 msgid "Install TvTunes ..."
 msgstr "Zainstaluj dodatek TvTunes ..."
+
+msgctxt "#31257"
+msgid "Show when media is playing"
+msgstr "Pokazuj podczas odtwarzania mediów"
+
+msgctxt "#31260"
+msgid "Show fallback only"
+msgstr "Pokazuj tylko zapasowy"
+
+msgctxt "#31261"
+msgid "Set width 1 column"
+msgstr "Ustaw szerokość na 1 kolumnę"
+
+msgctxt "#31262"
+msgid "Set width 2 columns"
+msgstr "Ustaw szerokość na 2 kolumny"
+
+msgctxt "#31263"
+msgid "Set width 3 columns"
+msgstr "Ustaw szerokość na 3 kolumny"
+
+msgctxt "#31264"
+msgid "Set height 1 row"
+msgstr "Ustaw wysokość na 1 wiersz"
+
+msgctxt "#31265"
+msgid "Set height 2 rows"
+msgstr "Ustaw wysokość na 2 wiersze"
+
+msgctxt "#31266"
+msgid "Set height 3 rows"
+msgstr "Ustaw wysokość na 3 wiersze"
 
 msgctxt "#31272"
 msgid "Wide List"
