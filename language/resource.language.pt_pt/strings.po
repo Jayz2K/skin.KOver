@@ -16,6 +16,114 @@ msgstr ""
 "Language: pt_PT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Cores"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importar"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Personalizar"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Diálogos"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Fundo"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Configuração Geral"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Fundo dos Blocos"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Bloco 1 : Lista"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Bloco 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Bloco 2 : Informações"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Bloco 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Bloco 3 : Arte"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Bloco 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Bloco 4 : Reprodução de Vídeo"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Bloco 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Renomear Visualização"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Aplicar Horizantal Predefinido"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Aplicar Vertical Predefinido"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "O Meu Modelo 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "O Meu Modelo 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "O Meu Modelo 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Eliminar Visualização"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Aplicar Modelo para Visualização"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Copiar Viosualização para Modelo"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Eliminar Modelo"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Exportar Modelo"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Orientação da Disposição"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Álbuns recentes"
@@ -28,6 +136,14 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Álbuns aleatórios"
 
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Fundo dos Blocos"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Fundo dos Blocos"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenu"
@@ -39,6 +155,10 @@ msgstr "Mover para a esquerda"
 msgctxt "#31135"
 msgid "Move right"
 msgstr "Mover para a direita"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
 
 msgctxt "#31222"
 msgid "Settings"
