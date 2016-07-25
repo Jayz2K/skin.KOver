@@ -32,9 +32,17 @@ msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenú"
 
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Configuracións"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Frechas"
 
 msgctxt "#31272"
 msgid "Wide List"
@@ -71,3 +79,19 @@ msgstr "Fanart"
 msgctxt "#31304"
 msgid "Seconds"
 msgstr "Segundos"
+
+msgctxt "#31311"
+msgid "Checking Files"
+msgstr "Verificando ficheiros..."
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Asistente..."
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Benvido/a"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Saír"
