@@ -16,6 +16,230 @@ msgstr ""
 "Language: nl_NL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Startmenu"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Kleuren"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "importeren"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Aanpassen"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialogen"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Poster"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Algemene setup"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Blokken achtergrond"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blok 1 : Lijst"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blok 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Bloc 2 : informatie"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blok 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Blok 3 : kunst"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "blok 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blok 4 : afspelende video"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blok 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Hernoem vertoning"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Toepassen standaard horizontaal"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Toepassen standaard verticaal"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Mijn sjabloon 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Mijn sjabloon 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Mijn sjabloon 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Verwijder vertoning"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "toepassen sjabloon naar weergave"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "kopieer weergaven naar sjabloon"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "verwijder sjabloon"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "exporteer sjabloon"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "lay-out orientatie"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Zijblak positie"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "dialoog paneel positie"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Zijbalk automatisch verbergen"
+
+msgctxt "#31032"
+msgid "Dialog slide type"
+msgstr "dialoog glij type"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "horizontaal afscheider"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "verticaal afscheider"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "Zichtbaarheid"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Horizontale positie (kolom)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Vertikale positie (rij)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "breedte"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Hoogte"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Achtergrond[CR]stijl"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Lijst type"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "achtergrond[CR]afbeelding"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "lijst : Geselecteerde bestand 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Ondertitel info"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "lijst : niet geselecteerde bestand 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Lijst : niet geselecteerde bestand 3"
+
+msgctxt "#31047"
+msgid "Info Bloc : Sub info"
+msgstr "info blok : ondertitel informatie"
+
+msgctxt "#31048"
+msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
+msgstr "tekst 3 - informatie plot [CR]over het geselecteerde bestand in blok 1"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Ex : duur"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Selecteer bestand tag"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Thuis"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Video bovenin"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Visualisatie voorinstelling"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Extra kunst"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Vergroten"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "verkleinen"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Nieuwe albums"
@@ -28,9 +252,53 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Willekeurige albums"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Scherm"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "zijbalk"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Blokken achtergrond"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "info blok"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "kunst blok"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Video blok"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "dialoog"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "kleur aanpasser"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "niet geselecteerde iconen"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Niet geselecteerde bestanden"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Klok"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Blokken achtergrond"
 
 msgctxt "#31127"
 msgid "Submenu"
@@ -43,6 +311,10 @@ msgstr "Naar links"
 msgctxt "#31135"
 msgid "Move right"
 msgstr "Naar Rechts"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
 
 msgctxt "#31222"
 msgid "Settings"

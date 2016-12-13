@@ -300,6 +300,10 @@ msgctxt "#31136"
 msgid "Change icon"
 msgstr "שינוי סמל"
 
+msgctxt "#31145"
+msgid "PVR"
+msgstr "טלוויזיה חיה"
+
 msgctxt "#31146"
 msgid "TV channels"
 msgstr "ערוצי טלוויזיה"

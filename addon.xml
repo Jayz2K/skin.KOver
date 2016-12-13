@@ -16,7 +16,9 @@
 	<extension point="xbmc.addon.metadata">
 		<summary lang="de_DE">K0ver [Kodi Overlay]. Ein anpassbarer Skin. Bau deine eigenen Ansichten und Farbeinstellungen.</summary>
 		<summary lang="en_GB">KOver [Kodi Overlay]. A customizable skin. Build your own views and color sets.</summary>
+		<summary lang="en_NZ">KOver [Kodi Overlay]. A customisable skin. Build your own views and colour sets.</summary>
 		<summary lang="en_US">KOver [Kodi Overlay]. A customizable skin. Build your own views and color sets.</summary>
+		<summary lang="fi_FI">KOver [Kodi Overlay]. Muokattava ulkoasu. Luo omat näkymät ja väriteemat.</summary>
 		<summary lang="fr_FR">KOver [Kodi Overlay]. Une skin customisable. Constuisez vos propres vues et palettes de couleurs.</summary>
 		<summary lang="it_IT">KOver [Kodi Overlay]. Una skin personalizzabile. Costruisci le tue viste e set di colori.</summary>
 		<summary lang="lt_LT">KOver [Kodi Overlay]. Pritaikoma pagal poreikius teminė išvaizda. Susikurkite savus rodinius ir spalvų rinkinius.</summary>
@@ -25,7 +27,9 @@
 		<summary lang="pt_BR">KOver [Kodi Overlay]. Uma skin customizável. Construa seus modos de visualização e defina cores.</summary>
 		<summary lang="sr_RS@latin">KOver [Kodi Overlay]. Izmenjljiva maska. Podesite sopstvene prikaze i skupove boja.</summary>
 		<description lang="en_GB">KOver (for KODI Overlay) offers a different approach of KODI skins. Not just purely designed, it also offers to the user the possibility to customize it and make thousands of configurations. KOver embeds two powerful WYSIWYG editors : The Designer and the Color tool. Move, resize, change content and colors ... make it yours !</description>
+		<description lang="en_NZ">KOver (for KODI Overlay) offers a different approach of KODI skins. Not just purely designed, it also offers to the user the possibility to customise it and make thousands of configurations. KOver embeds two powerful WYSIWYG editors : The Designer and the Colour tool. Move, resize, change content and colours ... make it yours !</description>
 		<description lang="en_US">KOver (for KODI Overlay) offers a different approach of KODI skins. Not just purely designed, it also offers to the user the possibility to customize it and make thousands of configurations. KOver embeds two powerful WYSIWYG editors : The Designer and the Color tool. Move, resize, change content and colors ... make it yours !</description>
+		<description lang="fi_FI">KOver (KODI Overlay) tarjoaa erilaisen lähestymistavan KODIn ulkoasuihin. Se antaa käyttäjälle mahdoillisuuden muokata käyttöliittymää tuhansilla eri tavoilla. KOverin mukana tulee kaksi monipuolista WYSIWYG-editoria: suunnittelutyökalu ja värityökalu. Siirrä, muuta kokoa, muokkaa sisältöä ja värejä... Tee siitä omanlaisesi!</description>
 		<description lang="fr_FR">KOver (pour KODI Overlay) offre une approche différente des skins KODI. Plus qu'un simple habillage, les utilisateurs peuvent entièrement modifier son apparence et créer des milliers de configurations. KOver intègre deux éditeurs graphiques puissants : Le Designer et l'éditeur de couleurs. Déplacez, redimensionnez, changez les contenus et les couleurs ... faites en votre skin !</description>
 		<description lang="it_IT">KOver (da KODI Overlay) offre un diverso approccio per le skin di KODI. Non solo puramente progettata, offre anche all'utente la possibilità di personalizzare e fare migliaia di configurazioni. KOver incorpora due potenti editor WYSIWYG: lo strumento Designer e quello Colore. Sposta, ridimensiona, cambia contenuto e colori... rendila tua!</description>
 		<description lang="lt_LT">KOver (KODI Overlay) siūlo kitokį požiūrį į KODI temines išvizdas. Ne tik skaidriai sukurta, bet ir siūlo vartotojui galimybę pritaikyti pagal savo poreikius suteikiant tūkstančius galimų konfigūracijų. KOver turi du galingus WYSIWYG redaktorius: dizainerį ir spalvų įrankį. Perkelkite, pakeiskite dydį, pakeiskite turinį ir spalvas ... susikurkite savo!</description>
@@ -34,7 +38,9 @@
 		<disclaimer lang="bg_BG">Ползването на мишка и чуствителни на допир монитори не се поддържа</disclaimer>
 		<disclaimer lang="de_DE">Maus und Touch-Geräte werden nicht unterstützt</disclaimer>
 		<disclaimer lang="en_GB">Mouse and Touch device not supported</disclaimer>
+		<disclaimer lang="en_NZ">Mouse and Touch device not supported</disclaimer>
 		<disclaimer lang="en_US">Mouse and Touch device not supported</disclaimer>
+		<disclaimer lang="fi_FI">Hiiren tai kosketusnäytön käyttöä ei tueta</disclaimer>
 		<disclaimer lang="fr_FR">Souris et appareils tactiles non pris en charge</disclaimer>
 		<disclaimer lang="he_IL">אין תמיכה בעכבר או מסכי מגע</disclaimer>
 		<disclaimer lang="it_IT">Mouse e dispositivi Touch non supportati</disclaimer>
@@ -42,6 +48,7 @@
 		<disclaimer lang="ms_MY">Peranti Tetikus dan Sentuh tidak disokong</disclaimer>
 		<disclaimer lang="pl_PL">Brak obsługi myszy i urządzeń dotykowych</disclaimer>
 		<disclaimer lang="pt_BR">Sem suporte a mouse e disposítivos de toque </disclaimer>
+		<disclaimer lang="ro_RO">Mausul și dispozitivul cu ecran tactil nu sunt sprijinite</disclaimer>
 		<disclaimer lang="sr_RS@latin">Miš i Table na dodir nisu podržane</disclaimer>
 		<platform>all</platform>
 		<license>Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</license>

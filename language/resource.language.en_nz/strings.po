@@ -16,6 +16,234 @@ msgstr ""
 "Language: en_NZ\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "KOver Designer"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Home Menu"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Colors"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Import"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Customise"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialogues"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Wallpaper"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "General Setup"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Blocs background"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Bloc 1 : List"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Bloc 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Bloc 2 : Infos"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Bloc 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Bloc 3 : Art"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Bloc 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Bloc 4 : Playing Video"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Bloc 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Rename View"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Apply Default Horizontal"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Apply Default Vertical"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "My Template 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "My Template 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "My Template 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Delete View"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Apply Template To View"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Copy  View To Template"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Delete Template"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Export Template"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Layout Orientation"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Sidebar Position"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "Dialogue panel position"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Sidebar Autohide"
+
+msgctxt "#31032"
+msgid "Dialog slide type"
+msgstr "Dialogue slide type"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Horizontal Separator"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Vertical Separator"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "visibility"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Horizontal Position (column)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Vertical Position (row)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Width"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Height"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Background[CR]Style"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "List Type"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Background[CR]Image"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "List : Selected item 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Sub info"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "List : Unselected item 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "List : Unselected item 3"
+
+msgctxt "#31047"
+msgid "Info Bloc : Sub info"
+msgstr "Info Bloc : Sub info"
+
+msgctxt "#31048"
+msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
+msgstr "Text 3 - Informations plot [CR]about the selected item in bloc 1"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Ex : Duration"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Selected Item Tag"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Home"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Video on top"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Visualisation presets"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Extra art"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Increase"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Decrease"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Recent albums"
@@ -28,6 +256,222 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Random albums"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Window"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Sidebar"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Blocs background"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Info bloc"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "Art bloc"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Video bloc"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialogue"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Colour editor"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Unselected icons"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Unselected items"
+
+msgctxt "#31070"
+msgid "Unselected text 1[CR]icon"
+msgstr "Unselected text 1[CR]icon"
+
+msgctxt "#31071"
+msgid "Unselected text 2[CR](sub)"
+msgstr "Unselected text 2[CR](sub)"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Unselected text"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Selected icon background"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Selected items"
+
+msgctxt "#31075"
+msgid "Selected text 1[CR]icon"
+msgstr "Selected text 1[CR]icon"
+
+msgctxt "#31076"
+msgid "Selected text 2[CR](sub)"
+msgstr "Selected text 2[CR](sub)"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Selected text"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Selected item background"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Selected item number"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Invalid text"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Clock"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Shadow"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Other infos"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Export colour scheme"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Bloc 5 : Submenu"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Bloc 5"
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "KODI Section"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Name :"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Viewtype"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Empty"
+
+msgctxt "#31091"
+msgid "Choose the section where you want to edit the viewtype."
+msgstr "Choose the section where you want to edit the viewtype."
+
+msgctxt "#31092"
+msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
+msgstr "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
+
+msgctxt "#31093"
+msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
+msgstr "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
+
+msgctxt "#31094"
+msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
+msgstr "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
+
+msgctxt "#31095"
+msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
+msgstr "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
+
+msgctxt "#31096"
+msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
+msgstr "Delete the viewtype. It won't be available anymore in library viewtype selection."
+
+msgctxt "#31097"
+msgid "Apply imported/stored viewtype in template. This will overide the actual viewtype."
+msgstr "Apply imported/stored viewtype in template. This will overide the actual viewtype."
+
+msgctxt "#31099"
+msgid "Export the template's content to a zip file. Be aware that the template's number is also stored."
+msgstr "Export the template's content to a zip file. Be aware that the template's number is also stored."
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr "Delete the template's content."
+
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
+msgstr "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
+
+msgctxt "#31102"
+msgid "Change the layout orientation or scroll direction for lists."
+msgstr "Change the layout orientation or scroll direction for lists."
+
+msgctxt "#31103"
+msgid "Change the sidebar position. This is limited by the layout orientation."
+msgstr "Change the sidebar position. This is limited by the layout orientation."
+
+msgctxt "#31104"
+msgid "Makes the sidebar to autohide. Useful for fullscreen layout, sidebar will fade to not cover infos."
+msgstr "Makes the sidebar to autohide. Useful for fullscreen layout, sidebar will fade to not cover infos."
+
+msgctxt "#31105"
+msgid "Set the dialog panel (ex. movie infos) position."
+msgstr "Set the dialogue panel (ex. movie infos) position."
+
+msgctxt "#31106"
+msgid "Choose panel opening style. 'PUSH' pushes the blocs and 'OVER' shows over blocs."
+msgstr "Choose panel opening style. 'PUSH' pushes the blocs and 'OVER' shows over blocs."
+
+msgctxt "#31107"
+msgid "Insert an horizontal space between blocs. Choose between A and B or B and C."
+msgstr "Insert an horizontal space between blocs. Choose between A and B or B and C."
+
+msgctxt "#31108"
+msgid "Insert an vertical space between blocs. Choose between A and B or B and C."
+msgstr "Insert an vertical space between blocs. Choose between A and B or B and C."
+
+msgctxt "#31109"
+msgid "Change the horizontal start position of the element. Can be locked depending of the layout orientation."
+msgstr "Change the horizontal start position of the element. Can be locked depending of the layout orientation."
+
+msgctxt "#31110"
+msgid "Change the vertical start position of the element. Can be locked depending of the layout orientation."
+msgstr "Change the vertical start position of the element. Can be locked depending of the layout orientation."
+
+msgctxt "#31111"
+msgid "Change the horizontal size of the element. Can be locked/limited by the element's horizontal position."
+msgstr "Change the horizontal size of the element. Can be locked/limited by the element's horizontal position."
+
+msgctxt "#31112"
+msgid "Change the vertical size of the element. Can be locked/limited by the element's vertical position."
+msgstr "Change the vertical size of the element. Can be locked/limited by the element's vertical position."
+
+msgctxt "#31113"
+msgid "Choose the window background style. 'IMAGE' shows user's picture selected in the next setting."
+msgstr "Choose the window background style. 'IMAGE' shows user's picture selected in the next setting."
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Blocs background"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenu"
@@ -39,6 +483,10 @@ msgstr "Move left"
 msgctxt "#31135"
 msgid "Move right"
 msgstr "Move right"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
 
 msgctxt "#31222"
 msgid "Settings"

@@ -16,6 +16,62 @@ msgstr ""
 "Language: ro_RO\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Culori"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importă"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Personalizează"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialoguri"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Fundal"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Stabiliri generale"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Bloc 1"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Bloc 2"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Bloc 3"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Bloc 4"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "vizibilitate"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Lățime"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Înălțime"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Prestabiliri vizualizare"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "aLBUME RECENTE"
@@ -28,9 +84,109 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Albume aleatoare"
 
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialog"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Editor de culori"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Elemente neselectate"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Text neselectat"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Elemente selectate"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Text selectat"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Text invalid"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Ceas"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Umbră"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Alte informații"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Bloc 5"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Gol"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Subcategorie"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submeniu"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Stabiliri vizualizare"
+
+msgctxt "#31134"
+msgid "Move left"
+msgstr "Mută la stânga"
+
+msgctxt "#31135"
+msgid "Move right"
+msgstr "Mută la dreapta"
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Înapoi"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Canale TV"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Vremea"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Prognoză vreme"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Orizontal"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Clasic"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "Hibrid"
 
 msgctxt "#31222"
 msgid "Settings"
@@ -42,15 +198,27 @@ msgstr "Poster"
 
 msgctxt "#31277"
 msgid "Banner"
-msgstr "Acoperire"
+msgstr "Drapel"
 
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Panoramă"
 
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "Subtitluri KODI"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Orizontal"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Vertical"
+
 msgctxt "#31302"
 msgid "Fanart"
-msgstr "Fanart"
+msgstr "Decor"
 
 msgctxt "#31304"
 msgid "Seconds"

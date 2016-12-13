@@ -42,7 +42,7 @@ msgstr "Okna dialogowe"
 
 msgctxt "#31006"
 msgid "Wallpaper"
-msgstr "Tapeta"
+msgstr "Fototapeta"
 
 msgctxt "#31007"
 msgid "General Setup"
@@ -92,6 +92,10 @@ msgctxt "#31018"
 msgid "Apply Default Horizontal"
 msgstr "Zastosuj domyślny poziomy"
 
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Zastosuj domyślny pionowy"
+
 msgctxt "#31020"
 msgid "My Template 1"
 msgstr "Szablon 1"
@@ -123,6 +127,10 @@ msgstr "Usuń szablon"
 msgctxt "#31027"
 msgid "Export Template"
 msgstr "Eksportuj szablon"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Orientacja kompozycji"
 
 msgctxt "#31029"
 msgid "Sidebar Position"
@@ -159,6 +167,10 @@ msgstr "Szerokość"
 msgctxt "#31039"
 msgid "Height"
 msgstr "Wysokość"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Styl[CR]tła"
 
 msgctxt "#31041"
 msgid "List Type"
@@ -212,6 +224,10 @@ msgctxt "#31062"
 msgid "Blocs background"
 msgstr "Tło bloków"
 
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Edytor koloru"
+
 msgctxt "#31068"
 msgid "Unselected icons"
 msgstr "Ikony niezaznaczone"
@@ -223,6 +239,14 @@ msgstr "Pozycje niezaznaczone"
 msgctxt "#31074"
 msgid "Selected items"
 msgstr "Pozycje zaznaczone"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Wybrany tekst"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Wybrany numer pozycji"
 
 msgctxt "#31080"
 msgid "Invalid text"
@@ -260,9 +284,29 @@ msgctxt "#31123"
 msgid "Blocs background"
 msgstr "Tło bloków"
 
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "Ustawienia biblioteki"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Podkategoria"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "Zmień poziom ustawień"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Podmenu"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Ustawienia widoku"
+
+msgctxt "#31133"
+msgid "Select Viewtype"
+msgstr "Wybierz widok"
 
 msgctxt "#31134"
 msgid "Move left"
@@ -272,9 +316,33 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Przesuń w lewo"
 
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Powrót"
+
 msgctxt "#31145"
 msgid "PVR"
 msgstr "Telewizja"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Kanały"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Pogoda"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Prognoza pogody"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Poziomo"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Pionowo"
 
 msgctxt "#31206"
 msgid "Install Artist Slideshow ..."
@@ -375,6 +443,14 @@ msgstr "Przezrocze dysku"
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Panorama"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Poziomo"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Pionowo"
 
 msgctxt "#31302"
 msgid "Fanart"

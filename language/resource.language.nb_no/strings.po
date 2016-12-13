@@ -16,6 +16,142 @@ msgstr ""
 "Language: nb_NO\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Hjem meny"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Farger"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Import"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Tilpass"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialoger"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Blokk bakgrunn"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blokk 1 : Liste"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blokk 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Blokk 2 : Info"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blokk 2"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Blokk 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blokk 4 : Spillende film"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blokk 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Gi visningen nytt navn"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Mitt tema 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Mitt tema 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Mitt tema 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Slett visning"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Kopier visning til tema"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Slett tema"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Eksporter tema"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "synlighet"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Horisontal plassering (kolonne)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Vertikal plassering (rad)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Bredde"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Høyde"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Bakgrunn[CR]stil"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Listetype"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Bakgrunn[CR]bilde"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Liste : Valgte element 1"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Liste : Ikke valgte element 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Liste : Ikke valgte element 3"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Valgte element merke"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Hjem"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Siste album"
@@ -28,13 +164,281 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Tilfeldige albumer"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Vindu"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Blokk bakgrunn"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Info blokk"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Film blokk"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialog"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Farge redigerer"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Ikke valgte ikoner"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Ikke valgte elementer"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Ikke valgt tekst"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Valgt ikon bakgrunn"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Valgte elementer"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Valgt tekst"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Valgt element bakgrunn"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Valgt element nummer"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Ugyldig tekst"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Klokke"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Skygge"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Annen info"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Eksporter farge skjema"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Blokk 5 : Undermeny"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Blokk 5"
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "KODI Seksjon"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Navn :"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Visningstype"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Tom"
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr "Slett temaet's innhold"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Blokk bakgrunn"
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "Bibliotek innstillinger"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Underkategori"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "Endre innstillingsnivå"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Undermeny"
 
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr "Info blokk : Tittel"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Vis innstillinger"
+
+msgctxt "#31133"
+msgid "Select Viewtype"
+msgstr "Velg visningstype"
+
+msgctxt "#31134"
+msgid "Move left"
+msgstr "Flytt venstre"
+
+msgctxt "#31135"
+msgid "Move right"
+msgstr "Flytt høyre"
+
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Endre ikon"
+
+msgctxt "#31137"
+msgid "Select Bloc 4 Picture"
+msgstr "Velg blokk 4 bilde"
+
+msgctxt "#31142"
+msgid "Go Submenu"
+msgstr "Gå til undermeny"
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Gå tilbake"
+
+msgctxt "#31144"
+msgid "Over"
+msgstr "Over"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "TV kanaler"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Vær"
+
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Rediger hjem meny..."
+
+msgctxt "#31150"
+msgid "Auto build"
+msgstr "Auto bygg"
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Importer / Eksporter"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Horisontal"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Vertikal"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Klassisk"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Importer..."
+
+msgctxt "#31167"
+msgid "Export all 'Home' viewtypes"
+msgstr "Eksporter alle 'Hjem' visningstyper"
+
+msgctxt "#31168"
+msgid "Export all 'Video' viewtypes"
+msgstr "Eksporter alle 'Film' visningstyper"
+
+msgctxt "#31169"
+msgid "Export all 'Music' viewtypes"
+msgstr "Eksporter alle 'Musikk' visningstyper"
+
+msgctxt "#31170"
+msgid "Export all 'Pictures' viewtypes"
+msgstr "Eksporter alle 'Bilder' visningstyper"
+
+msgctxt "#31171"
+msgid "Export all 'TV' viewtypes"
+msgstr "Eksporter alle 'TV' visningstyper"
+
+msgctxt "#31172"
+msgid "Export all 'Programs' viewtypes"
+msgstr "Eksporter alle 'Program' visningstyper"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Innstillinger"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "SKJULT"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Piler"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Lister"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Laster..."
+
+msgctxt "#31237"
+msgid "Move Bloc"
+msgstr "Flytt blokk"
+
+msgctxt "#31240"
+msgid "Move"
+msgstr "Flytt"
+
+msgctxt "#31251"
+msgid "Up Next..."
+msgstr "Opp neste..."
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr "Fortsett å se ?"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "Ikke vis"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "Alltid vis"
+
+msgctxt "#31267"
+msgid "Fill with color"
+msgstr "Fyll med farge"
 
 msgctxt "#31272"
 msgid "Wide List"
@@ -64,6 +468,18 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Landskap"
 
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "KODI undermenyer"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Horisontal"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Vertikal"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanart"
@@ -71,3 +487,43 @@ msgstr "Fanart"
 msgctxt "#31304"
 msgid "Seconds"
 msgstr "Sekunder"
+
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr "Velg bilde mappe..."
+
+msgctxt "#31306"
+msgid "Choose picture..."
+msgstr "Velg bilde..."
+
+msgctxt "#31308"
+msgid "Medium"
+msgstr "Middels"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Stor"
+
+msgctxt "#31310"
+msgid "Not found !"
+msgstr "Ikke funnet !"
+
+msgctxt "#31311"
+msgid "Checking Files"
+msgstr "Sjekker filer"
+
+msgctxt "#31312"
+msgid "Update Custom Lists"
+msgstr "Oppdater tilpassede lister"
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Veiviser..."
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Velkommen"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Avslutt"

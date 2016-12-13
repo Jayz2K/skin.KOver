@@ -28,13 +28,33 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Àlbums a l'atzar"
 
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Elements seleccionats"
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "Ajusts de les biblioteques"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "Canvia el nivell dels ajusts"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenú"
 
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Ajusts de la visualització"
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr "Finestra dels ajusts"
+
 msgctxt "#31222"
 msgid "Settings"
-msgstr "Configuració"
+msgstr "Ajusts"
 
 msgctxt "#31275"
 msgid "Poster"

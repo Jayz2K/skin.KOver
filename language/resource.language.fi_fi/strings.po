@@ -16,6 +16,234 @@ msgstr ""
 "Language: fi_FI\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "Suunnitelutyökalu"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Päävalikko"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Värit"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Tuo"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Muokkaa"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialogit"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Taustakuva"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Yleisasetukset"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Blokkien tausta"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blokki 1: Lista"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blokki 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Blokki 2: Tiedot"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blokki 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Blokki 3: Kuva"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Blokki 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blokki 4: Videotoisto"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blokki 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Uudelleennimeä näkymä"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Käytä oletusvaakasuuntaista"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Käytä oletuspystysuuntaista"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Oma sapluuna 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Oma sapluuna 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Oma sapluuna 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Poista näkymä"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Käytä sapluunaa näkymään"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Kopioi näkymä sapluunaan"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Poista sapluuna"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Vie sapluuna"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Asettelun suunta"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Sivupalkin sijainti"
+
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "Dialogipaneelin sijainti"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Sivupalkin automaattinen piilotus"
+
+msgctxt "#31032"
+msgid "Dialog slide type"
+msgstr "Dialogin liukutapa"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Vaakasuuntainen erotin"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Pystysuuntainen erotin"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "näkyvyys"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Vaakasijainti (sarake)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Pystysijainti (rivi)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Leveys"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Korkeus"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Taustakuvan[CR]tyyli"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Listatyyppi"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Tausta-[CR]kuva"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Lista: valittu kohde 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Lisätiedot"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Lista: valitsematon kohde 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Lista: valitsematon kohde 3"
+
+msgctxt "#31047"
+msgid "Info Bloc : Sub info"
+msgstr "Infoblokki: Lisätiedot"
+
+msgctxt "#31048"
+msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
+msgstr "Teksti 3 - Juonikuvaus[CR]Blokki 1:n valinnasta"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Esimerkiksi kesto"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Valitun kohteen tagi"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Päävalikko"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Video päällimmäisenä"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Visualisoinnin esiasetukset"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Lisäkuvat"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Lisää"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Vähennä"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Tuoreimmat albumit"
@@ -28,9 +256,301 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Satunnaiset albumit"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Ikkuna"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Sivupalkki"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Blokkien tausta"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Infoblokki"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "Kuvablokki"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Videoblokki"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Dialogi"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Värityökalu"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Valitsemattomat kuvakkeet"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Valitsemattomat kohteet"
+
+msgctxt "#31070"
+msgid "Unselected text 1[CR]icon"
+msgstr "Valitsematon teksti 1[CR]Kuvake"
+
+msgctxt "#31071"
+msgid "Unselected text 2[CR](sub)"
+msgstr "Valitsematon teksti 2[CR](alaotsikko)"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Valitsematon teksti"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Valitun kuvakkeen tausta"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Valitut kohteet"
+
+msgctxt "#31075"
+msgid "Selected text 1[CR]icon"
+msgstr "Valittu teksti 1[CR]Kuvake"
+
+msgctxt "#31076"
+msgid "Selected text 2[CR](sub)"
+msgstr "Valittu teksti 2[CR](alaotsikko)"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Valittu teksti"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Valitun kohteen tausta"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Valitun kohteen numero"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Virheellinen teksti"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Kello"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Varjo"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Muut tiedot"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Vie väriteema"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Blokki 5: Alavalikko"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Blokki 5"
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "KODI-osio"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nimi :"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Näkymä"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Tyhjä"
+
+msgctxt "#31091"
+msgid "Choose the section where you want to edit the viewtype."
+msgstr "Valitse osio, jonka näkymää haluat muokata."
+
+msgctxt "#31092"
+msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
+msgstr "Valitse näkymätyyppi, jonka haluat luoda tai muokata. Paina OIKEA muokataksesi tai ENTER, jos haluat lisää."
+
+msgctxt "#31093"
+msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
+msgstr "Nimeä näkymä uudelleen. Nimeä käytetään mediakirjastoissa."
+
+msgctxt "#31094"
+msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
+msgstr "Käytä sisäänrakennettua vaakasuuntaista näkymää. Se on hyvä lähtökohta ylhäälle tai alhaalle sijoittuvalle asettelulle."
+
+msgctxt "#31095"
+msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
+msgstr "Käytä sisäänrakennettua pystysuuntaista näkymää. Se on hyvä lähtökohta vasemmalle tai oikealle sijoittuvalle asettelulle."
+
+msgctxt "#31096"
+msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
+msgstr "Poista näkymä. Poistamisen jälkeen tätä näkymää ei voi enää käyttää kirjastoissa."
+
+msgctxt "#31097"
+msgid "Apply imported/stored viewtype in template. This will overide the actual viewtype."
+msgstr "Kopioi tuotu/tallennettu näkymä sapluunaan. Tämä korvaa varsinaisen näkymän. "
+
+msgctxt "#31098"
+msgid "Stores the actual viewtype in template. This overide the template content."
+msgstr "Tallentaa näkymän sapluunaksi. Tämä korvaa nykyisen sapluunan."
+
+msgctxt "#31099"
+msgid "Export the template's content to a zip file. Be aware that the template's number is also stored."
+msgstr "Tallentaa sapluunan sisällön zip-tiedostoon. Huomaa, että myös sapluunan numero tallennetaan."
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr "Poista sapluunan sisältö"
+
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
+msgstr "Säädä kohteen näkyvyyttä. IDLEFADE saa kohteen katoamaan XX sekunnin jälkeen (käyttäjän määrittelemä aika)."
+
+msgctxt "#31102"
+msgid "Change the layout orientation or scroll direction for lists."
+msgstr "Muuta asettelun suuntaa tai listojen vierityssuuntaa."
+
+msgctxt "#31103"
+msgid "Change the sidebar position. This is limited by the layout orientation."
+msgstr "Muuta sivupalkin sijaintia. Asettelun suunta vaikuttaa sijaintiin."
+
+msgctxt "#31104"
+msgid "Makes the sidebar to autohide. Useful for fullscreen layout, sidebar will fade to not cover infos."
+msgstr "Piilottaa sivupalkin automaattisesti. Hyödyllinen kokoruudun asetttelussa, jolloin sivupalkki ei peitä tietoja."
+
+msgctxt "#31105"
+msgid "Set the dialog panel (ex. movie infos) position."
+msgstr "Aseta dialogipaneelin (esim. elokuvatiedot) sijainti."
+
+msgctxt "#31106"
+msgid "Choose panel opening style. 'PUSH' pushes the blocs and 'OVER' shows over blocs."
+msgstr "Valitse paneelin avaustyyli. 'TYÖNNÄ' työntää blokit sivuun ja 'PÄÄLLÄ' näkyy blokkien päällä."
+
+msgctxt "#31107"
+msgid "Insert an horizontal space between blocs. Choose between A and B or B and C."
+msgstr "Jättää ylimääräistä tilaa vaakasuunnassa blokkien väliin. Valitse vaihtoehdoista A, B tai C."
+
+msgctxt "#31108"
+msgid "Insert an vertical space between blocs. Choose between A and B or B and C."
+msgstr "Jättää ylimääräistä tilaa pystysuunnassa blokkien väliin. Valitse vaihtoehdoista A, B tai C."
+
+msgctxt "#31109"
+msgid "Change the horizontal start position of the element. Can be locked depending of the layout orientation."
+msgstr "Muuta elementin alkamiskohtaa vaakasuunnassa. Kohta saattaa olla lukittu asettelun suunnan vuoksi."
+
+msgctxt "#31110"
+msgid "Change the vertical start position of the element. Can be locked depending of the layout orientation."
+msgstr "Muuta elementin alkamiskohtaa pystysuunnassa. Kohta saattaa olla lukittu asettelun suunnan vuoksi."
+
+msgctxt "#31111"
+msgid "Change the horizontal size of the element. Can be locked/limited by the element's horizontal position."
+msgstr "Muuta elementin leveyttä. Elementin vaakasuuntainen sijainti saattaa rajoittaa sen leveyttä."
+
+msgctxt "#31112"
+msgid "Change the vertical size of the element. Can be locked/limited by the element's vertical position."
+msgstr "Muuta elementin korkeutta. Elementin pystysuuntainen sijainti saattaa rajoittaa sen korkeutta."
+
+msgctxt "#31113"
+msgid "Choose the window background style. 'IMAGE' shows user's picture selected in the next setting."
+msgstr "Valitse ikkunan taustakuvan tyyli. 'KUVA' näyttää seuraavassa asetuksessa valitun kuvan."
+
+msgctxt "#31114"
+msgid "Choose the main list (library) style. 'BANNER' shows 'FIXEDLIST' if item is not a media."
+msgstr "Valitse listan tyyli. 'BANNERI' käyttää 'KIINTEÄÄ LISTAA', jos kohde ei ole mediaa."
+
+msgctxt "#31115"
+msgid "Browse for a picture to use when background style is set to 'IMAGE'."
+msgstr "Valitse kuva, jos taustakuvan tyyliksi on asetettu 'KUVA'."
+
+msgctxt "#31116"
+msgid "Display the playing video over all other background style settings."
+msgstr "Näytä toistettava video muiden taustan elementtien päällä."
+
+msgctxt "#31117"
+msgid "Set 'HIDE' to hide bloc 1 (List) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Valitse 'PIILOTA' piilottaaksesi Blokki 1:n (Lista), kun alavalikko on valittuna. Tästä on hyötyä, kun blokit sijaitsevat samassa kohdassa."
+
+msgctxt "#31118"
+msgid "Set 'HIDE' to hide bloc 2 (Infos) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Valitse 'PIILOTA' piilottaaksesi Blokki 2:n (Tiedot), kun alavalikko on valittuna. Tästä on hyötyä, kun blokit sijaitsevat samassa kohdassa."
+
+msgctxt "#31119"
+msgid "Set 'HIDE' to hide bloc 3 (Art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Valitse 'PIILOTA' piilottaaksesi Blokki 3:n (Kuvat), kun alavalikko on valittuna. Tästä on hyötyä, kun blokit sijaitsevat samassa kohdassa."
+
+msgctxt "#31120"
+msgid "Set 'HIDE' to hide bloc 4 (Video/Home art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Valitse 'PIILOTA' piilottaaksesi Blokki 4:n (Videon/Päävalikon kuvat), kun alavalikko on valittuna. Tästä on hyötyä, kun blokit sijaitsevat samassa kohdassa."
+
+msgctxt "#31121"
+msgid "Choose key/action to open submenu/options list (Bloc 5)."
+msgstr "Valitse näppäin/toiminto alavalikon aukaisemiseen (Blokki 5)."
+
+msgctxt "#31122"
+msgid "Choose key/action to go to previous menu."
+msgstr "Valitse painike/toiminto edelliseen valikkoon siirtymistä varten."
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Blokkien tausta"
+
+msgctxt "#31124"
+msgid "Libraries settings"
+msgstr "Kirjastojen asetukset"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Alakategoria"
+
+msgctxt "#31126"
+msgid "Change settings level"
+msgstr "Vaihda asetustasoa"
+
 msgctxt "#31127"
 msgid "Submenu"
-msgstr "Alivalikko"
+msgstr "Alavalikko"
+
+msgctxt "#31128"
+msgid "Choose the element you want to change the color and click or press 'ENTER'."
+msgstr "Valitse elementti, jonka väriä haluat vaihtaa ja paina 'ENTER'."
+
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr "Infoblokki: Nimi"
+
+msgctxt "#31130"
+msgid "Bloc 4 : Home Art"
+msgstr "Blokki 4: Päävalikon kuvat"
+
+msgctxt "#31131"
+msgid "Scrolling Orientation"
+msgstr "Vierityssuunta"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Näkymäasetukset"
+
+msgctxt "#31133"
+msgid "Select Viewtype"
+msgstr "Valitse näkymä"
 
 msgctxt "#31134"
 msgid "Move left"
@@ -40,26 +560,842 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Siirry oikealle"
 
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Vaihda kuvaketta"
+
+msgctxt "#31137"
+msgid "Select Bloc 4 Picture"
+msgstr "Valitse Blokki 4:n kuva"
+
+msgctxt "#31138"
+msgid "Bloc 1 Visibility On Focus"
+msgstr "Blokki 1:n näkyvyys kohdistettaessa"
+
+msgctxt "#31139"
+msgid "Bloc 2 Visibility On Focus"
+msgstr "Blokki 2:n näkyvyys kohdistettaessa"
+
+msgctxt "#31140"
+msgid "Bloc 3 Visibility On Focus"
+msgstr "Blokki 3:n näkyvyys kohdistettaessa"
+
+msgctxt "#31141"
+msgid "Bloc 4 Visibility On Focus"
+msgstr "Blokki 4:n näkyvyys kohdistettaessa"
+
+msgctxt "#31142"
+msgid "Go Submenu"
+msgstr "Alavalikon avaus"
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Palaa"
+
+msgctxt "#31144"
+msgid "Over"
+msgstr "Päällä"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "Tallennin"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "TV-kanavat"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Sää"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Sääennuste"
+
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Muokkaa päävalikkoa..."
+
+msgctxt "#31150"
+msgid "Auto build"
+msgstr "Oletusnäkymät"
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Tuo / Vie"
+
+msgctxt "#31152"
+msgid "Force search for PVR thumbs"
+msgstr "Pakota ohjelmaoppaan kuvien etsiminen"
+
+msgctxt "#31153"
+msgid "Enable Designer"
+msgstr "Näytä suunnittelutyökalu"
+
+msgctxt "#31154"
+msgid "Enable Color tool"
+msgstr "Näytä värityökalu"
+
+msgctxt "#31155"
+msgid "Show Debug Infos"
+msgstr "Näytä virheenkorjaustiedot"
+
+msgctxt "#31156"
+msgid "Build KOver for PVR"
+msgstr "Luo PVR-valikot"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Vaakasuuntainen"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Pystysuuntainen"
+
+msgctxt "#31159"
+msgid "Build KOver fullscreen"
+msgstr "Luo kokoruudun valikot"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Klassinen"
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr "Kaksi kolmasosaa"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "Hybridi"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Tuo..."
+
+msgctxt "#31164"
+msgid "Backup all viewtype (without Home menu)"
+msgstr "Varmuuskopioi kaikki näkymät (ilman päävalikkoa)"
+
+msgctxt "#31165"
+msgid "Backup Home menu"
+msgstr "Varmuuskopioi päävalikko"
+
+msgctxt "#31166"
+msgid "Full backup (viewtypes and Home menu)"
+msgstr "Täysi varmuuskopio (näkymät ja päävalikko)"
+
+msgctxt "#31167"
+msgid "Export all 'Home' viewtypes"
+msgstr "Vie kaikki päävalikon näkymät"
+
+msgctxt "#31168"
+msgid "Export all 'Video' viewtypes"
+msgstr "Vie kaikki 'Video'-näkymät"
+
+msgctxt "#31169"
+msgid "Export all 'Music' viewtypes"
+msgstr "Vie kaikki 'Musiikki'-näkymät"
+
+msgctxt "#31170"
+msgid "Export all 'Pictures' viewtypes"
+msgstr "Vie kaikki 'Kuvat'-näkymät"
+
+msgctxt "#31171"
+msgid "Export all 'TV' viewtypes"
+msgstr "Vie kaikki 'Tv'-näkymät"
+
+msgctxt "#31172"
+msgid "Export all 'Programs' viewtypes"
+msgstr "Vie kaikki 'Ohjelmat'-näkymät"
+
+msgctxt "#31173"
+msgid "Allows to set home menu, submenus and widgets and to choose viewtypes and backgrounds."
+msgstr "Mahdollistaa valikoiden, alavalikoiden ja widgetien luomisen sekä näkymien ja taustakuvien valinnan."
+
+msgctxt "#31174"
+msgid "Enable this option to force downloading arts in PVR. This can also download arts in the EPG guide by changing settings in skin.helper script. This is useful when the backend is not returning arts."
+msgstr "Pakottaa ohjelmaoppaan kuvien lataamisen. Voi myös ladata ohjelmien kuvia, jos muutat skin.helper-skriptin asetuksia. Siitä on hyötyä, jos PVR-taustaosa ei tarjoa kuvia."
+
+msgctxt "#31175"
+msgid "Enable this option to give access to the Designer and build your own viewtypes (advanced)."
+msgstr "Näyttää suunnittelutyökalun asetusvalikossa. Sillä voi luoda omia näkymiä (edistyneille käyttäjille)."
+
+msgctxt "#31176"
+msgid "Enable this option to give access to the Color tool, change the skin colors and create color sets (advanced)."
+msgstr "Näyttää värityökalun asetusvalikossa. Sillä voi muokata ulkoasun värejä ja luoda väriteemoja (edistyneille käyttäjille)."
+
+msgctxt "#31177"
+msgid "Enable this option to show debug infos (advanced)."
+msgstr "Näyttää virheenkorjaustiedot (edistyneille käyttäjille)."
+
+msgctxt "#31178"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in horizontal  / bottom position. Recommended for a mximum view of the playing video."
+msgstr "Luo automaattisesti PVR-toimintoihin liittyvät valikot. Valikot käyttävät 1/3 ruudun tilasta vaakasuunnassa alhaalta. Suositellaan, jos haluat nähdä mahdollisimman suuren osan toistettavasta videosta."
+
+msgctxt "#31179"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in vertical / left position. Recommended for a mximum view of the playing video."
+msgstr "Luo automaattisesti PVR-toimintoihin liittyvät valikot. Valikot käyttävät 1/3 ruudun tilasta pystysuunnassa vasemmalta. Suositellaan, jos haluat nähdä mahdollisimman suuren osan toistettavasta videosta."
+
+msgctxt "#31180"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 3/3 of the screen. Recommended for medias library player."
+msgstr "Luo automaattisesti kaikki valikot kokoruudun käyttöä varten. Valikot käyttävät 3/3 ruudun tilasta. Suositellaan mediakirjastokäyttöön."
+
+msgctxt "#31181"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 2/3 of the screen. Recommended for medias library player."
+msgstr "Luo automaattisesti kaikki näkymät kokoruudun käyttöä varten. Näkymät käyttävät 2/3 ruudun tilasta. Suositellaan mediakirjastokäyttöön."
+
+msgctxt "#31182"
+msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 2/3 and 3/3 of the screen. Recommended for medias library player."
+msgstr "Luo automaattisesti kaikki näkymät kokoruudun käyttöä varten. Näkymät käyttävät 2/3 ja 3/3 ruudun tilasta. Suositellaan mediakirjastokäyttöön."
+
+msgctxt "#31183"
+msgid "Restore backups, apply new / stored color sets, apply new / stored viewtypes sets."
+msgstr "Palauta varmuuskopioita, käytä uusia / tallennettuja värejä, käytä uusia / tallennettuja näkymiä."
+
+msgctxt "#31184"
+msgid "Backup ALL current viewtypes (from all sections). Home menu is not included. Useful for sharing a complete viewtypes' set."
+msgstr "Varmuuskopioi KAIKKI käytössä olevat näkymät päävalikkoa lukuunottamatta. Hyödyllinen, jos haluat siirtää asetukset toiseen kokoonpanoon."
+
+msgctxt "#31185"
+msgid "Backup Home menu. Viewtypes are not included."
+msgstr "Varmuuskopioi päävalikko. Näkymiä ei oteta mukaan."
+
+msgctxt "#31186"
+msgid "Full backup. Viewtypes AND Home menu are included. Useful for duplication on user's multiple devices."
+msgstr "Täysi varmuuskopio. Sisältää näkymät JA päävalikon. Hyödyllinen, jos haluat kopioida asetukset useisiin laitteisiin."
+
+msgctxt "#31187"
+msgid "Backup current viewtypes from 'Home' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Varmuuskopioi päävalikon näkymät. Päävalikkoa ei oteta mukaan. Hyödyllinen, jos haluat siirtää näkymät toiseen laitteeseen."
+
+msgctxt "#31188"
+msgid "Backup current viewtypes from 'Video' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Varmuuskopioi videovalikon näkymät. Päävalikkoa ei oteta mukaan. Hyödyllinen, jos haluat siirtää näkymät toiseen laitteeseen."
+
+msgctxt "#31189"
+msgid "Backup current viewtypes from 'Music' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Varmuuskopioi musiikkivalikon näkymät. Päävalikkoa ei oteta mukaan. Hyödyllinen, jos haluat siirtää näkymät toiseen laitteeseen."
+
+msgctxt "#31190"
+msgid "Backup current viewtypes from 'Pictures' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Varmuuskopioi kuvavalikon näkymät. Päävalikkoa ei oteta mukaan. Hyödyllinen, jos haluat siirtää näkymät toiseen laitteeseen."
+
+msgctxt "#31191"
+msgid "Backup current viewtypes from 'TV' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Varmuuskopioi tv-valikon näkymät. Päävalikkoa ei oteta mukaan. Hyödyllinen, jos haluat siirtää näkymät toiseen laitteeseen."
+
+msgctxt "#31192"
+msgid "Backup current viewtypes from 'Programs' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Varmuuskopioi ohjelmavalikon näkymät. Päävalikkoa ei oteta mukaan. Hyödyllinen, jos haluat siirtää näkymät toiseen laitteeseen."
+
+msgctxt "#31193"
+msgid "Set the IDLEFADE timer (Designer specific feature) :"
+msgstr "Aseta IDLEFADE-ajastin (suunnittelutyökalun ominaisuus):"
+
+msgctxt "#31194"
+msgid "Show 'Watched' flags"
+msgstr "Merkitse katsotut"
+
+msgctxt "#31195"
+msgid "Apply color schemes"
+msgstr "Käytä väriteemaa"
+
+msgctxt "#31196"
+msgid "Default dark"
+msgstr "Oletus tumma"
+
+msgctxt "#31197"
+msgid "Default light"
+msgstr "Oletus vaalea"
+
+msgctxt "#31198"
+msgid "Default FTV style"
+msgstr "Oletus FTV-tyyli"
+
+msgctxt "#31199"
+msgid "Default flat style"
+msgstr "Oletus litteä"
+
+msgctxt "#31200"
+msgid "Enhancement"
+msgstr "Lisäominaisuudet"
+
+msgctxt "#31201"
+msgid "Extended Infos allows KOver to get more widgets and backgrounds in Home. Those are selectable in Home menu configuration."
+msgstr "Extended Infos mahdollistaa uusien widgetien ja taustakuvien käytön. Niitä voi muokata päävalikon asetuksista."
+
+msgctxt "#31202"
+msgid "Artwork Downloader allows KOver to have acces to more arts. Arts like banners, cleararts, discarts, etc... are selectable in libraries item informations."
+msgstr "Artwork Downloader mahdollistaa monenlaisten kuvien käytön. Kirjastonäkymissä voidaan käyttää bannerien, clearartin ja discartin tyyppisisä kuvia."
+
+msgctxt "#31203"
+msgid "Artist Slideshow allows KOver to display artists arts as background. You can set more options in KOver settings under 'General Setup' when script is installed."
+msgstr "Artist Slideshow mahdollistaa esittäjän kuvien käyttämisen taustakuvina.. Voit muuttaa skriptin asetuksia yleisissä asetuksissa, kunhan skripti on asennettu."
+
+msgctxt "#31204"
+msgid "Install Extended Infos script ..."
+msgstr "Asenna Extended Infos -skripti ..."
+
+msgctxt "#31205"
+msgid "Install Artwork Downloader script ..."
+msgstr "Asenna Artwork Downloader -skripti ..."
+
+msgctxt "#31206"
+msgid "Install Artist Slideshow ..."
+msgstr "Asenna Artist Slideshow -lisäosa ..."
+
+msgctxt "#31207"
+msgid "- Show Artist Slideshow as background when music is playing."
+msgstr "- Näytä Artist Slideshow'n kuvat musiikkia toistettaessa."
+
+msgctxt "#31208"
+msgid "- Show visualisation effect over Artist slideshow."
+msgstr "- Näytä visualisointi esittäjän kuvien päällä."
+
+msgctxt "#31209"
+msgid "Artist Slideshow allows KOver to display artists arts as background. It also displays in viewtypes when 'Video on top' is set to 'VISIBLE' in the Designer."
+msgstr "Artist Slideshow -lisäosa mahdollistaa esittäjän kuvien käyttämisen taustakuvina. Kuvat ovat käytössä myös joissain näkymissä, kun video asetettu näkymään kuvien päällä."
+
+msgctxt "#31210"
+msgid "Set this option to show visualisation over the Artist Slideshow. Only useful when DIRECTX visualisation is set."
+msgstr "Näyttää visualisoinnin esittäjän kuvien päällä. Toimii vain DIRECTX-visualisointien kanssa."
+
+msgctxt "#31211"
+msgid "Set this option to show the 'WATCHED' status flag on libraries' items."
+msgstr "Merkitsee katsotut kohteet kirjastossa."
+
+msgctxt "#31212"
+msgid "Adjust time for the 'IDLEFADE' option. This is only when an item has this option in the Designer."
+msgstr "Muokkaa 'IDLEFADE'-asetuksen aikaa. Tämä pätee vain kohteisiin, jotka tukevat ominaisuutta suunnittelutyökalussa."
+
+msgctxt "#31213"
+msgid "Automatically apply a built-in color set. This automatically change the colors for each element."
+msgstr "Käyttää automaattisesti valmista väriteemaa. Muuttaa automaattisesti jokaisen elementin värejä."
+
+msgctxt "#31214"
+msgid "Backup current color set."
+msgstr "Varmuuskopioi nykyiset värit."
+
+msgctxt "#31215"
+msgid "Install Image ressource addon (studio logos) ..."
+msgstr "Asenna Image resource -lisäosa (studiologot) ..."
+
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr "OLETUS"
+
+msgctxt "#31217"
+msgid "Home Art"
+msgstr "Päävalikon kuvat"
+
+msgctxt "#31218"
+msgid "Header Bkg"
+msgstr "Otsikon tausta"
+
+msgctxt "#31219"
+msgid "Header Title"
+msgstr "Otsikon teksti"
+
+msgctxt "#31220"
+msgid "Header Subtitle"
+msgstr "Otsikon teksti 2"
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr "Asetusikkuna"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Asetukset"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "PIILOTETTU"
+
+msgctxt "#31224"
+msgid "Scroll indicators"
+msgstr "Vierityssuunnan merkit"
+
+msgctxt "#31225"
+msgid "Art Type"
+msgstr "Kuvatyyppi"
+
+msgctxt "#31226"
+msgid "Furnitures"
+msgstr "Valikot"
+
+msgctxt "#31227"
+msgid "Set this option as 'VISIBLE' to display Scroll indicators. Indicators will match the list orientation set in Bloc 1."
+msgstr "Valitse 'NÄYTÄ', jos haluat näyttää vierityssuunnan merkit. Merkkien suunta riippuu Blokki 1:ssä määritellystä listan suunnasta."
+
+msgctxt "#31228"
+msgid "Choose the Bloc 3 style (Art). 'DEFAULT' makes KOver to try to search an available landscape Art. Note that depending of the content, the others can be returned empty."
+msgstr "Valitse Blokki 3:n tyyli (Kuva). 'OLETUS' laittaa KOverin etsimään vaakasuuntaista kuvaa. Huomaa, että sisällöstä riippuen muita kuvatyyppejä ei ehkä ole tarjolla."
+
+msgctxt "#31229"
+msgid "Tagline bg."
+msgstr "Iskulauseen tausta"
+
+msgctxt "#31230"
+msgid "Tagline text"
+msgstr "Iskulauseen teksti"
+
+msgctxt "#31231"
+msgid "Scroll flags"
+msgstr "Vieritysmerkit"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Nuolet"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Listat"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Ladataan ..."
+
+msgctxt "#31235"
+msgid "Home Menu size"
+msgstr "Päävalikon koko"
+
+msgctxt "#31236"
+msgid "Choose Home menu size. This adjusts the Sidebar with different layouts."
+msgstr "Valitse päävalikon koko. Tämä muuttaa sivupalkkia eri asetteluissa."
+
+msgctxt "#31237"
+msgid "Move Bloc"
+msgstr "Siirrä blokkia"
+
+msgctxt "#31238"
+msgid "Resize Bloc"
+msgstr "Muuta blokin kokoa"
+
+msgctxt "#31239"
+msgid "Use Keyboard / Remote direction keys to move / resize.[CR]Press ENTER to swith move / resize.[CR]Press RETURN to exit."
+msgstr "Käytä näppäimistöä tai kaukosäädintä siirtääksesi tai muokataksesi kokoa.[CR]Paina ENTER vaihtaaksesi tilojen välillä.[CR]Paina PALAA poistuaksesi."
+
+msgctxt "#31240"
+msgid "Move"
+msgstr "Siirrä"
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr "Muuta kokoa"
+
+msgctxt "#31242"
+msgid "Keep OSD controls always sticking to bottom"
+msgstr "PIdä kuvaruutuvalikon painikkeet aina alhaalla."
+
+msgctxt "#31243"
+msgid "Run Designer in safe mode (Designer V1)"
+msgstr "Käytä suunnittelutyölua turvatilassa (versio 1)"
+
+msgctxt "#31244"
+msgid "Install TvTunes ..."
+msgstr "Asenna TvTunes -lisäosa ..."
+
+msgctxt "#31245"
+msgid "Audio / Video themes"
+msgstr "Musiikki- / Videoteemat"
+
+msgctxt "#31246"
+msgid "Image ressource (studios) allows KOver to display studios logos in movies / shows infos."
+msgstr "Image resource (studios) mahdollistaa studioiden logojen näyttämisen elokuvien ja tv-sarjojen tiedoissa."
+
+msgctxt "#31247"
+msgid "TvTunes allows KOver to play audio / video themes in movies and tv shows libraries."
+msgstr "TvTunes mahdollistaa tunnusmusiikkien ja -videoiden toistamisen elokuva- ja tv-sarjakirjastoissa."
+
+msgctxt "#31248"
+msgid "Fallback[CR]Picture"
+msgstr "Oletus-[CR]kuva"
+
+msgctxt "#31249"
+msgid "- Hide TvTunes video theme as fullscreen background."
+msgstr "- Piilota TVTunesin kokoruudun videotunnukset."
+
+msgctxt "#31250"
+msgid "This prevent video playback to show as fullscreen background while browsing library. Useful when already set in Designer Bloc 4 to keep picture instead. This only applies to TvTunes video themes."
+msgstr "Estää videotunnusten toistamisen taustalla videokirjastoa selatessa. Hyödyllistä, jos Blokki 4 on asetettu jo kuvan näyttämiseen. Pätee ainoastaan TvTunes tunnusvideoihin."
+
+msgctxt "#31251"
+msgid "Up Next..."
+msgstr "Seuraavaksi..."
+
+msgctxt "#31252"
+msgid "Install NextUp notifications ..."
+msgstr "Asenna Nextup Service Notification -lisäosa ..."
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr "Jatka katsomista?"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "Älä näytä"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "Näytä aina"
+
+msgctxt "#31256"
+msgid "Hide after timer inactivity"
+msgstr "Piilota valitun ajan kuluttua"
+
+msgctxt "#31257"
+msgid "Show when media is playing"
+msgstr "Näytä mediaa toistettaessa"
+
+msgctxt "#31258"
+msgid "Show when TvTunes plays video"
+msgstr "Näytä TvTunesin videota toistettaessa"
+
+msgctxt "#31259"
+msgid "Show when list has focus"
+msgstr "Näytä, kun lista on valittuna"
+
+msgctxt "#31260"
+msgid "Show fallback only"
+msgstr "Näytä vain oletus"
+
+msgctxt "#31261"
+msgid "Set width 1 column"
+msgstr "Aseta leveys, 1 sarake"
+
+msgctxt "#31262"
+msgid "Set width 2 columns"
+msgstr "Aseta leveys, 2 saraketta"
+
+msgctxt "#31263"
+msgid "Set width 3 columns"
+msgstr "Aseta leveys, 3 saraketta"
+
+msgctxt "#31264"
+msgid "Set height 1 row"
+msgstr "Aseta korkeus, 1 rivi"
+
+msgctxt "#31265"
+msgid "Set height 2 rows"
+msgstr "Aseta korkeus, 2 riviä"
+
+msgctxt "#31266"
+msgid "Set height 3 rows"
+msgstr "Aseta korkeus, 3 riviä"
+
+msgctxt "#31267"
+msgid "Fill with color"
+msgstr "Täytä värillä"
+
+msgctxt "#31268"
+msgid "Fill with user's picture"
+msgstr "Täytä käyttäjän kuvalla"
+
+msgctxt "#31269"
+msgid "Fill with List item Fanart"
+msgstr "Täytä fanitaiteella"
+
+msgctxt "#31270"
+msgid "Default"
+msgstr "Oletus"
+
+msgctxt "#31271"
+msgid "No fallback"
+msgstr "Ei oletusta"
+
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Leveä lista"
+
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "Tiilit"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "Kortti"
 
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Juliste"
 
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr "Kiinteä lista"
+
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Banneri"
+
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Pienoiskuva"
+
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
+msgctxt "#31281"
+msgid "Disc Art"
+msgstr "Disc Art"
 
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Vaakakuva"
 
+msgctxt "#31283"
+msgid "Custom List"
+msgstr "Oma lista"
+
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "KODI tekstitykset"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Vaakasuuntainen"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Pystysuuntainen"
+
+msgctxt "#31288"
+msgid "Stick to Top"
+msgstr "Pidä ylhäällä"
+
+msgctxt "#31289"
+msgid "Stick to Bottom"
+msgstr "Pidä alhaalla"
+
+msgctxt "#31290"
+msgid "Stick to Left"
+msgstr "Pidä vasemmalla"
+
+msgctxt "#31291"
+msgid "Stick to Right"
+msgstr "Pidä oikealla"
+
+msgctxt "#31292"
+msgid "Hide bar at scroll end"
+msgstr "Piilota vierityspalkki automaattisesti"
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Näytä aina"
+
+msgctxt "#31294"
+msgid "Push blocs"
+msgstr "Työnnä blokkeja"
+
+msgctxt "#31295"
+msgid "Show over blocs"
+msgstr "Näytä blokkien päällä"
+
+msgctxt "#31296"
+msgid "Still visible if B5 has focus"
+msgstr "Näkyy, vaikka Blokki 5 on kohdistettuna"
+
+msgctxt "#31297"
+msgid "Hide if B5 has focus"
+msgstr "Piilota, jos Blokki 5 on kohdistettuna"
+
+msgctxt "#31298"
+msgid "Activate pressing Left"
+msgstr "Käynnistä painamalla vasemmalle"
+
+msgctxt "#31299"
+msgid "Activate pressing Right"
+msgstr "Käynnistä painamalla oikealle"
+
+msgctxt "#31300"
+msgid "Activate pressing Up"
+msgstr "Käynnistä painamalla ylös"
+
+msgctxt "#31301"
+msgid "Activate pressing Down"
+msgstr "Käynnistä painamalla alas"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanitaide"
 
+msgctxt "#31303"
+msgid "IdleFade Timer"
+msgstr "Piilotuksen ajastin"
+
 msgctxt "#31304"
 msgid "Seconds"
 msgstr "Sekuntia"
+
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr "Valitse kuvakansio..."
+
+msgctxt "#31306"
+msgid "Choose picture..."
+msgstr "Valitse kuva..."
+
+msgctxt "#31307"
+msgid "Square"
+msgstr "Neliö"
+
+msgctxt "#31308"
+msgid "Medium"
+msgstr "Keskitaso"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Suuri"
+
+msgctxt "#31310"
+msgid "Not found !"
+msgstr "Ei löytynyt!"
+
+msgctxt "#31311"
+msgid "Checking Files"
+msgstr "Tarkistetaan tiedostoja"
+
+msgctxt "#31312"
+msgid "Update Custom Lists"
+msgstr "Päivitä omat listat"
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Velho..."
+
+msgctxt "#31314"
+msgid "At first start, KOver is built with the minimum requirements. You need to apply a prebuilt configuration or go to the Designer to create all the needed viewtypes and options."
+msgstr "Ensimmäisellä käynnistyskerralla luodaan vain välttämättömät valikot. Sinun pitää ottaa käyttöön valmiit asetukset tai avata suunnittelutyökalu ja luoda tarvitsemasi näkymät ja valikot."
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Tervetuloa"
+
+msgctxt "#31316"
+msgid "Choose a prebuilt configuration"
+msgstr "Valitse valmiista asetuksista"
+
+msgctxt "#31317"
+msgid "Go to Designer"
+msgstr "Avaa suunnittelutyökalu"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Sulje"
+
+msgctxt "#31319"
+msgid "Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window."
+msgstr "Valitse tämä vaihtoehto, jos haluat käyttää valmiita valikoita. Valitse joku viidestä valmiista vaihtoehdosta. Voit myöhemmin muokata asetuksia ulkoasun asetusvalikosta."
+
+msgctxt "#31320"
+msgid "Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window."
+msgstr "Valitse tämä vaihtoehto, jos haluat luoda omat valikkosi. Tämä avaa suunnittelutyökalun. Valmiiden asetusten käyttämistä suositellaan ensimmäisellä käynnistyskerralla. Voit käynnistää suunnittelutyökalun myöhemmin ulkoasun asetusvalikosta."
+
+msgctxt "#31321"
+msgid "Exit the wizard. You can go back to the wizard via the skin settings window."
+msgstr "Sulje asennusvelho. Voit suorittaa sen tarvittaessa uudelleen ulkoasun asetusvalikosta."
+
+msgctxt "#31322"
+msgid "Do not show me again"
+msgstr "Älä näytä enää"
+
+msgctxt "#31323"
+msgid "Open the startup wizard..."
+msgstr "Avaa asennusvelho..."
+
+msgctxt "#31324"
+msgid "Do not turn off your device or force close KODI."
+msgstr "Älä sammuta laitettasi tai sulje KODIa."
+
+msgctxt "#31325"
+msgid "A large amount of settings is being written. This can take some time depending of the system.[CR]Do not turn off your device or force close KODI."
+msgstr "Suurta määrää asetuksia tallennetaan. Tämä voi kestää jonkin aikaa riippuen järjestelmän suorituskyvystä.[CR]Älä sammuta laitettasi tai sulje KODIa."
+
+msgctxt "#31326"
+msgid "Still processing...[CR]Do not turn off your device or force close KODI."
+msgstr "Asetusten käsittely on kesken...[CR]Älä sammuta laitettasi tai sulje KODIa."
+
+msgctxt "#31327"
+msgid "Show after timer inactivity"
+msgstr "Näytä ajastimen kuluttua"
+
+msgctxt "#31328"
+msgid "Toggle the element's visibility. REVIDLEFADE makes the element to show after XX seconds (set by user)."
+msgstr "Aseta kohteen näkyvyys. REVIDLEFADE saa kohteen näkymään käyttäjän asettaman ajan kuluttua (sekunteina)."
+
+msgctxt "#31329"
+msgid "Set the reverse IDLEFADE timer (Designer specific feature) :"
+msgstr "Aseta käänteinen IDLEFADE-ajastin (suunnittelutyökalun ominaisuus):"
+
+msgctxt "#31400"
+msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
+msgstr "[B]Muokkaa käyttöliittymän asetuksia[/B][CR][CR]Muokkaa ulkoasua[CR]Määritä alue- ja kieliasetukset[CR]Muuta tiedostolistausten asetuksia[CR]Aseta näytönsäästäjä"
+
+msgctxt "#31401"
+msgid "[B]Configure video settings[/B][CR][CR]Manage your video library[CR]Set video playback options[CR]Change video listing options[CR]Set subtitle fonts"
+msgstr "[B]Muokkaa videoasetuksia[/B][CR][CR]Hallitse videokirjastoa[CR]Aseta videotoiston asetukset[CR]Vaihda videolistauksen asetuksia[CR]Aseta tekstitysasetukset"
+
+msgctxt "#31402"
+msgid "[B]Configure music settings[/B][CR][CR]Manage your music library[CR]Set music playback options[CR]Change music listing options[CR]Setup song submission[CR]Set karaoke options"
+msgstr "[B]Muokkaa musiikkiasetuksia[/B][CR][CR]Hallitse musiikkikirjastoa[CR]Aseta musiikkitoiston asetukset[CR]Vaihda musiikkilistauksen asetuksia[CR]Aseta karaokeasetukset"
+
+msgctxt "#31403"
+msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options[CR]Configure slideshow"
+msgstr "[B]Muokkaa kuva-asetuksia[/B][CR][CR]Määritä kuvalistauksen asetukset[CR]Muokkaa kuvaesityksen asetuksia"
+
+msgctxt "#31404"
+msgid "[B]Configure weather settings[/B][CR][CR]Set various cities to collect weather information"
+msgstr "[B]Muokkaa sääasetuksia[/B][CR][CR]Aseta kolme kaupunkia, joista noudetaan säätiedot"
+
+msgctxt "#31406"
+msgid "[B]Configure system settings[/B][CR][CR]Setup and calibrate displays[CR]Configure audio output[CR]Setup remote controls[CR]Set power saving options[CR]Enable debugging[CR]Setup master lock"
+msgstr "[B]Muokkaa järjestelmäasetuksia[/B][CR][CR]Aseta ja kalibroi näyttö[CR]Määritä äänilähtö[CR]Aseta kauko-ohjaus[CR]Aseta virransäästöasetukset[CR]Ota virhelokin kirjoitus käyttöön[CR]Aseta pääkäyttäjän lukitus"
+
+msgctxt "#31408"
+msgid "[B]Configure add-ons[/B][CR][CR]Manage your installed add-ons[CR]Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
+msgstr "[B]Muokkaa lisäosia[/B][CR][CR]Hallitse asennettuja lisäosia[CR]Valitse ja asenna lisäosia kodi.tv:stä[CR]Muokkaa lisäosien asetuksia"
+
+msgctxt "#31409"
+msgid "[B]Configure TV settings[/B][CR][CR]Change full screen info[CR]Manage EPG data settings"
+msgstr "[B]Muokkaa tv-asetuksia[/B][CR][CR]Muokkaa kokoruudun tietoja[CR]Hallitse ohjelmaoppaan asetuksia"
+
+msgctxt "#31410"
+msgid "[B]Configure network settings[/B][CR][CR]Setup control of Kodi via UPnP and HTTP[CR]Configure file sharing[CR]Enable Zeroconf[CR]Configure AirPlay"
+msgstr "[B]Muokkaa verkkoasetuksia[/B][CR][CR]Määritä Kodin kauko-ohjaus käyttäen UPnP:tä ja HTTP:tä[CR]Määritä tiedostonjako[CR]Käytä Zeroconfia[CR]Määriät AirPlayn asetukset"
+
+msgctxt "#31411"
+msgid "[B]Configure KOver settings[/B][CR][CR]Configure Home menu[CR]Enable advanced tools[CR]Auto build viewtypes sets[CR]Export / Import features"
+msgstr "[B]Muokkaa KOverin asetuksia[/B][CR][CR]Muokkaa päävalikkoa[CR]Käytä edistyneitä työkaluja[CR]Näkymien automaattinen luominen[CR]Vie / Tuo ominaisuuksia"
+
+msgctxt "#31412"
+msgid "[B]Configure KOver viewtypes[/B][CR][CR]Create / delete / modify viewtypes using the WYSIWYG editor : KOver Designer"
+msgstr "[B]Muokkaa KOverin näkymiä[/B][CR][CR]Luo / poista / muokkaa näkymiä WYSIWYG-editorilla: KOverin suunnittelutyökalulla"
+
+msgctxt "#31413"
+msgid "[B]Configure KOver colors[/B][CR][CR]Create / modify color scheme[CR]Change colors for each parts of the viewtypes[CR]Import previous or shared color sets"
+msgstr "[B]Muokkaa KOverin värejä[/B][CR][CR]Luo / muokkaa väriteemoja[CR]Muokkaa näkymien eri kohtien värejä[CR]Tuo vanhoja tai muiden jakamia väriteemoja"
+
+msgctxt "#31414"
+msgid "[B]Configure profiles settings[/B][CR][CR]Enable / disable login screen[CR]Set profiles' names and pictures[CR]Set lock settings"
+msgstr "[B]Muokkaa profiiliasetuksia[/B][CR][CR]Näytä tai piilota kirjautumisruutu[CR]Aseta profiilinimet ja -kuvat[CR]Määritä lukitusasetukset"
+
+msgctxt "#31500"
+msgid "This category contains the settings for home menu editing and showing / hiding advanced features."
+msgstr "Tämä kategoria sisältää päävalikkoon liittyvät asetukset."
+
+msgctxt "#31501"
+msgid "This category contains the settings for applying automatic layouts and color sets."
+msgstr "Tämä kategoria sisältää automaattisten näkymien ja värien asetukset."
+
+msgctxt "#31502"
+msgid "This category contains the settings for importing / exporting user's configurations of KOver."
+msgstr "Tämä kategoria sisältään KOverin varmuuskopiointi- ja palautusasetukset."
+
+msgctxt "#31503"
+msgid "This category contains the settings for activating optional scripts to enhance KOver content."
+msgstr "Tämä kategoria sisältää KOverin käyttämien skriptien asetukset."
