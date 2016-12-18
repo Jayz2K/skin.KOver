@@ -36,6 +36,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Карусель постерів"
 
+msgctxt "#31282"
+msgid "Landscape"
+msgstr "Пейзаж"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Фанарт"

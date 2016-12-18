@@ -32,6 +32,10 @@ msgctxt "#31074"
 msgid "Selected items"
 msgstr "Elements seleccionats"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Opcions de vista"
+
 msgctxt "#31124"
 msgid "Libraries settings"
 msgstr "Ajusts de les biblioteques"

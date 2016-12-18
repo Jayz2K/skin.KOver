@@ -16,9 +16,17 @@ msgstr ""
 "Language: da_DK\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Baggrund"
+
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Tilfældige albummer"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Visning"
 
 msgctxt "#31127"
 msgid "Submenu"

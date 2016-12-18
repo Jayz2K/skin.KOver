@@ -16,6 +16,10 @@ msgstr ""
 "Language: gl_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Imaxe de fondo"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Álbums recentes"
@@ -27,6 +31,10 @@ msgstr "Álbums recomendados"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Álbums ó chou"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Tipo de Vista"
 
 msgctxt "#31127"
 msgid "Submenu"

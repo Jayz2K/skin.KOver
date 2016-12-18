@@ -16,6 +16,10 @@ msgstr ""
 "Language: sk_SK\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Tapeta"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Najnovšie albumy"
@@ -27,6 +31,10 @@ msgstr "Odporúčané albumy"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Náhodné albumy"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Štýl zobrazenia"
 
 msgctxt "#31127"
 msgid "Submenu"

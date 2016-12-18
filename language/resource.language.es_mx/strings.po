@@ -20,6 +20,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Álbumes aleatorios"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Tipo de Vista"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenú"

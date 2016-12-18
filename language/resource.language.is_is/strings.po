@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Hljómplötur af handahófi"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Sýn"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Undirvalmynd"

@@ -140,6 +140,10 @@ msgctxt "#31062"
 msgid "Blocs background"
 msgstr "Fundo dos Blocos"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Vista"
+
 msgctxt "#31123"
 msgid "Blocs background"
 msgstr "Fundo dos Blocos"

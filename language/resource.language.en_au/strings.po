@@ -16,6 +16,10 @@ msgstr ""
 "Language: en_AU\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Wallpaper"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Recent albums"
@@ -27,6 +31,10 @@ msgstr "Recommended albums"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Random albums"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Viewtype"
 
 msgctxt "#31127"
 msgid "Submenu"

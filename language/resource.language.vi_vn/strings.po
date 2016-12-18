@@ -16,6 +16,10 @@ msgstr ""
 "Language: vi_VN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Hình nền"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Albums gần đây"

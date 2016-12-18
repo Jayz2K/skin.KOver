@@ -16,6 +16,10 @@ msgstr ""
 "Language: zh_CN\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "背景"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "最新专辑"
@@ -27,6 +31,10 @@ msgstr "推荐专辑"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "随机专辑"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "视图类型"
 
 msgctxt "#31127"
 msgid "Submenu"

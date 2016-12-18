@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Náhodná alba"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Styly zobrazení"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Podmenu"

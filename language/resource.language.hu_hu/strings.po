@@ -52,6 +52,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Kiemelt albumok"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Nézettípus"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Almenü"

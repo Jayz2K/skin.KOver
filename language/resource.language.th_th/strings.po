@@ -28,6 +28,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "สุ่ม อัลบั้ม"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "แบบมุมมอง"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "เมนูย่อย"

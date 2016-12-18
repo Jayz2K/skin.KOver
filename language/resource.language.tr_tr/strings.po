@@ -16,6 +16,10 @@ msgstr ""
 "Language: tr_TR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Duvar Kağıdı"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Son albümler"

@@ -336,6 +336,18 @@ msgctxt "#31148"
 msgid "Weather Forecast"
 msgstr "Prognoza pogody"
 
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Edytuj menu startowe..."
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Import / Eksport"
+
+msgctxt "#31155"
+msgid "Show Debug Infos"
+msgstr "Pokazuj informacje diagnostyczne"
+
 msgctxt "#31157"
 msgid "Horizontal"
 msgstr "Poziomo"
@@ -344,9 +356,41 @@ msgctxt "#31158"
 msgid "Vertical"
 msgstr "Pionowo"
 
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Inportuj..."
+
+msgctxt "#31164"
+msgid "Backup all viewtype (without Home menu)"
+msgstr "Kopia zapasowa typów widoku (bez menu startowego)"
+
+msgctxt "#31165"
+msgid "Backup Home menu"
+msgstr "Kopia zapasowa menu startowego"
+
+msgctxt "#31166"
+msgid "Full backup (viewtypes and Home menu)"
+msgstr "Pełna kopia zapasowa (typy widoków i menu startowe)"
+
+msgctxt "#31195"
+msgid "Apply color schemes"
+msgstr "Zastosuj motywy kolorów"
+
+msgctxt "#31196"
+msgid "Default dark"
+msgstr "Domyślny ciemny"
+
+msgctxt "#31197"
+msgid "Default light"
+msgstr "Domyślny jasny"
+
 msgctxt "#31206"
 msgid "Install Artist Slideshow ..."
 msgstr "Zainstaluj dodatek Artist Slideshow ..."
+
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr "DOMYŚLNY"
 
 msgctxt "#31222"
 msgid "Settings"
@@ -380,9 +424,17 @@ msgctxt "#31235"
 msgid "Home Menu size"
 msgstr "Wielkość menu startowego"
 
+msgctxt "#31240"
+msgid "Move"
+msgstr "Przenieś"
+
 msgctxt "#31244"
 msgid "Install TvTunes ..."
 msgstr "Zainstaluj dodatek TvTunes ..."
+
+msgctxt "#31248"
+msgid "Fallback[CR]Picture"
+msgstr "Obraz[CR]zapasowy"
 
 msgctxt "#31257"
 msgid "Show when media is playing"
@@ -416,9 +468,25 @@ msgctxt "#31266"
 msgid "Set height 3 rows"
 msgstr "Ustaw wysokość na 3 wiersze"
 
+msgctxt "#31267"
+msgid "Fill with color"
+msgstr "Wypełnij kolorem"
+
+msgctxt "#31268"
+msgid "Fill with user's picture"
+msgstr "Wypełnij portretem użytkownika"
+
 msgctxt "#31272"
 msgid "Wide List"
 msgstr "Duża lista"
+
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "Kafelki"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "Karty"
 
 msgctxt "#31275"
 msgid "Poster"
@@ -427,6 +495,10 @@ msgstr "Plakat"
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Baner"
+
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Mianiatura"
 
 msgctxt "#31279"
 msgid "Clear Art"
@@ -444,6 +516,10 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Panorama"
 
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "Napisy Kodi"
+
 msgctxt "#31286"
 msgid "Horizontal"
 msgstr "Poziomo"
@@ -451,6 +527,26 @@ msgstr "Poziomo"
 msgctxt "#31287"
 msgid "Vertical"
 msgstr "Pionowo"
+
+msgctxt "#31288"
+msgid "Stick to Top"
+msgstr "Przypnij do góry"
+
+msgctxt "#31289"
+msgid "Stick to Bottom"
+msgstr "Przypnij do dołu"
+
+msgctxt "#31290"
+msgid "Stick to Left"
+msgstr "Przypnij do prawej"
+
+msgctxt "#31291"
+msgid "Stick to Right"
+msgstr "Przypnij do lewej"
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Zawsze widoczne"
 
 msgctxt "#31302"
 msgid "Fanart"
@@ -460,6 +556,14 @@ msgctxt "#31304"
 msgid "Seconds"
 msgstr "Sekund"
 
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr "Wybierz folder obrazów..."
+
+msgctxt "#31306"
+msgid "Choose picture..."
+msgstr "Wybierz obraz..."
+
 msgctxt "#31307"
 msgid "Square"
 msgstr "Kwadrat"
@@ -467,3 +571,27 @@ msgstr "Kwadrat"
 msgctxt "#31309"
 msgid "Large"
 msgstr "Duży"
+
+msgctxt "#31311"
+msgid "Checking Files"
+msgstr "Sprawdzanie plików"
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Kreator..."
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Witamy"
+
+msgctxt "#31316"
+msgid "Choose a prebuilt configuration"
+msgstr "Wybierz gotową konfigurację"
+
+msgctxt "#31322"
+msgid "Do not show me again"
+msgstr "Nie pokazuj więcej"
+
+msgctxt "#31323"
+msgid "Open the startup wizard..."
+msgstr "Otwórz kreatora startowego..."

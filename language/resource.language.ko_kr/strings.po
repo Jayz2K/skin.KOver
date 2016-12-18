@@ -16,6 +16,10 @@ msgstr ""
 "Language: ko_KR\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "배경화면"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "최근 추가 앨범"
@@ -27,6 +31,10 @@ msgstr "추천 앨범"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "무작위 앨범"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "보기 형식"
 
 msgctxt "#31127"
 msgid "Submenu"

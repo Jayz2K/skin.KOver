@@ -296,6 +296,10 @@ msgctxt "#31081"
 msgid "Clock"
 msgstr "Klok"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Type weergave"
+
 msgctxt "#31123"
 msgid "Blocs background"
 msgstr "Blokken achtergrond"

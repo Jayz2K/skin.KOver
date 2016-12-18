@@ -20,6 +20,10 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "隨機專輯"
 
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "展示類型"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "子選單"

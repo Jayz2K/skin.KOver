@@ -16,6 +16,10 @@ msgstr ""
 "Language: el_GR\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Υπόβαθρο"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Πρόσφατα άλμπουμ"
@@ -27,6 +31,10 @@ msgstr "Προτεινόμενα άλμπουμ"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Τυχαία άλμπουμ"
+
+msgctxt "#31089"
+msgid "Viewtype"
+msgstr "Τύπος Προβολής"
 
 msgctxt "#31127"
 msgid "Submenu"
