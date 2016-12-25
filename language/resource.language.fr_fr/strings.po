@@ -22,7 +22,7 @@ msgstr "KOver Designer"
 
 msgctxt "#31001"
 msgid "Home Menu"
-msgstr "Accueil"
+msgstr "Menu d'accueil"
 
 msgctxt "#31002"
 msgid "Colors"
@@ -78,7 +78,7 @@ msgstr "Bloc 3"
 
 msgctxt "#31015"
 msgid "Bloc 4 : Playing Video"
-msgstr "Bloc 4: Video en cours"
+msgstr "Bloc 4: Vidéo en cours"
 
 msgctxt "#31016"
 msgid "Bloc 4"
@@ -86,47 +86,47 @@ msgstr "Bloc 4"
 
 msgctxt "#31017"
 msgid "Rename View"
-msgstr "Renommer la Vue"
+msgstr "Renommer la vue"
 
 msgctxt "#31018"
 msgid "Apply Default Horizontal"
-msgstr "Appliquer défaut Horizontal"
+msgstr "Appliquer prédéfinition horizontale"
 
 msgctxt "#31019"
 msgid "Apply Default Vertical"
-msgstr "Appliquer défaut Vertical"
+msgstr "Appliquer la prédéfinition verticale"
 
 msgctxt "#31020"
 msgid "My Template 1"
-msgstr "Mon Modèle 1"
+msgstr "Modèle 1"
 
 msgctxt "#31021"
 msgid "My Template 2"
-msgstr "Mon Modèle 2"
+msgstr "Modèle 2"
 
 msgctxt "#31022"
 msgid "My Template 3"
-msgstr "Mon Modèle 3"
+msgstr "Modèle 3"
 
 msgctxt "#31023"
 msgid "Delete View"
-msgstr "Supprimer la Vue"
+msgstr "Supprimer la vue"
 
 msgctxt "#31024"
 msgid "Apply Template To View"
-msgstr "Appliquer Mon Modèle à la Vue"
+msgstr "Appliquer le modèle à la vue"
 
 msgctxt "#31025"
 msgid "Copy  View To Template"
-msgstr "Copier la Vue dans le Modèle"
+msgstr "Copier la vue dans le modèle"
 
 msgctxt "#31026"
 msgid "Delete Template"
-msgstr "Supprimer le Modèle"
+msgstr "Supprimer le modèle"
 
 msgctxt "#31027"
 msgid "Export Template"
-msgstr "Exporter le Modèle"
+msgstr "Exporter le modèle"
 
 msgctxt "#31028"
 msgid "Layout Orientation"
@@ -134,7 +134,7 @@ msgstr "Orientation de l'ensemble"
 
 msgctxt "#31029"
 msgid "Sidebar Position"
-msgstr "Position la barre latérale"
+msgstr "Position de la barre latérale"
 
 msgctxt "#31030"
 msgid "Dialog panel position"
@@ -150,11 +150,11 @@ msgstr "Comportement du panneau de dialogue"
 
 msgctxt "#31033"
 msgid "Horizontal Separator"
-msgstr "Séparateur Horizontal"
+msgstr "Séparateur horizontal"
 
 msgctxt "#31034"
 msgid "Vertical Separator"
-msgstr "Séparateur Vertical"
+msgstr "Séparateur vertical"
 
 msgctxt "#31035"
 msgid "visibility"
@@ -190,27 +190,27 @@ msgstr "Image[CR]de fond"
 
 msgctxt "#31043"
 msgid "List : Selected item 1"
-msgstr "Liste: Elément sélectionné 1"
+msgstr "Liste : Élément sélectionné 1"
 
 msgctxt "#31044"
 msgid "Sub info"
-msgstr "Info supplémentaire"
+msgstr "Infos sous-titres"
 
 msgctxt "#31045"
 msgid "List : Unselected item 2"
-msgstr "Liste: Elément non sélectionné 2"
+msgstr "Liste : Élément non sélectionné 2"
 
 msgctxt "#31046"
 msgid "List : Unselected item 3"
-msgstr "Liste: Elément non sélectionné 3"
+msgstr "Liste : Élément non sélectionné 3"
 
 msgctxt "#31047"
 msgid "Info Bloc : Sub info"
-msgstr "Bloc d'infos : Info supplémentaire"
+msgstr "Bloc d'infos : Infos sous-titres"
 
 msgctxt "#31048"
 msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
-msgstr "Texte 3 - Résume [CR] sur l'élément sélectionné dans le bloc 1"
+msgstr "Texte 3 - Intrigue[CR]sur l'élément sélectionné dans le bloc 1"
 
 msgctxt "#31049"
 msgid "Ex : Duration"
@@ -234,7 +234,7 @@ msgstr "Préréglages de visualisation"
 
 msgctxt "#31054"
 msgid "Extra art"
-msgstr "Art additionel"
+msgstr "Illustration additionnelle"
 
 msgctxt "#31055"
 msgid "Increase"
@@ -266,7 +266,7 @@ msgstr "Barre latérale"
 
 msgctxt "#31062"
 msgid "Blocs background"
-msgstr "Arrière plan des blocs"
+msgstr "Arrière-plan des blocs"
 
 msgctxt "#31063"
 msgid "Info bloc"
@@ -274,7 +274,7 @@ msgstr "Bloc d'informations"
 
 msgctxt "#31064"
 msgid "Art bloc"
-msgstr "Bloc Art"
+msgstr "Bloc d'illustration"
 
 msgctxt "#31065"
 msgid "Video bloc"
@@ -286,7 +286,7 @@ msgstr "Dialogue"
 
 msgctxt "#31067"
 msgid "Color editor"
-msgstr "Editeur de couleur"
+msgstr "Éditeur de couleur"
 
 msgctxt "#31068"
 msgid "Unselected icons"
@@ -294,15 +294,15 @@ msgstr "Icônes non sélectionnées"
 
 msgctxt "#31069"
 msgid "Unselected items"
-msgstr "Eléments non sélectionnés"
+msgstr "Éléments non sélectionnés"
 
 msgctxt "#31070"
 msgid "Unselected text 1[CR]icon"
-msgstr "Texte 1 non sélectionné[CR]icone"
+msgstr "Texte 1 non sélectionné[CR]icône"
 
 msgctxt "#31071"
 msgid "Unselected text 2[CR](sub)"
-msgstr "texte 2 non sélectionné[CR](sup)"
+msgstr "Texte 2 non sélectionné[CR](sous-titres)"
 
 msgctxt "#31072"
 msgid "Unselected text"
@@ -310,19 +310,19 @@ msgstr "Texte non sélectionné"
 
 msgctxt "#31073"
 msgid "Selected icon background"
-msgstr "Arrière plan de l'icône sélectionné"
+msgstr "Arrière-plan de l'icône sélectionnée"
 
 msgctxt "#31074"
 msgid "Selected items"
-msgstr "Eléments selectionnés"
+msgstr "Éléments sélectionnés"
 
 msgctxt "#31075"
 msgid "Selected text 1[CR]icon"
-msgstr "Texte 1 sélectionné[CR]icone"
+msgstr "Texte 1 sélectionné[CR]icône"
 
 msgctxt "#31076"
 msgid "Selected text 2[CR](sub)"
-msgstr "Texte 2 sélectionné[CR](sub)"
+msgstr "Texte 2 sélectionné[CR](sous-titres)"
 
 msgctxt "#31077"
 msgid "Selected text"
@@ -330,7 +330,7 @@ msgstr "Texte sélectionné"
 
 msgctxt "#31078"
 msgid "Selected item background"
-msgstr "Arrière plan de l'élément sélectionné"
+msgstr "Arrière-plan de l'élément sélectionné"
 
 msgctxt "#31079"
 msgid "Selected item number"
@@ -358,7 +358,7 @@ msgstr "Exporter la palette de couleur"
 
 msgctxt "#31085"
 msgid "Bloc 5 : Submenu"
-msgstr "Bloc 5 : Sous menu"
+msgstr "Bloc 5 : Sous-menu"
 
 msgctxt "#31086"
 msgid "Bloc 5"
@@ -366,7 +366,7 @@ msgstr "Bloc 5"
 
 msgctxt "#31087"
 msgid "KODI Section"
-msgstr "KODI Section"
+msgstr "Section KODI"
 
 msgctxt "#31088"
 msgid "Name :"
@@ -382,7 +382,7 @@ msgstr "Vide"
 
 msgctxt "#31091"
 msgid "Choose the section where you want to edit the viewtype."
-msgstr "Choisissez la section où vous souhaitez modifier le type de vue."
+msgstr "Choisir la section où modifier le type de vue."
 
 msgctxt "#31092"
 msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
@@ -510,11 +510,11 @@ msgstr "Choisissez la touche/action pour retourner au menu précédent."
 
 msgctxt "#31123"
 msgid "Blocs background"
-msgstr "Arrière plan des blocs"
+msgstr "Arrière-plan des blocs"
 
 msgctxt "#31124"
 msgid "Libraries settings"
-msgstr "Paramètres des bibliothèques"
+msgstr "Paramètres des médiathèques"
 
 msgctxt "#31125"
 msgid "Subcategory"
@@ -522,27 +522,27 @@ msgstr "Sous-catégorie"
 
 msgctxt "#31126"
 msgid "Change settings level"
-msgstr "Changez le niveau de paramètres"
+msgstr "Modifier le niveau de paramètres"
 
 msgctxt "#31127"
 msgid "Submenu"
-msgstr "sous-menu"
+msgstr "Sous-menu"
 
 msgctxt "#31128"
 msgid "Choose the element you want to change the color and click or press 'ENTER'."
-msgstr "Choisissez l'élément dont vous voulez changer la couleur et cliquez ou appuyez sur \"ENTRER\"."
+msgstr "Choisir l'élément dont vous voulez changer la couleur et cliquer ou appuyer sur « ENTRÉE »."
 
 msgctxt "#31129"
 msgid "Info Bloc : Title"
-msgstr "Bloc Info : Titre"
+msgstr "Bloc infos : Titre"
 
 msgctxt "#31130"
 msgid "Bloc 4 : Home Art"
-msgstr "Bloc 4 : Art d'Accueil"
+msgstr "Bloc 4 : Illustration d'accueil"
 
 msgctxt "#31131"
 msgid "Scrolling Orientation"
-msgstr "Orientation de défilement"
+msgstr "Orientation du défilement"
 
 msgctxt "#31132"
 msgid "View Settings"
@@ -550,39 +550,39 @@ msgstr "Paramètres de vue"
 
 msgctxt "#31133"
 msgid "Select Viewtype"
-msgstr "Sélectionnez la vue"
+msgstr "Sélectionner le type de vue"
 
 msgctxt "#31134"
 msgid "Move left"
-msgstr "Déplacez vers la gauche"
+msgstr "Déplacer vers la gauche"
 
 msgctxt "#31135"
 msgid "Move right"
-msgstr "Déplacez vers la droite"
+msgstr "Déplacer vers la droite"
 
 msgctxt "#31136"
 msgid "Change icon"
-msgstr "Changez d'icône"
+msgstr "Modifier l'icône"
 
 msgctxt "#31137"
 msgid "Select Bloc 4 Picture"
-msgstr "Sélectionnez l'image du Bloc 4"
+msgstr "Sélectionner l'image du Bloc 4"
 
 msgctxt "#31138"
 msgid "Bloc 1 Visibility On Focus"
-msgstr "Bloc 1 Visibilité à l'activation"
+msgstr "Bloc 1 visibilité au focus"
 
 msgctxt "#31139"
 msgid "Bloc 2 Visibility On Focus"
-msgstr "Bloc 2 Visibilité à l'activation"
+msgstr "Bloc 2 visibilité au focus"
 
 msgctxt "#31140"
 msgid "Bloc 3 Visibility On Focus"
-msgstr "Bloc 3 Visibilité à l'activation"
+msgstr "Bloc 3 visibilité au focus"
 
 msgctxt "#31141"
 msgid "Bloc 4 Visibility On Focus"
-msgstr "Bloc 4 Visibilité à l'activation"
+msgstr "Bloc 4 visibilité au focus"
 
 msgctxt "#31142"
 msgid "Go Submenu"
@@ -594,7 +594,7 @@ msgstr "Retour"
 
 msgctxt "#31144"
 msgid "Over"
-msgstr "Over"
+msgstr "Au survol"
 
 msgctxt "#31145"
 msgid "PVR"
@@ -614,11 +614,11 @@ msgstr "Prévisions météorologiques"
 
 msgctxt "#31149"
 msgid "Edit Home menu..."
-msgstr "Edition du menu d'accueil..."
+msgstr "Éditer le menu d'accueil…"
 
 msgctxt "#31150"
 msgid "Auto build"
-msgstr "Construction auto"
+msgstr "Construction auto."
 
 msgctxt "#31151"
 msgid "Import / Export"
@@ -626,7 +626,7 @@ msgstr "Importer / Expoter"
 
 msgctxt "#31152"
 msgid "Force search for PVR thumbs"
-msgstr "Forcer la recherche d'aperçus PVR"
+msgstr "Forcer la recherche des miniatures PVR"
 
 msgctxt "#31153"
 msgid "Enable Designer"
@@ -634,11 +634,11 @@ msgstr "Activer le Designer"
 
 msgctxt "#31154"
 msgid "Enable Color tool"
-msgstr "Activer l'éditeur de couleurs"
+msgstr "Activer l'Éditeur de couleurs"
 
 msgctxt "#31155"
 msgid "Show Debug Infos"
-msgstr "Montrer les infos de débogage. "
+msgstr "Afficher les infos de débogage"
 
 msgctxt "#31156"
 msgid "Build KOver for PVR"
@@ -662,7 +662,7 @@ msgstr "Classic"
 
 msgctxt "#31161"
 msgid "Two-thirds"
-msgstr "Deux-Tiers"
+msgstr "Deux-tiers"
 
 msgctxt "#31162"
 msgid "Hybrid"
@@ -670,43 +670,43 @@ msgstr "Hybride"
 
 msgctxt "#31163"
 msgid "Import..."
-msgstr "Importer..."
+msgstr "Importer…"
 
 msgctxt "#31164"
 msgid "Backup all viewtype (without Home menu)"
-msgstr "Sauvegarder toutes les vues (sans le Menu d'Accueil)"
+msgstr "Sauvegarder toutes les vues (sans le menu d'accueil)"
 
 msgctxt "#31165"
 msgid "Backup Home menu"
-msgstr "Sauvegarder le Menu d'Accueil"
+msgstr "Sauvegarder le menu d'accueil"
 
 msgctxt "#31166"
 msgid "Full backup (viewtypes and Home menu)"
-msgstr "Sauvegarde complète (vues et Menu d'Accueil)"
+msgstr "Sauvegarde complète (vues et menu d'accueil)"
 
 msgctxt "#31167"
 msgid "Export all 'Home' viewtypes"
-msgstr "Exporter toutes les vues 'Accueil' "
+msgstr "Exporter toutes les vues « Accueil »"
 
 msgctxt "#31168"
 msgid "Export all 'Video' viewtypes"
-msgstr "Exporter toutes les vues 'Vidéo'"
+msgstr "Exporter toutes les vues « Vidéo »"
 
 msgctxt "#31169"
 msgid "Export all 'Music' viewtypes"
-msgstr "Exporter toutes les vues 'Musique'"
+msgstr "Exporter toutes les vues « Musique »"
 
 msgctxt "#31170"
 msgid "Export all 'Pictures' viewtypes"
-msgstr "Exporter toutes les vues 'Images'"
+msgstr "Exporter toutes les vues « Images »"
 
 msgctxt "#31171"
 msgid "Export all 'TV' viewtypes"
-msgstr "Exporter toutes les vues 'TV'"
+msgstr "Exporter toutes les vues « TV »"
 
 msgctxt "#31172"
 msgid "Export all 'Programs' viewtypes"
-msgstr "Exporter toutes les vues 'Programmes'"
+msgstr "Exporter toutes les vues « Programmes »"
 
 msgctxt "#31173"
 msgid "Allows to set home menu, submenus and widgets and to choose viewtypes and backgrounds."
@@ -762,39 +762,39 @@ msgstr "Sauvegarder le Menu d'Accueil. Les vues ne sont pas incluses."
 
 msgctxt "#31186"
 msgid "Full backup. Viewtypes AND Home menu are included. Useful for duplication on user's multiple devices."
-msgstr "sauvegarde complète. Les vues et le Menu d'Accueil sont inclus. Utile pour la duplication sur plusieurs appareils."
+msgstr "Sauvegarde complète. Les vues et le menu d'zccueil sont inclus. Utile pour la duplication sur plusieurs appareils."
 
 msgctxt "#31187"
 msgid "Backup current viewtypes from 'Home' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarde les vues actuelles de la section 'Accueil'. Le Menu d'Accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
+msgstr "Sauvegarde les vues actuelles de la section « Accueil ». Le menu d'accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
 
 msgctxt "#31188"
 msgid "Backup current viewtypes from 'Video' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarde les vues actuelles de la section 'Vidéo'. Le Menu d'Accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
+msgstr "Sauvegarde les vues actuelles de la section « Vidéo ». Le menu d'accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
 
 msgctxt "#31189"
 msgid "Backup current viewtypes from 'Music' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarde les vues actuelles de la section 'Musique'. Le Menu d'Accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
+msgstr "Sauvegarde les vues actuelles de la section « Musique ». Le menu d'accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
 
 msgctxt "#31190"
 msgid "Backup current viewtypes from 'Pictures' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarde les vues actuelles de la section 'Images'. Le Menu d'Accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
+msgstr "Sauvegarde les vues actuelles de la section « Images ». Le menu d'accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
 
 msgctxt "#31191"
 msgid "Backup current viewtypes from 'TV' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarde les vues actuelles de la section 'TV'. Le Menu d'Accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
+msgstr "Sauvegarde les vues actuelles de la section « TV ». Le menu d'accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
 
 msgctxt "#31192"
 msgid "Backup current viewtypes from 'Programs' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarde les vues actuelles de la section 'Programmes'. Le Menu d'Accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
+msgstr "Sauvegarde les vues actuelles de la section « Programmes ». Le menu d'accueil n'est pas inclus. Utile pour partager les paramètres d'un ensemble de vues."
 
 msgctxt "#31193"
 msgid "Set the IDLEFADE timer (Designer specific feature) :"
-msgstr "Régler le temps de IDLEFADE (fonction spécifique du Designer) :"
+msgstr "Définir le minuteur IDLEFADE (fonction spécifique du Designer) :"
 
 msgctxt "#31194"
 msgid "Show 'Watched' flags"
-msgstr "Afficher les marqueurs 'Vu'"
+msgstr "Afficher les marqueurs « Vu »"
 
 msgctxt "#31195"
 msgid "Apply color schemes"
@@ -878,7 +878,7 @@ msgstr "Sauvegarder les paramètres de couleurs actuels"
 
 msgctxt "#31215"
 msgid "Install Image ressource addon (studio logos) ..."
-msgstr "Installer l'addon Image ressource (logos de studios) ..."
+msgstr "Installer l'extension de ressource image (logos des studios)..."
 
 msgctxt "#31216"
 msgid "DEFAULT"
@@ -1002,7 +1002,7 @@ msgstr "Thèmes Audio / Vidéo."
 
 msgctxt "#31246"
 msgid "Image ressource (studios) allows KOver to display studios logos in movies / shows infos."
-msgstr "Image ressource (studios) permet à KOver d'afficher les logos des studios dans les informations des Films / Séries"
+msgstr "Les ressource d'images (studios) permettent à KOver d'afficher les logos des studios dans les informations des Films / Séries TV"
 
 msgctxt "#31247"
 msgid "TvTunes allows KOver to play audio / video themes in movies and tv shows libraries."
@@ -1226,7 +1226,7 @@ msgstr "Fanart"
 
 msgctxt "#31303"
 msgid "IdleFade Timer"
-msgstr "Durée de IdleFade"
+msgstr "Minuteur IdleFade"
 
 msgctxt "#31304"
 msgid "Seconds"
@@ -1322,7 +1322,7 @@ msgstr "Toujours en cours...[CR]Ne pas éteindre l'appareil ou forcer la fermetu
 
 msgctxt "#31327"
 msgid "Show after timer inactivity"
-msgstr "Affiche après l'inactivité du timer"
+msgstr "Afficher après l'inactivité du minuteur"
 
 msgctxt "#31328"
 msgid "Toggle the element's visibility. REVIDLEFADE makes the element to show after XX seconds (set by user)."
@@ -1330,7 +1330,7 @@ msgstr "Basculer la visibilité de l'élément. REVIDLEFADE fait apparaître l�
 
 msgctxt "#31329"
 msgid "Set the reverse IDLEFADE timer (Designer specific feature) :"
-msgstr "Régler le compte à rebours pour IDLEFADE (fonction spécifique du concepteur) :"
+msgstr "Régler le compte à rebours du minuteur IDLEFADE (fonction spécifique du concepteur) :"
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
