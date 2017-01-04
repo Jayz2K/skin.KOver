@@ -531,3 +531,7 @@ msgstr "Seconds"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Square"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Large"

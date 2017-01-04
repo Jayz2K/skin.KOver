@@ -38,11 +38,11 @@ msgstr "Dialogues"
 
 msgctxt "#31006"
 msgid "Wallpaper"
-msgstr "Arrière-plan"
+msgstr "Papier peint"
 
 msgctxt "#31007"
 msgid "General Setup"
-msgstr "Réglages initiaux"
+msgstr "Paramètres généraux"
 
 msgctxt "#31008"
 msgid "Blocs background"
@@ -50,7 +50,7 @@ msgstr "Arrière-plan des blocs"
 
 msgctxt "#31009"
 msgid "Bloc 1 : List"
-msgstr "Bloc 1 : Liste"
+msgstr "Bloc 1 : liste"
 
 msgctxt "#31010"
 msgid "Bloc 1"
@@ -58,7 +58,7 @@ msgstr "Bloc 1"
 
 msgctxt "#31011"
 msgid "Bloc 2 : Infos"
-msgstr "Bloc 2 : Information"
+msgstr "Bloc 2 : infos"
 
 msgctxt "#31012"
 msgid "Bloc 2"
@@ -66,7 +66,7 @@ msgstr "Bloc 2"
 
 msgctxt "#31013"
 msgid "Bloc 3 : Art"
-msgstr "Bloc 3 : Art"
+msgstr "Bloc 3 : illustrations"
 
 msgctxt "#31014"
 msgid "Bloc 3"
@@ -74,7 +74,7 @@ msgstr "Bloc 3"
 
 msgctxt "#31015"
 msgid "Bloc 4 : Playing Video"
-msgstr "Bloc 4 : Vidéo en cours de lecture"
+msgstr "Bloc 4 : vidéo en cours"
 
 msgctxt "#31016"
 msgid "Bloc 4"
@@ -114,15 +114,15 @@ msgstr "Type de liste"
 
 msgctxt "#31043"
 msgid "List : Selected item 1"
-msgstr "Liste : item sélectionné 1"
+msgstr "Liste : élément sélectionné 1"
 
 msgctxt "#31045"
 msgid "List : Unselected item 2"
-msgstr "Liste : item non sélectionné 2"
+msgstr "Liste : élément non sélectionné 2"
 
 msgctxt "#31046"
 msgid "List : Unselected item 3"
-msgstr "Liste : Item non sélectionné 3"
+msgstr "Liste : élément non sélectionné 3"
 
 msgctxt "#31049"
 msgid "Ex : Duration"
@@ -138,7 +138,7 @@ msgstr "Préréglages de visualisation"
 
 msgctxt "#31054"
 msgid "Extra art"
-msgstr "Art supplémentaire"
+msgstr "Illustrations supplémentaires"
 
 msgctxt "#31055"
 msgid "Increase"
@@ -166,7 +166,7 @@ msgstr "Fenêtre"
 
 msgctxt "#31061"
 msgid "Sidebar"
-msgstr "Menu latéral"
+msgstr "Barre latéral"
 
 msgctxt "#31062"
 msgid "Blocs background"
@@ -174,15 +174,15 @@ msgstr "Arrière-plan des blocs"
 
 msgctxt "#31063"
 msgid "Info bloc"
-msgstr "Bloc information"
+msgstr "Bloc d'infos"
 
 msgctxt "#31064"
 msgid "Art bloc"
-msgstr "Bloc artistique"
+msgstr "Bloc des illustrations"
 
 msgctxt "#31065"
 msgid "Video bloc"
-msgstr "Bloc vidéo"
+msgstr "Bloc des vidéos"
 
 msgctxt "#31066"
 msgid "Dialog"
@@ -198,11 +198,11 @@ msgstr "Texte sélectionné"
 
 msgctxt "#31078"
 msgid "Selected item background"
-msgstr "Élément d'arrière-plan sélectionné"
+msgstr "Arrière-plan de l'élément sélectionné"
 
 msgctxt "#31079"
 msgid "Selected item number"
-msgstr "Nombre d'éléments sélectionnés"
+msgstr "Numéro de l'élément sélectionné"
 
 msgctxt "#31080"
 msgid "Invalid text"
@@ -218,15 +218,15 @@ msgstr "Ombrage"
 
 msgctxt "#31083"
 msgid "Other infos"
-msgstr "Information supplémentaire"
+msgstr "Autres infos"
 
 msgctxt "#31084"
 msgid "Export color scheme"
-msgstr "Exporter les schémas chromatiques"
+msgstr "Exporter le schéma chromatique"
 
 msgctxt "#31085"
 msgid "Bloc 5 : Submenu"
-msgstr "Bloc 5 : Sous-menu"
+msgstr "Bloc 5 : sous-menu"
 
 msgctxt "#31086"
 msgid "Bloc 5"
@@ -298,7 +298,7 @@ msgstr "Vertical"
 
 msgctxt "#31160"
 msgid "Classic"
-msgstr "Classic"
+msgstr "Classique"
 
 msgctxt "#31161"
 msgid "Two-thirds"
@@ -306,11 +306,11 @@ msgstr "Deux tiers"
 
 msgctxt "#31162"
 msgid "Hybrid"
-msgstr "Hybrid"
+msgstr "Hybride"
 
 msgctxt "#31163"
 msgid "Import..."
-msgstr "Importer ..."
+msgstr "Importer..."
 
 msgctxt "#31165"
 msgid "Backup Home menu"
@@ -318,7 +318,7 @@ msgstr "Arrière-plan du menu d'accueil"
 
 msgctxt "#31194"
 msgid "Show 'Watched' flags"
-msgstr "Montrer les drapeaux \"visionné\""
+msgstr "Afficher les drapeaux « Visionné »"
 
 msgctxt "#31195"
 msgid "Apply color schemes"
@@ -326,31 +326,31 @@ msgstr "Appliquer les schémas chromatiques"
 
 msgctxt "#31196"
 msgid "Default dark"
-msgstr "Défaut foncé"
+msgstr "Foncé par défaut"
 
 msgctxt "#31197"
 msgid "Default light"
-msgstr "Défaut clair"
+msgstr "Clair par défaut"
 
 msgctxt "#31200"
 msgid "Enhancement"
-msgstr "Mise en évidance"
+msgstr "Amélioration"
 
 msgctxt "#31216"
 msgid "DEFAULT"
-msgstr "DÉFAUT"
+msgstr "VALEUR PAR DÉFAUT"
 
 msgctxt "#31218"
 msgid "Header Bkg"
-msgstr "Arrière-plan de l'entête"
+msgstr "Arrière-plan de l'en-tête"
 
 msgctxt "#31219"
 msgid "Header Title"
-msgstr "Titre de l'entête"
+msgstr "Titre de l'en-tête"
 
 msgctxt "#31220"
 msgid "Header Subtitle"
-msgstr "Sous-titre de l'entête"
+msgstr "Sous-titre de l'en tête"
 
 msgctxt "#31221"
 msgid "Settings window"
@@ -370,7 +370,7 @@ msgstr "Indicateurs de défilement"
 
 msgctxt "#31226"
 msgid "Furnitures"
-msgstr "Garnitures"
+msgstr "Mobilier"
 
 msgctxt "#31232"
 msgid "Arrows"
@@ -382,7 +382,7 @@ msgstr "Listes"
 
 msgctxt "#31234"
 msgid "Loading ..."
-msgstr "Chargement ..."
+msgstr "Chargement..."
 
 msgctxt "#31237"
 msgid "Move Bloc"
@@ -402,19 +402,23 @@ msgstr "Redimentionner"
 
 msgctxt "#31244"
 msgid "Install TvTunes ..."
-msgstr "Installer TvTunes ..."
+msgstr "Installer TvTunes..."
 
 msgctxt "#31245"
 msgid "Audio / Video themes"
-msgstr "Thème audio / vidéo"
+msgstr "Thèmes audio / vidéo"
 
 msgctxt "#31251"
 msgid "Up Next..."
-msgstr "Prochainement..."
+msgstr "Présenté ensuite..."
+
+msgctxt "#31252"
+msgid "Install NextUp notifications ..."
+msgstr "Installer les notifications Prochain épisode"
 
 msgctxt "#31253"
 msgid "Continue watching ?"
-msgstr "Poursuivre le visionnement"
+msgstr "Poursuivre le visionnement ?"
 
 msgctxt "#31254"
 msgid "Do not show"
@@ -422,35 +426,35 @@ msgstr "Ne pas afficher"
 
 msgctxt "#31255"
 msgid "Always show"
-msgstr "Toujours montrer"
+msgstr "Toujours afficher"
 
 msgctxt "#31258"
 msgid "Show when TvTunes plays video"
-msgstr "Afficher lorsque TvTunes joue des vidéos"
+msgstr "Afficher lorsque TvTunes lit la vidéo"
 
 msgctxt "#31261"
 msgid "Set width 1 column"
-msgstr "Définir la largeur de la colonne 1"
+msgstr "Définir la largeur 1 colonne"
 
 msgctxt "#31262"
 msgid "Set width 2 columns"
-msgstr "Définir la largeur de la colonne 2"
+msgstr "Définir la largeur 2 colonnes"
 
 msgctxt "#31263"
 msgid "Set width 3 columns"
-msgstr "Définir la largeur de la colonne 3"
+msgstr "Définir la largeur 3 colonnes"
 
 msgctxt "#31264"
 msgid "Set height 1 row"
-msgstr "Définir la hauteur de la rangée 1"
+msgstr "Définir la hauteur 1 rangée"
 
 msgctxt "#31265"
 msgid "Set height 2 rows"
-msgstr "Définir la hauteur de la rangée 2"
+msgstr "Définir la hauteur 2 rangées"
 
 msgctxt "#31266"
 msgid "Set height 3 rows"
-msgstr "Définir la hauteur de la rangée 3"
+msgstr "Définir la hauteur 3 rangées"
 
 msgctxt "#31267"
 msgid "Fill with color"
@@ -458,7 +462,7 @@ msgstr "Remplir avec une couleur"
 
 msgctxt "#31270"
 msgid "Default"
-msgstr "Défaut"
+msgstr "Valeur par défaut"
 
 msgctxt "#31272"
 msgid "Wide List"
@@ -470,7 +474,7 @@ msgstr "Carreaux"
 
 msgctxt "#31274"
 msgid "Card"
-msgstr "Cartes"
+msgstr "Carte"
 
 msgctxt "#31275"
 msgid "Poster"
@@ -490,7 +494,7 @@ msgstr "Imagette"
 
 msgctxt "#31279"
 msgid "Clear Art"
-msgstr "Illustration claire"
+msgstr "Illustrations claires"
 
 msgctxt "#31280"
 msgid "Clear Logo"
@@ -514,27 +518,27 @@ msgstr "Sous-titres KODI"
 
 msgctxt "#31286"
 msgid "Horizontal"
-msgstr "Horizontal"
+msgstr "Horizontaux"
 
 msgctxt "#31287"
 msgid "Vertical"
-msgstr "Vertical"
+msgstr "Verticaux"
 
 msgctxt "#31288"
 msgid "Stick to Top"
-msgstr "Attacher en haut"
+msgstr "Coller en haut"
 
 msgctxt "#31289"
 msgid "Stick to Bottom"
-msgstr "Attacher en bas"
+msgstr "Coller en bas"
 
 msgctxt "#31290"
 msgid "Stick to Left"
-msgstr "Attacher à gauche"
+msgstr "Coller à gauche"
 
 msgctxt "#31291"
 msgid "Stick to Right"
-msgstr "Attacher à droite"
+msgstr "Coller à droite"
 
 msgctxt "#31293"
 msgid "Always visible"
@@ -548,6 +552,10 @@ msgctxt "#31297"
 msgid "Hide if B5 has focus"
 msgstr "Cacher si B5 à le focus"
 
+msgctxt "#31301"
+msgid "Activate pressing Down"
+msgstr "Activer en pesant sur Bas"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanart"
@@ -558,11 +566,11 @@ msgstr "Secondes"
 
 msgctxt "#31305"
 msgid "Choose pictures folder..."
-msgstr "Choisir le dossier des photos"
+msgstr "Choisir le dossier des images..."
 
 msgctxt "#31306"
 msgid "Choose picture..."
-msgstr "Choisir la photo"
+msgstr "Choisir une image..."
 
 msgctxt "#31307"
 msgid "Square"
@@ -578,7 +586,7 @@ msgstr "Grand"
 
 msgctxt "#31310"
 msgid "Not found !"
-msgstr "Pas trouvé!"
+msgstr "Introuvable!"
 
 msgctxt "#31313"
 msgid "Wizard..."
@@ -590,15 +598,15 @@ msgstr "Bienvenue"
 
 msgctxt "#31318"
 msgid "Exit"
-msgstr "Sortir"
+msgstr "Sortie"
 
 msgctxt "#31322"
 msgid "Do not show me again"
-msgstr "Ne plus m'afficher"
+msgstr "Ne plus afficher"
 
 msgctxt "#31323"
 msgid "Open the startup wizard..."
-msgstr "Ouvrir l'assistant de démarrage"
+msgstr "Ouvrir l'assistant de démarrage..."
 
 msgctxt "#31324"
 msgid "Do not turn off your device or force close KODI."
@@ -606,4 +614,4 @@ msgstr "Ne pas éteindre votre appareil ou forcer la fermeture de Kodi."
 
 msgctxt "#31327"
 msgid "Show after timer inactivity"
-msgstr "Afficher la minuteries d'inactivité"
+msgstr "Afficher après inactivité de la minuterie"

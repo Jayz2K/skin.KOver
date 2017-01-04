@@ -36,6 +36,10 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Cilësimet"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Listë Gjërë"
+
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Coverflow"
@@ -43,3 +47,7 @@ msgstr "Coverflow"
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanart"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Madh"
