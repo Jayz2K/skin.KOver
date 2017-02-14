@@ -248,6 +248,22 @@ msgctxt "#31090"
 msgid "Empty"
 msgstr "Vide"
 
+msgctxt "#31117"
+msgid "Set 'HIDE' to hide bloc 1 (List) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Définir 'CACHER' pour cacher le bloc 1 (liste) quand le sous-menu ou la liste des options sont ciblés. Utile quand des blocs partagent la même position."
+
+msgctxt "#31118"
+msgid "Set 'HIDE' to hide bloc 2 (Infos) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Définir 'CACHER' pour cacher le bloc 2 (infos) quand le sous-menu ou la liste des options sont ciblés. Utile quand des blocs partagent la même position."
+
+msgctxt "#31119"
+msgid "Set 'HIDE' to hide bloc 3 (Art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Définir 'CACHER' pour cacher le bloc 3 (illustration) quand le sous-menu ou la liste des options sont ciblés. Utile quand des blocs partagent la même position."
+
+msgctxt "#31120"
+msgid "Set 'HIDE' to hide bloc 4 (Video/Home art) when submenu/options list has focus. Useful when blocs share the same position."
+msgstr "Définir 'CACHER' pour cacher le bloc 4 (illustration des vidéos ou de l'accueil) quand le sous-menu ou la liste des options sont ciblés. Utile quand des blocs partagent la même position."
+
 msgctxt "#31123"
 msgid "Blocs background"
 msgstr "Arrière-plan des blocs"
@@ -284,6 +300,10 @@ msgctxt "#31148"
 msgid "Weather Forecast"
 msgstr "Prévisions météorologiques"
 
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Modifier le menu d'accueil..."
+
 msgctxt "#31151"
 msgid "Import / Export"
 msgstr "Importer / Exporter"
@@ -312,9 +332,53 @@ msgctxt "#31163"
 msgid "Import..."
 msgstr "Importer..."
 
+msgctxt "#31164"
+msgid "Backup all viewtype (without Home menu)"
+msgstr "Sauvegarder tous les types de vue (sans le menu d'accueil)"
+
 msgctxt "#31165"
 msgid "Backup Home menu"
-msgstr "Arrière-plan du menu d'accueil"
+msgstr "Sauvegarder le menu d'accueil"
+
+msgctxt "#31166"
+msgid "Full backup (viewtypes and Home menu)"
+msgstr "Sauvegarde complète (types de vue et menu d'accueil)"
+
+msgctxt "#31184"
+msgid "Backup ALL current viewtypes (from all sections). Home menu is not included. Useful for sharing a complete viewtypes' set."
+msgstr "Sauvegarder TOUS les types de vue actuels (de toutes les sections). Le menu d'accueil est exclu. Utile pour partager un ensemble complet de types de vue."
+
+msgctxt "#31185"
+msgid "Backup Home menu. Viewtypes are not included."
+msgstr "Sauvegarder le menu d'accueil. Les types de vue sont exclus."
+
+msgctxt "#31186"
+msgid "Full backup. Viewtypes AND Home menu are included. Useful for duplication on user's multiple devices."
+msgstr "Sauvegarde complète. Les types de vue et le menu d'accueil sont inclus. Utile pour reproduire sur les différents appareils de l'utilisateur."
+
+msgctxt "#31187"
+msgid "Backup current viewtypes from 'Home' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Sauvegarder les types de vue actuels de la section « Accueil ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+
+msgctxt "#31188"
+msgid "Backup current viewtypes from 'Video' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Sauvegarder les types de vue actuels de la section « Vidéo ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+
+msgctxt "#31189"
+msgid "Backup current viewtypes from 'Music' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Sauvegarder les types de vue actuels de la section « Musique ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+
+msgctxt "#31190"
+msgid "Backup current viewtypes from 'Pictures' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Sauvegarder les types de vue actuels de la section « Images ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+
+msgctxt "#31191"
+msgid "Backup current viewtypes from 'TV' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Sauvegarder les types de vue actuels de la section « Télé ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+
+msgctxt "#31192"
+msgid "Backup current viewtypes from 'Programs' section. Home menu is not included. Useful for sharing a viewtypes' set."
+msgstr "Sauvegarder les types de vue actuels de la section « Programmes ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31194"
 msgid "Show 'Watched' flags"
@@ -432,6 +496,10 @@ msgctxt "#31258"
 msgid "Show when TvTunes plays video"
 msgstr "Afficher lorsque TvTunes lit la vidéo"
 
+msgctxt "#31259"
+msgid "Show when list has focus"
+msgstr "Afficher quand la liste est ciblée"
+
 msgctxt "#31261"
 msgid "Set width 1 column"
 msgstr "Définir la largeur 1 colonne"
@@ -546,11 +614,11 @@ msgstr "Toujours visible"
 
 msgctxt "#31296"
 msgid "Still visible if B5 has focus"
-msgstr "Afficher si B5 à le focus"
+msgstr "Afficher si B5 est ciblé"
 
 msgctxt "#31297"
 msgid "Hide if B5 has focus"
-msgstr "Cacher si B5 à le focus"
+msgstr "Cacher si B5 est ciblé"
 
 msgctxt "#31301"
 msgid "Activate pressing Down"

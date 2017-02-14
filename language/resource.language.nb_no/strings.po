@@ -152,6 +152,18 @@ msgctxt "#31051"
 msgid "Home"
 msgstr "Hjem"
 
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Ekstra kunst"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Øk"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Senk"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Siste album"
@@ -440,13 +452,33 @@ msgctxt "#31267"
 msgid "Fill with color"
 msgstr "Fyll med farge"
 
+msgctxt "#31268"
+msgid "Fill with user's picture"
+msgstr "Fyll med brukerens bilde"
+
+msgctxt "#31270"
+msgid "Default"
+msgstr "Forvalg"
+
 msgctxt "#31272"
 msgid "Wide List"
 msgstr "Vid liste"
 
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "Flis"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "Kort"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Plakat"
+
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr "Låst liste"
 
 msgctxt "#31277"
 msgid "Banner"
@@ -468,6 +500,10 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Landskap"
 
+msgctxt "#31283"
+msgid "Custom List"
+msgstr "Tilpasset liste"
+
 msgctxt "#31285"
 msgid "KODI Subtitles"
 msgstr "KODI undermenyer"
@@ -479,6 +515,10 @@ msgstr "Horisontal"
 msgctxt "#31287"
 msgid "Vertical"
 msgstr "Vertikal"
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Alltid synlig"
 
 msgctxt "#31302"
 msgid "Fanart"
@@ -495,6 +535,10 @@ msgstr "Velg bilde mappe..."
 msgctxt "#31306"
 msgid "Choose picture..."
 msgstr "Velg bilde..."
+
+msgctxt "#31307"
+msgid "Square"
+msgstr "Firkant"
 
 msgctxt "#31308"
 msgid "Medium"
@@ -527,3 +571,7 @@ msgstr "Velkommen"
 msgctxt "#31318"
 msgid "Exit"
 msgstr "Avslutt"
+
+msgctxt "#31323"
+msgid "Open the startup wizard..."
+msgstr "Åpne oppstartsveiviseren…"

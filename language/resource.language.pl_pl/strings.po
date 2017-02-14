@@ -372,6 +372,10 @@ msgctxt "#31166"
 msgid "Full backup (viewtypes and Home menu)"
 msgstr "Pełna kopia zapasowa (typy widoków i menu startowe)"
 
+msgctxt "#31175"
+msgid "Enable this option to give access to the Designer and build your own viewtypes (advanced)."
+msgstr "Umożliwia uzyskanie dostępu do funckji Projektanta i tworzenie własnych typów widoków (zaawansowane)."
+
 msgctxt "#31195"
 msgid "Apply color schemes"
 msgstr "Zastosuj motywy kolorów"
@@ -619,3 +623,7 @@ msgstr "Nie pokazuj więcej"
 msgctxt "#31323"
 msgid "Open the startup wizard..."
 msgstr "Otwórz kreatora startowego..."
+
+msgctxt "#31403"
+msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options[CR]Configure slideshow"
+msgstr "[B]Konfiguracja obrazów[/B][CR][CR]Listy obrazów[CR]Pokaz slajdów"
