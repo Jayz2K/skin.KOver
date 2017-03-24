@@ -24,10 +24,30 @@ msgctxt "#31222"
 msgid "Settings"
 msgstr "Ezarpenak"
 
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Wide List"
+
+msgctxt "#31275"
+msgid "Poster"
+msgstr "Poster"
+
 msgctxt "#31277"
 msgid "Banner"
 msgstr "Coverflow"
 
+msgctxt "#31279"
+msgid "Clear Art"
+msgstr "Clear Art"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear Logo"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanart-a"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Amplio"

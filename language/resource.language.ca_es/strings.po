@@ -16,6 +16,34 @@ msgstr ""
 "Language: ca_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Colors"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importa"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Personalitza"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Diàlegs"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Configuració general"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Bloc 2"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Bloc 3"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Àlbums recents"
