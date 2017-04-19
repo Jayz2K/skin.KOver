@@ -16,6 +16,10 @@ msgstr ""
 "Language: nl_NL\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "Kover ontwerper"
+
 msgctxt "#31001"
 msgid "Home Menu"
 msgstr "Startmenu"
