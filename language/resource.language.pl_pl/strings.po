@@ -444,6 +444,10 @@ msgctxt "#31248"
 msgid "Fallback[CR]Picture"
 msgstr "Obraz[CR]zapasowy"
 
+msgctxt "#31252"
+msgid "Install NextUp notifications ..."
+msgstr "Zainstaluj powiadomienia NextUp ..."
+
 msgctxt "#31253"
 msgid "Continue watching ?"
 msgstr "Kontynuować odtwarzanie?"
@@ -624,6 +628,22 @@ msgctxt "#31323"
 msgid "Open the startup wizard..."
 msgstr "Otwórz kreatora startowego..."
 
+msgctxt "#31400"
+msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
+msgstr "[B]Konfiguracja interfejsu[/B][CR][CR]Wybór skóry[CR]Ustawienia regionalne[CR]Wygaszacz ekranu[CR]Kontrola dostępu"
+
 msgctxt "#31403"
 msgid "[B]Configure picture settings[/B][CR][CR]Set picture listing options[CR]Configure slideshow"
 msgstr "[B]Konfiguracja obrazów[/B][CR][CR]Listy obrazów[CR]Pokaz slajdów"
+
+msgctxt "#31404"
+msgid "[B]Configure weather settings[/B][CR][CR]Set various cities to collect weather information"
+msgstr "[B]Konfiguracja pogody[/B][CR][CR]Wybór dodatku · Wybór lokalizacji dla informacji pogodowych"
+
+msgctxt "#31406"
+msgid "[B]Configure system settings[/B][CR][CR]Setup and calibrate displays[CR]Configure audio output[CR]Setup remote controls[CR]Set power saving options[CR]Enable debugging[CR]Setup master lock"
+msgstr "[B]Konfiguracja systemu[/B][CR][CR]Wyświetlanie obrazu[CR]Odtwarzanie dźwięku[CR]Urządzenia wejściowe[CR]Oszczędzanie energii[CR]Dodatki[CR]Diagnostyka"
+
+msgctxt "#31408"
+msgid "[B]Configure add-ons[/B][CR][CR]Manage your installed add-ons[CR]Browse for and install add-ons from kodi.tv[CR]Modify add-on settings"
+msgstr "[B]KONFIGURACJA DODATKÓW[/B][CR][CR]Zarządzanie zainstalowanymi dodatkami[CR]Przeglądanie i instalowanie dodatków[CR]Modyfikacja ustawień dodatków"

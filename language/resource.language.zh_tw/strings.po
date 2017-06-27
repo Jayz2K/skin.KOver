@@ -16,6 +16,14 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgctxt "#31057"
+msgid "Recent albums"
+msgstr "最新專輯"
+
+msgctxt "#31058"
+msgid "Recommended albums"
+msgstr "推薦的專輯"
+
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "隨機專輯"
@@ -44,6 +52,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "旗幟"
 
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "縮圖"
+
 msgctxt "#31279"
 msgid "Clear Art"
 msgstr "透明美術圖"
@@ -59,6 +71,10 @@ msgstr "橫向"
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fanart"
+
+msgctxt "#31304"
+msgid "Seconds"
+msgstr "秒"
 
 msgctxt "#31307"
 msgid "Square"

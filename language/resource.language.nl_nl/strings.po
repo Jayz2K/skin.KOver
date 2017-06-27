@@ -296,13 +296,97 @@ msgctxt "#31069"
 msgid "Unselected items"
 msgstr "Niet geselecteerde bestanden"
 
+msgctxt "#31070"
+msgid "Unselected text 1[CR]icon"
+msgstr "Niet geselecteerde tekst 1[CR]icoon"
+
+msgctxt "#31071"
+msgid "Unselected text 2[CR](sub)"
+msgstr "Niet geselecteerde tekst 2[CR](sub)"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Niet geselecteerde tekst"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Selecteer icoon achtergrond"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Geselecteerde items"
+
+msgctxt "#31075"
+msgid "Selected text 1[CR]icon"
+msgstr "geselecteerde tekst 1[CR]icoon"
+
+msgctxt "#31076"
+msgid "Selected text 2[CR](sub)"
+msgstr "Geselcteerde tekst 2[CR](sub)"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Geselecteerde tekst"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Geslecteerde item achtergrond"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Geselecteerd item nummer"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Ongeldige tekst"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Klok"
 
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Schaduw"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Andere informatie"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Exporteer kleur schema"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Bloc 5 : submenu"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Bloc 5"
+
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "KODI sectie"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Naam:"
+
 msgctxt "#31089"
 msgid "Viewtype"
 msgstr "Type weergave"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Leeg"
+
+msgctxt "#31091"
+msgid "Choose the section where you want to edit the viewtype."
+msgstr "Kies welke sectie waar je het weergave type wilt veranderen"
+
+msgctxt "#31092"
+msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
+msgstr "Kies het weergavetype die u wilt bouwen/wijzigen. Druk links voor configuratie, klik of druk ENTER voor meer."
 
 msgctxt "#31123"
 msgid "Blocs background"
