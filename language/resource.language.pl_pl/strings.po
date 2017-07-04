@@ -136,6 +136,10 @@ msgctxt "#31029"
 msgid "Sidebar Position"
 msgstr "Pozycja menu boczne"
 
+msgctxt "#31030"
+msgid "Dialog panel position"
+msgstr "Pozycja panelu dialogowego"
+
 msgctxt "#31031"
 msgid "Sidebar Autohide"
 msgstr "Ukrywaj menu boczne"
@@ -223,6 +227,10 @@ msgstr "Menu boczne"
 msgctxt "#31062"
 msgid "Blocs background"
 msgstr "Tło bloków"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Okno dialogowe"
 
 msgctxt "#31067"
 msgid "Color editor"
@@ -396,6 +404,18 @@ msgctxt "#31216"
 msgid "DEFAULT"
 msgstr "DOMYŚLNY"
 
+msgctxt "#31218"
+msgid "Header Bkg"
+msgstr "Tło nagłówka"
+
+msgctxt "#31219"
+msgid "Header Title"
+msgstr "Tytuł nagłówka"
+
+msgctxt "#31221"
+msgid "Settings window"
+msgstr "Okno ustawień"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Ustawienia"
@@ -406,7 +426,7 @@ msgstr "UKRYTY"
 
 msgctxt "#31224"
 msgid "Scroll indicators"
-msgstr "Paski przewijania"
+msgstr "Wskaźniki przewijania"
 
 msgctxt "#31225"
 msgid "Art Type"
@@ -443,6 +463,10 @@ msgstr "Zainstaluj dodatek TvTunes ..."
 msgctxt "#31248"
 msgid "Fallback[CR]Picture"
 msgstr "Obraz[CR]zapasowy"
+
+msgctxt "#31251"
+msgid "Up Next..."
+msgstr "Do obejrzenia..."
 
 msgctxt "#31252"
 msgid "Install NextUp notifications ..."
