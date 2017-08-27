@@ -16,6 +16,22 @@ msgstr ""
 "Language: is_IS\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Litir"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Breidd"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Hæð"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Heim"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Nýlegar hljómplötur"
@@ -27,6 +43,14 @@ msgstr "Hljómplötur - mælt með"
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Hljómplötur af handahófi"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Klukka"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nafn:"
 
 msgctxt "#31089"
 msgid "Viewtype"
@@ -44,9 +68,49 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Færa til hægri"
 
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Til baka"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Veður"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Veðurspá"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Lárétt"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Lóðrétt"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Stillingar"
+
+msgctxt "#31226"
+msgid "Furnitures"
+msgstr "Húsgögn"
+
+msgctxt "#31232"
+msgid "Arrows"
+msgstr "Pílur"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Listar"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "Fela"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "Sýna alltaf"
 
 msgctxt "#31275"
 msgid "Poster"
@@ -60,10 +124,26 @@ msgctxt "#31282"
 msgid "Landscape"
 msgstr "Lárétt"
 
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Lárétt"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Lóðrétt"
+
 msgctxt "#31302"
 msgid "Fanart"
-msgstr "Fanart"
+msgstr "Aðdáendamyndir"
 
 msgctxt "#31304"
 msgid "Seconds"
 msgstr "Sekúndur"
+
+msgctxt "#31310"
+msgid "Not found !"
+msgstr "Fannst ekki !"
+
+msgctxt "#31315"
+msgid "Welcome"
+msgstr "Velkomin(n)"

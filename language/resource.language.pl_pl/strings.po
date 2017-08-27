@@ -244,6 +244,10 @@ msgctxt "#31069"
 msgid "Unselected items"
 msgstr "Pozycje niezaznaczone"
 
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Tekst niezaznaczony"
+
 msgctxt "#31074"
 msgid "Selected items"
 msgstr "Pozycje zaznaczone"
@@ -276,6 +280,10 @@ msgctxt "#31084"
 msgid "Export color scheme"
 msgstr "Eksportuj motyw kolorów"
 
+msgctxt "#31087"
+msgid "KODI Section"
+msgstr "Sekcja Kodi"
+
 msgctxt "#31088"
 msgid "Name :"
 msgstr "Nazwa :"
@@ -287,6 +295,10 @@ msgstr "Widok"
 msgctxt "#31090"
 msgid "Empty"
 msgstr "Pusty"
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr "Usuwa zawartość szablonu."
 
 msgctxt "#31123"
 msgid "Blocs background"
@@ -307,6 +319,10 @@ msgstr "Zmień poziom ustawień"
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Podmenu"
+
+msgctxt "#31131"
+msgid "Scrolling Orientation"
+msgstr "Kierunek przewijania"
 
 msgctxt "#31132"
 msgid "View Settings"

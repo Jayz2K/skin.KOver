@@ -388,6 +388,22 @@ msgctxt "#31092"
 msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
 msgstr "Kies het weergavetype die u wilt bouwen/wijzigen. Druk links voor configuratie, klik of druk ENTER voor meer."
 
+msgctxt "#31093"
+msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
+msgstr "Hernoem deze weergavetype. Dit zal worden getoond 'als in  in' in bibliotheek weergavetype selectie."
+
+msgctxt "#31094"
+msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
+msgstr "Voer de ingebouwde horizontale weergavetype in. een goed start voor zijbalk TOP of BODEM lay-out."
+
+msgctxt "#31095"
+msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
+msgstr "Voer de ingebouwde vertikale weergavetype in. een goed start voor zijbalk LINKS of RECHTS lay-out."
+
+msgctxt "#31096"
+msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
+msgstr "Verwijder het weergavetype. het zal niet meer beschikbaar zijn in bibliotheek weergavetype selectie."
+
 msgctxt "#31123"
 msgid "Blocs background"
 msgstr "Blokken achtergrond"
