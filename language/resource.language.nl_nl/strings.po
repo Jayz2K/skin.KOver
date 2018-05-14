@@ -404,6 +404,34 @@ msgctxt "#31096"
 msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
 msgstr "Verwijder het weergavetype. het zal niet meer beschikbaar zijn in bibliotheek weergavetype selectie."
 
+msgctxt "#31097"
+msgid "Apply imported/stored viewtype in template. This will overide the actual viewtype."
+msgstr "toepassen geïmporteerd / opgeslagen weergavetype  in sjabloon. Dit overschrijft het actuele weergavetype."
+
+msgctxt "#31098"
+msgid "Stores the actual viewtype in template. This overide the template content."
+msgstr "Slaat het actuele weergavetype op in de sjabloon. Dit overschrijft de sjablooninhoud."
+
+msgctxt "#31099"
+msgid "Export the template's content to a zip file. Be aware that the template's number is also stored."
+msgstr "Exporteer de inhoud van het sjabloon naar een zipbestand. Houd er rekening mee dat het nummer van de sjabloon ook wordt opgeslagen."
+
+msgctxt "#31100"
+msgid "Delete the template's content."
+msgstr "Verwijder de inhoud van het sjabloon."
+
+msgctxt "#31101"
+msgid "Toggle the element's visibility. IDLEFADE makes the element to disappear after  XX seconds (set by user)."
+msgstr "Schakel de zichtbaarheid van het element. IDLEFADE zorgt ervoor dat het element na XX seconden verdwijnt (ingesteld door gebruiker)."
+
+msgctxt "#31102"
+msgid "Change the layout orientation or scroll direction for lists."
+msgstr "Wijzig de lay-outoriëntatie of schuifrichting voor lijsten."
+
+msgctxt "#31103"
+msgid "Change the sidebar position. This is limited by the layout orientation."
+msgstr "Verander de positie van de zijbalk. Dit wordt beperkt door de oriëntatie van de layout."
+
 msgctxt "#31123"
 msgid "Blocs background"
 msgstr "Blokken achtergrond"

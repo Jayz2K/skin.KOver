@@ -18,7 +18,7 @@ msgstr ""
 
 msgctxt "#31001"
 msgid "Home Menu"
-msgstr "Menu d'accueil"
+msgstr "Menu d’accueil"
 
 msgctxt "#31002"
 msgid "Colors"
@@ -174,7 +174,7 @@ msgstr "Arrière-plan des blocs"
 
 msgctxt "#31063"
 msgid "Info bloc"
-msgstr "Bloc d'infos"
+msgstr "Bloc d’infos"
 
 msgctxt "#31064"
 msgid "Art bloc"
@@ -198,11 +198,11 @@ msgstr "Texte sélectionné"
 
 msgctxt "#31078"
 msgid "Selected item background"
-msgstr "Arrière-plan de l'élément sélectionné"
+msgstr "Arrière-plan de l’élément sélectionné"
 
 msgctxt "#31079"
 msgid "Selected item number"
-msgstr "Numéro de l'élément sélectionné"
+msgstr "Numéro de l’élément sélectionné"
 
 msgctxt "#31080"
 msgid "Invalid text"
@@ -262,7 +262,7 @@ msgstr "Définir 'CACHER' pour cacher le bloc 3 (illustration) quand le sous-men
 
 msgctxt "#31120"
 msgid "Set 'HIDE' to hide bloc 4 (Video/Home art) when submenu/options list has focus. Useful when blocs share the same position."
-msgstr "Définir 'CACHER' pour cacher le bloc 4 (illustration des vidéos ou de l'accueil) quand le sous-menu ou la liste des options sont ciblés. Utile quand des blocs partagent la même position."
+msgstr "Définir 'CACHER' pour cacher le bloc 4 (illustration des vidéos ou de l’accueil) quand le sous-menu ou la liste des options sont ciblés. Utile quand des blocs partagent la même position."
 
 msgctxt "#31123"
 msgid "Blocs background"
@@ -282,7 +282,7 @@ msgstr "Déplacer à droite"
 
 msgctxt "#31136"
 msgid "Change icon"
-msgstr "Changer l'icône"
+msgstr "Changer l’icône"
 
 msgctxt "#31145"
 msgid "PVR"
@@ -302,7 +302,7 @@ msgstr "Prévisions météorologiques"
 
 msgctxt "#31149"
 msgid "Edit Home menu..."
-msgstr "Modifier le menu d'accueil..."
+msgstr "Modifier le menu d’accueil..."
 
 msgctxt "#31151"
 msgid "Import / Export"
@@ -334,51 +334,51 @@ msgstr "Importer..."
 
 msgctxt "#31164"
 msgid "Backup all viewtype (without Home menu)"
-msgstr "Sauvegarder tous les types de vue (sans le menu d'accueil)"
+msgstr "Sauvegarder tous les types de vue (sans le menu d’accueil)"
 
 msgctxt "#31165"
 msgid "Backup Home menu"
-msgstr "Sauvegarder le menu d'accueil"
+msgstr "Sauvegarder le menu d’accueil"
 
 msgctxt "#31166"
 msgid "Full backup (viewtypes and Home menu)"
-msgstr "Sauvegarde complète (types de vue et menu d'accueil)"
+msgstr "Sauvegarde complète (types de vue et menu d’accueil)"
 
 msgctxt "#31184"
 msgid "Backup ALL current viewtypes (from all sections). Home menu is not included. Useful for sharing a complete viewtypes' set."
-msgstr "Sauvegarder TOUS les types de vue actuels (de toutes les sections). Le menu d'accueil est exclu. Utile pour partager un ensemble complet de types de vue."
+msgstr "Sauvegarder TOUS les types de vue actuels (de toutes les sections). Le menu d’accueil est exclu. Utile pour partager un ensemble complet de types de vue."
 
 msgctxt "#31185"
 msgid "Backup Home menu. Viewtypes are not included."
-msgstr "Sauvegarder le menu d'accueil. Les types de vue sont exclus."
+msgstr "Sauvegarder le menu d’accueil. Les types de vue sont exclus."
 
 msgctxt "#31186"
 msgid "Full backup. Viewtypes AND Home menu are included. Useful for duplication on user's multiple devices."
-msgstr "Sauvegarde complète. Les types de vue et le menu d'accueil sont inclus. Utile pour reproduire sur les différents appareils de l'utilisateur."
+msgstr "Sauvegarde complète. Les types de vue et le menu d’accueil sont inclus. Utile pour reproduire sur les différents appareils de l’utilisateur."
 
 msgctxt "#31187"
 msgid "Backup current viewtypes from 'Home' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarder les types de vue actuels de la section « Accueil ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+msgstr "Sauvegarder les types de vue actuels de la section « Accueil ». Le menu d’accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31188"
 msgid "Backup current viewtypes from 'Video' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarder les types de vue actuels de la section « Vidéo ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+msgstr "Sauvegarder les types de vue actuels de la section « Vidéo ». Le menu d’accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31189"
 msgid "Backup current viewtypes from 'Music' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarder les types de vue actuels de la section « Musique ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+msgstr "Sauvegarder les types de vue actuels de la section « Musique ». Le menu d’accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31190"
 msgid "Backup current viewtypes from 'Pictures' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarder les types de vue actuels de la section « Images ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+msgstr "Sauvegarder les types de vue actuels de la section « Images ». Le menu d’accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31191"
 msgid "Backup current viewtypes from 'TV' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarder les types de vue actuels de la section « Télé ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+msgstr "Sauvegarder les types de vue actuels de la section « Télé ». Le menu d’accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31192"
 msgid "Backup current viewtypes from 'Programs' section. Home menu is not included. Useful for sharing a viewtypes' set."
-msgstr "Sauvegarder les types de vue actuels de la section « Programmes ». Le menu d'accueil est exclu. Utile pour partager un ensemble de types de vue."
+msgstr "Sauvegarder les types de vue actuels de la section « Programmes ». Le menu d’accueil est exclu. Utile pour partager un ensemble de types de vue."
 
 msgctxt "#31194"
 msgid "Show 'Watched' flags"
@@ -406,15 +406,15 @@ msgstr "VALEUR PAR DÉFAUT"
 
 msgctxt "#31218"
 msgid "Header Bkg"
-msgstr "Arrière-plan de l'en-tête"
+msgstr "Arrière-plan de l’en-tête"
 
 msgctxt "#31219"
 msgid "Header Title"
-msgstr "Titre de l'en-tête"
+msgstr "Titre de l’en-tête"
 
 msgctxt "#31220"
 msgid "Header Subtitle"
-msgstr "Sous-titre de l'en tête"
+msgstr "Sous-titre de l’en tête"
 
 msgctxt "#31221"
 msgid "Settings window"
@@ -674,7 +674,7 @@ msgstr "Ne plus afficher"
 
 msgctxt "#31323"
 msgid "Open the startup wizard..."
-msgstr "Ouvrir l'assistant de démarrage..."
+msgstr "Ouvrir l’assistant de démarrage..."
 
 msgctxt "#31324"
 msgid "Do not turn off your device or force close KODI."

@@ -20,6 +20,14 @@ msgctxt "#31006"
 msgid "Wallpaper"
 msgstr "Baggrund"
 
+msgctxt "#31057"
+msgid "Recent albums"
+msgstr "Seneste albummer"
+
+msgctxt "#31058"
+msgid "Recommended albums"
+msgstr "Anbefalede albummer"
+
 msgctxt "#31059"
 msgid "Random albums"
 msgstr "Tilfældige albummer"
@@ -67,6 +75,10 @@ msgstr "Landskab"
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Fankunst"
+
+msgctxt "#31304"
+msgid "Seconds"
+msgstr "Sekunder"
 
 msgctxt "#31307"
 msgid "Square"

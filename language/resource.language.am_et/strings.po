@@ -16,10 +16,114 @@ msgstr ""
 "Language: am_ET\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "የ ቤት ዝርዝር"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "ቀለሞች"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "ማምጫ"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "ማስተካከያ"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "ንግግር"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "መመልከቻ እንደገና መሰየሚያ"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "ስፋት"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "እርዝመት"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "ቤት"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "መቀነሻ"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "የ ጎን መደርደሪያ"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "ንግግር"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "ቀለም ማረሚያ"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "ያልተመረጠ ምልክት"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "ያልተመረጠ እቃ"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "ያልተመረጠ ጽሁፍ"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "ሰአት"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "ጥላ"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "ባዶ"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "ንዑስ ዝርዝር"
 
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "መመልከቻ ማሰናጃዎች"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "የ አየር ንብረት"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "በ አግድም"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "በ ቁመት"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "ማምጫ"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "ማሰናጃዎች"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "በ አግድም"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "በ ቁመት"

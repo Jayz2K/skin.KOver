@@ -20,6 +20,46 @@ msgctxt "#31006"
 msgid "Wallpaper"
 msgstr "Tapeta"
 
+msgctxt "#31035"
+msgid "visibility"
+msgstr "viditeľnosť"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Vertikálna pozícia (riadok)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Šírka"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Výška"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Typ zoznamu"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Obrázok na[CR]pozadie"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Zoznam: Označená položka 1"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Informácie o titulkách"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Zoznam: Neoznačená položka 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Zoznam: Neoznačená položka 3"
+
 msgctxt "#31057"
 msgid "Recent albums"
 msgstr "Najnovšie albumy"

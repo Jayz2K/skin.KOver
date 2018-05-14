@@ -21,6 +21,7 @@
 		<summary lang="es_ES">KOver [Kodi Overlay]. Una skin personalizable. Construye tus propias vistas y tus paletas de colores.</summary>
 		<summary lang="fi_FI">KOver [Kodi Overlay]. Muokattava ulkoasu. Luo omat näkymät ja väriteemat.</summary>
 		<summary lang="fr_FR">KOver [Kodi Overlay]. Un habillage personnalisable. Constuisez vos propres vues et palettes de couleurs.</summary>
+		<summary lang="gl_ES">KOver [Kodi Overlay]. Un tema personalizábel. Crea os teus propios conxuntos de vistas e cores.</summary>
 		<summary lang="it_IT">KOver [Kodi Overlay]. Una skin personalizzabile. Costruisci le tue viste e set di colori.</summary>
 		<summary lang="lt_LT">KOver [Kodi Overlay]. Pritaikoma pagal poreikius teminė išvaizda. Susikurkite savus rodinius ir spalvų rinkinius.</summary>
 		<summary lang="ms_MY">KOver [Kodi Overlay]. Satu kulit bolehsuai. Bina paparan dan set warna anda sendiri.</summary>
@@ -39,7 +40,7 @@
 		<description lang="ms_MY">KOver (untuk Tindihan Atas KODI) menyediakan pelbagai pendekatan untuk kulit KODI. Bukan sahaja semata-mata direka, ia juga menawarkan keupayaan menyuai dan menghasilkan beribu-ribu konfigurasi. KOver membenamkan dua penyunting WYSIWYG yang hebat : Pereka dan alat Warna. Alih, saiz semula, ubah kandungan dan warna ... jadikan kulit tersebut hasil ciptaan anda !</description>
 		<description lang="nl_NL">KOver (voor KODI Overlay) biedt een andere aanpak van KODI skins. Niet alleen puur ontworpen, het biedt ook de gebruiker de mogelijkheid om het aan te passen en duizenden configuraties te maken. KOver heeft twee krachtige WYSIWYG-editors: De Designer en de kleur tool. Verplaats, verander de grootte, verander de inhoud en de kleuren ... maak het van jou!</description>
 		<description lang="pt_BR">Kover (para KODI Overlay) oferece uma abordagem diferente das demais skins para Kodi. Não apenas puramente projetada, mas também oferece ao usuário a possibilidade de personalizá-lo e fazer milhares de configurações. Kover incorpora dois poderosos editores WYSIWYG: O Designer e a ferramenta Color. Mova, redimensione, altere conteúdos e cores ... Faça você mesmo!</description>
-		<disclaimer lang="bg_BG">Ползването на мишка и чуствителни на допир монитори не се поддържа</disclaimer>
+		<disclaimer lang="bg_BG">Мишки и чувствителни на допир устройства не се поддържат</disclaimer>
 		<disclaimer lang="cs_CZ">Myš a dotyková zařízení nejsou podporována</disclaimer>
 		<disclaimer lang="de_DE">Maus und Touch-Geräte werden nicht unterstützt</disclaimer>
 		<disclaimer lang="en_GB">Mouse and Touch device not supported</disclaimer>
@@ -48,6 +49,7 @@
 		<disclaimer lang="es_ES">No se soporta ratón ni táctil</disclaimer>
 		<disclaimer lang="fi_FI">Hiiren tai kosketusnäytön käyttöä ei tueta</disclaimer>
 		<disclaimer lang="fr_FR">Souris et appareils tactiles non pris en charge</disclaimer>
+		<disclaimer lang="gl_ES">Rato e dispositivos táctiles non soportados</disclaimer>
 		<disclaimer lang="he_IL">אין תמיכה בעכבר או מסכי מגע</disclaimer>
 		<disclaimer lang="it_IT">Mouse e dispositivi Touch non supportati</disclaimer>
 		<disclaimer lang="lt_LT">Pelė ir liečiamieji įrenginiai nepalaikomi.</disclaimer>

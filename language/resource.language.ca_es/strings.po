@@ -94,7 +94,7 @@ msgstr "Cartell"
 
 msgctxt "#31277"
 msgid "Banner"
-msgstr "Banner"
+msgstr "Bàner"
 
 msgctxt "#31281"
 msgid "Disc Art"

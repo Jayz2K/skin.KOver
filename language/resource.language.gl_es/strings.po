@@ -16,9 +16,153 @@ msgstr ""
 "Language: gl_ES\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "Deseñador de KOver"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Menú Principal"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Cores"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Importar"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Personalizar"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Diálogos "
+
 msgctxt "#31006"
 msgid "Wallpaper"
 msgstr "Imaxe de fondo"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Configuración Xeral"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Renomear Vista"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "A miña plantilla 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "A miña plantilla 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "A miña plantilla 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Eliminar Vista"
+
+msgctxt "#31024"
+msgid "Apply Template To View"
+msgstr "Aplicar a plantilla na vista"
+
+msgctxt "#31025"
+msgid "Copy  View To Template"
+msgstr "Copiar a vista na plantilla"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Eliminar Plantilla"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Exportar Plantilla"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Separador Horizontal"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Separador Vertical"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "visibilidade"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Posición Horizontal (columna)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Posición Vertical (fila)"
+
+msgctxt "#31038"
+msgid "Width"
+msgstr "Largo"
+
+msgctxt "#31039"
+msgid "Height"
+msgstr "Alto"
+
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Fondo[CR]Estilo"
+
+msgctxt "#31041"
+msgid "List Type"
+msgstr "Tipo de lista"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Fondo[CR]Imaxe"
+
+msgctxt "#31043"
+msgid "List : Selected item 1"
+msgstr "Lista: Elemento seleccionado 1"
+
+msgctxt "#31045"
+msgid "List : Unselected item 2"
+msgstr "Lista: Elemento non seleccionado 2"
+
+msgctxt "#31046"
+msgid "List : Unselected item 3"
+msgstr "Lista: Elemento non seleccionado 3"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "Ex.: Duración"
+
+msgctxt "#31050"
+msgid "Selected Item Tag"
+msgstr "Etiqueta do elemento seleccionado"
+
+msgctxt "#31051"
+msgid "Home"
+msgstr "Inicio"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Vídeo sempre arriba"
+
+msgctxt "#31054"
+msgid "Extra art"
+msgstr "Arte adicional"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Aumentar"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Diminuír "
 
 msgctxt "#31057"
 msgid "Recent albums"
@@ -32,25 +176,229 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Álbums ó chou"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Xanela"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Diálogo"
+
+msgctxt "#31067"
+msgid "Color editor"
+msgstr "Editor de cores"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Iconas non seleccionadas"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Elementos non seleccionados"
+
+msgctxt "#31070"
+msgid "Unselected text 1[CR]icon"
+msgstr "Texto non seleccionado 1[CR]icona"
+
+msgctxt "#31071"
+msgid "Unselected text 2[CR](sub)"
+msgstr "Texto non seleccionado 2[CR](sub)"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Texto non seleccionado"
+
+msgctxt "#31073"
+msgid "Selected icon background"
+msgstr "Fondo da icona seleccionada"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Elementos seleccionados"
+
+msgctxt "#31075"
+msgid "Selected text 1[CR]icon"
+msgstr "Texto seleccionado 1[CR]icona"
+
+msgctxt "#31076"
+msgid "Selected text 2[CR](sub)"
+msgstr "Texto seleccionado 2[CR](sub)"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Texto seleccionado"
+
+msgctxt "#31078"
+msgid "Selected item background"
+msgstr "Fondo do elemento seleccionado"
+
+msgctxt "#31079"
+msgid "Selected item number"
+msgstr "Número do elemento seleccionado"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Texto non válido"
+
+msgctxt "#31081"
+msgid "Clock"
+msgstr "Reloxo"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Sombra"
+
+msgctxt "#31083"
+msgid "Other infos"
+msgstr "Outras informacións"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Exportar esquema de cor"
+
+msgctxt "#31088"
+msgid "Name :"
+msgstr "Nome :"
+
 msgctxt "#31089"
 msgid "Viewtype"
 msgstr "Tipo de Vista"
+
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Baleiro"
 
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Submenú"
 
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Ver Axustes"
+
+msgctxt "#31134"
+msgid "Move left"
+msgstr "Mover á esquerda"
+
+msgctxt "#31135"
+msgid "Move right"
+msgstr "Mover á dereita"
+
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Mudar icona"
+
+msgctxt "#31143"
+msgid "Go Back"
+msgstr "Volver"
+
 msgctxt "#31145"
 msgid "PVR"
 msgstr "PVR"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Canles de TV"
+
+msgctxt "#31147"
+msgid "Weather"
+msgstr "Meteoroloxía"
+
+msgctxt "#31148"
+msgid "Weather Forecast"
+msgstr "Predición meteorolóxica"
+
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Editar Menú de Inicio..."
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Importar / Exportar"
+
+msgctxt "#31153"
+msgid "Enable Designer"
+msgstr "Activar Deseñador"
+
+msgctxt "#31154"
+msgid "Enable Color tool"
+msgstr "Activar Ferramenta de Cor"
+
+msgctxt "#31155"
+msgid "Show Debug Infos"
+msgstr "Amosar Info. de depuración"
+
+msgctxt "#31157"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgctxt "#31158"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Clásico"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Importar..."
 
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Configuracións"
 
+msgctxt "#31231"
+msgid "Scroll flags"
+msgstr "Desprazar etiquetas"
+
 msgctxt "#31232"
 msgid "Arrows"
 msgstr "Frechas"
+
+msgctxt "#31233"
+msgid "Lists"
+msgstr "Listas"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Cargando..."
+
+msgctxt "#31235"
+msgid "Home Menu size"
+msgstr "Tamaño do Menú de Inicio"
+
+msgctxt "#31240"
+msgid "Move"
+msgstr "Mover"
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr "Redimensionar"
+
+msgctxt "#31242"
+msgid "Keep OSD controls always sticking to bottom"
+msgstr "Manter controis do OSD sempre na parte inferior"
+
+msgctxt "#31244"
+msgid "Install TvTunes ..."
+msgstr "Instalar TvTunes..."
+
+msgctxt "#31245"
+msgid "Audio / Video themes"
+msgstr "Temas de Son / Vídeo"
+
+msgctxt "#31253"
+msgid "Continue watching ?"
+msgstr "Seguir a ver?"
+
+msgctxt "#31254"
+msgid "Do not show"
+msgstr "Non amosar"
+
+msgctxt "#31255"
+msgid "Always show"
+msgstr "Amosar sempre"
 
 msgctxt "#31272"
 msgid "Wide List"
@@ -59,6 +407,10 @@ msgstr "Listaxe Ampla"
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Póster"
+
+msgctxt "#31276"
+msgid "Fixed List"
+msgstr "Lista fixa"
 
 msgctxt "#31277"
 msgid "Banner"
@@ -79,6 +431,38 @@ msgstr "Disc Art"
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Apaisado"
+
+msgctxt "#31285"
+msgid "KODI Subtitles"
+msgstr "Subtítulos do KODI"
+
+msgctxt "#31286"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgctxt "#31287"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "#31288"
+msgid "Stick to Top"
+msgstr "Pegar na parte superior"
+
+msgctxt "#31289"
+msgid "Stick to Bottom"
+msgstr "Pegar na parte inferior"
+
+msgctxt "#31290"
+msgid "Stick to Left"
+msgstr "Pegar á esquerda"
+
+msgctxt "#31291"
+msgid "Stick to Right"
+msgstr "Pegar á dereita"
+
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Sempre visíbel"
 
 msgctxt "#31302"
 msgid "Fanart"

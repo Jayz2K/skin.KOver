@@ -60,6 +60,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Баннеры"
 
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Палец"
+
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Landscape"
@@ -75,3 +79,7 @@ msgstr "Секунды"
 msgctxt "#31307"
 msgid "Square"
 msgstr "Квадрат"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Большие"

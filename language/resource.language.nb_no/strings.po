@@ -484,6 +484,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Banner"
 
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Håndtak"
+
 msgctxt "#31279"
 msgid "Clear Art"
 msgstr "Clear Art"
