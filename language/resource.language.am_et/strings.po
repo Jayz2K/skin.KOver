@@ -100,6 +100,14 @@ msgctxt "#31132"
 msgid "View Settings"
 msgstr "መመልከቻ ማሰናጃዎች"
 
+msgctxt "#31134"
+msgid "Move left"
+msgstr "ወደ ግራ ማንቀሳቀሻ "
+
+msgctxt "#31135"
+msgid "Move right"
+msgstr "ወደ ቀኝ ማንቀሳቀሻ "
+
 msgctxt "#31147"
 msgid "Weather"
 msgstr "የ አየር ንብረት"

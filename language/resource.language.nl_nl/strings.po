@@ -50,7 +50,7 @@ msgstr "Algemene setup"
 
 msgctxt "#31008"
 msgid "Blocs background"
-msgstr "Blokken achtergrond"
+msgstr "Blokken-achtergrond"
 
 msgctxt "#31009"
 msgid "Bloc 1 : List"
@@ -78,7 +78,7 @@ msgstr "blok 3"
 
 msgctxt "#31015"
 msgid "Bloc 4 : Playing Video"
-msgstr "Blok 4 : afspelende video"
+msgstr "Blok 4 : Afspelende video"
 
 msgctxt "#31016"
 msgid "Bloc 4"
@@ -86,7 +86,7 @@ msgstr "Blok 4"
 
 msgctxt "#31017"
 msgid "Rename View"
-msgstr "Hernoem vertoning"
+msgstr "Vertoning hernoemen"
 
 msgctxt "#31018"
 msgid "Apply Default Horizontal"
@@ -114,31 +114,31 @@ msgstr "Verwijder vertoning"
 
 msgctxt "#31024"
 msgid "Apply Template To View"
-msgstr "toepassen sjabloon naar weergave"
+msgstr "Toepassen sjabloon naar weergave"
 
 msgctxt "#31025"
 msgid "Copy  View To Template"
-msgstr "kopieer weergaven naar sjabloon"
+msgstr "Kopieer weergaven naar sjabloon"
 
 msgctxt "#31026"
 msgid "Delete Template"
-msgstr "verwijder sjabloon"
+msgstr "Verwijder sjabloon"
 
 msgctxt "#31027"
 msgid "Export Template"
-msgstr "exporteer sjabloon"
+msgstr "Exporteer sjabloon"
 
 msgctxt "#31028"
 msgid "Layout Orientation"
-msgstr "lay-out orientatie"
+msgstr "Ontwerporientatie"
 
 msgctxt "#31029"
 msgid "Sidebar Position"
-msgstr "Zijblak positie"
+msgstr "Zijbalkpositie"
 
 msgctxt "#31030"
 msgid "Dialog panel position"
-msgstr "dialoog paneel positie"
+msgstr "Dialoog paneelpositie"
 
 msgctxt "#31031"
 msgid "Sidebar Autohide"
@@ -146,15 +146,15 @@ msgstr "Zijbalk automatisch verbergen"
 
 msgctxt "#31032"
 msgid "Dialog slide type"
-msgstr "dialoog glij type"
+msgstr "Dialoog glij-type"
 
 msgctxt "#31033"
 msgid "Horizontal Separator"
-msgstr "horizontaal afscheider"
+msgstr "Horizontale scheidslijn"
 
 msgctxt "#31034"
 msgid "Vertical Separator"
-msgstr "verticaal afscheider"
+msgstr "Verticale scheidslijn"
 
 msgctxt "#31035"
 msgid "visibility"
@@ -166,11 +166,11 @@ msgstr "Horizontale positie (kolom)"
 
 msgctxt "#31037"
 msgid "Vertical Position (row)"
-msgstr "Vertikale positie (rij)"
+msgstr "Verticale positie (rij)"
 
 msgctxt "#31038"
 msgid "Width"
-msgstr "breedte"
+msgstr "Breedte"
 
 msgctxt "#31039"
 msgid "Height"
@@ -182,43 +182,43 @@ msgstr "Achtergrond[CR]stijl"
 
 msgctxt "#31041"
 msgid "List Type"
-msgstr "Lijst type"
+msgstr "Lijsttype"
 
 msgctxt "#31042"
 msgid "Background[CR]Image"
-msgstr "achtergrond[CR]afbeelding"
+msgstr "Achtergrond[CR]afbeelding"
 
 msgctxt "#31043"
 msgid "List : Selected item 1"
-msgstr "lijst : Geselecteerde bestand 1"
+msgstr "Lijst : Geselecteerd bestand 1"
 
 msgctxt "#31044"
 msgid "Sub info"
-msgstr "Ondertitel info"
+msgstr "Ondertitelinformatie"
 
 msgctxt "#31045"
 msgid "List : Unselected item 2"
-msgstr "lijst : niet geselecteerde bestand 2"
+msgstr "Lijst : Niet-geselecteerd bestand 2"
 
 msgctxt "#31046"
 msgid "List : Unselected item 3"
-msgstr "Lijst : niet geselecteerde bestand 3"
+msgstr "Lijst : Niet-geselecteerd bestand 3"
 
 msgctxt "#31047"
 msgid "Info Bloc : Sub info"
-msgstr "info blok : ondertitel informatie"
+msgstr "Informatieblok : ondertitelinformatie"
 
 msgctxt "#31048"
 msgid "Text 3 - Informations plot [CR]about the selected item in bloc 1"
-msgstr "tekst 3 - informatie plot [CR]over het geselecteerde bestand in blok 1"
+msgstr "Tekst 3 - informatieplot[CR]over het geselecteerde bestand in blok 1"
 
 msgctxt "#31049"
 msgid "Ex : Duration"
-msgstr "Ex : duur"
+msgstr "Ex : Lengte"
 
 msgctxt "#31050"
 msgid "Selected Item Tag"
-msgstr "Selecteer bestand tag"
+msgstr "Selecteer bestandstag"
 
 msgctxt "#31051"
 msgid "Home"
@@ -230,7 +230,7 @@ msgstr "Video bovenin"
 
 msgctxt "#31053"
 msgid "Visualisation presets"
-msgstr "Visualisatie voorinstelling"
+msgstr "Visualisatie-voorkeuzes"
 
 msgctxt "#31054"
 msgid "Extra art"
@@ -242,7 +242,7 @@ msgstr "Vergroten"
 
 msgctxt "#31056"
 msgid "Decrease"
-msgstr "verkleinen"
+msgstr "Verkleinen"
 
 msgctxt "#31057"
 msgid "Recent albums"
@@ -262,55 +262,55 @@ msgstr "Scherm"
 
 msgctxt "#31061"
 msgid "Sidebar"
-msgstr "zijbalk"
+msgstr "Zijbalk"
 
 msgctxt "#31062"
 msgid "Blocs background"
-msgstr "Blokken achtergrond"
+msgstr "Blokken-achtergrond"
 
 msgctxt "#31063"
 msgid "Info bloc"
-msgstr "info blok"
+msgstr "informatieblok"
 
 msgctxt "#31064"
 msgid "Art bloc"
-msgstr "kunst blok"
+msgstr "Kunstblok"
 
 msgctxt "#31065"
 msgid "Video bloc"
-msgstr "Video blok"
+msgstr "Videoblok"
 
 msgctxt "#31066"
 msgid "Dialog"
-msgstr "dialoog"
+msgstr "Dialoog"
 
 msgctxt "#31067"
 msgid "Color editor"
-msgstr "kleur aanpasser"
+msgstr "Kleur aanpasser"
 
 msgctxt "#31068"
 msgid "Unselected icons"
-msgstr "niet geselecteerde iconen"
+msgstr "Niet-geselecteerde iconen"
 
 msgctxt "#31069"
 msgid "Unselected items"
-msgstr "Niet geselecteerde bestanden"
+msgstr "Niet-geselecteerde bestanden"
 
 msgctxt "#31070"
 msgid "Unselected text 1[CR]icon"
-msgstr "Niet geselecteerde tekst 1[CR]icoon"
+msgstr "Niet-geselecteerde tekst 1[CR]icoon"
 
 msgctxt "#31071"
 msgid "Unselected text 2[CR](sub)"
-msgstr "Niet geselecteerde tekst 2[CR](sub)"
+msgstr "Niet-geselecteerde tekst 2[CR](sub)"
 
 msgctxt "#31072"
 msgid "Unselected text"
-msgstr "Niet geselecteerde tekst"
+msgstr "Niet-geselecteerde tekst"
 
 msgctxt "#31073"
 msgid "Selected icon background"
-msgstr "Selecteer icoon achtergrond"
+msgstr "Selecteer icoonachtergrond"
 
 msgctxt "#31074"
 msgid "Selected items"
@@ -318,11 +318,11 @@ msgstr "Geselecteerde items"
 
 msgctxt "#31075"
 msgid "Selected text 1[CR]icon"
-msgstr "geselecteerde tekst 1[CR]icoon"
+msgstr "Geselecteerde tekst 1[CR]icoon"
 
 msgctxt "#31076"
 msgid "Selected text 2[CR](sub)"
-msgstr "Geselcteerde tekst 2[CR](sub)"
+msgstr "Geselecteerde tekst 2[CR](sub)"
 
 msgctxt "#31077"
 msgid "Selected text"
@@ -330,11 +330,11 @@ msgstr "Geselecteerde tekst"
 
 msgctxt "#31078"
 msgid "Selected item background"
-msgstr "Geslecteerde item achtergrond"
+msgstr "Geslecteerde itemachtergrond"
 
 msgctxt "#31079"
 msgid "Selected item number"
-msgstr "Geselecteerd item nummer"
+msgstr "Geselecteerd itemnummer"
 
 msgctxt "#31080"
 msgid "Invalid text"
@@ -354,19 +354,19 @@ msgstr "Andere informatie"
 
 msgctxt "#31084"
 msgid "Export color scheme"
-msgstr "Exporteer kleur schema"
+msgstr "Exporteer kleurenschema"
 
 msgctxt "#31085"
 msgid "Bloc 5 : Submenu"
-msgstr "Bloc 5 : submenu"
+msgstr "Blok 5 : submenu"
 
 msgctxt "#31086"
 msgid "Bloc 5"
-msgstr "Bloc 5"
+msgstr "Blok 5"
 
 msgctxt "#31087"
 msgid "KODI Section"
-msgstr "KODI sectie"
+msgstr "KODI-sectie"
 
 msgctxt "#31088"
 msgid "Name :"
@@ -374,7 +374,7 @@ msgstr "Naam:"
 
 msgctxt "#31089"
 msgid "Viewtype"
-msgstr "Type weergave"
+msgstr "Weergavetype"
 
 msgctxt "#31090"
 msgid "Empty"
@@ -382,31 +382,31 @@ msgstr "Leeg"
 
 msgctxt "#31091"
 msgid "Choose the section where you want to edit the viewtype."
-msgstr "Kies welke sectie waar je het weergave type wilt veranderen"
+msgstr "Kies de sectie waar je het weergavetype wilt veranderen"
 
 msgctxt "#31092"
 msgid "Choose the viewtype you want to build/edit. Press right for config, click or press ENTER for more."
-msgstr "Kies het weergavetype die u wilt bouwen/wijzigen. Druk links voor configuratie, klik of druk ENTER voor meer."
+msgstr "Kies het weergavetype dat u wilt bouwen/wijzigen. Druk links voor configuratie, klik of druk ENTER voor meer."
 
 msgctxt "#31093"
 msgid "Rename the viewtype. This will be shown 'as is' in library viewtype selection."
-msgstr "Hernoem deze weergavetype. Dit zal worden getoond 'als in  in' in bibliotheek weergavetype selectie."
+msgstr "Hernoem dit weergavetype. Dit zal worden getoond 'als in' in bibliotheek weergavetype selectie."
 
 msgctxt "#31094"
 msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
-msgstr "Voer de ingebouwde horizontale weergavetype in. een goed start voor zijbalk TOP of BODEM lay-out."
+msgstr "Voer het ingebouwde horizontale weergavetype in. Een goede start voor zijbalk TOP of BODEM lay-out."
 
 msgctxt "#31095"
 msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
-msgstr "Voer de ingebouwde vertikale weergavetype in. een goed start voor zijbalk LINKS of RECHTS lay-out."
+msgstr "Voer het ingebouwde verticale weergavetype in. Een goede start voor zijbalk LINKS of RECHTS lay-out."
 
 msgctxt "#31096"
 msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
-msgstr "Verwijder het weergavetype. het zal niet meer beschikbaar zijn in bibliotheek weergavetype selectie."
+msgstr "Verwijder het weergavetype. Het zal niet meer beschikbaar zijn in de bibliotheek-weergavetypeselectie."
 
 msgctxt "#31097"
 msgid "Apply imported/stored viewtype in template. This will overide the actual viewtype."
-msgstr "toepassen geïmporteerd / opgeslagen weergavetype  in sjabloon. Dit overschrijft het actuele weergavetype."
+msgstr "Toepassen van geïmporteerd / opgeslagen weergavetype in sjabloon. Dit overschrijft het actuele weergavetype."
 
 msgctxt "#31098"
 msgid "Stores the actual viewtype in template. This overide the template content."
@@ -426,7 +426,7 @@ msgstr "Schakel de zichtbaarheid van het element. IDLEFADE zorgt ervoor dat het 
 
 msgctxt "#31102"
 msgid "Change the layout orientation or scroll direction for lists."
-msgstr "Wijzig de lay-outoriëntatie of schuifrichting voor lijsten."
+msgstr "Wijzig de layout-oriëntatie of schuifrichting voor lijsten."
 
 msgctxt "#31103"
 msgid "Change the sidebar position. This is limited by the layout orientation."

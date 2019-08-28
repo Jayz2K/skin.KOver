@@ -728,6 +728,14 @@ msgctxt "#31177"
 msgid "Enable this option to show debug infos (advanced)."
 msgstr "Enable this option to show debug infos (advanced)."
 
+msgctxt "#31178"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in horizontal  / bottom position. Recommended for a mximum view of the playing video."
+msgstr "Automatically create viewtypes in all sections for a PVR use. Viewtypes will be set 1/3 of the screen in horizontal  / bottom position. Recommended for a maximum view of the playing video."
+
+msgctxt "#31179"
+msgid "Automatically create viewtypes in all sections for a PVR use. Vewtypes will be set 1/3 of the screen in vertical / left position. Recommended for a mximum view of the playing video."
+msgstr "Automatically create viewtypes in all sections for a PVR use. Viewtypes will be set 1/3 of the screen in vertical / left position. Recommended for a maximum view of the playing video."
+
 msgctxt "#31180"
 msgid "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 3/3 of the screen. Recommended for medias library player."
 msgstr "Automatically create viewtypes in all sections for a fullscreen use. Vewtypes will be set 3/3 of the screen. Recommended for medias library player."
@@ -868,6 +876,10 @@ msgctxt "#31214"
 msgid "Backup current color set."
 msgstr "Backup current colour set."
 
+msgctxt "#31215"
+msgid "Install Image ressource addon (studio logos) ..."
+msgstr "Install Image resource addon (studio logos) ..."
+
 msgctxt "#31216"
 msgid "DEFAULT"
 msgstr "DEFAULT"
@@ -987,6 +999,10 @@ msgstr "Install TvTunes ..."
 msgctxt "#31245"
 msgid "Audio / Video themes"
 msgstr "Audio / Video themes"
+
+msgctxt "#31246"
+msgid "Image ressource (studios) allows KOver to display studios logos in movies / shows infos."
+msgstr "Image resource (studios) allows KOver to display studios logos in movies / shows infos."
 
 msgctxt "#31247"
 msgid "TvTunes allows KOver to play audio / video themes in movies and tv shows libraries."
@@ -1271,6 +1287,10 @@ msgstr "Go to Designer"
 msgctxt "#31318"
 msgid "Exit"
 msgstr "Exit"
+
+msgctxt "#31319"
+msgid "Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window."
+msgstr "Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window."
 
 msgctxt "#31320"
 msgid "Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window."

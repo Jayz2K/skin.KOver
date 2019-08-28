@@ -92,6 +92,10 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Transparent"
 
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Náhľad"
+
 msgctxt "#31281"
 msgid "Disc Art"
 msgstr "Disc Art"
@@ -107,3 +111,7 @@ msgstr "Fanart"
 msgctxt "#31304"
 msgid "Seconds"
 msgstr "Sekundy"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Veľká"

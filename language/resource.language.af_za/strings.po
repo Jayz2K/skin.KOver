@@ -16,6 +16,50 @@ msgstr ""
 "Language: af_ZA\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31000"
+msgid "KOver Designer"
+msgstr "KOver Ontwerper"
+
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Tuis Kieslys"
+
+msgctxt "#31002"
+msgid "Colors"
+msgstr "Kleure"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Voer in"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Pasmaak"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Dialoë"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Muurpapier"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Algemene Opstelling"
+
+msgctxt "#31057"
+msgid "Recent albums"
+msgstr "Onlangse albums"
+
+msgctxt "#31058"
+msgid "Recommended albums"
+msgstr "Aanbevole albums"
+
+msgctxt "#31059"
+msgid "Random albums"
+msgstr "Lukraak albums"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Subkieslys"

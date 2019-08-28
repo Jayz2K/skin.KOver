@@ -25,7 +25,7 @@
 		<summary lang="it_IT">KOver [Kodi Overlay]. Una skin personalizzabile. Costruisci le tue viste e set di colori.</summary>
 		<summary lang="lt_LT">KOver [Kodi Overlay]. Pritaikoma pagal poreikius teminė išvaizda. Susikurkite savus rodinius ir spalvų rinkinius.</summary>
 		<summary lang="ms_MY">KOver [Kodi Overlay]. Satu kulit bolehsuai. Bina paparan dan set warna anda sendiri.</summary>
-		<summary lang="nl_NL">Kover[kodi overlap]. Een aanpasbare skin. bouw je eigen weergaven en kleurensets.</summary>
+		<summary lang="nl_NL">KOver [Kodi Overlap]. Een aanpasbare skin. Bouw je eigen weergaven en kleurensets.</summary>
 		<summary lang="pl_PL">KOver [Nakładka na Kodi]. Skóra w pełni konfigurowalna. Stwórz swoje własne widoki i motywy kolorów.</summary>
 		<summary lang="pt_BR">KOver [Kodi Overlay]. Uma skin customizável. Construa seus modos de visualização e defina cores.</summary>
 		<summary lang="sr_RS@latin">KOver [Kodi Overlay]. Izmenjljiva maska. Podesite sopstvene prikaze i skupove boja.</summary>
@@ -38,7 +38,7 @@
 		<description lang="it_IT">KOver (da KODI Overlay) offre un diverso approccio per le skin di KODI. Non solo puramente progettata, offre anche all'utente la possibilità di personalizzare e fare migliaia di configurazioni. KOver incorpora due potenti editor WYSIWYG: lo strumento Designer e quello Colore. Sposta, ridimensiona, cambia contenuto e colori... rendila tua!</description>
 		<description lang="lt_LT">KOver (KODI Overlay) siūlo kitokį požiūrį į KODI temines išvizdas. Ne tik skaidriai sukurta, bet ir siūlo vartotojui galimybę pritaikyti pagal savo poreikius suteikiant tūkstančius galimų konfigūracijų. KOver turi du galingus WYSIWYG redaktorius: dizainerį ir spalvų įrankį. Perkelkite, pakeiskite dydį, pakeiskite turinį ir spalvas ... susikurkite savo!</description>
 		<description lang="ms_MY">KOver (untuk Tindihan Atas KODI) menyediakan pelbagai pendekatan untuk kulit KODI. Bukan sahaja semata-mata direka, ia juga menawarkan keupayaan menyuai dan menghasilkan beribu-ribu konfigurasi. KOver membenamkan dua penyunting WYSIWYG yang hebat : Pereka dan alat Warna. Alih, saiz semula, ubah kandungan dan warna ... jadikan kulit tersebut hasil ciptaan anda !</description>
-		<description lang="nl_NL">KOver (voor KODI Overlay) biedt een andere aanpak van KODI skins. Niet alleen puur ontworpen, het biedt ook de gebruiker de mogelijkheid om het aan te passen en duizenden configuraties te maken. KOver heeft twee krachtige WYSIWYG-editors: De Designer en de kleur tool. Verplaats, verander de grootte, verander de inhoud en de kleuren ... maak het van jou!</description>
+		<description lang="nl_NL">KOver (voor KODI Overlay) biedt een andere aanpak van KODI skins. Niet alleen puur ontworpen, het biedt ook de gebruiker de mogelijkheid om het aan te passen en duizenden configuraties te maken. KOver heeft twee krachtige WYSIWYG-editors: De Designer en de kleurtool. Verplaats, verander de grootte, verander de inhoud en de kleuren ... Maak het van jou!</description>
 		<description lang="pt_BR">Kover (para KODI Overlay) oferece uma abordagem diferente das demais skins para Kodi. Não apenas puramente projetada, mas também oferece ao usuário a possibilidade de personalizá-lo e fazer milhares de configurações. Kover incorpora dois poderosos editores WYSIWYG: O Designer e a ferramenta Color. Mova, redimensione, altere conteúdos e cores ... Faça você mesmo!</description>
 		<disclaimer lang="bg_BG">Мишки и чувствителни на допир устройства не се поддържат</disclaimer>
 		<disclaimer lang="cs_CZ">Myš a dotyková zařízení nejsou podporována</disclaimer>
@@ -54,7 +54,7 @@
 		<disclaimer lang="it_IT">Mouse e dispositivi Touch non supportati</disclaimer>
 		<disclaimer lang="lt_LT">Pelė ir liečiamieji įrenginiai nepalaikomi.</disclaimer>
 		<disclaimer lang="ms_MY">Peranti Tetikus dan Sentuh tidak disokong</disclaimer>
-		<disclaimer lang="nl_NL">Muis en aanraak apparaat zijn niet ondersteunt</disclaimer>
+		<disclaimer lang="nl_NL">Muis en aanraakapparaat worden niet ondersteund</disclaimer>
 		<disclaimer lang="pl_PL">Brak obsługi myszy i urządzeń dotykowych</disclaimer>
 		<disclaimer lang="pt_BR">Sem suporte a mouse e disposítivos de toque </disclaimer>
 		<disclaimer lang="ro_RO">Mausul și dispozitivul cu ecran tactil nu sunt sprijinite</disclaimer>

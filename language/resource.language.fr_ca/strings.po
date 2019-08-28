@@ -100,6 +100,18 @@ msgctxt "#31023"
 msgid "Delete View"
 msgstr "Supprimer la vue"
 
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Supprimer le modèle"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Exporter le modèle"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Position de la barre latérale"
+
 msgctxt "#31038"
 msgid "Width"
 msgstr "Largeur"
@@ -302,7 +314,7 @@ msgstr "Prévisions météorologiques"
 
 msgctxt "#31149"
 msgid "Edit Home menu..."
-msgstr "Modifier le menu d’accueil..."
+msgstr "Modifier le menu d’accueil…"
 
 msgctxt "#31151"
 msgid "Import / Export"
@@ -330,7 +342,7 @@ msgstr "Hybride"
 
 msgctxt "#31163"
 msgid "Import..."
-msgstr "Importer..."
+msgstr "Importer…"
 
 msgctxt "#31164"
 msgid "Backup all viewtype (without Home menu)"
@@ -446,7 +458,7 @@ msgstr "Listes"
 
 msgctxt "#31234"
 msgid "Loading ..."
-msgstr "Chargement..."
+msgstr "Chargement…"
 
 msgctxt "#31237"
 msgid "Move Bloc"
@@ -466,7 +478,7 @@ msgstr "Redimentionner"
 
 msgctxt "#31244"
 msgid "Install TvTunes ..."
-msgstr "Installer TvTunes..."
+msgstr "Installer TvTunes…"
 
 msgctxt "#31245"
 msgid "Audio / Video themes"
@@ -474,7 +486,7 @@ msgstr "Thèmes audio / vidéo"
 
 msgctxt "#31251"
 msgid "Up Next..."
-msgstr "Présenté ensuite..."
+msgstr "Présenté ensuite…"
 
 msgctxt "#31252"
 msgid "Install NextUp notifications ..."
@@ -634,11 +646,11 @@ msgstr "Secondes"
 
 msgctxt "#31305"
 msgid "Choose pictures folder..."
-msgstr "Choisir le dossier des images..."
+msgstr "Choisir le dossier des images…"
 
 msgctxt "#31306"
 msgid "Choose picture..."
-msgstr "Choisir une image..."
+msgstr "Choisir une image…"
 
 msgctxt "#31307"
 msgid "Square"
@@ -658,7 +670,7 @@ msgstr "Introuvable!"
 
 msgctxt "#31313"
 msgid "Wizard..."
-msgstr "Assistant..."
+msgstr "Assistant…"
 
 msgctxt "#31315"
 msgid "Welcome"
@@ -674,7 +686,7 @@ msgstr "Ne plus afficher"
 
 msgctxt "#31323"
 msgid "Open the startup wizard..."
-msgstr "Ouvrir l’assistant de démarrage..."
+msgstr "Ouvrir l’assistant de démarrage…"
 
 msgctxt "#31324"
 msgid "Do not turn off your device or force close KODI."

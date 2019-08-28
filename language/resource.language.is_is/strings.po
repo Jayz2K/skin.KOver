@@ -16,9 +16,137 @@ msgstr ""
 "Language: is_IS\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+msgctxt "#31001"
+msgid "Home Menu"
+msgstr "Forsíðuvalmynd"
+
 msgctxt "#31002"
 msgid "Colors"
 msgstr "Litir"
+
+msgctxt "#31003"
+msgid "Import"
+msgstr "Flytja inn"
+
+msgctxt "#31004"
+msgid "Customize"
+msgstr "Sérsníða"
+
+msgctxt "#31005"
+msgid "Dialogs"
+msgstr "Svargluggar"
+
+msgctxt "#31006"
+msgid "Wallpaper"
+msgstr "Bakgrunnsmynd"
+
+msgctxt "#31007"
+msgid "General Setup"
+msgstr "Almenn uppsetning"
+
+msgctxt "#31008"
+msgid "Blocs background"
+msgstr "Bakgrunnur blokka"
+
+msgctxt "#31009"
+msgid "Bloc 1 : List"
+msgstr "Blokk 1 : Listi"
+
+msgctxt "#31010"
+msgid "Bloc 1"
+msgstr "Blokk 1"
+
+msgctxt "#31011"
+msgid "Bloc 2 : Infos"
+msgstr "Blokk 2 : Upplýsingar"
+
+msgctxt "#31012"
+msgid "Bloc 2"
+msgstr "Blokk 2"
+
+msgctxt "#31013"
+msgid "Bloc 3 : Art"
+msgstr "Blokk 3: Myndefni"
+
+msgctxt "#31014"
+msgid "Bloc 3"
+msgstr "Blokk 3"
+
+msgctxt "#31015"
+msgid "Bloc 4 : Playing Video"
+msgstr "Blokk 4: Spila myndskeið"
+
+msgctxt "#31016"
+msgid "Bloc 4"
+msgstr "Blokk 4"
+
+msgctxt "#31017"
+msgid "Rename View"
+msgstr "Endurnefna sýn"
+
+msgctxt "#31018"
+msgid "Apply Default Horizontal"
+msgstr "Virkja sjálfgefið lárétt"
+
+msgctxt "#31019"
+msgid "Apply Default Vertical"
+msgstr "Virkja sjálfgefið lóðrétt"
+
+msgctxt "#31020"
+msgid "My Template 1"
+msgstr "Mitt sniðmát 1"
+
+msgctxt "#31021"
+msgid "My Template 2"
+msgstr "Mitt sniðmát 2"
+
+msgctxt "#31022"
+msgid "My Template 3"
+msgstr "Mitt sniðmát 3"
+
+msgctxt "#31023"
+msgid "Delete View"
+msgstr "Eyða sýn"
+
+msgctxt "#31026"
+msgid "Delete Template"
+msgstr "Eyða sniðmáti"
+
+msgctxt "#31027"
+msgid "Export Template"
+msgstr "Flytja út sniðmát"
+
+msgctxt "#31028"
+msgid "Layout Orientation"
+msgstr "Stefna framsetningar"
+
+msgctxt "#31029"
+msgid "Sidebar Position"
+msgstr "Staðsetning hliðarspjalds"
+
+msgctxt "#31031"
+msgid "Sidebar Autohide"
+msgstr "Fela hliðarspjald sjálfvirkt"
+
+msgctxt "#31033"
+msgid "Horizontal Separator"
+msgstr "Láréttur aðgreinir"
+
+msgctxt "#31034"
+msgid "Vertical Separator"
+msgstr "Lóðréttur aðgreinir"
+
+msgctxt "#31035"
+msgid "visibility"
+msgstr "sýnileiki"
+
+msgctxt "#31036"
+msgid "Horizontal Position (column)"
+msgstr "Lárétt staðsetning (dálkur)"
+
+msgctxt "#31037"
+msgid "Vertical Position (row)"
+msgstr "Lóðrétt staðsetning (röð)"
 
 msgctxt "#31038"
 msgid "Width"
@@ -28,9 +156,45 @@ msgctxt "#31039"
 msgid "Height"
 msgstr "Hæð"
 
+msgctxt "#31040"
+msgid "Background[CR]Style"
+msgstr "Stíll[CR]bakgrunns"
+
+msgctxt "#31042"
+msgid "Background[CR]Image"
+msgstr "Bakgrunns[CR]mynd"
+
+msgctxt "#31044"
+msgid "Sub info"
+msgstr "Undir-upplýsingar"
+
+msgctxt "#31047"
+msgid "Info Bloc : Sub info"
+msgstr "Upplýsingablokk : undir-upplýsingar"
+
+msgctxt "#31049"
+msgid "Ex : Duration"
+msgstr "T.d. : Tímalengd"
+
 msgctxt "#31051"
 msgid "Home"
 msgstr "Heim"
+
+msgctxt "#31052"
+msgid "Video on top"
+msgstr "Myndmerki efst"
+
+msgctxt "#31053"
+msgid "Visualisation presets"
+msgstr "Forstillingar sjónhrifa"
+
+msgctxt "#31055"
+msgid "Increase"
+msgstr "Hækkandi"
+
+msgctxt "#31056"
+msgid "Decrease"
+msgstr "Lækkandi"
 
 msgctxt "#31057"
 msgid "Recent albums"
@@ -44,9 +208,77 @@ msgctxt "#31059"
 msgid "Random albums"
 msgstr "Hljómplötur af handahófi"
 
+msgctxt "#31060"
+msgid "Window"
+msgstr "Gluggi"
+
+msgctxt "#31061"
+msgid "Sidebar"
+msgstr "Hliðarspjald"
+
+msgctxt "#31062"
+msgid "Blocs background"
+msgstr "Bakgrunnur blokka"
+
+msgctxt "#31063"
+msgid "Info bloc"
+msgstr "Upplýsingablokk"
+
+msgctxt "#31064"
+msgid "Art bloc"
+msgstr "Myndablokk"
+
+msgctxt "#31065"
+msgid "Video bloc"
+msgstr "Myndskeiðsblokk"
+
+msgctxt "#31066"
+msgid "Dialog"
+msgstr "Samskiptagluggi"
+
+msgctxt "#31068"
+msgid "Unselected icons"
+msgstr "Óvaldar táknmyndir"
+
+msgctxt "#31069"
+msgid "Unselected items"
+msgstr "Óvalin atriði"
+
+msgctxt "#31072"
+msgid "Unselected text"
+msgstr "Óvalinn texti"
+
+msgctxt "#31074"
+msgid "Selected items"
+msgstr "Valin atriði"
+
+msgctxt "#31077"
+msgid "Selected text"
+msgstr "Valinn texti"
+
+msgctxt "#31080"
+msgid "Invalid text"
+msgstr "Ógildur texti"
+
 msgctxt "#31081"
 msgid "Clock"
 msgstr "Klukka"
+
+msgctxt "#31082"
+msgid "Shadow"
+msgstr "Skuggi"
+
+msgctxt "#31084"
+msgid "Export color scheme"
+msgstr "Flytja út litastef"
+
+msgctxt "#31085"
+msgid "Bloc 5 : Submenu"
+msgstr "Blokk 5: Undirvalmynd"
+
+msgctxt "#31086"
+msgid "Bloc 5"
+msgstr "Blokk 5"
 
 msgctxt "#31088"
 msgid "Name :"
@@ -56,9 +288,33 @@ msgctxt "#31089"
 msgid "Viewtype"
 msgstr "Sýn"
 
+msgctxt "#31090"
+msgid "Empty"
+msgstr "Tómt"
+
+msgctxt "#31123"
+msgid "Blocs background"
+msgstr "Bakgrunnur blokka"
+
+msgctxt "#31125"
+msgid "Subcategory"
+msgstr "Undirflokkur"
+
 msgctxt "#31127"
 msgid "Submenu"
 msgstr "Undirvalmynd"
+
+msgctxt "#31129"
+msgid "Info Bloc : Title"
+msgstr "Upplýsingablokk : Titill"
+
+msgctxt "#31130"
+msgid "Bloc 4 : Home Art"
+msgstr "Blokk 4: Myndefni forsíðu"
+
+msgctxt "#31132"
+msgid "View Settings"
+msgstr "Stillingar sýnar"
 
 msgctxt "#31134"
 msgid "Move left"
@@ -68,9 +324,49 @@ msgctxt "#31135"
 msgid "Move right"
 msgstr "Færa til hægri"
 
+msgctxt "#31136"
+msgid "Change icon"
+msgstr "Breyta táknmynd"
+
+msgctxt "#31137"
+msgid "Select Bloc 4 Picture"
+msgstr "Veldu mynd fyrir blokk 4"
+
+msgctxt "#31138"
+msgid "Bloc 1 Visibility On Focus"
+msgstr "Blokk 1 - Sýnileiki við virkni"
+
+msgctxt "#31139"
+msgid "Bloc 2 Visibility On Focus"
+msgstr "Blokk 2 - Sýnileiki við virkni"
+
+msgctxt "#31140"
+msgid "Bloc 3 Visibility On Focus"
+msgstr "Blokk 3 - Sýnileiki við virkni"
+
+msgctxt "#31141"
+msgid "Bloc 4 Visibility On Focus"
+msgstr "Blokk 4 - Sýnileiki við virkni"
+
+msgctxt "#31142"
+msgid "Go Submenu"
+msgstr "Fara í undirvalmynd"
+
 msgctxt "#31143"
 msgid "Go Back"
-msgstr "Til baka"
+msgstr "Fara til baka"
+
+msgctxt "#31144"
+msgid "Over"
+msgstr "Yfir"
+
+msgctxt "#31145"
+msgid "PVR"
+msgstr "PVR-upptaka"
+
+msgctxt "#31146"
+msgid "TV channels"
+msgstr "Sjónvarpsrásir"
 
 msgctxt "#31147"
 msgid "Weather"
@@ -80,6 +376,14 @@ msgctxt "#31148"
 msgid "Weather Forecast"
 msgstr "Veðurspá"
 
+msgctxt "#31149"
+msgid "Edit Home menu..."
+msgstr "Breyta forsíðuvalmynd..."
+
+msgctxt "#31151"
+msgid "Import / Export"
+msgstr "Flytja inn / Flytja út"
+
 msgctxt "#31157"
 msgid "Horizontal"
 msgstr "Lárétt"
@@ -88,9 +392,37 @@ msgctxt "#31158"
 msgid "Vertical"
 msgstr "Lóðrétt"
 
+msgctxt "#31160"
+msgid "Classic"
+msgstr "Hefðbundið"
+
+msgctxt "#31161"
+msgid "Two-thirds"
+msgstr "Tveir-þriðju"
+
+msgctxt "#31162"
+msgid "Hybrid"
+msgstr "Blandað"
+
+msgctxt "#31163"
+msgid "Import..."
+msgstr "Flytja inn..."
+
+msgctxt "#31200"
+msgid "Enhancement"
+msgstr "Bæting"
+
+msgctxt "#31216"
+msgid "DEFAULT"
+msgstr "SJÁLFGEFIÐ"
+
 msgctxt "#31222"
 msgid "Settings"
 msgstr "Stillingar"
+
+msgctxt "#31223"
+msgid "HIDDEN"
+msgstr "FALIÐ"
 
 msgctxt "#31226"
 msgid "Furnitures"
@@ -98,11 +430,31 @@ msgstr "Húsgögn"
 
 msgctxt "#31232"
 msgid "Arrows"
-msgstr "Pílur"
+msgstr "Örvar"
 
 msgctxt "#31233"
 msgid "Lists"
 msgstr "Listar"
+
+msgctxt "#31234"
+msgid "Loading ..."
+msgstr "Hleð inn ..."
+
+msgctxt "#31237"
+msgid "Move Bloc"
+msgstr "Færa blokk"
+
+msgctxt "#31238"
+msgid "Resize Bloc"
+msgstr "Breyta stærð blokkar"
+
+msgctxt "#31240"
+msgid "Move"
+msgstr "Færa"
+
+msgctxt "#31241"
+msgid "Resize"
+msgstr "Breyta stærð"
 
 msgctxt "#31254"
 msgid "Do not show"
@@ -112,6 +464,22 @@ msgctxt "#31255"
 msgid "Always show"
 msgstr "Sýna alltaf"
 
+msgctxt "#31270"
+msgid "Default"
+msgstr "Sjálfgefið"
+
+msgctxt "#31272"
+msgid "Wide List"
+msgstr "Breiður listi"
+
+msgctxt "#31273"
+msgid "Tiles"
+msgstr "Flísar"
+
+msgctxt "#31274"
+msgid "Card"
+msgstr "Spjald"
+
 msgctxt "#31275"
 msgid "Poster"
 msgstr "Veggspjald"
@@ -120,9 +488,21 @@ msgctxt "#31277"
 msgid "Banner"
 msgstr "Borði"
 
+msgctxt "#31278"
+msgid "Thumb"
+msgstr "Smámynd"
+
+msgctxt "#31280"
+msgid "Clear Logo"
+msgstr "Clear-táknmerki"
+
 msgctxt "#31282"
 msgid "Landscape"
 msgstr "Lárétt"
+
+msgctxt "#31283"
+msgid "Custom List"
+msgstr "Sérsniðinn listi"
 
 msgctxt "#31286"
 msgid "Horizontal"
@@ -132,6 +512,18 @@ msgctxt "#31287"
 msgid "Vertical"
 msgstr "Lóðrétt"
 
+msgctxt "#31293"
+msgid "Always visible"
+msgstr "Sýna alltaf"
+
+msgctxt "#31294"
+msgid "Push blocs"
+msgstr "Ýta blokkum"
+
+msgctxt "#31295"
+msgid "Show over blocs"
+msgstr "Birta ofan á blokkum"
+
 msgctxt "#31302"
 msgid "Fanart"
 msgstr "Aðdáendamyndir"
@@ -140,10 +532,42 @@ msgctxt "#31304"
 msgid "Seconds"
 msgstr "Sekúndur"
 
+msgctxt "#31305"
+msgid "Choose pictures folder..."
+msgstr "Veldu myndamöppu..."
+
+msgctxt "#31306"
+msgid "Choose picture..."
+msgstr "Veldu mynd..."
+
+msgctxt "#31307"
+msgid "Square"
+msgstr "Ferningur"
+
+msgctxt "#31308"
+msgid "Medium"
+msgstr "Miðlungs"
+
+msgctxt "#31309"
+msgid "Large"
+msgstr "Stór"
+
 msgctxt "#31310"
 msgid "Not found !"
 msgstr "Fannst ekki !"
 
+msgctxt "#31311"
+msgid "Checking Files"
+msgstr "Athuga skrár"
+
+msgctxt "#31313"
+msgid "Wizard..."
+msgstr "Leiðarvísir..."
+
 msgctxt "#31315"
 msgid "Welcome"
 msgstr "Velkomin(n)"
+
+msgctxt "#31318"
+msgid "Exit"
+msgstr "Fara út"

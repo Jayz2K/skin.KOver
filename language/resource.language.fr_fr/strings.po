@@ -394,11 +394,11 @@ msgstr "Renommez le type de vue. Elle s'affichera «tel quel» lors de la sélec
 
 msgctxt "#31094"
 msgid "Apply the built-in horizontal viewtype. A good start for sidebar TOP or BOTTOM layout."
-msgstr "Appliquer la vue horizontale pré-construite. A privilégier pour utiliser une barre latérale HAUT ou BAS."
+msgstr "Appliquer la vue horizontale prédéfinie. Un bon début de mise en page de barre latérale HAUT ou BAS."
 
 msgctxt "#31095"
 msgid "Apply the built-in vertical viewtype. A good start for sidebar LEFT or RIGHT layout."
-msgstr "Appliquer la vue verticale pré-construite. A privilégier pour utiliser une barre latérale GAUCHE ou DROITE."
+msgstr "Appliquer la vue verticale prédéfinie. Un bon début de mise en page de barre latérale GAUCHE ou DROITE."
 
 msgctxt "#31096"
 msgid "Delete the viewtype. It won't be available anymore in library viewtype selection."
@@ -722,7 +722,7 @@ msgstr "Activer cette option pour avoir accès au Designer et construire vos pro
 
 msgctxt "#31176"
 msgid "Enable this option to give access to the Color tool, change the skin colors and create color sets (advanced)."
-msgstr "Activer cette option pour avoir accès à l'éditeur de couleur, changez les couleurs du skin et créer vos palettes de couleurs (avancé)."
+msgstr "Activez cette option pour avoir accès à l'Éditeur de couleurs, changer les couleurs de l'habillage et créer vos palettes de couleurs (avancé)."
 
 msgctxt "#31177"
 msgid "Enable this option to show debug infos (advanced)."
@@ -870,11 +870,11 @@ msgstr "Ajustez le temps de l'option 'IDLEFADE. Effectif seulement quand affect�
 
 msgctxt "#31213"
 msgid "Automatically apply a built-in color set. This automatically change the colors for each element."
-msgstr "Appliquer automatiquement une palette de couleurs pré-construite. Change automatiquement les couleurs pour chaque élément."
+msgstr "Appliquer automatiquement une palette de couleurs prédéfinie. Change automatiquement les couleurs pour chaque élément."
 
 msgctxt "#31214"
 msgid "Backup current color set."
-msgstr "Sauvegarder les paramètres de couleurs actuels"
+msgstr "Sauvegarder les paramètres de couleurs actuels."
 
 msgctxt "#31215"
 msgid "Install Image ressource addon (studio logos) ..."
@@ -1290,15 +1290,15 @@ msgstr "Quitter"
 
 msgctxt "#31319"
 msgid "Choose this option to let KOver builds itself. Choose between 5 presets to apply the settings matching to your needs (recommended). You can still apply other configurations later via the skin settings window."
-msgstr "Choisir cette option pour permettre à KOver de s'auto-construire. Choisir parmi 5 modèles pour appliquer les paramètres correspondant à votre choix (recommandé). Vous pourrez toujours appliquer les autres configurations ultérieurement via l'écran de paramètres de la skin."
+msgstr "Choisir cette option pour permettre à KOver de s'autoconstruire. Choisir parmi 5 préréglages pour appliquer les paramètres correspondant à vos souhaits (recommandé). Vous pourrez toujours appliquer d'autres configurations ensuite via l'écran de paramètres d'habillage."
 
 msgctxt "#31320"
 msgid "Choose this option to build KOver yourself. This will bring you to the Designer tool (advanced). It's recommended to apply a prebuilt configuration at first launch. You can still go to the Designer later via the skin settings window."
-msgstr "Choisir cette option pour construire KOver soi-même. Ceci ouvrira l'outil Designer (avancé). Il est recommandé d'appliquer une configuration prédéfinie au premier démarrage. Vous pourrez toujours accéder au Designer plus tard via l'écran de paramètres de la skin."
+msgstr "Choisir cette option pour construire KOver vous-même. Ceci ouvrira l'outil Designer (avancé). Il est recommandé d'appliquer une configuration prédéfinie au premier démarrage. Vous pourrez toujours accéder au Designer ensuite via l'écran de paramètres d'habillage."
 
 msgctxt "#31321"
 msgid "Exit the wizard. You can go back to the wizard via the skin settings window."
-msgstr "Quitter l'assistant. Vous pourrez toujours retourner à l'assistant via l'écran de paramètres de la skin."
+msgstr "Quitter l'assistant. Vous pourrez toujours retourner à l'assistant via l'écran de paramètres d'habillage."
 
 msgctxt "#31322"
 msgid "Do not show me again"
@@ -1334,7 +1334,7 @@ msgstr "Régler le compte à rebours du minuteur IDLEFADE (fonction spécifique 
 
 msgctxt "#31400"
 msgid "[B]Configure appearance settings[/B][CR][CR]Change the skin[CR]Set language and region[CR]Change file listing options[CR]Set up a screensaver"
-msgstr "[B]Configurer les paramètres d'apparence[/B][CR][CR]Changer de skin[CR]Choisir la langue et la région[CR]Changer les options de listing[CR]Paramétrer l'économiseur d'écran"
+msgstr "[B]Configurer les paramètres d'apparence[/B][CR][CR]Changer d'habillage[CR]Choisir la langue et la région[CR]Changer les options de listing[CR]Paramétrer l'économiseur d'écran"
 
 msgctxt "#31401"
 msgid "[B]Configure video settings[/B][CR][CR]Manage your video library[CR]Set video playback options[CR]Change video listing options[CR]Set subtitle fonts"
@@ -1390,7 +1390,7 @@ msgstr "Cette catégorie contient les paramètres d'édition du menu d'accueil e
 
 msgctxt "#31501"
 msgid "This category contains the settings for applying automatic layouts and color sets."
-msgstr "Cette catégorie contient les paramètres d'application automatique de modèles et palettes de couleurs"
+msgstr "Cette catégorie contient les paramètres d'application automatique de mise en page et palettes de couleurs."
 
 msgctxt "#31502"
 msgid "This category contains the settings for importing / exporting user's configurations of KOver."
